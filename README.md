@@ -83,6 +83,29 @@ git log --oneline -5
 git log -p backups/{tenant}/WORKFLOW/{objectId}.json
 ```
 
+## Browsing and Restoring with the UI Development Kit
+
+The [SailPoint UI Development Kit](https://github.com/sailpoint-oss/ui-development-kit) includes a **Config Hub** component that provides a visual interface for exploring the backups stored in this repository and restoring previous versions directly to your ISC tenant — no command line required.
+
+### Features
+
+- **Browse by object** — Select a configuration type (e.g., ROLE, SOURCE, WORKFLOW), browse all objects with their last-modified timestamps, and view a line-by-line diff between any two historical versions.
+- **Browse by commit** — View a timeline of recent backup commits, see every file changed in each commit, and compare versions inline.
+- **Restore** — Restore a single object or an entire bundle of objects from a commit back to your ISC tenant via the SP-Config API, with live job status polling.
+
+### Setup
+
+Once the UI Development Kit is running, open the Config Hub component and click the **settings icon**. Enter the following in the Repository Settings dialog:
+
+| Setting | Description | Example |
+|---|---|---|
+| **Repository URL** | HTTPS URL of this repository | `https://github.com/org/colab-isc-config-hub-history` |
+| **Backups Path** | Folder containing backups | `backups` |
+| **Default Branch** | Branch the workflow commits to | `main` |
+| **GitHub PAT** | GitHub Personal Access Token with `repo` scope | `ghp_xxxxxx...` |
+
+Settings are saved to browser localStorage for future sessions.
+
 <!-- LICENSE -->
 ## License
 
