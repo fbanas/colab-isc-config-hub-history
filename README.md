@@ -12,24 +12,99 @@
 [contributor-shield]:https://img.shields.io/github/contributors/sailpoint-oss/repo-template?label=Contributors
 [contributors-url]:https://github.com/sailpoint-oss/repo-template/graphs/contributors
 
-# application-title-here
-[Explore the docs »](https://your-link-to-colab-topic-here)
+# Config Hub CI/CD — ISC Configuration Backup
 
-[New to the CoLab? Click here »](https://developer.sailpoint.com/discuss/t/about-the-sailpoint-developer-community-colab/11230)
+Automated daily backup of SailPoint Identity Security Cloud (ISC) tenant configuration using the Configuration Hub and SP-Config APIs. Configuration objects are stored as JSON files in this repository, with git history providing a complete audit trail of changes over time.
 
-<!-- CONTRIBUTING -->
-## Contributing
+## How It Works
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+A GitHub Actions workflow runs daily (6:00 AM UTC) and:
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag `enhancement`.
-Don't forget to give the project a star! Thanks again!
+1. Authenticates with your ISC tenant using OAuth client credentials
+2. Fetches all exportable configuration object types
+3. Creates an SP-Config export (backup) of all objects
+4. Downloads every object from the backup, organized by type
+5. Commits changes to this repository (only if objects changed)
+6. Deletes old backups from SailPoint to keep the tenant tidy
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+## Setup
+
+### 1. Use this template
+
+Fork or use this repository as a template for your tenant.
+
+### 2. Create a SailPoint API client
+
+In your ISC tenant, create a Personal Access Token (PAT) or API client with the following scopes:
+
+- `sp:scopes:all` (or at minimum: `sp:config:read`, `sp:config:manage`)
+
+### 3. Configure GitHub Secrets
+
+Go to **Settings > Secrets and variables > Actions** and add:
+
+| Secret | Description | Example |
+|---|---|---|
+| `TENANT_URL` | Your ISC API base URL | `https://acme.api.identitynow.com` |
+| `CLIENT_ID` | API client ID | `a1b2c3d4...` |
+| `CLIENT_SECRET` | API client secret | `x9y8z7w6...` |
+
+### 4. Run manually (optional)
+
+Go to **Actions > Daily ISC Backup > Run workflow** to trigger immediately.
+
+## Backup Structure
+
+```
+backups/
+  {tenant-name}/
+    ACCESS_PROFILE/
+      {objectId}.json
+    ROLE/
+      {objectId}.json
+    SOURCE/
+      {objectId}.json
+    WORKFLOW/
+      {objectId}.json
+    ...
+```
+
+Each `.json` file contains the decoded, pretty-printed configuration object. The tenant name is extracted from your `TENANT_URL` (e.g., `acme` from `https://acme.api.identitynow.com`).
+
+## Tracking Drift
+
+Since every backup is committed to git, you can use standard git tools to track changes:
+
+```bash
+# See what changed in the last backup
+git log --oneline -5
+
+# Diff a specific object over time
+git log -p backups/{tenant}/WORKFLOW/{objectId}.json
+```
+
+## Browsing and Restoring with the UI Development Kit
+
+The [SailPoint UI Development Kit](https://github.com/sailpoint-oss/ui-development-kit) includes a **Config Hub** component that provides a visual interface for exploring the backups stored in this repository and restoring previous versions directly to your ISC tenant — no command line required.
+
+### Features
+
+- **Browse by object** — Select a configuration type (e.g., ROLE, SOURCE, WORKFLOW), browse all objects with their last-modified timestamps, and view a line-by-line diff between any two historical versions.
+- **Browse by commit** — View a timeline of recent backup commits, see every file changed in each commit, and compare versions inline.
+- **Restore** — Restore a single object or an entire bundle of objects from a commit back to your ISC tenant via the SP-Config API, with live job status polling.
+
+### Setup
+
+Once the UI Development Kit is running, open the Config Hub component and click the **settings icon**. Enter the following in the Repository Settings dialog:
+
+| Setting | Description | Example |
+|---|---|---|
+| **Repository URL** | HTTPS URL of this repository | `https://github.com/org/colab-isc-config-hub-history` |
+| **Backups Path** | Folder containing backups | `backups` |
+| **Default Branch** | Branch the workflow commits to | `main` |
+| **GitHub PAT** | GitHub Personal Access Token with `repo` scope | `ghp_xxxxxx...` |
+
+Settings are saved to browser localStorage for future sessions.
 
 <!-- LICENSE -->
 ## License
