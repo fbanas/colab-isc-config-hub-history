@@ -121,6 +121,22 @@ function canonicalize(value) {
 }
 
 /**
+ * Return a copy of an export item with the two high-churn noise fields removed
+ * so we can compare meaningful content independently of them.
+ * - jwsSignature  — top-level on the item
+ * - modified      — inside item.object (updated on every export even without real changes)
+ */
+function stripNoiseFields(item) {
+  const copy = { ...item };
+  delete copy.jwsSignature;
+  if (copy.object && typeof copy.object === "object") {
+    copy.object = { ...copy.object };
+    delete copy.object.modified;
+  }
+  return copy;
+}
+
+/**
  * Build a set of all existing backup file paths (relative to BACKUP_DIR)
  * so we can detect deletions after the download completes.
  */
@@ -176,6 +192,7 @@ async function downloadObjects(jobId) {
 
   let totalCount = 0;
   let writtenCount = 0;
+  let noiseOnlyCount = 0;
 
   for (const item of items) {
     // The export download format identifies objects via the `self` field.
@@ -205,6 +222,18 @@ async function downloadObjects(jobId) {
       : null;
 
     if (newContent !== existingNormalized) {
+      // If the file already exists, check whether only noise fields changed.
+      // If so, skip the write — no meaningful content has changed.
+      if (existingNormalized !== null) {
+        const strippedNew = JSON.stringify(canonicalize(stripNoiseFields(itemWithJws)), null, 2) + "\n";
+        const strippedExisting = JSON.stringify(canonicalize(stripNoiseFields(JSON.parse(existingNormalized))), null, 2) + "\n";
+        if (strippedNew === strippedExisting) {
+          noiseOnlyCount++;
+          totalCount++;
+          continue;
+        }
+      }
+
       writeFileSync(filePath, newContent);
       writtenCount++;
     }
@@ -236,7 +265,8 @@ async function downloadObjects(jobId) {
 
   console.log(
     `Processed ${totalCount} objects: ${writtenCount} updated, ` +
-      `${deletedCount} deleted, ${totalCount - writtenCount - deletedCount} unchanged`
+      `${noiseOnlyCount} noise-only skipped, ` +
+      `${deletedCount} deleted, ${totalCount - writtenCount - noiseOnlyCount - deletedCount} unchanged`
   );
   return totalCount;
 }
