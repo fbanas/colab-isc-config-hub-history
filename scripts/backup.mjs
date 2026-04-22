@@ -200,11 +200,11 @@ async function downloadObjects(jobId) {
     const filePath = join(BACKUP_DIR, relPath);
     seenFiles.add(relPath);
 
-    const existingContent = existsSync(filePath)
-      ? readFileSync(filePath, "utf8")
+    const existingNormalized = existsSync(filePath)
+      ? readFileSync(filePath, "utf8").replace(/\r\n/g, "\n")
       : null;
 
-    if (newContent !== existingContent) {
+    if (newContent !== existingNormalized) {
       writeFileSync(filePath, newContent);
       writtenCount++;
     }
