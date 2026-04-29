@@ -1,0 +1,73 @@
+name: Generate / Refresh Templates and Vars
+
+on:
+  workflow_dispatch:
+    inputs:
+      command:
+        description: 'Tokenization command to run'
+        required: true
+        default: 'find-tokens'
+        type: choice
+        options:
+          - find-tokens       # Refresh vars for the backup tenant (safe to re-run)
+          - create-template   # (Re-)generate tokenized templates from latest backup
+          - both              # Run create-template then find-tokens
+      template_set:
+        description: 'Template set name (used by create-template)'
+        required: false
+        default: 'default'
+
+permissions:
+  contents: write
+
+jobs:
+  tokenize:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run create-template
+        if: ${{ inputs.command == 'create-template' || inputs.command == 'both' }}
+        env:
+          TENANT_URL: ${{ secrets.TENANT_URL }}
+          CLIENT_ID: ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+        run: |
+          echo "Generating tokenized templates into templates/${{ inputs.template_set }}/ ..."
+          node scripts/tokenize.mjs create-template \
+            --template-set "${{ inputs.template_set }}"
+
+      - name: Run find-tokens
+        if: ${{ inputs.command == 'find-tokens' || inputs.command == 'both' }}
+        env:
+          TENANT_URL: ${{ secrets.TENANT_URL }}
+          CLIENT_ID: ${{ secrets.CLIENT_ID }}
+          CLIENT_SECRET: ${{ secrets.CLIENT_SECRET }}
+        run: |
+          echo "Refreshing vars for backup tenant ..."
+          node scripts/tokenize.mjs find-tokens \
+            --template-set "${{ inputs.template_set }}"
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add templates/ vars/
+          if git diff --cached --quiet; then
+            echo "No changes detected — skipping commit"
+          else
+            git commit -m "tokenize: refresh templates/vars (${{ inputs.command }}, set=${{ inputs.template_set }})"
+            git push
+          fi

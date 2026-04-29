@@ -1,3 +1,5 @@
+# After this runs, use the "Generate / Refresh Templates and Vars" workflow
+# (tokenize.yml) to deliberately regenerate templates or refresh vars files.
 name: Daily ISC Backup
 
 on:
