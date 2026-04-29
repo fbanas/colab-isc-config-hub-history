@@ -1,4 +1,4 @@
-import { execSync } from "child_process";
+import { execSync, execFileSync } from "child_process";
 import { readFileSync, readdirSync, statSync } from "fs";
 import { join, basename } from "path";
 import {
@@ -8,6 +8,7 @@ import {
   authenticate,
   getAccessToken,
 } from "./common.mjs";
+import { meaningfulBackupContentEqual } from "./compare-utils.mjs";
 
 // ---------------------------------------------------------------------------
 // Parse arguments
@@ -17,21 +18,29 @@ function parseArgs() {
   let source = null;
   let sourceTenant = null;
   let backupName = null;
+  let fullRestore = false;
+  let baseRef = null;
 
   for (let i = 0; i < args.length; i++) {
-    if (args[i] === "--tenant" && args[i + 1]) {
+    const a = args[i];
+    if (a === "--tenant" && args[i + 1]) {
       sourceTenant = args[++i];
-    } else if (args[i] === "--name" && args[i + 1]) {
+    } else if (a === "--name" && args[i + 1]) {
       backupName = args[++i];
+    } else if (a === "--base" && args[i + 1]) {
+      baseRef = args[++i];
+    } else if (a === "--full") {
+      fullRestore = true;
     } else if (!source) {
-      source = args[i];
+      source = a;
     }
   }
 
-  return { source, sourceTenant, backupName };
+  return { source, sourceTenant, backupName, fullRestore, baseRef };
 }
 
-const { source, sourceTenant, backupName: customName } = parseArgs();
+const { source, sourceTenant, backupName: customName, fullRestore, baseRef } =
+  parseArgs();
 
 if (!source) {
   console.error("Usage: node scripts/restore.mjs <source> [options]");
@@ -42,6 +51,12 @@ if (!source) {
   console.error("  --tenant <name>   Read backups from a different tenant folder");
   console.error("                    (default: tenant from TENANT_URL in .env)");
   console.error("  --name <name>     Custom name for the backup in SailPoint");
+  console.error("  --full            Upload the entire snapshot (skip semantic diff vs main)");
+  console.error("  --base <ref>      Compare semantically to this git ref instead of main");
+  console.error("");
+  console.error("By default, only objects whose meaningful content differs from the tip");
+  console.error("of main are uploaded (same canonical compare as backup.mjs). Use --full");
+  console.error("for a complete bundle.");
   console.error("");
   console.error("Examples:");
   console.error("  # Restore from local disk (current backups folder)");
@@ -58,17 +73,113 @@ if (!source) {
   console.error("");
   console.error("  # Cross-tenant from git history");
   console.error("  npm run restore -- HEAD~5 --tenant prod-tenant");
+  console.error("");
+  console.error("  # Full snapshot (no diff vs main)");
+  console.error("  npm run restore -- abc1234 --full");
   process.exit(1);
 }
 
 const isLocal = source === "local";
 const resolvedTenant = sourceTenant || TENANT_NAME;
 const backupDir = join("backups", resolvedTenant);
+/** Git paths always use forward slashes (matches repo layout). */
+const backupRootPosix = `backups/${resolvedTenant}`;
 const backupName =
   customName ||
   (isLocal
     ? `Restore from ${resolvedTenant} (local)`
     : `Restore from ${resolvedTenant} @ ${source}`);
+
+function ensureGitRepo() {
+  try {
+    execFileSync("git", ["rev-parse", "--show-toplevel"], { stdio: "pipe" });
+  } catch {
+    throw new Error(
+      "Semantic diff needs a git checkout with the base branch available. Use --full to upload the entire snapshot."
+    );
+  }
+}
+
+function resolveComparisonBase(explicit) {
+  if (explicit) {
+    try {
+      execFileSync("git", ["rev-parse", "--verify", explicit], {
+        stdio: "pipe",
+      });
+      return explicit;
+    } catch {
+      throw new Error(`Invalid git ref for --base: ${explicit}`);
+    }
+  }
+  const candidates = ["main", "origin/main", "master"];
+  for (const c of candidates) {
+    try {
+      execFileSync("git", ["rev-parse", "--verify", c], { stdio: "pipe" });
+      return c;
+    } catch {
+      /* try next */
+    }
+  }
+  throw new Error(
+    "Could not resolve a comparison branch (tried main, origin/main, master). Pass --base <ref> or use --full."
+  );
+}
+
+function gitRevParse(ref, extraArgs = []) {
+  return execFileSync("git", ["rev-parse", ...extraArgs, ref], {
+    encoding: "utf-8",
+  }).trim();
+}
+
+function gitShowFileAtRef(ref, posixPath) {
+  try {
+    return execFileSync("git", ["show", `${ref}:${posixPath}`], {
+      encoding: "utf-8",
+      maxBuffer: 1024 * 1024 * 100,
+    });
+  } catch {
+    return null;
+  }
+}
+
+function filterToSemanticDiffFromBase(objects, comparisonBase, tenantFolderName) {
+  let nUnchanged = 0;
+  let nMissingOnBase = 0;
+  const changed = [];
+
+  for (const obj of objects) {
+    const posixPath = `backups/${tenantFolderName}/${obj.objectType}/${obj.objectId}.json`;
+    const baselineRaw = gitShowFileAtRef(comparisonBase, posixPath);
+    if (baselineRaw === null) {
+      nMissingOnBase++;
+      changed.push(obj);
+      continue;
+    }
+    let baselineParsed;
+    try {
+      baselineParsed = JSON.parse(baselineRaw);
+    } catch {
+      changed.push(obj);
+      continue;
+    }
+    if (meaningfulBackupContentEqual(obj.content, baselineParsed)) {
+      nUnchanged++;
+    } else {
+      changed.push(obj);
+    }
+  }
+
+  const shortSha = gitRevParse(comparisonBase, ["--short"]);
+  const fullSha = gitRevParse(comparisonBase);
+  console.log("");
+  console.log(
+    `Semantic diff vs ${comparisonBase} (${shortSha} / ${fullSha}): ` +
+      `${changed.length} object(s) to upload, ${nUnchanged} unchanged vs base, ` +
+      `${nMissingOnBase} absent from base`
+  );
+
+  return changed;
+}
 
 // ---------------------------------------------------------------------------
 // Read backup files from local disk
@@ -107,7 +218,6 @@ function readBackupFromDisk() {
     }
   }
 
-  printSummary(objects);
   return objects;
 }
 
@@ -115,12 +225,12 @@ function readBackupFromDisk() {
 // Read backup files from a git ref
 // ---------------------------------------------------------------------------
 function readBackupFromGit(ref) {
-  console.log(`Reading backup files from git ref: ${ref} (${backupDir}/)`);
+  console.log(`Reading backup files from git ref: ${ref} (${backupRootPosix}/)`);
 
   let fileList;
   try {
     fileList = execSync(
-      `git ls-tree -r --name-only "${ref}" -- "${backupDir}"`,
+      `git ls-tree -r --name-only "${ref}" -- "${backupRootPosix}"`,
       { encoding: "utf-8" }
     ).trim();
   } catch (err) {
@@ -131,7 +241,7 @@ function readBackupFromGit(ref) {
 
   if (!fileList) {
     throw new Error(
-      `No backup files found at ref "${ref}" under ${backupDir}/`
+      `No backup files found at ref "${ref}" under ${backupRootPosix}/`
     );
   }
 
@@ -160,7 +270,6 @@ function readBackupFromGit(ref) {
     objects.push({ objectType, objectId, content: parsed });
   }
 
-  printSummary(objects);
   return objects;
 }
 
@@ -229,13 +338,19 @@ async function main() {
   console.log(`Source: ${isLocal ? "local disk" : `git ref "${source}"`}`);
   console.log(`Source tenant folder: ${resolvedTenant}`);
   console.log(`Backup name: ${backupName}`);
+  if (fullRestore) {
+    console.log("Bundle: full snapshot (--full)");
+  } else {
+    console.log(
+      `Bundle: semantic diff vs ${baseRef || "main (or origin/main/master)"}`
+    );
+  }
   if (resolvedTenant !== TENANT_NAME) {
     console.log(`Cross-tenant restore: ${resolvedTenant} → ${TENANT_NAME}`);
   }
   console.log();
 
-  // Read objects from the appropriate source
-  const objects = isLocal
+  let objects = isLocal
     ? readBackupFromDisk()
     : readBackupFromGit(source);
 
@@ -244,11 +359,31 @@ async function main() {
     return;
   }
 
-  // Authenticate with the target tenant
+  console.log(`Restore snapshot: ${objects.length} object file(s)`);
+  printSummary(objects);
+
+  if (!fullRestore) {
+    ensureGitRepo();
+    const comparisonBase = resolveComparisonBase(baseRef);
+    objects = filterToSemanticDiffFromBase(
+      objects,
+      comparisonBase,
+      resolvedTenant
+    );
+    if (objects.length > 0) {
+      console.log("Objects to upload (after filter):");
+      printSummary(objects);
+    }
+  }
+
+  if (objects.length === 0) {
+    console.log("\nNo semantic changes vs base branch — nothing to upload.");
+    return;
+  }
+
   await authenticate();
 
-  // Upload each object via multipart form to Config Hub
-  const results = await uploadBackup(objects, backupName);
+  await uploadBackup(objects, backupName);
 
   console.log();
   console.log("=== Restore upload complete! ===");

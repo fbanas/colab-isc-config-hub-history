@@ -14,6 +14,11 @@ import {
   apiCall,
   sleep,
 } from "./common.mjs";
+import {
+  canonicalize,
+  stripNoiseFields,
+  normalizeExportItem,
+} from "./compare-utils.mjs";
 
 // ---------------------------------------------------------------------------
 // Configuration
@@ -95,48 +100,6 @@ async function pollExport(jobId) {
 // ---------------------------------------------------------------------------
 
 /**
- * Produce a canonical, order-independent representation of a JSON value so
- * that two semantically identical objects always stringify identically:
- *   - Object keys are sorted alphabetically (recursively)
- *   - Array elements are sorted by their canonical string representation
- */
-function canonicalize(value) {
-  if (Array.isArray(value)) {
-    const items = value.map(canonicalize);
-    items.sort((a, b) => {
-      const sa = JSON.stringify(a);
-      const sb = JSON.stringify(b);
-      return sa < sb ? -1 : sa > sb ? 1 : 0;
-    });
-    return items;
-  }
-  if (value !== null && typeof value === "object") {
-    const result = {};
-    for (const key of Object.keys(value).sort()) {
-      result[key] = canonicalize(value[key]);
-    }
-    return result;
-  }
-  return value;
-}
-
-/**
- * Return a copy of an export item with the two high-churn noise fields removed
- * so we can compare meaningful content independently of them.
- * - jwsSignature  — top-level on the item
- * - modified      — inside item.object (updated on every export even without real changes)
- */
-function stripNoiseFields(item) {
-  const copy = { ...item };
-  delete copy.jwsSignature;
-  if (copy.object && typeof copy.object === "object") {
-    copy.object = { ...copy.object };
-    delete copy.object.modified;
-  }
-  return copy;
-}
-
-/**
  * Build a set of all existing backup file paths (relative to BACKUP_DIR)
  * so we can detect deletions after the download completes.
  */
@@ -210,7 +173,7 @@ async function downloadObjects(jobId) {
     // Ensure jwsHeader and jwsSignature are always present for backward
     // compatibility, then canonicalize so all keys/arrays are in a stable
     // alphabetical order (jwsHeader → jwsSignature → object → self → version).
-    const itemWithJws = { jwsHeader: null, jwsSignature: null, ...item };
+    const itemWithJws = normalizeExportItem(item);
     const newContent = JSON.stringify(canonicalize(itemWithJws), null, 2) + "\n";
 
     const relPath = join(objectType, `${objectId}.json`);
@@ -226,7 +189,12 @@ async function downloadObjects(jobId) {
       // If so, skip the write — no meaningful content has changed.
       if (existingNormalized !== null) {
         const strippedNew = JSON.stringify(canonicalize(stripNoiseFields(itemWithJws)), null, 2) + "\n";
-        const strippedExisting = JSON.stringify(canonicalize(stripNoiseFields(JSON.parse(existingNormalized))), null, 2) + "\n";
+        const strippedExisting =
+          JSON.stringify(
+            canonicalize(stripNoiseFields(normalizeExportItem(JSON.parse(existingNormalized)))),
+            null,
+            2
+          ) + "\n";
         if (strippedNew === strippedExisting) {
           noiseOnlyCount++;
           totalCount++;
