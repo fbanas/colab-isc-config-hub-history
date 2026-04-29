@@ -1,0 +1,104 @@
+{
+  "$comment": "Tokenizable field paths per ISC object type. Each entry is an array of JSON keys / array indices that form a path into the backup envelope. Edit this file to add or remove paths without touching source code. Custom scanners for complex nested structures (workflow steps, identity-profile transforms, lifecycle-state account-actions, SDIM managed-resources, SOD-policy creator pairing) are compiled into scripts/token-utils.mjs and are not configurable here.",
+
+  "typeAbbreviations": {
+    "ACCESS_PROFILE":          "AP",
+    "AUTH_ORG":                "AUTH",
+    "CONNECTOR_RULE":          "RULE",
+    "FORM_DEFINITION":         "FORM",
+    "GOVERNANCE_GROUP":        "GG",
+    "IDENTITY_OBJECT_CONFIG":  "IOC",
+    "IDENTITY_PROFILE":        "IP",
+    "LIFECYCLE_STATE":         "LC",
+    "NOTIFICATION_TEMPLATE":   "NT",
+    "PASSWORD_POLICY":         "PP",
+    "ROLE":                    "ROLE",
+    "SEGMENT":                 "SEG",
+    "SERVICE_DESK_INTEGRATION":"SDIM",
+    "SOD_POLICY":              "SOD",
+    "SOURCE":                  "SRC",
+    "TAG":                     "TAG",
+    "TRANSFORM":               "XFORM",
+    "TRIGGER_SUBSCRIPTION":    "TRIG",
+    "WORKFLOW":                "WF"
+  },
+
+  "tokenizablePaths": {
+    "SOURCE": [
+      ["object", "connectorAttributes", "spConnectorInstanceId"],
+      ["object", "connectorAttributes", "spConnectorSpecId"],
+      ["object", "connectorAttributes", "host"],
+      ["object", "connectorAttributes", "token"],
+      ["object", "connectorAttributes", "clientId"],
+      ["object", "connectorAttributes", "clientSecret"],
+      ["object", "connectorAttributes", "url"],
+      ["object", "connectorAttributes", "user"],
+      ["object", "connectorAttributes", "baseurl"],
+      ["object", "connectorAttributes", "username"],
+      ["object", "connectorAttributes", "password"],
+      ["object", "connectorAttributes", "sources"],
+      ["object", "owner", "id"]
+    ],
+
+    "SERVICE_DESK_INTEGRATION": [
+      ["object", "attributes", "url"],
+      ["object", "attributes", "tokenUrl"],
+      ["object", "attributes", "username"],
+      ["object", "attributes", "requesterSource"],
+      ["object", "clusterRef", "id"],
+      ["object", "ownerRef", "id"],
+      ["object", "beforeProvisioningRule", "id"]
+    ],
+
+    "AUTH_ORG": [
+      ["object", "orgConfig", "domain"],
+      ["object", "tenant"],
+      ["object", "serviceProviderConfig", "federationProtocolDetails", 0, "alias"],
+      ["object", "serviceProviderConfig", "federationProtocolDetails", 0, "callbackUrl"],
+      ["object", "serviceProviderConfig", "federationProtocolDetails", 0, "entityId"]
+    ],
+
+    "IDENTITY_PROFILE": [
+      ["object", "authoritativeSource", "id"],
+      ["object", "owner", "id"]
+    ],
+
+    "LIFECYCLE_STATE": [
+      ["object", "identityProfileRef", "id"]
+    ],
+
+    "ACCESS_PROFILE": [
+      ["object", "owner", "id"],
+      ["object", "source", "id"]
+    ],
+
+    "ROLE": [
+      ["object", "owner", "id"]
+    ],
+
+    "GOVERNANCE_GROUP": [
+      ["object", "owner", "id"]
+    ],
+
+    "SEGMENT": [
+      ["object", "owner", "id"]
+    ],
+
+    "SOD_POLICY": [
+      ["object", "externalPolicyReference"],
+      ["object", "ownerRef", "id"]
+    ],
+
+    "WORKFLOW": [
+      ["object", "owner", "id"]
+    ],
+
+    "TRIGGER_SUBSCRIPTION": [
+      ["object", "workflowConfig", "workflowId"]
+    ],
+
+    "FORM_DEFINITION": [
+      ["object", "owner", "id"]
+    ]
+  }
+}
