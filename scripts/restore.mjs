@@ -1,5 +1,5 @@
 import { execSync, execFileSync } from "child_process";
-import { readFileSync, readdirSync, statSync } from "fs";
+import { readFileSync, readdirSync, statSync, existsSync } from "fs";
 import { join, basename } from "path";
 import {
   TENANT_URL,
@@ -9,6 +9,7 @@ import {
   getAccessToken,
 } from "./common.mjs";
 import { meaningfulBackupContentEqual } from "./compare-utils.mjs";
+import { applyTokens, parseVarsYaml } from "./token-utils.mjs";
 
 // ---------------------------------------------------------------------------
 // Parse arguments
@@ -20,6 +21,7 @@ function parseArgs() {
   let backupName = null;
   let fullRestore = false;
   let baseRef = null;
+  let varsRef = null;
 
   for (let i = 0; i < args.length; i++) {
     const a = args[i];
@@ -29,6 +31,8 @@ function parseArgs() {
       backupName = args[++i];
     } else if (a === "--base" && args[i + 1]) {
       baseRef = args[++i];
+    } else if (a === "--vars" && args[i + 1]) {
+      varsRef = args[++i];
     } else if (a === "--full") {
       fullRestore = true;
     } else if (!source) {
@@ -36,10 +40,10 @@ function parseArgs() {
     }
   }
 
-  return { source, sourceTenant, backupName, fullRestore, baseRef };
+  return { source, sourceTenant, backupName, fullRestore, baseRef, varsRef };
 }
 
-const { source, sourceTenant, backupName: customName, fullRestore, baseRef } =
+const { source, sourceTenant, backupName: customName, fullRestore, baseRef, varsRef } =
   parseArgs();
 
 if (!source) {
@@ -48,11 +52,14 @@ if (!source) {
   console.error("  <source>   A git ref (commit, tag, branch) or 'local' to read from disk");
   console.error("");
   console.error("Options:");
-  console.error("  --tenant <name>   Read backups from a different tenant folder");
+  console.error("  --tenant <name>   Read backups from a different tenant folder (or a template");
+  console.error("                    set under templates/ if backups/<name> does not exist)");
   console.error("                    (default: tenant from TENANT_URL in .env)");
   console.error("  --name <name>     Custom name for the backup in SailPoint");
   console.error("  --full            Upload the entire snapshot (skip semantic diff vs main)");
   console.error("  --base <ref>      Compare semantically to this git ref instead of main");
+  console.error("  --vars <tenant>   Apply token substitution using vars/<tenant>.vars.yaml");
+  console.error("                    before uploading (can also be a direct .yaml file path)");
   console.error("");
   console.error("By default, only objects whose meaningful content differs from the tip");
   console.error("of main are uploaded (same canonical compare as backup.mjs). Use --full");
@@ -76,12 +83,30 @@ if (!source) {
   console.error("");
   console.error("  # Full snapshot (no diff vs main)");
   console.error("  npm run restore -- abc1234 --full");
+  console.error("");
+  console.error("  # Restore a tokenized template set with production vars");
+  console.error("  npm run restore -- local --tenant default --vars production --full");
   process.exit(1);
 }
 
 const isLocal = source === "local";
 const resolvedTenant = sourceTenant || TENANT_NAME;
-const backupDir = join("backups", resolvedTenant);
+
+/**
+ * Resolve the local source directory for a tenant name.
+ * Prefers backups/<tenant>; falls back to templates/<tenant> when the backup
+ * folder does not exist on disk (only relevant for the 'local' source).
+ */
+function resolveBackupDir(tenant) {
+  const backupsPath = join("backups", tenant);
+  if (existsSync(backupsPath)) return backupsPath;
+  const templatesPath = join("templates", tenant);
+  if (existsSync(templatesPath)) return templatesPath;
+  // Return the canonical backups path; errors surface in readBackupFromDisk
+  return backupsPath;
+}
+
+const backupDir = resolveBackupDir(resolvedTenant);
 /** Git paths always use forward slashes (matches repo layout). */
 const backupRootPosix = `backups/${resolvedTenant}`;
 const backupName =
@@ -330,6 +355,36 @@ async function uploadBackup(objects, name) {
 }
 
 // ---------------------------------------------------------------------------
+// Vars loading
+// ---------------------------------------------------------------------------
+
+/**
+ * Load and parse a vars file. Accepts either:
+ *   - a direct file path (if it contains a path separator or ends with .yaml)
+ *   - a tenant name, resolved to vars/<tenant>.vars.yaml
+ */
+function loadVars(varsRef) {
+  let varsPath;
+  if (varsRef.includes("/") || varsRef.includes("\\") || varsRef.endsWith(".yaml")) {
+    varsPath = varsRef;
+  } else {
+    varsPath = join("vars", `${varsRef}.vars.yaml`);
+  }
+
+  if (!existsSync(varsPath)) {
+    throw new Error(
+      `Vars file not found: ${varsPath}\n` +
+        `Run "node scripts/tokenize.mjs find-tokens ${varsRef}" to generate it.`
+    );
+  }
+
+  const content = readFileSync(varsPath, "utf-8");
+  const vars = parseVarsYaml(content);
+  console.log(`Loaded vars from ${varsPath}  (${Object.keys(vars).length} token(s))`);
+  return vars;
+}
+
+// ---------------------------------------------------------------------------
 // Main
 // ---------------------------------------------------------------------------
 async function main() {
@@ -344,6 +399,9 @@ async function main() {
     console.log(
       `Bundle: semantic diff vs ${baseRef || "main (or origin/main/master)"}`
     );
+  }
+  if (varsRef) {
+    console.log(`Token substitution: --vars ${varsRef}`);
   }
   if (resolvedTenant !== TENANT_NAME) {
     console.log(`Cross-tenant restore: ${resolvedTenant} → ${TENANT_NAME}`);
@@ -379,6 +437,32 @@ async function main() {
   if (objects.length === 0) {
     console.log("\nNo semantic changes vs base branch — nothing to upload.");
     return;
+  }
+
+  // Apply token substitution when --vars is provided
+  if (varsRef) {
+    const vars = loadVars(varsRef);
+    console.log(`Applying token substitution to ${objects.length} object(s)...`);
+    let substituteErrors = 0;
+    objects = objects.map((obj) => {
+      try {
+        return { ...obj, content: applyTokens(obj.content, vars) };
+      } catch (err) {
+        console.error(
+          `  Error substituting tokens in ${obj.objectType}/${obj.objectId}: ${err.message}`
+        );
+        substituteErrors++;
+        return obj;
+      }
+    });
+    if (substituteErrors > 0) {
+      throw new Error(
+        `Token substitution failed for ${substituteErrors} object(s). ` +
+          `Ensure all required tokens are present in the vars file.`
+      );
+    }
+    console.log("Token substitution complete.");
+    console.log();
   }
 
   await authenticate();

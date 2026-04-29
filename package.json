@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "backup": "node --env-file=.env scripts/backup.mjs",
-    "restore": "node --env-file=.env scripts/restore.mjs"
+    "restore": "node --env-file=.env scripts/restore.mjs",
+    "tokenize": "node scripts/tokenize.mjs"
   }
 }
