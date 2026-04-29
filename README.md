@@ -219,11 +219,16 @@ Pass `--vars <tenant>` to `restore.mjs` to apply a vars file before uploading:
 
 ```bash
 # Restore the default template set to the current tenant using production vars
-npm run restore -- local --tenant default --vars production --full
+node --env-file=.env scripts/restore.mjs local --tenant default --vars production --full
 
 # Restore a standard backup with vars substituted (e.g. cross-env promotion)
-npm run restore -- local --tenant beta-15156 --vars production
+node --env-file=.env scripts/restore.mjs local --tenant beta-15156 --vars production
 ```
+
+> **Windows / PowerShell note:** Use `node --env-file=.env scripts/restore.mjs` directly
+> instead of `npm run restore --` when passing `--tenant`, `--vars`, `--base`, or `--name`
+> flags. npm on Windows silently strips unknown `--flag` arguments even after the `--`
+> separator, so the flags never reach the script.
 
 When `--tenant` names a directory that does not exist under `backups/`, restore
 automatically looks in `templates/<name>/` instead.
@@ -242,7 +247,8 @@ node scripts/tokenize.mjs find-tokens production --template default
 # 4. Manually fill any unmatched tokens in vars/production.vars.yaml
 
 # 5. Restore the template to production with its vars
-npm run restore -- local --tenant default --vars production --full
+#    (use node directly on Windows — npm strips --flag args on PowerShell)
+node --env-file=.env scripts/restore.mjs local --tenant default --vars production --full
 ```
 
 ### Customising Tokenizable Paths

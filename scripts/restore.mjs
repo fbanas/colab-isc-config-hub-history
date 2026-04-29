@@ -1,4 +1,4 @@
-import { execSync, execFileSync } from "child_process";
+import { execFileSync } from "child_process";
 import { readFileSync, readdirSync, statSync, existsSync } from "fs";
 import { join, basename } from "path";
 import {
@@ -156,26 +156,64 @@ function gitRevParse(ref, extraArgs = []) {
   }).trim();
 }
 
-function gitShowFileAtRef(ref, posixPath) {
+/**
+ * Read multiple files from a git ref in one batch using `git cat-file --batch`
+ * (a single subprocess) instead of one `git show` call per file.
+ * Returns a Map<posixPath, string content> for files that exist at the ref.
+ */
+function readGitFilesAtRef(ref, posixPaths) {
+  if (posixPaths.length === 0) return new Map();
+
+  const queries = posixPaths.map((p) => `${ref}:${p}`).join("\n");
+  let batchOutput;
   try {
-    return execFileSync("git", ["show", `${ref}:${posixPath}`], {
-      encoding: "utf-8",
-      maxBuffer: 1024 * 1024 * 100,
+    batchOutput = execFileSync("git", ["cat-file", "--batch"], {
+      input: queries,
+      maxBuffer: 200 * 1024 * 1024,
     });
   } catch {
-    return null;
+    return new Map();
   }
+
+  const map = new Map();
+  let pos = 0;
+  for (const filePath of posixPaths) {
+    const headerEnd = batchOutput.indexOf(0x0a, pos);
+    if (headerEnd === -1) break;
+    const header = batchOutput.slice(pos, headerEnd).toString();
+    pos = headerEnd + 1;
+
+    if (header.includes(" missing")) continue;
+
+    const headerParts = header.split(" ");
+    const size = parseInt(headerParts[2], 10);
+    if (isNaN(size)) continue;
+
+    map.set(filePath, batchOutput.slice(pos, pos + size).toString("utf-8"));
+    pos += size + 1; // skip trailing \n
+  }
+
+  return map;
 }
 
 function filterToSemanticDiffFromBase(objects, comparisonBase, tenantFolderName) {
+  const posixPaths = objects.map(
+    (obj) => `backups/${tenantFolderName}/${obj.objectType}/${obj.objectId}.json`
+  );
+
+  console.log(
+    `  Loading ${posixPaths.length} baseline file(s) from ${comparisonBase} in batch...`
+  );
+  const baselineMap = readGitFilesAtRef(comparisonBase, posixPaths);
+
   let nUnchanged = 0;
   let nMissingOnBase = 0;
   const changed = [];
 
   for (const obj of objects) {
     const posixPath = `backups/${tenantFolderName}/${obj.objectType}/${obj.objectId}.json`;
-    const baselineRaw = gitShowFileAtRef(comparisonBase, posixPath);
-    if (baselineRaw === null) {
+    const baselineRaw = baselineMap.get(posixPath);
+    if (baselineRaw === undefined) {
       nMissingOnBase++;
       changed.push(obj);
       continue;
@@ -254,9 +292,10 @@ function readBackupFromGit(ref) {
 
   let fileList;
   try {
-    fileList = execSync(
-      `git ls-tree -r --name-only "${ref}" -- "${backupRootPosix}"`,
-      { encoding: "utf-8" }
+    fileList = execFileSync(
+      "git",
+      ["ls-tree", "-r", "--name-only", ref, "--", backupRootPosix],
+      { encoding: "utf-8", maxBuffer: 10 * 1024 * 1024 }
     ).trim();
   } catch (err) {
     throw new Error(
@@ -273,6 +312,9 @@ function readBackupFromGit(ref) {
   const files = fileList.split("\n").filter((f) => f.endsWith(".json"));
   console.log(`  Found ${files.length} object files`);
 
+  console.log(`  Reading ${files.length} files in batch...`);
+  const contentMap = readGitFilesAtRef(ref, files);
+
   const objects = [];
 
   for (const filePath of files) {
@@ -280,9 +322,11 @@ function readBackupFromGit(ref) {
     const objectType = parts[parts.length - 2];
     const objectId = basename(filePath, ".json");
 
-    const content = execSync(`git show "${ref}:${filePath}"`, {
-      encoding: "utf-8",
-    });
+    const content = contentMap.get(filePath);
+    if (content === undefined) {
+      console.warn(`  Warning: Could not read ${filePath}, skipping`);
+      continue;
+    }
 
     let parsed;
     try {
@@ -420,26 +464,8 @@ async function main() {
   console.log(`Restore snapshot: ${objects.length} object file(s)`);
   printSummary(objects);
 
-  if (!fullRestore) {
-    ensureGitRepo();
-    const comparisonBase = resolveComparisonBase(baseRef);
-    objects = filterToSemanticDiffFromBase(
-      objects,
-      comparisonBase,
-      resolvedTenant
-    );
-    if (objects.length > 0) {
-      console.log("Objects to upload (after filter):");
-      printSummary(objects);
-    }
-  }
-
-  if (objects.length === 0) {
-    console.log("\nNo semantic changes vs base branch — nothing to upload.");
-    return;
-  }
-
-  // Apply token substitution when --vars is provided
+  // Apply token substitution BEFORE the semantic diff so that we compare
+  // resolved values against the baseline, not raw {{TOKEN}} placeholders.
   if (varsRef) {
     const vars = loadVars(varsRef);
     console.log(`Applying token substitution to ${objects.length} object(s)...`);
@@ -463,6 +489,31 @@ async function main() {
     }
     console.log("Token substitution complete.");
     console.log();
+  }
+
+  if (!fullRestore) {
+    ensureGitRepo();
+    const comparisonBase = resolveComparisonBase(baseRef);
+    // For cross-tenant restores (source folder ≠ target tenant) compare against
+    // the *target* tenant's backup on the base branch — that is the current
+    // state of the environment we are restoring into.  Comparing against the
+    // source template folder would find nothing (it does not exist under
+    // backups/) and force every object to be uploaded unnecessarily.
+    const diffTenant = resolvedTenant !== TENANT_NAME ? TENANT_NAME : resolvedTenant;
+    objects = filterToSemanticDiffFromBase(
+      objects,
+      comparisonBase,
+      diffTenant
+    );
+    if (objects.length > 0) {
+      console.log("Objects to upload (after filter):");
+      printSummary(objects);
+    }
+  }
+
+  if (objects.length === 0) {
+    console.log("\nNo semantic changes vs base branch — nothing to upload.");
+    return;
   }
 
   await authenticate();
