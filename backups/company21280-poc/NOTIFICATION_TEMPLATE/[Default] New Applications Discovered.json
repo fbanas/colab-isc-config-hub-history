@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "Dear $__recipient.name,<br/><br/>\n<p>$AppCount new applications were discovered from the $DiscoverySourceName source.</p><table><tr><th>Application</th><th>Discovery Source</th><th>Discovery Source Type</th></tr>#foreach($app in $AppNames)<tr><td>$app</td><td style='text-align: center;'>$DiscoverySourceName</td><td style='text-align: center;'>$DiscoverySource</td></tr>#end</table><p>View the <a href='${__global.productUrl}${DeepLinkSuffix}'>discovered applications</a>.</p>\nThanks,<br/>The $__global.productName Team<br/>",
+    "created": null,
+    "description": "Notify source owners that new applications have been discovered from a discovery source.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] New Applications Discovered",
+    "key": "new_applications_discovered_notification",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "New Applications Discovered",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "$AppCount new applications discovered from $DiscoverySourceName",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] New Applications Discovered",
+    "name": "New Applications Discovered",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

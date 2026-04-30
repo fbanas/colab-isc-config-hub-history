@@ -1,0 +1,40 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessActionConfiguration": {
+      "removeAllAccessEnabled": false
+    },
+    "accessProfileIds": [],
+    "accessProfileRefs": null,
+    "accountActionRefs": [],
+    "accountActions": [],
+    "created": "2026-03-27T15:30:36.909Z",
+    "description": null,
+    "emailNotificationOption": {
+      "emailAddressList": [],
+      "notifyAllAdmins": false,
+      "notifyManagers": false,
+      "notifySpecificUsers": false
+    },
+    "enabled": true,
+    "id": "e05760d5f73143d8b4c53ff092a2fe98",
+    "identityCount": 0,
+    "identityProfileRef": {
+      "id": "54a113a425844337b68975523209468f",
+      "name": "Identity Fusion NG",
+      "type": "IDENTITY_PROFILE"
+    },
+    "identityState": "INACTIVE_SHORT_TERM",
+    "modified": "2026-03-27T15:31:28.028Z",
+    "name": "Incomplete",
+    "priority": 90,
+    "technicalName": "incomplete"
+  },
+  "self": {
+    "id": "e05760d5f73143d8b4c53ff092a2fe98",
+    "name": "Incomplete",
+    "type": "LIFECYCLE_STATE"
+  },
+  "version": 1
+}

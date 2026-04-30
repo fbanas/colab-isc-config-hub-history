@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "\tDear $emailRecipientName,<br/>    <p>        #if($emailRecipientName == $requesterName) Your #else The #end pending request of the following item(s)        #if($isRobo) for #if($emailRecipientName == $requestedForName) you #else $requestedForName #end #end has been cancelled        #if($cancelerName != $emailRecipientName) by $cancelerName #end    </p>\t#foreach ( $type in ${requestedObjectDetailsByType.keySet()} )        $type:            <ul>            #foreach ( $detail in ${requestedObjectDetailsByType.get($type)} )                <li> ${detail.name} #if($detail.startDate) (Access Start Date: ${detail.startDate}) #end #if($detail.removeDate) (Access End Date: ${detail.removeDate}) #end</li>            #end            </ul>            <br/>    #end    #if($emailRecipientName == $cancelerName) You #else $cancelerName #end gave the following reason for cancelling the request: <b>$cancelComment</b></p>    #if($emailRecipientName != $cancelerName)        <p>Please contact ${cancelerName} if you have any questions.</p>    #end\t<p>\t\tThanks,<br/>\t\tThe ${PRODUCT_NAME} Team\t</p>",
+    "created": null,
+    "description": "Sent to users when a pending access request is canceled before it has been approved and provisioned.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Access Request Cancelled",
+    "key": "pending_access_request_cancelled",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Access Request Cancelled",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "Pending Access Request has been cancelled",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Access Request Cancelled",
+    "name": "Access Request Cancelled",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

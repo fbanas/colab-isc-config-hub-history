@@ -1,0 +1,104 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessProfiles": [],
+    "accessRequestConfig": {
+      "approvalSchemes": [
+        {
+          "approverId": null,
+          "approverType": "OWNER"
+        }
+      ],
+      "commentsRequired": false,
+      "denialCommentsRequired": false,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-04-10T07:31:20.312683Z",
+    "description": null,
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": true,
+    "entitlements": [
+      {
+        "id": "6f7f3a1b-5c7a-3173-8206-549a16aab970",
+        "name": "Network Systems Administrator",
+        "sourceId": "9ef01d3f-3553-489a-98df-33bcb25345d8",
+        "sourceName": "Active Directory - Admins",
+        "type": "ENTITLEMENT"
+      }
+    ],
+    "id": "481291c2e47b4daaa52ea432f4014a00",
+    "legacyMembershipInfo": null,
+    "membership": {
+      "criteria": {
+        "children": [
+          {
+            "children": [
+              {
+                "children": null,
+                "key": {
+                  "property": "attribute.cloudLifecycleState",
+                  "sourceId": null,
+                  "type": "IDENTITY"
+                },
+                "operation": "EQUALS",
+                "stringValue": null,
+                "values": [
+                  "active"
+                ]
+              },
+              {
+                "children": null,
+                "key": {
+                  "property": "attribute.jobTitle",
+                  "sourceId": null,
+                  "type": "IDENTITY"
+                },
+                "operation": "EQUALS",
+                "stringValue": null,
+                "values": [
+                  "Network Systems Administrator"
+                ]
+              }
+            ],
+            "key": null,
+            "operation": "AND",
+            "stringValue": null,
+            "values": null
+          }
+        ],
+        "key": null,
+        "operation": "OR",
+        "stringValue": null,
+        "values": null
+      },
+      "identities": null,
+      "type": "STANDARD"
+    },
+    "modified": "2026-04-10T07:31:20.312683Z",
+    "name": "Network Systems Administrator",
+    "owner": {
+      "id": "176a5fc85208460383b2253765f4a137",
+      "name": "SailPoint Services",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": true,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [],
+    "segments": []
+  },
+  "self": {
+    "id": "481291c2e47b4daaa52ea432f4014a00",
+    "name": "Network Systems Administrator",
+    "type": "ROLE"
+  },
+  "version": 1
+}

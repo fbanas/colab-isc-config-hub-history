@@ -1,0 +1,29 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "attributes": {
+      "input": {
+        "attributes": {
+          "delimiter": "-",
+          "index": 0
+        },
+        "type": "split"
+      },
+      "table": {
+        "RPA": "RPA App",
+        "default": ""
+      }
+    },
+    "id": "b53014a2-f50b-4e43-b21a-32d5d7367db4",
+    "internal": false,
+    "name": "Machine Identity",
+    "type": "lookup"
+  },
+  "self": {
+    "id": "b53014a2-f50b-4e43-b21a-32d5d7367db4",
+    "name": "Machine Identity",
+    "type": "TRANSFORM"
+  },
+  "version": 1
+}

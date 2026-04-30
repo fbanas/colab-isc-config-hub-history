@@ -1,0 +1,29 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "attributes": {
+      "sourceVersion": "2021-06-03 12:07:33"
+    },
+    "created": "2026-03-11T11:16:53.666Z",
+    "description": null,
+    "id": "aac6d659db304e8cb330aa87597cd9db",
+    "modified": "2026-03-11T11:16:53.666Z",
+    "name": "PrismProvisioning Rule Adapter",
+    "signature": {
+      "input": [],
+      "output": null
+    },
+    "sourceCode": {
+      "script": "\nimport sailpoint.services.PRISMProvisioning;\n\n\nreturn PRISMProvisioning.provision( application, connection, plan );\n\n",
+      "version": "2021-06-03 12:07:33"
+    },
+    "type": "JDBCProvision"
+  },
+  "self": {
+    "id": "aac6d659db304e8cb330aa87597cd9db",
+    "name": "PrismProvisioning Rule Adapter",
+    "type": "CONNECTOR_RULE"
+  },
+  "version": 1
+}

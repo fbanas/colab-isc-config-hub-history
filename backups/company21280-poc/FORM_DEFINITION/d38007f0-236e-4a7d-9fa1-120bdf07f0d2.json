@@ -1,0 +1,120 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": "2026-04-14T08:05:15.045613253Z",
+    "description": "",
+    "formConditions": [],
+    "formElements": [
+      {
+        "config": {
+          "alignment": "LEFT",
+          "description": "",
+          "formElements": [
+            {
+              "config": {
+                "dataSource": {
+                  "config": {
+                    "formInputId": "sources",
+                    "sortBy": "ASC"
+                  },
+                  "dataSourceType": "FORM_INPUT"
+                },
+                "forceSelect": true,
+                "helpText": "Please select 1 Application from the provided list",
+                "label": "Select the Application",
+                "maximum": 1,
+                "placeholder": "",
+                "required": true
+              },
+              "elementType": "SELECT",
+              "id": "600956402681",
+              "key": "selectedApplication",
+              "validations": [
+                {
+                  "validationType": "DATA_SOURCE"
+                },
+                {
+                  "validationType": "REQUIRED"
+                }
+              ]
+            },
+            {
+              "config": {
+                "default": "",
+                "description": "",
+                "helpText": "",
+                "label": "Justification",
+                "placeholder": "",
+                "required": false,
+                "resize": false,
+                "rows": 3
+              },
+              "elementType": "TEXTAREA",
+              "id": "171179494701",
+              "key": "justification",
+              "validations": []
+            },
+            {
+              "config": {
+                "description": "<p><strong>Welcome <span style=\"color: #236fa1;\">{{$.form.input.username}}</span> !!</strong></p>\n<p>You have selected to initiate the process to retire an existing Application.</p>\n<p>This is a task that is audited and will remove any access, account and metadata associated with the selected Application.</p>",
+                "label": "Description Field",
+                "showLabel": false
+              },
+              "elementType": "DESCRIPTION",
+              "id": "1676571913503",
+              "key": "",
+              "validations": []
+            }
+          ],
+          "label": "Application Removal Process",
+          "labelStyle": "h2",
+          "showLabel": true
+        },
+        "elementType": "SECTION",
+        "id": "1095710697637",
+        "validations": []
+      }
+    ],
+    "formInput": [
+      {
+        "description": "",
+        "id": "sources",
+        "label": "sources",
+        "type": "ARRAY"
+      },
+      {
+        "description": "",
+        "id": "username",
+        "label": "username",
+        "type": "STRING"
+      }
+    ],
+    "id": "d38007f0-236e-4a7d-9fa1-120bdf07f0d2",
+    "modified": "2026-04-14T16:57:24.753032231Z",
+    "name": "Application Removal",
+    "owner": {
+      "id": "8939a7e19a4b43eabd3c6c2808c6b9b2",
+      "name": "luca.lori",
+      "type": "IDENTITY"
+    },
+    "usedBy": [
+      {
+        "id": "ba32b725-5ec5-45fe-8d14-6fa41881c7c9",
+        "name": "Copy of Application Removal",
+        "type": "WORKFLOW"
+      },
+      {
+        "id": "df531694-5369-4def-88fa-7deeaeb9b978",
+        "name": "Application Removal",
+        "type": "WORKFLOW"
+      }
+    ]
+  },
+  "self": {
+    "id": "d38007f0-236e-4a7d-9fa1-120bdf07f0d2",
+    "name": "Application Removal",
+    "type": "FORM_DEFINITION"
+  },
+  "version": 1
+}

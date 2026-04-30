@@ -1,0 +1,20 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "id": "270c400e-1053-40d7-8294-76b3740082bf",
+    "name": "Amadeus LLS",
+    "passwordPolicy": {
+      "id": "0c488fcbb6964d008e1363a96a58a860",
+      "name": "Amadeus LSS Password Policy",
+      "type": "PASSWORD_POLICY"
+    },
+    "sources": []
+  },
+  "self": {
+    "id": "270c400e-1053-40d7-8294-76b3740082bf",
+    "name": "Amadeus LLS",
+    "type": "PASSWORD_SYNC_GROUP"
+  },
+  "version": 1
+}

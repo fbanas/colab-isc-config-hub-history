@@ -1,0 +1,20 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "id": "74cf840b-4a38-4db8-8bbc-a0882a088810",
+    "name": "Timekeeper",
+    "passwordPolicy": {
+      "id": "e809392f83f249319b4b013fda6dd332",
+      "name": "TRAKK WS Password Policy",
+      "type": "PASSWORD_POLICY"
+    },
+    "sources": []
+  },
+  "self": {
+    "id": "74cf840b-4a38-4db8-8bbc-a0882a088810",
+    "name": "Timekeeper",
+    "type": "PASSWORD_SYNC_GROUP"
+  },
+  "version": 1
+}

@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "<p>Dear ${user.name},</p>#if (${attempts.size()} > 0)<p>Your ${PRODUCT_NAME} account has been locked due to the following failed attempts to sign in:<br/><br/>#foreach ($attempt in ${attempts})${attempt.count} attempts from ${attempt.location}<br/></p>#end#else<p>Your ${PRODUCT_NAME} account has been locked due a number of failed attempts to sign in.</p>#end<p>It was locked on ${timeLocked} and will remain locked until ${timeLockedUntil}.</p>#if (${passwordResetUrl})\n<p>To reset your password if you've forgotten it, go to ${passwordResetUrl}.</p>\n#end<p>If you think someone else was trying to use your account, please contact your administrator immediately.</p><p> Thanks,<br/> The ${PRODUCT_NAME} Team </p>",
+    "created": null,
+    "description": "Notifies a user that their account has been locked out due to too many failed sign in attempts.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] User Locked Out",
+    "key": "cloud_user_locked_out",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "User Locked Out",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "ATTENTION: Your ${PRODUCT_NAME} account has been locked",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] User Locked Out",
+    "name": "User Locked Out",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

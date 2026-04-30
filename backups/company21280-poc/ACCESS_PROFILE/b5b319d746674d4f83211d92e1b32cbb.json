@@ -1,0 +1,61 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessRequestConfig": {
+      "approvalSchemes": [
+        {
+          "approverId": null,
+          "approverType": "OWNER"
+        }
+      ],
+      "commentsRequired": false,
+      "denialCommentsRequired": false,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-03-31T06:31:42.939775Z",
+    "description": "Contains permissions for\nindividuals needing to conduct receivable\nfunctions within the ERP and corporate portal",
+    "enabled": true,
+    "entitlements": [
+      {
+        "id": "4483c203f7ac3e8e862726f1e4c17b79",
+        "name": "AccountsReceivable",
+        "type": "ENTITLEMENT"
+      },
+      {
+        "id": "e53a233b2084332aa322a8bf98358511",
+        "name": "AccountingGeneral",
+        "type": "ENTITLEMENT"
+      }
+    ],
+    "id": "b5b319d746674d4f83211d92e1b32cbb",
+    "modified": "2026-03-31T06:34:24.436371Z",
+    "name": "Active Directory - Accounts Receivable",
+    "owner": {
+      "id": "f99c089822c142abbcb84a93890d8416",
+      "name": "florian.banas1",
+      "type": "IDENTITY"
+    },
+    "provisioningCriteria": null,
+    "requestable": true,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [],
+    "segments": [],
+    "source": {
+      "id": "8779703397444628aa740c2d5fdaf0c9",
+      "name": "Active Directory",
+      "type": "SOURCE"
+    }
+  },
+  "self": {
+    "id": "b5b319d746674d4f83211d92e1b32cbb",
+    "name": "Active Directory - Accounts Receivable",
+    "type": "ACCESS_PROFILE"
+  },
+  "version": 1
+}

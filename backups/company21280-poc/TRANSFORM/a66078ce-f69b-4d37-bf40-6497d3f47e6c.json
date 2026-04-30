@@ -1,0 +1,45 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "attributes": {
+      "ignoreErrors": true,
+      "values": [
+        "-",
+        {
+          "attributes": {
+            "input": {
+              "attributes": {
+                "attributeName": "department",
+                "sourceName": "Identity Fusion NG"
+              },
+              "type": "accountAttribute"
+            },
+            "table": {
+              "LH1-FI": "KST-0001",
+              "LH1-SA": "KST-0002",
+              "LH2-FO": "KST-0003",
+              "LH2-IT": "KST-0004",
+              "LH3-IT": "KST-0005",
+              "default": "-"
+            }
+          },
+          "type": "lookup"
+        },
+        {
+          "type": "trim"
+        }
+      ]
+    },
+    "id": "a66078ce-f69b-4d37-bf40-6497d3f47e6c",
+    "internal": false,
+    "name": "Cost Center",
+    "type": "firstValid"
+  },
+  "self": {
+    "id": "a66078ce-f69b-4d37-bf40-6497d3f47e6c",
+    "name": "Cost Center",
+    "type": "TRANSFORM"
+  },
+  "version": 1
+}

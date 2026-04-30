@@ -1,0 +1,173 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": "2026-04-14T14:20:32.976686138Z",
+    "description": "",
+    "formConditions": [
+      {
+        "effects": [
+          {
+            "config": {
+              "defaultValueLabel": "appDescription",
+              "element": "1413159729376"
+            },
+            "effectType": "SET_DEFAULT_VALUE"
+          },
+          {
+            "config": {
+              "element": "1413159729376"
+            },
+            "effectType": "DISABLE"
+          }
+        ],
+        "ruleOperator": "AND",
+        "rules": [
+          {
+            "operator": "NOT_EM",
+            "source": "appDescription",
+            "sourceType": "INPUT",
+            "value": "",
+            "valueType": "STRING"
+          }
+        ]
+      },
+      {
+        "effects": [
+          {
+            "config": {
+              "defaultValueLabel": "appOwner",
+              "element": "193138458926"
+            },
+            "effectType": "SET_DEFAULT_VALUE"
+          },
+          {
+            "config": {
+              "element": "193138458926"
+            },
+            "effectType": "DISABLE"
+          }
+        ],
+        "ruleOperator": "AND",
+        "rules": [
+          {
+            "operator": "NOT_EM",
+            "source": "appOwner",
+            "sourceType": "INPUT",
+            "value": "",
+            "valueType": "STRING"
+          }
+        ]
+      }
+    ],
+    "formElements": [
+      {
+        "config": {
+          "alignment": "LEFT",
+          "description": "",
+          "formElements": [
+            {
+              "config": {
+                "default": "",
+                "description": "",
+                "helpText": "",
+                "label": "Application Description",
+                "placeholder": "",
+                "required": false,
+                "resize": false,
+                "rows": 2
+              },
+              "elementType": "TEXTAREA",
+              "id": "1413159729376",
+              "key": "applicationDescription",
+              "validations": []
+            },
+            {
+              "config": {
+                "default": "",
+                "description": "",
+                "helpText": "",
+                "label": "Application Owner",
+                "placeholder": "",
+                "required": false
+              },
+              "elementType": "TEXT",
+              "id": "193138458926",
+              "key": "applicationOwner",
+              "validations": []
+            },
+            {
+              "config": {
+                "description": "<p>Following are the details of the selected Application:</p>",
+                "label": "Description Field",
+                "showLabel": false
+              },
+              "elementType": "DESCRIPTION",
+              "id": "1643313532240",
+              "key": "",
+              "validations": []
+            },
+            {
+              "config": {
+                "description": "<p>If this is correct and you wish to proceed with the removal process, please press <span style=\"color: #236fa1;\"><strong>Submit</strong></span>.</p>\n<p>If you wish to abandon please press <span style=\"color: #236fa1;\"><strong>Cancel</strong></span>.</p>",
+                "label": "Description Field",
+                "showLabel": false
+              },
+              "elementType": "DESCRIPTION",
+              "id": "888319474497",
+              "key": "",
+              "validations": []
+            }
+          ],
+          "label": "{{$.form.input.selectedApplication}}",
+          "labelStyle": "h2",
+          "showLabel": true
+        },
+        "elementType": "SECTION",
+        "id": "1554886841686",
+        "validations": []
+      }
+    ],
+    "formInput": [
+      {
+        "description": "",
+        "id": "appDescription",
+        "label": "appDescription",
+        "type": "STRING"
+      },
+      {
+        "description": "",
+        "id": "appOwner",
+        "label": "appOwner",
+        "type": "STRING"
+      },
+      {
+        "description": "",
+        "id": "selectedApplication",
+        "label": "selectedApplication",
+        "type": "STRING"
+      }
+    ],
+    "id": "429ed6f6-cf6f-4772-b14d-82bc0111d7e9",
+    "modified": "2026-04-14T17:01:22.456439738Z",
+    "name": "Application Removal Details",
+    "owner": {
+      "id": "8939a7e19a4b43eabd3c6c2808c6b9b2",
+      "name": "luca.lori",
+      "type": "IDENTITY"
+    },
+    "usedBy": [
+      {
+        "id": "ba32b725-5ec5-45fe-8d14-6fa41881c7c9",
+        "name": "Copy of Application Removal",
+        "type": "WORKFLOW"
+      }
+    ]
+  },
+  "self": {
+    "id": "429ed6f6-cf6f-4772-b14d-82bc0111d7e9",
+    "name": "Application Removal Details",
+    "type": "FORM_DEFINITION"
+  },
+  "version": 1
+}

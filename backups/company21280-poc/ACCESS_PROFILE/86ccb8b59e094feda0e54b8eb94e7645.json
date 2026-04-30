@@ -1,0 +1,70 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessRequestConfig": {
+      "approvalSchemes": [
+        {
+          "approverId": null,
+          "approverType": "MANAGER"
+        },
+        {
+          "approverId": null,
+          "approverType": "SOURCE_OWNER"
+        }
+      ],
+      "commentsRequired": false,
+      "denialCommentsRequired": false,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-04-09T13:24:38.512377Z",
+    "description": null,
+    "enabled": true,
+    "entitlements": [
+      {
+        "id": "14f1afe42d92373a8a146f3dc6112cc6",
+        "name": "reject",
+        "type": "ENTITLEMENT"
+      },
+      {
+        "id": "3aba2f85ce5f34adb5c4c501300a142f",
+        "name": "input",
+        "type": "ENTITLEMENT"
+      },
+      {
+        "id": "91b5e90a6a7439799e800397c386baf0",
+        "name": "report",
+        "type": "ENTITLEMENT"
+      }
+    ],
+    "id": "86ccb8b59e094feda0e54b8eb94e7645",
+    "modified": "2026-04-10T12:18:58.255266Z",
+    "name": "Timekeeper Admin",
+    "owner": {
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
+      "type": "IDENTITY"
+    },
+    "provisioningCriteria": null,
+    "requestable": true,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [],
+    "segments": [],
+    "source": {
+      "id": "a42923b40db7453c96bb58b7ad669584",
+      "name": "Time Keeping",
+      "type": "SOURCE"
+    }
+  },
+  "self": {
+    "id": "86ccb8b59e094feda0e54b8eb94e7645",
+    "name": "Timekeeper Admin",
+    "type": "ACCESS_PROFILE"
+  },
+  "version": 1
+}

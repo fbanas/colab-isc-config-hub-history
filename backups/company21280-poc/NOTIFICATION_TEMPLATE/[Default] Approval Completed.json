@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "<p>Dear ${__recipient.name},</p> <p>An approval request for $approvalName that was submitted #if($requestee.name && $requestee.name != '' && $requestee.identityID  == $__recipient.id) on your behalf by $requester.name #else by you #end has been $approvalStatus.toLowerCase().</p>  <p>To take action on or view the status of your approval requests, please go to: $__global.productUrl/ui/d/$requesterPath.</p><br/>Thank you,<br/> The ${__global.productName} Team<br/>",
+    "created": null,
+    "description": "Send a notification to a requester indicating they have an approval request that has been completed.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Approval Completed",
+    "key": "approval_completed_notification",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Approval Completed",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "An Approval Request For $approvalName Has Been $approvalStatus",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Approval Completed",
+    "name": "Approval Completed",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

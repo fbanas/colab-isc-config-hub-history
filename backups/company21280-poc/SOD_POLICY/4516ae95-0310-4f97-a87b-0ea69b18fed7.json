@@ -1,0 +1,42 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "compensatingControls": null,
+    "conflictingAccessCriteria": null,
+    "correctionAdvice": null,
+    "created": "2026-03-26T13:36:25Z",
+    "creatorId": "90eb8204ac594f48ac598a55e0e73613",
+    "creatorRef": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "description": null,
+    "externalPolicyReference": null,
+    "id": "4516ae95-0310-4f97-a87b-0ea69b18fed7",
+    "modified": "2026-03-26T13:36:25Z",
+    "modifierId": null,
+    "name": "No Department Policy",
+    "ownerRef": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "policyQuery": "attributes.department.exact:/-/ OR NOT _exists_:attributes.department",
+    "scheduled": false,
+    "state": "ENFORCED",
+    "tags": [],
+    "type": "GENERAL",
+    "violationOwnerAssignmentConfig": {
+      "assignmentRule": null,
+      "ownerRef": null
+    }
+  },
+  "self": {
+    "id": "4516ae95-0310-4f97-a87b-0ea69b18fed7",
+    "name": "No Department Policy",
+    "type": "SOD_POLICY"
+  },
+  "version": 1
+}

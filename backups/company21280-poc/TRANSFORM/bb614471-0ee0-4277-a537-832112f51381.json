@@ -1,0 +1,47 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "attributes": {
+      "ignoreErrors": true,
+      "values": [
+        {
+          "attributes": {
+            "id": "Parse Date",
+            "input": {
+              "attributes": {
+                "attributeName": "contractStartDate",
+                "sourceName": "HR - OrangeHRM"
+              },
+              "type": "accountAttribute"
+            }
+          },
+          "type": "reference"
+        },
+        {
+          "attributes": {
+            "id": "Parse Date",
+            "input": {
+              "attributes": {
+                "attributeName": "ftostart",
+                "sourceName": "HR - OrangeHRM"
+              },
+              "type": "accountAttribute"
+            }
+          },
+          "type": "reference"
+        }
+      ]
+    },
+    "id": "bb614471-0ee0-4277-a537-832112f51381",
+    "internal": false,
+    "name": "OHRM - Start Date",
+    "type": "firstValid"
+  },
+  "self": {
+    "id": "bb614471-0ee0-4277-a537-832112f51381",
+    "name": "OHRM - Start Date",
+    "type": "TRANSFORM"
+  },
+  "version": 1
+}

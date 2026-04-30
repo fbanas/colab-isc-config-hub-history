@@ -1,0 +1,54 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessProfiles": [],
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": false,
+      "denialCommentsRequired": false,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-03-18T13:31:35.407043Z",
+    "description": "Role for Server Admins from LH2 (LH2-Role-4)",
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": true,
+    "entitlements": [],
+    "id": "5964cb1eee2f4be4b0fddd63da59d6a5",
+    "legacyMembershipInfo": null,
+    "membership": null,
+    "modified": "2026-03-27T15:02:47.031744Z",
+    "name": "LH2_Server-Admin",
+    "owner": {
+      "id": "8452228aa5ef478bbf3c702bdea86cf8",
+      "name": "Hrnim Hussen van",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [
+      {
+        "id": "baf24241-1df7-47e0-8651-384fac91dcf6",
+        "name": "LH2-Lufthansa 2",
+        "type": "SEGMENT"
+      }
+    ],
+    "segments": [
+      "baf24241-1df7-47e0-8651-384fac91dcf6"
+    ]
+  },
+  "self": {
+    "id": "5964cb1eee2f4be4b0fddd63da59d6a5",
+    "name": "LH2_Server-Admin",
+    "type": "ROLE"
+  },
+  "version": 1
+}

@@ -1,0 +1,584 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accountCorrelationRule": null,
+    "beforeProvisioningRule": null,
+    "connectorAttributes": {
+      "account_type": "Profile",
+      "checkDeletedDisabled": false,
+      "cloudCacheUpdate": 1774939795792,
+      "cloudDisplayName": "NERM",
+      "connectionType": "direct",
+      "connectorName": "Non-Employee Risk Management+ (tag: latest)",
+      "deleteThresholdPercentage": 100,
+      "healthCheckTimeout": 30,
+      "healthy": true,
+      "idnProxyType": "sp-connect",
+      "isc_baseurl": "https://company21280-poc.api.identitynow-demo.com/",
+      "isc_clientId": "89c55633540a4e60ae4328288781080c",
+      "login_attribute": "login",
+      "nerm_admin": "fernando.delosrios",
+      "nerm_baseurl": "https://company21280-poc.mynonemployee.com/api",
+      "profile_name": "Assignment",
+      "push_mode": false,
+      "since": "2026-03-26T07:57:39.116Z",
+      "sourceConnected": true,
+      "spConnDebugLoggingEnabled": false,
+      "spConnectorInstanceId": "70a21f09-45c5-405b-b299-9c435ea23a94",
+      "spConnectorSpecId": "8d38ab3a-3a08-4679-914b-e3c36a687363",
+      "spConnectorSupportsCustomSchemas": true,
+      "status": "SOURCE_STATE_HEALTHY",
+      "templateApplication": "Non-Employee Risk Management+ (tag: latest)",
+      "workflows": [
+        {
+          "entitlement": "Create Assignment and Person",
+          "requester_id": "admin",
+          "workflow": "3ccb3312-0b9d-4610-a484-9a0b3d4e6b51"
+        }
+      ]
+    },
+    "connectorClass": "",
+    "connectorScriptName": "8d38ab3a-3a08-4679-914b-e3c36a687363",
+    "correlationConfigDetails": {
+      "attributeAssignments": null,
+      "id": null,
+      "name": null
+    },
+    "crossTenantConnectorAttributes": {},
+    "deleteThreshold": 100,
+    "description": "NERM",
+    "features": [
+      "DISCOVER_SCHEMA",
+      "ENABLE",
+      "PASSWORD",
+      "PROVISIONING"
+    ],
+    "id": "3ebcf9efb047494c9d20b91795ec3a42",
+    "managementWorkgroup": null,
+    "managerCorrelationMapping": null,
+    "managerCorrelationRule": null,
+    "name": "NERM",
+    "owner": {
+      "id": "176a5fc85208460383b2253765f4a137",
+      "name": "slpt.services",
+      "type": "IDENTITY"
+    },
+    "passwordPolicies": null,
+    "provisionAsCsv": false,
+    "provisioningPolicies": [
+      {
+        "description": "Create Policy Description",
+        "fields": [
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "assignment_organization",
+            "transform": {
+              "attributes": {
+                "attributeName": "COMPANY",
+                "sourceName": "External Feed"
+              },
+              "type": "accountAttribute"
+            },
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "email_address",
+            "transform": {
+              "attributes": {
+                "name": "email"
+              },
+              "type": "identityAttribute"
+            },
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "employee_type_dropdown",
+            "transform": {
+              "attributes": {
+                "attributeName": "businessUnit",
+                "sourceName": "Identity Fusion NG"
+              },
+              "type": "accountAttribute"
+            },
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "first_name",
+            "transform": {
+              "attributes": {
+                "name": "firstname"
+              },
+              "type": "identityAttribute"
+            },
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "job_title_dropdown",
+            "transform": {
+              "attributes": {
+                "attributeName": "position",
+                "sourceName": "Identity Fusion NG"
+              },
+              "type": "accountAttribute"
+            },
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "last_name",
+            "transform": {
+              "attributes": {
+                "name": "lastname"
+              },
+              "type": "identityAttribute"
+            },
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "population_assignment",
+            "transform": {
+              "attributes": {
+                "attributeName": "department",
+                "sourceName": "Identity Fusion NG"
+              },
+              "type": "accountAttribute"
+            },
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "sponsor_login",
+            "transform": {
+              "attributes": {
+                "value": "Amanda.Ross"
+              },
+              "type": "static"
+            },
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "sponsor_ne_attribute",
+            "transform": {
+              "attributes": {
+                "value": "1f6152ca-a585-42ea-abe2-2c59e939be4d"
+              },
+              "type": "static"
+            },
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "status",
+            "transform": {
+              "attributes": {
+                "value": "Active"
+              },
+              "type": "static"
+            },
+            "type": "string"
+          }
+        ],
+        "name": "Account",
+        "usageType": "CREATE"
+      }
+    ],
+    "schemas": [
+      {
+        "attributes": [
+          {
+            "description": "Account type ID",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "id",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Account type name",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Description",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "description",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {},
+        "created": "2026-03-20T11:20:18.768Z",
+        "displayAttribute": "name",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "cef6dce04c8d49558d6e09141f60f991",
+        "identityAttribute": "id",
+        "includePermissions": false,
+        "modified": "2026-03-20T11:20:18.768Z",
+        "name": "type",
+        "nativeObjectType": "Group"
+      },
+      {
+        "attributes": [
+          {
+            "description": "Groups",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": true,
+            "name": "groups",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "ID",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "id",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Name",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Role type",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "type",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {},
+        "created": "2026-03-20T11:20:18.768Z",
+        "displayAttribute": "name",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "e460298683c24e5fa096c7d8f7387b05",
+        "identityAttribute": "id",
+        "includePermissions": false,
+        "modified": "2026-03-20T11:20:18.768Z",
+        "name": "role",
+        "nativeObjectType": "Group"
+      },
+      {
+        "attributes": [
+          {
+            "description": "ID",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "id",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Name",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Requester ID",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "requester_id",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {},
+        "created": "2026-03-20T11:20:18.768Z",
+        "displayAttribute": "name",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "16bfdd36579c4069968367cd092e4b14",
+        "identityAttribute": "id",
+        "includePermissions": false,
+        "modified": "2026-03-20T11:20:18.768Z",
+        "name": "workflow",
+        "nativeObjectType": "Group"
+      },
+      {
+        "attributes": [
+          {
+            "description": "ID",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "id",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Name",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Roles",
+            "isEntitlement": true,
+            "isGroup": true,
+            "isMulti": true,
+            "name": "roles",
+            "nativeName": null,
+            "schema": {
+              "id": "e460298683c24e5fa096c7d8f7387b05",
+              "name": "role",
+              "type": "CONNECTOR_SCHEMA"
+            },
+            "type": "STRING"
+          },
+          {
+            "description": "Status",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "status",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Types",
+            "isEntitlement": true,
+            "isGroup": true,
+            "isMulti": true,
+            "name": "types",
+            "nativeName": null,
+            "schema": {
+              "id": "cef6dce04c8d49558d6e09141f60f991",
+              "name": "type",
+              "type": "CONNECTOR_SCHEMA"
+            },
+            "type": "STRING"
+          },
+          {
+            "description": "User ID",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "user_id",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "User login",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "login",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Workflows",
+            "isEntitlement": true,
+            "isGroup": true,
+            "isMulti": true,
+            "name": "workflows",
+            "nativeName": null,
+            "schema": {
+              "id": "16bfdd36579c4069968367cd092e4b14",
+              "name": "workflow",
+              "type": "CONNECTOR_SCHEMA"
+            },
+            "type": "STRING"
+          },
+          {
+            "description": "assignment_organization",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "assignment_organization",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "email",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "person_rr_assignment.email_address",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "employee_type_dropdown",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "employee_type_dropdown",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "first_name",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "person_rr_assignment.first_name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "job_title_dropdown",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "job_title_dropdown",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "last_name",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "person_rr_assignment.last_name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "person_id",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "person_id",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "person_rr_assignment",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "person_rr_assignment",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "population_assignment",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "population_assignment",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "sponsor_login",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "sponsor_login",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "sponsor_ne_attribute",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "sponsor_ne_attribute",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {},
+        "created": "2026-03-20T11:20:18.768Z",
+        "displayAttribute": "name",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "7e186d227728433aa190121334210a89",
+        "identityAttribute": "id",
+        "includePermissions": false,
+        "modified": "2026-03-30T20:26:54.841Z",
+        "name": "account",
+        "nativeObjectType": "User"
+      }
+    ],
+    "type": "8d38ab3a-3a08-4679-914b-e3c36a687363"
+  },
+  "self": {
+    "id": "3ebcf9efb047494c9d20b91795ec3a42",
+    "name": "NERM",
+    "type": "SOURCE"
+  },
+  "version": 1
+}

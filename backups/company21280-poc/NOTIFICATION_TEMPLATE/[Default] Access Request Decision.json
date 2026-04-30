@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": " \tDear ${user.name},<br/> \t#if(${roleRequestEnabled}) \t\t<p>Your request for the ${requestedObjectName} #if(${requestedObjectType}==\"Role\") role #elseif(${requestedObjectType}==\"Entitlement\") entitlement #else access profile #end \t\t#if($requesterName != $requestedForIdentityName) for ${requestedForIdentityName}#end has been     #else \t\t<p>Your request for ${accessProfileName}#if($requesterName != $requestedForIdentityName) for ${requestedForIdentityName}#end has been     #end \t<b>#if ($approved)<span style=\"color:green\">approved</span>#{else}<span style=\"color:red\">denied</span>#end.</b></p>\t#if(${roleRequestEnabled}) \t\t#if($approved && $accessibleItems && $accessibleItems.size() > 0) \t\t\tThis means #if($requesterName != $requestedForIdentityName) the user now has #else you now have #end access to \t\t\tthe following: \t\t\t#set($sep=\"\") \t\t\t#foreach($item in $accessibleItems) \t\t\t\t$sep$item \t\t\t\t#set($sep=\", \") \t\t\t#end.</p> \t\t#end \t#end \t#if (!$approved && $reviewerComment)<p>${rejecterName} included the following comment when denying the access: <b>$reviewerComment</b></p> \t#end\t#if ($approved) \t\t#if ($removeDate)<p>Your access to ${requestedObjectName} is scheduled to end on ${removeDate}.</p> \t\t#end \t#end \t#if (!$approved) \t\t<p>Please contact ${rejecterName} if you have any questions.</p> \t#end \t<p> \t\tThanks,<br/> \t\tThe ${PRODUCT_NAME} Team \t</p>",
+    "created": null,
+    "description": "Sent to a user to notify them whether their request for an app was approved or denied.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Access Request Decision",
+    "key": "access_request_decision",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Access Request Decision",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "Your access request for ${requestedObjectName} has been #if($approved)approved#{else}denied#end",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Access Request Decision",
+    "name": "Access Request Decision",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

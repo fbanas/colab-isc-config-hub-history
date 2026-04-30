@@ -1,0 +1,68 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessActionConfiguration": {
+      "removeAllAccessEnabled": false
+    },
+    "accessProfileIds": [],
+    "accessProfileRefs": null,
+    "accountActionRefs": [
+      {
+        "action": "DISABLE",
+        "allSources": false,
+        "excludeSourceIdsRefs": [],
+        "sourceIdsRefs": [
+          {
+            "id": "8779703397444628aa740c2d5fdaf0c9",
+            "name": "Active Directory",
+            "type": "SOURCE"
+          },
+          {
+            "id": "af946e2450024d5bae5fa127eaa4b313",
+            "name": "Identity Fusion NG",
+            "type": "SOURCE"
+          }
+        ]
+      }
+    ],
+    "accountActions": [
+      {
+        "action": "DISABLE",
+        "allSources": false,
+        "excludeSourceIds": null,
+        "sourceIds": [
+          "8779703397444628aa740c2d5fdaf0c9",
+          "af946e2450024d5bae5fa127eaa4b313"
+        ]
+      }
+    ],
+    "created": "2026-03-20T11:07:11.456Z",
+    "description": null,
+    "emailNotificationOption": {
+      "emailAddressList": [],
+      "notifyAllAdmins": false,
+      "notifyManagers": false,
+      "notifySpecificUsers": false
+    },
+    "enabled": true,
+    "id": "397b43119e174a208729b4d99b3be360",
+    "identityCount": 0,
+    "identityProfileRef": {
+      "id": "54a113a425844337b68975523209468f",
+      "name": "Identity Fusion NG",
+      "type": "IDENTITY_PROFILE"
+    },
+    "identityState": "INACTIVE_SHORT_TERM",
+    "modified": "2026-03-25T09:14:37.004Z",
+    "name": "Sabbatical",
+    "priority": 60,
+    "technicalName": "sabbatical"
+  },
+  "self": {
+    "id": "397b43119e174a208729b4d99b3be360",
+    "name": "Sabbatical",
+    "type": "LIFECYCLE_STATE"
+  },
+  "version": 1
+}

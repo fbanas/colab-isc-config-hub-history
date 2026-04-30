@@ -1,0 +1,26 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "attributes": {
+      "table": {
+        "LH1-FI": "Lufthansa 1",
+        "LH1-SA": "Lufthansa 1",
+        "LH2-FO": "Lufthansa 2",
+        "LH2-IT": "Lufthansa 2",
+        "LH3-IT": "Lufthansa 3",
+        "default": "Lufthansa"
+      }
+    },
+    "id": "000da3bb-5386-4270-98cf-372507ca13c5",
+    "internal": false,
+    "name": "Business Unit",
+    "type": "lookup"
+  },
+  "self": {
+    "id": "000da3bb-5386-4270-98cf-372507ca13c5",
+    "name": "Business Unit",
+    "type": "TRANSFORM"
+  },
+  "version": 1
+}

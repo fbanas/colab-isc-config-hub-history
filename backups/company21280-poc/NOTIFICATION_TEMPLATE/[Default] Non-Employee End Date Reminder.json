@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "Dear $__recipient.name,<br/><br/>\n#set($_sourceName = $data.sourceName)\n#set($_expiringNonEmployees = $data.expiringNonEmployees)\n#set($_productName = $__global.productName)\n#set($_nonEmployeeSourceUrl = \"${__global.productUrl}/ui/d/dashboard/non-employees/sources/$data.sourceId\")\n#macro( showName $_nonEmployee )\n    $_nonEmployee.firstName $_nonEmployee.lastName ($_nonEmployee.accountName)\n#end\n<p>You are receiving this email because you’re listed as an account manager for the non-employee source $_sourceName in $_productName.</p>\n\n#if ($_expiringNonEmployees.size()==1)\n<p>The end date for the non-employee #showName($_expiringNonEmployees[0]) is in 7 days.</p>\n<p>Your admin may have configured these non-employees to lose access to $_productName on their end date.</p>\n#elseif ($_expiringNonEmployees.size()>1)\n<p>The <bold>end date</bold> for $_expiringNonEmployees.size() non-employees in $_productName is in <bold>7</bold> days.</p>\n<p>Your admin may have configured these non-employees to lose access to $_productName on their end date. The following users are included in this list:</p>\n<ul>\n    #foreach($_expireNonEmployee in $_expiringNonEmployees)\n        #if($foreach.count==21) #break #end\n        <li>#showName($_expireNonEmployee)</li>\n    #end\n</ul>\n#if ($_expiringNonEmployees.size()> 20)\n    #set($_additionalExpireNonEmployee = $_expiringNonEmployees.size() - 20)\n    <p>The complete list includes $_additionalExpireNonEmployee additional#if($_additionalExpireNonEmployee==1) identity#else identities#end. Visit the $_sourceName <a href=\"$_nonEmployeeSourceUrl\">account list</a> to view the complete list.</p>\n#end\n#end\n\n<p>You can change the end date for#if($_expiringNonEmployees.size()==1) this#else these#end and other users in the <a href=\"$_nonEmployeeSourceUrl\">$_sourceName source</a> in $_productName.  </p>\n<br/>Thanks,<br/> The $__global.productName Team<br/>",
+    "created": null,
+    "description": "Sent to the account managers for a non-employee source when one or more of the non-employees on that source has an end date in 7 days.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Non-Employee End Date Reminder",
+    "key": "non_employee_term_end_date_near",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Non-Employee End Date Reminder",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "Reminder: The end date for $data.expiringNonEmployees.size() non-employee#if($data.nonEmployeeIds.size()>1)s#end is in 7 days",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Non-Employee End Date Reminder",
+    "name": "Non-Employee End Date Reminder",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

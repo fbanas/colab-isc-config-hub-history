@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "Dear $__recipient.name,<br><p>Your administrator has reassigned the $referenceName onboarding to another user. You no longer have access to this source.</p><p>Contact $owner if you have any questions.</p><br>Thanks,<br>The $__global.productName Team",
+    "created": null,
+    "description": "Notifies the assignee when a source that has been assigned to them for configuration is reassigned to another user.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Source Collaboration Reassigned",
+    "key": "source_config_collab_reassign",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Source Collaboration Reassigned",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "The $referenceName configuration has been reassigned to another user",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Source Collaboration Reassigned",
+    "name": "Source Collaboration Reassigned",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

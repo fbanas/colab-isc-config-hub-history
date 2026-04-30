@@ -1,0 +1,69 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "attributes": {
+      "sourceVersion": "2021-06-03 12:07:32"
+    },
+    "created": "2026-03-11T11:16:51.973Z",
+    "description": "This rule is used by the JDBC connector to build a map representation of the Resultset.",
+    "id": "8e3ae43c4990411e899c0907c81720cf",
+    "modified": "2026-03-11T11:16:51.973Z",
+    "name": "BuildMapPRISM",
+    "signature": {
+      "input": [
+        {
+          "description": "A Map containing state information.",
+          "name": "state",
+          "type": null
+        },
+        {
+          "description": "A connection object to connect to database.",
+          "name": "connection",
+          "type": null
+        },
+        {
+          "description": "A sailpoint.api.SailPointContext object that can be used to query the database if necessary.",
+          "name": "context",
+          "type": null
+        },
+        {
+          "description": "The ResultSet from database.",
+          "name": "result",
+          "type": null
+        },
+        {
+          "description": "The Schema currently in use.",
+          "name": "schema",
+          "type": null
+        },
+        {
+          "description": "The application whose data file is being processed.",
+          "name": "application",
+          "type": null
+        },
+        {
+          "description": "The log object associated with the SailPointContext.",
+          "name": "log",
+          "type": null
+        }
+      ],
+      "output": {
+        "description": "A Map of the resource object assembled from the data.",
+        "name": "map",
+        "type": null
+      }
+    },
+    "sourceCode": {
+      "script": "\nimport sailpoint.connector.JDBCConnector;\nimport sailpoint.connector.Connector;\nimport java.util.HashMap;\n\n\nHashMap map = JDBCConnector.buildMapFromResultSet(result);\nif (schema.getObjectType().compareTo(Connector.TYPE_ACCOUNT) == 0) {\n    String active = map.get(\"status\");\n    if (active.equals(\"A\")) {\n        map.put(\"IIQDisabled\", false);\n        } else {\n        map.put(\"IIQDisabled\", true);\n    }\n\n    String locked = map.get(\"locked\");\n    if (locked.equals(\"N\")) {\n        map.put(\"IIQLocked\", false);\n        } else {\n        map.put(\"IIQLocked\", true);\n    }\n\n} else if (schema.getObjectType().compareTo(Connector.TYPE_GROUP) == 0) {\n    // Handle Groups here...    \n}\nreturn map;\n",
+      "version": "2021-06-03 12:07:32"
+    },
+    "type": "JDBCBuildMap"
+  },
+  "self": {
+    "id": "8e3ae43c4990411e899c0907c81720cf",
+    "name": "BuildMapPRISM",
+    "type": "CONNECTOR_RULE"
+  },
+  "version": 1
+}

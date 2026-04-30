@@ -1,0 +1,31 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "attributes": {
+      "ignoreErrors": false,
+      "values": [
+        {
+          "attributes": {
+            "id": "Attribute Value",
+            "input": "email"
+          },
+          "type": "reference"
+        },
+        {
+          "type": "trim"
+        }
+      ]
+    },
+    "id": "6398cbfd-cc02-4da4-aceb-46c23d4c72ef",
+    "internal": false,
+    "name": "Test",
+    "type": "firstValid"
+  },
+  "self": {
+    "id": "6398cbfd-cc02-4da4-aceb-46c23d4c72ef",
+    "name": "Test",
+    "type": "TRANSFORM"
+  },
+  "version": 1
+}

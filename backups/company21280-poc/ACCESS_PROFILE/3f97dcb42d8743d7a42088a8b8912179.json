@@ -1,0 +1,71 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": null,
+      "denialCommentsRequired": null,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-03-20T12:41:14.760436Z",
+    "description": null,
+    "enabled": true,
+    "entitlements": [
+      {
+        "id": "5722e88e429a3eeda88886be826ab0b1",
+        "name": "LH2 reviewer",
+        "type": "ENTITLEMENT"
+      },
+      {
+        "id": "9b8de9c7fbc436ff93b04ad7bb724d17",
+        "name": "NERM reviewer",
+        "type": "ENTITLEMENT"
+      },
+      {
+        "id": "a1f3742c41a830f1aa2c2c1d82a6f953",
+        "name": "LH3 reviewer",
+        "type": "ENTITLEMENT"
+      },
+      {
+        "id": "cb909e80ab693d92b157f91358a401e6",
+        "name": "LHG reviewer",
+        "type": "ENTITLEMENT"
+      },
+      {
+        "id": "f853bff22990324794bbe9705d694cd4",
+        "name": "LH1 reviewer",
+        "type": "ENTITLEMENT"
+      }
+    ],
+    "id": "3f97dcb42d8743d7a42088a8b8912179",
+    "modified": "2026-03-20T13:30:23.896755Z",
+    "name": "Identity Fusion Reviewer",
+    "owner": {
+      "id": "176a5fc85208460383b2253765f4a137",
+      "name": "SailPoint Services",
+      "type": "IDENTITY"
+    },
+    "provisioningCriteria": null,
+    "requestable": true,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [],
+    "segments": [],
+    "source": {
+      "id": "af946e2450024d5bae5fa127eaa4b313",
+      "name": "Identity Fusion NG",
+      "type": "SOURCE"
+    }
+  },
+  "self": {
+    "id": "3f97dcb42d8743d7a42088a8b8912179",
+    "name": "Identity Fusion Reviewer",
+    "type": "ACCESS_PROFILE"
+  },
+  "version": 1
+}

@@ -1,0 +1,30 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "active": false,
+    "created": "2026-04-30T06:15:57.354656Z",
+    "description": "",
+    "id": "1b3b24c3-e15d-4a02-9a0a-587fd3fa84df",
+    "modified": "2026-04-30T06:16:19.533032Z",
+    "name": "Amanda Ross",
+    "owner": null,
+    "visibilityCriteria": {
+      "expression": {
+        "attribute": "displayName",
+        "children": null,
+        "operator": "EQUALS",
+        "value": {
+          "type": "STRING",
+          "value": "Amanda Ross"
+        }
+      }
+    }
+  },
+  "self": {
+    "id": "1b3b24c3-e15d-4a02-9a0a-587fd3fa84df",
+    "name": "Amanda Ross",
+    "type": "SEGMENT"
+  },
+  "version": 1
+}

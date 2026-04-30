@@ -1,0 +1,349 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": "2026-03-18T10:06:36.655754299Z",
+    "creator": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "definition": {
+      "start": "Compare Strings",
+      "steps": {
+        "Compare Strings": {
+          "actionId": "sp:compare-strings",
+          "choiceList": [
+            {
+              "comparator": "StringEquals",
+              "nextStep": "Get Identity",
+              "variableA.$": "$.trigger.changes[?(@.attribute == \"cloudLifecycleState\")].newValue",
+              "variableB": "inactive"
+            }
+          ],
+          "defaultStep": "End Step - Success",
+          "displayName": "",
+          "type": "choice"
+        },
+        "Compare Strings 1": {
+          "actionId": "sp:compare-strings",
+          "choiceList": [
+            {
+              "comparator": "StringMatches",
+              "nextStep": "Loop",
+              "variableA.$": "$.defineVariable1.managerNeUserId",
+              "variableB": "-"
+            }
+          ],
+          "defaultStep": "Form",
+          "displayName": "",
+          "type": "choice"
+        },
+        "Define Variable": {
+          "actionId": "sp:define-variable",
+          "attributes": {
+            "id": "sp:define-variable",
+            "variables": [
+              {
+                "description": "",
+                "name": "neUserId",
+                "transforms": [],
+                "variableA.$": "$.getAccounts.accounts[?(@.sourceName==\"Non-Employee Users\")].nativeIdentity"
+              }
+            ]
+          },
+          "displayName": "Get nativeIdentity for NE user account",
+          "nextStep": "Verify Data Type",
+          "type": "Mutation"
+        },
+        "Define Variable 1": {
+          "actionId": "sp:define-variable",
+          "attributes": {
+            "id": "sp:define-variable",
+            "variables": [
+              {
+                "description": "",
+                "name": "managerNeUserId",
+                "transforms": [],
+                "variableA.$": "$.getAccounts1.accounts[?(@.sourceName==\"Non-Employee Users\")].nativeIdentity"
+              }
+            ]
+          },
+          "displayName": "Get NE user id for manager",
+          "nextStep": "Compare Strings 1",
+          "type": "Mutation"
+        },
+        "Define Variable 2": {
+          "actionId": "sp:define-variable",
+          "attributes": {
+            "id": "sp:define-variable",
+            "variables": [
+              {
+                "description": "",
+                "name": "managerNeUserId",
+                "transforms": [],
+                "variableA.$": "$.getAccounts2.accounts[?(@.sourceName==\"Non-Employee Users\")].nativeIdentity"
+              }
+            ]
+          },
+          "displayName": "Define managerNeUserId",
+          "nextStep": "Loop 1",
+          "type": "Mutation"
+        },
+        "End Step - Success": {
+          "actionId": "sp:operator-success",
+          "displayName": "",
+          "type": "success"
+        },
+        "End Step - Success 1": {
+          "actionId": "sp:operator-success",
+          "displayName": "",
+          "type": "success"
+        },
+        "End Step - Success 2": {
+          "actionId": "sp:operator-success",
+          "displayName": "",
+          "type": "success"
+        },
+        "Form": {
+          "actionId": "sp:forms",
+          "attributes": {
+            "deadline": "1d",
+            "formDefinitionId": "af3fd7de-2215-45f7-b3cc-1dc461467e60",
+            "inputForForm_originalSponsorName.$": "$.getIdentity.managerRef.id",
+            "notificationBody": "Open the following form to select a valid sponsor for the non-employees currently reporting to {{$.trigger.identity.name }} that has been inactivated.",
+            "notificationSubject": "Reassign Non-Employees",
+            "recipient.$": "$.getIdentity.managerRef.id",
+            "reminder": "1d"
+          },
+          "displayName": "Send form to ask for new sponsor",
+          "nextStep": "Get List of Identities",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Get Accounts": {
+          "actionId": "sp:get-accounts",
+          "attributes": {
+            "getAccountsBy": "specificIdentity",
+            "identity.$": "$.trigger.identity.id"
+          },
+          "displayName": "",
+          "nextStep": "Define Variable",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Get Accounts 1": {
+          "actionId": "sp:get-accounts",
+          "attributes": {
+            "getAccountsBy": "specificIdentity",
+            "identity.$": "$.getIdentity.managerRef.id"
+          },
+          "displayName": "Get manager account",
+          "nextStep": "Define Variable 1",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Get Accounts 2": {
+          "actionId": "sp:get-accounts",
+          "attributes": {
+            "filterCriteria": "identityId",
+            "getAccountsBy": "specificIdentity",
+            "identity.$": "$.getListOfIdentities.identities[0].id",
+            "operator": "eq",
+            "value": null
+          },
+          "displayName": "Get Accounts for new sponsor",
+          "nextStep": "Define Variable 2",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Get Identity": {
+          "actionId": "sp:get-identity",
+          "attributes": {
+            "id.$": "$.trigger.identity.id"
+          },
+          "displayName": "",
+          "nextStep": "Get Accounts",
+          "type": "action",
+          "versionNumber": 2
+        },
+        "Get List of Identities": {
+          "actionId": "sp:get-identities",
+          "attributes": {
+            "inputQuery": "name: {{$.form.formData.newSponsor}}",
+            "searchBy": "searchQuery"
+          },
+          "displayName": "Get Identity for selected sponsor",
+          "nextStep": "Get Accounts 2",
+          "type": "action",
+          "versionNumber": 2
+        },
+        "HTTP Request": {
+          "actionId": "sp:http",
+          "attributes": {
+            "authenticationType": "header",
+            "headerAuthName": "Authorization",
+            "headerAuthValue": "$.secrets.58d5957e-b59b-4008-b626-4dd333ce7fb4",
+            "method": "get",
+            "requestHeaders": {
+              "Accept": "application/json",
+              "Content-Type": "application/json"
+            },
+            "url": "https://company21280-poc.mynonemployee.com/api/user_profiles",
+            "urlParams": {
+              "metadata": "true",
+              "ne_attribute_id": "9729c9f0-d338-4db4-92a1-b37315738b86",
+              "user_id": "{{ $.defineVariable.neUserId }}"
+            }
+          },
+          "description": "call ne for list of profiles that identity is the sponsor for",
+          "displayName": "UPDATE: Get profiles that user is a sponsor",
+          "nextStep": "Get Accounts 1",
+          "type": "action",
+          "versionNumber": 2
+        },
+        "Loop": {
+          "actionId": "sp:loop:iterator",
+          "attributes": {
+            "context.$": "$.defineVariable1",
+            "input.$": "$.hTTPRequest.body.user_profiles[*].profile_id",
+            "start": "HTTP Request 1",
+            "steps": {
+              "End Step - Success 3": {
+                "actionId": "sp:operator-success",
+                "displayName": "",
+                "type": "success"
+              },
+              "HTTP Request 1": {
+                "actionId": "sp:http",
+                "attributes": {
+                  "authenticationType": "header",
+                  "headerAuthName": "Authorization",
+                  "jsonRequestBody": {
+                    "workflow_session": {
+                      "attributes": {
+                        "sponsor_ne_attribute": "{{$.loop.context.managerNeUserId}}"
+                      },
+                      "profile_id": "{{$.loop.loopInput}}",
+                      "requester_id": "{{$.loop.context.managerNeUserId}}",
+                      "requester_type": "User",
+                      "workflow_id": "56fbb250-1b2d-45be-bc3f-e32074fd1de2"
+                    }
+                  },
+                  "method": "post",
+                  "requestContentType": "json",
+                  "requestHeaders": {
+                    "Accept": "application/json",
+                    "Content-Type": "application/json"
+                  },
+                  "url": "https://TENANT_NAME.mynonemployee.com/api/workflow_sessions"
+                },
+                "description": "Call update sponsor in NE",
+                "displayName": "UPDATE: Call API Update Sponsor in NE 2",
+                "nextStep": "End Step - Success 3",
+                "type": "action",
+                "versionNumber": 2
+              }
+            }
+          },
+          "description": "a",
+          "displayName": "",
+          "nextStep": "End Step - Success 2",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Loop 1": {
+          "actionId": "sp:loop:iterator",
+          "attributes": {
+            "context.$": "$.defineVariable2",
+            "input.$": "$.hTTPRequest.body.user_profiles[*].profile_id",
+            "start": "HTTP Request 2",
+            "steps": {
+              "End Step - Success 4": {
+                "actionId": "sp:operator-success",
+                "displayName": "",
+                "type": "success"
+              },
+              "HTTP Request 2": {
+                "actionId": "sp:http",
+                "attributes": {
+                  "authenticationType": "header",
+                  "headerAuthName": "Authorization",
+                  "jsonRequestBody": {
+                    "workflow_session": {
+                      "attributes": {
+                        "sponsor_ne_attribute": "{{$.loop.context.managerNeUserId}}"
+                      },
+                      "profile_id": "{{$.loop.loopInput}}",
+                      "requester_id": "{{$.loop.context.managerNeUserId}}",
+                      "requester_type": "User",
+                      "workflow_id": "56fbb250-1b2d-45be-bc3f-e32074fd1de2"
+                    }
+                  },
+                  "method": "post",
+                  "requestContentType": "json",
+                  "requestHeaders": {
+                    "Accept": "application/json",
+                    "Content-Type": "application/json"
+                  },
+                  "url": "https://TENANT_NAME.mynonemployee.com/api/workflow_sessions"
+                },
+                "description": "Call update sponsor in NE",
+                "displayName": "UPDATE: Call API Update Sponsor in NE",
+                "nextStep": "End Step - Success 4",
+                "type": "action",
+                "versionNumber": 2
+              }
+            }
+          },
+          "displayName": "",
+          "nextStep": "End Step - Success 2",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Verify Data Type": {
+          "actionId": "sp:compare-unary",
+          "choiceList": [
+            {
+              "comparator": "IsPresent",
+              "nextStep": "HTTP Request",
+              "variableA.$": "$.defineVariable.neUserId"
+            }
+          ],
+          "defaultStep": "End Step - Success 1",
+          "description": "does the identity have a ne lifecycle account",
+          "displayName": "does identity have ne user account",
+          "type": "choice"
+        }
+      }
+    },
+    "description": "Reassign the sponsor of a non-employee assignment to their manager when the sponsor becomes inactive.",
+    "enabled": true,
+    "id": "b150aa69-b112-4fc6-82a3-034a32a4a364",
+    "modified": "2026-03-18T16:36:22.732843937Z",
+    "modifiedBy": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "name": "NE Reassign Sponsor",
+    "owner": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "trigger": {
+      "attributes": {
+        "filter.$": "$.changes[?(@.attribute == \"cloudLifecycleState\")]",
+        "id": "idn:identity-attributes-changed"
+      },
+      "type": "EVENT"
+    }
+  },
+  "self": {
+    "id": "b150aa69-b112-4fc6-82a3-034a32a4a364",
+    "name": "NE Reassign Sponsor",
+    "type": "WORKFLOW"
+  },
+  "version": 1
+}

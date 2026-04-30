@@ -1,0 +1,62 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessProfiles": [],
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": false,
+      "denialCommentsRequired": false,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-03-18T13:31:33.770105Z",
+    "description": "Role to APP-102 (LH1-Role-8)",
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": true,
+    "entitlements": [
+      {
+        "id": "6708f3a4-daa4-3f0c-bd87-3ec2df27a229",
+        "name": "APP-102",
+        "sourceId": "00c23142-0974-4506-bab1-e856117f40f7",
+        "sourceName": "Microsoft Entra sp-demo262 SaaS",
+        "type": "ENTITLEMENT"
+      }
+    ],
+    "id": "c38aa6179d804f6bb083b06ceb08ee5c",
+    "legacyMembershipInfo": null,
+    "membership": null,
+    "modified": "2026-04-16T11:53:49.657005Z",
+    "name": "LH1_APP_Baggage-Tracking",
+    "owner": {
+      "id": "aa4ab9d17dc24afc84947597b9ce1a46",
+      "name": "U1000002@dlh.de [LH1]",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": true,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [
+      {
+        "id": "0643ef20-158f-4143-93b1-838213316949",
+        "name": "LH1-Lufthansa 1",
+        "type": "SEGMENT"
+      }
+    ],
+    "segments": [
+      "0643ef20-158f-4143-93b1-838213316949"
+    ]
+  },
+  "self": {
+    "id": "c38aa6179d804f6bb083b06ceb08ee5c",
+    "name": "LH1_APP_Baggage-Tracking",
+    "type": "ROLE"
+  },
+  "version": 1
+}

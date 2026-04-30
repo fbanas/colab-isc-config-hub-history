@@ -1,0 +1,49 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "connectionCount": 0,
+    "connections": null,
+    "created": null,
+    "description": "This group is responsible for approving all Amadeus offices that do not have their own approval process or whose OUs do not have an approval process",
+    "id": "8a070e45-ce87-4bf3-bc96-54cbb1d87bf0",
+    "memberCount": 0,
+    "members": [
+      {
+        "id": "30507568a2d54f7484fe0f3edba79692",
+        "name": "fernando.delosrios",
+        "type": "IDENTITY"
+      },
+      {
+        "id": "90eb8204ac594f48ac598a55e0e73613",
+        "name": "florian.banas",
+        "type": "IDENTITY"
+      },
+      {
+        "id": "cc9ff944d49c4d568b917ecbd2a6bba5",
+        "name": "jmueller",
+        "type": "IDENTITY"
+      },
+      {
+        "id": "fcc9db01f32249889e627da51f5f710a",
+        "name": "jonathan.mueller",
+        "type": "IDENTITY"
+      }
+    ],
+    "modified": null,
+    "name": "LX Approvers",
+    "owner": {
+      "displayName": null,
+      "emailAddress": null,
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
+      "type": "IDENTITY"
+    }
+  },
+  "self": {
+    "id": "8a070e45-ce87-4bf3-bc96-54cbb1d87bf0",
+    "name": "LX Approvers",
+    "type": "GOVERNANCE_GROUP"
+  },
+  "version": 1
+}

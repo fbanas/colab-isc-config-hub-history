@@ -1,0 +1,122 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": "2026-04-29T12:33:27.434925716Z",
+    "creator": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "definition": {
+      "start": "Compare Numbers",
+      "steps": {
+        "Compare Numbers": {
+          "actionId": "sp:compare-numbers",
+          "choiceList": [
+            {
+              "comparator": "NumericLessThan",
+              "nextStep": "Get Identity",
+              "variableA.$": "$.trigger.score",
+              "variableB": 0.7
+            }
+          ],
+          "defaultStep": "success 1",
+          "description": "The trigger filters for scores greater than or equal to 0.5. This comparison determines if the score is less than 0.7.",
+          "type": "choice"
+        },
+        "Get Identity": {
+          "actionId": "sp:get-identity",
+          "attributes": {
+            "id.$": "$.trigger.identity.id"
+          },
+          "description": "This action returns information about the detected outlier identity and their attributes.",
+          "nextStep": "Get Identity 1",
+          "type": "action",
+          "versionNumber": 2
+        },
+        "Get Identity 1": {
+          "actionId": "sp:get-identity",
+          "attributes": {
+            "id.$": "$.getIdentity.managerRef.id"
+          },
+          "description": "This action returns the detected outlier identity's manager's name and their attributes.",
+          "nextStep": "Get Identity History",
+          "type": "action",
+          "versionNumber": 2
+        },
+        "Get Identity History": {
+          "actionId": "sp:get-identity-history",
+          "attributes": {
+            "eventTypes": "IdentityCertified",
+            "from": "",
+            "id.$": "$.getIdentity.id"
+          },
+          "description": null,
+          "displayName": "",
+          "nextStep": "Send Email 1",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Send Email 1": {
+          "actionId": "sp:send-email",
+          "attributes": {
+            "body": "<p>Hello ${var1},</p>\n<p>This email is to inform that your direct report <strong> <em><u><span style=\"font-family: verdana;\">${var2} </span></u></em></strong>has been identified as an outlier with a score of <strong><em>${var3}</em></strong>. Please consider doing a full access review to determine if <strong>${var2} </strong>has excessive access for their job and role.&nbsp;<br>The Identities last certfication event was <strong>${var4}</strong></p>\n<p>Thank you, <br><strong><em> Corporate Compliance Officer </em></strong></p>",
+            "context": {
+              "var1.$": "$.getIdentity1.attributes.firstname",
+              "var2.$": "$.getIdentity.attributes.displayName",
+              "var3.$": "$.trigger.score",
+              "var4.$": "$.getIdentityHistory.identityHistories"
+            },
+            "from.$": "",
+            "recipientEmailList": [
+              "florian.banas@sailpoint.com"
+            ],
+            "subject": "Outlier Detected"
+          },
+          "description": "This action sends an email notification to the outlier identity's manager informing them that the identity is an outlier. This email includes their score.",
+          "nextStep": "success",
+          "type": "action",
+          "versionNumber": 2
+        },
+        "success": {
+          "actionId": "sp:operator-success",
+          "description": "This workflow has completed successfully.",
+          "type": "success"
+        },
+        "success 1": {
+          "actionId": "sp:operator-success",
+          "description": "Because the outlier score was not at or above 0.5 and less than 0.7, no further action is needed.",
+          "type": "success"
+        }
+      }
+    },
+    "description": "This workflow is triggered when an outlier score of higher than 0.5 but lower than 0.7 is detected. An email notification is sent to their manager to inform them the identity is an outlier.",
+    "enabled": false,
+    "id": "d10ee978-87b4-4e8a-aac8-5b6f10ea094b",
+    "modified": "2026-04-29T15:42:24.060365388Z",
+    "modifiedBy": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "name": "Template: Send an Email Notification for Detected Outlier Identity (0.5-0.7)",
+    "owner": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "trigger": {
+      "attributes": {
+        "id": "idn:external-http"
+      },
+      "type": "EXTERNAL"
+    }
+  },
+  "self": {
+    "id": "d10ee978-87b4-4e8a-aac8-5b6f10ea094b",
+    "name": "Template: Send an Email Notification for Detected Outlier Identity (0.5-0.7)",
+    "type": "WORKFLOW"
+  },
+  "version": 1
+}

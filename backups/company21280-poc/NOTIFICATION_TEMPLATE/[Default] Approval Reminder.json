@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "<p>Dear ${__recipient.name},</p> <p>This is a reminder that an approval request for $approvalName submitted by #if($requestee.name && $requestee.name != '') $requester.name for $requestee.name #else $requester.name #end is pending your reviewal.</p>  <p>To review approval requests that are assigned to you, please go to: $__global.productUrl/ui/d/$approverPath.</p><br/>Thank you,<br/> The ${__global.productName} Team<br/>",
+    "created": null,
+    "description": "Sent to approvers who have not reviewed an assigned approval request after an admin-configured amount of time.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Approval Reminder",
+    "key": "approval_request_reminder",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Approval Reminder",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "Reminder: An Approval Request Is Awaiting Your Review",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Approval Reminder",
+    "name": "Approval Reminder",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

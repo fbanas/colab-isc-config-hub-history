@@ -1,0 +1,54 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessActionConfiguration": {
+      "removeAllAccessEnabled": true
+    },
+    "accessProfileIds": [],
+    "accessProfileRefs": null,
+    "accountActionRefs": [
+      {
+        "action": "DISABLE",
+        "allSources": true,
+        "excludeSourceIdsRefs": [],
+        "sourceIdsRefs": []
+      }
+    ],
+    "accountActions": [
+      {
+        "action": "DISABLE",
+        "allSources": true,
+        "excludeSourceIds": null,
+        "sourceIds": null
+      }
+    ],
+    "created": "2026-03-18T11:43:10.636Z",
+    "description": null,
+    "emailNotificationOption": {
+      "emailAddressList": [],
+      "notifyAllAdmins": false,
+      "notifyManagers": false,
+      "notifySpecificUsers": false
+    },
+    "enabled": false,
+    "id": "b5724b57d14348538aaefd170739eff2",
+    "identityCount": 0,
+    "identityProfileRef": {
+      "id": "d1d746405cea46c992cead0d4b95f9f7",
+      "name": "Non-Employees",
+      "type": "IDENTITY_PROFILE"
+    },
+    "identityState": "INACTIVE_SHORT_TERM",
+    "modified": "2026-03-18T11:43:10.636Z",
+    "name": "Terminated",
+    "priority": 40,
+    "technicalName": "terminated"
+  },
+  "self": {
+    "id": "b5724b57d14348538aaefd170739eff2",
+    "name": "Terminated",
+    "type": "LIFECYCLE_STATE"
+  },
+  "version": 1
+}

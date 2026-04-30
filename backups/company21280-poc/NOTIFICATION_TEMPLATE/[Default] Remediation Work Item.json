@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "$!requesterName has assigned a new remediation work item to you: $!workItemName.\n\nComments from $!requesterName:\n--------------------------------------------------------------------------------\n$!comments\n--------------------------------------------------------------------------------\n\nLogin and view your work item inbox to complete this request.",
+    "created": null,
+    "description": "Sent to a user when a new remediation work item has been assigned to them.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Remediation Work Item",
+    "key": "remediation_work_item",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Remediation Work Item",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "New remediation request: $!workItemName",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Remediation Work Item",
+    "name": "Remediation Work Item",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

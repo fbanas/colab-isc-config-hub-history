@@ -1,0 +1,38 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "attributes": {
+      "values": [
+        {
+          "attributes": {
+            "name": "firstname"
+          },
+          "type": "identityAttribute"
+        },
+        {
+          "attributes": {
+            "name": "lastname"
+          },
+          "type": "identityAttribute"
+        },
+        {
+          "attributes": {
+            "value": "."
+          },
+          "type": "static"
+        }
+      ]
+    },
+    "id": "e82f0760-56c2-45dd-a9e5-f413dd9cd768",
+    "internal": false,
+    "name": "NE Username",
+    "type": "concat"
+  },
+  "self": {
+    "id": "e82f0760-56c2-45dd-a9e5-f413dd9cd768",
+    "name": "NE Username",
+    "type": "TRANSFORM"
+  },
+  "version": 1
+}

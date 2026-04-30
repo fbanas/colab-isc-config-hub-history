@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "<p>Dear ${user.name},</p><p>Your ${PRODUCT_NAME} account has been unlocked.</p><p>If you think someone else was trying to use your account, please contact your administrator immediately.</p><p> Thanks,<br/> The ${PRODUCT_NAME} Team </p>",
+    "created": null,
+    "description": "Sent after the Unlock User Code email to confirm that the account was unlocked successfully.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] User Unlocked",
+    "key": "cloud_user_unlocked",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "User Unlocked",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "ATTENTION: Your ${PRODUCT_NAME} account has been unlocked",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] User Unlocked",
+    "name": "User Unlocked",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

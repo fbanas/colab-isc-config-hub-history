@@ -1,0 +1,150 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": "2026-04-08T15:46:39.296609531Z",
+    "creator": {
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
+      "type": "IDENTITY"
+    },
+    "definition": {
+      "start": "Wait",
+      "steps": {
+        "Compare Strings": {
+          "actionId": "sp:compare-strings",
+          "choiceList": [
+            {
+              "comparator": "StringEquals",
+              "nextStep": "Start Healing Process",
+              "variableA.$": "$.hTTPRequest.body[0].type",
+              "variableB": "DELETE_ACCOUNT_FAILED"
+            }
+          ],
+          "defaultStep": "Send Success Email",
+          "displayName": "compare \"DELETE_ACCOUNT_FAILED\"",
+          "type": "choice"
+        },
+        "End Step - Success": {
+          "actionId": "sp:operator-success",
+          "displayName": "End Step - Success",
+          "type": "success"
+        },
+        "HTTP Request": {
+          "actionId": "sp:http",
+          "attributes": {
+            "jsonRequestBody": {
+              "includeNested": false,
+              "indices": [
+                "events"
+              ],
+              "query": {
+                "query": "name:\"Delete Account Failed\" AND attributes.info:\"The account was deleted via LCM automation. \" AND status:failed AND created:[now-30d TO now] AND target.name:\"{{$.trigger.identity.name}}\""
+              },
+              "sort": [
+                "-created"
+              ]
+            },
+            "method": "post",
+            "param_authenticationRef": "oauth",
+            "param_oauth": {
+              "mapping": {
+                "auth_client_id": "clientId",
+                "auth_client_secret": "clientSecret",
+                "auth_credential_location": "credentialLocation",
+                "auth_token_url": "tokenURL"
+              },
+              "paramID": "c8838f76-3609-43c2-bfa4-93252de4df8d",
+              "paramType": "1.4",
+              "refID": "3a1406e0-39b3-4248-b082-96d2f1e87eab"
+            },
+            "param_oauth_scopes": {
+              "mapping": {
+                "auth_scopes": "scopes"
+              },
+              "paramID": "",
+              "paramType": "3.1"
+            },
+            "requestContentType": "json",
+            "url": "https://company21280-poc.api.identitynow-demo.com/v2025/search"
+          },
+          "description": "name:\"Delete Account Failed\" AND attributes.info:\"The account was deleted via LCM automation. \" AND status:failed AND created:[now-30d TO now] AND target.name:\"{{$.trigger.identity.name}}\"",
+          "displayName": "http Perform a Search for Errors",
+          "nextStep": "Compare Strings",
+          "type": "action",
+          "versionNumber": 3
+        },
+        "Send Success Email": {
+          "actionId": "sp:send-email",
+          "attributes": {
+            "body": "<p>For terminated identity {{$.trigger.identity.name}} all deleteable&nbsp; accounts successfuly removed.</p>",
+            "context": {},
+            "recipientEmailList": [
+              "isc-email-lufthansa-aaaatqpxkfqem4ng7vgmth5gfq@sailpoint.slack.com"
+            ],
+            "subject": "Account Disable Success"
+          },
+          "displayName": "Send Success Email",
+          "nextStep": "End Step - Success",
+          "type": "action",
+          "versionNumber": 2
+        },
+        "Start Healing Process": {
+          "actionId": "sp:send-email",
+          "attributes": {
+            "body": "<p>Errors detected in identity event log. Starting healing process for {{$.trigger.identity.name}}</p>\n<p>Search result:</p>\n<p>{{$.hTTPRequest.body.JSON()}}</p>\n<p>&nbsp;</p>",
+            "context": {},
+            "recipientEmailList": [
+              "isc-email-lufthansa-aaaatqpxkfqem4ng7vgmth5gfq@sailpoint.slack.com"
+            ],
+            "subject": "Identity Healing Process Started"
+          },
+          "displayName": "Start Healing Process",
+          "nextStep": "End Step - Success",
+          "type": "action",
+          "versionNumber": 2
+        },
+        "Wait": {
+          "actionId": "sp:sleep",
+          "attributes": {
+            "duration": "2m",
+            "type": "waitFor"
+          },
+          "displayName": "wait 2 Minutes",
+          "nextStep": "HTTP Request",
+          "type": "action",
+          "versionNumber": 1
+        }
+      }
+    },
+    "description": "Checks if an identity has errors in event log for a given time frame. If yes, starts healing process. If no, sends success message.",
+    "enabled": false,
+    "id": "c9642d06-8cc0-4a62-8662-1b2f33012897",
+    "modified": "2026-04-16T10:26:50.166324161Z",
+    "modifiedBy": {
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
+      "type": "IDENTITY"
+    },
+    "name": "Identity Error Check and Healing Workflow",
+    "owner": {
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
+      "type": "IDENTITY"
+    },
+    "trigger": {
+      "attributes": {
+        "filter.$": "$.trigger[?( @.newLifecycleState == \"terminated\")]",
+        "id": "idn:identity-lifecycle-state-changed"
+      },
+      "displayName": "LCS Changed to \"terminated\"",
+      "type": "EVENT"
+    }
+  },
+  "self": {
+    "id": "c9642d06-8cc0-4a62-8662-1b2f33012897",
+    "name": "Identity Error Check and Healing Workflow",
+    "type": "WORKFLOW"
+  },
+  "version": 1
+}

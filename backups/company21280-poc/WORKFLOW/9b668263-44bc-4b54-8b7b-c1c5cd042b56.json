@@ -1,0 +1,75 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": "2026-03-24T14:32:05.214693902Z",
+    "creator": {
+      "id": "30507568a2d54f7484fe0f3edba79692",
+      "name": "fernando.delosrios",
+      "type": "IDENTITY"
+    },
+    "definition": {
+      "start": "Wait",
+      "steps": {
+        "End Step - Success": {
+          "type": "success"
+        },
+        "Trigger Aggregation": {
+          "actionId": "sp:http",
+          "attributes": {
+            "authenticationType": null,
+            "jsonRequestBody": {
+              "disableOptimization": "{{$.trigger.disableOptimization}}"
+            },
+            "method": "post",
+            "requestContentType": "json",
+            "requestHeaders": {
+              "Authorization": "Bearer {{$.trigger.accessToken}}"
+            },
+            "url": "https://company21280-poc.api.identitynow-demo.com/v2025/sources/{{$.trigger.sourceId}}/load-accounts"
+          },
+          "nextStep": "End Step - Success",
+          "type": "action",
+          "versionNumber": 2
+        },
+        "Wait": {
+          "actionId": "sp:sleep",
+          "attributes": {
+            "duration.$": "$.trigger.delayMinutes",
+            "type": "waitFor"
+          },
+          "nextStep": "Trigger Aggregation",
+          "type": "action",
+          "versionNumber": 1
+        }
+      }
+    },
+    "description": "",
+    "enabled": false,
+    "id": "9b668263-44bc-4b54-8b7b-c1c5cd042b56",
+    "modified": "2026-04-13T11:11:12.862440042Z",
+    "modifiedBy": {
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
+      "type": "IDENTITY"
+    },
+    "name": "Fusion Delayed Aggregation (Identity Fusion NG)",
+    "owner": {
+      "id": "30507568a2d54f7484fe0f3edba79692",
+      "name": "fernando.delosrios",
+      "type": "IDENTITY"
+    },
+    "trigger": {
+      "attributes": {
+        "id": "idn:external-http"
+      },
+      "type": "EXTERNAL"
+    }
+  },
+  "self": {
+    "id": "9b668263-44bc-4b54-8b7b-c1c5cd042b56",
+    "name": "Fusion Delayed Aggregation (Identity Fusion NG)",
+    "type": "WORKFLOW"
+  },
+  "version": 1
+}

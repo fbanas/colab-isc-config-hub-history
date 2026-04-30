@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "Dear $__recipient.name,<br/><br/>\n#set($_sourceName = $data.nonEmployeeSource.name)\n#set($_approverIds = $__util.getObjectByJsonPath($__contentJson, '$.data.approvalItems[*].approver.id'))\n\n<p>Your request for a non-employee account for $data.accountName on the source $_sourceName was successfully submitted.</p>\n#if($_approverIds.size() > 0)\n    #if($_approverIds.size() == 1)\n        <p>$__util.getUser($_approverIds[0]).name must approve this account request before it can be added to the source.</p>\n    #elseif($_approverIds.size() > 1)\n    <p>The following reviewers must approve this account request before it can be added to the source:</p>\n    <ul>\n        #foreach($_approverId in $_approverIds)\n            <li>$__util.getUser($_approverId).name</li>\n        #end\n    </ul>\n    #end\n<p>You will be notified when a decision is made about this account request. You can check the status of your request by clicking Manage Non-Employees on the dashboard and viewing the $_sourceName source.</p>\n#{else}\n<p>\n    This account will be added to $_sourceName shortly. You can check its status by clicking Manage Non-Employees on the dashboard and viewing the $_sourceName source.\n</p>\n#end\n<br/>Thanks,<br/> The $__global.productName Team<br/>",
+    "created": null,
+    "description": "Sent to a non-employee account manager to confirm that their request for a new account for a non-employee was submitted.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Non-Employee Request Created",
+    "key": "non_employee_request_created",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Non-Employee Request Created",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "You’ve requested a non-employee account for ${data.firstName} ${data.lastName}",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Non-Employee Request Created",
+    "name": "Non-Employee Request Created",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

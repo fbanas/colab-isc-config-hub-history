@@ -1,0 +1,24 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "description": "Managed by Workflows",
+    "enabled": true,
+    "filter": "$.changes[?(@.attribute == \"cloudLifecycleState\")]",
+    "id": "b150aa69-b112-4fc6-82a3-034a32a4a364",
+    "name": "NE Reassign Sponsor",
+    "responseDeadline": "PT1H",
+    "triggerId": "idn:identity-attributes-changed",
+    "triggerName": "Identity Attributes Changed",
+    "type": "WORKFLOW",
+    "workflowConfig": {
+      "workflowId": "b150aa69-b112-4fc6-82a3-034a32a4a364"
+    }
+  },
+  "self": {
+    "id": "b150aa69-b112-4fc6-82a3-034a32a4a364",
+    "name": "NE Reassign Sponsor",
+    "type": "TRIGGER_SUBSCRIPTION"
+  },
+  "version": 1
+}

@@ -1,0 +1,34 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "connectionCount": 0,
+    "connections": null,
+    "created": null,
+    "description": "Collaborators",
+    "id": "f390e84f-e8d8-4782-9282-bb274ec98f96",
+    "memberCount": 0,
+    "members": [
+      {
+        "id": "08869497871c4c158531b6d978065081",
+        "name": "Alan.Bradley",
+        "type": "IDENTITY"
+      }
+    ],
+    "modified": null,
+    "name": "Collaborators",
+    "owner": {
+      "displayName": null,
+      "emailAddress": null,
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    }
+  },
+  "self": {
+    "id": "f390e84f-e8d8-4782-9282-bb274ec98f96",
+    "name": "Collaborators",
+    "type": "GOVERNANCE_GROUP"
+  },
+  "version": 1
+}

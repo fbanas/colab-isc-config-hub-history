@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "<p> The user ${identityName}'s status has changed to $newState. </p><p> Thanks,<br/> The ${PRODUCT_NAME} Team </p>",
+    "created": null,
+    "description": "Sent to selected users when an identity's lifecycle state changes.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Lifecycle State Change",
+    "key": "cloud_lifecycle_state_change",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Lifecycle State Change",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "Lifecycle state change for ${identityName}",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Lifecycle State Change",
+    "name": "Lifecycle State Change",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

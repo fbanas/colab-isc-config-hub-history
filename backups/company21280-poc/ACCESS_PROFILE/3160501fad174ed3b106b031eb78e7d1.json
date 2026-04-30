@@ -1,0 +1,66 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessRequestConfig": {
+      "approvalSchemes": [
+        {
+          "approverId": "58a0685c-c7db-4982-b3c5-8af6e71de654",
+          "approverType": "WORKFLOW"
+        }
+      ],
+      "commentsRequired": false,
+      "denialCommentsRequired": false,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-04-13T19:59:44.990598Z",
+    "description": null,
+    "enabled": true,
+    "entitlements": [
+      {
+        "id": "52e07cbdb10a3e1dbfe2587e20c0310f",
+        "name": "PayrollManager",
+        "type": "ENTITLEMENT"
+      },
+      {
+        "id": "d707461c239033f9a89ac25ccbc0cc81",
+        "name": "Payroll_All",
+        "type": "ENTITLEMENT"
+      },
+      {
+        "id": "dfbfcb5a7b9933089fa76b16d96f4413",
+        "name": "PayrollControls",
+        "type": "ENTITLEMENT"
+      }
+    ],
+    "id": "3160501fad174ed3b106b031eb78e7d1",
+    "modified": "2026-04-13T20:00:37.147924Z",
+    "name": "Multi Acc. Demo Access Profile",
+    "owner": {
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
+      "type": "IDENTITY"
+    },
+    "provisioningCriteria": null,
+    "requestable": true,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [],
+    "segments": [],
+    "source": {
+      "id": "08957d380b9c4e81a03a9c955d7a8024",
+      "name": "Azure-AD",
+      "type": "SOURCE"
+    }
+  },
+  "self": {
+    "id": "3160501fad174ed3b106b031eb78e7d1",
+    "name": "Multi Acc. Demo Access Profile",
+    "type": "ACCESS_PROFILE"
+  },
+  "version": 1
+}

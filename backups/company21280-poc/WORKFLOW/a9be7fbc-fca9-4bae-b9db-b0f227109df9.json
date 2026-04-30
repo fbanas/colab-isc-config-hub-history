@@ -1,0 +1,206 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": "2026-04-14T14:05:17.438730386Z",
+    "creator": {
+      "id": "30507568a2d54f7484fe0f3edba79692",
+      "name": "fernando.delosrios",
+      "type": "IDENTITY"
+    },
+    "definition": {
+      "start": "Define Variable",
+      "steps": {
+        "Define Variable": {
+          "actionId": "sp:define-variable",
+          "attributes": {
+            "id": "sp:define-variable",
+            "variables": [
+              {
+                "description": "",
+                "name": "amadeusSourceId",
+                "transforms": [],
+                "variableA": "ccfe73427f6c4b678efe92ca774ad665"
+              },
+              {
+                "description": "",
+                "name": "officesSourceId",
+                "transforms": [],
+                "variableA": "ee86b231bcdf405c878a02eba0b4a376"
+              }
+            ]
+          },
+          "displayName": "Configuration",
+          "nextStep": "Get List of Identities",
+          "type": "Mutation"
+        },
+        "End Step - Success": {
+          "actionId": "sp:operator-success",
+          "displayName": "",
+          "type": "success"
+        },
+        "Get List of Identities": {
+          "actionId": "sp:get-identities",
+          "attributes": {
+            "inputManagedBy": [
+              "a67216598c8c4ea8b397fb4c4b553644"
+            ],
+            "inputManagerOf": [
+              "90eb8204ac594f48ac598a55e0e73613"
+            ],
+            "searchBy": "managedBy"
+          },
+          "displayName": "Get List of Reports",
+          "nextStep": "Interactive Form",
+          "type": "action",
+          "versionNumber": 2
+        },
+        "HTTP Request": {
+          "actionId": "sp:http",
+          "attributes": {
+            "jsonRequestBody": {
+              "includeNested": true,
+              "indices": [
+                "identities"
+              ],
+              "query": {
+                "query": "id:{{$.interactiveForm.formData.identity}}"
+              }
+            },
+            "method": "post",
+            "param_authenticationRef": "oauth",
+            "param_oauth": {
+              "mapping": {
+                "auth_client_id": "clientId",
+                "auth_client_secret": "clientSecret",
+                "auth_credential_location": "credentialLocation",
+                "auth_token_url": "tokenURL"
+              },
+              "paramID": "7b0fa675-e77b-4fde-b11e-280690aa4c0f",
+              "paramType": "1.4",
+              "refID": "2f50ea9b-eb8f-4934-8513-851574d89149"
+            },
+            "param_oauth_scopes": {
+              "mapping": {
+                "auth_scopes": "scopes"
+              },
+              "paramID": "097c3757-c597-47be-882d-0da52599c89d",
+              "paramType": "3.1",
+              "refID": "2620976c-dfcf-45e1-810d-42ca780e1670"
+            },
+            "requestContentType": "json",
+            "url": "https://company21280-poc.api.identitynow-demo.com/v2025/search"
+          },
+          "description": "",
+          "displayName": "Selected User Details",
+          "nextStep": "Interactive Form 1",
+          "type": "action",
+          "versionNumber": 3
+        },
+        "HTTP Request 1": {
+          "actionId": "sp:http",
+          "attributes": {
+            "jsonRequestBody": {
+              "attributes": {
+                "name": "{{$.hTTPRequest.body[0].name}}",
+                "primaryOffice": "{{$.interactiveForm1.formData.office}}",
+                "sourceId": "{{$.defineVariable.officesSourceId}}"
+              }
+            },
+            "method": "post",
+            "param_authenticationRef": "oauth",
+            "param_oauth": {
+              "mapping": {
+                "auth_client_id": "clientId",
+                "auth_client_secret": "clientSecret",
+                "auth_credential_location": "credentialLocation",
+                "auth_token_url": "tokenURL"
+              },
+              "paramID": "7b0fa675-e77b-4fde-b11e-280690aa4c0f",
+              "paramType": "1.4",
+              "refID": "2f50ea9b-eb8f-4934-8513-851574d89149"
+            },
+            "param_oauth_scopes": {
+              "mapping": {
+                "auth_scopes": "scopes"
+              },
+              "paramID": "097c3757-c597-47be-882d-0da52599c89d",
+              "paramType": "3.1",
+              "refID": "2620976c-dfcf-45e1-810d-42ca780e1670"
+            },
+            "requestContentType": "json",
+            "url": "https://company21280-poc.api.identitynow-demo.com/v2025/accounts"
+          },
+          "description": "{\n    \"attributes\": {\n        \"sourceId\": \"{{$.defineVariable.officesSourceId}}\",\n        \"name\": \"{{$.hTTPRequest.body[0].name}}\",\n        \"primaryOffice\": \"{{$.interactiveForm1.formData.office}}\"\n    }\n}",
+          "displayName": "Save Primary Office",
+          "nextStep": "End Step - Success",
+          "type": "action",
+          "versionNumber": 3
+        },
+        "Interactive Form": {
+          "actionId": "sp:interactive-form",
+          "attributes": {
+            "formDefinitionId": "747524a2-8352-49f2-ae42-5d458f64183a",
+            "inputForForm_array_reports.$": "$.getListOfIdentities.identities",
+            "inputForForm_array_reports_label": "$.attributes.displayName",
+            "inputForForm_array_reports_subLabel": "$.attributes.email",
+            "inputForForm_array_reports_value": "$.id",
+            "interactiveProcessId.$": "$.trigger.interactiveProcessId",
+            "ownerId.$": "$.trigger.launchedBy.id",
+            "title": "Select Subordinate"
+          },
+          "displayName": "Select Subordinate",
+          "nextStep": "HTTP Request",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Interactive Form 1": {
+          "actionId": "sp:interactive-form",
+          "attributes": {
+            "formDefinitionId": "040b9aa0-9e74-4600-aaf5-5306b9c75bdc",
+            "inputForForm_array_offices.$": "$.hTTPRequest.body[0].access[?(@.source.id == 'ccfe73427f6c4b678efe92ca774ad665' && @.attribute == 'LOGIN_AREAS')]",
+            "inputForForm_array_offices_label": "$.name",
+            "inputForForm_array_offices_subLabel": "$.value",
+            "inputForForm_array_offices_value": "$.value",
+            "interactiveProcessId.$": "$.trigger.interactiveProcessId",
+            "ownerId.$": "$.trigger.launchedBy.id",
+            "title": "Select Primary Office"
+          },
+          "description": "",
+          "displayName": "Select Primary Office",
+          "nextStep": "HTTP Request 1",
+          "type": "action",
+          "versionNumber": 1
+        }
+      }
+    },
+    "description": "",
+    "enabled": true,
+    "id": "a9be7fbc-fca9-4bae-b9db-b0f227109df9",
+    "modified": "2026-04-20T10:09:06.407230758Z",
+    "modifiedBy": {
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
+      "type": "IDENTITY"
+    },
+    "name": "Set Amadeus Primary Office",
+    "owner": {
+      "id": "30507568a2d54f7484fe0f3edba79692",
+      "name": "fernando.delosrios",
+      "type": "IDENTITY"
+    },
+    "trigger": {
+      "attributes": {
+        "filter.$": "$[?(@.workflowId == 'a9be7fbc-fca9-4bae-b9db-b0f227109df9')]",
+        "id": "idn:interactive-process-launched"
+      },
+      "type": "EVENT"
+    }
+  },
+  "self": {
+    "id": "a9be7fbc-fca9-4bae-b9db-b0f227109df9",
+    "name": "Set Amadeus Primary Office",
+    "type": "WORKFLOW"
+  },
+  "version": 1
+}

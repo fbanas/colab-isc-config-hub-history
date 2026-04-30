@@ -1,0 +1,54 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessActionConfiguration": {
+      "removeAllAccessEnabled": false
+    },
+    "accessProfileIds": [],
+    "accessProfileRefs": null,
+    "accountActionRefs": [
+      {
+        "action": "DISABLE",
+        "allSources": true,
+        "excludeSourceIdsRefs": [],
+        "sourceIdsRefs": []
+      }
+    ],
+    "accountActions": [
+      {
+        "action": "DISABLE",
+        "allSources": true,
+        "excludeSourceIds": null,
+        "sourceIds": null
+      }
+    ],
+    "created": "2026-03-11T11:26:05.522Z",
+    "description": null,
+    "emailNotificationOption": {
+      "emailAddressList": [],
+      "notifyAllAdmins": false,
+      "notifyManagers": false,
+      "notifySpecificUsers": false
+    },
+    "enabled": false,
+    "id": "a838d98dc451463b8d835c80c204745e",
+    "identityCount": 0,
+    "identityProfileRef": {
+      "id": "2554428fd39d497d8c6fee1c5de90849",
+      "name": "ISC Users",
+      "type": "IDENTITY_PROFILE"
+    },
+    "identityState": "ACTIVE",
+    "modified": "2026-03-11T11:26:05.522Z",
+    "name": "Pre Hire",
+    "priority": 10,
+    "technicalName": "preHire"
+  },
+  "self": {
+    "id": "a838d98dc451463b8d835c80c204745e",
+    "name": "Pre Hire",
+    "type": "LIFECYCLE_STATE"
+  },
+  "version": 1
+}

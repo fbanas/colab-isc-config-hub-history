@@ -1,0 +1,78 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessProfiles": [],
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": false,
+      "denialCommentsRequired": false,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-03-18T13:31:44.059265Z",
+    "description": "Role for all Employees from LH1 (LH1-Role-2)",
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": true,
+    "entitlements": [],
+    "id": "d039032de67a4f1782fffec51a344720",
+    "legacyMembershipInfo": null,
+    "membership": {
+      "criteria": {
+        "children": [
+          {
+            "children": null,
+            "key": {
+              "property": "attribute.positions",
+              "sourceId": "af946e2450024d5bae5fa127eaa4b313",
+              "type": "ACCOUNT"
+            },
+            "operation": "CONTAINS",
+            "stringValue": null,
+            "values": [
+              "[LH1|User]"
+            ]
+          }
+        ],
+        "key": null,
+        "operation": "OR",
+        "stringValue": null,
+        "values": null
+      },
+      "identities": null,
+      "type": "STANDARD"
+    },
+    "modified": "2026-03-27T15:02:34.593494Z",
+    "name": "LH1_Default-User",
+    "owner": {
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [
+      {
+        "id": "0643ef20-158f-4143-93b1-838213316949",
+        "name": "LH1-Lufthansa 1",
+        "type": "SEGMENT"
+      }
+    ],
+    "segments": [
+      "0643ef20-158f-4143-93b1-838213316949"
+    ]
+  },
+  "self": {
+    "id": "d039032de67a4f1782fffec51a344720",
+    "name": "LH1_Default-User",
+    "type": "ROLE"
+  },
+  "version": 1
+}

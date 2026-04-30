@@ -1,0 +1,82 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": "2026-04-14T14:52:52.933150056Z",
+    "description": "",
+    "formConditions": [],
+    "formElements": [
+      {
+        "config": {
+          "alignment": "LEFT",
+          "description": "The Primary Office will be set by the system to the first approved office from the assigned offices list. Once the Offices in Amadeus Secondary Offices are approved, the Amadeus Primary Office can be changed to an office from the list of approved offices.",
+          "formElements": [
+            {
+              "config": {
+                "dataSource": {
+                  "config": {
+                    "formInputId": "offices",
+                    "sortBy": "ASC"
+                  },
+                  "dataSourceType": "FORM_INPUT"
+                },
+                "forceSelect": true,
+                "helpText": "",
+                "label": "Select an Office",
+                "maximum": 1,
+                "placeholder": "",
+                "required": true
+              },
+              "elementType": "SELECT",
+              "id": "580086048866",
+              "key": "office",
+              "validations": [
+                {
+                  "validationType": "DATA_SOURCE"
+                },
+                {
+                  "validationType": "REQUIRED"
+                }
+              ]
+            }
+          ],
+          "label": "Select Amadeus Primary Office",
+          "labelStyle": "h2",
+          "showLabel": true
+        },
+        "elementType": "SECTION",
+        "id": "1166871861636",
+        "validations": []
+      }
+    ],
+    "formInput": [
+      {
+        "description": "",
+        "id": "offices",
+        "label": "offices",
+        "type": "ARRAY"
+      }
+    ],
+    "id": "040b9aa0-9e74-4600-aaf5-5306b9c75bdc",
+    "modified": "2026-04-19T07:23:49.680809907Z",
+    "name": "Select Amadeus Primary Office",
+    "owner": {
+      "id": "30507568a2d54f7484fe0f3edba79692",
+      "name": "fernando.delosrios",
+      "type": "IDENTITY"
+    },
+    "usedBy": [
+      {
+        "id": "a9be7fbc-fca9-4bae-b9db-b0f227109df9",
+        "name": "Set Amadeus Primary Office",
+        "type": "WORKFLOW"
+      }
+    ]
+  },
+  "self": {
+    "id": "040b9aa0-9e74-4600-aaf5-5306b9c75bdc",
+    "name": "Select Amadeus Primary Office",
+    "type": "FORM_DEFINITION"
+  },
+  "version": 1
+}

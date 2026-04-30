@@ -1,0 +1,51 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": null,
+      "denialCommentsRequired": null,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-04-19T08:23:38.140719Z",
+    "description": null,
+    "enabled": true,
+    "entitlements": [
+      {
+        "id": "bfe5cff22b7c36c6a647d578b3629a0d",
+        "name": "CHECKIN_AND_BOARDING_SUPERVISOR",
+        "type": "ENTITLEMENT"
+      }
+    ],
+    "id": "01d5a2f2b98c43a59424906fbaafe683",
+    "modified": "2026-04-19T08:24:44.669076Z",
+    "name": "Amadeus SU Duty Code",
+    "owner": {
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
+      "type": "IDENTITY"
+    },
+    "provisioningCriteria": null,
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": null
+    },
+    "segmentRefs": [],
+    "segments": [],
+    "source": {
+      "id": "ccfe73427f6c4b678efe92ca774ad665",
+      "name": "Amadeus",
+      "type": "SOURCE"
+    }
+  },
+  "self": {
+    "id": "01d5a2f2b98c43a59424906fbaafe683",
+    "name": "Amadeus SU Duty Code",
+    "type": "ACCESS_PROFILE"
+  },
+  "version": 1
+}

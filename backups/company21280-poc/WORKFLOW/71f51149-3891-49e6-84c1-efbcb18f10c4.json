@@ -1,0 +1,104 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": "2026-04-13T08:42:38.511762602Z",
+    "creator": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "definition": {
+      "start": "Get Identity",
+      "steps": {
+        "Get Accounts": {
+          "actionId": "sp:get-accounts",
+          "attributes": {
+            "getAccountsBy": "specificIdentity",
+            "identity.$": "$.trigger.identityAttributes.id"
+          },
+          "description": "Retrieves the identity's current list of accounts.",
+          "displayName": "Get Device Owner's Accounts",
+          "nextStep": "Manage Accounts",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Get Identity": {
+          "actionId": "sp:get-identity",
+          "attributes": {
+            "id.$": "$.trigger.identityAttributes.id"
+          },
+          "description": "Retrieves available details about the identity.",
+          "displayName": "Get Device Owner's Identity",
+          "nextStep": "Get Accounts",
+          "type": "action",
+          "versionNumber": 2
+        },
+        "Manage Accounts": {
+          "actionId": "sp:manage-account",
+          "attributes": {
+            "accountIds.$": "$.getAccounts.accounts[*].id",
+            "operation": "disable"
+          },
+          "description": "Disables all accounts returned by the Get Accounts step.",
+          "displayName": "Disable Accounts",
+          "nextStep": "Send Email",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Send Email": {
+          "actionId": "sp:send-email",
+          "attributes": {
+            "body": "<div class=\"ak-renderer-sticky-safe-breakout-wrapper ak-renderer-flex-center-wrapper css-l5clsc\">\n<div class=\"ak-renderer-sticky-safe-breakout-inner fabric-editor-breakout-mark fabric-editor-block-mark css-ozd7xs\" data-mode=\"wide\" data-has-width=\"true\" data-width=\"760\">\n<div class=\"code-block css-1l9rc3g\" data-ssr-placeholder=\"7voiQ:EfLS5:z8NN7:qz-Pe:OP-5u-0\"><code class=\"language-\"><span class=\"\">Identity Name&nbsp; - {{$.getIdentity.attributes.displayName}}\n</span><span class=\"\" data-testid=\"renderer-code-block-line-3\" data-ds--code--row=\"\">Dept - {{$.getIdentity.attributes.department}}\n</span><span class=\"\" data-testid=\"renderer-code-block-line-5\" data-ds--code--row=\"\">City - {{$.getIdentity.attributes.city}}\n</span><span class=\"\" data-testid=\"renderer-code-block-line-7\" data-ds--code--row=\"\">Work Email - {{$.getIdentity.emailAddress}}\n</span><span class=\"\" data-testid=\"renderer-code-block-line-9\" data-ds--code--row=\"\">===========================\n</span><span class=\"\" data-testid=\"renderer-code-block-line-11\" data-ds--code--row=\"\">Event Info from Transmitter -&nbsp;\n</span><span class=\"\" data-testid=\"renderer-code-block-line-13\" data-ds--code--row=\"\">{{$.trigger.ssfEvent.events}}\n</span><span class=\"\" data-testid=\"renderer-code-block-line-17\" data-ds--code--row=\"\">Email associated with the device -\n</span><span class=\"\" data-testid=\"renderer-code-block-line-19\" data-ds--code--row=\"\">&nbsp;{{$.trigger.correlatedID}}\n</span></code></div>\n</div>\n</div>",
+            "context": {},
+            "from": null,
+            "recipientEmailList": [
+              "florian.banas@sailpoint.com"
+            ],
+            "replyTo": null,
+            "subject": "Non-Compliant Device Signal"
+          },
+          "description": null,
+          "displayName": "",
+          "nextStep": "success 1",
+          "type": "action",
+          "versionNumber": 2
+        },
+        "success 1": {
+          "actionId": "sp:operator-success",
+          "description": "Finishes the workflow in a Success state. Some organizations may want to add a step to create a certification campaign prior to ending the workflow.",
+          "displayName": "End Step - Success",
+          "type": "success"
+        }
+      }
+    },
+    "description": "This workflow is triggered when an identity’s device is no longer compliant. The workflow disables the identity’s accounts in response to a potential threat.",
+    "enabled": true,
+    "id": "71f51149-3891-49e6-84c1-efbcb18f10c4",
+    "modified": "2026-04-13T08:58:22.130597995Z",
+    "modifiedBy": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "name": "Remove Access Based off Device Compliance Change",
+    "owner": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "trigger": {
+      "attributes": {
+        "filter.$": "$.ssfEvent.events[\"https://schemas.openid.net/secevent/caep/event-type/device-compliance-change\"][?(@.current_status == \"not-compliant\")]",
+        "id": "idn:caep-device-compliance-change-events"
+      },
+      "type": "EVENT"
+    }
+  },
+  "self": {
+    "id": "71f51149-3891-49e6-84c1-efbcb18f10c4",
+    "name": "Remove Access Based off Device Compliance Change",
+    "type": "WORKFLOW"
+  },
+  "version": 1
+}

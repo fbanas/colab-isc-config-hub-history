@@ -1,0 +1,49 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "attributes": [
+      {
+        "displayName": "Amadeus Primary Office",
+        "enabled": true,
+        "name": "amadeusPrimaryOffice",
+        "target": "PRIMARY_LOGIN_AREA"
+      },
+      {
+        "displayName": "IdentityNow Username",
+        "enabled": false,
+        "name": "uid",
+        "target": "LOGIN"
+      },
+      {
+        "displayName": "att_email",
+        "enabled": false,
+        "name": "email",
+        "target": "EMAIL"
+      },
+      {
+        "displayName": "att_first_name",
+        "enabled": false,
+        "name": "firstname",
+        "target": "FIRST_NAME"
+      },
+      {
+        "displayName": "att_last_name",
+        "enabled": false,
+        "name": "lastname",
+        "target": "LAST_NAME"
+      }
+    ],
+    "source": {
+      "id": "ccfe73427f6c4b678efe92ca774ad665",
+      "name": "Amadeus",
+      "type": "SOURCE"
+    }
+  },
+  "self": {
+    "id": "38973aa7-395a-4199-a401-a4c49a20d0d1:ccfe73427f6c4b678efe92ca774ad665",
+    "name": "Amadeus",
+    "type": "ATTR_SYNC_SOURCE_CONFIG"
+  },
+  "version": 1
+}

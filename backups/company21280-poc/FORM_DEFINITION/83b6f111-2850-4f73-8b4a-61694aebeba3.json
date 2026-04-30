@@ -1,0 +1,77 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": "2024-12-23T12:57:27.068616314Z",
+    "description": "An interactive form that allows the user to provide an email address for the user who is assigned as the group manager.",
+    "formConditions": [],
+    "formElements": [
+      {
+        "config": {
+          "alignment": "LEFT",
+          "description": "",
+          "formElements": [
+            {
+              "config": {
+                "default": "",
+                "description": "",
+                "helpText": "Provide the manager's email address.",
+                "label": "{{ $.form.input.comment }}",
+                "placeholder": "",
+                "required": false
+              },
+              "elementType": "EMAIL",
+              "id": "210389602543",
+              "key": "managerEmailAddress",
+              "validations": [
+                {
+                  "validationType": "EMAIL"
+                }
+              ]
+            }
+          ],
+          "label": "Email Address",
+          "labelStyle": "h5",
+          "showLabel": true
+        },
+        "elementType": "SECTION",
+        "id": "795112953218",
+        "validations": []
+      }
+    ],
+    "formInput": [
+      {
+        "description": "",
+        "id": "comment",
+        "label": "comment",
+        "type": "STRING"
+      }
+    ],
+    "id": "83b6f111-2850-4f73-8b4a-61694aebeba3",
+    "modified": "2026-03-18T20:49:10.643196879Z",
+    "name": "Supply Email Address",
+    "owner": {
+      "id": "ca0b819aa0cd4e9fbc267a091d6784a3",
+      "name": "",
+      "type": "IDENTITY"
+    },
+    "usedBy": [
+      {
+        "id": "3ed0647f-8062-4a32-b2a8-9b8ed6a794be",
+        "name": "Create a Security Group in Active Directory",
+        "type": "WORKFLOW"
+      },
+      {
+        "id": "8f7282f8-313c-45f6-a51b-82036fb250c1",
+        "name": "Create a Security Group in Active Directory (Import)",
+        "type": "WORKFLOW"
+      }
+    ]
+  },
+  "self": {
+    "id": "83b6f111-2850-4f73-8b4a-61694aebeba3",
+    "name": "Supply Email Address",
+    "type": "FORM_DEFINITION"
+  },
+  "version": 1
+}

@@ -1,0 +1,53 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "attributes": {
+      "ignoreErrors": true,
+      "values": [
+        {
+          "attributes": {
+            "input": {
+              "attributes": {
+                "delimiter": ",",
+                "index": 0,
+                "throw": true
+              },
+              "type": "split"
+            },
+            "inputFormat": "M/d/yyyy",
+            "outputFormat": "ISO8601"
+          },
+          "type": "dateFormat"
+        },
+        {
+          "attributes": {
+            "inputFormat": "M/d/yyyy h:m:s a z",
+            "outputFormat": "ISO8601"
+          },
+          "type": "dateFormat"
+        },
+        {
+          "attributes": {
+            "inputFormat": "yyyy-MM-dd'T'HH:mm",
+            "outputFormat": "ISO8601"
+          },
+          "type": "dateFormat"
+        },
+        {
+          "type": "trim"
+        }
+      ]
+    },
+    "id": "75a7b346-10f8-4635-bd60-16feb5ca2e7e",
+    "internal": false,
+    "name": "Parse Date",
+    "type": "firstValid"
+  },
+  "self": {
+    "id": "75a7b346-10f8-4635-bd60-16feb5ca2e7e",
+    "name": "Parse Date",
+    "type": "TRANSFORM"
+  },
+  "version": 1
+}

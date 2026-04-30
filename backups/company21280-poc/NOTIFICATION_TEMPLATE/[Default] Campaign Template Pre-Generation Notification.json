@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "Dear ${__recipient.name},<br/><br/>\nThe certification $campaignTemplateName is scheduled to generate a campaign in 7 days. If you need to make any changes or updates to the contents of this campaign, please do so before ${generationDate}.\n<br/>Thanks,<br/> The $__global.productName Team<br/>",
+    "created": null,
+    "description": "Sent out one week prior to Campaign Template generation.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Campaign Template Pre-Generation Notification",
+    "key": "campaign_template_pregen_notification",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Campaign Template Pre-Generation Notification",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "Reminder: Your Certification Campaign is Scheduled to Start in 7 Days",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Campaign Template Pre-Generation Notification",
+    "name": "Campaign Template Pre-Generation Notification",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

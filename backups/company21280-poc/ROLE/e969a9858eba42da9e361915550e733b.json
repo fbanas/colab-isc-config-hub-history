@@ -1,0 +1,78 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessProfiles": [],
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": null,
+      "denialCommentsRequired": null,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-03-30T18:14:39.334735Z",
+    "description": null,
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": true,
+    "entitlements": [
+      {
+        "id": "a9db3994-4cb1-3e6b-bc9c-77d4761a2d5f",
+        "name": "Create Assignment and Person",
+        "sourceId": "3ebcf9ef-b047-494c-9d20-b91795ec3a42",
+        "sourceName": "NERM",
+        "type": "ENTITLEMENT"
+      }
+    ],
+    "id": "e969a9858eba42da9e361915550e733b",
+    "legacyMembershipInfo": null,
+    "membership": {
+      "criteria": {
+        "children": [
+          {
+            "children": null,
+            "key": {
+              "property": "attribute.Employer Status",
+              "sourceId": "d5def639d534485289b76f674ab18bf8",
+              "type": "ACCOUNT"
+            },
+            "operation": "EQUALS",
+            "stringValue": null,
+            "values": [
+              "Active"
+            ]
+          }
+        ],
+        "key": null,
+        "operation": "OR",
+        "stringValue": null,
+        "values": null
+      },
+      "identities": null,
+      "type": "STANDARD"
+    },
+    "modified": "2026-03-30T18:15:29.538103Z",
+    "name": "NERM - Create Assignment and Person",
+    "owner": {
+      "id": "30507568a2d54f7484fe0f3edba79692",
+      "name": "fernando.delosrios",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [],
+    "segments": []
+  },
+  "self": {
+    "id": "e969a9858eba42da9e361915550e733b",
+    "name": "NERM - Create Assignment and Person",
+    "type": "ROLE"
+  },
+  "version": 1
+}

@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "<font face=\"Calibri\" size=\"2\"><div>Dear $__recipient.name,<br/><br/>A $alert.severity severity alert was triggered by the $alert.ruleName alert rule.<br/><br/>The alert details:<br/><br/><strong>Action Time: </strong>$alert.actionTime<br/><strong>User Name: </strong>$alert.userName<br/><strong>Identity Name:</strong> $alert.identityName<br/><strong>Department:</strong> $alert.identityDepartment<br/><strong>Action Type: </strong>$alert.actionType<br/><strong>Application: </strong>$alert.application<br/><strong>Resource Path: </strong>$alert.resourcePath<br/><strong>Object Name: </strong>$alert.objectName<br/><strong>Data Classification Policies: </strong>$alert.dataClassificationPolicies<br/><br/>Click <a href=\"$alert.url\">here</a> to access the Activity Forensics page and see related alerts of this rule.<br/></div><br/>Thank you,<br/><strong>The SailPoint Team<strong>",
+    "created": null,
+    "description": "Alert triggered by alert rule.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Data Access Security Alert Rule",
+    "key": "das_alert_rule",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Data Access Security Alert Rule",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "Alert triggered by $alert.ruleName alert rule",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Data Access Security Alert Rule",
+    "name": "Data Access Security Alert Rule",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

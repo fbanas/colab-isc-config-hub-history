@@ -1,0 +1,554 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": "2026-03-18T21:02:45.035666088Z",
+    "creator": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "definition": {
+      "start": "Interactive Form 3",
+      "steps": {
+        "Compare Strings": {
+          "actionId": "sp:compare-strings",
+          "choiceList": [
+            {
+              "comparator": "StringEquals",
+              "nextStep": "Interactive Message",
+              "variableA.$": "$.interactiveForm1.formData.operation",
+              "variableB": "Enable"
+            }
+          ],
+          "defaultStep": "Interactive Message 3",
+          "description": "The selection in the interactive form is evaluated to determine if the user chose to enable the rule. If the user selected Enable, it evaluates to True, otherwise False.",
+          "displayName": "Enable Rule Selected?",
+          "type": "choice"
+        },
+        "End Step - Failure": {
+          "actionId": "sp:operator-failure",
+          "description": "The workflow cannot continue as the rule update failed. The workflow ends in a failed state.",
+          "displayName": "Failure: Rule Update Error",
+          "failureDetails": null,
+          "failureName": "Rule Update Error",
+          "type": "failure"
+        },
+        "End Step - Failure 1": {
+          "actionId": "sp:operator-failure",
+          "description": "The workflow cannot continue as the rule update failed. The workflow ends in a failed state.",
+          "displayName": "Failure: Rule Update Error",
+          "failureDetails": null,
+          "failureName": "Rule Update Error",
+          "type": "failure"
+        },
+        "End Step - Failure 2": {
+          "actionId": "sp:operator-failure",
+          "description": "The workflow cannot continue as the retrieval of rules failed. The workflow ends in a failed state.",
+          "displayName": "Failure: Get Enabled Rules Error",
+          "failureName": "Get Enabled Rules Error",
+          "type": "failure"
+        },
+        "End Step - Failure 3": {
+          "actionId": "sp:operator-failure",
+          "description": "The workflow cannot continue as the retrieval of rules failed. The workflow ends in a failed state.",
+          "displayName": "Failure: Get Disabled Rules Error",
+          "failureName": "Get Disabled Rules Error",
+          "type": "failure"
+        },
+        "End Step - Success": {
+          "actionId": "sp:operator-success",
+          "description": "The inbound firewall rule has been updated. The workflow completed successfully.",
+          "displayName": "Success: Rule Enabled",
+          "type": "success"
+        },
+        "End Step - Success 1": {
+          "actionId": "sp:operator-success",
+          "description": "The inbound firewall rule has been updated. The workflow completed successfully.",
+          "displayName": "Success: Rule Disabled",
+          "type": "success"
+        },
+        "Interactive Form 1": {
+          "actionId": "sp:interactive-form",
+          "attributes": {
+            "formDefinitionId": "431a1806-a40f-4668-b391-ddac74afae1a",
+            "interactiveProcessId.$": "$.trigger.interactiveProcessId",
+            "ownerId.$": "$.trigger.launchedBy.id",
+            "title": "Choose Operation"
+          },
+          "description": "This interactive form allows the user to choose whether to enable or disable an inbound firewall rule.",
+          "displayName": "Form: Choose Operation",
+          "nextStep": "Compare Strings",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Interactive Form 2": {
+          "actionId": "sp:interactive-form",
+          "attributes": {
+            "formDefinitionId": "4890d7e2-52be-4f40-8aa9-28d9f90542f9",
+            "inputForForm_array_rules.$": "$.windowsServer1.result.data",
+            "inputForForm_array_rules_label": "$.DisplayName",
+            "inputForForm_array_rules_subLabel": "$.Profile",
+            "inputForForm_array_rules_value": "$.ID",
+            "inputForForm_operation": "Disable",
+            "interactiveProcessId.$": "$.trigger.interactiveProcessId",
+            "ownerId.$": "$.trigger.launchedBy.id",
+            "title": "Select Inbound Rule to Disable"
+          },
+          "description": "This interactive form allows the user to choose which inbound firewall rule to disable.",
+          "displayName": "Form: Select Rule to Disable",
+          "nextStep": "Interactive Message 4",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Interactive Form 3": {
+          "actionId": "sp:interactive-form",
+          "attributes": {
+            "formDefinitionId": "d6b954f6-c0c5-49a0-b4dd-9a3d62c15e27",
+            "interactiveProcessId.$": "$.trigger.interactiveProcessId",
+            "ownerId.$": "$.trigger.launchedBy.id",
+            "title": "Introduction"
+          },
+          "description": "This interactive form explains the purpose of the workflow and what the user will need to do to complete it.",
+          "displayName": "Form: Introduction",
+          "nextStep": "Interactive Form 1",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Interactive Form 4": {
+          "actionId": "sp:interactive-form",
+          "attributes": {
+            "formDefinitionId": "4890d7e2-52be-4f40-8aa9-28d9f90542f9",
+            "inputForForm_array_rules.$": "$.windowsServer.result.data",
+            "inputForForm_array_rules_label": "$.DisplayName",
+            "inputForForm_array_rules_subLabel": "$.Profile",
+            "inputForForm_array_rules_value": "$.ID",
+            "inputForForm_operation": "Enable",
+            "interactiveProcessId.$": "$.trigger.interactiveProcessId",
+            "ownerId.$": "$.trigger.launchedBy.id",
+            "title": "Select Inbound Rule"
+          },
+          "description": "This interactive form allows the user to choose which inbound firewall rule to enable.",
+          "displayName": "Form: Select Rule to Enable",
+          "nextStep": "Interactive Message 1",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Interactive Message": {
+          "actionId": "sp:interactive-message",
+          "attributes": {
+            "category": "INFO",
+            "interactiveProcessId.$": "$.trigger.interactiveProcessId",
+            "message": "<p>Getting disabled inbound rules from the server...</p>",
+            "ownerId.$": "$.trigger.launchedBy.id",
+            "title": "🔎  Getting Disabled Rules"
+          },
+          "description": "This interactive message notifies the user that the workflow is currently retrieving disabled rules from the target server.",
+          "displayName": "Message: Getting Disabled Rules",
+          "nextStep": "Windows Server",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Interactive Message 1": {
+          "actionId": "sp:interactive-message",
+          "attributes": {
+            "category": "INFO",
+            "interactiveProcessId.$": "$.trigger.interactiveProcessId",
+            "message": "<p>Enabling inbound rule '{{ $.interactiveForm.formData.rule }}' on the server...</p>",
+            "ownerId.$": "$.trigger.launchedBy.id",
+            "title": "🔧  Enabling Rule"
+          },
+          "description": "This interactive message notifies the user that the workflow is currently enabling the selected inbound firewall rule on the target server.",
+          "displayName": "Message: Enabling Rule",
+          "nextStep": "Windows Server 2",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Interactive Message 10": {
+          "actionId": "sp:interactive-message",
+          "attributes": {
+            "category": "ERROR",
+            "interactiveProcessId.$": "$.trigger.interactiveProcessId",
+            "message": "<p>Failed to get enabled rules from the server!</p>\n<p>&nbsp;</p>\n<p>{{ $.windowsServer1.error.detailCode }}</p>\n<p>{{ $.windowsServer1.error.message.text }}</p>",
+            "ownerId.$": "$.trigger.launchedBy.id",
+            "title": "Failure: Get Enabled Rules"
+          },
+          "description": "This interactive message notifies the user that the workflow failed to retrieve enabled inbound firewall rules from the target server.",
+          "displayName": "Message: Getting Enabled Rules Failed",
+          "nextStep": "End Step - Failure 2",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Interactive Message 11": {
+          "actionId": "sp:interactive-message",
+          "attributes": {
+            "category": "ERROR",
+            "interactiveProcessId.$": "$.trigger.interactiveProcessId",
+            "message": "<p>Failed to get disabled rules from the server!</p>\n<p>&nbsp;</p>\n<p>{{ $.windowsServer.error.detailCode }}</p>\n<p>{{ $.windowsServer.error.message.text }}</p>",
+            "ownerId.$": "$.trigger.launchedBy.id",
+            "title": "Failure: Get Disabled Rules"
+          },
+          "description": "This interactive message notifies the user that the workflow failed to retrieve disabled inbound firewall rules from the target server.",
+          "displayName": "Message: Getting Disabled Rules Failed",
+          "nextStep": "End Step - Failure 3",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Interactive Message 2": {
+          "actionId": "sp:interactive-message",
+          "attributes": {
+            "category": "INFO",
+            "interactiveProcessId.$": "$.trigger.interactiveProcessId",
+            "message": "<p><strong>Command Output</strong></p>\n<p>{{ $.windowsServer2.result.data }}</p>\n<p>&nbsp;</p>\n<p>Getting updated rule details...</p>",
+            "ownerId.$": "$.trigger.launchedBy.id",
+            "title": "✅  Rule Enabled"
+          },
+          "description": "This interactive message displays the command output from the target server to the user.",
+          "displayName": "Message: Enable Rule Command Output",
+          "nextStep": "Windows Server 5",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Interactive Message 3": {
+          "actionId": "sp:interactive-message",
+          "attributes": {
+            "category": "INFO",
+            "interactiveProcessId.$": "$.trigger.interactiveProcessId",
+            "message": "<p>Getting enabled inbound rules from the server...</p>",
+            "ownerId.$": "$.trigger.launchedBy.id",
+            "title": "🔎  Getting Enabled Rules"
+          },
+          "description": "This interactive message notifies the user that the workflow is currently retrieving enabled inbound firewall rules from the target server.",
+          "displayName": "Message: Getting Enabled Rules",
+          "nextStep": "Windows Server 1",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Interactive Message 4": {
+          "actionId": "sp:interactive-message",
+          "attributes": {
+            "category": "INFO",
+            "interactiveProcessId.$": "$.trigger.interactiveProcessId",
+            "message": "<p>Disabling inbound rule '{{ $.interactiveForm2.formData.rule }}' on the server...</p>",
+            "ownerId.$": "$.trigger.launchedBy.id",
+            "title": "🔧  Disabling Rule"
+          },
+          "description": "This interactive message notifies the user that the workflow is currently disabling the selected inbound firewall rule on the target server.",
+          "displayName": "Message: Disabling Rule",
+          "nextStep": "Windows Server 3",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Interactive Message 5": {
+          "actionId": "sp:interactive-message",
+          "attributes": {
+            "category": "INFO",
+            "interactiveProcessId.$": "$.trigger.interactiveProcessId",
+            "message": "<p><strong>Command Output</strong></p>\n<p>{{ $.windowsServer3.result.data }}</p>\n<p>&nbsp;</p>\n<p>Getting updated rule details...</p>",
+            "ownerId.$": "$.trigger.launchedBy.id",
+            "title": "✅  Rule Disabled"
+          },
+          "description": "Interactive message displaying the command output from the target server back to the user.",
+          "displayName": "Message: Disable Rule Command Output",
+          "nextStep": "Windows Server 4",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Interactive Message 6": {
+          "actionId": "sp:interactive-message",
+          "attributes": {
+            "category": "INFO",
+            "interactiveProcessId.$": "$.trigger.interactiveProcessId",
+            "message": "<p>Display Name: {{ $.windowsServer4.result.data.DisplayName }}</p>\n<p>ID: {{ $.windowsServer4.result.data.ID }}</p>\n<p>Profile: {{ $.windowsServer4.result.data.Profile }}</p>\n<p>Enabled: {{ $.windowsServer4.result.data.Enabled }}</p>",
+            "ownerId.$": "$.trigger.launchedBy.id",
+            "title": "📋  Updated Rule Details"
+          },
+          "description": "This interactive message displays the updated inbound firewall rule state.",
+          "displayName": "Message: Show Updated Rule",
+          "nextStep": "End Step - Success 1",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Interactive Message 7": {
+          "actionId": "sp:interactive-message",
+          "attributes": {
+            "category": "INFO",
+            "interactiveProcessId.$": "$.trigger.interactiveProcessId",
+            "message": "<p>Display Name: {{ $.windowsServer5.result.data.DisplayName }}</p>\n<p>ID: {{ $.windowsServer5.result.data.ID }}</p>\n<p>Profile: {{ $.windowsServer5.result.data.Profile }}</p>\n<p>Enabled: {{ $.windowsServer5.result.data.Enabled }}</p>",
+            "ownerId.$": "$.trigger.launchedBy.id",
+            "title": "📋  Updated Rule Details"
+          },
+          "description": "This interactive message displays the updated inbound firewall rule state.",
+          "displayName": "Message: Show Updated Rule",
+          "nextStep": "End Step - Success",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Interactive Message 8": {
+          "actionId": "sp:interactive-message",
+          "attributes": {
+            "category": "ERROR",
+            "interactiveProcessId.$": "$.trigger.interactiveProcessId",
+            "message": "<p>Failed to disable the '{{ $.interactiveForm2.formData.rule }}' rule!</p>\n<p>&nbsp;</p>\n<p>{{ $.windowsServer3.error.detailCode }}</p>\n<p>{{ $.windowsServer3.error.message.text }}</p>",
+            "ownerId.$": "$.trigger.launchedBy.id",
+            "title": "Rule Update Failed"
+          },
+          "description": "This interactive message notifies the user that the rule update failed.",
+          "displayName": "Message: Rule Update Failed",
+          "nextStep": "End Step - Failure",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Interactive Message 9": {
+          "actionId": "sp:interactive-message",
+          "attributes": {
+            "category": "ERROR",
+            "interactiveProcessId.$": "$.trigger.interactiveProcessId",
+            "message": "<p>Failed to enable the '{{ $.interactiveForm.formData.rule }}' rule!</p>\n<p>&nbsp;</p>\n<p>{{ $.windowsServer2.error.detailCode }}</p>\n<p>{{ $.windowsServer2.error.message.text }}</p>",
+            "ownerId.$": "$.trigger.launchedBy.id",
+            "title": "Rule Update Failed"
+          },
+          "description": "This interactive message notifies the user that the rule update failed.",
+          "displayName": "Message: Rule Update Failed",
+          "nextStep": "End Step - Failure 1",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Verify Data Type": {
+          "actionId": "sp:compare-unary",
+          "choiceList": [
+            {
+              "comparator": "IsNull",
+              "nextStep": "Interactive Message 5",
+              "variableA.$": "$.windowsServer3.error"
+            }
+          ],
+          "defaultStep": "Interactive Message 8",
+          "description": "The inbound firewall rule is verified to determine if it was successfully disabled. If it was disabled, it evaluates to True, otherwise False.",
+          "displayName": "Rule Disabled Successfully?",
+          "type": "choice"
+        },
+        "Verify Data Type 1": {
+          "actionId": "sp:compare-unary",
+          "choiceList": [
+            {
+              "comparator": "IsNull",
+              "nextStep": "Interactive Message 2",
+              "variableA.$": "$.windowsServer2.error"
+            }
+          ],
+          "defaultStep": "Interactive Message 9",
+          "description": "The inbound firewall rule is verified to determine if it was successfully enabled. If it was enabled, it evaluates to True, otherwise False.",
+          "displayName": "Rule Enabled Successfully?",
+          "type": "choice"
+        },
+        "Verify Data Type 2": {
+          "actionId": "sp:compare-unary",
+          "choiceList": [
+            {
+              "comparator": "IsNull",
+              "nextStep": "Interactive Form 2",
+              "variableA.$": "$.windowsServer1.error"
+            }
+          ],
+          "defaultStep": "Interactive Message 10",
+          "description": "Checks whether the enabled rules were fetched successfully. If they were it evaluates to true, otherwise false.",
+          "displayName": "Enabled Rules Fetched Successfully?",
+          "type": "choice"
+        },
+        "Verify Data Type 3": {
+          "actionId": "sp:compare-unary",
+          "choiceList": [
+            {
+              "comparator": "IsNull",
+              "nextStep": "Interactive Form 4",
+              "variableA.$": "$.windowsServer.error"
+            }
+          ],
+          "defaultStep": "Interactive Message 11",
+          "description": "The retrieved inbound firewall rules are verified to determine if the disabled rules were successfully retrieved. If they were retrieved it evaluates to True, otherwise False.",
+          "displayName": "Rules Fetched Successfully?",
+          "type": "choice"
+        },
+        "Windows Server": {
+          "actionId": "sp:pag-windows-server",
+          "attributes": {
+            "inputForPag_address": "10.0.0.250",
+            "inputForPag_auth_password": "secrets://aws-sm-provider/arn%3Aaws%3Asecretsmanager%3Aus-east-1%3A904994459557%3Asecret%3Aprivilege%2Fpag%2Fqa%2Finternal-demo-ad-tMKiv4/password",
+            "inputForPag_auth_type": "ntlm",
+            "inputForPag_auth_username": "secrets://aws-sm-provider/arn%3Aaws%3Asecretsmanager%3Aus-east-1%3A904994459557%3Asecret%3Aprivilege%2Fpag%2Fqa%2Finternal-demo-ad-tMKiv4/ad_username",
+            "inputForPag_kdc_port": 88,
+            "inputForPag_kdc_protocol": "udp",
+            "inputForPag_rule_state": "disabled",
+            "inputForPag_use_ssl": false,
+            "inputForPag_verify_cert": false,
+            "pagCommandType": "pag:windows_server:list_inbound_firewall_rules",
+            "pagInstanceId": "25ceb9be-068a-45f2-8868-a403faf2de3d",
+            "pagSpecId": "7e479f41-e367-4e20-85c8-9e2936aa4658",
+            "param_connType": "paramInline",
+            "param_credentialType": "paramInline",
+            "param_kerberosType": "paramInline"
+          },
+          "description": "The Privileged Action Gateway retrieves all disabled inbound firewall rules from the target server.",
+          "displayName": "PAG: Get Disabled Rules",
+          "nextStep": "Verify Data Type 3",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Windows Server 1": {
+          "actionId": "sp:pag-windows-server",
+          "attributes": {
+            "inputForPag_address": "10.0.0.250",
+            "inputForPag_auth_password": "secrets://aws-sm-provider/arn%3Aaws%3Asecretsmanager%3Aus-east-1%3A904994459557%3Asecret%3Aprivilege%2Fpag%2Fqa%2Finternal-demo-ad-tMKiv4/password",
+            "inputForPag_auth_type": "ntlm",
+            "inputForPag_auth_username": "secrets://aws-sm-provider/arn%3Aaws%3Asecretsmanager%3Aus-east-1%3A904994459557%3Asecret%3Aprivilege%2Fpag%2Fqa%2Finternal-demo-ad-tMKiv4/windows_username",
+            "inputForPag_kdc_port": 88,
+            "inputForPag_kdc_protocol": "udp",
+            "inputForPag_rule_state": "enabled",
+            "inputForPag_use_ssl": false,
+            "inputForPag_verify_cert": false,
+            "pagCommandType": "pag:windows_server:list_inbound_firewall_rules",
+            "pagInstanceId": "25ceb9be-068a-45f2-8868-a403faf2de3d",
+            "pagSpecId": "7e479f41-e367-4e20-85c8-9e2936aa4658",
+            "param_connType": "paramInline",
+            "param_credentialType": "paramInline",
+            "param_kerberosType": "paramInline"
+          },
+          "description": "The Privileged Action Gateway retrieves all enabled inbound firewall rules from the target server.",
+          "displayName": "PAG: Get Enabled Rules",
+          "nextStep": "Verify Data Type 2",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Windows Server 2": {
+          "actionId": "sp:pag-windows-server",
+          "attributes": {
+            "inputForPag_address": "10.0.0.250",
+            "inputForPag_auth_password": "secrets://aws-sm-provider/arn%3Aaws%3Asecretsmanager%3Aus-east-1%3A904994459557%3Asecret%3Aprivilege%2Fpag%2Fqa%2Finternal-demo-ad-tMKiv4/password",
+            "inputForPag_auth_type": "ntlm",
+            "inputForPag_auth_username": "secrets://aws-sm-provider/arn%3Aaws%3Asecretsmanager%3Aus-east-1%3A904994459557%3Asecret%3Aprivilege%2Fpag%2Fqa%2Finternal-demo-ad-tMKiv4/windows_username",
+            "inputForPag_kdc_port": 88,
+            "inputForPag_kdc_protocol": "udp",
+            "inputForPag_rule_id.$": "$.interactiveForm.formData.rule",
+            "inputForPag_use_ssl": false,
+            "inputForPag_verify_cert": false,
+            "pagCommandType": "pag:windows_server:enable_firewall_rule",
+            "pagInstanceId": "25ceb9be-068a-45f2-8868-a403faf2de3d",
+            "pagSpecId": "7e479f41-e367-4e20-85c8-9e2936aa4658",
+            "param_connType": "paramInline",
+            "param_credentialType": "paramInline",
+            "param_kerberosType": "paramInline"
+          },
+          "description": "The Privileged Action Gateway enables the selected inbound firewall rule on the target server based on the user’s selections in the interactive form.",
+          "displayName": "PAG: Enable Rule",
+          "nextStep": "Verify Data Type 1",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Windows Server 3": {
+          "actionId": "sp:pag-windows-server",
+          "attributes": {
+            "inputForPag_address": "10.0.0.250",
+            "inputForPag_auth_password": "secrets://aws-sm-provider/arn%3Aaws%3Asecretsmanager%3Aus-east-1%3A904994459557%3Asecret%3Aprivilege%2Fpag%2Fqa%2Finternal-demo-ad-tMKiv4/password",
+            "inputForPag_auth_type": "ntlm",
+            "inputForPag_auth_username": "secrets://aws-sm-provider/arn%3Aaws%3Asecretsmanager%3Aus-east-1%3A904994459557%3Asecret%3Aprivilege%2Fpag%2Fqa%2Finternal-demo-ad-tMKiv4/windows_username",
+            "inputForPag_kdc_port": 88,
+            "inputForPag_kdc_protocol": "udp",
+            "inputForPag_rule_id.$": "$.interactiveForm2.formData.rule",
+            "inputForPag_use_ssl": false,
+            "inputForPag_verify_cert": false,
+            "pagCommandType": "pag:windows_server:disable_firewall_rule",
+            "pagInstanceId": "25ceb9be-068a-45f2-8868-a403faf2de3d",
+            "pagSpecId": "7e479f41-e367-4e20-85c8-9e2936aa4658",
+            "param_connType": "paramInline",
+            "param_credentialType": "paramInline",
+            "param_kerberosType": "paramInline"
+          },
+          "description": "The Privileged Action Gateway disables the selected inbound firewall rule on the target server based on the user’s selections in the interactive form.",
+          "displayName": "PAG: Disable Rule",
+          "nextStep": "Verify Data Type",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Windows Server 4": {
+          "actionId": "sp:pag-windows-server",
+          "attributes": {
+            "inputForPag_address": "10.0.0.250",
+            "inputForPag_auth_password": "secrets://aws-sm-provider/arn%3Aaws%3Asecretsmanager%3Aus-east-1%3A904994459557%3Asecret%3Aprivilege%2Fpag%2Fqa%2Finternal-demo-ad-tMKiv4/password",
+            "inputForPag_auth_type": "ntlm",
+            "inputForPag_auth_username": "secrets://aws-sm-provider/arn%3Aaws%3Asecretsmanager%3Aus-east-1%3A904994459557%3Asecret%3Aprivilege%2Fpag%2Fqa%2Finternal-demo-ad-tMKiv4/windows_username",
+            "inputForPag_kdc_port": 88,
+            "inputForPag_kdc_protocol": "udp",
+            "inputForPag_rule_id.$": "$.interactiveForm2.formData.rule",
+            "inputForPag_use_ssl": false,
+            "inputForPag_verify_cert": false,
+            "pagCommandType": "pag:windows_server:get_firewall_rule_by_id",
+            "pagInstanceId": "25ceb9be-068a-45f2-8868-a403faf2de3d",
+            "pagSpecId": "7e479f41-e367-4e20-85c8-9e2936aa4658",
+            "param_connType": "paramInline",
+            "param_credentialType": "paramInline",
+            "param_kerberosType": "paramInline"
+          },
+          "description": "The Privileged Action Gateway retrieves the updated inbound firewall rule from the target server.",
+          "displayName": "PAG: Get Updated Rule",
+          "nextStep": "Interactive Message 6",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Windows Server 5": {
+          "actionId": "sp:pag-windows-server",
+          "attributes": {
+            "inputForPag_address": "10.0.0.250",
+            "inputForPag_auth_password": "secrets://aws-sm-provider/arn%3Aaws%3Asecretsmanager%3Aus-east-1%3A904994459557%3Asecret%3Aprivilege%2Fpag%2Fqa%2Finternal-demo-ad-tMKiv4/password",
+            "inputForPag_auth_type": "ntlm",
+            "inputForPag_auth_username": "secrets://aws-sm-provider/arn%3Aaws%3Asecretsmanager%3Aus-east-1%3A904994459557%3Asecret%3Aprivilege%2Fpag%2Fqa%2Finternal-demo-ad-tMKiv4/windows_username",
+            "inputForPag_kdc_port": 88,
+            "inputForPag_kdc_protocol": "udp",
+            "inputForPag_rule_id.$": "$.interactiveForm.formData.rule",
+            "inputForPag_use_ssl": false,
+            "inputForPag_verify_cert": false,
+            "pagCommandType": "pag:windows_server:get_firewall_rule_by_id",
+            "pagInstanceId": "25ceb9be-068a-45f2-8868-a403faf2de3d",
+            "pagSpecId": "7e479f41-e367-4e20-85c8-9e2936aa4658",
+            "param_connType": "paramInline",
+            "param_credentialType": "paramInline",
+            "param_kerberosType": "paramInline"
+          },
+          "description": "The Privileged Action Gateway retrieves the updated firewall rule from the target server.",
+          "displayName": "PAG: Get Updated Rule",
+          "nextStep": "Interactive Message 7",
+          "type": "action",
+          "versionNumber": 1
+        }
+      }
+    },
+    "description": "This interactive workflow allows you to enable or disable an inbound firewall rule on a Windows server.\n\nYou will be asked to choose whether to enable or disable a rule, then select the rule to update.",
+    "enabled": true,
+    "id": "598dcb00-140d-406a-913d-9426d63f665c",
+    "modified": "2026-03-18T21:57:26.786786478Z",
+    "modifiedBy": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "name": "Update an Inbound Firewall Rule State on a Windows Server",
+    "owner": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "trigger": {
+      "attributes": {
+        "filter.$": "$[?(@.workflowId == '598dcb00-140d-406a-913d-9426d63f665c')]",
+        "id": "idn:interactive-process-launched"
+      },
+      "type": "EVENT"
+    }
+  },
+  "self": {
+    "id": "598dcb00-140d-406a-913d-9426d63f665c",
+    "name": "Update an Inbound Firewall Rule State on a Windows Server",
+    "type": "WORKFLOW"
+  },
+  "version": 1
+}

@@ -1,0 +1,100 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "attributes": {
+      "ignoreErrors": true,
+      "values": [
+        "uid|florian.banas",
+        {
+          "attributes": {
+            "id": {
+              "attributes": {
+                "attributeName": "LINE-MANAGER",
+                "sourceName": "External Feed"
+              },
+              "type": "accountAttribute"
+            },
+            "value": "uid|$id"
+          },
+          "type": "static"
+        },
+        {
+          "attributes": {
+            "id": {
+              "attributes": {
+                "attributeName": "LINE-MANAGER",
+                "sourceName": "LHG"
+              },
+              "type": "accountAttribute"
+            },
+            "value": "lhgId|$id"
+          },
+          "type": "static"
+        },
+        {
+          "attributes": {
+            "id": {
+              "attributes": {
+                "attributeName": "LINE_MANAGER",
+                "sourceName": "LH1"
+              },
+              "type": "accountAttribute"
+            },
+            "value": "lh1Id|$id"
+          },
+          "type": "static"
+        },
+        {
+          "attributes": {
+            "id": {
+              "attributes": {
+                "attributeName": "Line Manager",
+                "sourceName": "LH2"
+              },
+              "type": "accountAttribute"
+            },
+            "value": "lh2Id|$id"
+          },
+          "type": "static"
+        },
+        {
+          "attributes": {
+            "id": {
+              "attributes": {
+                "attributeName": "line-manager",
+                "sourceName": "LH3"
+              },
+              "type": "accountAttribute"
+            },
+            "value": "lh3Id|$id"
+          },
+          "type": "static"
+        },
+        {
+          "attributes": {
+            "id": {
+              "attributes": {
+                "attributeName": "sponsor_login",
+                "sourceName": "NERM"
+              },
+              "type": "accountAttribute"
+            },
+            "value": "uid|$id"
+          },
+          "type": "static"
+        }
+      ]
+    },
+    "id": "5c85aff8-cd5f-47b3-ac77-59b9a03121f5",
+    "internal": false,
+    "name": "Manager",
+    "type": "firstValid"
+  },
+  "self": {
+    "id": "5c85aff8-cd5f-47b3-ac77-59b9a03121f5",
+    "name": "Manager",
+    "type": "TRANSFORM"
+  },
+  "version": 1
+}

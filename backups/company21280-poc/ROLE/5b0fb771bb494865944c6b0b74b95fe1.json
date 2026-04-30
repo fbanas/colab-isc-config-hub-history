@@ -1,0 +1,54 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessProfiles": [],
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": false,
+      "denialCommentsRequired": false,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-03-18T13:31:30.552962Z",
+    "description": "Role for all employees from the department Finance (LH1-Role-5)",
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": true,
+    "entitlements": [],
+    "id": "5b0fb771bb494865944c6b0b74b95fe1",
+    "legacyMembershipInfo": null,
+    "membership": null,
+    "modified": "2026-03-27T15:02:36.306718Z",
+    "name": "LH1_Finance",
+    "owner": {
+      "id": "aa4ab9d17dc24afc84947597b9ce1a46",
+      "name": "Bngeburg Börner",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [
+      {
+        "id": "0643ef20-158f-4143-93b1-838213316949",
+        "name": "LH1-Lufthansa 1",
+        "type": "SEGMENT"
+      }
+    ],
+    "segments": [
+      "0643ef20-158f-4143-93b1-838213316949"
+    ]
+  },
+  "self": {
+    "id": "5b0fb771bb494865944c6b0b74b95fe1",
+    "name": "LH1_Finance",
+    "type": "ROLE"
+  },
+  "version": 1
+}

@@ -1,0 +1,67 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessProfiles": [],
+    "accessRequestConfig": {
+      "approvalSchemes": [
+        {
+          "approverId": null,
+          "approverType": "ALL_OWNERS"
+        }
+      ],
+      "commentsRequired": false,
+      "denialCommentsRequired": false,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-03-18T13:31:32.429832Z",
+    "description": "Role to APP-101 (LH1-Role-7)",
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": true,
+    "entitlements": [
+      {
+        "id": "b325319f-0872-3352-9852-bb721b83847c",
+        "name": "APP-101",
+        "sourceId": "00c23142-0974-4506-bab1-e856117f40f7",
+        "sourceName": "Microsoft Entra sp-demo262 SaaS",
+        "type": "ENTITLEMENT"
+      }
+    ],
+    "id": "79ed141b926640fdb67b3a1792870592",
+    "legacyMembershipInfo": null,
+    "membership": null,
+    "modified": "2026-03-31T19:20:56.007457Z",
+    "name": "LH1_APP_Booking-System",
+    "owner": {
+      "id": "aa4ab9d17dc24afc84947597b9ce1a46",
+      "name": "Bngeburg Börner",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": true,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [
+      {
+        "id": "0643ef20-158f-4143-93b1-838213316949",
+        "name": "LH1-Lufthansa 1",
+        "type": "SEGMENT"
+      }
+    ],
+    "segments": [
+      "0643ef20-158f-4143-93b1-838213316949"
+    ]
+  },
+  "self": {
+    "id": "79ed141b926640fdb67b3a1792870592",
+    "name": "LH1_APP_Booking-System",
+    "type": "ROLE"
+  },
+  "version": 1
+}

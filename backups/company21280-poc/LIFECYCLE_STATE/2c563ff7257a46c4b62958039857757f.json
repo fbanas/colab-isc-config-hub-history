@@ -1,0 +1,40 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessActionConfiguration": {
+      "removeAllAccessEnabled": false
+    },
+    "accessProfileIds": [],
+    "accessProfileRefs": null,
+    "accountActionRefs": [],
+    "accountActions": [],
+    "created": "2026-03-31T16:27:02.551Z",
+    "description": null,
+    "emailNotificationOption": {
+      "emailAddressList": [],
+      "notifyAllAdmins": false,
+      "notifyManagers": false,
+      "notifySpecificUsers": false
+    },
+    "enabled": false,
+    "id": "2c563ff7257a46c4b62958039857757f",
+    "identityCount": 0,
+    "identityProfileRef": {
+      "id": "54a113a425844337b68975523209468f",
+      "name": "Identity Fusion NG",
+      "type": "IDENTITY_PROFILE"
+    },
+    "identityState": null,
+    "modified": "2026-03-31T16:27:02.551Z",
+    "name": "Leave of Absence",
+    "priority": 100,
+    "technicalName": "leaveOfAbsence"
+  },
+  "self": {
+    "id": "2c563ff7257a46c4b62958039857757f",
+    "name": "Leave of Absence",
+    "type": "LIFECYCLE_STATE"
+  },
+  "version": 1
+}

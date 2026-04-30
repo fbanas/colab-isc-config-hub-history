@@ -1,0 +1,91 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessProfiles": [],
+    "accessRequestConfig": {
+      "approvalSchemes": [
+        {
+          "approverId": null,
+          "approverType": "OWNER"
+        }
+      ],
+      "commentsRequired": false,
+      "denialCommentsRequired": false,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-03-18T13:31:34.512205Z",
+    "description": "Role to App-900 (LH1-Role-9)",
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": true,
+    "entitlements": [
+      {
+        "id": "717377d4-af54-3ae4-aeb5-bacf780e8016",
+        "name": "APP-900",
+        "sourceId": "00c23142-0974-4506-bab1-e856117f40f7",
+        "sourceName": "Microsoft Entra sp-demo262 SaaS",
+        "type": "ENTITLEMENT"
+      }
+    ],
+    "id": "ca8d0b3e27c04db7bc1384d38c26c6f8",
+    "legacyMembershipInfo": null,
+    "membership": {
+      "criteria": {
+        "children": [
+          {
+            "children": null,
+            "key": {
+              "property": "attribute.company",
+              "sourceId": null,
+              "type": "IDENTITY"
+            },
+            "operation": "CONTAINS",
+            "stringValue": null,
+            "values": [
+              "[Lufthansa 1]"
+            ]
+          }
+        ],
+        "key": null,
+        "operation": "OR",
+        "stringValue": null,
+        "values": null
+      },
+      "identities": null,
+      "type": "STANDARD"
+    },
+    "modified": "2026-03-27T15:02:35.622163Z",
+    "name": "LH1_Entry_Location",
+    "owner": {
+      "id": "aa4ab9d17dc24afc84947597b9ce1a46",
+      "name": "Bngeburg Börner",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [
+      {
+        "id": "0643ef20-158f-4143-93b1-838213316949",
+        "name": "LH1-Lufthansa 1",
+        "type": "SEGMENT"
+      }
+    ],
+    "segments": [
+      "0643ef20-158f-4143-93b1-838213316949"
+    ]
+  },
+  "self": {
+    "id": "ca8d0b3e27c04db7bc1384d38c26c6f8",
+    "name": "LH1_Entry_Location",
+    "type": "ROLE"
+  },
+  "version": 1
+}

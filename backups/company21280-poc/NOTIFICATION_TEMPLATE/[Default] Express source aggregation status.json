@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "#set($url=$__global.productUrl + '/ui/a/admin/connections/sources-list')#if($TASK_STATUS.equalsIgnoreCase(\"Error\"))<p>Dear recipient,</p><p>The application aggregation for the <b>$SOURCE_NAME</b> source failed on <b>$COMPLETED_DATE</b>.</p><p><b>Status:</b> $TASK_STATUS</p><p>Go to the <a href=\"$url\">Sources</a> page to view the source details.</p><p>Thanks,<br/>The $__global.productName Team</p>#else<p>Dear recipient,</p><p>The application aggregation for the <b>$SOURCE_NAME</b> source was completed on <b>$COMPLETED_DATE</b>.</p><p><b>Status:</b> $TASK_STATUS</p><p><b>Total Aggregated Objects:</b> $TOTAL_AGGREGATED_OBJECTS</p><p>Go to the <a href=\"$url\">Sources</a> page to view the source details.</p><p>Thanks,<br/>The $__global.productName Team</p>#end",
+    "created": null,
+    "description": "Notifies when Express source aggregation is completed.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Express source aggregation status",
+    "key": "express_source_aggregation_status",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Express source aggregation status",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "The application aggregation for $SOURCE_NAME #if($TASK_STATUS.equalsIgnoreCase(\"Error\"))failed#{else}completed#end",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Express source aggregation status",
+    "name": "Express source aggregation status",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

@@ -1,0 +1,99 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessProfiles": [],
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": false,
+      "denialCommentsRequired": false,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-03-18T09:21:26.458841Z",
+    "description": null,
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": true,
+    "entitlements": [
+      {
+        "id": "f7249486-07ec-35cb-ac50-b4417bba3bc6",
+        "name": "Correlated",
+        "sourceId": "af946e24-5002-4d5b-ae5f-a127eaa4b313",
+        "sourceName": "Identity Fusion NG",
+        "type": "ENTITLEMENT"
+      }
+    ],
+    "id": "2c73a0a2bc96427e8767e83b2746a255",
+    "legacyMembershipInfo": null,
+    "membership": {
+      "criteria": {
+        "children": [
+          {
+            "children": [
+              {
+                "children": null,
+                "key": {
+                  "property": "attribute.actions",
+                  "sourceId": "af946e2450024d5bae5fa127eaa4b313",
+                  "type": "ENTITLEMENT"
+                },
+                "operation": "EQUALS",
+                "stringValue": null,
+                "values": [
+                  "correlated"
+                ]
+              },
+              {
+                "children": null,
+                "key": {
+                  "property": "attribute.statuses",
+                  "sourceId": "af946e2450024d5bae5fa127eaa4b313",
+                  "type": "ENTITLEMENT"
+                },
+                "operation": "EQUALS",
+                "stringValue": null,
+                "values": [
+                  "uncorrelated"
+                ]
+              }
+            ],
+            "key": null,
+            "operation": "OR",
+            "stringValue": null,
+            "values": null
+          }
+        ],
+        "key": null,
+        "operation": "AND",
+        "stringValue": null,
+        "values": null
+      },
+      "identities": null,
+      "type": "STANDARD"
+    },
+    "modified": "2026-03-27T15:02:29.552509Z",
+    "name": "Identity Fusion NG Enforced Correlation",
+    "owner": {
+      "id": "176a5fc85208460383b2253765f4a137",
+      "name": "SailPoint Services",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [],
+    "segments": []
+  },
+  "self": {
+    "id": "2c73a0a2bc96427e8767e83b2746a255",
+    "name": "Identity Fusion NG Enforced Correlation",
+    "type": "ROLE"
+  },
+  "version": 1
+}

@@ -1,0 +1,54 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessActionConfiguration": {
+      "removeAllAccessEnabled": true
+    },
+    "accessProfileIds": [],
+    "accessProfileRefs": null,
+    "accountActionRefs": [
+      {
+        "action": "DISABLE",
+        "allSources": true,
+        "excludeSourceIdsRefs": [],
+        "sourceIdsRefs": []
+      }
+    ],
+    "accountActions": [
+      {
+        "action": "DISABLE",
+        "allSources": true,
+        "excludeSourceIds": null,
+        "sourceIds": null
+      }
+    ],
+    "created": "2026-03-17T15:26:08.952Z",
+    "description": null,
+    "emailNotificationOption": {
+      "emailAddressList": [],
+      "notifyAllAdmins": false,
+      "notifyManagers": false,
+      "notifySpecificUsers": false
+    },
+    "enabled": true,
+    "id": "97042297eeec427583172acef22b786e",
+    "identityCount": 0,
+    "identityProfileRef": {
+      "id": "54a113a425844337b68975523209468f",
+      "name": "Identity Fusion NG",
+      "type": "IDENTITY_PROFILE"
+    },
+    "identityState": "INACTIVE_LONG_TERM",
+    "modified": "2026-03-25T09:14:41.875Z",
+    "name": "Terminated",
+    "priority": 40,
+    "technicalName": "terminated"
+  },
+  "self": {
+    "id": "97042297eeec427583172acef22b786e",
+    "name": "Terminated",
+    "type": "LIFECYCLE_STATE"
+  },
+  "version": 1
+}

@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "Dear $__recipient.name,<br/><br/>\n#set($url=$__global.productUrl + '/ui/a/admin/connections/sources/' + $sourceId + '/settings/account-correlation')AI recommendations for account correlation configurations have been generated for $sourceName. <br/> Go to the <a href=\"$url\">Account Correlation</a> page to review your correlation recommendations.<br/>\n<br/>Thanks,<br/> The $__global.productName Team<br/>",
+    "created": null,
+    "description": "Sent to the user when account correlation recommendations are complete.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Correlation Recommendations Complete",
+    "key": "account_correlation_recommendation",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Correlation Recommendations Complete",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "Account Correlation Recommendations Complete for $sourceName",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Correlation Recommendations Complete",
+    "name": "Correlation Recommendations Complete",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

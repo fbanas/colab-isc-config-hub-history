@@ -1,0 +1,169 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": "2026-04-15T16:22:29.030049579Z",
+    "creator": {
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
+      "type": "IDENTITY"
+    },
+    "definition": {
+      "start": "HTTP Request",
+      "steps": {
+        "Compare Numbers": {
+          "actionId": "sp:compare-numbers",
+          "choiceList": [
+            {
+              "comparator": "NumericEquals",
+              "nextStep": "HTTP Request 3",
+              "variableA.$": "$.hTTPRequest1.statusCode",
+              "variableB": 200
+            }
+          ],
+          "defaultStep": "HTTP Request 2",
+          "description": null,
+          "displayName": "",
+          "type": "choice"
+        },
+        "End Step - Success": {
+          "actionId": "sp:operator-success",
+          "displayName": "",
+          "type": "success"
+        },
+        "HTTP Request": {
+          "actionId": "sp:http",
+          "attributes": {
+            "method": "post",
+            "param_authenticationRef": "none",
+            "requestContentType": "text",
+            "requestHeaders": {
+              "Content-Type": "text/plain"
+            },
+            "textRequestBody": "{{$.trigger.object.JSON()}}",
+            "url": "https://api.thebase64.com/encode"
+          },
+          "displayName": "Encode b64",
+          "nextStep": "HTTP Request 1",
+          "type": "action",
+          "versionNumber": 3
+        },
+        "HTTP Request 1": {
+          "actionId": "sp:http",
+          "attributes": {
+            "method": "get",
+            "param_authenticationRef": "header",
+            "param_header": {
+              "mapping": {
+                "auth_header_name": "headerName",
+                "auth_header_value": "headerValue"
+              },
+              "paramID": "b0c0f894-083f-4f22-a3d5-d60237ec4403",
+              "paramType": "1.3",
+              "refID": "cc0fa677-cfc0-496d-b1a2-2ffa73002eb2"
+            },
+            "requestContentType": "json",
+            "requestHeaders": {
+              "Content-Type": "application/json"
+            },
+            "url": "https://api.github.com/repos/CryptoLuke/demos/contents/poc/sources/{{$.trigger.objectName}}.json"
+          },
+          "catch": [
+            {
+              "next": "HTTP Request 2"
+            }
+          ],
+          "displayName": "Check GitHub Object Existence",
+          "nextStep": "Compare Numbers",
+          "type": "action",
+          "versionNumber": 3
+        },
+        "HTTP Request 2": {
+          "actionId": "sp:http",
+          "attributes": {
+            "jsonRequestBody": {
+              "content": "{{$.trigger.object64}}",
+              "message": "Commit source {{$.trigger.objectName}}"
+            },
+            "method": "put",
+            "param_authenticationRef": "header",
+            "param_header": {
+              "mapping": {
+                "auth_header_name": "headerName",
+                "auth_header_value": "headerValue"
+              },
+              "paramID": "b0c0f894-083f-4f22-a3d5-d60237ec4403",
+              "paramType": "1.3",
+              "refID": "cc0fa677-cfc0-496d-b1a2-2ffa73002eb2"
+            },
+            "requestContentType": "json",
+            "requestHeaders": {
+              "Accept": "application/vnd.github+json",
+              "Content-Type": "application/json"
+            },
+            "url": "https://api.github.com/repos/CryptoLuke/demos/contents/poc/sources/{{$.trigger.objectName}}.json"
+          },
+          "displayName": "Create new commit in GitHub",
+          "nextStep": "End Step - Success",
+          "type": "action",
+          "versionNumber": 3
+        },
+        "HTTP Request 3": {
+          "actionId": "sp:http",
+          "attributes": {
+            "method": "put",
+            "param_authenticationRef": "header",
+            "param_header": {
+              "mapping": {
+                "auth_header_name": "headerName",
+                "auth_header_value": "headerValue"
+              },
+              "paramID": "b0c0f894-083f-4f22-a3d5-d60237ec4403",
+              "paramType": "1.3",
+              "refID": "cc0fa677-cfc0-496d-b1a2-2ffa73002eb2"
+            },
+            "requestContentType": "json",
+            "requestHeaders": {
+              "Authorization": "Bearer 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",
+              "Content-Type": "application/json"
+            },
+            "url": "https://api.github.com/repos/CryptoLuke/demos/contents/poc/sources/{{$.trigger.object.name}}.json"
+          },
+          "displayName": "Update object in GitHub",
+          "nextStep": "End Step - Success",
+          "type": "action",
+          "versionNumber": 3
+        }
+      }
+    },
+    "description": "Child workflow that calls GitHub repository",
+    "enabled": false,
+    "id": "b83bc98c-ec20-4a5b-baae-bdf7c007f584",
+    "modified": "2026-04-20T12:02:36.419248085Z",
+    "modifiedBy": {
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
+      "type": "IDENTITY"
+    },
+    "name": "GitHub Repo Backup",
+    "owner": {
+      "id": "8939a7e19a4b43eabd3c6c2808c6b9b2",
+      "name": "luca.lori",
+      "type": "IDENTITY"
+    },
+    "trigger": {
+      "attributes": {
+        "clientId": "3fdb28b5-fc3a-44d6-abac-ba6a709dabda",
+        "id": "idn:external-http",
+        "url": "/beta/workflows/execute/external/b83bc98c-ec20-4a5b-baae-bdf7c007f584"
+      },
+      "type": "EXTERNAL"
+    }
+  },
+  "self": {
+    "id": "b83bc98c-ec20-4a5b-baae-bdf7c007f584",
+    "name": "GitHub Repo Backup",
+    "type": "WORKFLOW"
+  },
+  "version": 1
+}

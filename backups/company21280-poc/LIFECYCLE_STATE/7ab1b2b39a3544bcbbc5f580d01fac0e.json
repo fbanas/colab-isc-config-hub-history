@@ -1,0 +1,54 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessActionConfiguration": {
+      "removeAllAccessEnabled": true
+    },
+    "accessProfileIds": [],
+    "accessProfileRefs": null,
+    "accountActionRefs": [
+      {
+        "action": "DISABLE",
+        "allSources": true,
+        "excludeSourceIdsRefs": [],
+        "sourceIdsRefs": []
+      }
+    ],
+    "accountActions": [
+      {
+        "action": "DISABLE",
+        "allSources": true,
+        "excludeSourceIds": null,
+        "sourceIds": null
+      }
+    ],
+    "created": "2026-03-27T10:38:03.869Z",
+    "description": null,
+    "emailNotificationOption": {
+      "emailAddressList": [],
+      "notifyAllAdmins": false,
+      "notifyManagers": false,
+      "notifySpecificUsers": false
+    },
+    "enabled": false,
+    "id": "7ab1b2b39a3544bcbbc5f580d01fac0e",
+    "identityCount": 0,
+    "identityProfileRef": {
+      "id": "93009f15f90c4b2f9ce72cae8472fcb1",
+      "name": "Lufthansa - POC User",
+      "type": "IDENTITY_PROFILE"
+    },
+    "identityState": "INACTIVE_SHORT_TERM",
+    "modified": "2026-03-27T10:38:03.869Z",
+    "name": "Terminated",
+    "priority": 40,
+    "technicalName": "terminated"
+  },
+  "self": {
+    "id": "7ab1b2b39a3544bcbbc5f580d01fac0e",
+    "name": "Terminated",
+    "type": "LIFECYCLE_STATE"
+  },
+  "version": 1
+}

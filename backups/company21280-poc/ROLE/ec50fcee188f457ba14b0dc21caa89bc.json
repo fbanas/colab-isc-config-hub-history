@@ -1,0 +1,67 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessProfiles": [],
+    "accessRequestConfig": {
+      "approvalSchemes": [
+        {
+          "approverId": null,
+          "approverType": "OWNER"
+        }
+      ],
+      "commentsRequired": false,
+      "denialCommentsRequired": false,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-03-18T13:31:37.047433Z",
+    "description": "Role to APP-201 (LH2-Role-7)",
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": true,
+    "entitlements": [
+      {
+        "id": "4cd9fda4-f403-3e76-9110-315ec0edca97",
+        "name": "APP-201",
+        "sourceId": "00c23142-0974-4506-bab1-e856117f40f7",
+        "sourceName": "Microsoft Entra sp-demo262 SaaS",
+        "type": "ENTITLEMENT"
+      }
+    ],
+    "id": "ec50fcee188f457ba14b0dc21caa89bc",
+    "legacyMembershipInfo": null,
+    "membership": null,
+    "modified": "2026-03-27T15:02:41.104731Z",
+    "name": "LH2_APP_Helpdesk-System",
+    "owner": {
+      "id": "8452228aa5ef478bbf3c702bdea86cf8",
+      "name": "Hrnim Hussen van",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [
+      {
+        "id": "baf24241-1df7-47e0-8651-384fac91dcf6",
+        "name": "LH2-Lufthansa 2",
+        "type": "SEGMENT"
+      }
+    ],
+    "segments": [
+      "baf24241-1df7-47e0-8651-384fac91dcf6"
+    ]
+  },
+  "self": {
+    "id": "ec50fcee188f457ba14b0dc21caa89bc",
+    "name": "LH2_APP_Helpdesk-System",
+    "type": "ROLE"
+  },
+  "version": 1
+}

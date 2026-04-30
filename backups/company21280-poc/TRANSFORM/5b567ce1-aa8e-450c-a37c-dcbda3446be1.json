@@ -1,0 +1,44 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "attributes": {
+      "input": {
+        "attributes": {
+          "values": [
+            {
+              "attributes": {
+                "begin": 0,
+                "end": 1,
+                "input": {
+                  "attributes": {
+                    "name": "firstname"
+                  },
+                  "type": "identityAttribute"
+                }
+              },
+              "type": "substring"
+            },
+            {
+              "attributes": {
+                "name": "lastname"
+              },
+              "type": "identityAttribute"
+            }
+          ]
+        },
+        "type": "concat"
+      }
+    },
+    "id": "5b567ce1-aa8e-450c-a37c-dcbda3446be1",
+    "internal": false,
+    "name": "Derive FirstInitial+LastName In Upper",
+    "type": "upper"
+  },
+  "self": {
+    "id": "5b567ce1-aa8e-450c-a37c-dcbda3446be1",
+    "name": "Derive FirstInitial+LastName In Upper",
+    "type": "TRANSFORM"
+  },
+  "version": 1
+}

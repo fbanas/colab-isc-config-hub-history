@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "Dear ${ownerName},<br/>   <p> The certification \"$certification.certificationGroups.get(0).name\" is still open and needs to be completed.#if ($certification.expiration)  This certification must be finished by $spTools.formatDate($certification.expiration,3,0).#{end}  Click <a href=\"$identityNowUrl/ui/d/certifications-review/certification/${certification.id}\">here</a> to complete the certification.",
+    "created": null,
+    "description": "Sent to certification reviewers one week after a certification campaign starts and every seven days after that, until they sign off or the campaign ends.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Certification Due",
+    "key": "certification_due",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Certification Due",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "Reminder: Certification needs your attention",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Certification Due",
+    "name": "Certification Due",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

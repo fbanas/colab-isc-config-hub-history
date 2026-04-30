@@ -1,0 +1,31 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "attributes": {
+      "ignoreErrors": false,
+      "values": [
+        {
+          "attributes": {
+            "attributeName": "PRIMARY_LOGIN_AREA",
+            "sourceName": "Amadeus"
+          },
+          "type": "accountAttribute"
+        },
+        {
+          "type": "trim"
+        }
+      ]
+    },
+    "id": "5ddce596-ec74-4a11-8cf2-f53bbafa9cd3",
+    "internal": false,
+    "name": "Amadeus Primary Office",
+    "type": "firstValid"
+  },
+  "self": {
+    "id": "5ddce596-ec74-4a11-8cf2-f53bbafa9cd3",
+    "name": "Amadeus Primary Office",
+    "type": "TRANSFORM"
+  },
+  "version": 1
+}

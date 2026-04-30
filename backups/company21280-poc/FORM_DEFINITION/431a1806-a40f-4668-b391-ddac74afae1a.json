@@ -1,0 +1,85 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": "2024-08-06T08:33:59.043980229Z",
+    "description": "An interactive form that allows the user to select whether to enable or disable an inbound firewall rule.",
+    "formConditions": [],
+    "formElements": [
+      {
+        "config": {
+          "alignment": "LEFT",
+          "description": "Select a firewall rule operation below.",
+          "formElements": [
+            {
+              "config": {
+                "dataSource": {
+                  "config": {
+                    "options": [
+                      {
+                        "label": "Disable",
+                        "subLabel": "",
+                        "value": "Disable"
+                      },
+                      {
+                        "label": "Enable",
+                        "subLabel": "",
+                        "value": "Enable"
+                      }
+                    ]
+                  },
+                  "dataSourceType": "STATIC"
+                },
+                "forceSelect": true,
+                "helpText": "",
+                "label": "Operation",
+                "maximum": 1,
+                "placeholder": "",
+                "required": true
+              },
+              "elementType": "SELECT",
+              "id": "848391309744",
+              "key": "operation",
+              "validations": [
+                {
+                  "validationType": "DATA_SOURCE"
+                },
+                {
+                  "validationType": "REQUIRED"
+                }
+              ]
+            }
+          ],
+          "label": "Manage Inbound Firewall Rule",
+          "labelStyle": "h4",
+          "showLabel": true
+        },
+        "elementType": "SECTION",
+        "id": "1384004097650",
+        "validations": []
+      }
+    ],
+    "formInput": [],
+    "id": "431a1806-a40f-4668-b391-ddac74afae1a",
+    "modified": "2026-03-18T21:11:01.744361797Z",
+    "name": "Choose Firewall Rule Operation",
+    "owner": {
+      "id": "ca0b819aa0cd4e9fbc267a091d6784a3",
+      "name": "",
+      "type": "IDENTITY"
+    },
+    "usedBy": [
+      {
+        "id": "598dcb00-140d-406a-913d-9426d63f665c",
+        "name": "Update an Inbound Firewall Rule State on a Windows Server",
+        "type": "WORKFLOW"
+      }
+    ]
+  },
+  "self": {
+    "id": "431a1806-a40f-4668-b391-ddac74afae1a",
+    "name": "Choose Firewall Rule Operation",
+    "type": "FORM_DEFINITION"
+  },
+  "version": 1
+}

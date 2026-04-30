@@ -1,0 +1,35 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "attributes": {
+      "values": [
+        {
+          "attributes": {
+            "attributeName": "endDate",
+            "inputFormat": "MM/dd/yyyy",
+            "outputFormat": "ISO8601",
+            "sourceName": "Employee"
+          },
+          "type": "dateFormat"
+        },
+        {
+          "attributes": {
+            "value": "2199-01-01T00:00:00.000Z"
+          },
+          "type": "static"
+        }
+      ]
+    },
+    "id": "2565cd5f-3e09-4899-b217-f550fd4a1b87",
+    "internal": false,
+    "name": "ISO8601EndDateFormat",
+    "type": "firstValid"
+  },
+  "self": {
+    "id": "2565cd5f-3e09-4899-b217-f550fd4a1b87",
+    "name": "ISO8601EndDateFormat",
+    "type": "TRANSFORM"
+  },
+  "version": 1
+}

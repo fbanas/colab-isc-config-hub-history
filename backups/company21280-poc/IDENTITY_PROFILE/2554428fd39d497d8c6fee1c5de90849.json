@@ -1,0 +1,125 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "authoritativeSource": {
+      "id": "4b33fa97af754a968f230613f5cc84e0",
+      "name": "ISC Users",
+      "type": "SOURCE"
+    },
+    "created": "2026-03-11T11:26:05.249Z",
+    "description": null,
+    "hasTimeBasedAttr": false,
+    "id": "2554428fd39d497d8c6fee1c5de90849",
+    "identityAttributeConfig": {
+      "attributeTransforms": [
+        {
+          "identityAttributeName": "displayName",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "name",
+              "sourceId": "4b33fa97af754a968f230613f5cc84e0",
+              "sourceName": "ISC Users"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "displayName",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "name",
+              "sourceId": "4b33fa97af754a968f230613f5cc84e0",
+              "sourceName": "ISC Users"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "email",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "e-mail",
+              "sourceId": "4b33fa97af754a968f230613f5cc84e0",
+              "sourceName": "ISC Users"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "firstname",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "givenName",
+              "sourceId": "4b33fa97af754a968f230613f5cc84e0",
+              "sourceName": "ISC Users"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "lastname",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "familyName",
+              "sourceId": "4b33fa97af754a968f230613f5cc84e0",
+              "sourceName": "ISC Users"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "personalEmail",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "e-mail",
+              "sourceId": "4b33fa97af754a968f230613f5cc84e0",
+              "sourceName": "ISC Users"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "uid",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "name",
+              "sourceId": "4b33fa97af754a968f230613f5cc84e0",
+              "sourceName": "ISC Users"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "uid",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "name",
+              "sourceId": "4b33fa97af754a968f230613f5cc84e0",
+              "sourceName": "ISC Users"
+            },
+            "type": "accountAttribute"
+          }
+        }
+      ],
+      "enabled": true
+    },
+    "identityCount": 0,
+    "identityExceptionReportReference": null,
+    "identityRefreshRequired": false,
+    "modified": "2026-03-11T11:26:07.356Z",
+    "name": "ISC Users",
+    "owner": {
+      "id": "e4b5bec795a54599a9e39dcaac4467bf",
+      "name": "SailPoint Support",
+      "type": "IDENTITY"
+    },
+    "priority": 20
+  },
+  "self": {
+    "id": "2554428fd39d497d8c6fee1c5de90849",
+    "name": "ISC Users",
+    "type": "IDENTITY_PROFILE"
+  },
+  "version": 1
+}

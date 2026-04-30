@@ -1,0 +1,116 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": "2026-04-13T11:15:37.089033857Z",
+    "creator": {
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
+      "type": "IDENTITY"
+    },
+    "definition": {
+      "start": "Get Identity",
+      "steps": {
+        "Create Hardware Return Ticket": {
+          "actionId": "sp:snow",
+          "attributes": {
+            "action": "create",
+            "authenticationType": "basic",
+            "basicAuthPassword": "$.secrets.53611447-454d-4a40-a764-ec715c13dec3",
+            "basicAuthUserName": "workflow_user",
+            "caller": "system",
+            "category": "Hardware",
+            "customFields": null,
+            "description": "Bitte organisieren Sie die Rückgabe der Hardware für den ausscheidenden Mitarbeiter {{$.getIdentity.attributes.displayName}}. Dies umfasst Laptop, Monitor, Tastatur, Maus und weitere zugewiesene Geräte.",
+            "shortDescription": "Hardware Rückgabe - {{$.getIdentity.attributes.displayName}}",
+            "urgency": "2",
+            "url": "https://webhook.site/e77d6f34-5966-4387-88f7-7fe123257c24"
+          },
+          "description": null,
+          "displayName": "Erstelle Hardware Rückgabe Ticket",
+          "nextStep": "End Step - Success",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "End Step - Success": {
+          "actionId": "sp:operator-success",
+          "displayName": "Workflow erfolgreich beendet",
+          "type": "success"
+        },
+        "Get Identity": {
+          "actionId": "sp:get-identity",
+          "attributes": {
+            "id.$": "$.trigger.identity.id"
+          },
+          "displayName": "Hole Identity Informationen",
+          "nextStep": "Get Manager Identity",
+          "type": "action",
+          "versionNumber": 2
+        },
+        "Get Manager Identity": {
+          "actionId": "sp:get-identity",
+          "attributes": {
+            "id.$": "$.getIdentity.managerRef.id"
+          },
+          "displayName": "Hole Manager Informationen",
+          "nextStep": "Get Manager of Manager",
+          "type": "action",
+          "versionNumber": 2
+        },
+        "Get Manager of Manager": {
+          "actionId": "sp:get-identity",
+          "attributes": {
+            "id.$": "$.getManagerIdentity.managerRef.id"
+          },
+          "displayName": "Hole Manager des Managers",
+          "nextStep": "Send Email to Manager of Manager",
+          "type": "action",
+          "versionNumber": 2
+        },
+        "Send Email to Manager of Manager": {
+          "actionId": "sp:send-email",
+          "attributes": {
+            "body": "<p>Sehr geehrte/r &nbsp;{{$.getManagerOfManager.attributes.displayName}},</p>\n<p>wir m&ouml;chten Sie dar&uuml;ber informieren, dass {{$.getIdentity.attributes.displayName}} aus dem Team von {{$.getManagerIdentity.attributes.displayName}} das Unternehmen verl&auml;sst. Bitte beachten Sie diese Information f&uuml;r Ihre Planung.</p>\n<p>Mit freundlichen Gr&uuml;&szlig;en</p>\n<p>ISC Leaver Workflow</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>",
+            "context": {
+              "employeeName.$": "$.getIdentity.displayName",
+              "managerOfManagerName.$": "$.getManagerOfManager.displayName"
+            },
+            "recipientEmailList.$": "$.getManagerOfManager.emailAddress",
+            "subject": "Mitarbeiter Austritt - Information"
+          },
+          "displayName": "Sende Email an Manager des Managers",
+          "nextStep": "Create Hardware Return Ticket",
+          "type": "action",
+          "versionNumber": 2
+        }
+      }
+    },
+    "description": "Benachrichtigt den Manager des Managers über einen Austritt und erstellt ein Ticket für die Hardware-Rückgabe",
+    "enabled": false,
+    "id": "43ab7e90-8616-439b-a263-cf14bb207f58",
+    "modified": "2026-04-13T12:02:15.127867061Z",
+    "modifiedBy": {
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
+      "type": "IDENTITY"
+    },
+    "name": "Manager Benachrichtigung und Hardware Rückgabe Ticket",
+    "owner": {
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
+      "type": "IDENTITY"
+    },
+    "trigger": {
+      "attributes": {
+        "id": "idn:identity-deleted"
+      },
+      "type": "EVENT"
+    }
+  },
+  "self": {
+    "id": "43ab7e90-8616-439b-a263-cf14bb207f58",
+    "name": "Manager Benachrichtigung und Hardware Rückgabe Ticket",
+    "type": "WORKFLOW"
+  },
+  "version": 1
+}

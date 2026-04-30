@@ -1,0 +1,51 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": null,
+      "denialCommentsRequired": null,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-04-19T08:25:17.976033Z",
+    "description": null,
+    "enabled": true,
+    "entitlements": [
+      {
+        "id": "bfe5cff22b7c36c6a647d578b3629a0d",
+        "name": "CHECKIN_AND_BOARDING_SUPERVISOR",
+        "type": "ENTITLEMENT"
+      }
+    ],
+    "id": "72a29c7df5004c6fb62b28b21e6a6e1b",
+    "modified": "2026-04-19T08:26:01.053077Z",
+    "name": "Amadeus GS Duty Code",
+    "owner": {
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
+      "type": "IDENTITY"
+    },
+    "provisioningCriteria": null,
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": null
+    },
+    "segmentRefs": [],
+    "segments": [],
+    "source": {
+      "id": "ccfe73427f6c4b678efe92ca774ad665",
+      "name": "Amadeus",
+      "type": "SOURCE"
+    }
+  },
+  "self": {
+    "id": "72a29c7df5004c6fb62b28b21e6a6e1b",
+    "name": "Amadeus GS Duty Code",
+    "type": "ACCESS_PROFILE"
+  },
+  "version": 1
+}

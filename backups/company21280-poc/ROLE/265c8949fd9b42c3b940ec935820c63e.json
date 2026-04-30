@@ -1,0 +1,446 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessProfiles": [],
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": false,
+      "denialCommentsRequired": false,
+      "dimensionSchema": {
+        "dimensionAttributes": [
+          {
+            "derived": true,
+            "displayName": "Company",
+            "name": "company"
+          },
+          {
+            "derived": true,
+            "displayName": "Description",
+            "name": "description"
+          }
+        ]
+      },
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-03-24T12:16:16.66211Z",
+    "description": "This dynamic role is a privileged administrative role for configuring and managing the lifecycle of other business and application roles within the Lufthansa Group (LHG). Holders of this role can define the parameters for dynamic role assignments based on user attributes and business rules, ensuring access is provisioned automatically and remains compliant with organizational policies.",
+    "dimensionRefs": null,
+    "dimensional": true,
+    "dimensions": [
+      {
+        "accessProfiles": [],
+        "created": "2026-03-24T21:09:27.796643Z",
+        "description": "Admin - Identity Security Cloud Governance\nAdmins - Active Directory",
+        "entitlements": [
+          {
+            "id": "aa868ceacf3a3088922cd1d822827223",
+            "name": "Admins",
+            "type": "ENTITLEMENT"
+          },
+          {
+            "id": "c22353c7209a365cadd03775c96d2389",
+            "name": "Admin",
+            "type": "ENTITLEMENT"
+          }
+        ],
+        "id": "e8221fa2cb334936acf137d7d6abe21f",
+        "membership": {
+          "criteria": {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": null,
+                    "key": {
+                      "property": "attribute.description",
+                      "sourceId": null,
+                      "type": "IDENTITY"
+                    },
+                    "operation": "EQUALS",
+                    "stringValue": "Super Admin",
+                    "values": null
+                  }
+                ],
+                "key": null,
+                "operation": "AND",
+                "stringValue": "",
+                "values": null
+              }
+            ],
+            "key": null,
+            "operation": "AND",
+            "stringValue": "",
+            "values": null
+          },
+          "identities": null,
+          "type": "STANDARD"
+        },
+        "modified": "2026-03-25T10:41:27.745018Z",
+        "name": "Super Admin",
+        "owner": null,
+        "parentId": "265c8949fd9b42c3b940ec935820c63e"
+      },
+      {
+        "accessProfiles": [],
+        "created": "2026-03-25T10:29:14.760605Z",
+        "description": "Cert Admin - Identity Security Cloud Governance",
+        "entitlements": [
+          {
+            "id": "2dfa9c7cac9b38fd894e7de62297a0c0",
+            "name": "Cert Admin",
+            "type": "ENTITLEMENT"
+          }
+        ],
+        "id": "29cb9c2c33e348128211237343e60290",
+        "membership": {
+          "criteria": {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": null,
+                        "key": {
+                          "property": "attribute.description",
+                          "sourceId": null,
+                          "type": "IDENTITY"
+                        },
+                        "operation": "EQUALS",
+                        "stringValue": "Recertification Admin",
+                        "values": null
+                      },
+                      {
+                        "children": null,
+                        "key": {
+                          "property": "attribute.description",
+                          "sourceId": null,
+                          "type": "IDENTITY"
+                        },
+                        "operation": "EQUALS",
+                        "stringValue": "Recertification Reviewer",
+                        "values": null
+                      }
+                    ],
+                    "key": null,
+                    "operation": "OR",
+                    "stringValue": null,
+                    "values": null
+                  }
+                ],
+                "key": null,
+                "operation": "AND",
+                "stringValue": "",
+                "values": null
+              }
+            ],
+            "key": null,
+            "operation": "AND",
+            "stringValue": "",
+            "values": null
+          },
+          "identities": null,
+          "type": "STANDARD"
+        },
+        "modified": "2026-03-25T11:05:05.708641Z",
+        "name": "Recertification Admin",
+        "owner": null,
+        "parentId": "265c8949fd9b42c3b940ec935820c63e"
+      },
+      {
+        "accessProfiles": [],
+        "created": "2026-03-25T10:29:59.838331Z",
+        "description": "Password Admin - Identity Security Cloud Governance",
+        "entitlements": [
+          {
+            "id": "a2410dbbdccd3913a639b7be6f131bac",
+            "name": "Password Admin",
+            "type": "ENTITLEMENT"
+          }
+        ],
+        "id": "c1216226144b4e5f9a0cf36f0de26b0c",
+        "membership": {
+          "criteria": {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": null,
+                    "key": {
+                      "property": "attribute.description",
+                      "sourceId": null,
+                      "type": "IDENTITY"
+                    },
+                    "operation": "EQUALS",
+                    "stringValue": "Password Admin",
+                    "values": null
+                  }
+                ],
+                "key": null,
+                "operation": "AND",
+                "stringValue": "",
+                "values": null
+              }
+            ],
+            "key": null,
+            "operation": "AND",
+            "stringValue": "",
+            "values": null
+          },
+          "identities": null,
+          "type": "STANDARD"
+        },
+        "modified": "2026-03-25T10:42:32.619441Z",
+        "name": "Password Admin",
+        "owner": null,
+        "parentId": "265c8949fd9b42c3b940ec935820c63e"
+      },
+      {
+        "accessProfiles": [],
+        "created": "2026-03-25T10:30:16.726557Z",
+        "description": "Role Admin - Identity Security Cloud Governance",
+        "entitlements": [
+          {
+            "id": "aeadc4e956e933b9a9a0de91662674a8",
+            "name": "Role Admin",
+            "type": "ENTITLEMENT"
+          }
+        ],
+        "id": "5f47286529654bf89099f63812754e43",
+        "membership": {
+          "criteria": {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": null,
+                    "key": {
+                      "property": "attribute.description",
+                      "sourceId": null,
+                      "type": "IDENTITY"
+                    },
+                    "operation": "EQUALS",
+                    "stringValue": "Role Admin",
+                    "values": null
+                  }
+                ],
+                "key": null,
+                "operation": "AND",
+                "stringValue": "",
+                "values": null
+              }
+            ],
+            "key": null,
+            "operation": "AND",
+            "stringValue": "",
+            "values": null
+          },
+          "identities": null,
+          "type": "STANDARD"
+        },
+        "modified": "2026-03-25T10:53:19.036427Z",
+        "name": "Role Admin",
+        "owner": null,
+        "parentId": "265c8949fd9b42c3b940ec935820c63e"
+      },
+      {
+        "accessProfiles": [],
+        "created": "2026-03-25T10:30:27.110891Z",
+        "description": "IdentityNow Source Administrator  - Identity Security Cloud Governance\nSource Admin Dashboard  - Identity Security Cloud Governance",
+        "entitlements": [
+          {
+            "id": "4c1b4768e69d33ae86cc4ab82e22979f",
+            "name": "IdentityNow Source Administrator",
+            "type": "ENTITLEMENT"
+          },
+          {
+            "id": "983464efeaae3569aec89a5ca547656b",
+            "name": "Source Admin",
+            "type": "ENTITLEMENT"
+          },
+          {
+            "id": "e65a4e59a47b322284843bea7debdcaa",
+            "name": "Source Admin Dashboard",
+            "type": "ENTITLEMENT"
+          }
+        ],
+        "id": "7c1cbbcb9a4849148a56526239edfc29",
+        "membership": {
+          "criteria": {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": null,
+                    "key": {
+                      "property": "attribute.description",
+                      "sourceId": null,
+                      "type": "IDENTITY"
+                    },
+                    "operation": "EQUALS",
+                    "stringValue": "Source Admin",
+                    "values": null
+                  }
+                ],
+                "key": null,
+                "operation": "AND",
+                "stringValue": "",
+                "values": null
+              }
+            ],
+            "key": null,
+            "operation": "AND",
+            "stringValue": "",
+            "values": null
+          },
+          "identities": null,
+          "type": "STANDARD"
+        },
+        "modified": "2026-03-25T10:56:10.569666Z",
+        "name": "Source Admin",
+        "owner": null,
+        "parentId": "265c8949fd9b42c3b940ec935820c63e"
+      },
+      {
+        "accessProfiles": [],
+        "created": "2026-03-25T10:31:33.243766Z",
+        "description": "Cert Admin - Identity Security Cloud Governance",
+        "entitlements": [
+          {
+            "id": "2dfa9c7cac9b38fd894e7de62297a0c0",
+            "name": "Cert Admin",
+            "type": "ENTITLEMENT"
+          }
+        ],
+        "id": "7dfded2db97349b19ab03976c52d1e67",
+        "membership": {
+          "criteria": {
+            "children": [
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "children": null,
+                        "key": {
+                          "property": "attribute.description",
+                          "sourceId": null,
+                          "type": "IDENTITY"
+                        },
+                        "operation": "EQUALS",
+                        "stringValue": "Certification Creator & Auditor",
+                        "values": null
+                      },
+                      {
+                        "children": null,
+                        "key": {
+                          "property": "attribute.description",
+                          "sourceId": null,
+                          "type": "IDENTITY"
+                        },
+                        "operation": "EQUALS",
+                        "stringValue": "Recertification Admin",
+                        "values": null
+                      },
+                      {
+                        "children": null,
+                        "key": {
+                          "property": "attribute.description",
+                          "sourceId": null,
+                          "type": "IDENTITY"
+                        },
+                        "operation": "EQUALS",
+                        "stringValue": "Recertification Auditor",
+                        "values": null
+                      }
+                    ],
+                    "key": null,
+                    "operation": "OR",
+                    "stringValue": null,
+                    "values": null
+                  }
+                ],
+                "key": null,
+                "operation": "AND",
+                "stringValue": "",
+                "values": null
+              }
+            ],
+            "key": null,
+            "operation": "AND",
+            "stringValue": "",
+            "values": null
+          },
+          "identities": null,
+          "type": "STANDARD"
+        },
+        "modified": "2026-03-25T11:00:59.925076Z",
+        "name": "Certification Creator & Auditor",
+        "owner": null,
+        "parentId": "265c8949fd9b42c3b940ec935820c63e"
+      }
+    ],
+    "enabled": true,
+    "entitlements": [],
+    "id": "265c8949fd9b42c3b940ec935820c63e",
+    "legacyMembershipInfo": null,
+    "membership": {
+      "criteria": {
+        "children": [
+          {
+            "children": null,
+            "key": {
+              "property": "attribute.description",
+              "sourceId": null,
+              "type": "IDENTITY"
+            },
+            "operation": "EQUALS",
+            "stringValue": null,
+            "values": [
+              "Certification Creator & Auditor",
+              "Password Admin",
+              "Recertification Admin",
+              "Recertification Auditor",
+              "Recertification Creator",
+              "Recertification Reviewer",
+              "Role Admin",
+              "Source Admin",
+              "Super Admin",
+              "Super Admin"
+            ]
+          }
+        ],
+        "key": null,
+        "operation": "OR",
+        "stringValue": null,
+        "values": null
+      },
+      "identities": null,
+      "type": "STANDARD"
+    },
+    "modified": "2026-03-27T15:03:01.507116Z",
+    "name": "LHG-Admin - Dynamic Role Example",
+    "owner": {
+      "id": "176a5fc85208460383b2253765f4a137",
+      "name": "SailPoint Services",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [],
+    "segments": []
+  },
+  "self": {
+    "id": "265c8949fd9b42c3b940ec935820c63e",
+    "name": "LHG-Admin - Dynamic Role Example",
+    "type": "ROLE"
+  },
+  "version": 1
+}

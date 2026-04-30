@@ -1,0 +1,351 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accountCorrelationRule": null,
+    "beforeProvisioningRule": null,
+    "connectorAttributes": {
+      "accountAggregationWithFilterBusinessUsers": true,
+      "attributeMappings": {
+        "encrypted": "password"
+      },
+      "cloudCacheUpdate": 1776679754837,
+      "cloudDisplayName": "S/4HANA Public Cloud Change test 2",
+      "connectionType": "direct",
+      "connectorName": "SAP S/4HANA Cloud SaaS",
+      "createBusinessUser": false,
+      "deleteThresholdPercentage": 10,
+      "deltaAggregationEnabled": false,
+      "entitlementDeltaAggregationEnabled": false,
+      "hasFullAggregationCompleted": true,
+      "healthCheckTimeout": 30,
+      "healthy": true,
+      "host": "https://my415091.s4hana.cloud.sap",
+      "idnProxyType": "sp-connect",
+      "migrationCompleted": true,
+      "newSource": true,
+      "pageSize": 50,
+      "roleAggregationWithDirectApis": true,
+      "since": "2026-04-14T16:36:43.123Z",
+      "sourceConnected": true,
+      "spConnectorInstanceId": "8cf2bd3a-d955-40fb-9ebf-f0fa98256f30",
+      "spConnectorSpecId": "5f9f1cec-2840-4bec-b0a1-905e71ca921e",
+      "spConnectorSupportsCustomSchemas": true,
+      "status": "SOURCE_STATE_HEALTHY",
+      "supportsDeltaAgg": true,
+      "templateApplication": "SAP S/4HANA Cloud SaaS",
+      "username": "ZSMH_ISC"
+    },
+    "connectorClass": "",
+    "connectorScriptName": "s4hanacloudsaas",
+    "correlationConfigDetails": {
+      "attributeAssignments": [
+        {
+          "complex": false,
+          "filterString": null,
+          "ignoreCase": true,
+          "matchMode": null,
+          "operation": "EQ",
+          "property": "email",
+          "sequence": 1,
+          "value": "Email"
+        }
+      ],
+      "id": "addd96e130864e17ad771d92f6ab3e67",
+      "name": "f4da313a581e4cdd912c0ef2e6ea0698 Account Correlation Config"
+    },
+    "crossTenantConnectorAttributes": {},
+    "deleteThreshold": 10,
+    "description": "S/4HANA Public Cloud for internal demonstrations about SAP",
+    "features": [],
+    "id": "f4da313a581e4cdd912c0ef2e6ea0698",
+    "managementWorkgroup": null,
+    "managerCorrelationMapping": null,
+    "managerCorrelationRule": null,
+    "name": "S/4HANA Public Cloud Change test 2",
+    "owner": {
+      "id": "8939a7e19a4b43eabd3c6c2808c6b9b2",
+      "name": "luca.lori",
+      "type": "IDENTITY"
+    },
+    "passwordPolicies": null,
+    "provisionAsCsv": false,
+    "provisioningPolicies": [
+      {
+        "description": null,
+        "fields": [
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": true,
+            "name": "Email",
+            "transform": {
+              "attributes": {
+                "name": "email"
+              },
+              "type": "identityAttribute"
+            },
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": true,
+            "name": "First Name",
+            "transform": {
+              "attributes": {
+                "name": "firstname"
+              },
+              "type": "identityAttribute"
+            },
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": true,
+            "name": "Last Name",
+            "transform": {
+              "attributes": {
+                "name": "lastname"
+              },
+              "type": "identityAttribute"
+            },
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": true,
+            "name": "UserName",
+            "transform": {
+              "attributes": {
+                "value": ""
+              },
+              "type": "static"
+            },
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": true,
+            "name": "WorkerId",
+            "transform": {
+              "attributes": {
+                "value": ""
+              },
+              "type": "static"
+            },
+            "type": "string"
+          }
+        ],
+        "name": "Account",
+        "usageType": "CREATE"
+      }
+    ],
+    "schemas": [
+      {
+        "attributes": [
+          {
+            "description": "Business Partner Role of Business User",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "Business Partner Role",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Business Roles assigned to Business User",
+            "isEntitlement": true,
+            "isGroup": true,
+            "isMulti": true,
+            "name": "Business Roles",
+            "nativeName": null,
+            "schema": {
+              "id": "e3617194130d4a5693549706abe692ab",
+              "name": "group",
+              "type": "CONNECTOR_SCHEMA"
+            },
+            "type": "STRING"
+          },
+          {
+            "description": "Email Address of Business User",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "Email",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "First Name of Business User",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "First Name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Is Business User Locked",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "Is Locked",
+            "nativeName": null,
+            "schema": null,
+            "type": "BOOLEAN"
+          },
+          {
+            "description": "Last Name of Business User",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "Last Name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Person External ID of Business User",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "Person External ID",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Person ID of Business User",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "Person ID",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "User ID of Business User",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "User ID",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "User Name of Business User",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "User Name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Valid From Date of the Business User",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "User Date Valid From",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Valid From Date of the Employee",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "Employee Date Valid From",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Valid To Date of the Business User",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "User Date Valid To",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Valid To Date of the Employee",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "Employee Date Valid To",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {},
+        "created": "2026-04-14T16:35:13.630Z",
+        "displayAttribute": "User Name",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "f52c0417cb8b46abb22cc69f9f795162",
+        "identityAttribute": "Person ID",
+        "includePermissions": false,
+        "modified": "2026-04-14T16:35:13.630Z",
+        "name": "account",
+        "nativeObjectType": "account"
+      },
+      {
+        "attributes": [
+          {
+            "description": "Business Role Name",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "Business Role Name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Business Role Unique Identifier",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "Business Role ID",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {},
+        "created": "2026-04-14T16:35:13.630Z",
+        "displayAttribute": "Business Role Name",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "e3617194130d4a5693549706abe692ab",
+        "identityAttribute": "Business Role ID",
+        "includePermissions": false,
+        "modified": "2026-04-14T16:35:13.630Z",
+        "name": "group",
+        "nativeObjectType": "Role"
+      }
+    ],
+    "type": "5f9f1cec-2840-4bec-b0a1-905e71ca921e"
+  },
+  "self": {
+    "id": "f4da313a581e4cdd912c0ef2e6ea0698",
+    "name": "S/4HANA Public Cloud Change test 2",
+    "type": "SOURCE"
+  },
+  "version": 1
+}

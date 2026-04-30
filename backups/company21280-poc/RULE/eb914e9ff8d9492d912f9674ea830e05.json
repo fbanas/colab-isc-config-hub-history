@@ -1,0 +1,54 @@
+{
+  "jwsHeader": "eyJhbGciOiJFUzI1NiJ9",
+  "jwsSignature": "Z5EESnTJLx2AIbgx8wagZcvGu-mtJijXU2IXHdJKsAqdPLY13RzPnx4m-bR_y3DG3rpcJPy7ZICI611-ELFYCQ",
+  "object": {
+    "attributes": {
+      "sourceVersion": "2026-03-17 11:22:02"
+    },
+    "created": "2026-03-17T11:22:02.244Z",
+    "description": "",
+    "id": "eb914e9ff8d9492d912f9674ea830e05",
+    "modified": "2026-03-17T11:22:02.244Z",
+    "name": "Generic Manager Correlation",
+    "signature": {
+      "input": [
+        {
+          "description": "Attribute value stored in the manager attribute.",
+          "name": "managerAttributeValue",
+          "type": "java.lang.Object"
+        },
+        {
+          "description": "Logger to log statements. Note: This executes in the cloud, and logging is currently not exposed to anyone other than SailPoint.",
+          "name": "log",
+          "type": "org.apache.log4j.Logger"
+        },
+        {
+          "description": "Provides a read-only starting point for using the SailPoint API. From this passed reference, the rule can interrogate the Identity Security Cloud data model including identities or account information via helper methods as described in IdnRuleUtil.",
+          "name": "idn",
+          "type": "sailpoint.server.IdnRuleUtil"
+        },
+        {
+          "description": "Read-only representation of account data that has been aggregated. Use this as a basis to determine manager linkages to a specific manager identity.",
+          "name": "link",
+          "type": "sailpoint.object.Link"
+        }
+      ],
+      "output": {
+        "description": "Map object containing a reference to the identity attributes to identify the manager's identity. These should contain both identityAttributeName and identityAttributeValue as keys.",
+        "name": "returnMap",
+        "type": "java.util.Map"
+      }
+    },
+    "sourceCode": {
+      "script": "\n\t\nimport java.util.HashMap;\nimport java.util.Map;\n\nMap returnMap = new HashMap();\n\nif (managerAttributeValue == null) {\n    log.warn(\"Manager Correlation - Split Pipeline: managerAttributeValue is null. Skipping manager correlation.\");\n    return null;\n}\n\nString managerAttrStr = managerAttributeValue.toString();\n\nif (managerAttrStr.trim().isEmpty()) {\n    log.warn(\"Manager Correlation - Split Pipeline: managerAttributeValue is empty. Skipping manager correlation.\");\n    return null;\n}\n\nif (!managerAttrStr.contains(\"|\")) {\n    log.error(\"Manager Correlation - Split Pipeline: managerAttributeValue does not contain the pipeline character '|'. Value: \" + managerAttrStr);\n    return null;\n}\n\nString[] parts = managerAttrStr.split(\"\\\\|\", -1);\n\nif (parts.length != 2) {\n    log.error(\"Manager Correlation - Split Pipeline: Expected exactly 2 parts after splitting on '|', but got \" + parts.length + \". Value: \" + managerAttrStr);\n    return null;\n}\n\nString identityAttrName = parts[0].trim();\nString identityAttrValue = parts[1].trim();\n\nif (identityAttrName.isEmpty()) {\n    log.error(\"Manager Correlation - Split Pipeline: identityAttributeName (first part) is empty after splitting. Value: \" + managerAttrStr);\n    return null;\n}\n\nif (identityAttrValue.isEmpty()) {\n    log.error(\"Manager Correlation - Split Pipeline: identityAttributeValue (second part) is empty after splitting. Value: \" + managerAttrStr);\n    return null;\n}\n\nlog.debug(\"Manager Correlation - Split Pipeline: Resolved identityAttributeName='\" + identityAttrName + \"', identityAttributeValue='\" + identityAttrValue + \"'\");\n\nreturnMap.put(\"identityAttributeName\", identityAttrName);\nreturnMap.put(\"identityAttributeValue\", identityAttrValue);\n\nreturn returnMap;\n\n",
+      "version": "2026-03-17 11:22:02"
+    },
+    "type": "ManagerCorrelation"
+  },
+  "self": {
+    "id": "eb914e9ff8d9492d912f9674ea830e05",
+    "name": "Generic Manager Correlation",
+    "type": "RULE"
+  },
+  "version": 1
+}

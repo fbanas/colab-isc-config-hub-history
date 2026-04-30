@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "Dear $__recipient.name,<br/><br/>\n#set($url=$__global.productUrl + '/ui/a/admin/connections/sources/' + $sourceId + '/settings/account-provisioning')AI recommendations for account creation attributes have been generated for $sourceName. <br/> Go to the <a href=\"$url\">Create Account</a> page to review your account creation recommendations.<br/>\n<br/>Thanks,<br/> The $__global.productName Team<br/>",
+    "created": null,
+    "description": "Sent to the user when create account policy recommendations are complete.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Create Account Policy Recommendations Complete",
+    "key": "create_account_policy_recommendation",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Create Account Policy Recommendations Complete",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "Create Account Policy Recommendations Complete for $sourceName",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Create Account Policy Recommendations Complete",
+    "name": "Create Account Policy Recommendations Complete",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "Dear $__recipient.name,<br/><br/><p>$owner has reviewed your changes to the $referenceName source and has assigned additional changes to you.</p><p>Go to the <a href=\"$deepLink\">$referenceName configuration page</a> to continue onboarding this source.</p><br/>Thanks,<br/> The $__global.productName Team<br/>",
+    "created": null,
+    "description": "Notifies the assignee when the administrator requests additional changes to a source that is in review",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Source Collaboration Changes Required",
+    "key": "source_config_collab_changes_required",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Source Collaboration Changes Required",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "Changes required to $referenceName source",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Source Collaboration Changes Required",
+    "name": "Source Collaboration Changes Required",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

@@ -1,0 +1,57 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessProfiles": [
+      {
+        "id": "2e2e251e945a442192a28f658d245dfc",
+        "name": "Help Desk User",
+        "type": "ACCESS_PROFILE"
+      },
+      {
+        "id": "3411e60ffbb442448360ae18391ac757",
+        "name": "Help Desk Admin",
+        "type": "ACCESS_PROFILE"
+      }
+    ],
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": null,
+      "denialCommentsRequired": null,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-04-13T15:51:28.598134Z",
+    "description": "The Role grants Access to the Help Desk System for AD User Accounts and Admin Access to Admin AD Admin Accounts.",
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": false,
+    "entitlements": [],
+    "id": "b177a6db0bde43ed990378740965a4ad",
+    "legacyMembershipInfo": null,
+    "membership": null,
+    "modified": "2026-04-13T15:52:46.254992Z",
+    "name": "Help Desk",
+    "owner": {
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [],
+    "segments": []
+  },
+  "self": {
+    "id": "b177a6db0bde43ed990378740965a4ad",
+    "name": "Help Desk",
+    "type": "ROLE"
+  },
+  "version": 1
+}

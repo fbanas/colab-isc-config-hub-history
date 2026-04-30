@@ -1,0 +1,61 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessRequestConfig": {
+      "approvalSchemes": [
+        {
+          "approverId": null,
+          "approverType": "OWNER"
+        }
+      ],
+      "commentsRequired": false,
+      "denialCommentsRequired": false,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": true
+    },
+    "additionalOwners": [],
+    "created": "2026-03-31T06:34:56.003487Z",
+    "description": "Contains permissions for individuals needing to conduct payable functions within the ERP and corporate portal",
+    "enabled": true,
+    "entitlements": [
+      {
+        "id": "44faae62fab83decb9488356cae380a8",
+        "name": "AccountsPayable",
+        "type": "ENTITLEMENT"
+      },
+      {
+        "id": "e53a233b2084332aa322a8bf98358511",
+        "name": "AccountingGeneral",
+        "type": "ENTITLEMENT"
+      }
+    ],
+    "id": "b40d8d871976404c8673829de26bc4d5",
+    "modified": "2026-03-31T07:44:52.659039Z",
+    "name": "Active Directory - Accounts Payable",
+    "owner": {
+      "id": "880d15e1a216498993a47701a882bca4",
+      "name": "akatona",
+      "type": "IDENTITY"
+    },
+    "provisioningCriteria": null,
+    "requestable": true,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [],
+    "segments": [],
+    "source": {
+      "id": "8779703397444628aa740c2d5fdaf0c9",
+      "name": "Active Directory",
+      "type": "SOURCE"
+    }
+  },
+  "self": {
+    "id": "b40d8d871976404c8673829de26bc4d5",
+    "name": "Active Directory - Accounts Payable",
+    "type": "ACCESS_PROFILE"
+  },
+  "version": 1
+}

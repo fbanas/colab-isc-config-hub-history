@@ -1,0 +1,140 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": "2026-04-09T17:14:08.655975119Z",
+    "creator": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "definition": {
+      "start": "Compare Numbers",
+      "steps": {
+        "Compare Numbers": {
+          "choiceList": [
+            {
+              "comparator": "NumericGreaterThanEquals",
+              "nextStep": "Get Identity",
+              "variableA.$": "$.trigger.score",
+              "variableB": 0.9
+            }
+          ],
+          "defaultStep": "success",
+          "description": "The workflow triggers at or above 0.9. This comparator checks the value to ensure it is at or above 0.9.",
+          "type": "choice"
+        },
+        "Get Access": {
+          "actionId": "sp:access:get",
+          "attributes": {
+            "accessprofiles": true,
+            "entitlements": true,
+            "getAccessBy": "specificIdentity",
+            "identityToReturn.$": "$.trigger.identity.id",
+            "roles": true
+          },
+          "description": "This action returns all access associated with the outlier identity.",
+          "nextStep": "Get Identity 1",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Get Accounts": {
+          "actionId": "sp:get-accounts",
+          "attributes": {
+            "getAccountsBy": "specificIdentity",
+            "identity.$": "$.trigger.identity.id"
+          },
+          "description": "This action is used to gather all the accounts associated with the identity. In this workflow, the accounts will be disabled until a review can be conducted.",
+          "nextStep": "Send Email",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Get Identity": {
+          "actionId": "sp:get-identity",
+          "attributes": {
+            "id.$": "$.trigger.identity.id"
+          },
+          "description": "This action returns attributes associated with the identity that triggered the outlier score.",
+          "nextStep": "Get Access",
+          "type": "action",
+          "versionNumber": 2
+        },
+        "Get Identity 1": {
+          "actionId": "sp:get-identity",
+          "attributes": {
+            "id.$": "$.getIdentity.managerRef.id"
+          },
+          "description": "This action returns the outlier identity's manager's name and attributes.",
+          "nextStep": "Get Accounts",
+          "type": "action",
+          "versionNumber": 2
+        },
+        "Manage Accounts": {
+          "actionId": "sp:manage-account",
+          "attributes": {
+            "accountIds.$": "$.getAccounts.accounts",
+            "operation": "disable"
+          },
+          "description": "This action disables all account found in the prior action \"Get Accounts\".",
+          "nextStep": "success 1",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Send Email": {
+          "actionId": "sp:send-email",
+          "attributes": {
+            "body": "Dear ${manager},<br><p> The SailPoint AI Engine has detected a user that has outlier access resulting in excessive risk. This identity, <b style=\"\"><u style=\"\">${user}</b> </u>, is your direct report and has an outlier score of <b style=\"\"><font color=\"#993300\">${score}</b></font>.<br><br>Please note that <font color=\"#993300\"><b style=\"\"><i style=\"\">all accounts</font></b></i> for <b style=\"\">${user}</b> have been disabled until a full forensic audit can be completed. A complete listing of all access can be found below.<br></p><br>Thank you,<br>Your Security & Compliance Team.<br><p><b style=\"\"><i style=\"\">Access:<br>${access}</b></i></p>",
+            "context": {
+              "access.$": "$.getAccess.accessItems",
+              "manager.$": "$.getIdentity1.attributes.displayName",
+              "score.$": "$.trigger.score",
+              "user.$": "$.getIdentity.attributes.displayName"
+            },
+            "recipientEmailList.$": "$.getIdentity1.attributes.email",
+            "subject": "Outlier - Excessive Risk notification"
+          },
+          "description": "This action sends an email notification to the outlier identity's manager. The email informs the manager that the identity had an outlier score that was deemed \"Excessive Risk\" and action has been taken to disable all accounts until a full security review can be completed.",
+          "nextStep": "Manage Accounts",
+          "type": "action",
+          "versionNumber": 2
+        },
+        "success": {
+          "description": "The outlier score was not at or above 0.9. No further action is required.",
+          "type": "success"
+        },
+        "success 1": {
+          "description": "This workflow has completed successfully.",
+          "type": "success"
+        }
+      }
+    },
+    "description": "This workflow is triggered when a detected outlier score is at or above 0.9. When the score is this high, all accounts for the identity are disabled and an email notification is sent to their manager to review access and investigate the exceptions.",
+    "enabled": true,
+    "id": "c28930ae-b91d-47ac-a44c-d69c977b2f4a",
+    "modified": "2026-04-13T08:57:30.986809304Z",
+    "modifiedBy": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "name": "Disable Accounts for Detected Outlier Identities (0.9+)",
+    "owner": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "trigger": {
+      "attributes": {
+        "filter.$": "$[?(@.score >= 0.9)]",
+        "id": "iai:outlier-detected"
+      },
+      "type": "EVENT"
+    }
+  },
+  "self": {
+    "id": "c28930ae-b91d-47ac-a44c-d69c977b2f4a",
+    "name": "Disable Accounts for Detected Outlier Identities (0.9+)",
+    "type": "WORKFLOW"
+  },
+  "version": 1
+}

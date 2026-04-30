@@ -1,0 +1,125 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "attributes": {
+      "ignoreErrors": true,
+      "values": [
+        "-",
+        {
+          "attributes": {
+            "firstDate": {
+              "attributes": {
+                "ignoreErrors": true,
+                "values": [
+                  "2999-01-01T00:00:00.000Z",
+                  {
+                    "attributes": {
+                      "id": "OHRM - End Date"
+                    },
+                    "type": "reference"
+                  }
+                ]
+              },
+              "type": "firstValid"
+            },
+            "negativeCondition": {
+              "attributes": {
+                "firstDate": {
+                  "attributes": {
+                    "ignoreErrors": true,
+                    "values": [
+                      "2999-01-01T00:00:00.000Z",
+                      {
+                        "attributes": {
+                          "id": "OHRM - End Date"
+                        },
+                        "type": "reference"
+                      }
+                    ]
+                  },
+                  "type": "firstValid"
+                },
+                "negativeCondition": {
+                  "attributes": {
+                    "firstDate": {
+                      "attributes": {
+                        "ignoreErrors": true,
+                        "values": [
+                          "2999-01-01T00:00:00.000Z",
+                          {
+                            "attributes": {
+                              "id": "OHRM - End Date"
+                            },
+                            "type": "reference"
+                          }
+                        ]
+                      },
+                      "type": "firstValid"
+                    },
+                    "negativeCondition": "terminated",
+                    "operator": "gt",
+                    "positiveCondition": "archived",
+                    "secondDate": {
+                      "attributes": {
+                        "expression": "now-90d"
+                      },
+                      "type": "dateMath"
+                    }
+                  },
+                  "type": "dateCompare"
+                },
+                "operator": "gt",
+                "positiveCondition": "inactive",
+                "secondDate": {
+                  "attributes": {
+                    "expression": "now-30d"
+                  },
+                  "type": "dateMath"
+                }
+              },
+              "type": "dateCompare"
+            },
+            "operator": "gt",
+            "positiveCondition": {
+              "attributes": {
+                "firstDate": {
+                  "attributes": {
+                    "ignoreErrors": true,
+                    "values": [
+                      "1970-01-01T00:00:00.000Z",
+                      {
+                        "attributes": {
+                          "id": "OHRM - Start Date"
+                        },
+                        "type": "reference"
+                      }
+                    ]
+                  },
+                  "type": "firstValid"
+                },
+                "negativeCondition": "prehire",
+                "operator": "lt",
+                "positiveCondition": "active",
+                "secondDate": "now"
+              },
+              "type": "dateCompare"
+            },
+            "secondDate": "now"
+          },
+          "type": "dateCompare"
+        }
+      ]
+    },
+    "id": "1b1e8ba8-e145-42c3-92f6-6b90b92b4754",
+    "internal": false,
+    "name": "OHRM - Lifecycle State",
+    "type": "firstValid"
+  },
+  "self": {
+    "id": "1b1e8ba8-e145-42c3-92f6-6b90b92b4754",
+    "name": "OHRM - Lifecycle State",
+    "type": "TRANSFORM"
+  },
+  "version": 1
+}

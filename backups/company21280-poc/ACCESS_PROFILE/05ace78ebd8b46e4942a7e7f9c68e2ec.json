@@ -1,0 +1,51 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": null,
+      "denialCommentsRequired": null,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-04-09T13:25:56.39898Z",
+    "description": null,
+    "enabled": true,
+    "entitlements": [
+      {
+        "id": "3aba2f85ce5f34adb5c4c501300a142f",
+        "name": "input",
+        "type": "ENTITLEMENT"
+      }
+    ],
+    "id": "05ace78ebd8b46e4942a7e7f9c68e2ec",
+    "modified": "2026-04-10T12:17:24.318595Z",
+    "name": "Timekeeper User",
+    "owner": {
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
+      "type": "IDENTITY"
+    },
+    "provisioningCriteria": null,
+    "requestable": true,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [],
+    "segments": [],
+    "source": {
+      "id": "a42923b40db7453c96bb58b7ad669584",
+      "name": "Time Keeping",
+      "type": "SOURCE"
+    }
+  },
+  "self": {
+    "id": "05ace78ebd8b46e4942a7e7f9c68e2ec",
+    "name": "Timekeeper User",
+    "type": "ACCESS_PROFILE"
+  },
+  "version": 1
+}

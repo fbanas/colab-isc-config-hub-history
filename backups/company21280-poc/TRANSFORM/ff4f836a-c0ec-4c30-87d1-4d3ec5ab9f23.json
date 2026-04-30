@@ -1,0 +1,25 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "attributes": {
+      "table": {
+        "Active": "active",
+        "Inactive": "inactive",
+        "default": {
+          "type": "trim"
+        }
+      }
+    },
+    "id": "ff4f836a-c0ec-4c30-87d1-4d3ec5ab9f23",
+    "internal": false,
+    "name": "LCS",
+    "type": "lookup"
+  },
+  "self": {
+    "id": "ff4f836a-c0ec-4c30-87d1-4d3ec5ab9f23",
+    "name": "LCS",
+    "type": "TRANSFORM"
+  },
+  "version": 1
+}

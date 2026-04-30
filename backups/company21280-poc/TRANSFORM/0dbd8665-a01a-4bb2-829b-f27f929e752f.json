@@ -1,0 +1,60 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "attributes": {
+      "ignoreErrors": true,
+      "values": [
+        {
+          "attributes": {
+            "delimiter": "@",
+            "index": 0,
+            "input": {
+              "type": "lower"
+            },
+            "throw": true
+          },
+          "type": "split"
+        },
+        {
+          "attributes": {
+            "input": {
+              "attributes": {
+                "input": {
+                  "attributes": {
+                    "firstname": {
+                      "attributes": {
+                        "name": "firstname"
+                      },
+                      "type": "identityAttribute"
+                    },
+                    "lastname": {
+                      "attributes": {
+                        "name": "lastname"
+                      },
+                      "type": "identityAttribute"
+                    },
+                    "value": "$firstname.$lastname"
+                  },
+                  "type": "static"
+                }
+              },
+              "type": "decomposeDiacriticalMarks"
+            }
+          },
+          "type": "lower"
+        }
+      ]
+    },
+    "id": "0dbd8665-a01a-4bb2-829b-f27f929e752f",
+    "internal": false,
+    "name": "OHRM - Username",
+    "type": "firstValid"
+  },
+  "self": {
+    "id": "0dbd8665-a01a-4bb2-829b-f27f929e752f",
+    "name": "OHRM - Username",
+    "type": "TRANSFORM"
+  },
+  "version": 1
+}

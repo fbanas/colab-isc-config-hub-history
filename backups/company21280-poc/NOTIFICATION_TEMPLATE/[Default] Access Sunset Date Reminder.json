@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "\t\tDear ${recipientName},<br/>        <p>Your access to the '${accessItemName}' ${accessItemType} is scheduled to end on ${scheduledSunsetDate}.</p>        <p>If you still need access to '${accessItemName}', you will need to extend the duration of the access by modifying the access expiration date.</p>        <p>Please contact the ${PRODUCT_NAME} administrator if you have any questions.</p>        <br/>Thanks,<br/>        The ${PRODUCT_NAME} Team",
+    "created": null,
+    "description": "Sent to a user to remind them that their access to an item is coming to an end.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Access Sunset Date Reminder",
+    "key": "access_sunset_date_reminder",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Access Sunset Date Reminder",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "Reminder: Access End Date Approaching",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Access Sunset Date Reminder",
+    "name": "Access Sunset Date Reminder",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

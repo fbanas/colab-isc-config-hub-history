@@ -1,0 +1,91 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessProfiles": [],
+    "accessRequestConfig": {
+      "approvalSchemes": [
+        {
+          "approverId": null,
+          "approverType": "OWNER"
+        }
+      ],
+      "commentsRequired": false,
+      "denialCommentsRequired": false,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-03-18T13:31:39.919004Z",
+    "description": "Role to App-900 (LH3-Role-5)",
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": true,
+    "entitlements": [
+      {
+        "id": "717377d4-af54-3ae4-aeb5-bacf780e8016",
+        "name": "APP-900",
+        "sourceId": "00c23142-0974-4506-bab1-e856117f40f7",
+        "sourceName": "Microsoft Entra sp-demo262 SaaS",
+        "type": "ENTITLEMENT"
+      }
+    ],
+    "id": "b42e5efe841f45b1a43ab2923ac1ba09",
+    "legacyMembershipInfo": null,
+    "membership": {
+      "criteria": {
+        "children": [
+          {
+            "children": null,
+            "key": {
+              "property": "attribute.company",
+              "sourceId": null,
+              "type": "IDENTITY"
+            },
+            "operation": "CONTAINS",
+            "stringValue": null,
+            "values": [
+              "[Lufthansa 3]"
+            ]
+          }
+        ],
+        "key": null,
+        "operation": "OR",
+        "stringValue": null,
+        "values": null
+      },
+      "identities": null,
+      "type": "STANDARD"
+    },
+    "modified": "2026-03-27T15:02:49.960477Z",
+    "name": "LH3_Entry_Location",
+    "owner": {
+      "id": "4ccc61c7219545cea31d3f22519374d5",
+      "name": "Dans-Hinrich Dunez",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [
+      {
+        "id": "7e24ee64-4340-49fe-8a35-aaff81fe80a7",
+        "name": "LH3-Lufthansa 3",
+        "type": "SEGMENT"
+      }
+    ],
+    "segments": [
+      "7e24ee64-4340-49fe-8a35-aaff81fe80a7"
+    ]
+  },
+  "self": {
+    "id": "b42e5efe841f45b1a43ab2923ac1ba09",
+    "name": "LH3_Entry_Location",
+    "type": "ROLE"
+  },
+  "version": 1
+}

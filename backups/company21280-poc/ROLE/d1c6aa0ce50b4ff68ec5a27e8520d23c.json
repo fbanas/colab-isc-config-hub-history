@@ -1,0 +1,118 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessProfiles": [],
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": null,
+      "denialCommentsRequired": null,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-03-18T16:37:12.848175Z",
+    "description": null,
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": true,
+    "entitlements": [
+      {
+        "id": "a7fed7b2-8e59-37d8-88fa-0f2766e1304b",
+        "name": "Update an Inbound Firewall Rule State on a Windows Server",
+        "sourceId": "a1a85705-e70a-42bc-ace4-e4d9a55debd9",
+        "sourceName": "IdentityNow",
+        "type": "ENTITLEMENT"
+      },
+      {
+        "id": "b98f6bdf-a908-3954-b524-378039696239",
+        "name": "Create a Security Group in Active Directory",
+        "sourceId": "a1a85705-e70a-42bc-ace4-e4d9a55debd9",
+        "sourceName": "IdentityNow",
+        "type": "ENTITLEMENT"
+      },
+      {
+        "id": "be4dfa07-7de9-36ef-9f3a-edb85ef84a38",
+        "name": "Users Guide to ISC",
+        "sourceId": "a1a85705-e70a-42bc-ace4-e4d9a55debd9",
+        "sourceName": "IdentityNow",
+        "type": "ENTITLEMENT"
+      },
+      {
+        "id": "c887b21e-a561-369a-94c9-b25a57a211fd",
+        "name": "Emergency Termination",
+        "sourceId": "a1a85705-e70a-42bc-ace4-e4d9a55debd9",
+        "sourceName": "IdentityNow",
+        "type": "ENTITLEMENT"
+      },
+      {
+        "id": "f30eb499-26db-36d7-b1bd-840d9c914314",
+        "name": "Application Removal",
+        "sourceId": "a1a85705-e70a-42bc-ace4-e4d9a55debd9",
+        "sourceName": "IdentityNow",
+        "type": "ENTITLEMENT"
+      },
+      {
+        "id": "fab231a9-cf7c-399b-a3f5-1afbdf4aeb86",
+        "name": "Template: Send an Email Notification for Detected Outlier Identity (0.5-0.7)",
+        "sourceId": "a1a85705-e70a-42bc-ace4-e4d9a55debd9",
+        "sourceName": "IdentityNow",
+        "type": "ENTITLEMENT"
+      }
+    ],
+    "id": "d1c6aa0ce50b4ff68ec5a27e8520d23c",
+    "legacyMembershipInfo": null,
+    "membership": {
+      "criteria": null,
+      "identities": [
+        {
+          "aliasName": "fernando.delosrios",
+          "id": "30507568a2d54f7484fe0f3edba79692",
+          "name": "fernando.delosrios",
+          "type": "IDENTITY"
+        },
+        {
+          "aliasName": "florian.banas",
+          "id": "90eb8204ac594f48ac598a55e0e73613",
+          "name": "florian.banas",
+          "type": "IDENTITY"
+        },
+        {
+          "aliasName": "florian.banas1",
+          "id": "f99c089822c142abbcb84a93890d8416",
+          "name": "florian.banas1",
+          "type": "IDENTITY"
+        },
+        {
+          "aliasName": "jonathan.mueller",
+          "id": "fcc9db01f32249889e627da51f5f710a",
+          "name": "jonathan.mueller",
+          "type": "IDENTITY"
+        }
+      ],
+      "type": "IDENTITY_LIST"
+    },
+    "modified": "2026-04-29T13:57:31.938054Z",
+    "name": "Workflow Super User",
+    "owner": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [],
+    "segments": []
+  },
+  "self": {
+    "id": "d1c6aa0ce50b4ff68ec5a27e8520d23c",
+    "name": "Workflow Super User",
+    "type": "ROLE"
+  },
+  "version": 1
+}

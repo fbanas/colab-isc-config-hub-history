@@ -1,0 +1,222 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": "2026-03-20T13:25:12.027838036Z",
+    "creator": {
+      "id": "30507568a2d54f7484fe0f3edba79692",
+      "name": "fernando.delosrios",
+      "type": "IDENTITY"
+    },
+    "definition": {
+      "start": "Interactive Form",
+      "steps": {
+        "Define Variable": {
+          "actionId": "sp:define-variable",
+          "attributes": {
+            "id": "sp:define-variable",
+            "variables": [
+              {
+                "description": "",
+                "name": "accountId",
+                "transforms": [],
+                "variableA.$": "$.hTTPRequest1.body.id"
+              },
+              {
+                "description": "",
+                "name": "accountName",
+                "transforms": [],
+                "variableA.$": "$.hTTPRequest1.body.name"
+              },
+              {
+                "description": "",
+                "name": "accountNativeIdentity",
+                "transforms": [],
+                "variableA.$": "$.hTTPRequest1.body.nativeIdentity"
+              },
+              {
+                "description": "",
+                "name": "identityName",
+                "transforms": [],
+                "variableA.$": "$.getIdentity.alias"
+              },
+              {
+                "description": "",
+                "name": "sourceName",
+                "transforms": [],
+                "variableA.$": "$.hTTPRequest1.body.sourceName"
+              },
+              {
+                "description": "",
+                "name": "targetSourceId",
+                "transforms": [],
+                "variableA": "66029e3a8fec4b44b7ee33c56fe7ba8d"
+              }
+            ]
+          },
+          "displayName": "Configuration",
+          "nextStep": "HTTP Request",
+          "type": "Mutation"
+        },
+        "End Step - Success": {
+          "actionId": "sp:operator-success",
+          "displayName": "",
+          "type": "success"
+        },
+        "Get Accounts": {
+          "actionId": "sp:get-accounts",
+          "attributes": {
+            "getAccountsBy": "specificIdentity",
+            "identity.$": "$.getIdentity.id"
+          },
+          "displayName": "",
+          "nextStep": "Interactive Form 1",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Get Identity": {
+          "actionId": "sp:get-identity",
+          "attributes": {
+            "id.$": "$.interactiveForm.formData.identity"
+          },
+          "displayName": "",
+          "nextStep": "Get Accounts",
+          "type": "action",
+          "versionNumber": 2
+        },
+        "HTTP Request": {
+          "actionId": "sp:http",
+          "attributes": {
+            "jsonRequestBody": {
+              "attributes": {
+                "accountId": "{{$.defineVariable.accountId}}",
+                "accountName": "{{$.defineVariable.accountName}}",
+                "accountNativeIdentity": "{{$.defineVariable.accountNativeIdentity}}",
+                "name": "{{$.defineVariable.identityName}}",
+                "sourceId": "{{$.defineVariable.targetSourceId}}",
+                "sourceName": "{{$.defineVariable.sourceName}}"
+              }
+            },
+            "method": "post",
+            "param_authenticationRef": "oauth",
+            "param_oauth": {
+              "mapping": {
+                "auth_client_id": "clientId",
+                "auth_client_secret": "clientSecret",
+                "auth_credential_location": "credentialLocation",
+                "auth_token_url": "tokenURL"
+              },
+              "paramID": "7b0fa675-e77b-4fde-b11e-280690aa4c0f",
+              "paramType": "1.4",
+              "refID": "a0af3b18-7f1c-430d-b2a0-89fb2baa3379"
+            },
+            "param_oauth_scopes": {
+              "mapping": {
+                "auth_scopes": "scopes"
+              },
+              "paramID": "097c3757-c597-47be-882d-0da52599c89d",
+              "paramType": "3.1",
+              "refID": "b8691103-ebae-451e-982c-78a42dce5de4"
+            },
+            "requestContentType": "json",
+            "url": "https://company21280-poc.api.identitynow-demo.com/v2025/accounts"
+          },
+          "displayName": "Update Main Authoritative Account",
+          "nextStep": "End Step - Success",
+          "type": "action",
+          "versionNumber": 3
+        },
+        "HTTP Request 1": {
+          "actionId": "sp:http",
+          "attributes": {
+            "method": "get",
+            "param_authenticationRef": "oauth",
+            "param_oauth": {
+              "mapping": {
+                "auth_client_id": "clientId",
+                "auth_client_secret": "clientSecret",
+                "auth_credential_location": "credentialLocation",
+                "auth_token_url": "tokenURL"
+              },
+              "paramID": "7b0fa675-e77b-4fde-b11e-280690aa4c0f",
+              "paramType": "1.4",
+              "refID": "a0af3b18-7f1c-430d-b2a0-89fb2baa3379"
+            },
+            "param_oauth_scopes": {
+              "mapping": {
+                "auth_scopes": "scopes"
+              },
+              "paramID": "097c3757-c597-47be-882d-0da52599c89d",
+              "paramType": "3.1",
+              "refID": "b8691103-ebae-451e-982c-78a42dce5de4"
+            },
+            "requestContentType": "json",
+            "url": "https://company21280-poc.api.identitynow-demo.com/v2025/accounts/{{$.interactiveForm1.formData.authoritativeAccount}}"
+          },
+          "displayName": "Get Account Details",
+          "nextStep": "Define Variable",
+          "type": "action",
+          "versionNumber": 3
+        },
+        "Interactive Form": {
+          "actionId": "sp:interactive-form",
+          "attributes": {
+            "formDefinitionId": "2948443c-feb2-4265-8e04-b9eaf142c152",
+            "interactiveProcessId.$": "$.trigger.interactiveProcessId",
+            "ownerId.$": "$.trigger.launchedBy.id",
+            "title": "Select Identity"
+          },
+          "displayName": "Select Identity",
+          "nextStep": "Get Identity",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Interactive Form 1": {
+          "actionId": "sp:interactive-form",
+          "attributes": {
+            "formDefinitionId": "3fed239f-6af5-49e2-8274-484b1fb94a9e",
+            "inputForForm_array_accounts.$": "$.getAccounts.accounts[?(@.sourceName == 'LHG' || @.sourceName == 'LH1' || @.sourceName == 'LH2' || @.sourceName == 'LH3' || @.sourceName == 'NERM')]",
+            "inputForForm_array_accounts_label": "$.sourceName",
+            "inputForForm_array_accounts_subLabel": "$.name",
+            "inputForForm_array_accounts_value": "$.id",
+            "interactiveProcessId.$": "$.trigger.interactiveProcessId",
+            "ownerId.$": "$.trigger.launchedBy.id",
+            "title": "Select Main Authoritative Account"
+          },
+          "displayName": "Select Main Authoritative Account",
+          "nextStep": "HTTP Request 1",
+          "type": "action",
+          "versionNumber": 1
+        }
+      }
+    },
+    "description": "",
+    "enabled": true,
+    "id": "232097a1-21fc-40f3-a8f8-31b9ef5bd483",
+    "modified": "2026-03-24T14:24:38.072937821Z",
+    "modifiedBy": {
+      "id": "30507568a2d54f7484fe0f3edba79692",
+      "name": "fernando.delosrios",
+      "type": "IDENTITY"
+    },
+    "name": "Select Authoritative Account",
+    "owner": {
+      "id": "30507568a2d54f7484fe0f3edba79692",
+      "name": "fernando.delosrios",
+      "type": "IDENTITY"
+    },
+    "trigger": {
+      "attributes": {
+        "filter.$": "$[?(@.workflowId == '232097a1-21fc-40f3-a8f8-31b9ef5bd483')]",
+        "id": "idn:interactive-process-launched"
+      },
+      "type": "EVENT"
+    }
+  },
+  "self": {
+    "id": "232097a1-21fc-40f3-a8f8-31b9ef5bd483",
+    "name": "Select Authoritative Account",
+    "type": "WORKFLOW"
+  },
+  "version": 1
+}

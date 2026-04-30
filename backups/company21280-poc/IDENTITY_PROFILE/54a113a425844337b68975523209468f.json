@@ -1,0 +1,360 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "authoritativeSource": {
+      "id": "af946e2450024d5bae5fa127eaa4b313",
+      "name": "Identity Fusion NG",
+      "type": "SOURCE"
+    },
+    "created": "2026-03-17T15:26:08.721Z",
+    "description": null,
+    "hasTimeBasedAttr": true,
+    "id": "54a113a425844337b68975523209468f",
+    "identityAttributeConfig": {
+      "attributeTransforms": [
+        {
+          "identityAttributeName": "birthDate",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "birthDate",
+              "sourceId": "af946e2450024d5bae5fa127eaa4b313",
+              "sourceName": "Identity Fusion NG"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "birthYear",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "birthYear",
+              "sourceId": "af946e2450024d5bae5fa127eaa4b313",
+              "sourceName": "Identity Fusion NG"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "brand",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "company",
+              "sourceId": "af946e2450024d5bae5fa127eaa4b313",
+              "sourceName": "Identity Fusion NG"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "businessUnit",
+          "transformDefinition": {
+            "attributes": {
+              "id": "Business Unit",
+              "input": {
+                "attributes": {
+                  "attributeName": "businessUnit",
+                  "sourceId": "af946e2450024d5bae5fa127eaa4b313",
+                  "sourceName": "Identity Fusion NG"
+                },
+                "type": "accountAttribute"
+              }
+            },
+            "type": "reference"
+          }
+        },
+        {
+          "identityAttributeName": "cloudLifecycleState",
+          "transformDefinition": {
+            "attributes": {
+              "id": "LCS",
+              "input": {
+                "attributes": {
+                  "attributeName": "LCS",
+                  "sourceId": "af946e2450024d5bae5fa127eaa4b313",
+                  "sourceName": "Identity Fusion NG"
+                },
+                "type": "accountAttribute"
+              }
+            },
+            "type": "reference"
+          }
+        },
+        {
+          "identityAttributeName": "company",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "company",
+              "sourceId": "af946e2450024d5bae5fa127eaa4b313",
+              "sourceName": "Identity Fusion NG"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "costCenter",
+          "transformDefinition": {
+            "attributes": {
+              "id": "Cost Center",
+              "input": {
+                "attributes": {
+                  "attributeName": "costCenter",
+                  "sourceId": "af946e2450024d5bae5fa127eaa4b313",
+                  "sourceName": "Identity Fusion NG"
+                },
+                "type": "accountAttribute"
+              }
+            },
+            "type": "reference"
+          }
+        },
+        {
+          "identityAttributeName": "department",
+          "transformDefinition": {
+            "attributes": {
+              "id": "Department",
+              "input": {
+                "attributes": {
+                  "attributeName": "department",
+                  "sourceId": "af946e2450024d5bae5fa127eaa4b313",
+                  "sourceName": "Identity Fusion NG"
+                },
+                "type": "accountAttribute"
+              }
+            },
+            "type": "reference"
+          }
+        },
+        {
+          "identityAttributeName": "departmentHistory",
+          "transformDefinition": {
+            "attributes": {
+              "id": "Department History",
+              "input": {
+                "attributes": {
+                  "attributeName": "department",
+                  "sourceId": "af946e2450024d5bae5fa127eaa4b313",
+                  "sourceName": "Identity Fusion NG"
+                },
+                "type": "accountAttribute"
+              }
+            },
+            "type": "reference"
+          }
+        },
+        {
+          "identityAttributeName": "description",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "description",
+              "sourceId": "af946e2450024d5bae5fa127eaa4b313",
+              "sourceName": "Identity Fusion NG"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "displayName",
+          "transformDefinition": {
+            "attributes": {
+              "id": "Display Name",
+              "input": {
+                "attributes": {
+                  "attributeName": "name",
+                  "sourceId": "af946e2450024d5bae5fa127eaa4b313",
+                  "sourceName": "Identity Fusion NG"
+                },
+                "type": "accountAttribute"
+              }
+            },
+            "type": "reference"
+          }
+        },
+        {
+          "identityAttributeName": "email",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "email",
+              "sourceId": "af946e2450024d5bae5fa127eaa4b313",
+              "sourceName": "Identity Fusion NG"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "employerStatus",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "employerStatus",
+              "sourceId": "af946e2450024d5bae5fa127eaa4b313",
+              "sourceName": "Identity Fusion NG"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "firstname",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "firstname",
+              "sourceId": "af946e2450024d5bae5fa127eaa4b313",
+              "sourceName": "Identity Fusion NG"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "identificationNumber",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "identificationNumber",
+              "sourceId": "af946e2450024d5bae5fa127eaa4b313",
+              "sourceName": "Identity Fusion NG"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "jobTitle",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "positions",
+              "sourceId": "af946e2450024d5bae5fa127eaa4b313",
+              "sourceName": "Identity Fusion NG"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "lastname",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "lastname",
+              "sourceId": "af946e2450024d5bae5fa127eaa4b313",
+              "sourceName": "Identity Fusion NG"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "lh1Id",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "SAM_ID",
+              "sourceId": "a77d113f663647969a14ac89d6ab3474",
+              "sourceName": "LH1"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "lh2Id",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "Sam Id",
+              "sourceId": "63b9d78bb58f48c48dcff6100589f568",
+              "sourceName": "LH2"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "lh3Id",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "sam-id",
+              "sourceId": "e1e738cc6e8a4e9894e4a6cecdf04afe",
+              "sourceName": "LH3"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "lhgId",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "SAM_ID",
+              "sourceId": "418bd371e1354409b2c6fd670e38b12e",
+              "sourceName": "LHG"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "manager",
+          "transformDefinition": {
+            "attributes": {
+              "id": "Manager",
+              "input": {
+                "attributes": {
+                  "attributeName": "lineManager",
+                  "sourceId": "af946e2450024d5bae5fa127eaa4b313",
+                  "sourceName": "Identity Fusion NG"
+                },
+                "type": "accountAttribute"
+              }
+            },
+            "type": "reference"
+          }
+        },
+        {
+          "identityAttributeName": "nePersonId",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "person_id",
+              "sourceId": "9cafb81ec645489abb1b56c3969f0219",
+              "sourceName": "Non-Employees"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "organization",
+          "transformDefinition": {
+            "attributes": {
+              "id": "Business Unit",
+              "input": {
+                "attributes": {
+                  "attributeName": "businessUnit",
+                  "sourceId": "af946e2450024d5bae5fa127eaa4b313",
+                  "sourceName": "Identity Fusion NG"
+                },
+                "type": "accountAttribute"
+              }
+            },
+            "type": "reference"
+          }
+        },
+        {
+          "identityAttributeName": "uid",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "name",
+              "sourceId": "af946e2450024d5bae5fa127eaa4b313",
+              "sourceName": "Identity Fusion NG"
+            },
+            "type": "accountAttribute"
+          }
+        }
+      ],
+      "enabled": true
+    },
+    "identityCount": 85,
+    "identityExceptionReportReference": null,
+    "identityRefreshRequired": false,
+    "modified": "2026-04-09T12:32:14.304Z",
+    "name": "Identity Fusion NG",
+    "owner": {
+      "id": "30507568a2d54f7484fe0f3edba79692",
+      "name": "fernando.delosrios",
+      "type": "IDENTITY"
+    },
+    "priority": 30
+  },
+  "self": {
+    "id": "54a113a425844337b68975523209468f",
+    "name": "Identity Fusion NG",
+    "type": "IDENTITY_PROFILE"
+  },
+  "version": 1
+}

@@ -1,0 +1,23 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": null,
+    "id": "f3050a9e-2f3e-4b32-9c24-e8781ac4024b",
+    "modified": null,
+    "name": "ATC",
+    "taggedObjects": [
+      {
+        "id": "b925c461-1605-460b-88c3-70bc73256c2d",
+        "name": "Flight Planning vs. ATC",
+        "type": "SOD_POLICY"
+      }
+    ]
+  },
+  "self": {
+    "id": "f3050a9e-2f3e-4b32-9c24-e8781ac4024b",
+    "name": "ATC",
+    "type": "TAG"
+  },
+  "version": 1
+}

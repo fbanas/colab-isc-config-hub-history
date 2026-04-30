@@ -1,0 +1,64 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "attributes": {
+      "sourceVersion": "1.0"
+    },
+    "created": "2026-04-14T10:04:37.777Z",
+    "description": "This rule is used by the JDBC connector to build a map representation of the Resultset",
+    "id": "d39e8ee26212422484aa60e226545e12",
+    "modified": "2026-04-14T10:14:08.328Z",
+    "name": "JDBCBuildMap - Amadeus",
+    "signature": {
+      "input": [
+        {
+          "description": "A Map containing state information.",
+          "name": "state",
+          "type": null
+        },
+        {
+          "description": "A connection object to connect to database.",
+          "name": "connection",
+          "type": null
+        },
+        {
+          "description": "A sailpoint.api.SailPointContext object that can be used to query the database if necessary.",
+          "name": "context",
+          "type": null
+        },
+        {
+          "description": "The ResultSet from database.",
+          "name": "result",
+          "type": null
+        },
+        {
+          "description": "The application whose data file is being processed.",
+          "name": "application",
+          "type": null
+        },
+        {
+          "description": "The log object associated with the SailPointContext.",
+          "name": "log",
+          "type": null
+        }
+      ],
+      "output": {
+        "description": "A Map of the resource object assembled from the data.",
+        "name": "map",
+        "type": null
+      }
+    },
+    "sourceCode": {
+      "script": "import sailpoint.connector.*;\n\nMap map = JDBCConnector.buildMapFromResultSet(result, schema);\nString LOGIN_AREAS = (String) map.get(\"LOGIN_AREAS\");\nif (LOGIN_AREAS != null) {\n    String[] loginAreasArray = LOGIN_AREAS.split(\",\");\n    map.put(\"LOGIN_AREAS\", Arrays.asList(loginAreasArray));\n}\n\nreturn map;",
+      "version": "1.0"
+    },
+    "type": "JDBCBuildMap"
+  },
+  "self": {
+    "id": "d39e8ee26212422484aa60e226545e12",
+    "name": "JDBCBuildMap - Amadeus",
+    "type": "CONNECTOR_RULE"
+  },
+  "version": 1
+}

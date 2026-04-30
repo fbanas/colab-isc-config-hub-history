@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "Hello,</br><p>The ${PRODUCT_NAME} system has created an account for ${username} on the ${source} system. Here are the details about this account:</p><p>User Name: <strong>${accountUserName}</strong></p><p>Access: <br> #foreach ($access in $accountAccess) <li>$access</li> <br/>\t#end </p><p>If you have any questions, contact your administrator.</p><p>Thanks,<br/> The ${PRODUCT_NAME} Team </p>",
+    "created": null,
+    "description": "Sent to a user when an account is created on a source for them.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] New Account Provisioned",
+    "key": "cloud_user_new_account_notification",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "New Account Provisioned",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "${source} - Account Created For ${username}",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] New Account Provisioned",
+    "name": "New Account Provisioned",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

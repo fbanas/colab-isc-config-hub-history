@@ -1,0 +1,263 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "authoritativeSource": {
+      "id": "b1cdedea9ecb482aa949c8b77463fc47",
+      "name": "HR - OrangeHRM",
+      "type": "SOURCE"
+    },
+    "created": "2026-03-30T08:00:49.968Z",
+    "description": null,
+    "hasTimeBasedAttr": false,
+    "id": "fa41f7d647a945449c4b1614d41266f6",
+    "identityAttributeConfig": {
+      "attributeTransforms": [
+        {
+          "identityAttributeName": "amadeusPrimaryOffice",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "primaryOffice",
+              "sourceId": "ee86b231bcdf405c878a02eba0b4a376",
+              "sourceName": "Amadeus Primary Offices"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "birthYear",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "businessCategory",
+              "sourceId": "8779703397444628aa740c2d5fdaf0c9",
+              "sourceName": "Active Directory"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "cloudLifecycleState",
+          "transformDefinition": {
+            "attributes": {
+              "id": "OHRM - Lifecycle State",
+              "input": {
+                "attributes": {
+                  "attributeName": "empstatus",
+                  "sourceId": "b1cdedea9ecb482aa949c8b77463fc47",
+                  "sourceName": "HR - OrangeHRM"
+                },
+                "type": "accountAttribute"
+              }
+            },
+            "type": "reference"
+          }
+        },
+        {
+          "identityAttributeName": "country",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "country",
+              "sourceId": "b1cdedea9ecb482aa949c8b77463fc47",
+              "sourceName": "HR - OrangeHRM"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "department",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "department",
+              "sourceId": "b1cdedea9ecb482aa949c8b77463fc47",
+              "sourceName": "HR - OrangeHRM"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "displayName",
+          "transformDefinition": {
+            "attributes": {
+              "id": "Display Name",
+              "input": {
+                "attributes": {
+                  "attributeName": "username",
+                  "sourceId": "b1cdedea9ecb482aa949c8b77463fc47",
+                  "sourceName": "HR - OrangeHRM"
+                },
+                "type": "accountAttribute"
+              }
+            },
+            "type": "reference"
+          }
+        },
+        {
+          "identityAttributeName": "email",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "email",
+              "sourceId": "b1cdedea9ecb482aa949c8b77463fc47",
+              "sourceName": "HR - OrangeHRM"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "endDate",
+          "transformDefinition": {
+            "attributes": {
+              "id": "OHRM - End Date",
+              "input": {
+                "attributes": {
+                  "attributeName": "ftoend",
+                  "sourceId": "b1cdedea9ecb482aa949c8b77463fc47",
+                  "sourceName": "HR - OrangeHRM"
+                },
+                "type": "accountAttribute"
+              }
+            },
+            "type": "reference"
+          }
+        },
+        {
+          "identityAttributeName": "firstname",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "firstname",
+              "sourceId": "b1cdedea9ecb482aa949c8b77463fc47",
+              "sourceName": "HR - OrangeHRM"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "ibmiusername",
+          "transformDefinition": {
+            "attributes": {
+              "id": "Derive FirstInitial+LastName In Upper",
+              "input": {
+                "attributes": {
+                  "attributeName": "firstname",
+                  "sourceId": "b1cdedea9ecb482aa949c8b77463fc47",
+                  "sourceName": "HR - OrangeHRM"
+                },
+                "type": "accountAttribute"
+              }
+            },
+            "type": "reference"
+          }
+        },
+        {
+          "identityAttributeName": "identityType",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "type",
+              "sourceId": "b1cdedea9ecb482aa949c8b77463fc47",
+              "sourceName": "HR - OrangeHRM"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "jobTitle",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "title",
+              "sourceId": "b1cdedea9ecb482aa949c8b77463fc47",
+              "sourceName": "HR - OrangeHRM"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "lastname",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "lastname",
+              "sourceId": "b1cdedea9ecb482aa949c8b77463fc47",
+              "sourceName": "HR - OrangeHRM"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "manager",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "manager",
+              "sourceId": "b1cdedea9ecb482aa949c8b77463fc47",
+              "sourceName": "HR - OrangeHRM"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "startDate",
+          "transformDefinition": {
+            "attributes": {
+              "id": "OHRM - End Date",
+              "input": {
+                "attributes": {
+                  "attributeName": "ftostart",
+                  "sourceId": "b1cdedea9ecb482aa949c8b77463fc47",
+                  "sourceName": "HR - OrangeHRM"
+                },
+                "type": "accountAttribute"
+              }
+            },
+            "type": "reference"
+          }
+        },
+        {
+          "identityAttributeName": "uid",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "username",
+              "sourceId": "b1cdedea9ecb482aa949c8b77463fc47",
+              "sourceName": "HR - OrangeHRM"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "workPhone",
+          "transformDefinition": {
+            "attributes": {
+              "id": "E.164 Phone Format",
+              "input": {
+                "attributes": {
+                  "attributeName": "mobile",
+                  "sourceId": "b1cdedea9ecb482aa949c8b77463fc47",
+                  "sourceName": "HR - OrangeHRM"
+                },
+                "type": "accountAttribute"
+              }
+            },
+            "type": "reference"
+          }
+        }
+      ],
+      "enabled": true
+    },
+    "identityCount": 303,
+    "identityExceptionReportReference": {
+      "reportName": "Orange HRM Identity Profile Identity Exceptions",
+      "taskResultId": "375f70261ac84de6926a7a1fc7c63a21"
+    },
+    "identityRefreshRequired": false,
+    "modified": "2026-04-16T06:41:00.684Z",
+    "name": "Orange HRM Identity Profile",
+    "owner": {
+      "id": "7d00e3c56dd44753a8c561b140e85f81",
+      "name": "wweiland",
+      "type": "IDENTITY"
+    },
+    "priority": 70
+  },
+  "self": {
+    "id": "fa41f7d647a945449c4b1614d41266f6",
+    "name": "Orange HRM Identity Profile",
+    "type": "IDENTITY_PROFILE"
+  },
+  "version": 1
+}

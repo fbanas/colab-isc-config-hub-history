@@ -1,0 +1,43 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "attributes": [
+      {
+        "displayName": "Job Title",
+        "enabled": true,
+        "name": "jobTitle",
+        "target": "jobTitle"
+      },
+      {
+        "displayName": "att_display_name",
+        "enabled": false,
+        "name": "displayName",
+        "target": "displayName"
+      },
+      {
+        "displayName": "att_first_name",
+        "enabled": false,
+        "name": "firstname",
+        "target": "givenName"
+      },
+      {
+        "displayName": "att_last_name",
+        "enabled": false,
+        "name": "lastname",
+        "target": "surname"
+      }
+    ],
+    "source": {
+      "id": "08957d380b9c4e81a03a9c955d7a8024",
+      "name": "Azure-AD",
+      "type": "SOURCE"
+    }
+  },
+  "self": {
+    "id": "38973aa7-395a-4199-a401-a4c49a20d0d1:08957d380b9c4e81a03a9c955d7a8024",
+    "name": "Azure-AD",
+    "type": "ATTR_SYNC_SOURCE_CONFIG"
+  },
+  "version": 1
+}

@@ -1,0 +1,105 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": "2026-04-14T14:28:58.863726762Z",
+    "description": "",
+    "formConditions": [
+      {
+        "effects": [
+          {
+            "config": {
+              "element": "530897530807"
+            },
+            "effectType": "SHOW"
+          }
+        ],
+        "ruleOperator": "AND",
+        "rules": [
+          {
+            "operator": "NOT_EM",
+            "source": "accessProfiles",
+            "sourceType": "INPUT",
+            "value": "",
+            "valueType": "STRING"
+          }
+        ]
+      }
+    ],
+    "formElements": [
+      {
+        "config": {
+          "alignment": "LEFT",
+          "description": "",
+          "formElements": [
+            {
+              "config": {
+                "dataSource": {
+                  "config": {
+                    "formInputId": "accessProfiles",
+                    "sortBy": "ASC"
+                  },
+                  "dataSourceType": "FORM_INPUT"
+                },
+                "forceSelect": true,
+                "helpText": "List of existing Access Profiles belonging to the selected Application. No selection is required at this time",
+                "label": "Access Profiles",
+                "maximum": 1,
+                "placeholder": "",
+                "required": false
+              },
+              "elementType": "SELECT",
+              "id": "530897530807",
+              "key": "accessProfiles",
+              "validations": [
+                {
+                  "validationType": "DATA_SOURCE"
+                }
+              ]
+            },
+            {
+              "config": {
+                "description": "<p>The internal integrity check has determined that the following objects need to be removed from the platform before this Application can be decommissioned. </p>",
+                "label": "Integrity Check",
+                "showLabel": true
+              },
+              "elementType": "DESCRIPTION",
+              "id": "274093843949",
+              "key": "",
+              "validations": []
+            }
+          ],
+          "label": "Application Removal Objects",
+          "labelStyle": "h2",
+          "showLabel": false
+        },
+        "elementType": "SECTION",
+        "id": "1282454262341",
+        "validations": []
+      }
+    ],
+    "formInput": [
+      {
+        "description": "",
+        "id": "accessProfiles",
+        "label": "accessProfiles",
+        "type": "ARRAY"
+      }
+    ],
+    "id": "e80fce5c-fbb7-4843-a54a-3ffc0ebd53c0",
+    "modified": "2026-04-14T16:11:14.993031442Z",
+    "name": "Application Removal Objects",
+    "owner": {
+      "id": "8939a7e19a4b43eabd3c6c2808c6b9b2",
+      "name": "luca.lori",
+      "type": "IDENTITY"
+    },
+    "usedBy": []
+  },
+  "self": {
+    "id": "e80fce5c-fbb7-4843-a54a-3ffc0ebd53c0",
+    "name": "Application Removal Objects",
+    "type": "FORM_DEFINITION"
+  },
+  "version": 1
+}

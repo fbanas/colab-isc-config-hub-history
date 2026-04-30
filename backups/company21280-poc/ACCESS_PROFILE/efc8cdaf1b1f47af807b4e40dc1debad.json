@@ -1,0 +1,70 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": null,
+      "denialCommentsRequired": null,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-04-15T15:31:02.385764Z",
+    "description": "This set of initial access rights is defined and managed centrally within the idenity profile.",
+    "enabled": true,
+    "entitlements": [
+      {
+        "id": "b325319f087233529852bb721b83847c",
+        "name": "APP-101",
+        "type": "ENTITLEMENT"
+      }
+    ],
+    "id": "efc8cdaf1b1f47af807b4e40dc1debad",
+    "modified": "2026-04-15T15:45:27.165918Z",
+    "name": "Multi Acc. Birthright Access Profile",
+    "owner": {
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
+      "type": "IDENTITY"
+    },
+    "provisioningCriteria": {
+      "attribute": null,
+      "children": [
+        {
+          "attribute": null,
+          "children": [
+            {
+              "attribute": "userPrincipalName",
+              "children": null,
+              "operation": "CONTAINS",
+              "value": "-adm@"
+            }
+          ],
+          "operation": "OR",
+          "value": null
+        }
+      ],
+      "operation": "AND",
+      "value": null
+    },
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": null
+    },
+    "segmentRefs": [],
+    "segments": [],
+    "source": {
+      "id": "00c2314209744506bab1e856117f40f7",
+      "name": "Microsoft Entra sp-demo262 SaaS",
+      "type": "SOURCE"
+    }
+  },
+  "self": {
+    "id": "efc8cdaf1b1f47af807b4e40dc1debad",
+    "name": "Multi Acc. Birthright Access Profile",
+    "type": "ACCESS_PROFILE"
+  },
+  "version": 1
+}

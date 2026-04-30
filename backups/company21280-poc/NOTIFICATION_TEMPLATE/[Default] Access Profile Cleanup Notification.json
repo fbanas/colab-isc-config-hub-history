@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "\t\tDear ${user.name},<br/>\t\t<p>\t\t\tDue to recent entitlement aggregation and system refresh activity, entitlement changes were detected on\t\t\tthe source and have triggered changes relating to your access profiles in IdentityNow.\t\t</p>\t\t#if($disabledAccessProfiles && $disabledAccessProfiles.size() > 0)\t\t\t<p>The following access profiles now have no valid entitlements and have been disabled:</p>\t\t\t<ul>\t\t\t\t#foreach ( $accessProfile in $disabledAccessProfiles )\t\t\t\t\t<li> $accessProfile </li>\t\t\t\t#end\t\t\t</ul>\t\t#end\t\t#if($accessProfilesWithDeletedEntitlements && $accessProfilesWithDeletedEntitlements.size() > 0)\t\t\t<p>\t\t\t\tThe following access profiles contain deleted entitlements but still contain other valid entitlements\t\t\t\tand remain active:\t\t\t</p>\t\t\t<ul>\t\t\t\t#foreach ( $accessProfile in ${accessProfilesWithDeletedEntitlements.keySet()} )\t\t\t\t\t<li> $accessProfile\t\t\t\t\t\t<ul>\t\t\t\t\t\t\t#foreach ( $entitlement in ${accessProfilesWithDeletedEntitlements.get($accessProfile)} )\t\t\t\t\t\t\t\t<li> $entitlement </li>\t\t\t\t\t\t\t#end\t\t\t\t\t\t</ul>\t\t\t\t\t</li>\t\t\t\t#end\t\t\t</ul>\t\t#end\t\t<p>\t\t\tTo make any changes to these access profiles in IdentityNow, please log in as an administrator at\t\t\t<a href=\"$identityNowUrl/ui/admin#admin:access:access-profiles\">\t\t\t\t$identityNowUrl/ui/admin#admin:access:access-profiles\t\t\t</a>\t\t\t.\t\t</p>\t\t<p>\t\t\tThanks,<br/>\t\t\tThe ${PRODUCT_NAME} Team\t\t</p>\t",
+    "created": null,
+    "description": "Sent to a user when their access profiles change due to deleted entitlements on the source.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Access Profile Cleanup Notification",
+    "key": "access_profile_cleanup_notification",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Access Profile Cleanup Notification",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "Deleted entitlements found in Access Profiles",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Access Profile Cleanup Notification",
+    "name": "Access Profile Cleanup Notification",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

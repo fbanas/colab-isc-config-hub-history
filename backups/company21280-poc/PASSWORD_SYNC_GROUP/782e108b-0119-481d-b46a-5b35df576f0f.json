@@ -1,0 +1,26 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "id": "782e108b-0119-481d-b46a-5b35df576f0f",
+    "name": "Microsoft Sources",
+    "passwordPolicy": {
+      "id": "ae623d44944d41b7b2ddf6aef7bd00d0",
+      "name": "Microsoft password policy",
+      "type": "PASSWORD_POLICY"
+    },
+    "sources": [
+      {
+        "id": "00c2314209744506bab1e856117f40f7",
+        "name": "Microsoft Entra sp-demo262 SaaS",
+        "type": "SOURCE"
+      }
+    ]
+  },
+  "self": {
+    "id": "782e108b-0119-481d-b46a-5b35df576f0f",
+    "name": "Microsoft Sources",
+    "type": "PASSWORD_SYNC_GROUP"
+  },
+  "version": 1
+}

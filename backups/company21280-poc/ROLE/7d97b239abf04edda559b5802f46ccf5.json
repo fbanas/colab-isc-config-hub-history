@@ -1,0 +1,54 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessProfiles": [],
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": false,
+      "denialCommentsRequired": false,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-03-18T13:31:31.163507Z",
+    "description": "Role for all employees from the department Sales (LH1-Role-6)",
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": true,
+    "entitlements": [],
+    "id": "7d97b239abf04edda559b5802f46ccf5",
+    "legacyMembershipInfo": null,
+    "membership": null,
+    "modified": "2026-03-27T15:02:37.965121Z",
+    "name": "LH1_Sales",
+    "owner": {
+      "id": "aa4ab9d17dc24afc84947597b9ce1a46",
+      "name": "Bngeburg Börner",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [
+      {
+        "id": "0643ef20-158f-4143-93b1-838213316949",
+        "name": "LH1-Lufthansa 1",
+        "type": "SEGMENT"
+      }
+    ],
+    "segments": [
+      "0643ef20-158f-4143-93b1-838213316949"
+    ]
+  },
+  "self": {
+    "id": "7d97b239abf04edda559b5802f46ccf5",
+    "name": "LH1_Sales",
+    "type": "ROLE"
+  },
+  "version": 1
+}

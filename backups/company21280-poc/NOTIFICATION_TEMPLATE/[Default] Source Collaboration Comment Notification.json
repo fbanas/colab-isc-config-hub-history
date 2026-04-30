@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "Dear $__recipient.name,<br/><br/>#set($url=$__global.productUrl + '/ui/a' + $uri )<p>$author left the following comment on the $sourceName source:</p><div style=\"border: #1D5ADE; border-width: 2px; border-style: dotted; padding-left: 15px; padding: 10px;\"><strong>$author</strong>$comment</div><p>&nbsp;</p><p>Go to the <a href=\"$url\">$sourceName</a> configuration page or sign in to $__global.productName to reply to this comment.<br/><br/>Thanks,<br/> The $__global.productName Team<br/>",
+    "created": null,
+    "description": "Notifies a reviewer when they have been mentioned in a comment by a collaborator who is configuring a source",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Source Collaboration Comment Notification",
+    "key": "source_config_collaboration_comments",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Source Collaboration Comment Notification",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "$author commented on the $sourceName source configuration",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Source Collaboration Comment Notification",
+    "name": "Source Collaboration Comment Notification",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

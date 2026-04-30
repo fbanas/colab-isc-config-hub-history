@@ -1,0 +1,70 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "compensatingControls": "The overlapping access must be granted only for a strictly defined, time‑bound period and explicitly approved by an authorized GRC or security officer.\n\nAll actions taken under the combined role must be fully logged, including route changes, level changes, and separation‑related instructions, and subject to post‑incident review.\n\nA second authorized person (e.g., a second controller or operations supervisor) must independently verify and acknowledge any separation‑critical action taken by the individual with dual access.\n\nThe IAM system must flag such temporary role combinations for periodic attestation and immediate review after expiration.",
+    "conflictingAccessCriteria": {
+      "leftCriteria": {
+        "criteriaList": [
+          {
+            "id": "b325319f087233529852bb721b83847c",
+            "name": "APP-101",
+            "type": "ENTITLEMENT"
+          }
+        ],
+        "name": "Flight Planning"
+      },
+      "rightCriteria": {
+        "criteriaList": [
+          {
+            "id": "e29b0a4c5a82349faf19b3efe5fd828f",
+            "name": "APP-202",
+            "type": "ENTITLEMENT"
+          }
+        ],
+        "name": "Air Traffic Controllers"
+      }
+    },
+    "correctionAdvice": "Review and remove permanent or standing access that grants both flight‑planning / pilot‑execution rights and ATC separation control rights to the same user unless justified by documented operational procedures and approved exceptions.\n\nRedesign roles and entitlements so that “flight‑planning / pilot” and “ATC separation / coordination” are separate role types in the IAM system, with no automatic overlap.\n\nRun regular SoD reports and access certifications to identify and remediate any unauthorized or redundant role combinations promptly.\n\nWhere joint responsibilities exist (e.g., training or simulation), assign temporary, workflow‑driven roles instead of permanent entitlements and enforce automated de‑provisioning after each session.",
+    "created": "2026-03-31T19:14:40Z",
+    "creatorId": "fcc9db01f32249889e627da51f5f710a",
+    "creatorRef": {
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
+      "type": "IDENTITY"
+    },
+    "description": "Flight Planning vs. ATC: Pilots manage in-flight navigation, while Air Traffic Controllers (ATC) manage separation, ensuring no single person controls both.",
+    "externalPolicyReference": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap4_section_4.html",
+    "id": "b925c461-1605-460b-88c3-70bc73256c2d",
+    "modified": "2026-03-31T19:14:40Z",
+    "modifierId": null,
+    "name": "Flight Planning vs. ATC",
+    "ownerRef": {
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
+      "type": "IDENTITY"
+    },
+    "policyQuery": "@access(id:b325319f087233529852bb721b83847c) AND @access(id:e29b0a4c5a82349faf19b3efe5fd828f)",
+    "scheduled": false,
+    "state": "ENFORCED",
+    "tags": [
+      "ATC",
+      "PILOT"
+    ],
+    "type": "CONFLICTING_ACCESS_BASED",
+    "violationOwnerAssignmentConfig": {
+      "assignmentRule": "STATIC",
+      "ownerRef": {
+        "id": "90eb8204ac594f48ac598a55e0e73613",
+        "name": "florian.banas",
+        "type": "IDENTITY"
+      }
+    }
+  },
+  "self": {
+    "id": "b925c461-1605-460b-88c3-70bc73256c2d",
+    "name": "Flight Planning vs. ATC",
+    "type": "SOD_POLICY"
+  },
+  "version": 1
+}

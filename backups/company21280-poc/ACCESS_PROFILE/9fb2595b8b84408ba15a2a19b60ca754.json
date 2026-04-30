@@ -1,0 +1,51 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": null,
+      "denialCommentsRequired": null,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-03-20T12:40:37.591838Z",
+    "description": null,
+    "enabled": true,
+    "entitlements": [
+      {
+        "id": "393292eca12031abac50d6193f926ca6",
+        "name": "Fusion report",
+        "type": "ENTITLEMENT"
+      }
+    ],
+    "id": "9fb2595b8b84408ba15a2a19b60ca754",
+    "modified": "2026-03-20T14:54:47.367583Z",
+    "name": "Identity Fusion Report",
+    "owner": {
+      "id": "176a5fc85208460383b2253765f4a137",
+      "name": "SailPoint Services",
+      "type": "IDENTITY"
+    },
+    "provisioningCriteria": null,
+    "requestable": true,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [],
+    "segments": [],
+    "source": {
+      "id": "af946e2450024d5bae5fa127eaa4b313",
+      "name": "Identity Fusion NG",
+      "type": "SOURCE"
+    }
+  },
+  "self": {
+    "id": "9fb2595b8b84408ba15a2a19b60ca754",
+    "name": "Identity Fusion Report",
+    "type": "ACCESS_PROFILE"
+  },
+  "version": 1
+}

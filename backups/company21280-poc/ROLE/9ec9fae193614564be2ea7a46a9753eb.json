@@ -1,0 +1,54 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessProfiles": [],
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": false,
+      "denialCommentsRequired": false,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-03-18T13:31:40.783603Z",
+    "description": "Role for Recertification Reviewer  (Line Manager) (LHG-Role-5)",
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": true,
+    "entitlements": [],
+    "id": "9ec9fae193614564be2ea7a46a9753eb",
+    "legacyMembershipInfo": null,
+    "membership": null,
+    "modified": "2026-03-27T15:02:59.618456Z",
+    "name": "LHG_RC_Reviewer",
+    "owner": {
+      "id": "e4acf5ec640048019c7951d422749048",
+      "name": "Alice  Anderson ",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [
+      {
+        "id": "0cab4e12-1ab9-4d0d-8986-bfbcd29107c2",
+        "name": "LHG-Lufthansa",
+        "type": "SEGMENT"
+      }
+    ],
+    "segments": [
+      "0cab4e12-1ab9-4d0d-8986-bfbcd29107c2"
+    ]
+  },
+  "self": {
+    "id": "9ec9fae193614564be2ea7a46a9753eb",
+    "name": "LHG_RC_Reviewer",
+    "type": "ROLE"
+  },
+  "version": 1
+}

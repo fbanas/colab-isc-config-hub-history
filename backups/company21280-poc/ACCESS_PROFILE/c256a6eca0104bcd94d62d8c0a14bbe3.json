@@ -1,0 +1,81 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": null,
+      "denialCommentsRequired": null,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-04-17T20:03:55.352842Z",
+    "description": null,
+    "enabled": true,
+    "entitlements": [
+      {
+        "id": "729c91a241b234408c44bf2ee2ea1f64",
+        "name": "Select Authoritative Account",
+        "type": "ENTITLEMENT"
+      },
+      {
+        "id": "8deab1f6993c3eef84eb332c1ba8573d",
+        "name": "Set Amadeus Primary Office",
+        "type": "ENTITLEMENT"
+      },
+      {
+        "id": "a7fed7b28e5937d888fa0f2766e1304b",
+        "name": "Update an Inbound Firewall Rule State on a Windows Server",
+        "type": "ENTITLEMENT"
+      },
+      {
+        "id": "b98f6bdfa9083954b524378039696239",
+        "name": "Create a Security Group in Active Directory",
+        "type": "ENTITLEMENT"
+      },
+      {
+        "id": "be4dfa077de936ef9f3aedb85ef84a38",
+        "name": "Users Guide to ISC",
+        "type": "ENTITLEMENT"
+      },
+      {
+        "id": "c887b21ea561369a94c9b25a57a211fd",
+        "name": "Emergency Termination",
+        "type": "ENTITLEMENT"
+      },
+      {
+        "id": "f30eb49926db36d7b1bd840d9c914314",
+        "name": "Application Removal",
+        "type": "ENTITLEMENT"
+      }
+    ],
+    "id": "c256a6eca0104bcd94d62d8c0a14bbe3",
+    "modified": "2026-04-17T20:34:00.649141Z",
+    "name": "ISC Interactive Trigger",
+    "owner": {
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
+      "type": "IDENTITY"
+    },
+    "provisioningCriteria": null,
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": null
+    },
+    "segmentRefs": [],
+    "segments": [],
+    "source": {
+      "id": "a1a85705e70a42bcace4e4d9a55debd9",
+      "name": "IdentityNow",
+      "type": "SOURCE"
+    }
+  },
+  "self": {
+    "id": "c256a6eca0104bcd94d62d8c0a14bbe3",
+    "name": "ISC Interactive Trigger",
+    "type": "ACCESS_PROFILE"
+  },
+  "version": 1
+}

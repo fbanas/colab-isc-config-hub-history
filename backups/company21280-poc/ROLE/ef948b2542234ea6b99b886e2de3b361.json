@@ -1,0 +1,130 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessProfiles": [],
+    "accessRequestConfig": {
+      "approvalSchemes": [
+        {
+          "approverId": null,
+          "approverType": "ALL_OWNERS"
+        }
+      ],
+      "commentsRequired": true,
+      "denialCommentsRequired": true,
+      "maxPermittedAccessDuration": {
+        "timeUnit": "DAYS",
+        "value": 1
+      },
+      "reauthorizationRequired": false,
+      "requireEndDate": true
+    },
+    "additionalOwners": [],
+    "created": "2026-03-30T10:20:29.473598Z",
+    "description": "This role grants permanant ISC administrator rights to all users of the \"Lufthansa - POC User\" source, as well for one day to those who have requested and been approved access.",
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": true,
+    "entitlements": [
+      {
+        "id": "c22353c7-209a-365c-add0-3775c96d2389",
+        "name": "Admin",
+        "sourceId": "554636d5-2d7a-40ea-90f0-9fd1d2ce5dc9",
+        "sourceName": "Identity Security Cloud Governance",
+        "type": "ENTITLEMENT"
+      }
+    ],
+    "id": "ef948b2542234ea6b99b886e2de3b361",
+    "legacyMembershipInfo": null,
+    "membership": {
+      "criteria": {
+        "children": [
+          {
+            "children": null,
+            "key": {
+              "property": "attribute.email",
+              "sourceId": "f5bc2e60775f4a4bb4b96e4558589433",
+              "type": "ACCOUNT"
+            },
+            "operation": "CONTAINS",
+            "stringValue": null,
+            "values": [
+              "@dlh.de"
+            ]
+          },
+          {
+            "children": null,
+            "key": {
+              "property": "attribute.email",
+              "sourceId": "f5bc2e60775f4a4bb4b96e4558589433",
+              "type": "ACCOUNT"
+            },
+            "operation": "CONTAINS",
+            "stringValue": null,
+            "values": [
+              "@ipg-group.com"
+            ]
+          },
+          {
+            "children": null,
+            "key": {
+              "property": "attribute.email",
+              "sourceId": "f5bc2e60775f4a4bb4b96e4558589433",
+              "type": "ACCOUNT"
+            },
+            "operation": "CONTAINS",
+            "stringValue": null,
+            "values": [
+              "@lhsystems.com"
+            ]
+          },
+          {
+            "children": null,
+            "key": {
+              "property": "attribute.email",
+              "sourceId": "f5bc2e60775f4a4bb4b96e4558589433",
+              "type": "ACCOUNT"
+            },
+            "operation": "CONTAINS",
+            "stringValue": null,
+            "values": [
+              "@swiss.com"
+            ]
+          }
+        ],
+        "key": null,
+        "operation": "OR",
+        "stringValue": null,
+        "values": null
+      },
+      "identities": null,
+      "type": "STANDARD"
+    },
+    "modified": "2026-03-31T19:30:19.148716Z",
+    "name": "Admin to POC Users",
+    "owner": {
+      "id": "cc9ff944d49c4d568b917ecbd2a6bba5",
+      "name": "jmueller",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": true,
+    "revocationRequestConfig": {
+      "approvalSchemes": [
+        {
+          "approverId": "e805e921-63d3-44a4-9473-688b2c54d1c4",
+          "approverType": "GOVERNANCE_GROUP"
+        }
+      ]
+    },
+    "segmentRefs": [],
+    "segments": []
+  },
+  "self": {
+    "id": "ef948b2542234ea6b99b886e2de3b361",
+    "name": "Admin to POC Users",
+    "type": "ROLE"
+  },
+  "version": 1
+}

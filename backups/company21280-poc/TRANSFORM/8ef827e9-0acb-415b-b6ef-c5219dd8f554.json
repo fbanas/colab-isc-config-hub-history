@@ -1,0 +1,33 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "attributes": {
+      "values": [
+        {
+          "attributes": {
+            "attributeName": "EMAIL_ADDRESS_WORK",
+            "sourceName": "Workday"
+          },
+          "type": "accountAttribute"
+        },
+        {
+          "attributes": {
+            "value": "(none)"
+          },
+          "type": "static"
+        }
+      ]
+    },
+    "id": "8ef827e9-0acb-415b-b6ef-c5219dd8f554",
+    "internal": false,
+    "name": "NoEmail",
+    "type": "firstValid"
+  },
+  "self": {
+    "id": "8ef827e9-0acb-415b-b6ef-c5219dd8f554",
+    "name": "NoEmail",
+    "type": "TRANSFORM"
+  },
+  "version": 1
+}

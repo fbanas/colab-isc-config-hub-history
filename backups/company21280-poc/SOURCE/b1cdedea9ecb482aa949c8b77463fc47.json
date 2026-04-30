@@ -1,0 +1,388 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accountCorrelationRule": null,
+    "beforeProvisioningRule": null,
+    "connectorAttributes": {
+      "SQL": "SELECT emp.employee_id                                              AS empid,\n       emp.emp_number                                               AS employeenumber,\n       emp.emp_firstname                                            AS firstname,\n       emp.emp_lastname                                             AS lastname,\n       emp.emp_middle_name                                          AS middlename,\n       emp.emp_nick_name                                            AS nickname,\n       emp.emp_work_email                                           AS email,\n       job.job_title                                                AS title,\n       loc.country_code                                             AS country,\n       loc.city                                                     AS city,\n       mgr.employee_id                                              AS manager,\n       stat.name                                                    AS type,\n       emp.emp_status                                               AS empstatus,\n       emp.emp_other_id                                             AS otherid,\n       emp.emp_zipcode                                              AS zipcode,\n       emp.emp_hm_telephone                                         AS home_phone,\n       emp.emp_mobile                                               AS mobile,\n       emp.emp_work_telephone                                       AS telephone,\n       concat(emp.emp_firstname, '.', emp.emp_lastname) AS username,\n       dept.name                                                    AS department,\n       IF(emp.termination_id, 'true', 'false')                      AS term,\n       emp.joined_date                                              AS ftostart,\n       termination_date                                             AS ftoend,\n       contract.econ_extend_start_date                              AS contractStartDate,\n       contract.econ_extend_end_date                                AS contractEndDate,\n       cat.name                                                     AS category\nFROM   hs_hr_employee AS emp\n       LEFT OUTER JOIN hs_hr_emp_contract_extend AS contract\n                    ON contract.emp_number = emp.emp_number\n       LEFT OUTER JOIN ohrm_job_title AS job\n                    ON emp.job_title_code = job.id\n       LEFT OUTER JOIN (\n           SELECT erep_sub_emp_number, MIN(erep_sup_emp_number) AS erep_sup_emp_number\n           FROM hs_hr_emp_reportto\n           GROUP BY erep_sub_emp_number\n       ) AS empmgr ON emp.emp_number = empmgr.erep_sub_emp_number\n       LEFT OUTER JOIN hs_hr_employee AS mgr\n                    ON empmgr.erep_sup_emp_number = mgr.emp_number\n       LEFT OUTER JOIN hs_hr_emp_locations AS emploc\n                    ON emp.emp_number = emploc.emp_number\n       LEFT OUTER JOIN ohrm_location AS loc\n                    ON emploc.location_id = loc.id\n       LEFT OUTER JOIN ohrm_employment_status AS stat\n                    ON emp.emp_status = stat.id\n       LEFT OUTER JOIN ohrm_subunit AS dept\n                    ON emp.work_station = dept.id\n       LEFT OUTER JOIN ohrm_emp_termination AS term\n                    ON term.id = emp.termination_id\n       LEFT OUTER JOIN ohrm_job_category AS cat\n                    ON emp.eeo_cat_code = cat.id\nWHERE emp.employee_id != '0001';",
+      "checkDeletedDisabled": true,
+      "cloudAuthoritativeSourcePrecedence": 70,
+      "cloudCacheUpdate": 1775820392341,
+      "cloudDisplayName": "HR - OrangeHRM",
+      "cloudIdentityProfileName": "Orange HRM Identity Profile",
+      "connectionType": "direct",
+      "connectorFileUploadHistory": {
+        "mysql-connector-java-8.0.28.jar": "2026-03-25T14:22:28.232431699Z"
+      },
+      "connectorName": "JDBC",
+      "connector_files": "mysql-connector-java-8.0.28.jar",
+      "deleteThresholdPercentage": 90,
+      "deltaAggregationEnabled": false,
+      "driverClass": "com.mysql.cj.jdbc.Driver",
+      "encrypted": "password,group.password",
+      "getObjectSQL": "SELECT emp.employee_id                                              AS empid,\n       emp.emp_number                                               AS employeenumber,\n       emp.emp_firstname                                            AS firstname,\n       emp.emp_lastname                                             AS lastname,\n       emp.emp_middle_name                                          AS middlename,\n       emp.emp_nick_name                                            AS nickname,\n       emp.emp_work_email                                           AS email,\n       job.job_title                                                AS title,\n       loc.country_code                                             AS country,\n       loc.city                                                     AS city,\n       mgr.employee_id                                              AS manager,\n       stat.name                                                    AS type,\n       emp.emp_status                                               AS empstatus,\n       emp.emp_other_id                                             AS otherid,\n       emp.emp_zipcode                                              AS zipcode,\n       emp.emp_hm_telephone                                         AS home_phone,\n       emp.emp_mobile                                               AS mobile,\n       emp.emp_work_telephone                                       AS telephone,\n       concat(emp.emp_firstname, '.', emp.emp_lastname)     AS username,\n       dept.name                                                    AS department,\n       IF(emp.termination_id, 'true', 'false')                      AS term,\n       emp.joined_date                                              AS ftostart,\n       termination_date                                             AS ftoend,\n       contract.econ_extend_start_date                              AS contractStartDate,\n       contract.econ_extend_end_date                                AS contractEndDate,\n       cat.name                                                     AS category\nFROM   hs_hr_employee AS emp\n       LEFT OUTER JOIN hs_hr_emp_contract_extend AS contract\n                    ON contract.emp_number = emp.emp_number\n       LEFT OUTER JOIN ohrm_job_title AS job\n                    ON emp.job_title_code = job.id\n       LEFT OUTER JOIN (\n           SELECT erep_sub_emp_number, MIN(erep_sup_emp_number) AS erep_sup_emp_number\n           FROM hs_hr_emp_reportto\n           GROUP BY erep_sub_emp_number\n       ) AS empmgr ON emp.emp_number = empmgr.erep_sub_emp_number\n       LEFT OUTER JOIN hs_hr_employee AS mgr\n                    ON empmgr.erep_sup_emp_number = mgr.emp_number\n       LEFT OUTER JOIN hs_hr_emp_locations AS emploc\n                    ON emp.emp_number = emploc.emp_number\n       LEFT OUTER JOIN ohrm_location AS loc\n                    ON emploc.location_id = loc.id\n       LEFT OUTER JOIN ohrm_employment_status AS stat\n                    ON emp.emp_status = stat.id\n       LEFT OUTER JOIN ohrm_subunit AS dept\n                    ON emp.work_station = dept.id\n       LEFT OUTER JOIN ohrm_emp_termination AS term\n                    ON term.id = emp.termination_id\n       LEFT OUTER JOIN ohrm_job_category AS cat\n                    ON emp.eeo_cat_code = cat.id\nWHERE emp.employee_id = '$(identity)';",
+      "group.isPermissionEnabled": false,
+      "group.mergeRows": false,
+      "hasFullAggregationCompleted": true,
+      "healthCheckTimeout": 30,
+      "healthy": true,
+      "isAdvance": "false",
+      "isPermissionEnabled": false,
+      "jdbcExceptionBucketing": true,
+      "labels": [
+        "standard"
+      ],
+      "mergeRows": false,
+      "since": "2026-04-10T11:26:32.340Z",
+      "sourceConnected": true,
+      "status": "SOURCE_STATE_HEALTHY",
+      "supportsDeltaAgg": "true",
+      "templateApplication": "JDBC Template",
+      "uiMarkAsAuthoritative": true,
+      "url": "jdbc:mysql://10.0.0.250/orangehrm_mysql",
+      "useExecuteQuery": false,
+      "useQuery": false,
+      "useStoredProcedureGetObject": false,
+      "useStoredProcedureSqlStmt": false,
+      "useStoredProcedureTestConn": false,
+      "user": "orangehrm"
+    },
+    "connectorClass": "sailpoint.connector.JDBCConnector",
+    "connectorScriptName": "jdbc-angularsc",
+    "correlationConfigDetails": {
+      "attributeAssignments": null,
+      "id": null,
+      "name": null
+    },
+    "crossTenantConnectorAttributes": {},
+    "deleteThreshold": 90,
+    "description": "OrangeHRM (JDBC)",
+    "features": [
+      "DELETE",
+      "DIRECT_PERMISSIONS",
+      "DISCOVER_SCHEMA",
+      "ENABLE",
+      "GROUP_PROVISIONING",
+      "PROVISIONING",
+      "SYNC_PROVISIONING",
+      "UNLOCK"
+    ],
+    "id": "b1cdedea9ecb482aa949c8b77463fc47",
+    "managementWorkgroup": null,
+    "managerCorrelationMapping": {
+      "accountAttributeName": "manager",
+      "identityAttributeName": "uid"
+    },
+    "managerCorrelationRule": null,
+    "name": "HR - OrangeHRM",
+    "owner": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "passwordPolicies": null,
+    "provisionAsCsv": false,
+    "provisioningPolicies": [],
+    "schemas": [
+      {
+        "attributes": [],
+        "configuration": {},
+        "created": "2026-03-25T14:22:16.963Z",
+        "displayAttribute": "",
+        "features": [
+          "PROVISIONING"
+        ],
+        "hierarchyAttribute": null,
+        "id": "d80d3c89b75b4ac985d8d3ba1ed4d6bd",
+        "identityAttribute": "",
+        "includePermissions": false,
+        "modified": "2026-03-25T14:22:17.008Z",
+        "name": "group",
+        "nativeObjectType": "group"
+      },
+      {
+        "attributes": [
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "category",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "city",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "contractEndDate",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "contractStartDate",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "country",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "department",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "email",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "empid",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "employeenumber",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "empstatus",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "firstname",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "ftoend",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "ftostart",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "home_phone",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "lastname",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "manager",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "middlename",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "mobile",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "nickname",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "otherid",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "telephone",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "term",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "title",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "type",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "username",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "zipcode",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {},
+        "created": "2026-03-25T14:22:16.963Z",
+        "displayAttribute": "username",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "1cf5d1eba919418284fde4b0f69dc3f5",
+        "identityAttribute": "empid",
+        "includePermissions": false,
+        "modified": "2026-04-08T11:28:54.496Z",
+        "name": "account",
+        "nativeObjectType": "account"
+      }
+    ],
+    "type": "JDBC"
+  },
+  "self": {
+    "id": "b1cdedea9ecb482aa949c8b77463fc47",
+    "name": "HR - OrangeHRM",
+    "type": "SOURCE"
+  },
+  "version": 1
+}

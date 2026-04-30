@@ -1,0 +1,38 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accountIdMinWordLength": -1,
+    "accountNameMinWordLength": -1,
+    "defaultPolicy": false,
+    "description": null,
+    "enablePasswdExpiration": false,
+    "firstExpirationReminder": 1,
+    "id": "ae623d44944d41b7b2ddf6aef7bd00d0",
+    "maxLength": 0,
+    "maxRepeatedChars": -1,
+    "minAlpha": 2,
+    "minCharacterTypes": -1,
+    "minLength": 12,
+    "minLower": 2,
+    "minNumeric": 2,
+    "minSpecial": 1,
+    "minUpper": 2,
+    "name": "Microsoft password policy",
+    "passwordExpiration": 90,
+    "requireStrongAuthOffNetwork": false,
+    "requireStrongAuthUntrustedGeographies": false,
+    "requireStrongAuthn": false,
+    "useAccountAttributes": false,
+    "useDictionary": false,
+    "useIdentityAttributes": false,
+    "validateAgainstAccountId": false,
+    "validateAgainstAccountName": false
+  },
+  "self": {
+    "id": "ae623d44944d41b7b2ddf6aef7bd00d0",
+    "name": "Microsoft password policy",
+    "type": "PASSWORD_POLICY"
+  },
+  "version": 1
+}

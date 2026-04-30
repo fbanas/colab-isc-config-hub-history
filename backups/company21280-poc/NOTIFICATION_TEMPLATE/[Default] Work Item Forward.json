@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "$requester forwarded work item \"$workItemName\" from $previousOwner to $newOwner on $spTools.formatDate($forwardDate,3,1)--------------------------------------------------------------------------------$!commentText",
+    "created": null,
+    "description": "Sent to the user whose work is being forwarded and the user receiving the forwarded work assignment.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Work Item Forward",
+    "key": "work_item_forward",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Work Item Forward",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "Work item \"$workItemName\" forwarded",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Work Item Forward",
+    "name": "Work Item Forward",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

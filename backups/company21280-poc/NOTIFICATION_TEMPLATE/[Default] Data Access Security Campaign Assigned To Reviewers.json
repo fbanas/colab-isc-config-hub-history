@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "<font face=\"Calibri\" size=\"2\"><div> Hi,<br/><br/> A certification review task is waiting for you. The final due date for this task is $campaignAssigned.dueDate.<br/> Please follow the <a href=\"$campaignAssigned.url\">link</a> to view the task.<br/><br/> <strong>Additional task details:</strong><br/><br/> <strong>Campaign Name:</strong> $campaignAssigned.name<br/> <strong>Description:</strong> $campaignAssigned.description<br/> <strong>Instructions:</strong> $campaignAssigned.instructions<br/><br/> Thank You! </div><br/><font face=\"Calibri\" size=\"1\" color=\"gray\">This is an automated message sent to you by <strong>Data Access Security</strong> - Please do not reply.</font></font>",
+    "created": null,
+    "description": "Notify user that a data access security certification review task is waiting for them.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Data Access Security Campaign Assigned To Reviewers",
+    "key": "das_campaign_assigned",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Data Access Security Campaign Assigned To Reviewers",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "You have a new certification review task for $campaignAssigned.name",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Data Access Security Campaign Assigned To Reviewers",
+    "name": "Data Access Security Campaign Assigned To Reviewers",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

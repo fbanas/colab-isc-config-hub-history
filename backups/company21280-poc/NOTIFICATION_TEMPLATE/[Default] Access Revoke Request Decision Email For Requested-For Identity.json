@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "\tDear ${user.name},<br/>\t<p>$requesterName's request to remove your access to the $requestedObjectName $requestedObjectType has been\t<b>#if ($approved)<span style=\"color:green\">approved</span>#{else}<span style=\"color:red\">denied</span>#end.</b></p>\t#if($removeDate)<p>Your access to ${requestedObjectName} is scheduled to end on ${removeDate}.</p>#end    If you need more information, please contact $requesterName for assistance.\t<p>\t\tThanks,<br/>\t\tThe ${PRODUCT_NAME} Team\t</p>",
+    "created": null,
+    "description": "Notifies a user when a reviewer has made a decision on their access in an access revoke request.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Access Revoke Request Decision Email For Requested-For Identity",
+    "key": "access_revoke_request_decision_email_for_requested-for_identity",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Access Revoke Request Decision Email For Requested-For Identity",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "${requesterName}'s Request to Revoke Access from you was #if($approved)approved#{else}denied#end",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Access Revoke Request Decision Email For Requested-For Identity",
+    "name": "Access Revoke Request Decision Email For Requested-For Identity",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

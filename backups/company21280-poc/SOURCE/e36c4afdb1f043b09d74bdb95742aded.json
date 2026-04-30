@@ -1,0 +1,142 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accountCorrelationRule": null,
+    "beforeProvisioningRule": null,
+    "connectorAttributes": {
+      "amadeusSourceName": "Amadeus",
+      "baseurl": "https://company21280-poc.api.identitynow-demo.com/",
+      "clientId": "89c55633540a4e60ae4328288781080c",
+      "cloudCacheUpdate": 1776680769890,
+      "cloudDisplayName": "Amadeus - Office Hierarchy Manager",
+      "connectionType": "direct",
+      "connectorName": "Amadeus Office Hierarchy Manager (tag: latest)",
+      "deleteThresholdPercentage": 10,
+      "healthy": false,
+      "idnProxyType": "sp-connect",
+      "officeEntitlementType": "office",
+      "officeHierarchyAttribute": "OFFICE_PATH",
+      "recommendationStatus": "ERROR",
+      "since": "2026-04-20T10:26:09.873Z",
+      "sourceConnected": true,
+      "spConnectorInstanceId": "9b5f2c92-6e45-4019-929a-6c00d42f46a6",
+      "spConnectorSpecId": "59cfe61f-a2d2-48d2-87a2-9ce1ffc80d7f",
+      "status": "SOURCE_STATE_UNCHECKED_SOURCE_NO_ACCOUNTS",
+      "templateApplication": "Amadeus Office Hierarchy Manager (tag: latest)"
+    },
+    "connectorClass": "",
+    "connectorScriptName": "59cfe61f-a2d2-48d2-87a2-9ce1ffc80d7f",
+    "correlationConfigDetails": {
+      "attributeAssignments": null,
+      "id": null,
+      "name": null
+    },
+    "crossTenantConnectorAttributes": {},
+    "deleteThreshold": 10,
+    "description": "Amadeus Office Hierarchy Manager",
+    "features": [],
+    "id": "e36c4afdb1f043b09d74bdb95742aded",
+    "managementWorkgroup": null,
+    "managerCorrelationMapping": null,
+    "managerCorrelationRule": null,
+    "name": "Amadeus - Office Hierarchy Manager",
+    "owner": {
+      "id": "176a5fc85208460383b2253765f4a137",
+      "name": "slpt.services",
+      "type": "IDENTITY"
+    },
+    "passwordPolicies": null,
+    "provisionAsCsv": false,
+    "provisioningPolicies": [],
+    "schemas": [
+      {
+        "attributes": [
+          {
+            "description": "Description of hierarchy node",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "description",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Display name of the hierarchy node",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Full hierarchy path (unique identifier)",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "distinguishedName",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Parent hierarchy path",
+            "isEntitlement": true,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "parent",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {},
+        "created": "2026-04-17T06:57:17.594Z",
+        "displayAttribute": "name",
+        "features": [],
+        "hierarchyAttribute": "parent",
+        "id": "fc0c53c7311443e4b9847b533bd3e021",
+        "identityAttribute": "distinguishedName",
+        "includePermissions": false,
+        "modified": "2026-04-17T15:04:55.122Z",
+        "name": "group",
+        "nativeObjectType": "Group"
+      },
+      {
+        "attributes": [
+          {
+            "description": "Synthetic account id placeholder for connector schema requirements",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "id",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {},
+        "created": "2026-04-17T06:57:17.594Z",
+        "displayAttribute": "id",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "fcb891ed752546c5864d25cad47d8c1e",
+        "identityAttribute": "id",
+        "includePermissions": false,
+        "modified": "2026-04-17T06:57:17.594Z",
+        "name": "account",
+        "nativeObjectType": "User"
+      }
+    ],
+    "type": "59cfe61f-a2d2-48d2-87a2-9ce1ffc80d7f"
+  },
+  "self": {
+    "id": "e36c4afdb1f043b09d74bdb95742aded",
+    "name": "Amadeus - Office Hierarchy Manager",
+    "type": "SOURCE"
+  },
+  "version": 1
+}

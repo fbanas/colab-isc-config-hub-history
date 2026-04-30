@@ -1,0 +1,231 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "authoritativeSource": {
+      "id": "9cafb81ec645489abb1b56c3969f0219",
+      "name": "Non-Employees",
+      "type": "SOURCE"
+    },
+    "created": "2026-03-18T11:43:10.010Z",
+    "description": "Non-Employees Authoritative Source",
+    "hasTimeBasedAttr": false,
+    "id": "d1d746405cea46c992cead0d4b95f9f7",
+    "identityAttributeConfig": {
+      "attributeTransforms": [
+        {
+          "identityAttributeName": "cloudLifecycleState",
+          "transformDefinition": {
+            "attributes": {
+              "id": "NE Lifecycle State",
+              "input": {
+                "attributes": {
+                  "attributeName": "status",
+                  "sourceId": "9cafb81ec645489abb1b56c3969f0219",
+                  "sourceName": "Non-Employees"
+                },
+                "type": "accountAttribute"
+              }
+            },
+            "type": "reference"
+          }
+        },
+        {
+          "identityAttributeName": "displayName",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "name",
+              "sourceId": "9cafb81ec645489abb1b56c3969f0219",
+              "sourceName": "Non-Employees"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "email",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "email_address",
+              "sourceId": "9cafb81ec645489abb1b56c3969f0219",
+              "sourceName": "Non-Employees"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "endDate",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "assignment_end_date",
+              "sourceId": "44c56f58b22e46868870d973751bd557",
+              "sourceName": "Non-Employee Assignments"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "firstname",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "first_name",
+              "sourceId": "9cafb81ec645489abb1b56c3969f0219",
+              "sourceName": "Non-Employees"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "identificationNumber",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "hr_employee_number",
+              "sourceId": "9cafb81ec645489abb1b56c3969f0219",
+              "sourceName": "Non-Employees"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "identityType",
+          "transformDefinition": {
+            "attributes": {
+              "id": "NE Type",
+              "input": {
+                "attributes": {
+                  "attributeName": "name",
+                  "sourceId": "9cafb81ec645489abb1b56c3969f0219",
+                  "sourceName": "Non-Employees"
+                },
+                "type": "accountAttribute"
+              }
+            },
+            "type": "reference"
+          }
+        },
+        {
+          "identityAttributeName": "lastname",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "last_name",
+              "sourceId": "9cafb81ec645489abb1b56c3969f0219",
+              "sourceName": "Non-Employees"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "manager",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "sponsor_login",
+              "sourceId": "44c56f58b22e46868870d973751bd557",
+              "sourceName": "Non-Employee Assignments"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "nePersonId",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "person_id",
+              "sourceId": "9cafb81ec645489abb1b56c3969f0219",
+              "sourceName": "Non-Employees"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "organization",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "assignment_organization",
+              "sourceId": "44c56f58b22e46868870d973751bd557",
+              "sourceName": "Non-Employee Assignments"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "personalEmail",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "email_address",
+              "sourceId": "9cafb81ec645489abb1b56c3969f0219",
+              "sourceName": "Non-Employees"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "preferredName",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "preferred_name",
+              "sourceId": "9cafb81ec645489abb1b56c3969f0219",
+              "sourceName": "Non-Employees"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "startDate",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "assignment_start_date",
+              "sourceId": "44c56f58b22e46868870d973751bd557",
+              "sourceName": "Non-Employee Assignments"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "title",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "job_title_dropdown",
+              "sourceId": "44c56f58b22e46868870d973751bd557",
+              "sourceName": "Non-Employee Assignments"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "uid",
+          "transformDefinition": {
+            "attributes": {
+              "id": "NE Username",
+              "input": {
+                "attributes": {
+                  "attributeName": "name",
+                  "sourceId": "9cafb81ec645489abb1b56c3969f0219",
+                  "sourceName": "Non-Employees"
+                },
+                "type": "accountAttribute"
+              }
+            },
+            "type": "reference"
+          }
+        }
+      ],
+      "enabled": true
+    },
+    "identityCount": 0,
+    "identityExceptionReportReference": null,
+    "identityRefreshRequired": false,
+    "modified": "2026-03-18T14:46:55.177Z",
+    "name": "Non-Employees",
+    "owner": {
+      "id": "cf2fa74801e749149d87640eba4e475f",
+      "name": "se.admin",
+      "type": "IDENTITY"
+    },
+    "priority": 40
+  },
+  "self": {
+    "id": "d1d746405cea46c992cead0d4b95f9f7",
+    "name": "Non-Employees",
+    "type": "IDENTITY_PROFILE"
+  },
+  "version": 1
+}

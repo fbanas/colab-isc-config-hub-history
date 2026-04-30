@@ -1,0 +1,432 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": "2026-04-15T16:13:55.310915448Z",
+    "creator": {
+      "id": "8939a7e19a4b43eabd3c6c2808c6b9b2",
+      "name": "luca.lori",
+      "type": "IDENTITY"
+    },
+    "definition": {
+      "start": "Compare Strings",
+      "steps": {
+        "Compare Strings": {
+          "actionId": "sp:compare-strings",
+          "choiceList": [
+            {
+              "comparator": "StringEquals",
+              "nextStep": "End Step - Success 2",
+              "variableA.$": "$.trigger.actor.name",
+              "variableB": "fernando.delosrios"
+            }
+          ],
+          "defaultStep": "HTTP Request",
+          "displayName": "",
+          "type": "choice"
+        },
+        "Define Variable": {
+          "actionId": "sp:define-variable",
+          "attributes": {
+            "id": "sp:define-variable",
+            "variables": [
+              {
+                "description": "",
+                "name": "modifiedBy",
+                "transforms": [],
+                "variableA.$": "$.trigger.actor.name"
+              },
+              {
+                "description": "",
+                "name": "reviewer",
+                "transforms": [],
+                "variableA.$": "$.getIdentity.managerRef.name"
+              },
+              {
+                "description": "",
+                "name": "sourceName",
+                "transforms": [],
+                "variableA.$": "$.trigger.name"
+              }
+            ]
+          },
+          "displayName": "",
+          "nextStep": "Send Email",
+          "type": "Mutation"
+        },
+        "End Step - Success": {
+          "actionId": "sp:operator-success",
+          "displayName": "",
+          "type": "success"
+        },
+        "End Step - Success 1": {
+          "actionId": "sp:operator-success",
+          "displayName": "",
+          "type": "success"
+        },
+        "End Step - Success 2": {
+          "actionId": "sp:operator-success",
+          "displayName": "",
+          "type": "success"
+        },
+        "Generic Approval Policy": {
+          "actionId": "sp:generic-approval",
+          "attributes": {
+            "approvalActionAtTimeout": "EXPIRED",
+            "approvalReminder": "false",
+            "approvalTimeout": 2,
+            "approvalType": "SINGLE",
+            "byIdentity.$": "$.trigger.actor.id",
+            "description": "An application change has been detected and needs your approval",
+            "forIdentity.$": "$.trigger.actor.id",
+            "multiApproverReviewersConfig_approvalScheme": "SERIAL",
+            "name": "Application Change Approval for {{$.defineVariable.sourceName}}",
+            "priority": "HIGH",
+            "quorumApproverReviewersConfig_approvalScheme": "SERIAL",
+            "reAuthRequired": false,
+            "reminderFrequency_timeZone": "Europe/Madrid",
+            "requestedBy": "IDENTITY",
+            "requestedFor": "IDENTITY",
+            "singleApproverCategory": "IDENTITY",
+            "singleApproverIdentityId": "fcc9db01f32249889e627da51f5f710a"
+          },
+          "displayName": "",
+          "nextStep": "Verify Data Type",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Get Identity": {
+          "actionId": "sp:get-identity",
+          "attributes": {
+            "id.$": "$.trigger.actor.id"
+          },
+          "displayName": "",
+          "nextStep": "Define Variable",
+          "type": "action",
+          "versionNumber": 2
+        },
+        "HTTP Request": {
+          "actionId": "sp:http",
+          "attributes": {
+            "jsonRequestBody": {
+              "includeNested": false,
+              "indices": [
+                "events"
+              ],
+              "query": {
+                "query": "created:[now-1d TO now] AND name:\"Update Source Passed\" AND target.name:\"{{$.trigger.name}}\" "
+              },
+              "sort": [
+                "-created"
+              ]
+            },
+            "method": "post",
+            "param_authenticationRef": "oauth",
+            "param_oauth": {
+              "mapping": {
+                "auth_client_id": "clientId",
+                "auth_client_secret": "clientSecret",
+                "auth_credential_location": "credentialLocation",
+                "auth_token_url": "tokenURL"
+              },
+              "paramID": "7b0fa675-e77b-4fde-b11e-280690aa4c0f",
+              "paramType": "1.4",
+              "refID": "31af81b7-99ce-4ddb-8b58-952821ead642"
+            },
+            "param_oauth_scopes": {
+              "mapping": {
+                "auth_scopes": "scopes"
+              },
+              "paramID": "097c3757-c597-47be-882d-0da52599c89d",
+              "paramType": "3.1",
+              "refID": "80b4b9a6-3dd6-49c7-81f6-cac29d8d3476"
+            },
+            "requestContentType": "json",
+            "url": "https://company21280-poc.api.identitynow-demo.com/v2026/search"
+          },
+          "displayName": "Get Event",
+          "nextStep": "Get Identity",
+          "type": "action",
+          "versionNumber": 3
+        },
+        "HTTP Request 1": {
+          "actionId": "sp:http",
+          "attributes": {
+            "jsonPatchRequestBody": [
+              {
+                "op": "replace",
+                "path": "/owner",
+                "value": {
+                  "id": "",
+                  "name": "",
+                  "type": "IDENTITY"
+                }
+              }
+            ],
+            "jsonRequestBody": [
+              {
+                "op": "replace",
+                "path": "/owner",
+                "value": {
+                  "id": "",
+                  "name": "",
+                  "type": "IDENTITY"
+                }
+              }
+            ],
+            "method": "patch",
+            "param_authenticationRef": "oauth",
+            "param_oauth": {
+              "mapping": {
+                "auth_client_id": "clientId",
+                "auth_client_secret": "clientSecret",
+                "auth_credential_location": "credentialLocation",
+                "auth_token_url": "tokenURL"
+              },
+              "paramID": "7b0fa675-e77b-4fde-b11e-280690aa4c0f",
+              "paramType": "1.4",
+              "refID": "31af81b7-99ce-4ddb-8b58-952821ead642"
+            },
+            "param_oauth_scopes": {
+              "mapping": {
+                "auth_scopes": "scopes"
+              },
+              "paramID": "097c3757-c597-47be-882d-0da52599c89d",
+              "paramType": "3.1",
+              "refID": "80b4b9a6-3dd6-49c7-81f6-cac29d8d3476"
+            },
+            "requestContentType": "json-patch+json",
+            "requestHeaders": {
+              "Content-Type": "application/json-patch+json"
+            },
+            "url": "https://company21280-poc.api.identitynow-demo.com/v2026/sources/{{$.trigger.id}}"
+          },
+          "displayName": "Revert Source Owner",
+          "nextStep": "End Step - Success",
+          "type": "action",
+          "versionNumber": 3
+        },
+        "HTTP Request 2": {
+          "actionId": "sp:http",
+          "attributes": {
+            "jsonPatchRequestBody": [
+              {
+                "op": "replace",
+                "path": "/name",
+                "value": "{{$.trigger.attributesUpdated.cloudDisplayName_before}}"
+              }
+            ],
+            "jsonRequestBody": [
+              {
+                "op": "replace",
+                "path": "/name",
+                "value": "{{$.trigger.attributesUpdated.cloudDisplayName_before}}"
+              }
+            ],
+            "method": "patch",
+            "param_authenticationRef": "oauth",
+            "param_oauth": {
+              "mapping": {
+                "auth_client_id": "clientId",
+                "auth_client_secret": "clientSecret",
+                "auth_credential_location": "credentialLocation",
+                "auth_token_url": "tokenURL"
+              },
+              "paramID": "7b0fa675-e77b-4fde-b11e-280690aa4c0f",
+              "paramType": "1.4",
+              "refID": "31af81b7-99ce-4ddb-8b58-952821ead642"
+            },
+            "param_oauth_scopes": {
+              "mapping": {
+                "auth_scopes": "scopes"
+              },
+              "paramID": "097c3757-c597-47be-882d-0da52599c89d",
+              "paramType": "3.1",
+              "refID": "80b4b9a6-3dd6-49c7-81f6-cac29d8d3476"
+            },
+            "requestContentType": "json-patch+json",
+            "requestHeaders": {
+              "Content-Type": "application/json-patch+json"
+            },
+            "url": "https://company21280-poc.api.identitynow-demo.com/v2026/sources/{{$.trigger.id}}"
+          },
+          "displayName": "Revert Source Name",
+          "nextStep": "End Step - Success",
+          "type": "action",
+          "versionNumber": 3
+        },
+        "HTTP Request 3": {
+          "actionId": "sp:http",
+          "attributes": {
+            "jsonPatchRequestBody": [
+              {
+                "op": "replace",
+                "path": "/name",
+                "value": "{{$.trigger.attributesUpdated.cloudDisplayName_before}}"
+              },
+              {
+                "op": "replace",
+                "path": "/owner",
+                "value": {
+                  "id": "",
+                  "name": "",
+                  "type": "IDENTITY"
+                }
+              }
+            ],
+            "jsonRequestBody": [
+              {
+                "op": "replace",
+                "path": "/name",
+                "value": "{{$.trigger.attributesUpdated.cloudDisplayName_before}}"
+              },
+              {
+                "op": "replace",
+                "path": "/owner",
+                "value": {
+                  "id": "",
+                  "name": "",
+                  "type": "IDENTITY"
+                }
+              }
+            ],
+            "method": "patch",
+            "param_authenticationRef": "oauth",
+            "param_oauth": {
+              "mapping": {
+                "auth_client_id": "clientId",
+                "auth_client_secret": "clientSecret",
+                "auth_credential_location": "credentialLocation",
+                "auth_token_url": "tokenURL"
+              },
+              "paramID": "7b0fa675-e77b-4fde-b11e-280690aa4c0f",
+              "paramType": "1.4",
+              "refID": "31af81b7-99ce-4ddb-8b58-952821ead642"
+            },
+            "param_oauth_scopes": {
+              "mapping": {
+                "auth_scopes": "scopes"
+              },
+              "paramID": "097c3757-c597-47be-882d-0da52599c89d",
+              "paramType": "3.1",
+              "refID": "80b4b9a6-3dd6-49c7-81f6-cac29d8d3476"
+            },
+            "requestContentType": "json-patch+json",
+            "requestHeaders": {
+              "Content-Type": "application/json-patch+json"
+            },
+            "url": "https://company21280-poc.api.identitynow-demo.com/v2026/sources/{{$.trigger.id}}"
+          },
+          "displayName": "Revert Multiple Modification",
+          "nextStep": "End Step - Success",
+          "type": "action",
+          "versionNumber": 3
+        },
+        "Send Email": {
+          "actionId": "sp:send-email",
+          "attributes": {
+            "body": "<p>Hello Jonathan Muller,</p>\n<p>$modifiedBy has just performed some modifications to the application <strong>$sourceName</strong>.</p>\n<p>Please find below the modifications performed:</p>\n<table style=\"border: 1px solid black; border-collapse: collapse;\">\n<tbody>\n<tr>\n<td style=\"border: 1px solid black; border-collapse: collapse;\"><strong>Source Field</strong></td>\n<td style=\"border: 1px solid black; border-collapse: collapse;\"><strong>Before</strong></td>\n<td style=\"border: 1px solid black; border-collapse: collapse;\"><strong>After</strong></td>\n</tr>\n#if( $attributes.SourceOwner_before )\n<tr>\n<td style=\"border: 1px solid black; border-collapse: collapse;\">#if( $attributes.SourceOwner_before )Source Owner #{else}null#end</td>\n<td style=\"border: 1px solid black; border-collapse: collapse;\">#if( $attributes.SourceOwner_before )$attributes.SourceOwner_before#{else}null#end</td>\n<td style=\"border: 1px solid black; border-collapse: collapse;\">#if( $attributes.SourceOwner_after )$attributes.SourceOwner_after#{else}null#end</td>\n</tr>\n#end\n#if( $attributes.cloudDisplayName_before )\n<tr>\n<td style=\"border: 1px solid black; border-collapse: collapse;\">#if( $attributes.cloudDisplayName_before )Source Name #{else}null#end</td>\n<td style=\"border: 1px solid black; border-collapse: collapse;\">#if( $attributes.cloudDisplayName_before )$attributes.cloudDisplayName_before#{else}null#end</td>\n<td style=\"border: 1px solid black; border-collapse: collapse;\">#if( $attributes.cloudDisplayName_after )$attributes.cloudDisplayName_after#{else}null#end</td>\n</tr>\n#end\n</tbody>\n</table>\n<p>A separate approval task has been created for you in SailPoint platform.</p>\n<p>Kindly decide if to Approve the modifications or Reject them to restore the previous values.</p>\n<p>&nbsp;</p>\n<p>Thank you,&nbsp;</p>\n<p>The IGA Team</p>",
+            "context": {
+              "attributes.$": "$.trigger.attributesUpdated",
+              "modifiedBy.$": "$.defineVariable.modifiedBy",
+              "reviewer.$": "$.defineVariable.reviewer",
+              "sourceName.$": "$.defineVariable.sourceName"
+            },
+            "from": null,
+            "recipientEmailList": [
+              "luca.lori@sailpoint.com"
+            ],
+            "replyTo.$": "",
+            "subject": "Application Change Detected"
+          },
+          "description": null,
+          "displayName": "",
+          "nextStep": "Generic Approval Policy",
+          "type": "action",
+          "versionNumber": 2
+        },
+        "Verify Data Type": {
+          "actionId": "sp:compare-unary",
+          "choiceList": [
+            {
+              "comparator": "IsPresent",
+              "nextStep": "End Step - Success 1",
+              "variableA.$": "$.genericApprovalPolicy.approvedBy[0].decisionDate"
+            }
+          ],
+          "defaultStep": "Verify Data Type 1",
+          "description": null,
+          "displayName": "",
+          "type": "choice"
+        },
+        "Verify Data Type 1": {
+          "actionId": "sp:compare-unary",
+          "choiceList": [
+            {
+              "comparator": "IsPresent",
+              "nextStep": "Verify Data Type 3",
+              "variableA.$": "$.trigger.attributesUpdated.cloudDisplayName_after"
+            }
+          ],
+          "defaultStep": "Verify Data Type 2",
+          "displayName": "Check Source Name modification",
+          "type": "choice"
+        },
+        "Verify Data Type 2": {
+          "actionId": "sp:compare-unary",
+          "choiceList": [
+            {
+              "comparator": "IsPresent",
+              "nextStep": "HTTP Request 1",
+              "variableA.$": "$.trigger.attributesUpdated.SourceOwner_after"
+            }
+          ],
+          "defaultStep": "End Step - Success",
+          "displayName": "Check Source Owner modification",
+          "type": "choice"
+        },
+        "Verify Data Type 3": {
+          "actionId": "sp:compare-unary",
+          "choiceList": [
+            {
+              "comparator": "IsPresent",
+              "nextStep": "HTTP Request 3",
+              "variableA.$": "$.trigger.attributesUpdated.SourceOwner_after"
+            }
+          ],
+          "defaultStep": "HTTP Request 2",
+          "displayName": "Check multiple modification",
+          "type": "choice"
+        }
+      }
+    },
+    "description": "",
+    "enabled": false,
+    "id": "9bb0cca0-4a9c-46d4-8749-72bd919d7cd9",
+    "modified": "2026-04-29T13:11:55.50995386Z",
+    "modifiedBy": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "name": "Application Update Review",
+    "owner": {
+      "id": "8939a7e19a4b43eabd3c6c2808c6b9b2",
+      "name": "luca.lori",
+      "type": "IDENTITY"
+    },
+    "trigger": {
+      "attributes": {
+        "filter.$": "$[?(@.name contains \"S/4\")]",
+        "id": "idn:source-updated"
+      },
+      "type": "EVENT"
+    }
+  },
+  "self": {
+    "id": "9bb0cca0-4a9c-46d4-8749-72bd919d7cd9",
+    "name": "Application Update Review",
+    "type": "WORKFLOW"
+  },
+  "version": 1
+}

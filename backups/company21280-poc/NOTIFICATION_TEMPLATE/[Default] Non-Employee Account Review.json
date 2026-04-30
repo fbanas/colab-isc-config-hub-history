@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "Dear $__recipient.name,<br/><br/>\n#set($_sourceName = $data.nonEmployeeSource.name)\n#set($_requestedForDisplayName = \"${data.firstName} ${data.lastName}\")\n#set($_pendingApprovalItem = $__util.getObjectByJsonPath($__contentJson, \"$.data.approvalItems[?(@.approvalStatus == 'PENDING')]\").get(0))\n#set($_approvedApprovalItems = $__util.getObjectByJsonPath($__contentJson, \"$.data.approvalItems[?(@.approvalStatus == 'APPROVED')]\"))\n#set($_notReadyApprovalItems = $__util.getObjectByJsonPath($__contentJson, \"$.data.approvalItems[?(@.approvalStatus == 'NOT_READY')]\"))\n#set($_requester = $__util.getUser($data.requester.id))\n\n<p>$_requester.name has requested a new non-employee account for $_requestedForDisplayName on the source $_sourceName.</p>\n#set($_approvalCenterUrl = \"${__global.productUrl}/ui/d/approvals/requested-items\")\n<p>Please visit the <a href=\"$_approvalCenterUrl\">Approvals center</a> to review this request.</p>\n\n#if($_approvedApprovalItems.size()>0)\n<p>#foreach($_approvedItem in $_approvedApprovalItems)#if($foreach.count!=1) and #end$__util.getUser($_approvedItem.approver.id).name#end have approved this account.</p>\n#end\n#if($_notReadyApprovalItems.size()>0)\n<p>#foreach($_notReadyApprovalItem in $_notReadyApprovalItems)#if($foreach.count!=1) and #end$__util.getUser($_notReadyApprovalItem.approver.id).name#end will review this account request if you approve it.</p>\n#end\n#if($_pendingApprovalItem.approvalOrder == $data.approvalItems.size() - 1)\n<p>If you approve this non-employee account request, an account for $_requestedForDisplayName with the account ID\n    $data.accountName will be created in $__global.productName.</p>\n#end\n<br/>Thanks,<br/> The $__global.productName Team<br/>",
+    "created": null,
+    "description": "Template for Non-Employee Approval request.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Non-Employee Account Review",
+    "key": "non_employee_approval_required",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Non-Employee Account Review",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "Review the non-employee account requested for ${data.firstName} ${data.lastName}",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Non-Employee Account Review",
+    "name": "Non-Employee Account Review",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "<p>Dear ${__recipient.name},</p> <p>You have $__contentJson.batchSize approval #if($__contentJson.batchSize==1) request #else requests #end waiting for your review.</p>  <p>To review approval requests that are assigned to you, please go to: $__global.productUrl/ui/d/$approverPath.</p><br/>Thank you,<br/> The ${__global.productName} Team<br/>",
+    "created": null,
+    "description": "Send a notification to a user indicating they have an approval request that they need to review.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Approval Request Assigned",
+    "key": "approval_request_notification",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Approval Request Assigned",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "An Approval Request Is Awaiting Your Review",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Approval Request Assigned",
+    "name": "Approval Request Assigned",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

@@ -1,0 +1,54 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessProfiles": [],
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": false,
+      "denialCommentsRequired": false,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-03-18T13:31:39.282389Z",
+    "description": "Role for all employees from the department Information Technology (LH3-Role-4)",
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": true,
+    "entitlements": [],
+    "id": "5c32d782cd754cf3a0f22f3ffbe2da7c",
+    "legacyMembershipInfo": null,
+    "membership": null,
+    "modified": "2026-03-27T15:02:50.59442Z",
+    "name": "LH3_IT",
+    "owner": {
+      "id": "4ccc61c7219545cea31d3f22519374d5",
+      "name": "Dans-Hinrich Dunez",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [
+      {
+        "id": "7e24ee64-4340-49fe-8a35-aaff81fe80a7",
+        "name": "LH3-Lufthansa 3",
+        "type": "SEGMENT"
+      }
+    ],
+    "segments": [
+      "7e24ee64-4340-49fe-8a35-aaff81fe80a7"
+    ]
+  },
+  "self": {
+    "id": "5c32d782cd754cf3a0f22f3ffbe2da7c",
+    "name": "LH3_IT",
+    "type": "ROLE"
+  },
+  "version": 1
+}

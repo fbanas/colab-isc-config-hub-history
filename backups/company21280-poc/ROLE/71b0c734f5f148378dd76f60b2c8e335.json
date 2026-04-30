@@ -1,0 +1,78 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessProfiles": [],
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": false,
+      "denialCommentsRequired": false,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-03-18T13:31:47.032531Z",
+    "description": "Role for all Line Manager from LHG (LHG-Role-3)",
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": true,
+    "entitlements": [],
+    "id": "71b0c734f5f148378dd76f60b2c8e335",
+    "legacyMembershipInfo": null,
+    "membership": {
+      "criteria": {
+        "children": [
+          {
+            "children": null,
+            "key": {
+              "property": "attribute.positions",
+              "sourceId": "af946e2450024d5bae5fa127eaa4b313",
+              "type": "ACCOUNT"
+            },
+            "operation": "CONTAINS",
+            "stringValue": null,
+            "values": [
+              "[LHG|Line-Managers]"
+            ]
+          }
+        ],
+        "key": null,
+        "operation": "OR",
+        "stringValue": null,
+        "values": null
+      },
+      "identities": null,
+      "type": "STANDARD"
+    },
+    "modified": "2026-03-27T15:02:56.566684Z",
+    "name": "LHG_Line-Managers",
+    "owner": {
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [
+      {
+        "id": "0cab4e12-1ab9-4d0d-8986-bfbcd29107c2",
+        "name": "LHG-Lufthansa",
+        "type": "SEGMENT"
+      }
+    ],
+    "segments": [
+      "0cab4e12-1ab9-4d0d-8986-bfbcd29107c2"
+    ]
+  },
+  "self": {
+    "id": "71b0c734f5f148378dd76f60b2c8e335",
+    "name": "LHG_Line-Managers",
+    "type": "ROLE"
+  },
+  "version": 1
+}

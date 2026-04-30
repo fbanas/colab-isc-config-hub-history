@@ -1,0 +1,33 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "approvalReminderAndEscalationConfig": {
+      "daysBetweenReminders": null,
+      "daysUntilEscalation": null,
+      "fallbackApprover": null,
+      "maxReminders": null
+    },
+    "approvalsMustBeExternal": false,
+    "autoApprovalEnabled": false,
+    "entitlementRequestConfig": {
+      "allowEntitlementRequest": true,
+      "deniedCommentsRequired": false,
+      "grantRequestApprovalSchemes": [],
+      "requestCommentsRequired": false
+    },
+    "fallbackAccessDurationInDays": null,
+    "govGroupVisibilityEnabled": false,
+    "reauthorizationEnabled": false,
+    "requestOnBehalfOfConfig": {
+      "allowRequestOnBehalfOfAnyoneByAnyone": true,
+      "allowRequestOnBehalfOfEmployeeByManager": true
+    }
+  },
+  "self": {
+    "id": "693191a8b7874c9ab02c3fbcdf9d56b1",
+    "name": "AccessRequestConfiguration",
+    "type": "ACCESS_REQUEST_CONFIG"
+  },
+  "version": 1
+}

@@ -1,0 +1,390 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": "2024-12-19T19:39:50.315876281Z",
+    "description": "Approval step for Emergency Termination (ET) task.",
+    "formConditions": [
+      {
+        "effects": [
+          {
+            "config": {
+              "defaultValueLabel": "department",
+              "element": "568006995406"
+            },
+            "effectType": "SET_DEFAULT_VALUE"
+          },
+          {
+            "config": {
+              "element": "568006995406"
+            },
+            "effectType": "DISABLE"
+          }
+        ],
+        "ruleOperator": "AND",
+        "rules": [
+          {
+            "operator": "NOT_EM",
+            "source": "department",
+            "sourceType": "INPUT",
+            "value": "",
+            "valueType": "STRING"
+          }
+        ]
+      },
+      {
+        "effects": [
+          {
+            "config": {
+              "defaultValueLabel": "firstname",
+              "element": "323302125663"
+            },
+            "effectType": "SET_DEFAULT_VALUE"
+          },
+          {
+            "config": {
+              "element": "323302125663"
+            },
+            "effectType": "DISABLE"
+          }
+        ],
+        "ruleOperator": "AND",
+        "rules": [
+          {
+            "operator": "NOT_EM",
+            "source": "firstname",
+            "sourceType": "INPUT",
+            "value": "",
+            "valueType": "STRING"
+          }
+        ]
+      },
+      {
+        "effects": [
+          {
+            "config": {
+              "defaultValueLabel": "jobTitle",
+              "element": "163175756922"
+            },
+            "effectType": "SET_DEFAULT_VALUE"
+          },
+          {
+            "config": {
+              "element": "163175756922"
+            },
+            "effectType": "DISABLE"
+          }
+        ],
+        "ruleOperator": "AND",
+        "rules": [
+          {
+            "operator": "NOT_EM",
+            "source": "jobTitle",
+            "sourceType": "INPUT",
+            "value": "",
+            "valueType": "STRING"
+          }
+        ]
+      },
+      {
+        "effects": [
+          {
+            "config": {
+              "defaultValueLabel": "justification",
+              "element": "1509063430368"
+            },
+            "effectType": "SET_DEFAULT_VALUE"
+          },
+          {
+            "config": {
+              "element": "1509063430368"
+            },
+            "effectType": "DISABLE"
+          }
+        ],
+        "ruleOperator": "AND",
+        "rules": [
+          {
+            "operator": "NOT_EM",
+            "source": "justification",
+            "sourceType": "INPUT",
+            "value": "",
+            "valueType": "STRING"
+          }
+        ]
+      },
+      {
+        "effects": [
+          {
+            "config": {
+              "defaultValueLabel": "lastname",
+              "element": "300782427253"
+            },
+            "effectType": "SET_DEFAULT_VALUE"
+          },
+          {
+            "config": {
+              "element": "300782427253"
+            },
+            "effectType": "DISABLE"
+          }
+        ],
+        "ruleOperator": "AND",
+        "rules": [
+          {
+            "operator": "NOT_EM",
+            "source": "lastname",
+            "sourceType": "INPUT",
+            "value": "",
+            "valueType": "STRING"
+          }
+        ]
+      }
+    ],
+    "formElements": [
+      {
+        "config": {
+          "alignment": "LEFT",
+          "description": "",
+          "formElements": [
+            {
+              "config": {
+                "columnCount": 2,
+                "columns": [
+                  [
+                    {
+                      "config": {
+                        "default": "",
+                        "description": "",
+                        "helpText": "",
+                        "label": "Department",
+                        "placeholder": "",
+                        "required": false
+                      },
+                      "elementType": "TEXT",
+                      "id": "568006995406",
+                      "key": "department",
+                      "validations": []
+                    },
+                    {
+                      "config": {
+                        "default": "",
+                        "description": "",
+                        "helpText": "",
+                        "label": "Last Name",
+                        "placeholder": "",
+                        "required": false
+                      },
+                      "elementType": "TEXT",
+                      "id": "300782427253",
+                      "key": "lastName",
+                      "validations": []
+                    }
+                  ],
+                  [
+                    {
+                      "config": {
+                        "default": "",
+                        "description": "",
+                        "helpText": "",
+                        "label": "First Name",
+                        "placeholder": "",
+                        "required": false
+                      },
+                      "elementType": "TEXT",
+                      "id": "323302125663",
+                      "key": "firstName",
+                      "validations": []
+                    },
+                    {
+                      "config": {
+                        "default": "",
+                        "description": "",
+                        "helpText": "",
+                        "label": "Job Title",
+                        "placeholder": "",
+                        "required": false
+                      },
+                      "elementType": "TEXT",
+                      "id": "163175756922",
+                      "key": "jobTitle",
+                      "validations": []
+                    }
+                  ]
+                ],
+                "description": "",
+                "label": "User Details",
+                "labelStyle": "h5",
+                "showLabel": false
+              },
+              "elementType": "COLUMN_SET",
+              "id": "1607847980663",
+              "key": "",
+              "validations": []
+            },
+            {
+              "config": {
+                "default": "",
+                "description": "",
+                "helpText": "The following reason(s) were provided to justify the Emergency Termination.",
+                "label": "Justification",
+                "placeholder": "",
+                "required": false,
+                "resize": true,
+                "rows": 2
+              },
+              "elementType": "TEXTAREA",
+              "id": "1509063430368",
+              "key": "justification",
+              "validations": []
+            },
+            {
+              "config": {
+                "default": "",
+                "description": "",
+                "helpText": "You can optionally provide comments to accompany your decision.",
+                "label": "Approval Comments",
+                "placeholder": "",
+                "required": false,
+                "resize": true,
+                "rows": 2
+              },
+              "elementType": "TEXTAREA",
+              "id": "760707406403",
+              "key": "approvalComments",
+              "validations": []
+            },
+            {
+              "config": {
+                "default": false,
+                "falseLabel": "No.  I don't approve.",
+                "helpText": "Please use this toggle to indicate whether you approve or disapprove of the emergency termination.",
+                "label": "Approval Decision",
+                "trueLabel": "Yes.  I approve the termination."
+              },
+              "elementType": "TOGGLE",
+              "id": "1087534078162",
+              "key": "approvalDecision",
+              "validations": []
+            },
+            {
+              "config": {
+                "description": "<p style=\"text-align: center;\"><span style=\"font-size: 24pt;\"><strong>Emergency Termination Approval</strong></span></p>\n<p style=\"text-align: center;\"><span style=\"font-size: 24pt; color: #236fa1;\"><strong>Step 1 of 1</strong></span></p>\n<p><strong>Welcome <span style=\"color: #236fa1;\">{{$.form.input.username}}</span> !!</strong></p>\n<p>One of your direct-reports, <span style=\"color: #236fa1;\">{{$.form.input.requestor}}</span>, has initiated the process to immediately terminate one of their active workers, <span style=\"color: #236fa1;\">{{$.form.input.firstname}} {{$.form.input.lastname}}<span style=\"color: #000000;\">.</span></span></p>\n<p>Corporate policy dictates that such an extreme action requires a 2nd level management approval.  If you need more information or guidance, please review the <a href=\"https://www.sailpoint.com\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Emergency Termination Policy</a>.</p>\n<p>You can also reach out for help via Slack in <strong><span style=\"color: #236fa1;\">#help-emergency-termination</span></strong>.</p>",
+                "label": "Instructions",
+                "showLabel": false
+              },
+              "elementType": "DESCRIPTION",
+              "id": "1195095076399",
+              "key": "",
+              "validations": []
+            },
+            {
+              "config": {
+                "description": "<p><span style=\"font-size: 18pt; color: #236fa1;\"><strong>Details of the Individual</strong></span></p>\n<p>The following summarizes the individual being recommended for emergency termination.</p>",
+                "label": "Details of the Individual",
+                "showLabel": false
+              },
+              "elementType": "DESCRIPTION",
+              "id": "1332070481770",
+              "key": "",
+              "validations": []
+            },
+            {
+              "config": {
+                "description": "<p> </p>\n<p><span style=\"font-size: 18pt; color: #236fa1;\"><strong>Decision on Termination</strong></span></p>",
+                "label": "Spacer",
+                "showLabel": false
+              },
+              "elementType": "DESCRIPTION",
+              "id": "117241956536",
+              "key": "",
+              "validations": []
+            },
+            {
+              "config": {
+                "description": "<p> </p>\n<p>When you have completed the form, please press <span style=\"color: #236fa1;\"><strong>Submit</strong></span>.</p>\n<p>If you wish to abandon this process, please press <span style=\"color: #236fa1;\"><strong>Cancel</strong></span>.</p>",
+                "label": "Final Instructions",
+                "showLabel": false
+              },
+              "elementType": "DESCRIPTION",
+              "id": "742897457840",
+              "key": "",
+              "validations": []
+            }
+          ],
+          "label": "Form Instructions",
+          "labelStyle": "h5",
+          "showLabel": false
+        },
+        "elementType": "SECTION",
+        "id": "1144046420884",
+        "validations": []
+      }
+    ],
+    "formInput": [
+      {
+        "description": "Department of the person to be terminated.",
+        "id": "department",
+        "label": "Department",
+        "type": "STRING"
+      },
+      {
+        "description": "First name of the person to be terminated.",
+        "id": "firstname",
+        "label": "Firstname",
+        "type": "STRING"
+      },
+      {
+        "description": "Job Title of the person to be terminated.",
+        "id": "jobTitle",
+        "label": "Job Title",
+        "type": "STRING"
+      },
+      {
+        "description": "Justification for the Emergency Termination.",
+        "id": "justification",
+        "label": "Justification",
+        "type": "STRING"
+      },
+      {
+        "description": "Last name of the person to be terminated.",
+        "id": "lastname",
+        "label": "Lastname",
+        "type": "STRING"
+      },
+      {
+        "description": "The name of person requesting the Emergency Termination.",
+        "id": "requestor",
+        "label": "Requestor",
+        "type": "STRING"
+      },
+      {
+        "description": "The name of the person interacting with this approval form.",
+        "id": "username",
+        "label": "Username",
+        "type": "STRING"
+      }
+    ],
+    "id": "9b9578a7-42e6-4057-a1e5-b0da9c203421",
+    "modified": "2026-03-18T16:17:21.62536973Z",
+    "name": "ET - Approval",
+    "owner": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "usedBy": [
+      {
+        "id": "da8a8d1b-6545-458b-9f4d-ed284234cdeb",
+        "name": "Emergency Termination",
+        "type": "WORKFLOW"
+      }
+    ]
+  },
+  "self": {
+    "id": "9b9578a7-42e6-4057-a1e5-b0da9c203421",
+    "name": "ET - Approval",
+    "type": "FORM_DEFINITION"
+  },
+  "version": 1
+}

@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "Dear ${data.displayName},<br/><br/>\n#set($_sourceName = $data.sourceName)\n#set($_sourceId = $data.sourceId)\n#set($url = \"${__global.productUrl}/ui/d/dashboard/non-employees/sources/$_sourceId\")\n#set($_date = $__dateTool.toDate(\"yyyy-MM-dd'T'HH:mm:ss.SSSXXX\", $data.dateTime))\n#set($_formattedDate = $__dateTool.format(\"EEEEE, MMMMM dd, YYYY\", $_date))\n#set($_formattedTime = $__dateTool.format(\"h:mm a\", $_date))\n#set($_totalAccounts = $data.numProcessedAccounts.intValue())\n#set($_changedAccounts = $data.numChangedAccounts.intValue())\n#set($_unChangedAccounts = $data.numUnchangedAccounts.intValue())\n#set($_newAccounts = $data.numNewAccounts.intValue())\nThe non-employee account upload you started for the $_sourceName source on $_formattedDate at $_formattedTime succeeded.<br><br> This file contained $_totalAccounts account#if($_totalAccounts!=1)s#end. Based on this upload:<br><br><ul><li>$_newAccounts new non-employee account#if($_newAccounts!=1)s were#{else} was#end created.</li><li>$_changedAccounts existing non-employee account#if($_changedAccounts!=1)s were#{else} was#end updated.</li><li>$_unChangedAccounts account#if($_unChangedAccounts!=1)s were#{else} was#end unchanged.</li></ul><br>You can see all non-employee accounts on this source in <a href=\"$url\" target=\"_blank\">$__global.productName</a>.<br>\n<br/>Thanks,<br/> The $__global.productName Team<br/>",
+    "created": null,
+    "description": "Sent to the user who initiated the upload request when a non-employee account upload completes successfully.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Non-Employee Account Upload Succeeded",
+    "key": "non_employee_bulk_import_passed_email_notification",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Non-Employee Account Upload Succeeded",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "#set($_sourceName = $data.sourceName)\nYour non-employee account upload for the $_sourceName source has succeeded",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Non-Employee Account Upload Succeeded",
+    "name": "Non-Employee Account Upload Succeeded",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

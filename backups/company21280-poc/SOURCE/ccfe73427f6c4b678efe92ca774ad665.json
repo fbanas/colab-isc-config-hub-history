@@ -1,0 +1,701 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accountCorrelationRule": null,
+    "beforeProvisioningRule": null,
+    "connectorAttributes": {
+      "SQL": "SELECT \n    U.LOGIN, \n    U.USER_ID, \n    U.LAST_NAME, \n    U.FIRST_NAME, \n    U.EMAIL, \n    U.PHONE_NUMBER, \n    U.ADDRESS, \n    U.COMMENT, \n    U.LOCKED, \n    U.ACTIVATED, \n    U.MONOSIGN, \n    U.PASSWORD_REQUIRED, \n    U.ROBOTIC, \n    U.FROZEN, \n    U.LAST_SIGN_IN_DATE, \n    U.CREATION_DATE, \n    U.ACTIVATION_DATE, \n    U.EXPIRATION_DATE, \n    \n    -- 1. Cleaned and Truncated List: ZRHLX0201,ZRHLX0202\n    REGEXP_REPLACE(\n        REPLACE(\n            REGEXP_REPLACE(U.LOGIN_AREAS, '\\(default\\)', ''), \n            ', ', ','\n        ), \n        '/[^,]*', \n        ''\n    ) AS LOGIN_AREAS,\n\n    U.\"CREDIT CARD DISPLAY\", \n    U.\"PROFILE CREDIT CARD\", \n    U.\"REMOTE OFFICE\", \n    U.\"TICKETING IN REMOTE OFFICE\", \n    U.\"SECURITY MATRIX NAME\", \n    U.\"DISPLAY NON-IATA LOCATIONS\",\n\n    -- 2. Derived Primary Area: ZRHLX0201\n    REGEXP_REPLACE(\n        CASE \n            WHEN LOCATE('/', U.LOGIN_AREAS) > 0 \n            THEN SUBSTRING(U.LOGIN_AREAS, 1, LOCATE('/', U.LOGIN_AREAS) - 1)\n            ELSE U.LOGIN_AREAS \n        END, \n        '\\(default\\)', ''\n    ) AS PRIMARY_LOGIN_AREA,\n\n    -- 3. Joined Role Field (Null if no match found)\n    R.ROLE_LABEL AS ROLES\n\nFROM Users U\nLEFT OUTER JOIN Roles R ON U.USER_ID = R.CONSUMER_ID\nORDER BY U.USER_ID",
+      "additionalConnProperties": [
+        "_CSV_Comment=1",
+        "_CSV_Header=true",
+        "_CSV_Separator=|"
+      ],
+      "buildMapRule": "JDBCBuildMap - Amadeus",
+      "checkDeletedDisabled": false,
+      "cloudCacheUpdate": 1776184010492,
+      "cloudDisplayName": "Amadeus",
+      "connectionType": "direct",
+      "connectorName": "SQLLoader",
+      "deleteThresholdPercentage": 100,
+      "disableOrderingCheck": true,
+      "driverClass": "com.hxtt.sql.text.TextDriver",
+      "encrypted": "password,group.password,office.password,role.password",
+      "healthCheckTimeout": 30,
+      "healthy": true,
+      "indexColumns": [
+        "USER_ID"
+      ],
+      "isAdvance": "false",
+      "isPermissionEnabled": false,
+      "jdbcProvisionRule": "JDBCProvision - Amadeus",
+      "mergeColumns": [
+        "LOGIN_AREAS",
+        "ROLES"
+      ],
+      "mergeRows": true,
+      "office.SQL": "select * from Offices",
+      "office.driverClass": "com.hxtt.sql.text.TextDriver",
+      "office.isPermissionEnabled": false,
+      "office.mergeRows": false,
+      "office.url": "jdbc:csv:sftp://server13.ftpgrid.com/amadeus",
+      "office.useExecuteQuery": false,
+      "office.user": "BG2.5ugct5rl",
+      "recommendationStatus": "ERROR",
+      "role.SQL": "select * from Roles",
+      "role.driverClass": "com.hxtt.sql.text.TextDriver",
+      "role.indexColumns": [
+        "ROLE_LABEL"
+      ],
+      "role.isPermissionEnabled": false,
+      "role.mergeColumns": [
+        "CONSUMER_ID"
+      ],
+      "role.mergeRows": true,
+      "role.url": "jdbc:csv:sftp://server13.ftpgrid.com/amadeus",
+      "role.useExecuteQuery": false,
+      "role.user": "BG2.5ugct5rl",
+      "since": "2026-04-14T09:56:35.027Z",
+      "sourceConnected": true,
+      "status": "SOURCE_STATE_HEALTHY",
+      "templateApplication": "SQLLoader",
+      "testConnSQL": "SELECT * from Operations",
+      "url": "jdbc:csv:sftp://server13.ftpgrid.com/amadeus",
+      "useExecuteQuery": false,
+      "user": "BG2.5ugct5rl"
+    },
+    "connectorClass": "sailpoint.connector.JDBCConnector",
+    "connectorScriptName": "sqlloader-angularsc",
+    "correlationConfigDetails": {
+      "attributeAssignments": null,
+      "id": null,
+      "name": null
+    },
+    "crossTenantConnectorAttributes": {},
+    "deleteThreshold": 100,
+    "description": "Amadeus",
+    "features": [
+      "DIRECT_PERMISSIONS",
+      "DISCOVER_SCHEMA",
+      "PROVISIONING"
+    ],
+    "id": "ccfe73427f6c4b678efe92ca774ad665",
+    "managementWorkgroup": null,
+    "managerCorrelationMapping": null,
+    "managerCorrelationRule": null,
+    "name": "Amadeus",
+    "owner": {
+      "id": "176a5fc85208460383b2253765f4a137",
+      "name": "slpt.services",
+      "type": "IDENTITY"
+    },
+    "passwordPolicies": null,
+    "provisionAsCsv": false,
+    "provisioningPolicies": [
+      {
+        "description": "Create Policy Description",
+        "fields": [
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "EMAIL",
+            "transform": {
+              "attributes": {
+                "name": "email"
+              },
+              "type": "identityAttribute"
+            },
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "FIRST_NAME",
+            "transform": {
+              "attributes": {
+                "name": "firstname"
+              },
+              "type": "identityAttribute"
+            },
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "LAST_NAME",
+            "transform": {
+              "attributes": {
+                "name": "lastname"
+              },
+              "type": "identityAttribute"
+            },
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "LOGIN",
+            "transform": {
+              "attributes": {
+                "name": "uid"
+              },
+              "type": "identityAttribute"
+            },
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "PRIMARY_LOGIN_AREA",
+            "transform": {
+              "attributes": {
+                "name": "amadeusPrimaryOffice"
+              },
+              "type": "identityAttribute"
+            },
+            "type": "string"
+          }
+        ],
+        "name": "Create Policy",
+        "usageType": "CREATE"
+      }
+    ],
+    "schemas": [
+      {
+        "attributes": [
+          {
+            "description": "LOGIN_AREAS",
+            "isEntitlement": true,
+            "isGroup": true,
+            "isMulti": true,
+            "name": "LOGIN_AREAS",
+            "nativeName": null,
+            "schema": {
+              "id": "daa0f4724af04638b5eb64c00cb3c7a0",
+              "name": "office",
+              "type": "CONNECTOR_SCHEMA"
+            },
+            "type": "STRING"
+          },
+          {
+            "description": "ROLES",
+            "isEntitlement": true,
+            "isGroup": true,
+            "isMulti": true,
+            "name": "ROLES",
+            "nativeName": null,
+            "schema": {
+              "id": "55559309a1cd4dc5be37a99972903034",
+              "name": "role",
+              "type": "CONNECTOR_SCHEMA"
+            },
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "ACTIVATED",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "ACTIVATION_DATE",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "ADDRESS",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "COMMENT",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "CREATION_DATE",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "CREDIT CARD DISPLAY",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "DISPLAY NON-IATA LOCATIONS",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "EMAIL",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "EXPIRATION_DATE",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "FIRST_NAME",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "FROZEN",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "LAST_NAME",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "LAST_SIGN_IN_DATE",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "LOCKED",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "LOGIN",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "MONOSIGN",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "PASSWORD_REQUIRED",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "PHONE_NUMBER",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "PRIMARY_LOGIN_AREA",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "PROFILE CREDIT CARD",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "REMOTE OFFICE",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "ROBOTIC",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "SECURITY MATRIX NAME",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "TICKETING IN REMOTE OFFICE",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "USER_ID",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {},
+        "created": "2026-04-13T13:03:37.693Z",
+        "displayAttribute": "EMAIL",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "442aa85a91dc46cba79f6a0e749c6f68",
+        "identityAttribute": "USER_ID",
+        "includePermissions": false,
+        "modified": "2026-04-13T17:13:07.727Z",
+        "name": "account",
+        "nativeObjectType": "account"
+      },
+      {
+        "attributes": [
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "ACTIVATION_DATE",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "CONSUMER_ID",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "CONSUMER_TYPE",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "EXPIRATION_DATE",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "ROLE_APPLICATION",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "ROLE_LABEL",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "ROLE_ORGANIZATION",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "TEST_ONLY",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "TRAINING_ONLY",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {},
+        "created": "2026-04-13T14:04:37.311Z",
+        "displayAttribute": "ROLE_LABEL",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "55559309a1cd4dc5be37a99972903034",
+        "identityAttribute": "ROLE_LABEL",
+        "includePermissions": true,
+        "modified": "2026-04-14T10:16:11.820Z",
+        "name": "role",
+        "nativeObjectType": "role"
+      },
+      {
+        "attributes": [
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "ADDRESS_1",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "ADDRESS_2",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "AGENCY_LOCAL_NAME",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "CITY",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "COUNTRY",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "E-MAIL",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "FAX",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "OFFICE_ID",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "OFFICE_NAME",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "OFFICE_PATH",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "PHONE",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {},
+        "created": "2026-04-13T14:04:29.848Z",
+        "displayAttribute": "OFFICE_NAME",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "daa0f4724af04638b5eb64c00cb3c7a0",
+        "identityAttribute": "OFFICE_ID",
+        "includePermissions": true,
+        "modified": "2026-04-14T07:40:22.120Z",
+        "name": "office",
+        "nativeObjectType": "office"
+      }
+    ],
+    "type": "SQLLoader"
+  },
+  "self": {
+    "id": "ccfe73427f6c4b678efe92ca774ad665",
+    "name": "Amadeus",
+    "type": "SOURCE"
+  },
+  "version": 1
+}

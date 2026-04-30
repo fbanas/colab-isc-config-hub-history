@@ -1,0 +1,141 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accountCorrelationRule": null,
+    "beforeProvisioningRule": null,
+    "connectorAttributes": {
+      "cloudCacheUpdate": 1774607143989,
+      "cloudDisplayName": "Aggregation Control",
+      "connectionType": "direct",
+      "connectorName": "Aggregation Control (tag: latest)",
+      "deleteThresholdPercentage": 10,
+      "healthCheckTimeout": 30,
+      "healthy": true,
+      "idnProxyType": "sp-connect",
+      "isc_baseurl": "https://company21280-poc.api.identitynow-demo.com/",
+      "isc_clientId": "89c55633540a4e60ae4328288781080c",
+      "since": "2026-03-27T10:02:15.613Z",
+      "sources": [
+        {
+          "all": true,
+          "name": "SAP Successfactors",
+          "percentage": 50
+        }
+      ],
+      "spConnectorInstanceId": "1b1bdd41-eb0a-4804-99b2-c3de2c7815ea",
+      "spConnectorSpecId": "6f0e18f4-3853-4a60-8895-3cfbbe6d46a2",
+      "spConnectorSupportsCustomSchemas": true,
+      "status": "SOURCE_STATE_HEALTHY",
+      "templateApplication": "Aggregation Control (tag: latest)"
+    },
+    "connectorClass": "",
+    "connectorScriptName": "6f0e18f4-3853-4a60-8895-3cfbbe6d46a2",
+    "correlationConfigDetails": {
+      "attributeAssignments": null,
+      "id": null,
+      "name": null
+    },
+    "crossTenantConnectorAttributes": {},
+    "deleteThreshold": 10,
+    "description": "Aggregation Control",
+    "features": [],
+    "id": "6e1429efb5a44153b691f3553aa2a2a0",
+    "managementWorkgroup": null,
+    "managerCorrelationMapping": null,
+    "managerCorrelationRule": null,
+    "name": "Aggregation Control",
+    "owner": {
+      "id": "176a5fc85208460383b2253765f4a137",
+      "name": "slpt.services",
+      "type": "IDENTITY"
+    },
+    "passwordPolicies": null,
+    "provisionAsCsv": false,
+    "provisioningPolicies": [],
+    "schemas": [
+      {
+        "attributes": [
+          {
+            "description": "Aggregation date",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "date",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "ID",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "id",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Message",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "message",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Name",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Percentage",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "percentage",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Success",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "success",
+            "nativeName": null,
+            "schema": null,
+            "type": "BOOLEAN"
+          }
+        ],
+        "configuration": {},
+        "created": "2026-03-17T14:36:57.274Z",
+        "displayAttribute": "name",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "f4214bb46b0f4d0a96d9c1d8e750d336",
+        "identityAttribute": "id",
+        "includePermissions": false,
+        "modified": "2026-03-17T14:36:57.274Z",
+        "name": "account",
+        "nativeObjectType": "User"
+      }
+    ],
+    "type": "6f0e18f4-3853-4a60-8895-3cfbbe6d46a2"
+  },
+  "self": {
+    "id": "6e1429efb5a44153b691f3553aa2a2a0",
+    "name": "Aggregation Control",
+    "type": "SOURCE"
+  },
+  "version": 1
+}

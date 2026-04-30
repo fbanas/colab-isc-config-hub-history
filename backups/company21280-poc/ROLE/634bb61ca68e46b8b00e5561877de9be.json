@@ -1,0 +1,113 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessProfiles": [],
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": null,
+      "denialCommentsRequired": null,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-03-30T09:19:19.51261Z",
+    "description": null,
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": true,
+    "entitlements": [
+      {
+        "id": "3aba2f85-ce5f-34ad-b5c4-c501300a142f",
+        "name": "input",
+        "sourceId": "a42923b4-0db7-453c-96bb-58b7ad669584",
+        "sourceName": "Time Keeping",
+        "type": "ENTITLEMENT"
+      },
+      {
+        "id": "57e2a1e5-6c42-35a1-a4cc-17f4d6e64a55",
+        "name": "All company",
+        "sourceId": "08957d38-0b9c-4e81-a03a-9c955d7a8024",
+        "sourceName": "Azure-AD",
+        "type": "ENTITLEMENT"
+      },
+      {
+        "id": "97e78fd8-62e2-33b4-864d-87eb18cb6456",
+        "name": "All Users",
+        "sourceId": "08957d38-0b9c-4e81-a03a-9c955d7a8024",
+        "sourceName": "Azure-AD",
+        "type": "ENTITLEMENT"
+      }
+    ],
+    "id": "634bb61ca68e46b8b00e5561877de9be",
+    "legacyMembershipInfo": null,
+    "membership": {
+      "criteria": {
+        "children": [
+          {
+            "children": [
+              {
+                "children": null,
+                "key": {
+                  "property": "attribute.cloudLifecycleState",
+                  "sourceId": null,
+                  "type": "IDENTITY"
+                },
+                "operation": "EQUALS",
+                "stringValue": null,
+                "values": [
+                  "active"
+                ]
+              },
+              {
+                "children": null,
+                "key": {
+                  "property": "attribute.identityType",
+                  "sourceId": null,
+                  "type": "IDENTITY"
+                },
+                "operation": "EQUALS",
+                "stringValue": null,
+                "values": [
+                  "Employee"
+                ]
+              }
+            ],
+            "key": null,
+            "operation": "AND",
+            "stringValue": null,
+            "values": null
+          }
+        ],
+        "key": null,
+        "operation": "OR",
+        "stringValue": null,
+        "values": null
+      },
+      "identities": null,
+      "type": "STANDARD"
+    },
+    "modified": "2026-04-10T12:29:31.820342Z",
+    "name": "Employee Base Access",
+    "owner": {
+      "id": "f99c089822c142abbcb84a93890d8416",
+      "name": "florian.banas1",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [],
+    "segments": []
+  },
+  "self": {
+    "id": "634bb61ca68e46b8b00e5561877de9be",
+    "name": "Employee Base Access",
+    "type": "ROLE"
+  },
+  "version": 1
+}

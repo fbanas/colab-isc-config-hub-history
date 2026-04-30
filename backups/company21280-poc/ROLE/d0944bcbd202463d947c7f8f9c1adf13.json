@@ -1,0 +1,67 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessProfiles": [],
+    "accessRequestConfig": {
+      "approvalSchemes": [
+        {
+          "approverId": null,
+          "approverType": "OWNER"
+        }
+      ],
+      "commentsRequired": false,
+      "denialCommentsRequired": false,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-03-18T13:31:42.178083Z",
+    "description": "Role to APP-901 (LHG-Role-8)",
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": true,
+    "entitlements": [
+      {
+        "id": "bb8999c6-e3fa-340a-8035-ec400d9017ad",
+        "name": "APP-901",
+        "sourceId": "00c23142-0974-4506-bab1-e856117f40f7",
+        "sourceName": "Microsoft Entra sp-demo262 SaaS",
+        "type": "ENTITLEMENT"
+      }
+    ],
+    "id": "d0944bcbd202463d947c7f8f9c1adf13",
+    "legacyMembershipInfo": null,
+    "membership": null,
+    "modified": "2026-03-27T15:02:52.605857Z",
+    "name": "LHG_APP_LHG-Intranet",
+    "owner": {
+      "id": "aa680a7a8f5f41199e9dbaa1e4d399c3",
+      "name": "Alan Alonso",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [
+      {
+        "id": "0cab4e12-1ab9-4d0d-8986-bfbcd29107c2",
+        "name": "LHG-Lufthansa",
+        "type": "SEGMENT"
+      }
+    ],
+    "segments": [
+      "0cab4e12-1ab9-4d0d-8986-bfbcd29107c2"
+    ]
+  },
+  "self": {
+    "id": "d0944bcbd202463d947c7f8f9c1adf13",
+    "name": "LHG_APP_LHG-Intranet",
+    "type": "ROLE"
+  },
+  "version": 1
+}

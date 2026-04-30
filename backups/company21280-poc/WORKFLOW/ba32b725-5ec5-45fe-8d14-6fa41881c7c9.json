@@ -1,0 +1,405 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": "2026-04-15T17:44:13.396097208Z",
+    "creator": {
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
+      "type": "IDENTITY"
+    },
+    "definition": {
+      "start": "Get Identity",
+      "steps": {
+        "Define Variable": {
+          "actionId": "sp:define-variable",
+          "attributes": {
+            "id": "sp:define-variable",
+            "variables": [
+              {
+                "description": "",
+                "name": "waitForGitHubCommit",
+                "transforms": [
+                  {
+                    "id": "sp:transform:addTime:time",
+                    "input": {
+                      "length": 10,
+                      "unit": "seconds"
+                    }
+                  }
+                ],
+                "variableA.$": "$.now()"
+              }
+            ]
+          },
+          "displayName": "",
+          "nextStep": "Wait",
+          "type": "Mutation"
+        },
+        "End Step - Success": {
+          "actionId": "sp:operator-success",
+          "displayName": "",
+          "type": "success"
+        },
+        "Generic Approval Policy": {
+          "actionId": "sp:generic-approval",
+          "attributes": {
+            "approvalActionAtTimeout": "EXPIRED",
+            "approvalReminder": "false",
+            "approvalTimeout": 30,
+            "approvalType": "SINGLE",
+            "byIdentity.$": "$.getIdentity.id",
+            "comments": "Should you approve this request, a backup of the object will be automatically taken for historical and security reasons.",
+            "description": "A request to decommission {{$.hTTPRequest3.body.name}} Application has been initiated. Please review this request and make your decision",
+            "forIdentity.$": "$.getIdentity.id",
+            "multiApproverReviewersConfig_approvalScheme": "SERIAL",
+            "name": "Application Removal Approval for {{$.hTTPRequest3.body.name}}",
+            "priority": "MEDIUM",
+            "quorumApproverReviewersConfig_approvalScheme": "SERIAL",
+            "reAuthRequired": false,
+            "reminderFrequency_timeZone": "Europe/Madrid",
+            "requestedBy": "IDENTITY",
+            "requestedFor": "IDENTITY",
+            "singleApproverCategory": "GOVERNANCE_GROUP",
+            "singleApproverGovernanceGroupId": "e805e921-63d3-44a4-9473-688b2c54d1c4"
+          },
+          "displayName": "",
+          "nextStep": "HTTP Request 4",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Get Identity": {
+          "actionId": "sp:get-identity",
+          "attributes": {
+            "id.$": "$.trigger.launchedBy.id"
+          },
+          "displayName": "",
+          "nextStep": "HTTP Request",
+          "type": "action",
+          "versionNumber": 2
+        },
+        "HTTP Request": {
+          "actionId": "sp:http",
+          "attributes": {
+            "method": "get",
+            "param_authenticationRef": "oauth",
+            "param_oauth": {
+              "mapping": {
+                "auth_client_id": "clientId",
+                "auth_client_secret": "clientSecret",
+                "auth_credential_location": "credentialLocation",
+                "auth_token_url": "tokenURL"
+              },
+              "paramType": "1.4"
+            },
+            "param_oauth_scopes": {
+              "mapping": {
+                "auth_scopes": "scopes"
+              },
+              "paramType": "3.1"
+            },
+            "requestContentType": "json",
+            "url": "https://company21280-poc.api.identitynow-demo.com/v2026/sources"
+          },
+          "displayName": "Get Sources",
+          "nextStep": "Interactive Form",
+          "type": "action",
+          "versionNumber": 3
+        },
+        "HTTP Request 1": {
+          "actionId": "sp:http",
+          "attributes": {
+            "jsonRequestBody.$": "",
+            "method": "get",
+            "param_authenticationRef": "oauth",
+            "param_oauth": {
+              "mapping": {
+                "auth_client_id": "clientId",
+                "auth_client_secret": "clientSecret",
+                "auth_credential_location": "credentialLocation",
+                "auth_token_url": "tokenURL"
+              },
+              "paramType": "1.4"
+            },
+            "param_oauth_scopes": {
+              "mapping": {
+                "auth_scopes": "scopes"
+              },
+              "paramType": "3.1"
+            },
+            "requestContentType": "json",
+            "url": "https://company21280-poc.api.identitynow-demo.com/v2026/sources/{{$.interactiveForm.formData.selectedApplication}}/connections"
+          },
+          "displayName": "Get Source Connections",
+          "nextStep": "Verify Data Type",
+          "type": "action",
+          "versionNumber": 3
+        },
+        "HTTP Request 2": {
+          "actionId": "sp:http",
+          "attributes": {
+            "method": "delete",
+            "param_authenticationRef": "oauth",
+            "param_oauth": {
+              "mapping": {
+                "auth_client_id": "clientId",
+                "auth_client_secret": "clientSecret",
+                "auth_credential_location": "credentialLocation",
+                "auth_token_url": "tokenURL"
+              },
+              "paramType": "1.4"
+            },
+            "param_oauth_scopes": {
+              "mapping": {
+                "auth_scopes": "scopes"
+              },
+              "paramType": "3.1"
+            },
+            "requestContentType": "json",
+            "url": "https://company21280-poc.api.identitynow-demo.com/v2026/sources/{{$.interactiveForm.formData.selectedApplication}}"
+          },
+          "displayName": "Remove Source",
+          "nextStep": "End Step - Success",
+          "type": "action",
+          "versionNumber": 3
+        },
+        "HTTP Request 3": {
+          "actionId": "sp:http",
+          "attributes": {
+            "method": "get",
+            "param_authenticationRef": "oauth",
+            "param_oauth": {
+              "mapping": {
+                "auth_client_id": "clientId",
+                "auth_client_secret": "clientSecret",
+                "auth_credential_location": "credentialLocation",
+                "auth_token_url": "tokenURL"
+              },
+              "paramType": "1.4"
+            },
+            "param_oauth_scopes": {
+              "mapping": {
+                "auth_scopes": "scopes"
+              },
+              "paramType": "3.1"
+            },
+            "requestContentType": "json",
+            "url": "https://company21280-poc.api.identitynow-demo.com/v2026/sources/{{$.interactiveForm.formData.selectedApplication}}"
+          },
+          "displayName": "Get Source Details",
+          "nextStep": "Interactive Form 1",
+          "type": "action",
+          "versionNumber": 3
+        },
+        "HTTP Request 4": {
+          "actionId": "sp:http",
+          "attributes": {
+            "jsonRequestBody.$": "$.hTTPRequest3.body",
+            "method": "post",
+            "param_authenticationRef": "none",
+            "requestContentType": "text",
+            "requestHeaders": {
+              "Content-Type": "text/plain"
+            },
+            "textRequestBody": "{{$.hTTPRequest3.body.JSON()}}",
+            "url": "https://api.thebase64.com/encode"
+          },
+          "displayName": "Encode b64",
+          "nextStep": "HTTP Request 5",
+          "type": "action",
+          "versionNumber": 3
+        },
+        "HTTP Request 5": {
+          "actionId": "sp:http",
+          "attributes": {
+            "jsonRequestBody": {
+              "object64": "{{$.hTTPRequest4.body.result}}",
+              "objectName": "{{$.hTTPRequest3.body.name}}"
+            },
+            "method": "post",
+            "param_authenticationRef": "oauth",
+            "param_basic": {
+              "mapping": {
+                "auth_password": "password",
+                "auth_username": "username"
+              },
+              "paramType": "1.1"
+            },
+            "param_header": {
+              "mapping": {
+                "auth_header_name": "headerName",
+                "auth_header_value": "headerValue"
+              },
+              "paramType": "1.3"
+            },
+            "param_oauth": {
+              "mapping": {
+                "auth_client_id": "clientId",
+                "auth_client_secret": "clientSecret",
+                "auth_credential_location": "credentialLocation",
+                "auth_token_url": "tokenURL"
+              },
+              "paramType": "1.4"
+            },
+            "param_oauth_scopes": {
+              "mapping": {
+                "auth_scopes": "scopes"
+              },
+              "paramType": "3.1"
+            },
+            "requestContentType": "json",
+            "url": "https://company21280-poc.api.identitynow-demo.com/beta/workflows/execute/external/b0b00edc-a6a7-40a6-83d5-4fca6e39e3a1"
+          },
+          "displayName": "Call GitHub Archiving",
+          "nextStep": "Define Variable",
+          "type": "action",
+          "versionNumber": 3
+        },
+        "Interactive Form": {
+          "actionId": "sp:interactive-form",
+          "attributes": {
+            "formDefinitionId": "d38007f0-236e-4a7d-9fa1-120bdf07f0d2",
+            "inputForForm_array_sources.$": "$.hTTPRequest.body",
+            "inputForForm_array_sources_label": "$.name",
+            "inputForForm_array_sources_subLabel": null,
+            "inputForForm_array_sources_value": "$.id",
+            "inputForForm_username.$": "$.getIdentity.attributes.uid",
+            "interactiveProcessId.$": "$.trigger.interactiveProcessId",
+            "ownerId.$": "$.trigger.launchedBy.id",
+            "title": "Application Removal"
+          },
+          "displayName": "",
+          "nextStep": "HTTP Request 3",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Interactive Form 1": {
+          "actionId": "sp:interactive-form",
+          "attributes": {
+            "formDefinitionId": "429ed6f6-cf6f-4772-b14d-82bc0111d7e9",
+            "inputForForm_appDescription.$": "$.hTTPRequest3.body.description",
+            "inputForForm_appOwner.$": "$.hTTPRequest3.body.owner.name",
+            "inputForForm_selectedApplication.$": "$.hTTPRequest3.body.name",
+            "interactiveProcessId.$": "$.trigger.interactiveProcessId",
+            "ownerId.$": "$.trigger.launchedBy.id",
+            "title": "Application Details"
+          },
+          "displayName": "",
+          "nextStep": "Interactive Message",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Interactive Message": {
+          "actionId": "sp:interactive-message",
+          "attributes": {
+            "category": "INFO",
+            "interactiveProcessId.$": "$.trigger.interactiveProcessId",
+            "message": "<p>Please stand-by as we check the existence of platform objects related to the selected Application</p>",
+            "ownerId.$": "$.trigger.launchedBy.id",
+            "title": "Checking Application Objects..."
+          },
+          "displayName": "",
+          "nextStep": "HTTP Request 1",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Interactive Message 1": {
+          "actionId": "sp:interactive-message",
+          "attributes": {
+            "category": "WARN",
+            "interactiveProcessId.$": "$.trigger.interactiveProcessId",
+            "message": "<p>The internal integrity check has determined that the following <span style=\"text-decoration: underline;\">Access Profiles</span> need to be removed from the platform before this Application can be decommissioned:</p>\n<p><strong>{{$.hTTPRequest1.body.accessProfiles[*].name}}</strong></p>",
+            "ownerId.$": "$.trigger.launchedBy.id",
+            "title": "Application Access Profiles detected"
+          },
+          "description": null,
+          "displayName": "",
+          "nextStep": "End Step - Success",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Interactive Message 2": {
+          "actionId": "sp:interactive-message",
+          "attributes": {
+            "category": "WARN",
+            "interactiveProcessId.$": "$.trigger.interactiveProcessId",
+            "message": "<p>The internal integrity check has determined that the following <span style=\"text-decoration: underline;\">Identity Profiles </span>need to be removed from the platform before this Application can be decommissioned:</p>\n<p><strong>{{$.hTTPRequest1.body.identityProfiles[*].name}}</strong></p>",
+            "ownerId.$": "$.trigger.launchedBy.id",
+            "title": "Application Identity Profiles detected"
+          },
+          "description": null,
+          "displayName": "",
+          "nextStep": "End Step - Success",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Verify Data Type": {
+          "actionId": "sp:compare-unary",
+          "choiceList": [
+            {
+              "comparator": "IsPresent",
+              "nextStep": "Interactive Message 1",
+              "variableA.$": "$.hTTPRequest1.body.accessProfiles[0].id"
+            }
+          ],
+          "defaultStep": "Verify Data Type 1",
+          "displayName": "Check APs",
+          "type": "choice"
+        },
+        "Verify Data Type 1": {
+          "actionId": "sp:compare-unary",
+          "choiceList": [
+            {
+              "comparator": "IsPresent",
+              "nextStep": "Interactive Message 2",
+              "variableA.$": "$.hTTPRequest1.body.identityProfiles[0].id"
+            }
+          ],
+          "defaultStep": "Generic Approval Policy",
+          "displayName": "Check Identity Profiles",
+          "type": "choice"
+        },
+        "Wait": {
+          "actionId": "sp:sleep",
+          "attributes": {
+            "date.$": "$.defineVariable.waitForGitHubCommit",
+            "time.$": "$.defineVariable.waitForGitHubCommit",
+            "type": "waitUntil"
+          },
+          "displayName": "",
+          "nextStep": "HTTP Request 2",
+          "type": "action",
+          "versionNumber": 1
+        }
+      }
+    },
+    "description": "",
+    "enabled": false,
+    "id": "ba32b725-5ec5-45fe-8d14-6fa41881c7c9",
+    "modified": "2026-04-15T17:44:13.396097208Z",
+    "modifiedBy": {
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
+      "type": "IDENTITY"
+    },
+    "name": "Copy of Application Removal",
+    "owner": {
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
+      "type": "IDENTITY"
+    },
+    "trigger": {
+      "attributes": {
+        "filter.$": "$[?(@.workflowId == 'ba32b725-5ec5-45fe-8d14-6fa41881c7c9')]",
+        "id": "idn:interactive-process-launched"
+      },
+      "type": "EVENT"
+    }
+  },
+  "self": {
+    "id": "ba32b725-5ec5-45fe-8d14-6fa41881c7c9",
+    "name": "Copy of Application Removal",
+    "type": "WORKFLOW"
+  },
+  "version": 1
+}

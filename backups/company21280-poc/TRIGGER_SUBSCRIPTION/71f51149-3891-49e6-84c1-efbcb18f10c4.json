@@ -1,0 +1,24 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "description": "Managed by Workflows",
+    "enabled": true,
+    "filter": "$.ssfEvent.events[\"https://schemas.openid.net/secevent/caep/event-type/device-compliance-change\"][?(@.current_status == \"not-compliant\")]",
+    "id": "71f51149-3891-49e6-84c1-efbcb18f10c4",
+    "name": "Remove Access Based off Device Compliance Change",
+    "responseDeadline": "PT1H",
+    "triggerId": "idn:caep-device-compliance-change-events",
+    "triggerName": "CAEP Device Compliance Change Events",
+    "type": "WORKFLOW",
+    "workflowConfig": {
+      "workflowId": "71f51149-3891-49e6-84c1-efbcb18f10c4"
+    }
+  },
+  "self": {
+    "id": "71f51149-3891-49e6-84c1-efbcb18f10c4",
+    "name": "Remove Access Based off Device Compliance Change",
+    "type": "TRIGGER_SUBSCRIPTION"
+  },
+  "version": 1
+}

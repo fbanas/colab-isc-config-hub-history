@@ -1,0 +1,73 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessProfiles": [],
+    "accessRequestConfig": {
+      "approvalSchemes": [
+        {
+          "approverId": "58a0685c-c7db-4982-b3c5-8af6e71de654",
+          "approverType": "WORKFLOW"
+        }
+      ],
+      "commentsRequired": false,
+      "denialCommentsRequired": false,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-04-13T19:41:30.762063Z",
+    "description": "Multiple Accound Demo Role for Usecase 5C",
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": true,
+    "entitlements": [
+      {
+        "id": "52e07cbd-b10a-3e1d-bfe2-587e20c0310f",
+        "name": "PayrollManager",
+        "sourceId": "08957d38-0b9c-4e81-a03a-9c955d7a8024",
+        "sourceName": "Azure-AD",
+        "type": "ENTITLEMENT"
+      },
+      {
+        "id": "9eb66c9f-583b-3e33-8efd-9615af7ce3bd",
+        "name": "PayrollProjects",
+        "sourceId": "08957d38-0b9c-4e81-a03a-9c955d7a8024",
+        "sourceName": "Azure-AD",
+        "type": "ENTITLEMENT"
+      },
+      {
+        "id": "d707461c-2390-33f9-a89a-c25ccbc0cc81",
+        "name": "Payroll_All",
+        "sourceId": "08957d38-0b9c-4e81-a03a-9c955d7a8024",
+        "sourceName": "Azure-AD",
+        "type": "ENTITLEMENT"
+      }
+    ],
+    "id": "6ca2e6bcfa214883ab9698bf55478ccf",
+    "legacyMembershipInfo": null,
+    "membership": null,
+    "modified": "2026-04-13T20:01:05.940385Z",
+    "name": "Multi Acc. Demo Role",
+    "owner": {
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": true,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [],
+    "segments": []
+  },
+  "self": {
+    "id": "6ca2e6bcfa214883ab9698bf55478ccf",
+    "name": "Multi Acc. Demo Role",
+    "type": "ROLE"
+  },
+  "version": 1
+}

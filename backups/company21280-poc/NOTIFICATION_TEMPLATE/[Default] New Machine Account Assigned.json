@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "Hello $data.ownerName,<br/><br/>\n<p>You are now the account owner of the machine account $data.accountName on $data.sourceName.</p>\n<p>You are responsible for managing this account and keeping it up to date. If you have questions, contact your administrator.</p>\n<br/>Thanks,<br/> The $__global.productName Team<br/>",
+    "created": null,
+    "description": "Sent to notify a user that they have been assigned as the owner of a machine account.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] New Machine Account Assigned",
+    "key": "new_machine_account_assigned",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "New Machine Account Assigned",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "You are now the owner of the machine account – $data.accountName",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] New Machine Account Assigned",
+    "name": "New Machine Account Assigned",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

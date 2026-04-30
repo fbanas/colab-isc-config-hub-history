@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "Dear $__recipient.name,<br/><br/>\n<p>Based on your GenAI Settings input, ${SedRegenerationCount} entitlement descriptions have been regenerated to more accurately reflect your context. You can review the regenerated descriptions on the <a href=\"${__global.productUrl}${DeepLinkSuffix}\">GenAI Entitlement Descriptions</a> page.</p>\n<br/>\nThanks,<br/>The $__global.productName Team<br/>",
+    "created": null,
+    "description": "Sent to a user to notify them that GenAI entitlement descriptions have been regenerated.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] GenAI Entitlement Descriptions Have Been Regenerated",
+    "key": "regen_sed_notification",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "GenAI Entitlement Descriptions Have Been Regenerated",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "GenAI Entitlement Descriptions Have Been Regenerated",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] GenAI Entitlement Descriptions Have Been Regenerated",
+    "name": "GenAI Entitlement Descriptions Have Been Regenerated",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

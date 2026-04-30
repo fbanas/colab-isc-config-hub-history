@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "\t\t<p>${requester} has reassigned a task from ${previousOwner} to ${newOwner} for ${userName}'s ${source} account. </p> <p>${newOwner} can find this task within the <a href=\"$identityNowUrl/ui/d/dashboard/task-manager\">Task Manager</a>. </br></p> <p>Thanks,<br/> The ${PRODUCT_NAME} Team </p>",
+    "created": null,
+    "description": "Sent when a user reassigns a provisioning task for a different user to complete.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Task Reassignment",
+    "key": "task_reassignment",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Task Reassignment",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "A task has been reassigned",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Task Reassignment",
+    "name": "Task Reassignment",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

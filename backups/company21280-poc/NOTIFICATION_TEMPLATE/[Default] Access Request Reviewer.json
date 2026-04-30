@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": " \tDear ${user.name},<br/>\t<p>${requesterName} has requested the ${requestedObjectName}#if(${requestedObjectType}==\"Role\") role #elseif(${requestedObjectType}==\"Entitlement\") entitlement #else access profile#end#if($requesterName != $requestedForIdentityName) for ${requestedForIdentityName}#end.</p> \t#if($requesterComments)<p>${requesterName} gave the following reason for requesting access: <b>${requesterComments}.</b></p> \t#end \t#if($removeDate)<p>The sunset date for ${requestedObjectName} is ${removeDate}.</p>#end \t#if($requestedObjectType==\"Role\") \t\t#if($accessibleItems && $accessibleItems.size() > 0) \t\t<p>If this request is approved, ${requestedForIdentityName} will receive access to the following: \t\t\t<ul> \t\t\t#foreach($item in $accessibleItems) \t\t\t\t<li>$item</li> \t\t\t#end \t\t\t</ul> \t\t\t</p> \t\t#end \t#elseif($requestedObjectType==\"AccessProfile\") \t\t<p>If this request is approved, ${requestedForIdentityName} will receive access to all entitlements in ${accessProfileName}.</p>     #end \t<p>Go to <a href=\"$identityNowUrl/ui/d/approvals\">$identityNowUrl/ui/d/approvals</a> to approve or deny this request.</p> \t<p> \t\tThanks,<br/> \t\tThe ${PRODUCT_NAME} Team \t</p>",
+    "created": null,
+    "description": "Sent to each access reviewer who needs to review an access request.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Access Request Reviewer",
+    "key": "access_request_reviewer",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Access Request Reviewer",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "New access request for ${requestedForIdentityName} ready for review",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Access Request Reviewer",
+    "name": "Access Request Reviewer",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

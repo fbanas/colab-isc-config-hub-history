@@ -1,0 +1,19 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "attributes": {
+      "value": "Non-Employee"
+    },
+    "id": "23df5cda-c6d0-4fcb-90cf-5fc4dde2521f",
+    "internal": false,
+    "name": "NE Type",
+    "type": "static"
+  },
+  "self": {
+    "id": "23df5cda-c6d0-4fcb-90cf-5fc4dde2521f",
+    "name": "NE Type",
+    "type": "TRANSFORM"
+  },
+  "version": 1
+}

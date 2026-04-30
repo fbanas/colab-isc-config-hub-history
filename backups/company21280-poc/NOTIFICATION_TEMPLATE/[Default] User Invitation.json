@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "<p>Hello ${__recipient.name},</p> <p>You have been invited to use $__global.productName to support and advance your organization's security.</p>  <p>Your username is: <span style=\"font-weight:bold\">${__recipient.alias}</span></p> <p><a href=\"${registrationUrl}\">Register Now</a></p>  <p>Once you’ve registered, you can use this link to access <a href=\"${__global.productUrl}\">$__global.productName.</a><br/><br/>Thanks,<br/> The $__global.productName Team<br/></p>",
+    "created": null,
+    "description": "Sent to invite a user to your SailPoint products.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] User Invitation",
+    "key": "user_invitation-custom",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "User Invitation",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "Welcome to $__global.productName",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] User Invitation",
+    "name": "User Invitation",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

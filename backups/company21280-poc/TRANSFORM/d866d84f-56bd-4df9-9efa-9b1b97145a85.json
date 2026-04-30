@@ -1,0 +1,69 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "attributes": {
+      "ignoreErrors": true,
+      "values": [
+        "-",
+        {
+          "attributes": {
+            "accountFilter": {
+              "attributes": {
+                "nativeIdentity": {
+                  "attributes": {
+                    "attributeName": "accountNativeIdentity",
+                    "sourceName": "Authoritative Account Overrides"
+                  },
+                  "type": "accountAttribute"
+                },
+                "value": "nativeIdentity eq \"$nativeIdentity\""
+              },
+              "type": "static"
+            },
+            "attributeName": {
+              "attributes": {
+                "id": "Attribute Name",
+                "input": {
+                  "attributes": {
+                    "attributeName": {
+                      "type": "trim"
+                    },
+                    "sourceName": {
+                      "attributes": {
+                        "attributeName": "sourceName",
+                        "sourceName": "Authoritative Account Overrides"
+                      },
+                      "type": "accountAttribute"
+                    },
+                    "value": "$sourceName|$attributeName"
+                  },
+                  "type": "static"
+                }
+              },
+              "type": "reference"
+            },
+            "sourceName": {
+              "attributes": {
+                "attributeName": "sourceName",
+                "sourceName": "Authoritative Account Overrides"
+              },
+              "type": "accountAttribute"
+            }
+          },
+          "type": "accountAttribute"
+        }
+      ]
+    },
+    "id": "d866d84f-56bd-4df9-9efa-9b1b97145a85",
+    "internal": false,
+    "name": "Attribute Value",
+    "type": "firstValid"
+  },
+  "self": {
+    "id": "d866d84f-56bd-4df9-9efa-9b1b97145a85",
+    "name": "Attribute Value",
+    "type": "TRANSFORM"
+  },
+  "version": 1
+}

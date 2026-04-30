@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "<p>Dear ${__recipient.name},</p> <p>An approval request for $approvalName was submitted #if($requestee.name && $requestee.name != '' && $requester.identityID != $__recipient.id) on your behalf by $requester.name #else by you #end and has not been actioned for $escalationDelay. This approval request has now been escalated #if($previousApprover.name && $previousApprover.name != '') from $previousApprover.name #end to $escalatedApprover.name.</p>  <p>To take action on or view the status of your approval requests please go to: $__global.productUrl/ui/d/$requesterPath.</p><br/>Thank you,<br/> The ${__global.productName} Team<br/>",
+    "created": null,
+    "description": "Sent to the approval requester when an approver (or approvers) have not actioned on an approval request for an admin-configured amount of time.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Approval Request Escalated (Requester)",
+    "key": "approval_request_escalation_requester",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Approval Request Escalated (Requester)",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "An Approval Request#if($requestee.name && $requestee.name != '' && $requester.identityID  != $__recipient.id) Submitted On Your Behalf#else By You#end Has Been Escalated",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Approval Request Escalated (Requester)",
+    "name": "Approval Request Escalated (Requester)",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

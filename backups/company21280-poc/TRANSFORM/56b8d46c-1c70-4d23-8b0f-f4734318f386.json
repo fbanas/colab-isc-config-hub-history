@@ -1,0 +1,22 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "attributes": {
+      "ignoreErrors": false,
+      "values": [
+        "poc"
+      ]
+    },
+    "id": "56b8d46c-1c70-4d23-8b0f-f4734318f386",
+    "internal": false,
+    "name": "source",
+    "type": "firstValid"
+  },
+  "self": {
+    "id": "56b8d46c-1c70-4d23-8b0f-f4734318f386",
+    "name": "source",
+    "type": "TRANSFORM"
+  },
+  "version": 1
+}

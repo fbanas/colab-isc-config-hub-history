@@ -1,0 +1,24 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "description": "Managed by Workflows",
+    "enabled": true,
+    "filter": "$[?(@.workflowId == '8fdadba4-df07-49c5-90cc-897d68a93b8f')]",
+    "id": "8fdadba4-df07-49c5-90cc-897d68a93b8f",
+    "name": "Users Guide to ISC",
+    "responseDeadline": "PT1H",
+    "triggerId": "idn:interactive-process-launched",
+    "triggerName": "Interactive Trigger",
+    "type": "WORKFLOW",
+    "workflowConfig": {
+      "workflowId": "8fdadba4-df07-49c5-90cc-897d68a93b8f"
+    }
+  },
+  "self": {
+    "id": "8fdadba4-df07-49c5-90cc-897d68a93b8f",
+    "name": "Users Guide to ISC",
+    "type": "TRIGGER_SUBSCRIPTION"
+  },
+  "version": 1
+}

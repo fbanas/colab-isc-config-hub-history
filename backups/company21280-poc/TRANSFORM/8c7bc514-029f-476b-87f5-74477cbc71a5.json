@@ -1,0 +1,197 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "attributes": {
+      "input": {
+        "attributes": {
+          "delimiter": "\\|",
+          "index": 0,
+          "input": {
+            "type": "trim"
+          },
+          "throw": true
+        },
+        "type": "split"
+      },
+      "table": {
+        "LH1": {
+          "attributes": {
+            "input": {
+              "attributes": {
+                "delimiter": "\\|",
+                "index": 1,
+                "input": {
+                  "type": "trim"
+                },
+                "throw": true
+              },
+              "type": "split"
+            },
+            "table": {
+              "LCS": "POSITION",
+              "birthDate": "BIRTH_DATE",
+              "businessUnit": "BUSINESS_UNIT",
+              "company": "COMPANY",
+              "costCenter": "COST_CENTER",
+              "default": "-",
+              "department": "DEPARTMENT",
+              "description": "DESCRIPTION",
+              "email": "EMAIL",
+              "employerStatus": "EMPLOYER_STATUS",
+              "firstname": "FIRST_NAME",
+              "identificationNumber": "SAM_ID",
+              "lastname": "LAST_NAME",
+              "lineManager": "LINE_MANAGER",
+              "title": "TITLE"
+            }
+          },
+          "type": "lookup"
+        },
+        "LH2": {
+          "attributes": {
+            "input": {
+              "attributes": {
+                "delimiter": "\\|",
+                "index": 1,
+                "input": {
+                  "type": "trim"
+                },
+                "throw": true
+              },
+              "type": "split"
+            },
+            "table": {
+              "LCS": "Position",
+              "birthDate": "Birth Date",
+              "businessUnit": "Business Unit",
+              "company": "Company",
+              "costCenter": "Cost Center",
+              "default": "-",
+              "department": "Department",
+              "description": "description",
+              "email": "Email",
+              "employerStatus": "Employer Status",
+              "firstname": "First Name",
+              "identificationNumber": "Sam Id",
+              "lastname": "Last Name",
+              "lineManager": "Line Manager",
+              "title": "Title"
+            }
+          },
+          "type": "lookup"
+        },
+        "LH3": {
+          "attributes": {
+            "input": {
+              "attributes": {
+                "delimiter": "\\|",
+                "index": 1,
+                "input": {
+                  "type": "trim"
+                },
+                "throw": true
+              },
+              "type": "split"
+            },
+            "table": {
+              "LCS": "position",
+              "birthDate": "birth-date",
+              "businessUnit": "business-unit",
+              "company": "company",
+              "costCenter": "cost-center",
+              "default": "-",
+              "department": "department",
+              "description": "Description",
+              "email": "email",
+              "employerStatus": "employer-status",
+              "firstname": "first-name",
+              "identificationNumber": "sam-id",
+              "lastname": "last-name",
+              "lineManager": "line-manager",
+              "title": "title"
+            }
+          },
+          "type": "lookup"
+        },
+        "LHG": {
+          "attributes": {
+            "input": {
+              "attributes": {
+                "delimiter": "\\|",
+                "index": 1,
+                "input": {
+                  "type": "trim"
+                },
+                "throw": true
+              },
+              "type": "split"
+            },
+            "table": {
+              "LCS": "POSITION",
+              "birthDate": "BIRTH_DATE",
+              "businessUnit": "BUSINESS_UNIT",
+              "company": "COMPANY",
+              "costCenter": "Cost Center",
+              "default": "-",
+              "department": "DEPARTMENT",
+              "description": "Description",
+              "email": "EMAIL",
+              "employerStatus": "Employer Status",
+              "firstname": "FIRSTNAME",
+              "identificationNumber": "SAM_ID",
+              "lastname": "LASTNAME",
+              "lineManager": "LINE-MANAGER",
+              "title": "TITLE"
+            }
+          },
+          "type": "lookup"
+        },
+        "NERM": {
+          "attributes": {
+            "input": {
+              "attributes": {
+                "delimiter": "\\|",
+                "index": 1,
+                "input": {
+                  "type": "trim"
+                },
+                "throw": true
+              },
+              "type": "split"
+            },
+            "table": {
+              "LCS": "status",
+              "birthDate": "-",
+              "businessUnit": "employee_type_dropdown",
+              "company": "assignment_organization",
+              "costCenter": "-",
+              "default": "-",
+              "department": "population_assignment",
+              "description": "-",
+              "email": "person_rr_assignment.email_address",
+              "employerStatus": "-",
+              "firstname": "person_rr_assignment.first_name",
+              "identificationNumber": "-",
+              "lastname": "person_rr_assignment.last_name",
+              "lineManager": "sponsor_name",
+              "title": "job_title_dropdown"
+            }
+          },
+          "type": "lookup"
+        },
+        "default": "-2"
+      }
+    },
+    "id": "8c7bc514-029f-476b-87f5-74477cbc71a5",
+    "internal": false,
+    "name": "Attribute Name",
+    "type": "lookup"
+  },
+  "self": {
+    "id": "8c7bc514-029f-476b-87f5-74477cbc71a5",
+    "name": "Attribute Name",
+    "type": "TRANSFORM"
+  },
+  "version": 1
+}

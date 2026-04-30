@@ -1,0 +1,57 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessProfiles": [],
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": null,
+      "denialCommentsRequired": null,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [
+      {
+        "id": "880d15e1a216498993a47701a882bca4",
+        "name": "akatona",
+        "type": "IDENTITY"
+      },
+      {
+        "id": "b0362e880e1940d98ed925fc8a883558",
+        "name": "pbaumeister",
+        "type": "IDENTITY"
+      }
+    ],
+    "created": "2026-03-30T09:24:16.639443Z",
+    "description": "Willi Test Rolle",
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": false,
+    "entitlements": [],
+    "id": "04da358f17df4b5a88261704b9e72fe1",
+    "legacyMembershipInfo": null,
+    "membership": null,
+    "modified": "2026-03-30T09:24:16.639443Z",
+    "name": "testww",
+    "owner": {
+      "id": "7d00e3c56dd44753a8c561b140e85f81",
+      "name": "wweiland",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [],
+    "segments": []
+  },
+  "self": {
+    "id": "04da358f17df4b5a88261704b9e72fe1",
+    "name": "testww",
+    "type": "ROLE"
+  },
+  "version": 1
+}

@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "<p>Dear ${__recipient.name},</p> <p>An approval request for $approvalName that was submitted #if($requestee.name && $requestee.name != '' && $requestee.identityID == $__recipient.id) on your behalf by $requester.name #elseif($requestee.name && $requestee.name != '') by $requestee.name #elseif($requester.identityID == $__recipient.id) by you #else by $requester.name #end has timed out after failing to reach a resolution after $timeoutDays days and is now closed.</p>  <p>#if($requestee.identityID == $__recipient.id || $requester.identityID == $__recipient.id) To review your approval requests or to create a new one, please go to: $__global.productUrl/ui/d/$requesterPath. #else To review approval requests that are assigned to you, please go to: $__global.productUrl/ui/d/$approverPath. #end</p><br/>Thank you,<br/> The ${__global.productName} Team<br/>",
+    "created": null,
+    "description": "Sent to the approval requester and approvers when no resolution has been reached for an approval request since instantiation based on an admin-configured number of days.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Approval Timed Out",
+    "key": "approval_request_timeout",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Approval Timed Out",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "An Approval Request Has Exceeded The Allotted Time Limit",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Approval Timed Out",
+    "name": "Approval Timed Out",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

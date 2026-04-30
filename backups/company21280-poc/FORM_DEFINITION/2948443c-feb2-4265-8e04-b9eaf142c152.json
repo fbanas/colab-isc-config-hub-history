@@ -1,0 +1,80 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": "2026-03-20T14:08:11.148844563Z",
+    "description": "",
+    "formConditions": [],
+    "formElements": [
+      {
+        "config": {
+          "alignment": "CENTER",
+          "description": "",
+          "formElements": [
+            {
+              "config": {
+                "dataSource": {
+                  "config": {
+                    "indices": [
+                      "identities"
+                    ],
+                    "label": "attributes.displayName",
+                    "query": "*",
+                    "sublabel": "attributes.identificationNumber",
+                    "value": "id"
+                  },
+                  "dataSourceType": "SEARCH_V2"
+                },
+                "forceSelect": true,
+                "helpText": "Select an identity",
+                "label": "Identity",
+                "maximum": 1,
+                "placeholder": "",
+                "required": true
+              },
+              "elementType": "SELECT",
+              "id": "1156458020476",
+              "key": "identity",
+              "validations": [
+                {
+                  "validationType": "DATA_SOURCE"
+                },
+                {
+                  "validationType": "REQUIRED"
+                }
+              ]
+            }
+          ],
+          "label": "Select Identity",
+          "labelStyle": "h2",
+          "showLabel": true
+        },
+        "elementType": "SECTION",
+        "id": "384191287106",
+        "validations": []
+      }
+    ],
+    "formInput": [],
+    "id": "2948443c-feb2-4265-8e04-b9eaf142c152",
+    "modified": "2026-03-20T14:10:04.485617876Z",
+    "name": "Select Identity",
+    "owner": {
+      "id": "30507568a2d54f7484fe0f3edba79692",
+      "name": "fernando.delosrios",
+      "type": "IDENTITY"
+    },
+    "usedBy": [
+      {
+        "id": "232097a1-21fc-40f3-a8f8-31b9ef5bd483",
+        "name": "Select Authoritative Account",
+        "type": "WORKFLOW"
+      }
+    ]
+  },
+  "self": {
+    "id": "2948443c-feb2-4265-8e04-b9eaf142c152",
+    "name": "Select Identity",
+    "type": "FORM_DEFINITION"
+  },
+  "version": 1
+}

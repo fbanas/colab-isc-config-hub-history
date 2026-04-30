@@ -1,0 +1,169 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "authoritativeSource": {
+      "id": "f5bc2e60775f4a4bb4b96e4558589433",
+      "name": "Lufthansa - POC User",
+      "type": "SOURCE"
+    },
+    "created": "2026-03-27T10:38:03.450Z",
+    "description": null,
+    "hasTimeBasedAttr": false,
+    "id": "93009f15f90c4b2f9ce72cae8472fcb1",
+    "identityAttributeConfig": {
+      "attributeTransforms": [
+        {
+          "identityAttributeName": "displayName",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "accountName",
+              "sourceId": "f5bc2e60775f4a4bb4b96e4558589433",
+              "sourceName": "Lufthansa - POC User"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "email",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "email",
+              "sourceId": "f5bc2e60775f4a4bb4b96e4558589433",
+              "sourceName": "Lufthansa - POC User"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "endDate",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "endDate",
+              "sourceId": "f5bc2e60775f4a4bb4b96e4558589433",
+              "sourceName": "Lufthansa - POC User"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "firstname",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "firstName",
+              "sourceId": "f5bc2e60775f4a4bb4b96e4558589433",
+              "sourceName": "Lufthansa - POC User"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "identificationNumber",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "accountName",
+              "sourceId": "f5bc2e60775f4a4bb4b96e4558589433",
+              "sourceName": "Lufthansa - POC User"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "lastname",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "lastName",
+              "sourceId": "f5bc2e60775f4a4bb4b96e4558589433",
+              "sourceName": "Lufthansa - POC User"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "manager",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "manager",
+              "sourceId": "f5bc2e60775f4a4bb4b96e4558589433",
+              "sourceName": "Lufthansa - POC User"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "personalEmail",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "mail",
+              "sourceId": "00c2314209744506bab1e856117f40f7",
+              "sourceName": "Microsoft Entra sp-demo262 SaaS"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "phone",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "phone",
+              "sourceId": "f5bc2e60775f4a4bb4b96e4558589433",
+              "sourceName": "Lufthansa - POC User"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "startDate",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "startDate",
+              "sourceId": "f5bc2e60775f4a4bb4b96e4558589433",
+              "sourceName": "Lufthansa - POC User"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "uid",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "accountName",
+              "sourceId": "f5bc2e60775f4a4bb4b96e4558589433",
+              "sourceName": "Lufthansa - POC User"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
+          "identityAttributeName": "workPhone",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "phone",
+              "sourceId": "f5bc2e60775f4a4bb4b96e4558589433",
+              "sourceName": "Lufthansa - POC User"
+            },
+            "type": "accountAttribute"
+          }
+        }
+      ],
+      "enabled": true
+    },
+    "identityCount": 25,
+    "identityExceptionReportReference": null,
+    "identityRefreshRequired": false,
+    "modified": "2026-04-29T11:29:14.774Z",
+    "name": "Lufthansa - POC User",
+    "owner": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "priority": 60
+  },
+  "self": {
+    "id": "93009f15f90c4b2f9ce72cae8472fcb1",
+    "name": "Lufthansa - POC User",
+    "type": "IDENTITY_PROFILE"
+  },
+  "version": 1
+}

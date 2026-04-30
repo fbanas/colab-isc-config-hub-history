@@ -1,0 +1,99 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessProfiles": [],
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": false,
+      "denialCommentsRequired": false,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-03-18T13:31:41.160729Z",
+    "description": "Role for Recertification Admins (LHG-Role-6)",
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": true,
+    "entitlements": [],
+    "id": "78cab582486644759a6650307d398cff",
+    "legacyMembershipInfo": null,
+    "membership": {
+      "criteria": {
+        "children": [
+          {
+            "children": [
+              {
+                "children": null,
+                "key": {
+                  "property": "attribute.company",
+                  "sourceId": null,
+                  "type": "IDENTITY"
+                },
+                "operation": "CONTAINS",
+                "stringValue": null,
+                "values": [
+                  "[Lufthansa]"
+                ]
+              },
+              {
+                "children": null,
+                "key": {
+                  "property": "attribute.description",
+                  "sourceId": "af946e2450024d5bae5fa127eaa4b313",
+                  "type": "ACCOUNT"
+                },
+                "operation": "EQUALS",
+                "stringValue": null,
+                "values": [
+                  "Recertification Admin"
+                ]
+              }
+            ],
+            "key": null,
+            "operation": "AND",
+            "stringValue": null,
+            "values": null
+          }
+        ],
+        "key": null,
+        "operation": "OR",
+        "stringValue": null,
+        "values": null
+      },
+      "identities": null,
+      "type": "STANDARD"
+    },
+    "modified": "2026-03-27T15:02:57.700608Z",
+    "name": "LHG_RC_Admin",
+    "owner": {
+      "id": "e4acf5ec640048019c7951d422749048",
+      "name": "Alice  Anderson ",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [
+      {
+        "id": "0cab4e12-1ab9-4d0d-8986-bfbcd29107c2",
+        "name": "LHG-Lufthansa",
+        "type": "SEGMENT"
+      }
+    ],
+    "segments": [
+      "0cab4e12-1ab9-4d0d-8986-bfbcd29107c2"
+    ]
+  },
+  "self": {
+    "id": "78cab582486644759a6650307d398cff",
+    "name": "LHG_RC_Admin",
+    "type": "ROLE"
+  },
+  "version": 1
+}

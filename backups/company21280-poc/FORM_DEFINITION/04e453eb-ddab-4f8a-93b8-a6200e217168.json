@@ -1,0 +1,210 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": "2026-04-19T07:34:43.256570137Z",
+    "description": "",
+    "formConditions": [],
+    "formElements": [
+      {
+        "config": {
+          "alignment": "LEFT",
+          "description": "All Amadeus Credentials\nList of all office IDs, Sign and Duty Codes\nassigned to the user",
+          "formElements": [
+            {
+              "config": {
+                "dataSource": {
+                  "config": {
+                    "options": [
+                      {
+                        "label": "..",
+                        "sublabel": "",
+                        "value": ".."
+                      },
+                      {
+                        "label": "AB",
+                        "sublabel": "",
+                        "value": "AB"
+                      },
+                      {
+                        "label": "CD",
+                        "sublabel": "",
+                        "value": "CD"
+                      },
+                      {
+                        "label": "GS",
+                        "sublabel": "",
+                        "value": "GS"
+                      },
+                      {
+                        "label": "SU",
+                        "sublabel": "",
+                        "value": "SU"
+                      }
+                    ]
+                  },
+                  "dataSourceType": "STATIC"
+                },
+                "forceSelect": true,
+                "helpText": "Select at least one Duty Code",
+                "label": "Amadeus Duty Code",
+                "maximum": 5,
+                "placeholder": "",
+                "required": false
+              },
+              "elementType": "SELECT",
+              "id": "1485576866211",
+              "key": "amadeusDutyCode",
+              "validations": [
+                {
+                  "validationType": "DATA_SOURCE"
+                }
+              ]
+            },
+            {
+              "config": {
+                "default": "",
+                "description": "",
+                "helpText": "Grants user Access to LH CM Application",
+                "label": "Amadeus LH Access to CM",
+                "placeholder": "Add a text to the field to request access",
+                "required": false
+              },
+              "elementType": "TEXT",
+              "id": "739655021410",
+              "key": "amadeusLhAccessToCm",
+              "validations": []
+            },
+            {
+              "config": {
+                "default": "",
+                "description": "",
+                "helpText": "Grants user Access to LH FM Application",
+                "label": "Amadeus LH Access to FM",
+                "placeholder": "Add a text to the field to request access",
+                "required": false
+              },
+              "elementType": "TEXT",
+              "id": "1356929924111",
+              "key": "amadeusLhAccessToFm",
+              "validations": []
+            },
+            {
+              "config": {
+                "default": false,
+                "falseLabel": "Disabled",
+                "helpText": "Grant VDI Access to Amadeus CM Application",
+                "label": "Amadeus VDI Access to CM",
+                "trueLabel": "Enabled"
+              },
+              "elementType": "TOGGLE",
+              "id": "831913720486",
+              "key": "amadeusVdiAccessToCm",
+              "validations": []
+            },
+            {
+              "config": {
+                "default": false,
+                "falseLabel": "Disabled",
+                "helpText": "Grant VDI Access to Amadeus FM Application",
+                "label": "Amadeus VDI Access to FM",
+                "trueLabel": "Enabled"
+              },
+              "elementType": "TOGGLE",
+              "id": "1396514588708",
+              "key": "amadeusVdiAccessToFm",
+              "validations": []
+            },
+            {
+              "config": {
+                "default": false,
+                "falseLabel": "Disabled",
+                "helpText": "Grant VDI Access to Amadeus SwissRes Application",
+                "label": "Amadeus VDI Access to SwissRes",
+                "trueLabel": "Enabled"
+              },
+              "elementType": "TOGGLE",
+              "id": "1609791790089",
+              "key": "amadeusVdiAccessToSwissRes",
+              "validations": []
+            },
+            {
+              "config": {
+                "default": false,
+                "falseLabel": "Disabled",
+                "helpText": "If selected, credentials for call center login are added to Desmon credentials",
+                "label": "Desmon Allow login as Call Center",
+                "trueLabel": "Enabled"
+              },
+              "elementType": "TOGGLE",
+              "id": "191051650663",
+              "key": "desmonAllowLoginAsCallCenter",
+              "validations": []
+            },
+            {
+              "config": {
+                "default": false,
+                "falseLabel": "Disabled",
+                "helpText": "If selected, credentials for remote login are added to Desmon credentials.",
+                "label": "Desmon Allow Remote Login",
+                "trueLabel": "Enabled"
+              },
+              "elementType": "TOGGLE",
+              "id": "864738712941",
+              "key": "desmonAllowRemoteLogin",
+              "validations": []
+            },
+            {
+              "config": {
+                "default": false,
+                "falseLabel": "Disabled",
+                "helpText": "If selected, menu structure is added to IXPSS for MACH2 access",
+                "label": "LXPSS Allow MACH2 Login",
+                "trueLabel": "Enabled"
+              },
+              "elementType": "TOGGLE",
+              "id": "371390197696",
+              "key": "lxpssAllowMach2Login",
+              "validations": []
+            },
+            {
+              "config": {
+                "default": false,
+                "falseLabel": "Disabled",
+                "helpText": "User will be using CUTE environment cannot register for OTP but need Magic Questions",
+                "label": "Amadeus CUTE user",
+                "trueLabel": "Enabled"
+              },
+              "elementType": "TOGGLE",
+              "id": "1080878136816",
+              "key": "amadeusCuteUser",
+              "validations": []
+            }
+          ],
+          "label": "New Amadeus Account",
+          "labelStyle": "h2",
+          "showLabel": true
+        },
+        "elementType": "SECTION",
+        "id": "1184936345683",
+        "validations": []
+      }
+    ],
+    "formInput": [],
+    "id": "04e453eb-ddab-4f8a-93b8-a6200e217168",
+    "modified": "2026-04-19T08:15:20.949013296Z",
+    "name": "Request Amadeus Account",
+    "owner": {
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
+      "type": "IDENTITY"
+    },
+    "usedBy": []
+  },
+  "self": {
+    "id": "04e453eb-ddab-4f8a-93b8-a6200e217168",
+    "name": "Request Amadeus Account",
+    "type": "FORM_DEFINITION"
+  },
+  "version": 1
+}

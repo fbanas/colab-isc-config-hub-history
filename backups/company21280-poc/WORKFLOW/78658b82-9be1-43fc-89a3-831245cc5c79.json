@@ -1,0 +1,241 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": "2026-04-17T09:35:24.016241245Z",
+    "creator": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "definition": {
+      "start": "Get Identity",
+      "steps": {
+        "Approval Policy": {
+          "actionId": "sp:access-request-approval",
+          "attributes": {
+            "accessRequestId.$": "$.trigger.accessRequestId",
+            "accountActivityId.$": "$.trigger.accountActivityId",
+            "approvalActionAtTimeout": "EXPIRED",
+            "approvalReminder": "true",
+            "approvalTimeout": 8,
+            "approvalType": "MULTI-STEP",
+            "autoApprovalEnabled.$": "$.trigger.autoApprove",
+            "fallbackApprover.$": "$.trigger.fallbackApprover",
+            "multiApproverReviewersConfig_approvalScheme": "SERIAL",
+            "multiApproverReviewersConfig_reviewers": [
+              {
+                "approverCategory": "IDENTITY",
+                "approverNumber": 2,
+                "identityId.$": "$.getIdentity1.managerRef.id"
+              },
+              {
+                "approverCategory": "MANAGER_OF",
+                "approverNumber": 1
+              }
+            ],
+            "parentWorkflowExecutionId.$": "$.trigger.parentWorkflowExecutionId",
+            "priority": "MEDIUM",
+            "quorumApproverReviewersConfig_approvalScheme": "SERIAL",
+            "reminderFrequency_cronString": "0 0 * * *",
+            "reminderFrequency_dailyTimes": [
+              "1969-12-31T07:00:00.000Z"
+            ],
+            "reminderFrequency_frequency": "daily",
+            "reminderFrequency_timeZone": "America/Denver",
+            "requestId.$": "$.trigger.requestId",
+            "requestedAt.$": "$.trigger.createdAt",
+            "requestedBy.$": "$.trigger.requestedBy",
+            "requestedFor.$": "$.trigger.requestedFor",
+            "requestedItem.$": "$.trigger.requestedItem",
+            "sodViolationContext.$": "$.trigger.sodViolationContext",
+            "staticAttributes.$": "$.trigger.staticAttributes",
+            "workflowExecutionId.$": "$.trigger.workflowExecutionId"
+          },
+          "description": "This Approval Policy Action is a multi-step serial approval where the first reviewer is the recipient’s manager and the second is the manager’s manager.\n\nIf both reviewers approve, the request is successfully approved. \n\nThis step is set to Medium priority.\nReviewers are emailed daily reminders if they haven’t yet completed the request.\nIf this review is not completed within 8 days, the request expires and is rejected.",
+          "displayName": "Multi-Step Serial Approval Policy",
+          "nextStep": "Compare Strings 1",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Compare Strings": {
+          "actionId": "sp:compare-strings",
+          "choiceList": [
+            {
+              "comparator": "StringDoesNotContains",
+              "nextStep": "End Step - Success",
+              "variableA.$": "$.trigger.requestedItem.description",
+              "variableB": "privileged"
+            }
+          ],
+          "defaultStep": "Get Identity 1",
+          "description": "The identity attributes are reviewed to determine if the recipient is in the Security department. If the recipient is in the Security department, this evaluates to True and auto-approves the request. Otherwise, it evaluates to False and proceeds to a multi-step approval process.",
+          "displayName": "Recipient is requesting privileged entitlement?",
+          "type": "choice"
+        },
+        "Compare Strings 1": {
+          "actionId": "sp:compare-strings",
+          "choiceList": [
+            {
+              "comparator": "StringEquals",
+              "nextStep": "Send Slack Message",
+              "variableA.$": "$.approvalPolicy.status",
+              "variableB": "APPROVED"
+            }
+          ],
+          "defaultStep": "Send Slack Message 1",
+          "description": "The status of the Approval Policy Action is evaluated to determine if the request was approved. If the status is APPROVED, it evaluates to True. If it is any other status, it evaluates to False.",
+          "displayName": "Approval Status = APPROVED?",
+          "type": "choice"
+        },
+        "Create Certification Campaign": {
+          "actionId": "sp:create-campaign",
+          "attributes": {
+            "activateUponCreation": true,
+            "description": "A request for {{$.trigger.requestedItem.name}}, with a recipient of {{$.getIdentity.displayName}} which is outside of the Security Department. A Certification Campaign of their access has been generated.",
+            "duration": "30d",
+            "emailNotificationEnabled": true,
+            "name": "Non Security Access Granted",
+            "recommendationsEnabled": false,
+            "type": "MANAGER",
+            "undecidedAccess": true
+          },
+          "description": "The access request was approved for an identity outside the Security department. A Certification Campaign is created and assigned to the recipient’s manager to certify all access. This is an example of an event-based certification.",
+          "displayName": "Exception Access Approved – Certify Access",
+          "nextStep": "Send Email",
+          "type": "action",
+          "versionNumber": 2
+        },
+        "Deny Access Request": {
+          "actionId": "sp:reject-request",
+          "attributes": {
+            "approvalId.$": "$.trigger.accessRequestId",
+            "comment": "Timeout"
+          },
+          "displayName": "",
+          "nextStep": "End Step - Success 1",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "End Step - Success": {
+          "actionId": "sp:operator-success",
+          "description": "The recipient is part of the Security department, therefore this access request is auto-approved. The workflow completed successfully.\n\nWhen configuring for Auto-Approval or Auto-Rejection, the End Step determines the outcome since there is no approval activity. To auto-approve, add an \"End Step - Success\" where no prior Approval Policy Action exists.",
+          "displayName": "Auto-Approve",
+          "type": "success"
+        },
+        "End Step - Success 1": {
+          "actionId": "sp:operator-success",
+          "description": "The access request was rejected, and the recipient was successfully notified. The workflow completed successfully.",
+          "displayName": "Successful Execution - Request Denied",
+          "type": "success"
+        },
+        "End Step - Success 2": {
+          "actionId": "sp:operator-success",
+          "description": "The access request was approved. A certification campaign was created, and the manager was notified. The workflow completed successfully.",
+          "displayName": "Successful Execution - Approved",
+          "type": "success"
+        },
+        "Get Accounts": {
+          "actionId": "sp:get-accounts",
+          "attributes": {
+            "filterCriteria": "nativeIdentity",
+            "getAccountsBy": "filters",
+            "operator": "eq",
+            "value": "c9a0ab54-80d4-43d2-b8fb-569395ef7087"
+          },
+          "displayName": "",
+          "nextStep": "Compare Strings",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Get Identity": {
+          "actionId": "sp:get-identity",
+          "attributes": {
+            "id.$": "$.trigger.requestedFor.id"
+          },
+          "description": "The full set of attributes for the identity the access is requested for are retrieved. This recipient is the identity that was provided in the Requested For field of the access request.",
+          "displayName": "Get Recipient Identity Attributes",
+          "nextStep": "Get Accounts",
+          "type": "action",
+          "versionNumber": 2
+        },
+        "Get Identity 1": {
+          "actionId": "sp:get-identity",
+          "attributes": {
+            "id.$": "$.getIdentity.managerRef.id"
+          },
+          "description": "The full set of attributes for the recipient’s manager are retrieved. \nThe recipient is not in the Security department, so a multi-level manager approval is required to approve this access.",
+          "displayName": "Get Recipient’s Manager Identity",
+          "nextStep": "Approval Policy",
+          "type": "action",
+          "versionNumber": 2
+        },
+        "Send Email": {
+          "actionId": "sp:send-email",
+          "attributes": {
+            "body": "<p>Hello {{$.getIdentity1.attributes.displayName}},&nbsp;</p>\n<p>An out-of-band access request was approved for {{$.trigger.requestedItem.name}} and recipient {{$.trigger.requestedFor.name}}.</p>\n<p>Due to this business exception, a certification campaign has been created and assigned to you with the certification name: {{$.createCertificationCampaign.name}}. Please review your direct report's access.&nbsp;</p>\n<p>Thank you,&nbsp;</p>\n<p>Your Security Team</p>",
+            "context": {},
+            "recipientEmailList.$": "$.getIdentity1.attributes.email",
+            "subject": "Exception Access for {{$.trigger.requestedFor.name}}"
+          },
+          "description": "An email is sent to the manager of the recipient to inform them that the request for access was approved, and a certification campaign was created.",
+          "displayName": "Notify Manager of Exception Access",
+          "nextStep": "End Step - Success 2",
+          "type": "action",
+          "versionNumber": 2
+        },
+        "Send Slack Message": {
+          "actionId": "sp:send-slack-message",
+          "attributes": {
+            "body": "Hello {{$.trigger.requestedFor.name}}, Your request for {{$.trigger.requestedItem.name}} has been approved.",
+            "id.$": "$.trigger.requestedFor.name"
+          },
+          "description": "The access request was approved. A Slack notification is sent to the recipient to notify them that their request was approved.",
+          "displayName": "Slack Notification - Approved",
+          "nextStep": "Create Certification Campaign",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Send Slack Message 1": {
+          "actionId": "sp:send-slack-message",
+          "attributes": {
+            "body": "Hello {{$.trigger.requestedFor.name}}, \n Your request for {{$.trigger.requestedItem.name}} has been rejected.",
+            "id.$": "$.getIdentity.attributes.email"
+          },
+          "description": "The access request was not approved. A Slack notification is sent to the recipient to notify them that their request was rejected.",
+          "displayName": "Slack Notification - Denied",
+          "nextStep": "Deny Access Request",
+          "type": "action",
+          "versionNumber": 1
+        }
+      }
+    },
+    "description": "This workflow is triggered when an access request is submitted. Based on the recipient’s account type, the request is either auto-approved or is considered and exception and goes through a multi-step approval process.",
+    "enabled": false,
+    "id": "78658b82-9be1-43fc-89a3-831245cc5c79",
+    "modified": "2026-04-17T09:42:32.082689037Z",
+    "modifiedBy": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "name": "Approval Workflow based on entitlement description (privileged/not privileged) ",
+    "owner": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "trigger": {
+      "attributes": {
+        "id": "idn:access-request-trigger"
+      },
+      "type": "AccessRequestTrigger"
+    }
+  },
+  "self": {
+    "id": "78658b82-9be1-43fc-89a3-831245cc5c79",
+    "name": "Approval Workflow based on entitlement description (privileged/not privileged) ",
+    "type": "WORKFLOW"
+  },
+  "version": 1
+}

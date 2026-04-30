@@ -1,0 +1,125 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessProfiles": [],
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": null,
+      "denialCommentsRequired": null,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-03-30T11:30:58.854774Z",
+    "description": null,
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": true,
+    "entitlements": [
+      {
+        "id": "c22353c7-209a-365c-add0-3775c96d2389",
+        "name": "Admin",
+        "sourceId": "554636d5-2d7a-40ea-90f0-9fd1d2ce5dc9",
+        "sourceName": "Identity Security Cloud Governance",
+        "type": "ENTITLEMENT"
+      }
+    ],
+    "id": "86eac8e94b824d73a4c7f879dcd1a525",
+    "legacyMembershipInfo": null,
+    "membership": {
+      "criteria": {
+        "children": [
+          {
+            "children": [
+              {
+                "children": null,
+                "key": {
+                  "property": "attribute.email",
+                  "sourceId": "f5bc2e60775f4a4bb4b96e4558589433",
+                  "type": "ACCOUNT"
+                },
+                "operation": "CONTAINS",
+                "stringValue": null,
+                "values": [
+                  "austrian.com"
+                ]
+              },
+              {
+                "children": null,
+                "key": {
+                  "property": "attribute.email",
+                  "sourceId": "f5bc2e60775f4a4bb4b96e4558589433",
+                  "type": "ACCOUNT"
+                },
+                "operation": "CONTAINS",
+                "stringValue": null,
+                "values": [
+                  "dlh.de"
+                ]
+              },
+              {
+                "children": null,
+                "key": {
+                  "property": "attribute.email",
+                  "sourceId": "f5bc2e60775f4a4bb4b96e4558589433",
+                  "type": "ACCOUNT"
+                },
+                "operation": "CONTAINS",
+                "stringValue": null,
+                "values": [
+                  "lhsystems.com"
+                ]
+              },
+              {
+                "children": null,
+                "key": {
+                  "property": "attribute.email",
+                  "sourceId": "f5bc2e60775f4a4bb4b96e4558589433",
+                  "type": "ACCOUNT"
+                },
+                "operation": "CONTAINS",
+                "stringValue": null,
+                "values": [
+                  "swiss.com"
+                ]
+              }
+            ],
+            "key": null,
+            "operation": "OR",
+            "stringValue": null,
+            "values": null
+          }
+        ],
+        "key": null,
+        "operation": "AND",
+        "stringValue": null,
+        "values": null
+      },
+      "identities": null,
+      "type": "STANDARD"
+    },
+    "modified": "2026-03-30T11:54:41.316499Z",
+    "name": "Admin to POC Users2",
+    "owner": {
+      "id": "7d00e3c56dd44753a8c561b140e85f81",
+      "name": "wweiland",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [],
+    "segments": []
+  },
+  "self": {
+    "id": "86eac8e94b824d73a4c7f879dcd1a525",
+    "name": "Admin to POC Users2",
+    "type": "ROLE"
+  },
+  "version": 1
+}

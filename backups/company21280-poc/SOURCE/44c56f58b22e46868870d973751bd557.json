@@ -1,0 +1,239 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accountCorrelationRule": null,
+    "beforeProvisioningRule": null,
+    "connectorAttributes": {
+      "cloudCacheUpdate": 1776680762197,
+      "cloudDisplayName": "Non-Employee Assignments",
+      "connectionType": "direct",
+      "connectorName": "SailPoint Non-Employee Risk Management",
+      "deleteThresholdPercentage": 10,
+      "healthCheckTimeout": 30,
+      "healthy": false,
+      "idnProxyType": "sp-connect",
+      "profileStatus": "All",
+      "profileTypeId": "a98fa8ec-c64f-4218-b718-86aecb3fe90f",
+      "since": "2026-04-20T10:26:02.178Z",
+      "sourceConnected": true,
+      "spConnectorInstanceId": "6e7d733a-eba4-4e48-bbfb-e834d7a9caab",
+      "spConnectorSpecId": "39946170-edb9-46ac-b5f4-3c9bccef4cbb",
+      "status": "SOURCE_STATE_UNCHECKED_SOURCE_NO_ACCOUNTS",
+      "templateApplication": "SailPoint Non-Employee Risk Management",
+      "tenantDomain": "company21280-poc.mynonemployee.com"
+    },
+    "connectorClass": "",
+    "connectorScriptName": "39946170-edb9-46ac-b5f4-3c9bccef4cbb",
+    "correlationConfigDetails": {
+      "attributeAssignments": [
+        {
+          "complex": false,
+          "filterString": null,
+          "ignoreCase": false,
+          "matchMode": null,
+          "operation": "EQ",
+          "property": "nePersonId",
+          "sequence": 1,
+          "value": "person_id"
+        }
+      ],
+      "id": "b4c7fe86423044d6a9ac8491ac9351c5",
+      "name": "44c56f58b22e46868870d973751bd557 Account Correlation Config"
+    },
+    "crossTenantConnectorAttributes": {},
+    "deleteThreshold": 10,
+    "description": "Assignments for Non-Employees",
+    "features": [],
+    "id": "44c56f58b22e46868870d973751bd557",
+    "managementWorkgroup": null,
+    "managerCorrelationMapping": {
+      "accountAttributeName": "sponsor_login",
+      "identityAttributeName": "name"
+    },
+    "managerCorrelationRule": null,
+    "name": "Non-Employee Assignments",
+    "owner": {
+      "id": "cf2fa74801e749149d87640eba4e475f",
+      "name": "se.admin",
+      "type": "IDENTITY"
+    },
+    "passwordPolicies": null,
+    "provisionAsCsv": false,
+    "provisioningPolicies": [],
+    "schemas": [
+      {
+        "attributes": [
+          {
+            "description": "Name of the profile",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Organization for the assignment",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "assignment_organization",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Population for the Assignment",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "population_assignment",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Profile Status",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "status",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "UUID of the profile",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "id",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "assignment_end_date",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "assignment_end_date",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "assignment_id",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "assignment_id",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "assignment_start_date",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "assignment_start_date",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "created at timestamp",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "created_at",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "employee_type_dropdown",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "employee_type_dropdown",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "job_title_dropdown",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "job_title_dropdown",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "last_validation_date",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "last_validation_date",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "person_id",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "person_id",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "sponsor_login",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "sponsor_login",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "updated at timestamp",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "updated_at",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {},
+        "created": "2026-03-18T09:16:17.158Z",
+        "displayAttribute": "name",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "c2e119c5807c42649e96945bdfdddfd7",
+        "identityAttribute": "id",
+        "includePermissions": false,
+        "modified": "2026-03-18T09:16:17.639Z",
+        "name": "account",
+        "nativeObjectType": "User"
+      }
+    ],
+    "type": "39946170-edb9-46ac-b5f4-3c9bccef4cbb"
+  },
+  "self": {
+    "id": "44c56f58b22e46868870d973751bd557",
+    "name": "Non-Employee Assignments",
+    "type": "SOURCE"
+  },
+  "version": 1
+}

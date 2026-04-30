@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "<p>Dear recipient,</p><p>The pinned version <b>$processVersion</b> of the <b>$processName</b> virtual appliance cluster component will expire on <b>$versionPinExpiry</b>.</p><p>Pinned VA versions do not receive updates. Falling behind in certain VA updates may limit access to SailPoint support for the VA.</p><p>You have the following options to manage the upcoming expiration:</p><ul>    <li><b>Do Nothing</b> - If you no longer require a specific version, allow the pin to expire, and the cluster will automatically update to the latest version.</li>    <li><b>Request Extension</b> - If you need more time on the pinned version, contact SailPoint Support to request an extension.</li>    <li><b>Request Pin Removal</b> - If you no longer need the pinned version, contact SailPoint Support to remove the pin.</li></ul><p>Time remaining until expiration: <b>$timeToExpiry</b>.</p><p>Thanks,<br>The $PRODUCT_NAME Team</p>",
+    "created": null,
+    "description": "Notifies a user when their pinned virtual appliance cluster component is about to expire.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] VA Pinned Component Expiration",
+    "key": "va_pinned_component_expiration_notification",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "VA Pinned Component Expiration",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "REMINDER: Pinned VA cluster component $processName $processVersion will expire on $versionPinExpiry",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] VA Pinned Component Expiration",
+    "name": "VA Pinned Component Expiration",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

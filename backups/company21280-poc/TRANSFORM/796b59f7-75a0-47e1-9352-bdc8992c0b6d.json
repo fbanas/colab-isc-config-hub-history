@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "attributes": {
+      "table": {
+        "LH1-FI": "Finance",
+        "LH1-SA": "Sales Ticketing",
+        "LH2-FO": "Flight operations",
+        "LH2-IT": "Information Technology",
+        "LH3-IT": "Information Technology",
+        "default": {
+          "type": "trim"
+        }
+      }
+    },
+    "id": "796b59f7-75a0-47e1-9352-bdc8992c0b6d",
+    "internal": false,
+    "name": "Department",
+    "type": "lookup"
+  },
+  "self": {
+    "id": "796b59f7-75a0-47e1-9352-bdc8992c0b6d",
+    "name": "Department",
+    "type": "TRANSFORM"
+  },
+  "version": 1
+}

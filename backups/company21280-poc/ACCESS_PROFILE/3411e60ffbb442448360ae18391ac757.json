@@ -1,0 +1,70 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": null,
+      "denialCommentsRequired": null,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-04-13T15:42:40.710802Z",
+    "description": "This AP is only atachable to Active Directory administrator Accounts",
+    "enabled": false,
+    "entitlements": [
+      {
+        "id": "472397450c2736399c9d7996d922259d",
+        "name": "Help Desk Administrator",
+        "type": "ENTITLEMENT"
+      }
+    ],
+    "id": "3411e60ffbb442448360ae18391ac757",
+    "modified": "2026-04-13T15:45:06.729281Z",
+    "name": "Help Desk Admin",
+    "owner": {
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
+      "type": "IDENTITY"
+    },
+    "provisioningCriteria": {
+      "attribute": null,
+      "children": [
+        {
+          "attribute": null,
+          "children": [
+            {
+              "attribute": "distinguishedName",
+              "children": null,
+              "operation": "CONTAINS",
+              "value": "OU=Admins,DC=seri,DC=sailpointdemo,DC=com"
+            }
+          ],
+          "operation": "OR",
+          "value": null
+        }
+      ],
+      "operation": "AND",
+      "value": null
+    },
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": null
+    },
+    "segmentRefs": [],
+    "segments": [],
+    "source": {
+      "id": "9ef01d3f3553489a98df33bcb25345d8",
+      "name": "Active Directory - Admins",
+      "type": "SOURCE"
+    }
+  },
+  "self": {
+    "id": "3411e60ffbb442448360ae18391ac757",
+    "name": "Help Desk Admin",
+    "type": "ACCESS_PROFILE"
+  },
+  "version": 1
+}

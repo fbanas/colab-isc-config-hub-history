@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "<font face=\"Calibri\" size=\"2\">Hello,<BR><BR>Please find below a link to the '$report.name' report of type: $report.type.<BR>The report has been created by $report.createdByDisplayName at $report.createDate (UTC).<BR><BR>Click <a href=\"$report.url\">here</a> to view the report on Data Access Security.<BR><BR><BR></font><font face=\"Calibri\" size=\"1\" color=\"gray\">This is an automatic message sent to you by <B>Data Access Security</B> - Please do not reply.</font>",
+    "created": null,
+    "description": "Notify user that a new data access security report has been created.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Data Access Security Report Created",
+    "key": "das_report_created",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Data Access Security Report Created",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "A new Data Access Security report is waiting for you: '$report.name' of type '$report.type' ",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Data Access Security Report Created",
+    "name": "Data Access Security Report Created",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

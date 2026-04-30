@@ -1,0 +1,82 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": "2026-03-20T14:04:26.47878542Z",
+    "description": "",
+    "formConditions": [],
+    "formElements": [
+      {
+        "config": {
+          "alignment": "CENTER",
+          "description": "",
+          "formElements": [
+            {
+              "config": {
+                "dataSource": {
+                  "config": {
+                    "formInputId": "accounts",
+                    "sortBy": "ASC"
+                  },
+                  "dataSourceType": "FORM_INPUT"
+                },
+                "forceSelect": true,
+                "helpText": "Select main authoritative account",
+                "label": "Authoritative Account",
+                "maximum": 1,
+                "placeholder": "",
+                "required": true
+              },
+              "elementType": "SELECT",
+              "id": "1716161914243",
+              "key": "authoritativeAccount",
+              "validations": [
+                {
+                  "validationType": "DATA_SOURCE"
+                },
+                {
+                  "validationType": "REQUIRED"
+                }
+              ]
+            }
+          ],
+          "label": "Authoritative Accounts",
+          "labelStyle": "h2",
+          "showLabel": true
+        },
+        "elementType": "SECTION",
+        "id": "347016135793",
+        "validations": []
+      }
+    ],
+    "formInput": [
+      {
+        "description": "",
+        "id": "accounts",
+        "label": "accounts",
+        "type": "ARRAY"
+      }
+    ],
+    "id": "3fed239f-6af5-49e2-8274-484b1fb94a9e",
+    "modified": "2026-03-20T14:07:59.138002014Z",
+    "name": "Select Main Authoritative Account",
+    "owner": {
+      "id": "30507568a2d54f7484fe0f3edba79692",
+      "name": "fernando.delosrios",
+      "type": "IDENTITY"
+    },
+    "usedBy": [
+      {
+        "id": "232097a1-21fc-40f3-a8f8-31b9ef5bd483",
+        "name": "Select Authoritative Account",
+        "type": "WORKFLOW"
+      }
+    ]
+  },
+  "self": {
+    "id": "3fed239f-6af5-49e2-8274-484b1fb94a9e",
+    "name": "Select Main Authoritative Account",
+    "type": "FORM_DEFINITION"
+  },
+  "version": 1
+}

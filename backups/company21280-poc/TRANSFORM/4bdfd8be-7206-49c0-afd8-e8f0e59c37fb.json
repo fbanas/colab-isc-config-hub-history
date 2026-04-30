@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "attributes": {
+      "input": {
+        "type": "lower"
+      },
+      "table": {
+        "active": "active",
+        "default": "inactive",
+        "inactive": "inactive",
+        "onleave": "inactive",
+        "terminated": "inactive"
+      }
+    },
+    "id": "4bdfd8be-7206-49c0-afd8-e8f0e59c37fb",
+    "internal": false,
+    "name": "NE Lifecycle State",
+    "type": "lookup"
+  },
+  "self": {
+    "id": "4bdfd8be-7206-49c0-afd8-e8f0e59c37fb",
+    "name": "NE Lifecycle State",
+    "type": "TRANSFORM"
+  },
+  "version": 1
+}

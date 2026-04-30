@@ -1,0 +1,717 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accountCorrelationRule": null,
+    "beforeProvisioningRule": null,
+    "connectorAttributes": {
+      "appTemplateData": "{ 'whiteListedAttributes': ['ServerTimeZone','authenticationMethod','beforeProvisioningRule','cloudCacheUpdate','cloudDisplayName','cloudExternalId','connectionTimeout','connectionType','connectorName','dateEvalFormat','deleteThresholdPercentage','deltaAggregation','deltaAggregationEnabled','enableStatus','formPath','genericWebServiceBaseUrl','grant_type','healthCheckTimeout','healthy','idnProxyType','lockStatus','managementWorkgroup','oauth_body_attrs_to_exclude','oauth_headers_to_exclude','possibleHttpErrorMessages','saml_headers_to_exclude','since','sourceDescription','spConnEnableStatefulCommands','spConnectorInstanceId','spConnectorSpecId','spConnectorSupportsCustomSchemas','status','supportsDeltaAgg','templateApplication','updateAttrWithChangePassword','skipGetObjectInCreate','slpt-source-diagnostics','objectNotFoundErrorMsg','disableCookies','createAccountWithEntReq','addRemoveEntInSingleReq','requestType','spConnDebugLoggingEnabled','category','acctAggregationEnd','acctAggregationStart','afterProvisioningRule','aggregateTimeout','connectionParameters','oAuthJwtHeader','oAuthJwtPayload','oauth_request_parameters','saml_assertion_url','saml_attributes','saml_request_body','token_url'] }",
+      "authenticationMethod": "OAuthLogin",
+      "cloudCacheUpdate": 1774203892301,
+      "cloudDisplayName": "Non-Employee Users",
+      "connectionParameters": [
+        {
+          "afterRule": "NE - LifecycleUsers - Account Aggregation - After Operation Rule",
+          "body": {
+            "bodyFormat": "raw"
+          },
+          "contextUrl": "/users?limit=100&offset=0",
+          "curlEnabled": false,
+          "header": {
+            "Accept": "application/json",
+            "Authorization": "Bearer $application.accesstoken$",
+            "Content-Type": "application/json"
+          },
+          "httpMethodType": "GET",
+          "operationType": "Account Aggregation",
+          "paginationSteps": "$sysparm_limit$ = 100\nTERMINATE_IF $RECORDS_COUNT$ < $sysparm_limit$\n$sysparm_offset$ = $sysparm_limit$ + $sysparm_offset$\n$endpoint.fullUrl$ = $application.baseUrl$ + \"/users?limit=\" + $sysparm_limit$ + \"&offset=\" + $sysparm_offset$",
+          "pagingInitialOffset": 0,
+          "pagingSize": 100,
+          "resMappingObj": {
+            "cookies_accepted_at": "cookies_accepted_at",
+            "email": "email",
+            "id": "id",
+            "last_login": "last_login",
+            "login": "login",
+            "name": "name",
+            "preferred_language": "preferred_language",
+            "status": "status",
+            "title": "title",
+            "type": "type"
+          },
+          "responseCode": [
+            "200"
+          ],
+          "rootPath": "$.users[*]",
+          "sequenceNumberForEndpoint": "2",
+          "uniqueNameForEndPoint": "AccountAggregation-GetUsers"
+        },
+        {
+          "body": {
+            "bodyFormat": "raw",
+            "jsonBody": "{\n    \"user\": {\n        \"name\": \"$plan.name$\",\n        \"email\": \"$plan.email$\",\n        \"type\": \"NeprofileUser\",\n        \"status\": 1,\n        \"login\": \"$plan.login$\",\n\"title\":\"$plan.title$\"\n    }\n}"
+          },
+          "contextUrl": "/user",
+          "curlEnabled": false,
+          "header": {
+            "Accept": "application/json",
+            "Authorization": "Bearer $application.accesstoken$",
+            "Content-Type": "application/json"
+          },
+          "httpMethodType": "POST",
+          "operationType": "Create Account",
+          "pagingInitialOffset": 0,
+          "pagingSize": 50,
+          "resMappingObj": {
+            "id": "id"
+          },
+          "responseCode": [
+            "201"
+          ],
+          "rootPath": "$.user",
+          "sequenceNumberForEndpoint": "10",
+          "uniqueNameForEndPoint": "CreateAccount"
+        },
+        {
+          "body": {
+            "bodyFormat": "raw",
+            "jsonBody": "{\n    \"user\": {\n        \"name\": \"$plan.name$\",\n        \"email\": \"$plan.email$\",\n        \"type\": \"NeprofileUser\",\n        \"status\": 1,\n        \"login\": \"$plan.login$\"\n    }\n}"
+          },
+          "contextUrl": "/users/$plan.nativeIdentity$",
+          "curlEnabled": false,
+          "header": {
+            "Accept": "application/json",
+            "Authorization": "Bearer $application.accesstoken$",
+            "Content-Type": "application/json"
+          },
+          "httpMethodType": "PATCH",
+          "operationType": "Update Account",
+          "pagingInitialOffset": 0,
+          "pagingSize": 50,
+          "resMappingObj": {
+            "email": "email",
+            "id": "id",
+            "login": "login",
+            "name": "name",
+            "status": "status",
+            "type": "type"
+          },
+          "responseCode": [
+            "200"
+          ],
+          "rootPath": "$.user",
+          "sequenceNumberForEndpoint": "12",
+          "uniqueNameForEndPoint": "UpdateAccount"
+        },
+        {
+          "body": {
+            "bodyFormat": "raw",
+            "jsonBody": "{\n    \"user_role\": {\n        \"user_id\": \"$plan.nativeIdentity$\",\n        \"role_id\": \"$plan.user_roles$\"\n    }\n}"
+          },
+          "contextUrl": "/user_role",
+          "curlEnabled": false,
+          "header": {
+            "Accept": "application/json",
+            "Authorization": "Bearer $application.accesstoken$",
+            "Content-Type": "application/json"
+          },
+          "httpMethodType": "POST",
+          "operationType": "Add Entitlement",
+          "pagingInitialOffset": 0,
+          "pagingSize": 50,
+          "responseCode": [
+            "201"
+          ],
+          "sequenceNumberForEndpoint": "5",
+          "uniqueNameForEndPoint": "AddEntitlement"
+        },
+        {
+          "body": {
+            "bodyFormat": "raw",
+            "jsonBody": "{\n\"user\": {\n\"status\":\"Active\"\n}\n}"
+          },
+          "contextUrl": "/users/$plan.nativeIdentity$",
+          "curlEnabled": false,
+          "header": {
+            "Accept": "application/json",
+            "Authorization": "$application.accesstoken$",
+            "Content-Type": "application/json"
+          },
+          "httpMethodType": "PATCH",
+          "operationType": "Enable Account",
+          "pagingInitialOffset": 0,
+          "pagingSize": 50,
+          "resMappingObj": {
+            "email": "email",
+            "id": "id",
+            "login": "login",
+            "name": "name",
+            "status": "status",
+            "type": "type"
+          },
+          "responseCode": [
+            "200"
+          ],
+          "sequenceNumberForEndpoint": "14",
+          "uniqueNameForEndPoint": "Enable Account"
+        },
+        {
+          "body": {
+            "bodyFormat": "raw",
+            "jsonBody": "{\n\"user\": {\n\"status\":\"Disabled\"\n}\n}"
+          },
+          "contextUrl": "/users/$plan.nativeIdentity$",
+          "curlEnabled": false,
+          "header": {
+            "Accept": "application/json",
+            "Authorization": "$application.accesstoken$",
+            "Content-Type": "application/json"
+          },
+          "httpMethodType": "PATCH",
+          "operationType": "Disable Account",
+          "pagingInitialOffset": 0,
+          "pagingSize": 50,
+          "resMappingObj": {
+            "email": "email",
+            "id": "id",
+            "login": "login",
+            "name": "name",
+            "status": "status",
+            "type": "type"
+          },
+          "responseCode": [
+            "200"
+          ],
+          "sequenceNumberForEndpoint": "13",
+          "uniqueNameForEndPoint": "Disable"
+        },
+        {
+          "body": {
+            "bodyFormat": "raw"
+          },
+          "contextUrl": "/roles?limit=100&offset=0",
+          "curlEnabled": false,
+          "header": {
+            "Accept": "application/json",
+            "Authorization": "Bearer $application.accesstoken$",
+            "Content-Type": "application/json"
+          },
+          "httpMethodType": "GET",
+          "operationType": "Group Aggregation",
+          "paginationSteps": "$sysparm_limit$ = 100\nTERMINATE_IF $RECORDS_COUNT$ < $sysparm_limit$\n$sysparm_offset$ = $sysparm_limit$ + $sysparm_offset$\n$endpoint.fullUrl$ = $application.baseUrl$ + \"/roles?limit=\" + $sysparm_limit$ + \"&offset=\" + $sysparm_offset$",
+          "pagingInitialOffset": 0,
+          "pagingSize": 100,
+          "resMappingObj": {
+            "directory_groups": "groups.[*]",
+            "id": "id",
+            "name": "name"
+          },
+          "responseCode": [
+            "200"
+          ],
+          "rootPath": "$.roles[*]",
+          "sequenceNumberForEndpoint": "3",
+          "uniqueNameForEndPoint": "GroupAggregation"
+        },
+        {
+          "body": {
+            "bodyFormat": "raw"
+          },
+          "contextUrl": "/user_managers?user_id=$response.id$",
+          "curlEnabled": false,
+          "header": {
+            "Accept": "application/json",
+            "Authorization": "Bearer $application.accesstoken$",
+            "Content-Type": "application/json"
+          },
+          "httpMethodType": "GET",
+          "operationType": "Account Aggregation",
+          "pagingInitialOffset": 0,
+          "pagingSize": 50,
+          "parentEndpointName": "AccountAggregation-GetUsers",
+          "resMappingObj": {
+            "manager_id": "manager_id"
+          },
+          "responseCode": [
+            "200"
+          ],
+          "rootPath": "$.user_managers[*]",
+          "sequenceNumberForEndpoint": "15",
+          "uniqueNameForEndPoint": "AccountAggregation-GetUserManager"
+        },
+        {
+          "body": {
+            "bodyFormat": "raw"
+          },
+          "contextUrl": "/user_role/$response.user_role_id$",
+          "curlEnabled": false,
+          "header": {
+            "Accept": "application/json",
+            "Authorization": "Bearer $application.accesstoken$",
+            "Content-Type": "application/json"
+          },
+          "httpMethodType": "DELETE",
+          "operationType": "Remove Entitlement",
+          "pagingInitialOffset": 0,
+          "pagingSize": 50,
+          "responseCode": [
+            "200"
+          ],
+          "sequenceNumberForEndpoint": "7",
+          "uniqueNameForEndPoint": "RemoveEntitlement-DeleteUserRole"
+        },
+        {
+          "body": {
+            "bodyFormat": "raw"
+          },
+          "contextUrl": "/user_roles?user_id=$plan.nativeIdentity$&role_id=$plan.user_roles$",
+          "curlEnabled": false,
+          "header": {
+            "Accept": "application/json",
+            "Authorization": "Bearer $application.accesstoken$",
+            "Content-Type": "application/json"
+          },
+          "httpMethodType": "GET",
+          "operationType": "Remove Entitlement",
+          "pagingInitialOffset": 0,
+          "pagingSize": 50,
+          "resMappingObj": {
+            "user_role_id": "id"
+          },
+          "responseCode": [
+            "200"
+          ],
+          "rootPath": "$.user_roles[0]",
+          "sequenceNumberForEndpoint": "6",
+          "uniqueNameForEndPoint": "RemoveEntitlement-GetUserRole"
+        },
+        {
+          "body": {
+            "bodyFormat": "raw"
+          },
+          "contextUrl": "/user_roles?user_id=$response.id$",
+          "curlEnabled": false,
+          "header": {
+            "Accept": "application/json",
+            "Authorization": "Bearer $application.accesstoken$",
+            "Content-Type": "application/json"
+          },
+          "httpMethodType": "GET",
+          "operationType": "Account Aggregation",
+          "pagingInitialOffset": 0,
+          "pagingSize": 500,
+          "parentEndpointName": "AccountAggregation-GetUsers",
+          "resMappingObj": {
+            "user_roles": "role_id"
+          },
+          "responseCode": [
+            "200"
+          ],
+          "rootPath": "$.user_roles[*]",
+          "sequenceNumberForEndpoint": "4",
+          "uniqueNameForEndPoint": "AccountAggregation-GetUserRoles"
+        },
+        {
+          "body": {
+            "bodyFormat": "raw"
+          },
+          "contextUrl": "/user_roles?user_id=$response.id$",
+          "curlEnabled": false,
+          "header": {
+            "Accept": "application/json",
+            "Authorization": "Bearer $application.accesstoken$",
+            "Content-Type": "application/json"
+          },
+          "httpMethodType": "GET",
+          "operationType": "Get Object",
+          "pagingInitialOffset": 0,
+          "pagingSize": 50,
+          "parentEndpointName": "GetObject-GetUser",
+          "resMappingObj": {
+            "user_roles": "user_roles[*].role_id"
+          },
+          "responseCode": [
+            "200"
+          ],
+          "rootPath": "$",
+          "sequenceNumberForEndpoint": "9",
+          "uniqueNameForEndPoint": "GetObject-GetUserRoles"
+        },
+        {
+          "body": {
+            "bodyFormat": "raw"
+          },
+          "contextUrl": "/users/$getobject.nativeIdentity$",
+          "curlEnabled": false,
+          "header": {
+            "Accept": "application/json",
+            "Authorization": "Bearer $application.accesstoken$",
+            "Content-Type": "application/json"
+          },
+          "httpMethodType": "GET",
+          "operationType": "Get Object",
+          "pagingInitialOffset": 0,
+          "pagingSize": 50,
+          "resMappingObj": {
+            "cookies_accepted_at": "cookies_accepted_at",
+            "email": "email",
+            "id": "id",
+            "last_login": "last_login",
+            "login": "login",
+            "name": "name",
+            "preferred_language": "preferred_language",
+            "status": "status",
+            "title": "title",
+            "type": "type"
+          },
+          "responseCode": [
+            "200"
+          ],
+          "rootPath": "$.user",
+          "sequenceNumberForEndpoint": "8",
+          "uniqueNameForEndPoint": "GetObject-GetUser"
+        },
+        {
+          "body": {
+            "bodyFormat": "raw"
+          },
+          "contextUrl": "/users/$plan.nativeIdentity$",
+          "curlEnabled": false,
+          "header": {
+            "Accept": "application/json",
+            "Authorization": "Bearer $application.accesstoken$",
+            "Content-Type": "application/json"
+          },
+          "httpMethodType": "DELETE",
+          "operationType": "Delete Account",
+          "pagingInitialOffset": 0,
+          "pagingSize": 50,
+          "responseCode": [
+            "200"
+          ],
+          "sequenceNumberForEndpoint": "11",
+          "uniqueNameForEndPoint": "DeleteAccount"
+        },
+        {
+          "body": {
+            "bodyFormat": "raw"
+          },
+          "contextUrl": "/users?limit=1",
+          "curlEnabled": false,
+          "header": {
+            "Accept": "application/json",
+            "Authorization": "Bearer $application.accesstoken$",
+            "Content-Type": "application/json"
+          },
+          "httpMethodType": "GET",
+          "operationType": "Test Connection",
+          "pagingInitialOffset": 0,
+          "pagingSize": 50,
+          "resMappingObj": {
+            "user_role_id": "id"
+          },
+          "responseCode": [
+            "200"
+          ],
+          "rootPath": "$.user_roles[0]",
+          "sequenceNumberForEndpoint": "1",
+          "uniqueNameForEndPoint": "TestConnection"
+        }
+      ],
+      "connectionTimeout": "60",
+      "connectionType": "direct",
+      "connectorName": "Web Services SaaS",
+      "deleteThresholdPercentage": 10,
+      "deltaAggregationEnabled": false,
+      "enableStatus": "status = Active",
+      "genericWebServiceBaseUrl": "https://company21280-poc.mynonemployee.com/api",
+      "hasFullAggregationCompleted": true,
+      "healthCheckTimeout": 90,
+      "healthy": true,
+      "idnProxyType": "sp-connect",
+      "since": "2026-03-18T10:03:21.241Z",
+      "sourceConnected": true,
+      "spConnEnableStatefulCommands": false,
+      "spConnectorInstanceId": "9c0f9dcf-8e1d-4679-ba11-9dcfcd4c2fef",
+      "spConnectorSpecId": "7aa95c2a-6c38-4f39-9bb9-040f11641ee3",
+      "spConnectorSupportsCustomSchemas": true,
+      "status": "SOURCE_STATE_HEALTHY",
+      "supportsDeltaAgg": true,
+      "templateApplication": "Web Services SaaS"
+    },
+    "connectorClass": "",
+    "connectorScriptName": "web-services-saas",
+    "correlationConfigDetails": {
+      "attributeAssignments": [
+        {
+          "complex": false,
+          "filterString": null,
+          "ignoreCase": false,
+          "matchMode": null,
+          "operation": "EQ",
+          "property": "uid",
+          "sequence": 1,
+          "value": "login"
+        }
+      ],
+      "id": "b8406e640f15497f96f6d473e110e967",
+      "name": "3a48c3c49dc64cc09ca4a28adf7c4aba Account Correlation Config"
+    },
+    "crossTenantConnectorAttributes": {},
+    "deleteThreshold": 10,
+    "description": "Users that are able to access the non-employee risk management system to manage non-employees, assignments, and organizations",
+    "features": [
+      "AI_AGENT_AGGREGATION",
+      "ENABLE",
+      "PASSWORD",
+      "PROVISIONING",
+      "UNLOCK"
+    ],
+    "id": "3a48c3c49dc64cc09ca4a28adf7c4aba",
+    "managementWorkgroup": null,
+    "managerCorrelationMapping": null,
+    "managerCorrelationRule": null,
+    "name": "Non-Employee Users",
+    "owner": {
+      "id": "cf2fa74801e749149d87640eba4e475f",
+      "name": "se.admin",
+      "type": "IDENTITY"
+    },
+    "passwordPolicies": null,
+    "provisionAsCsv": false,
+    "provisioningPolicies": [
+      {
+        "description": null,
+        "fields": [
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "email",
+            "transform": {
+              "attributes": {
+                "name": "email"
+              },
+              "type": "identityAttribute"
+            },
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "login",
+            "transform": {
+              "attributes": {
+                "name": "uid"
+              },
+              "type": "identityAttribute"
+            },
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "name",
+            "transform": {
+              "attributes": {
+                "name": "displayName"
+              },
+              "type": "identityAttribute"
+            },
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "title",
+            "transform": {
+              "attributes": {
+                "name": "title"
+              },
+              "type": "identityAttribute"
+            },
+            "type": "string"
+          }
+        ],
+        "name": "",
+        "usageType": "CREATE"
+      }
+    ],
+    "schemas": [
+      {
+        "attributes": [
+          {
+            "description": "cookies_accepted_at",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "cookies_accepted_at",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "email",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "email",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "id",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "id",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "last_login",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "last_login",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "login",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "login",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "name",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "preferred_language",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "preferred_language",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "status",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "status",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "title",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "title",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "type",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "type",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "user_roles",
+            "isEntitlement": true,
+            "isGroup": true,
+            "isMulti": true,
+            "name": "user_roles",
+            "nativeName": null,
+            "schema": {
+              "id": "77b65844acd14e81b4a9e7bed5cfef73",
+              "name": "group",
+              "type": "CONNECTOR_SCHEMA"
+            },
+            "type": "STRING"
+          }
+        ],
+        "configuration": {},
+        "created": "2026-03-18T09:16:18.457Z",
+        "displayAttribute": "login",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "ad86d96c03d4405eac8e651bdae9f614",
+        "identityAttribute": "id",
+        "includePermissions": false,
+        "modified": "2026-03-18T09:16:18.797Z",
+        "name": "account",
+        "nativeObjectType": "User"
+      },
+      {
+        "attributes": [
+          {
+            "description": "id",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "id",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "name",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {},
+        "created": "2026-03-18T09:16:18.457Z",
+        "displayAttribute": "name",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "77b65844acd14e81b4a9e7bed5cfef73",
+        "identityAttribute": "id",
+        "includePermissions": false,
+        "modified": "2026-03-18T09:16:18.916Z",
+        "name": "group",
+        "nativeObjectType": "Group"
+      }
+    ],
+    "type": "7aa95c2a-6c38-4f39-9bb9-040f11641ee3"
+  },
+  "self": {
+    "id": "3a48c3c49dc64cc09ca4a28adf7c4aba",
+    "name": "Non-Employee Users",
+    "type": "SOURCE"
+  },
+  "version": 1
+}

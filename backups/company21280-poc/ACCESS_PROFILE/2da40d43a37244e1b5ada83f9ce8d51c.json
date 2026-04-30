@@ -1,0 +1,73 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": null,
+      "denialCommentsRequired": null,
+      "maxPermittedAccessDuration": {
+        "timeUnit": "HOURS",
+        "value": 1
+      },
+      "reauthorizationRequired": false,
+      "requireEndDate": true
+    },
+    "additionalOwners": [],
+    "created": "2026-04-13T16:41:26.649644Z",
+    "description": "You will be granted local Windows administrator rights for your \"*-adm\" account from the ‘Active Directory’ source for one hour.\nIf you request access without owning an *-adm Account please request a -\"adm\"Account first.",
+    "enabled": true,
+    "entitlements": [
+      {
+        "id": "2454c7a9b7383f53b19930ed73ffed2a",
+        "name": "WindowsAdministration",
+        "type": "ENTITLEMENT"
+      }
+    ],
+    "id": "2da40d43a37244e1b5ada83f9ce8d51c",
+    "modified": "2026-04-13T16:48:06.73934Z",
+    "name": "Windows Administration",
+    "owner": {
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
+      "type": "IDENTITY"
+    },
+    "provisioningCriteria": {
+      "attribute": null,
+      "children": [
+        {
+          "attribute": null,
+          "children": [
+            {
+              "attribute": "cn",
+              "children": null,
+              "operation": "CONTAINS",
+              "value": "-adm"
+            }
+          ],
+          "operation": "OR",
+          "value": null
+        }
+      ],
+      "operation": "AND",
+      "value": null
+    },
+    "requestable": true,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [],
+    "segments": [],
+    "source": {
+      "id": "8779703397444628aa740c2d5fdaf0c9",
+      "name": "Active Directory",
+      "type": "SOURCE"
+    }
+  },
+  "self": {
+    "id": "2da40d43a37244e1b5ada83f9ce8d51c",
+    "name": "Windows Administration",
+    "type": "ACCESS_PROFILE"
+  },
+  "version": 1
+}

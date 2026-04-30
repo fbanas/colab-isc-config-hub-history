@@ -1,0 +1,288 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accountCorrelationRule": null,
+    "beforeProvisioningRule": null,
+    "connectorAttributes": {
+      "authenticationMethod": "BasicLogin",
+      "cloudCacheUpdate": 1776671525947,
+      "cloudDisplayName": "Toggl 2",
+      "connectionTimeout": 60,
+      "connectionType": "direct",
+      "connectorName": "Toggl",
+      "deleteThresholdPercentage": 10,
+      "encrypted": "password",
+      "genericWebServiceBaseUrl": "https://api.track.toggl.com/api/v9/organizations/21036087",
+      "healthCheckTimeout": 60,
+      "healthy": true,
+      "idnProxyType": "sp-connect",
+      "since": "2026-04-20T07:52:05.938Z",
+      "spConnectorInstanceId": "638627b0-9664-4bc8-9971-79652dc8dc60",
+      "spConnectorSpecId": "f969d695-09e7-496c-b009-a63624e93283",
+      "spConnectorSupportsCustomSchemas": true,
+      "status": "SOURCE_STATE_HEALTHY",
+      "templateApplication": "Toggl",
+      "username": "saamadmin@spsaamse.onmicrosoft.com"
+    },
+    "connectorClass": "",
+    "connectorScriptName": "toggl-saas",
+    "correlationConfigDetails": {
+      "attributeAssignments": [
+        {
+          "complex": false,
+          "filterString": null,
+          "ignoreCase": false,
+          "matchMode": null,
+          "operation": "EQ",
+          "property": "email",
+          "sequence": 1,
+          "value": "email"
+        }
+      ],
+      "id": "6d0f3907d0be4c299c6e0bc5aa1135c2",
+      "name": "d1154e4a321b4e65885d8b333268fba3 Account Correlation Config"
+    },
+    "crossTenantConnectorAttributes": {},
+    "deleteThreshold": 10,
+    "description": "Application desciption is not available",
+    "features": [
+      "DIRECT_PERMISSIONS"
+    ],
+    "id": "d1154e4a321b4e65885d8b333268fba3",
+    "managementWorkgroup": null,
+    "managerCorrelationMapping": null,
+    "managerCorrelationRule": null,
+    "name": "Toggl 2",
+    "owner": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "passwordPolicies": null,
+    "provisionAsCsv": false,
+    "provisioningPolicies": [],
+    "schemas": [
+      {
+        "attributes": [
+          {
+            "description": "Can user edit his email address",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "can_edit_email",
+            "nativeName": null,
+            "schema": null,
+            "type": "BOOLEAN"
+          },
+          {
+            "description": "Email address of the Toggl user",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "email",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Groups User is present in",
+            "isEntitlement": true,
+            "isGroup": true,
+            "isMulti": true,
+            "name": "groupId",
+            "nativeName": null,
+            "schema": {
+              "id": "561c67d83050497c9b3ffdf284568992",
+              "name": "Groups",
+              "type": "CONNECTOR_SCHEMA"
+            },
+            "type": "STRING"
+          },
+          {
+            "description": "Name of the Toggle User",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Organization Id of the User",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "organizationId",
+            "nativeName": null,
+            "schema": null,
+            "type": "INT"
+          },
+          {
+            "description": "Roles Associated with the user",
+            "isEntitlement": true,
+            "isGroup": true,
+            "isMulti": false,
+            "name": "roleId",
+            "nativeName": null,
+            "schema": {
+              "id": "dbded861b51c4b39a4f558d9bd17fa33",
+              "name": "Roles",
+              "type": "CONNECTOR_SCHEMA"
+            },
+            "type": "STRING"
+          },
+          {
+            "description": "Unique identifier for the Toggl user",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "id",
+            "nativeName": null,
+            "schema": null,
+            "type": "INT"
+          },
+          {
+            "description": "User's current status",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "inactive",
+            "nativeName": null,
+            "schema": null,
+            "type": "BOOLEAN"
+          }
+        ],
+        "configuration": {},
+        "created": "2026-04-20T07:51:20.589Z",
+        "displayAttribute": "name",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "2414bb141a2448939353575442e71234",
+        "identityAttribute": "id",
+        "includePermissions": false,
+        "modified": "2026-04-20T07:51:20.589Z",
+        "name": "account",
+        "nativeObjectType": "User"
+      },
+      {
+        "attributes": [
+          {
+            "description": "Group's Creation timing",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "createdAt",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Name of the Group in Toggl",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "groupName",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Unique Id fro each Group",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "groupId",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {},
+        "created": "2026-04-20T07:51:20.589Z",
+        "displayAttribute": "groupName",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "561c67d83050497c9b3ffdf284568992",
+        "identityAttribute": "groupId",
+        "includePermissions": false,
+        "modified": "2026-04-20T07:51:20.589Z",
+        "name": "Groups",
+        "nativeObjectType": "Groups"
+      },
+      {
+        "attributes": [
+          {
+            "description": "Name of the Role",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Permissions associated with the Role",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "permissionName",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Role is associated with which entity \neg: Workspace , Organization or Project",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "entity",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Short code for Role name eg Workspace Admin is coded as ws_admin",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "code",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Unique Id for Role",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "roleId",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {},
+        "created": "2026-04-20T07:51:20.589Z",
+        "displayAttribute": "name",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "dbded861b51c4b39a4f558d9bd17fa33",
+        "identityAttribute": "roleId",
+        "includePermissions": true,
+        "modified": "2026-04-20T07:51:20.589Z",
+        "name": "Roles",
+        "nativeObjectType": "Roles"
+      }
+    ],
+    "type": "f969d695-09e7-496c-b009-a63624e93283"
+  },
+  "self": {
+    "id": "d1154e4a321b4e65885d8b333268fba3",
+    "name": "Toggl 2",
+    "type": "SOURCE"
+  },
+  "version": 1
+}

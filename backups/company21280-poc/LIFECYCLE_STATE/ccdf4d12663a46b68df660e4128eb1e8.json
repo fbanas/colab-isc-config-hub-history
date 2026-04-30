@@ -1,0 +1,54 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessActionConfiguration": {
+      "removeAllAccessEnabled": false
+    },
+    "accessProfileIds": [],
+    "accessProfileRefs": null,
+    "accountActionRefs": [
+      {
+        "action": "DISABLE",
+        "allSources": true,
+        "excludeSourceIdsRefs": [],
+        "sourceIdsRefs": []
+      }
+    ],
+    "accountActions": [
+      {
+        "action": "DISABLE",
+        "allSources": true,
+        "excludeSourceIds": null,
+        "sourceIds": null
+      }
+    ],
+    "created": "2026-04-01T09:22:31.525Z",
+    "description": null,
+    "emailNotificationOption": {
+      "emailAddressList": [],
+      "notifyAllAdmins": false,
+      "notifyManagers": true,
+      "notifySpecificUsers": false
+    },
+    "enabled": true,
+    "id": "ccdf4d12663a46b68df660e4128eb1e8",
+    "identityCount": 4,
+    "identityProfileRef": {
+      "id": "fa41f7d647a945449c4b1614d41266f6",
+      "name": "Orange HRM Identity Profile",
+      "type": "IDENTITY_PROFILE"
+    },
+    "identityState": "INACTIVE_SHORT_TERM",
+    "modified": "2026-04-08T13:02:45.774Z",
+    "name": "Inactive",
+    "priority": 60,
+    "technicalName": "inactive"
+  },
+  "self": {
+    "id": "ccdf4d12663a46b68df660e4128eb1e8",
+    "name": "Inactive",
+    "type": "LIFECYCLE_STATE"
+  },
+  "version": 1
+}

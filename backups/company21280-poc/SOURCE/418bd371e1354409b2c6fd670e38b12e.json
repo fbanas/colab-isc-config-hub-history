@@ -1,0 +1,325 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accountCorrelationRule": null,
+    "beforeProvisioningRule": null,
+    "connectorAttributes": {
+      "SQL": "SELECT \n    u.*, \n    l.value \"LCS\",\n    CASE \n        WHEN l.value = 'active' THEN false \n        ELSE true \n    END AS \"IIQDisabled\"\nFROM \"LHG\" AS u\nLEFT JOIN \"LCS\" AS l\nON u.\"Employer Status\" = l.key;",
+      "cloudCacheUpdate": 1777445602697,
+      "cloudDisplayName": "LHG",
+      "connectionType": "direct",
+      "connectorFileUploadHistory": {
+        "postgres-postgresql-42.7.10.jar": "2026-03-17T11:20:15.900665209Z"
+      },
+      "connectorName": "JDBC",
+      "connector_files": "postgres-postgresql-42.7.10.jar",
+      "createAccount": false,
+      "deleteAccount": false,
+      "deleteThresholdPercentage": 10,
+      "deltaAggregationEnabled": false,
+      "disableAccount": true,
+      "disableSQL": "UPDATE \"LHG\"\nSET \"employer_status\" = '1'\nWHERE \"SAM_ID\" = $plan.nativeIdentity$;",
+      "driverClass": "org.postgresql.Driver",
+      "enableAccount": true,
+      "enableProvisioningFeature": true,
+      "enableSQL": "UPDATE \"LHG\"\nSET \"employer_status\" = '0'\nWHERE \"SAM_ID\" = $plan.nativeIdentity$;",
+      "encrypted": "password,group.password",
+      "group.isPermissionEnabled": false,
+      "group.mergeRows": false,
+      "hasFullAggregationCompleted": true,
+      "healthCheckTimeout": 30,
+      "healthy": true,
+      "isAdvance": "false",
+      "isPermissionEnabled": false,
+      "jdbcExceptionBucketing": true,
+      "labels": [
+        "standard"
+      ],
+      "mergeRows": false,
+      "since": "2026-03-27T14:23:30.355Z",
+      "sourceConnected": true,
+      "status": "SOURCE_STATE_HEALTHY",
+      "supportsDeltaAgg": "true",
+      "templateApplication": "JDBC Template",
+      "testConnSQL": "SELECT 1",
+      "unlockAccount": false,
+      "updateAccount": false,
+      "url": "jdbc:postgresql://aws-1-eu-central-1.pooler.supabase.com:6543/postgres",
+      "useExecuteQuery": false,
+      "useQuery": true,
+      "useStoredProcedureGetObject": false,
+      "useStoredProcedureSqlStmt": false,
+      "useStoredProcedureTestConn": false,
+      "user": "postgres.tkllhxnuhkouymrcvvpj"
+    },
+    "connectorClass": "sailpoint.connector.JDBCConnector",
+    "connectorScriptName": "jdbc-angularsc",
+    "correlationConfigDetails": {
+      "attributeAssignments": [
+        {
+          "complex": false,
+          "filterString": null,
+          "ignoreCase": false,
+          "matchMode": null,
+          "operation": "EQ",
+          "property": "identificationNumber",
+          "sequence": 1,
+          "value": "SAM_ID"
+        }
+      ],
+      "id": "2d5cd16eb645422cbbe507f6a76ea446",
+      "name": "418bd371e1354409b2c6fd670e38b12e Account Correlation Config"
+    },
+    "crossTenantConnectorAttributes": {},
+    "deleteThreshold": 10,
+    "description": "LHG",
+    "features": [
+      "DELETE",
+      "DIRECT_PERMISSIONS",
+      "DISCOVER_SCHEMA",
+      "ENABLE",
+      "GROUP_PROVISIONING",
+      "PROVISIONING",
+      "SYNC_PROVISIONING",
+      "UNLOCK"
+    ],
+    "id": "418bd371e1354409b2c6fd670e38b12e",
+    "managementWorkgroup": null,
+    "managerCorrelationMapping": null,
+    "managerCorrelationRule": {
+      "id": "eb914e9ff8d9492d912f9674ea830e05",
+      "name": "Generic Manager Correlation",
+      "type": "RULE"
+    },
+    "name": "LHG",
+    "owner": {
+      "id": "176a5fc85208460383b2253765f4a137",
+      "name": "slpt.services",
+      "type": "IDENTITY"
+    },
+    "passwordPolicies": null,
+    "provisionAsCsv": false,
+    "provisioningPolicies": [],
+    "schemas": [
+      {
+        "attributes": [],
+        "configuration": {},
+        "created": "2026-03-17T11:09:35.066Z",
+        "displayAttribute": "",
+        "features": [
+          "PROVISIONING"
+        ],
+        "hierarchyAttribute": null,
+        "id": "19386e1c3b1d459785daacbb3f54dd55",
+        "identityAttribute": "",
+        "includePermissions": false,
+        "modified": "2026-03-17T11:09:35.101Z",
+        "name": "group",
+        "nativeObjectType": "group"
+      },
+      {
+        "attributes": [
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "BIRTH_DATE",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "BUSINESS_UNIT",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "COMPANY",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "Cost Center",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "DEPARTMENT",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "Description",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "EMAIL",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "Employer Status",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "FIRSTNAME",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "IIQDisabled",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "LASTNAME",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "LCS",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "LINE-MANAGER",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "Note_Intern",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "PERSON_ID",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "POSITION",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "SAM_ID",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "TITLE",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {},
+        "created": "2026-03-17T11:09:35.066Z",
+        "displayAttribute": "EMAIL",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "91533d50c96748ac804d1fe1a245d8a0",
+        "identityAttribute": "SAM_ID",
+        "includePermissions": false,
+        "modified": "2026-03-20T10:49:43.712Z",
+        "name": "account",
+        "nativeObjectType": "account"
+      }
+    ],
+    "type": "JDBC"
+  },
+  "self": {
+    "id": "418bd371e1354409b2c6fd670e38b12e",
+    "name": "LHG",
+    "type": "SOURCE"
+  },
+  "version": 1
+}

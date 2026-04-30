@@ -1,0 +1,38 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accountIdMinWordLength": -1,
+    "accountNameMinWordLength": -1,
+    "defaultPolicy": false,
+    "description": null,
+    "enablePasswdExpiration": false,
+    "firstExpirationReminder": 1,
+    "id": "0c488fcbb6964d008e1363a96a58a860",
+    "maxLength": 0,
+    "maxRepeatedChars": -1,
+    "minAlpha": 1,
+    "minCharacterTypes": -1,
+    "minLength": 8,
+    "minLower": 0,
+    "minNumeric": 1,
+    "minSpecial": 0,
+    "minUpper": 0,
+    "name": "Amadeus LSS Password Policy",
+    "passwordExpiration": 90,
+    "requireStrongAuthOffNetwork": false,
+    "requireStrongAuthUntrustedGeographies": false,
+    "requireStrongAuthn": false,
+    "useAccountAttributes": false,
+    "useDictionary": false,
+    "useIdentityAttributes": false,
+    "validateAgainstAccountId": false,
+    "validateAgainstAccountName": false
+  },
+  "self": {
+    "id": "0c488fcbb6964d008e1363a96a58a860",
+    "name": "Amadeus LSS Password Policy",
+    "type": "PASSWORD_POLICY"
+  },
+  "version": 1
+}

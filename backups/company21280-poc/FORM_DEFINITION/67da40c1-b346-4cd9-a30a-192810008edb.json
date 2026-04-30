@@ -1,0 +1,126 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": "2026-04-16T10:04:39.633839238Z",
+    "description": "",
+    "formConditions": [],
+    "formElements": [
+      {
+        "config": {
+          "alignment": "LEFT",
+          "description": "",
+          "formElements": [
+            {
+              "config": {
+                "dataSource": {
+                  "config": {
+                    "formInputId": "changes",
+                    "sortBy": "ASC"
+                  },
+                  "dataSourceType": "FORM_INPUT"
+                },
+                "forceSelect": false,
+                "helpText": "",
+                "label": "Changes Performed",
+                "maximum": 1,
+                "placeholder": "",
+                "required": false
+              },
+              "elementType": "SELECT",
+              "id": "637092331653",
+              "key": "changesPerformed",
+              "validations": [
+                {
+                  "validationType": "DATA_SOURCE"
+                }
+              ]
+            },
+            {
+              "config": {
+                "default": false,
+                "falseLabel": "No",
+                "helpText": "Slide the toggle field to confirm that you APPROVE the changes.",
+                "label": "Do you Approve?",
+                "trueLabel": "Yes"
+              },
+              "elementType": "TOGGLE",
+              "id": "1696518513995",
+              "key": "approved",
+              "validations": []
+            },
+            {
+              "config": {
+                "description": "<p><strong>Welcome <span style=\"color: #236fa1;\">{{$.form.input.username}}</span> !!</strong></p>\n<p>The user {{$.form.input.modifiedBy}} has performed the changes highlighted below in the application {{$.form.input.sourceName}}.</p>\n<p>Please take some time to review the changes and approve or revert them.</p>",
+                "label": "Description Field",
+                "showLabel": false
+              },
+              "elementType": "DESCRIPTION",
+              "id": "1534164412914",
+              "key": "",
+              "validations": []
+            },
+            {
+              "config": {
+                "description": "<p>Sample Description Text</p>",
+                "label": "Description Field",
+                "showLabel": true
+              },
+              "elementType": "DESCRIPTION",
+              "id": "1395349925248",
+              "key": "",
+              "validations": []
+            }
+          ],
+          "label": "Application Changes Review",
+          "labelStyle": "h2",
+          "showLabel": true
+        },
+        "elementType": "SECTION",
+        "id": "1374042078256",
+        "validations": []
+      }
+    ],
+    "formInput": [
+      {
+        "description": "",
+        "id": "changes",
+        "label": "changes",
+        "type": "ARRAY"
+      },
+      {
+        "description": "",
+        "id": "modifiedBy",
+        "label": "modifiedBy",
+        "type": "STRING"
+      },
+      {
+        "description": "",
+        "id": "sourceName",
+        "label": "sourceName",
+        "type": "STRING"
+      },
+      {
+        "description": "",
+        "id": "username",
+        "label": "username",
+        "type": "STRING"
+      }
+    ],
+    "id": "67da40c1-b346-4cd9-a30a-192810008edb",
+    "modified": "2026-04-16T13:21:54.863134498Z",
+    "name": "Application Change",
+    "owner": {
+      "id": "8939a7e19a4b43eabd3c6c2808c6b9b2",
+      "name": "luca.lori",
+      "type": "IDENTITY"
+    },
+    "usedBy": []
+  },
+  "self": {
+    "id": "67da40c1-b346-4cd9-a30a-192810008edb",
+    "name": "Application Change",
+    "type": "FORM_DEFINITION"
+  },
+  "version": 1
+}

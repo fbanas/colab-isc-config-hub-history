@@ -1,0 +1,34 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "attributes": {
+      "table": {
+        "0": "Permanent contract",
+        "1": "Fixed-term or leaver",
+        "2": "Long-term leave",
+        "3": "Part-time retirement in leisure block phase",
+        "4": "Maternity protection, parental leave",
+        "5": "Suspended",
+        "6": "Pensioner without LH company pension",
+        "7": "Basic military/civilian service",
+        "8": "Pensioner with LH company pension",
+        "9": "ATZ re-entry work block",
+        "B": "Sabbatical",
+        "S": "Score for leavers",
+        "V": "Temporary pensioner",
+        "default": "Permanent contract"
+      }
+    },
+    "id": "3fa7de67-ad76-46b3-8816-ea29f12ddc76",
+    "internal": false,
+    "name": "Employer Status",
+    "type": "lookup"
+  },
+  "self": {
+    "id": "3fa7de67-ad76-46b3-8816-ea29f12ddc76",
+    "name": "Employer Status",
+    "type": "TRANSFORM"
+  },
+  "version": 1
+}

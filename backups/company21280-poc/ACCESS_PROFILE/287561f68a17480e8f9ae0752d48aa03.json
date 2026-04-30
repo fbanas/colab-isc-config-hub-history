@@ -1,0 +1,51 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": null,
+      "denialCommentsRequired": null,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-04-14T16:42:03.836442Z",
+    "description": null,
+    "enabled": false,
+    "entitlements": [
+      {
+        "id": "664abec394513e19ac197f33684a1a58",
+        "name": "SAP_BR_ADMINISTRATOR",
+        "type": "ENTITLEMENT"
+      }
+    ],
+    "id": "287561f68a17480e8f9ae0752d48aa03",
+    "modified": "2026-04-20T10:09:15.149429Z",
+    "name": "S/4 Cloud Admin",
+    "owner": {
+      "id": "cd2f69fdd6d84445a8da8682f3d5576a",
+      "name": "Henry Butler",
+      "type": "IDENTITY"
+    },
+    "provisioningCriteria": null,
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": null
+    },
+    "segmentRefs": [],
+    "segments": [],
+    "source": {
+      "id": "f4da313a581e4cdd912c0ef2e6ea0698",
+      "name": "S/4HANA Public Cloud Change test 2",
+      "type": "SOURCE"
+    }
+  },
+  "self": {
+    "id": "287561f68a17480e8f9ae0752d48aa03",
+    "name": "S/4 Cloud Admin",
+    "type": "ACCESS_PROFILE"
+  },
+  "version": 1
+}

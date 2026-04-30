@@ -1,0 +1,62 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessActionConfiguration": {
+      "removeAllAccessEnabled": false
+    },
+    "accessProfileIds": [],
+    "accessProfileRefs": null,
+    "accountActionRefs": [
+      {
+        "action": "DELETE",
+        "allSources": false,
+        "excludeSourceIdsRefs": [],
+        "sourceIdsRefs": [
+          {
+            "id": "8779703397444628aa740c2d5fdaf0c9",
+            "name": "Active Directory",
+            "type": "SOURCE"
+          }
+        ]
+      }
+    ],
+    "accountActions": [
+      {
+        "action": "DELETE",
+        "allSources": false,
+        "excludeSourceIds": null,
+        "sourceIds": [
+          "8779703397444628aa740c2d5fdaf0c9"
+        ]
+      }
+    ],
+    "created": "2026-03-30T08:00:50.228Z",
+    "description": null,
+    "emailNotificationOption": {
+      "emailAddressList": [],
+      "notifyAllAdmins": false,
+      "notifyManagers": false,
+      "notifySpecificUsers": false
+    },
+    "enabled": true,
+    "id": "25bb0874cc7f4ee698d457e220bc9887",
+    "identityCount": 0,
+    "identityProfileRef": {
+      "id": "fa41f7d647a945449c4b1614d41266f6",
+      "name": "Orange HRM Identity Profile",
+      "type": "IDENTITY_PROFILE"
+    },
+    "identityState": "INACTIVE_LONG_TERM",
+    "modified": "2026-04-08T14:18:14.438Z",
+    "name": "Terminated",
+    "priority": 40,
+    "technicalName": "terminated"
+  },
+  "self": {
+    "id": "25bb0874cc7f4ee698d457e220bc9887",
+    "name": "Terminated",
+    "type": "LIFECYCLE_STATE"
+  },
+  "version": 1
+}

@@ -1,0 +1,93 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": "2024-12-12T19:57:33.863357838Z",
+    "description": "Form to show how-to for common tasks.",
+    "formButtons": [
+      {
+        "config": {
+          "alignment": "center",
+          "label": "Exit",
+          "type": "submit"
+        },
+        "id": "form-btn-submit"
+      }
+    ],
+    "formConditions": [],
+    "formElements": [
+      {
+        "config": {
+          "alignment": "LEFT",
+          "description": "",
+          "formElements": [
+            {
+              "config": {
+                "description": "<p style=\"text-align: center;\"><span style=\"font-size: 24pt;\"><strong>SailPoint User&#39;s Guide</strong></span></p>\n<p>You selected to review common tasks which you might need to perform within SailPoint.</p>\n<p>If you need more information, please review the <a href=\"https://documentation.sailpoint.com/saas/user-help/index.html\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">SailPoint documentation</a>.</p>\n<p>You can also reach out for help via Slack in <strong><span style=\"color: #236fa1;\">#help-identity-security</span></strong>.</p>\n<p> </p>",
+                "label": "Introduction",
+                "showLabel": false
+              },
+              "elementType": "DESCRIPTION",
+              "id": "1533859957687",
+              "key": "",
+              "validations": []
+            }
+          ],
+          "label": "Introduction",
+          "labelStyle": "h5",
+          "showLabel": false
+        },
+        "elementType": "SECTION",
+        "id": "380100709812",
+        "validations": []
+      },
+      {
+        "config": {
+          "alignment": "LEFT",
+          "description": "",
+          "formElements": [
+            {
+              "config": {
+                "description": "<p><span style=\"color: #000000;\">The following links to helpful reference materials are provided for you to use:</span></p>\n<p><span style=\"color: #000000;\"><a href=\"https://sailpoint.highspot.com/items/63f3a8e75ff97f2c86b976a2?lfrm=shp.27\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Submit an Access Request</a></span></p>\n<p><span style=\"color: #000000;\"><a href=\"https://documentation.sailpoint.com/saas/user-help/approvals/reviewing_access.html\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Approve an Access Request</a></span></p>\n<p><span style=\"color: #000000;\"><a href=\"https://sailpoint.highspot.com/items/63f3aadb62fa150ef4808194?lfrm=shp.22\" target=\"_blank\" rel=\"noopener noreferrer nofollow\">Complete a Certification</a></span></p>\n<p> </p>\n<p> </p>\n<p><span style=\"color: #000000;\">If you would like to schedule a 1:1 help session, please either send an email to <span style=\"color: #236fa1;\">identity-security@example.com</span> or post to the <span style=\"color: #236fa1;\">#help-identity-security</span> slack channel.</span></p>",
+                "label": "The links",
+                "showLabel": false
+              },
+              "elementType": "DESCRIPTION",
+              "id": "1315057366428",
+              "key": "",
+              "validations": []
+            }
+          ],
+          "label": "How to Guides",
+          "labelStyle": "h5",
+          "showLabel": false
+        },
+        "elementType": "SECTION",
+        "id": "312435548173",
+        "validations": []
+      }
+    ],
+    "formInput": [],
+    "id": "6d2b351a-514d-4e42-bd4e-0bcc6da0beee",
+    "modified": "2026-03-18T16:17:58.898304146Z",
+    "name": "UG - ISC Users Guide",
+    "owner": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "usedBy": [
+      {
+        "id": "8fdadba4-df07-49c5-90cc-897d68a93b8f",
+        "name": "Users Guide to ISC",
+        "type": "WORKFLOW"
+      }
+    ]
+  },
+  "self": {
+    "id": "6d2b351a-514d-4e42-bd4e-0bcc6da0beee",
+    "name": "UG - ISC Users Guide",
+    "type": "FORM_DEFINITION"
+  },
+  "version": 1
+}

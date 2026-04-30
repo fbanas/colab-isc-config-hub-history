@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "Dear ${data.displayName},<br/><br/>\n#set($_sourceName = $data.sourceName)\n#set($_sourceId = $data.sourceId)\n#set($url = \"${__global.productUrl}/ui/d/dashboard/non-employees/sources/$_sourceId\")\n#set($_date = $__dateTool.toDate(\"yyyy-MM-dd'T'HH:mm:ss.SSSXXX\", $data.dateTime))\n#set($_formattedDate = $__dateTool.format(\"EEEEE, MMMMM dd, YYYY\", $_date))\n#set($_formattedTime = $__dateTool.format(\"h:mm a\", $_date))\n#set($_errorMessage = $data.errorMessage)\nThe non-employee account upload you started for the $_sourceName source on $_formattedDate at $_formattedTime failed.<br><br> The system provided this error message: $_errorMessage<br><br> You can see all accounts on this source in <a href=\"$url\" target=\"_blank\">$__global.productName</a>.<br>\n<br/>Thanks,<br/> The $__global.productName Team<br/>",
+    "created": null,
+    "description": "Sent to the user who initiated the upload request when a non-employee account upload incurs an error.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Non-Employee Account Upload Failed",
+    "key": "non_employee_bulk_import_failed_email_notification",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Non-Employee Account Upload Failed",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "#set($_sourceName = $data.sourceName)\nYour non-employee account upload for the $_sourceName source failed",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Non-Employee Account Upload Failed",
+    "name": "Non-Employee Account Upload Failed",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

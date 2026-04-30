@@ -1,0 +1,30 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "active": false,
+    "created": "2026-03-26T15:27:58.865351Z",
+    "description": "This is the end-user Segment for LHG-Lufthansa for request segmentation",
+    "id": "0cab4e12-1ab9-4d0d-8986-bfbcd29107c2",
+    "modified": "2026-03-26T15:28:49.808427Z",
+    "name": "LHG-Lufthansa",
+    "owner": null,
+    "visibilityCriteria": {
+      "expression": {
+        "attribute": "country",
+        "children": null,
+        "operator": "EQUALS",
+        "value": {
+          "type": "STRING",
+          "value": "[Lufthansa]"
+        }
+      }
+    }
+  },
+  "self": {
+    "id": "0cab4e12-1ab9-4d0d-8986-bfbcd29107c2",
+    "name": "LHG-Lufthansa",
+    "type": "SEGMENT"
+  },
+  "version": 1
+}

@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "\tDear ${user.name},<br/>\t<p>${requesterName}'s request for the role ${requestedRoleName}#if($requesterName != $requestedForIdentityName) for\t${requestedForIdentityName}#end has been <b>approved</b>. ${requestedForIdentityName} has been granted all access\tprofiles contained in that role, including ${accessProfileName}.#if($removeDate) ${requesterName}’s access to\t${accessProfileName} is scheduled to end on ${removeDate}.#end You are receiving this email because you are\tlisted as the owner of ${accessProfileName}</p>\t<p>\t\tThanks,<br/>\t\tThe ${PRODUCT_NAME} Team\t</p>",
+    "created": null,
+    "description": "Notify the owner of an Access Profile that it has been granted as a side effect of a Role request being approved.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Access Profile Owner Approval Notification",
+    "key": "access_profile_owner_approval_notification",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Access Profile Owner Approval Notification",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "A user has been granted ${accessProfileName} via a role request",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Access Profile Owner Approval Notification",
+    "name": "Access Profile Owner Approval Notification",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

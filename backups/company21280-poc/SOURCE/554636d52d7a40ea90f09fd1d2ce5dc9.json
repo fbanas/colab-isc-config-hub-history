@@ -1,0 +1,327 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accountCorrelationRule": null,
+    "beforeProvisioningRule": null,
+    "connectorAttributes": {
+      "cloudCacheUpdate": 1773846794824,
+      "cloudDisplayName": "Identity Security Cloud Governance",
+      "connectionTimeout": "1",
+      "connectionType": "direct",
+      "connectorName": "Identity Security Cloud Governance",
+      "deleteThresholdPercentage": 10,
+      "deltaAggregationEnabled": false,
+      "entitlementDeltaAggregationEnabled": false,
+      "grantType": "client_credentials",
+      "hasFullAggregationCompleted": true,
+      "healthCheckTimeout": 90,
+      "healthy": true,
+      "idnProxyType": "sp-connect",
+      "iscUrl": "https://company21280-poc.api.identitynow-demo.com/",
+      "pageSize": 200,
+      "patId": "89c55633540a4e60ae4328288781080c",
+      "recommendationStatus": "ERROR",
+      "since": "2026-03-18T15:13:14.803Z",
+      "sourceConnected": true,
+      "spConnectorInstanceId": "623d207c-8eda-4c4f-86e5-e01b9e43fe31",
+      "spConnectorSpecId": "05bde7b6-a1ad-4ac7-9dab-4e341ae4a7b7",
+      "spConnectorSupportsCustomSchemas": true,
+      "status": "SOURCE_STATE_HEALTHY",
+      "supportsDeltaAgg": true,
+      "templateApplication": "Identity Security Cloud Governance"
+    },
+    "connectorClass": "",
+    "connectorScriptName": "IdentitySecurityCloudGovernance-saas",
+    "correlationConfigDetails": {
+      "attributeAssignments": [
+        {
+          "complex": false,
+          "filterString": null,
+          "ignoreCase": true,
+          "matchMode": null,
+          "operation": "EQ",
+          "property": "email",
+          "sequence": 2,
+          "value": "email"
+        },
+        {
+          "complex": false,
+          "filterString": null,
+          "ignoreCase": true,
+          "matchMode": null,
+          "operation": "EQ",
+          "property": "uid",
+          "sequence": 1,
+          "value": "uid"
+        }
+      ],
+      "id": "4db02c62d9834301b78caad0e43c32aa",
+      "name": "554636d52d7a40ea90f09fd1d2ce5dc9 Account Correlation Config"
+    },
+    "crossTenantConnectorAttributes": {},
+    "deleteThreshold": 10,
+    "description": "Used to read out internal System User Level Entitlement to include them in RBAC",
+    "features": [
+      "ENABLE",
+      "PASSWORD",
+      "PROVISIONING"
+    ],
+    "id": "554636d52d7a40ea90f09fd1d2ce5dc9",
+    "managementWorkgroup": null,
+    "managerCorrelationMapping": null,
+    "managerCorrelationRule": null,
+    "name": "Identity Security Cloud Governance",
+    "owner": {
+      "id": "176a5fc85208460383b2253765f4a137",
+      "name": "slpt.services",
+      "type": "IDENTITY"
+    },
+    "passwordPolicies": null,
+    "provisionAsCsv": false,
+    "provisioningPolicies": [
+      {
+        "description": null,
+        "fields": [
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": true,
+            "name": "id",
+            "transform": {
+              "attributes": {
+                "name": "uid"
+              },
+              "type": "identityAttribute"
+            },
+            "type": "string"
+          }
+        ],
+        "name": "Account",
+        "usageType": "CREATE"
+      }
+    ],
+    "schemas": [
+      {
+        "attributes": [
+          {
+            "description": "Capablites  Associated With Account ",
+            "isEntitlement": true,
+            "isGroup": true,
+            "isMulti": true,
+            "name": "UserLevels",
+            "nativeName": null,
+            "schema": {
+              "id": "ed8b35492bff402b8d9de9b660b91639",
+              "name": "UserLevels",
+              "type": "CONNECTOR_SCHEMA"
+            },
+            "type": "STRING"
+          },
+          {
+            "description": "Governance Group Assocaited With  Account ",
+            "isEntitlement": true,
+            "isGroup": true,
+            "isMulti": true,
+            "name": "Governance Groups",
+            "nativeName": null,
+            "schema": {
+              "id": "ad5c9478e8bf45cda4ccb2b838ac4ba3",
+              "name": "Governance Groups",
+              "type": "CONNECTOR_SCHEMA"
+            },
+            "type": "STRING"
+          },
+          {
+            "description": "Identifies Whether Account Is Manager Or Not ",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "isManager",
+            "nativeName": null,
+            "schema": null,
+            "type": "BOOLEAN"
+          },
+          {
+            "description": "The Identity Security Cloud Display Name",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "The Identity Security Cloud User Display Name",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "displayName",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "The Identity Security Cloud User First Name",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "firstName",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "The Identity Security Cloud User ID",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "id",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "The Identity Security Cloud User Last Name",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "lastName",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "The Identity Security Cloud User Name",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "uid",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "The Identity Security Cloud User Work Email",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "email",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {},
+        "created": "2026-03-18T13:22:46.655Z",
+        "displayAttribute": "name",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "127148b6411f474992714c73db566014",
+        "identityAttribute": "id",
+        "includePermissions": false,
+        "modified": "2026-03-18T13:22:46.655Z",
+        "name": "account",
+        "nativeObjectType": "User"
+      },
+      {
+        "attributes": [
+          {
+            "description": "Governance Group Description",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "description",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Governance Group Id",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "id",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Governance Group Name ",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {},
+        "created": "2026-03-18T13:22:46.655Z",
+        "displayAttribute": "name",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "ad5c9478e8bf45cda4ccb2b838ac4ba3",
+        "identityAttribute": "id",
+        "includePermissions": false,
+        "modified": "2026-03-18T13:22:46.655Z",
+        "name": "Governance Groups",
+        "nativeObjectType": "Group"
+      },
+      {
+        "attributes": [
+          {
+            "description": "User Level Id",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "id",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "User Level Name ",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "User Levels Description",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "description",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {},
+        "created": "2026-03-18T13:22:46.655Z",
+        "displayAttribute": "name",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "ed8b35492bff402b8d9de9b660b91639",
+        "identityAttribute": "id",
+        "includePermissions": false,
+        "modified": "2026-03-18T13:22:46.655Z",
+        "name": "UserLevels",
+        "nativeObjectType": "Group"
+      }
+    ],
+    "type": "05bde7b6-a1ad-4ac7-9dab-4e341ae4a7b7"
+  },
+  "self": {
+    "id": "554636d52d7a40ea90f09fd1d2ce5dc9",
+    "name": "Identity Security Cloud Governance",
+    "type": "SOURCE"
+  },
+  "version": 1
+}

@@ -1,0 +1,30 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "active": false,
+    "created": "2026-03-19T14:00:23.575873Z",
+    "description": "This is the end-user Segment for LH2-Lufthansa 2 for request segmentation",
+    "id": "baf24241-1df7-47e0-8651-384fac91dcf6",
+    "modified": "2026-03-19T14:00:38.127748Z",
+    "name": "LH2-Lufthansa 2",
+    "owner": null,
+    "visibilityCriteria": {
+      "expression": {
+        "attribute": "company",
+        "children": null,
+        "operator": "EQUALS",
+        "value": {
+          "type": "STRING",
+          "value": "Lufthansa 2"
+        }
+      }
+    }
+  },
+  "self": {
+    "id": "baf24241-1df7-47e0-8651-384fac91dcf6",
+    "name": "LH2-Lufthansa 2",
+    "type": "SEGMENT"
+  },
+  "version": 1
+}

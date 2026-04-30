@@ -1,0 +1,67 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessProfiles": [],
+    "accessRequestConfig": {
+      "approvalSchemes": [
+        {
+          "approverId": null,
+          "approverType": "OWNER"
+        }
+      ],
+      "commentsRequired": false,
+      "denialCommentsRequired": false,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-03-18T13:31:37.739715Z",
+    "description": "Role to APP-202 (LH2-Role-8)",
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": true,
+    "entitlements": [
+      {
+        "id": "e29b0a4c-5a82-349f-af19-b3efe5fd828f",
+        "name": "APP-202",
+        "sourceId": "00c23142-0974-4506-bab1-e856117f40f7",
+        "sourceName": "Microsoft Entra sp-demo262 SaaS",
+        "type": "ENTITLEMENT"
+      }
+    ],
+    "id": "99a2a63534474c2185cff2d76ba78114",
+    "legacyMembershipInfo": null,
+    "membership": null,
+    "modified": "2026-04-01T13:57:50.559561Z",
+    "name": "LH2_APP_Health-Monitor",
+    "owner": {
+      "id": "8452228aa5ef478bbf3c702bdea86cf8",
+      "name": "Hrnim Hussen van",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": true,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [
+      {
+        "id": "baf24241-1df7-47e0-8651-384fac91dcf6",
+        "name": "LH2-Lufthansa 2",
+        "type": "SEGMENT"
+      }
+    ],
+    "segments": [
+      "baf24241-1df7-47e0-8651-384fac91dcf6"
+    ]
+  },
+  "self": {
+    "id": "99a2a63534474c2185cff2d76ba78114",
+    "name": "LH2_APP_Health-Monitor",
+    "type": "ROLE"
+  },
+  "version": 1
+}

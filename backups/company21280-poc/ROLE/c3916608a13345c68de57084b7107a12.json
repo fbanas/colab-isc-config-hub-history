@@ -1,0 +1,83 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessProfiles": [
+      {
+        "id": "3f97dcb42d8743d7a42088a8b8912179",
+        "name": "Identity Fusion Reviewer",
+        "type": "ACCESS_PROFILE"
+      }
+    ],
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": null,
+      "denialCommentsRequired": null,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-03-24T14:25:28.612913Z",
+    "description": null,
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": true,
+    "entitlements": [
+      {
+        "id": "729c91a2-41b2-3440-8c44-bf2ee2ea1f64",
+        "name": "Select Authoritative Account",
+        "sourceId": "a1a85705-e70a-42bc-ace4-e4d9a55debd9",
+        "sourceName": "IdentityNow",
+        "type": "ENTITLEMENT"
+      }
+    ],
+    "id": "c3916608a13345c68de57084b7107a12",
+    "legacyMembershipInfo": null,
+    "membership": {
+      "criteria": null,
+      "identities": [
+        {
+          "aliasName": "fernando.delosrios",
+          "id": "30507568a2d54f7484fe0f3edba79692",
+          "name": "fernando.delosrios",
+          "type": "IDENTITY"
+        },
+        {
+          "aliasName": "florian.banas",
+          "id": "90eb8204ac594f48ac598a55e0e73613",
+          "name": "florian.banas",
+          "type": "IDENTITY"
+        },
+        {
+          "aliasName": "jonathan.mueller",
+          "id": "fcc9db01f32249889e627da51f5f710a",
+          "name": "jonathan.mueller",
+          "type": "IDENTITY"
+        }
+      ],
+      "type": "IDENTITY_LIST"
+    },
+    "modified": "2026-03-24T14:41:39.954242Z",
+    "name": "ISC Administrators",
+    "owner": {
+      "id": "176a5fc85208460383b2253765f4a137",
+      "name": "SailPoint Services",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [],
+    "segments": []
+  },
+  "self": {
+    "id": "c3916608a13345c68de57084b7107a12",
+    "name": "ISC Administrators",
+    "type": "ROLE"
+  },
+  "version": 1
+}

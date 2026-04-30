@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "Dear ${user.name},</br><p>Your ${PRODUCT_NAME} user name is: <strong>${user.uid}</strong></p><p>If you did not request this information, please contact your administrator immediately.</p><p>Please sign in at: ${identityNowUrl}</p><p>Thanks,<br/> The ${PRODUCT_NAME} Team </p>",
+    "created": null,
+    "description": "Sent when a user selects Forgot User Name on the Sign In page and then supplies an email address that is valid for their account.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Forgot User Name",
+    "key": "cloud_user_forgot_user_name",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Forgot User Name",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "User name for ${PRODUCT_NAME}",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Forgot User Name",
+    "name": "Forgot User Name",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

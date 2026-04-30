@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "\tDear recipient,    <p>After an identity refresh at ${timestamp}, ${errorPercentage}% of identities in your organization are in an Error state.</p>\tThank you,<br/>\tThe ${PRODUCT_NAME} Team\t<p>You are receiving this email because your email address was configured to receive ${PRODUCT_NAME} notification emails.</p>",
+    "created": null,
+    "description": "Sent when identity processing causes 5% or more of identities to be in an error state. This is a system notification email.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Identity Errors",
+    "key": "cloud_system_notification_identities",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Identity Errors",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "${PRODUCT_NAME} Notification: Identities are in an Error State after a Refresh",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Identity Errors",
+    "name": "Identity Errors",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

@@ -1,0 +1,31 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "attributes": {
+      "ignoreErrors": true,
+      "values": [
+        {
+          "attributes": {
+            "id": "Attribute Value",
+            "input": "email"
+          },
+          "type": "reference"
+        },
+        {
+          "type": "trim"
+        }
+      ]
+    },
+    "id": "d9c5b508-ed4c-4647-aa3d-06cb80190715",
+    "internal": false,
+    "name": "Email - Override",
+    "type": "firstValid"
+  },
+  "self": {
+    "id": "d9c5b508-ed4c-4647-aa3d-06cb80190715",
+    "name": "Email - Override",
+    "type": "TRANSFORM"
+  },
+  "version": 1
+}

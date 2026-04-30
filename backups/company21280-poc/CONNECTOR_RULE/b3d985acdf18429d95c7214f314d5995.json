@@ -1,0 +1,64 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "attributes": {
+      "sourceVersion": "1.0"
+    },
+    "created": "2026-04-14T10:26:29.092Z",
+    "description": "This JDBC rule can process account creation requests, deletion requests, and modification requests that pertain to the role attribute. It logs debug messages if other account request types are submitted.",
+    "id": "b3d985acdf18429d95c7214f314d5995",
+    "modified": "2026-04-14T13:55:32.373Z",
+    "name": "JDBCProvision - Amadeus",
+    "signature": {
+      "input": [
+        {
+          "description": "A connection object to connect to database.",
+          "name": "connection",
+          "type": null
+        },
+        {
+          "description": "A sailpoint.api.SailPointContext object that can be used to query the database if necessary.\n  ",
+          "name": "context",
+          "type": null
+        },
+        {
+          "description": "The ProvisioningPlan created against the JDBC application.",
+          "name": "plan",
+          "type": null
+        },
+        {
+          "description": "The Schema currently in use.",
+          "name": "schema",
+          "type": null
+        },
+        {
+          "description": "The application whose data file is being processed.",
+          "name": "application",
+          "type": null
+        },
+        {
+          "description": "The log object associated with the SailPointContext.",
+          "name": "log",
+          "type": null
+        }
+      ],
+      "output": {
+        "description": "A Provisioning Result object is desirable to return the status.IT can be a new object or part of  Provisioning Plan",
+        "name": "result",
+        "type": null
+      }
+    },
+    "sourceCode": {
+      "script": "import java.sql.PreparedStatement;\nimport java.sql.SQLException;\nimport java.sql.Timestamp;\nimport java.lang.reflect.Method;\nimport java.nio.charset.StandardCharsets;\nimport java.util.Base64;\nimport java.util.List;\nimport sailpoint.object.ProvisioningPlan;\nimport sailpoint.object.ProvisioningPlan.AccountRequest;\nimport sailpoint.object.ProvisioningPlan.AttributeRequest;\nimport sailpoint.object.ProvisioningResult;\n\nProvisioningResult result = new ProvisioningResult();\nboolean hasFailures = false;\n\nString serializeToXml(Object value) {\n  if (value == null) {\n    return null;\n  }\n  try {\n    String methodName = \"to\" + \"Xml\";\n    Method serializer = value.getClass().getMethod(methodName);\n    Object output = serializer.invoke(value);\n    if (output != null) {\n      return String.valueOf(output);\n    }\n  } catch (Exception ignored) {\n    // Fallback is handled by caller.\n  }\n  return null;\n}\n\nString normalizeDetailsForOperations(String payload) {\n  if (payload == null) {\n    return \"\";\n  }\n  String normalized = payload.replace(\"\\r\\n\", \"\\n\").replace(\"\\r\", \"\\n\");\n  byte[] bytes = normalized.getBytes(StandardCharsets.UTF_8);\n  return \"base64:\" + Base64.getEncoder().encodeToString(bytes);\n}\n\nvoid writeOperationRecord(String operationName, String payload) throws SQLException {\n  PreparedStatement localStatement = null;\n  try {\n    localStatement = connection.prepareStatement(\n      \"INSERT INTO Operations (OPERATION, DATE, DETAILS) VALUES (?, ?, ?)\"\n    );\n    localStatement.setString(1, operationName);\n    localStatement.setTimestamp(2, new Timestamp(System.currentTimeMillis()));\n    localStatement.setString(3, normalizeDetailsForOperations(payload));\n    localStatement.executeUpdate();\n  } finally {\n    if (localStatement != null) {\n      localStatement.close();\n    }\n  }\n}\n\nboolean shouldSplitAttribute(AttributeRequest attributeRequest) {\n  if (attributeRequest == null || attributeRequest.getName() == null) {\n    return false;\n  }\n  String attributeName = attributeRequest.getName().trim();\n  return \"ROLES\".equalsIgnoreCase(attributeName) || \"LOGIN_AREAS\".equalsIgnoreCase(attributeName);\n}\n\nString safeString(Object value) {\n  return value == null ? \"\" : String.valueOf(value);\n}\n\nString escapeXmlText(String value) {\n  if (value == null) {\n    return \"\";\n  }\n  String escaped = value;\n  escaped = escaped.replace(\"&\", \"&amp;\");\n  escaped = escaped.replace(\"<\", \"&lt;\");\n  escaped = escaped.replace(\">\", \"&gt;\");\n  escaped = escaped.replace(\"\\\"\", \"&quot;\");\n  escaped = escaped.replace(\"'\", \"&apos;\");\n  return escaped;\n}\n\nString buildConsolidatedAccountDetails(AccountRequest account, ProvisioningPlan plan) {\n  if (account == null) {\n    String fallbackPlan = serializeToXml(plan);\n    return fallbackPlan == null ? \"\" : fallbackPlan;\n  }\n\n  StringBuilder details = new StringBuilder();\n  details.append(\"<AccountRequest application='\").append(escapeXmlText(safeString(account.getApplicationName())));\n  details.append(\"' op='\").append(escapeXmlText(safeString(account.getOperation())));\n  details.append(\"' nativeIdentity='\").append(escapeXmlText(safeString(account.getNativeIdentity())));\n  details.append(\"'>\");\n\n  List attributeRequests = account.getAttributeRequests();\n  if (attributeRequests != null && !attributeRequests.isEmpty()) {\n    for (Object attributeObj : attributeRequests) {\n      AttributeRequest attributeRequest = (AttributeRequest) attributeObj;\n      if (shouldSplitAttribute(attributeRequest)) {\n        continue;\n      }\n      details.append(\"\\n  <AttributeRequest name='\")\n        .append(escapeXmlText(safeString(attributeRequest == null ? null : attributeRequest.getName())))\n        .append(\"' op='\")\n        .append(escapeXmlText(safeString(attributeRequest == null ? null : attributeRequest.getOperation())))\n        .append(\"' value='\")\n        .append(escapeXmlText(safeString(attributeRequest == null ? null : attributeRequest.getValue())))\n        .append(\"'/>\");\n    }\n  }\n  details.append(\"\\n</AccountRequest>\");\n  return details.toString();\n}\n\nString buildSplitAttributeDetails(AccountRequest account, AttributeRequest attributeRequest, ProvisioningPlan plan) {\n  String xmlPayload = serializeToXml(attributeRequest);\n  if (xmlPayload == null || xmlPayload.trim().length() == 0) {\n    StringBuilder fallback = new StringBuilder();\n    fallback.append(\"<AttributeRequest parentOp='\").append(escapeXmlText(safeString(account == null ? null : account.getOperation())));\n    fallback.append(\"' parentNativeIdentity='\").append(escapeXmlText(safeString(account == null ? null : account.getNativeIdentity())));\n    fallback.append(\"' name='\").append(escapeXmlText(safeString(attributeRequest == null ? null : attributeRequest.getName())));\n    fallback.append(\"' op='\").append(escapeXmlText(safeString(attributeRequest == null ? null : attributeRequest.getOperation())));\n    fallback.append(\"' value='\").append(escapeXmlText(safeString(attributeRequest == null ? null : attributeRequest.getValue())));\n    fallback.append(\"'/>\");\n    xmlPayload = fallback.toString();\n  }\n  return xmlPayload == null ? \"\" : xmlPayload;\n}\n\nif (plan == null) {\n  result.setStatus(ProvisioningResult.STATUS_COMMITTED);\n  return result;\n}\n\nList accountRequests = plan.getAccountRequests();\nif (accountRequests == null || accountRequests.isEmpty()) {\n  result.setStatus(ProvisioningResult.STATUS_COMMITTED);\n  return result;\n}\n\nfor (Object accountObj : accountRequests) {\n  AccountRequest account = (AccountRequest) accountObj;\n  try {\n    String operation = \"AccountRequest.Unknown\";\n    if (account != null && account.getOperation() != null) {\n      operation = \"AccountRequest.\" + String.valueOf(account.getOperation());\n    }\n\n    String accountDetails = buildConsolidatedAccountDetails(account, plan);\n    if (accountDetails == null) {\n      accountDetails = \"\";\n    }\n    writeOperationRecord(operation, accountDetails);\n\n    List attributeRequests = account == null ? null : account.getAttributeRequests();\n    if (attributeRequests != null && !attributeRequests.isEmpty()) {\n      for (Object attributeObj : attributeRequests) {\n        AttributeRequest attributeRequest = (AttributeRequest) attributeObj;\n        if (!shouldSplitAttribute(attributeRequest)) {\n          continue;\n        }\n\n        String attributeOperation = \"AttributeRequest.Unknown\";\n        if (attributeRequest != null && attributeRequest.getOperation() != null) {\n          attributeOperation = \"AttributeRequest.\" + String.valueOf(attributeRequest.getOperation());\n        }\n\n        String attributeDetails = buildSplitAttributeDetails(account, attributeRequest, plan);\n\n        writeOperationRecord(attributeOperation, attributeDetails);\n      }\n    }\n  } catch (SQLException e) {\n    hasFailures = true;\n    result.addError(e);\n  } catch (Exception e) {\n    hasFailures = true;\n    result.addError(e);\n  }\n}\n\nif (hasFailures) {\n  result.setStatus(ProvisioningResult.STATUS_FAILED);\n} else {\n  result.setStatus(ProvisioningResult.STATUS_COMMITTED);\n}\n\nreturn result;",
+      "version": "1.0"
+    },
+    "type": "JDBCProvision"
+  },
+  "self": {
+    "id": "b3d985acdf18429d95c7214f314d5995",
+    "name": "JDBCProvision - Amadeus",
+    "type": "CONNECTOR_RULE"
+  },
+  "version": 1
+}

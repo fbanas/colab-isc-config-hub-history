@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "<font face=\"Calibri\" size=\"2\">Hello,<br /><br />The user, <a href=\"mailto:$reportShare.senderEmail\">$reportShare.senderName</a>, shared the following report(s):<br />$reportShare.reportList<br /><br />$reportShare.personalMessage<br /><br />* This email is valid only for you. Please do not forward this email.</font><br /><br /><font face=\"Calibri\" size=\"1\" color=\"gray\">This is an automatic message sent to you by <strong>Data Access Security</strong> - Please do not reply.</font>",
+    "created": null,
+    "description": "Notify user that a data access security report has been shared with them.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Data Access Security Report Shared",
+    "key": "das_report_shared",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Data Access Security Report Shared",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "$reportShare.subject",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Data Access Security Report Shared",
+    "name": "Data Access Security Report Shared",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

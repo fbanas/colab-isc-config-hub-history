@@ -1,0 +1,83 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessProfiles": [],
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": false,
+      "denialCommentsRequired": false,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-03-18T13:31:36.242622Z",
+    "description": "Role for all employees from the department Information Technology (LH2-Role-6)",
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": true,
+    "entitlements": [],
+    "id": "ff76c5ca7aee453993475d8638bad451",
+    "legacyMembershipInfo": null,
+    "membership": {
+      "criteria": {
+        "children": [
+          {
+            "children": null,
+            "key": {
+              "property": "attribute.description",
+              "sourceId": null,
+              "type": "IDENTITY"
+            },
+            "operation": "EQUALS",
+            "stringValue": null,
+            "values": [
+              "Kontext1",
+              "Kontext2",
+              "Kontext3",
+              "Kontext4",
+              "Kontext5",
+              "Kontext6"
+            ]
+          }
+        ],
+        "key": null,
+        "operation": "OR",
+        "stringValue": null,
+        "values": null
+      },
+      "identities": null,
+      "type": "STANDARD"
+    },
+    "modified": "2026-04-10T15:16:43.644828Z",
+    "name": "LH2_IT",
+    "owner": {
+      "id": "8452228aa5ef478bbf3c702bdea86cf8",
+      "name": "Hrnim Hussen van",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [
+      {
+        "id": "baf24241-1df7-47e0-8651-384fac91dcf6",
+        "name": "LH2-Lufthansa 2",
+        "type": "SEGMENT"
+      }
+    ],
+    "segments": [
+      "baf24241-1df7-47e0-8651-384fac91dcf6"
+    ]
+  },
+  "self": {
+    "id": "ff76c5ca7aee453993475d8638bad451",
+    "name": "LH2_IT",
+    "type": "ROLE"
+  },
+  "version": 1
+}

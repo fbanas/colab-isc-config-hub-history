@@ -1,0 +1,42 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "attributes": {
+      "ignoreErrors": true,
+      "values": [
+        "-",
+        {
+          "attributes": {
+            "values": [
+              " ",
+              {
+                "attributes": {
+                  "name": "firstname"
+                },
+                "type": "identityAttribute"
+              },
+              {
+                "attributes": {
+                  "name": "lastname"
+                },
+                "type": "identityAttribute"
+              }
+            ]
+          },
+          "type": "concat"
+        }
+      ]
+    },
+    "id": "4a4e038a-6795-4fd3-9414-028ecd3fbef3",
+    "internal": false,
+    "name": "Display Name",
+    "type": "firstValid"
+  },
+  "self": {
+    "id": "4a4e038a-6795-4fd3-9414-028ecd3fbef3",
+    "name": "Display Name",
+    "type": "TRANSFORM"
+  },
+  "version": 1
+}

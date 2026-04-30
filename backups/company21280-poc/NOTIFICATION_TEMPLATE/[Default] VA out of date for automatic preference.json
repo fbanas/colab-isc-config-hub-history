@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "<p>Dear recipient,</p><p>Virtual appliance <b>$clusterName</b> has one or more clients that are out of date.</p><p>The following clients are running older versions of the <b>$processName</b> process:</p><ul>$clientListHtml</ul><p>The latest available <b>$processName</b> version is: <b>$latestCcgVersion</b>.</p><p>Failure to update these clients may result in limited support, vulnerabilities, and lost functionality.</p><p>A reboot of the VA may be required. Please refer to the <a href=\"https://community.sailpoint.com/t5/IdentityNow-Connectors/Virtual-Appliance-Troubleshooting-Guide/ta-p/78735\" target=\"_blank\">VA Troubleshooting Guide</a> for more details.</p><p>Thanks,<br/>The $PRODUCT_NAME Team</p>",
+    "created": null,
+    "description": "Notifies when VA's CCG version is out of date.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] VA out of date for automatic preference",
+    "key": "va_out_of_date_auto_pref",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "VA out of date for automatic preference",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "$PRODUCT_NAME Notification: Virtual appliance $clusterName is out of date",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] VA out of date for automatic preference",
+    "name": "VA out of date for automatic preference",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

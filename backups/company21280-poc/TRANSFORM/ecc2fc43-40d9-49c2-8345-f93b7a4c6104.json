@@ -1,0 +1,186 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "attributes": {
+      "endDate": {
+        "attributes": {
+          "attributes": {
+            "input": {
+              "attributes": {
+                "attributeName": "ftoend",
+                "sourceName": "HR - OrangeHRM"
+              },
+              "type": "accountAttribute"
+            }
+          },
+          "id": "Parse Date"
+        },
+        "type": "reference"
+      },
+      "expression": "$endDate eq null",
+      "negativeCondition": {
+        "attributes": {
+          "ignoreErrors": true,
+          "values": [
+            "-",
+            {
+              "attributes": {
+                "firstDate": {
+                  "attributes": {
+                    "ignoreErrors": true,
+                    "values": [
+                      {
+                        "attributes": {
+                          "attributes": {
+                            "input": {
+                              "attributes": {
+                                "attributeName": "ftoend",
+                                "sourceName": "HR - OrangeHRM"
+                              },
+                              "type": "accountAttribute"
+                            }
+                          },
+                          "id": "Parse Date"
+                        },
+                        "type": "reference"
+                      },
+                      {
+                        "attributes": {
+                          "expression": "now+10d"
+                        },
+                        "type": "dateMath"
+                      }
+                    ]
+                  },
+                  "type": "firstValid"
+                },
+                "negativeCondition": {
+                  "attributes": {
+                    "firstDate": {
+                      "attributes": {
+                        "attributes": {
+                          "input": {
+                            "attributes": {
+                              "attributeName": "ftoend",
+                              "sourceName": "HR - OrangeHRM"
+                            },
+                            "type": "accountAttribute"
+                          }
+                        },
+                        "id": "Parse Date"
+                      },
+                      "type": "reference"
+                    },
+                    "negativeCondition": {
+                      "attributes": {
+                        "firstDate": {
+                          "attributes": {
+                            "attributes": {
+                              "input": {
+                                "attributes": {
+                                  "attributeName": "ftoend",
+                                  "sourceName": "HR - OrangeHRM"
+                                },
+                                "type": "accountAttribute"
+                              }
+                            },
+                            "id": "Parse Date"
+                          },
+                          "type": "reference"
+                        },
+                        "negativeCondition": "terminated",
+                        "operator": "gt",
+                        "positiveCondition": "archived",
+                        "secondDate": {
+                          "attributes": {
+                            "expression": "now-90d"
+                          },
+                          "type": "dateMath"
+                        }
+                      },
+                      "type": "dateCompare"
+                    },
+                    "operator": "gt",
+                    "positiveCondition": "inactive",
+                    "secondDate": {
+                      "attributes": {
+                        "expression": "now-30d"
+                      },
+                      "type": "dateMath"
+                    }
+                  },
+                  "type": "dateCompare"
+                },
+                "operator": "gt",
+                "positiveCondition": {
+                  "attributes": {
+                    "firstDate": {
+                      "attributes": {
+                        "ignoreErrors": true,
+                        "values": [
+                          {
+                            "attributes": {
+                              "attributes": {
+                                "input": {
+                                  "attributes": {
+                                    "attributeName": "ftoSstart",
+                                    "sourceName": "HR - OrangeHRM"
+                                  },
+                                  "type": "accountAttribute"
+                                }
+                              },
+                              "id": "Parse Date"
+                            },
+                            "type": "reference"
+                          },
+                          {
+                            "attributes": {
+                              "expression": "now-10d"
+                            },
+                            "type": "dateMath"
+                          }
+                        ]
+                      },
+                      "type": "firstValid"
+                    },
+                    "negativeCondition": "prehire",
+                    "operator": "lt",
+                    "positiveCondition": "active",
+                    "secondDate": "now"
+                  },
+                  "type": "dateCompare"
+                },
+                "secondDate": "now"
+              },
+              "type": "dateCompare"
+            }
+          ]
+        },
+        "type": "firstValid"
+      },
+      "positiveCondition": {
+        "attributes": {
+          "input": {
+            "attributes": {
+              "attributeName": "empstatus",
+              "sourceName": "HR - OrangeHRM"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        "type": "lower"
+      }
+    },
+    "id": "ecc2fc43-40d9-49c2-8345-f93b7a4c6104",
+    "internal": false,
+    "name": "OHRM - LCS",
+    "type": "conditional"
+  },
+  "self": {
+    "id": "ecc2fc43-40d9-49c2-8345-f93b7a4c6104",
+    "name": "OHRM - LCS",
+    "type": "TRANSFORM"
+  },
+  "version": 1
+}

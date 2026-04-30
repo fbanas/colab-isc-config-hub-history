@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "Dear $__recipient.name,<br/><br/>\n<p>Your Just-In-Time (JIT) activation will expire in <strong>5 minutes</strong>.</p>\n#if($applicationName)<p>Application: $applicationName</p>#end\n#if($activationUrl)<p>You can extend or manage your access in $__global.productName <a href=\"$activationUrl\" target=\"_blank\">here</a>.</p>#end\n<br/>Thanks,<br/>The $__global.productName Team<br/>",
+    "created": null,
+    "description": "Notifies a user that their Just-In-Time activation expires in 5 minutes.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] JIT Activation - 5 Minute Reminder",
+    "key": "jit_activation_five_min",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "JIT Activation - 5 Minute Reminder",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "Reminder: Your JIT activation expires in 5 minutes",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] JIT Activation - 5 Minute Reminder",
+    "name": "JIT Activation - 5 Minute Reminder",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

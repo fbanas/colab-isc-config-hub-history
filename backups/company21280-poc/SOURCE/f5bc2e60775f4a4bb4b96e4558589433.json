@@ -1,0 +1,198 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accountCorrelationRule": null,
+    "beforeProvisioningRule": null,
+    "connectorAttributes": {
+      "cloudAuthoritativeSourcePrecedence": 60,
+      "cloudDisplayName": "Lufthansa - POC User",
+      "cloudIdentityProfileName": "Lufthansa - POC User",
+      "connectionType": "file",
+      "connectorName": "Non-Employee",
+      "deleteThresholdPercentage": 10,
+      "healthy": true,
+      "since": "2026-03-27T10:35:21.624Z",
+      "status": "SOURCE_STATE_HEALTHY",
+      "templateApplication": "Non-Employee Source Template"
+    },
+    "connectorClass": "com.sailpoint.connector.NesrConnector",
+    "connectorScriptName": "non-employee",
+    "correlationConfigDetails": {
+      "attributeAssignments": [
+        {
+          "complex": false,
+          "filterString": null,
+          "ignoreCase": false,
+          "matchMode": null,
+          "operation": "EQ",
+          "property": "email",
+          "sequence": 2,
+          "value": "email"
+        },
+        {
+          "complex": false,
+          "filterString": null,
+          "ignoreCase": false,
+          "matchMode": null,
+          "operation": "EQ",
+          "property": "name",
+          "sequence": 1,
+          "value": "accountName"
+        }
+      ],
+      "id": "5c1799728e774b25ae519824d8af8baf",
+      "name": "f5bc2e60775f4a4bb4b96e4558589433 Account Correlation Config"
+    },
+    "crossTenantConnectorAttributes": {},
+    "deleteThreshold": 10,
+    "description": "Lufthansa - POC User",
+    "features": [
+      "NO_RANDOM_ACCESS"
+    ],
+    "id": "f5bc2e60775f4a4bb4b96e4558589433",
+    "managementWorkgroup": null,
+    "managerCorrelationMapping": {
+      "accountAttributeName": "manager",
+      "identityAttributeName": "name"
+    },
+    "managerCorrelationRule": null,
+    "name": "Lufthansa - POC User",
+    "owner": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "passwordPolicies": null,
+    "provisionAsCsv": false,
+    "provisioningPolicies": [],
+    "schemas": [
+      {
+        "attributes": [],
+        "configuration": {},
+        "created": "2026-03-27T09:56:42.613Z",
+        "displayAttribute": "",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "4c605e1976854a799a8f68fe7b6a185a",
+        "identityAttribute": "",
+        "includePermissions": false,
+        "modified": "2026-03-27T09:56:42.613Z",
+        "name": "group",
+        "nativeObjectType": "group"
+      },
+      {
+        "attributes": [
+          {
+            "description": "Account Name",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "accountName",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Email",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "email",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "End Date",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "endDate",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "First Name",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "firstName",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Last Name",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "lastName",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Manager's name",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "manager",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Phone",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "phone",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Start Date",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "startDate",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "id",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "id",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {},
+        "created": "2026-03-27T09:56:42.613Z",
+        "displayAttribute": "accountName",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "74839353af5d418e988a0b392c4ee600",
+        "identityAttribute": "id",
+        "includePermissions": false,
+        "modified": "2026-03-27T09:56:42.613Z",
+        "name": "account",
+        "nativeObjectType": "user"
+      }
+    ],
+    "type": "Non-Employee"
+  },
+  "self": {
+    "id": "f5bc2e60775f4a4bb4b96e4558589433",
+    "name": "Lufthansa - POC User",
+    "type": "SOURCE"
+  },
+  "version": 1
+}

@@ -1,0 +1,96 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": "2026-03-31T07:11:16.6984027Z",
+    "creator": {
+      "id": "30507568a2d54f7484fe0f3edba79692",
+      "name": "fernando.delosrios",
+      "type": "IDENTITY"
+    },
+    "definition": {
+      "start": "Get Identity",
+      "steps": {
+        "Create Certification Campaign": {
+          "actionId": "sp:create-campaign",
+          "attributes": {
+            "activateUponCreation": true,
+            "description": "{{$.getIdentity.attributes.displayName}} has recently changed job roles. Please review current access to ensure they are appropriate.",
+            "duration": "1w",
+            "emailNotificationEnabled": true,
+            "name": "Mover micro-certification for {{$.getIdentity.attributes.displayName}}",
+            "recommendationsEnabled": true,
+            "reviewerCertificationType": "IDENTITY",
+            "reviewerId.$": "$.getIdentity.managerRef.id",
+            "reviewerIdentitiesToCertify.$": "$.getIdentity.id",
+            "type": "REVIEWER_IDENTITY",
+            "undecidedAccess": false
+          },
+          "description": null,
+          "nextStep": "Send Email",
+          "type": "action",
+          "versionNumber": 2
+        },
+        "End Step — Success": {
+          "actionId": "sp:operator-success",
+          "type": "success"
+        },
+        "Get Identity": {
+          "actionId": "sp:get-identity",
+          "attributes": {
+            "id.$": "$.trigger.identity.id"
+          },
+          "nextStep": "Create Certification Campaign",
+          "type": "action",
+          "versionNumber": 2
+        },
+        "Send Email": {
+          "actionId": "sp:send-email",
+          "attributes": {
+            "body.$": "",
+            "context": {},
+            "from": "",
+            "recipientEmailList": [
+              "florian.banas@sailpoint.com"
+            ],
+            "replyTo": null,
+            "subject": "{{$.getIdentity.attributes.displayName}} job title just changed"
+          },
+          "displayName": "",
+          "nextStep": "End Step — Success",
+          "type": "action",
+          "versionNumber": 2
+        }
+      }
+    },
+    "description": "",
+    "enabled": false,
+    "id": "8596751d-a9cc-4229-8bce-188c8b65a185",
+    "modified": "2026-04-13T11:10:53.914231503Z",
+    "modifiedBy": {
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
+      "type": "IDENTITY"
+    },
+    "name": "Mover micro-certification",
+    "owner": {
+      "id": "30507568a2d54f7484fe0f3edba79692",
+      "name": "fernando.delosrios",
+      "type": "IDENTITY"
+    },
+    "trigger": {
+      "attributes": {
+        "attributeToFilter": "jobTitle",
+        "filter.$": "$.changes[?(@.attribute == \"jobTitle\")]",
+        "id": "idn:identity-attributes-changed"
+      },
+      "type": "EVENT"
+    }
+  },
+  "self": {
+    "id": "8596751d-a9cc-4229-8bce-188c8b65a185",
+    "name": "Mover micro-certification",
+    "type": "WORKFLOW"
+  },
+  "version": 1
+}

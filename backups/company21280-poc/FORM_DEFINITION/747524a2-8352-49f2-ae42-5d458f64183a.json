@@ -1,0 +1,82 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": "2026-04-14T14:10:45.083665708Z",
+    "description": "",
+    "formConditions": [],
+    "formElements": [
+      {
+        "config": {
+          "alignment": "LEFT",
+          "description": "",
+          "formElements": [
+            {
+              "config": {
+                "dataSource": {
+                  "config": {
+                    "formInputId": "reports",
+                    "sortBy": "ASC"
+                  },
+                  "dataSourceType": "FORM_INPUT"
+                },
+                "forceSelect": true,
+                "helpText": "",
+                "label": "Select a subordinate",
+                "maximum": 1,
+                "placeholder": "",
+                "required": true
+              },
+              "elementType": "SELECT",
+              "id": "868616336834",
+              "key": "identity",
+              "validations": [
+                {
+                  "validationType": "DATA_SOURCE"
+                },
+                {
+                  "validationType": "REQUIRED"
+                }
+              ]
+            }
+          ],
+          "label": "Select Amadeus user",
+          "labelStyle": "h2",
+          "showLabel": true
+        },
+        "elementType": "SECTION",
+        "id": "496140842033",
+        "validations": []
+      }
+    ],
+    "formInput": [
+      {
+        "description": "",
+        "id": "reports",
+        "label": "reports",
+        "type": "ARRAY"
+      }
+    ],
+    "id": "747524a2-8352-49f2-ae42-5d458f64183a",
+    "modified": "2026-04-14T14:55:45.070842504Z",
+    "name": "Select Amadeus User",
+    "owner": {
+      "id": "30507568a2d54f7484fe0f3edba79692",
+      "name": "fernando.delosrios",
+      "type": "IDENTITY"
+    },
+    "usedBy": [
+      {
+        "id": "a9be7fbc-fca9-4bae-b9db-b0f227109df9",
+        "name": "Set Amadeus Primary Office",
+        "type": "WORKFLOW"
+      }
+    ]
+  },
+  "self": {
+    "id": "747524a2-8352-49f2-ae42-5d458f64183a",
+    "name": "Select Amadeus User",
+    "type": "FORM_DEFINITION"
+  },
+  "version": 1
+}
