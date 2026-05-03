@@ -17,7 +17,7 @@
       "buildMembershipDetailsForGroupObjects": false,
       "buildPartialROOnAuthentication": true,
       "cloudAuthEnabled": true,
-      "cloudCacheUpdate": 1776172538122,
+      "cloudCacheUpdate": 1777727091870,
       "cloudDisplayName": "Active Directory",
       "connectionType": "direct",
       "connectorName": "Active Directory",
@@ -42,6 +42,7 @@
           "user": "SERI\\administrator"
         }
       ],
+      "enableProvisioningFeature": true,
       "enableSMBForIDN": false,
       "encrypted": "forestAdminPassword,IQServicePassword",
       "enforcePasswordPolicy": true,
@@ -77,6 +78,7 @@
       "partitionAggregationEnabled": false,
       "port": "389",
       "preloadEntitlements": false,
+      "recommendationStatus": "COMPLETED",
       "rollbackCreatedAccountOnError": false,
       "searchDNs": [
         {
