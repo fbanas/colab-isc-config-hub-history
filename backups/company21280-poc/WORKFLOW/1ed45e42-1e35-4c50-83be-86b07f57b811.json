@@ -2,10 +2,10 @@
   "jwsHeader": null,
   "jwsSignature": null,
   "object": {
-    "created": "2026-03-31T06:43:15.717671177Z",
+    "created": "2026-05-03T15:02:52.880049835Z",
     "creator": {
-      "id": "f99c089822c142abbcb84a93890d8416",
-      "name": "florian.banas1",
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
       "type": "IDENTITY"
     },
     "definition": {
@@ -58,19 +58,18 @@
           "type": "action",
           "versionNumber": 1
         },
-        "Compare Strings": {
-          "actionId": "sp:compare-strings",
+        "Compare Boolean": {
+          "actionId": "sp:compare-boolean",
           "choiceList": [
             {
-              "comparator": "StringEquals",
-              "nextStep": "End Step - Success",
-              "variableA.$": "$.getIdentity.attributes.department",
-              "variableB": "SecurityTeam"
+              "comparator": "BooleanEquals",
+              "nextStep": "Get Identity 1",
+              "variableA.$": "$.hTTPRequest.body.privileged",
+              "variableB": true
             }
           ],
-          "defaultStep": "Get Identity 1",
-          "description": "The identity attributes are reviewed to determine if the recipient is in the Security department. If the recipient is in the Security department, this evaluates to True and auto-approves the request. Otherwise, it evaluates to False and proceeds to a multi-step approval process.",
-          "displayName": "Recipient in Security Department?",
+          "defaultStep": "End Step - Success",
+          "displayName": "",
           "type": "choice"
         },
         "Compare Strings 1": {
@@ -127,11 +126,11 @@
         "Get Identity": {
           "actionId": "sp:get-identity",
           "attributes": {
-            "id.$": "$.trigger.requestedFor.id"
+            "id.$": "$.trigger.requestedBy.id"
           },
-          "description": "The full set of attributes for the identity the access is requested for are retrieved. This recipient is the identity that was provided in the Requested For field of the access request.",
-          "displayName": "Get Recipient Identity Attributes",
-          "nextStep": "Compare Strings",
+          "description": null,
+          "displayName": "",
+          "nextStep": "HTTP Request",
           "type": "action",
           "versionNumber": 2
         },
@@ -145,6 +144,59 @@
           "nextStep": "Approval Policy",
           "type": "action",
           "versionNumber": 2
+        },
+        "HTTP Request": {
+          "actionId": "sp:http",
+          "attributes": {
+            "jsonPatchRequestBody": null,
+            "jsonRequestBody": null,
+            "method": "get",
+            "param_authenticationRef": "oauth",
+            "param_basic": {
+              "mapping": {
+                "auth_password": "password",
+                "auth_username": "username"
+              },
+              "paramID": "",
+              "paramType": "1.1"
+            },
+            "param_header": {
+              "mapping": {
+                "auth_header_name": "headerName",
+                "auth_header_value": "headerValue"
+              },
+              "paramID": "",
+              "paramType": "1.3"
+            },
+            "param_oauth": {
+              "mapping": {
+                "auth_client_id": "clientId",
+                "auth_client_secret": "clientSecret",
+                "auth_credential_location": "credentialLocation",
+                "auth_token_url": "tokenURL"
+              },
+              "paramID": "b93e14ff-ca4b-4d25-a4c4-8e603b5a2da1",
+              "paramType": "1.4",
+              "refID": "7773bbfe-968c-4195-a4f3-039a1a0f49ac"
+            },
+            "param_oauth_scopes": {
+              "mapping": {
+                "auth_scopes": "scopes"
+              },
+              "paramID": "097c3757-c597-47be-882d-0da52599c89d",
+              "paramType": "3.1",
+              "refID": "fe15c4ae-f186-410b-82a2-04da04e13bd2"
+            },
+            "requestContentType": "json",
+            "requestHeaders": null,
+            "url": "https://company21280-poc.api.identitynow-demo.com/v2025/entitlements/{{$.trigger.requestedItem.id}}",
+            "urlParams": null
+          },
+          "description": "Get requested entitlement details",
+          "displayName": "",
+          "nextStep": "Compare Boolean",
+          "type": "action",
+          "versionNumber": 3
         },
         "Send Email": {
           "actionId": "sp:send-email",
@@ -188,14 +240,14 @@
     },
     "description": "This workflow is triggered when an access request is submitted. Based on the recipient’s attributes, the request is either auto-approved or is considered and exception and goes through a multi-step approval process. If approved as an exception, a certification campaign is created to ensure all access for the recipient is necessary. The recipient is notified of the review results via Slack.",
     "enabled": false,
-    "id": "4c1100c6-e9c5-4be7-b691-e3cf54c3d652",
-    "modified": "2026-05-03T14:49:07.056437078Z",
+    "id": "1ed45e42-1e35-4c50-83be-86b07f57b811",
+    "modified": "2026-05-04T06:54:50.588153753Z",
     "modifiedBy": {
-      "id": "90eb8204ac594f48ac598a55e0e73613",
-      "name": "florian.banas",
+      "id": "30507568a2d54f7484fe0f3edba79692",
+      "name": "fernando.delosrios",
       "type": "IDENTITY"
     },
-    "name": "Multi-Step Serial Approval of Access Request",
+    "name": "Copy of Multi-Step Serial Approval of Access Request",
     "owner": {
       "id": "90eb8204ac594f48ac598a55e0e73613",
       "name": "florian.banas",
@@ -209,8 +261,8 @@
     }
   },
   "self": {
-    "id": "4c1100c6-e9c5-4be7-b691-e3cf54c3d652",
-    "name": "Multi-Step Serial Approval of Access Request",
+    "id": "1ed45e42-1e35-4c50-83be-86b07f57b811",
+    "name": "Copy of Multi-Step Serial Approval of Access Request",
     "type": "WORKFLOW"
   },
   "version": 1

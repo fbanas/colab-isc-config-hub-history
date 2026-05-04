@@ -172,7 +172,7 @@
       "checkDeletedDisabled": false,
       "clientId": "89c55633540a4e60ae4328288781080c",
       "cloudAuthoritativeSourcePrecedence": 30,
-      "cloudCacheUpdate": 1777457857541,
+      "cloudCacheUpdate": 1777882577103,
       "cloudDisplayName": "Identity Fusion NG",
       "cloudIdentityProfileName": "Identity Fusion NG",
       "concurrencyCheckEnabled": false,
@@ -338,7 +338,7 @@
         {
           "aggregationMode": "none",
           "correlationMode": "none",
-          "enabled": true,
+          "enabled": false,
           "includeRecordAccountsForMatching": false,
           "name": "Microsoft Entra sp-demo262 SaaS",
           "sourceType": "record"
@@ -710,6 +710,16 @@
             "type": "STRING"
           },
           {
+            "description": "originAccount",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "originAccount",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
             "description": "positions",
             "isEntitlement": false,
             "isGroup": false,
@@ -748,7 +758,7 @@
         "id": "ac036cf2473e45c9a7e14ef08370ee4a",
         "identityAttribute": "id",
         "includePermissions": false,
-        "modified": "2026-03-27T10:20:50.553Z",
+        "modified": "2026-05-04T08:15:22.952Z",
         "name": "account",
         "nativeObjectType": "User"
       },

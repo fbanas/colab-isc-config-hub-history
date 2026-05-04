@@ -17,7 +17,7 @@
       "buildMembershipDetailsForGroupObjects": false,
       "buildPartialROOnAuthentication": true,
       "cloudAuthEnabled": true,
-      "cloudCacheUpdate": 1777727091870,
+      "cloudCacheUpdate": 1777819547174,
       "cloudDisplayName": "Active Directory",
       "connectionType": "direct",
       "connectorName": "Active Directory",
@@ -78,7 +78,6 @@
       "partitionAggregationEnabled": false,
       "port": "389",
       "preloadEntitlements": false,
-      "recommendationStatus": "COMPLETED",
       "rollbackCreatedAccountOnError": false,
       "searchDNs": [
         {

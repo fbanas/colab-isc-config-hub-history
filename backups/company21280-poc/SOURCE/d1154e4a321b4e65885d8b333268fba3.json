@@ -5,8 +5,9 @@
     "accountCorrelationRule": null,
     "beforeProvisioningRule": null,
     "connectorAttributes": {
+      "appTemplateData": "{ 'whiteListedAttributes': ['ServerTimeZone','authenticationMethod','beforeProvisioningRule','cloudCacheUpdate','cloudDisplayName','cloudExternalId','connectionTimeout','connectionType','connectorName','dateEvalFormat','deleteThresholdPercentage','deltaAggregation','deltaAggregationEnabled','enableStatus','formPath','genericWebServiceBaseUrl','grant_type','healthCheckTimeout','healthy','idnProxyType','lockStatus','managementWorkgroup','oauth_body_attrs_to_exclude','oauth_headers_to_exclude','possibleHttpErrorMessages','saml_headers_to_exclude','since','sourceDescription','spConnEnableStatefulCommands','spConnectorInstanceId','spConnectorSpecId','spConnectorSupportsCustomSchemas','status','supportsDeltaAgg','templateApplication','updateAttrWithChangePassword','skipGetObjectInCreate','slpt-source-diagnostics','objectNotFoundErrorMsg','disableCookies','createAccountWithEntReq','addRemoveEntInSingleReq','requestType','spConnDebugLoggingEnabled','category'] }",
       "authenticationMethod": "BasicLogin",
-      "cloudCacheUpdate": 1776671525947,
+      "cloudCacheUpdate": 1777861248045,
       "cloudDisplayName": "Toggl 2",
       "connectionTimeout": 60,
       "connectionType": "direct",
