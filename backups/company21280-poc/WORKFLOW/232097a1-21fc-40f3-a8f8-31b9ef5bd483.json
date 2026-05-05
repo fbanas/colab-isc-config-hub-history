@@ -106,17 +106,13 @@
                 "auth_credential_location": "credentialLocation",
                 "auth_token_url": "tokenURL"
               },
-              "paramID": "7b0fa675-e77b-4fde-b11e-280690aa4c0f",
-              "paramType": "1.4",
-              "refID": "a0af3b18-7f1c-430d-b2a0-89fb2baa3379"
+              "paramType": "1.4"
             },
             "param_oauth_scopes": {
               "mapping": {
                 "auth_scopes": "scopes"
               },
-              "paramID": "097c3757-c597-47be-882d-0da52599c89d",
-              "paramType": "3.1",
-              "refID": "b8691103-ebae-451e-982c-78a42dce5de4"
+              "paramType": "3.1"
             },
             "requestContentType": "json",
             "url": "https://company21280-poc.api.identitynow-demo.com/v2025/accounts"
@@ -138,17 +134,13 @@
                 "auth_credential_location": "credentialLocation",
                 "auth_token_url": "tokenURL"
               },
-              "paramID": "7b0fa675-e77b-4fde-b11e-280690aa4c0f",
-              "paramType": "1.4",
-              "refID": "a0af3b18-7f1c-430d-b2a0-89fb2baa3379"
+              "paramType": "1.4"
             },
             "param_oauth_scopes": {
               "mapping": {
                 "auth_scopes": "scopes"
               },
-              "paramID": "097c3757-c597-47be-882d-0da52599c89d",
-              "paramType": "3.1",
-              "refID": "b8691103-ebae-451e-982c-78a42dce5de4"
+              "paramType": "3.1"
             },
             "requestContentType": "json",
             "url": "https://company21280-poc.api.identitynow-demo.com/v2025/accounts/{{$.interactiveForm1.formData.authoritativeAccount}}"
@@ -191,9 +183,9 @@
       }
     },
     "description": "",
-    "enabled": true,
+    "enabled": false,
     "id": "232097a1-21fc-40f3-a8f8-31b9ef5bd483",
-    "modified": "2026-03-24T14:24:38.072937821Z",
+    "modified": "2026-05-04T12:03:02.160298119Z",
     "modifiedBy": {
       "id": "30507568a2d54f7484fe0f3edba79692",
       "name": "fernando.delosrios",

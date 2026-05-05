@@ -1,0 +1,23 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": null,
+    "id": "34c6edb9-f360-424f-9a2a-ddd706f9d426",
+    "modified": null,
+    "name": "AP_",
+    "taggedObjects": [
+      {
+        "id": "a959d074-c723-4eba-b8d2-1842c7cc1a3b",
+        "name": "Money-In Money-Out",
+        "type": "SOD_POLICY"
+      }
+    ]
+  },
+  "self": {
+    "id": "34c6edb9-f360-424f-9a2a-ddd706f9d426",
+    "name": "AP_",
+    "type": "TAG"
+  },
+  "version": 1
+}

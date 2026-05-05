@@ -57,13 +57,8 @@
     },
     "usedBy": [
       {
-        "id": "3ed0647f-8062-4a32-b2a8-9b8ed6a794be",
+        "id": "aaf6cee2-9097-442e-9e62-7b8d6b0c359e",
         "name": "Create a Security Group in Active Directory",
-        "type": "WORKFLOW"
-      },
-      {
-        "id": "8f7282f8-313c-45f6-a51b-82036fb250c1",
-        "name": "Create a Security Group in Active Directory (Import)",
         "type": "WORKFLOW"
       }
     ]

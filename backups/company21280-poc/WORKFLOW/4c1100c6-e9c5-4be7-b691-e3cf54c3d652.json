@@ -65,7 +65,7 @@
               "comparator": "StringEquals",
               "nextStep": "End Step - Success",
               "variableA.$": "$.getIdentity.attributes.department",
-              "variableB": "SecurityTeam"
+              "variableB": "Information Technology"
             }
           ],
           "defaultStep": "Get Identity 1",
@@ -189,7 +189,7 @@
     "description": "This workflow is triggered when an access request is submitted. Based on the recipient’s attributes, the request is either auto-approved or is considered and exception and goes through a multi-step approval process. If approved as an exception, a certification campaign is created to ensure all access for the recipient is necessary. The recipient is notified of the review results via Slack.",
     "enabled": false,
     "id": "4c1100c6-e9c5-4be7-b691-e3cf54c3d652",
-    "modified": "2026-05-03T14:49:07.056437078Z",
+    "modified": "2026-05-05T07:35:18.532859908Z",
     "modifiedBy": {
       "id": "90eb8204ac594f48ac598a55e0e73613",
       "name": "florian.banas",

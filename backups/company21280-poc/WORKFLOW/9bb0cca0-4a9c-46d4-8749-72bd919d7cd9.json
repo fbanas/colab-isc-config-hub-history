@@ -129,17 +129,13 @@
                 "auth_credential_location": "credentialLocation",
                 "auth_token_url": "tokenURL"
               },
-              "paramID": "7b0fa675-e77b-4fde-b11e-280690aa4c0f",
-              "paramType": "1.4",
-              "refID": "31af81b7-99ce-4ddb-8b58-952821ead642"
+              "paramType": "1.4"
             },
             "param_oauth_scopes": {
               "mapping": {
                 "auth_scopes": "scopes"
               },
-              "paramID": "097c3757-c597-47be-882d-0da52599c89d",
-              "paramType": "3.1",
-              "refID": "80b4b9a6-3dd6-49c7-81f6-cac29d8d3476"
+              "paramType": "3.1"
             },
             "requestContentType": "json",
             "url": "https://company21280-poc.api.identitynow-demo.com/v2026/search"
@@ -183,17 +179,13 @@
                 "auth_credential_location": "credentialLocation",
                 "auth_token_url": "tokenURL"
               },
-              "paramID": "7b0fa675-e77b-4fde-b11e-280690aa4c0f",
-              "paramType": "1.4",
-              "refID": "31af81b7-99ce-4ddb-8b58-952821ead642"
+              "paramType": "1.4"
             },
             "param_oauth_scopes": {
               "mapping": {
                 "auth_scopes": "scopes"
               },
-              "paramID": "097c3757-c597-47be-882d-0da52599c89d",
-              "paramType": "3.1",
-              "refID": "80b4b9a6-3dd6-49c7-81f6-cac29d8d3476"
+              "paramType": "3.1"
             },
             "requestContentType": "json-patch+json",
             "requestHeaders": {
@@ -232,17 +224,13 @@
                 "auth_credential_location": "credentialLocation",
                 "auth_token_url": "tokenURL"
               },
-              "paramID": "7b0fa675-e77b-4fde-b11e-280690aa4c0f",
-              "paramType": "1.4",
-              "refID": "31af81b7-99ce-4ddb-8b58-952821ead642"
+              "paramType": "1.4"
             },
             "param_oauth_scopes": {
               "mapping": {
                 "auth_scopes": "scopes"
               },
-              "paramID": "097c3757-c597-47be-882d-0da52599c89d",
-              "paramType": "3.1",
-              "refID": "80b4b9a6-3dd6-49c7-81f6-cac29d8d3476"
+              "paramType": "3.1"
             },
             "requestContentType": "json-patch+json",
             "requestHeaders": {
@@ -299,17 +287,13 @@
                 "auth_credential_location": "credentialLocation",
                 "auth_token_url": "tokenURL"
               },
-              "paramID": "7b0fa675-e77b-4fde-b11e-280690aa4c0f",
-              "paramType": "1.4",
-              "refID": "31af81b7-99ce-4ddb-8b58-952821ead642"
+              "paramType": "1.4"
             },
             "param_oauth_scopes": {
               "mapping": {
                 "auth_scopes": "scopes"
               },
-              "paramID": "097c3757-c597-47be-882d-0da52599c89d",
-              "paramType": "3.1",
-              "refID": "80b4b9a6-3dd6-49c7-81f6-cac29d8d3476"
+              "paramType": "3.1"
             },
             "requestContentType": "json-patch+json",
             "requestHeaders": {
@@ -403,10 +387,10 @@
     "description": "",
     "enabled": false,
     "id": "9bb0cca0-4a9c-46d4-8749-72bd919d7cd9",
-    "modified": "2026-04-29T13:11:55.50995386Z",
+    "modified": "2026-05-04T12:03:02.476687619Z",
     "modifiedBy": {
-      "id": "90eb8204ac594f48ac598a55e0e73613",
-      "name": "florian.banas",
+      "id": "8939a7e19a4b43eabd3c6c2808c6b9b2",
+      "name": "luca.lori",
       "type": "IDENTITY"
     },
     "name": "Application Update Review",

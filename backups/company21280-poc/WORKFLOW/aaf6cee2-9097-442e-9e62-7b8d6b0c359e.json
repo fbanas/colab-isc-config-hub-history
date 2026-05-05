@@ -2,10 +2,10 @@
   "jwsHeader": null,
   "jwsSignature": null,
   "object": {
-    "created": "2026-04-29T10:02:19.219651955Z",
+    "created": "2026-05-05T07:27:40.874430136Z",
     "creator": {
-      "id": "90eb8204ac594f48ac598a55e0e73613",
-      "name": "florian.banas",
+      "id": "e4b5bec795a54599a9e39dcaac4467bf",
+      "name": "slpt.support",
       "type": "IDENTITY"
     },
     "definition": {
@@ -14,7 +14,7 @@
         "Active Directory": {
           "actionId": "sp:pag-active-directory",
           "attributes": {
-            "inputForPag_address": "10.0.0.184",
+            "inputForPag_address": "10.0.0.250",
             "inputForPag_auth_password": "secrets://aws-sm-provider/arn%3Aaws%3Asecretsmanager%3Aus-east-1%3A904994459557%3Asecret%3Aprivilege%2Fpag%2Fqa%2Finternal-demo-ad-tMKiv4/password",
             "inputForPag_auth_username": "secrets://aws-sm-provider/arn%3Aaws%3Asecretsmanager%3Aus-east-1%3A904994459557%3Asecret%3Aprivilege%2Fpag%2Fqa%2Finternal-demo-ad-tMKiv4/ad_username",
             "inputForPag_domain": "seri.sailpointdemo.com",
@@ -38,7 +38,7 @@
         "Active Directory 1": {
           "actionId": "sp:pag-active-directory",
           "attributes": {
-            "inputForPag_address": "10.0.0.184",
+            "inputForPag_address": "10.0.0.250",
             "inputForPag_auth_password": "secrets://aws-sm-provider/arn%3Aaws%3Asecretsmanager%3Aus-east-1%3A904994459557%3Asecret%3Aprivilege%2Fpag%2Fqa%2Finternal-demo-ad-tMKiv4/password",
             "inputForPag_auth_username": "secrets://aws-sm-provider/arn%3Aaws%3Asecretsmanager%3Aus-east-1%3A904994459557%3Asecret%3Aprivilege%2Fpag%2Fqa%2Finternal-demo-ad-tMKiv4/ad_username",
             "inputForPag_distinguishedName": "CN={{ $.interactiveForm.formData.name }},{{ $.interactiveForm.formData.organizationalUnit }}",
@@ -49,7 +49,7 @@
             "inputForPag_sAMAccountName.$": "$.interactiveForm.formData.name",
             "inputForPag_verify_cert": false,
             "pagCommandType": "pag:active_directory:create_group",
-            "pagInstanceId": "286464e0-ea93-477e-81ab-d53589308b69",
+            "pagInstanceId": "25ceb9be-068a-45f2-8868-a403faf2de3d",
             "pagSpecId": "7e479f41-e367-4e20-85c8-9e2936aa4658",
             "param_connType": "paramInline",
             "param_credentialType": "paramInline"
@@ -68,7 +68,7 @@
         "Active Directory 2": {
           "actionId": "sp:pag-active-directory",
           "attributes": {
-            "inputForPag_address": "10.0.0.184",
+            "inputForPag_address": "10.0.0.250",
             "inputForPag_auth_password": "secrets://aws-sm-provider/arn%3Aaws%3Asecretsmanager%3Aus-east-1%3A904994459557%3Asecret%3Aprivilege%2Fpag%2Fqa%2Finternal-demo-ad-tMKiv4/password",
             "inputForPag_auth_username": "secrets://aws-sm-provider/arn%3Aaws%3Asecretsmanager%3Aus-east-1%3A904994459557%3Asecret%3Aprivilege%2Fpag%2Fqa%2Finternal-demo-ad-tMKiv4/ad_username",
             "inputForPag_domain": "seri.sailpointdemo.com",
@@ -76,7 +76,7 @@
             "inputForPag_sAMAccountName.$": "$.interactiveForm.formData.name",
             "inputForPag_verify_cert": false,
             "pagCommandType": "pag:active_directory:get_group_by_samaccountname",
-            "pagInstanceId": "286464e0-ea93-477e-81ab-d53589308b69",
+            "pagInstanceId": "25ceb9be-068a-45f2-8868-a403faf2de3d",
             "pagSpecId": "7e479f41-e367-4e20-85c8-9e2936aa4658",
             "param_connType": "paramInline",
             "param_credentialType": "paramInline"
@@ -90,7 +90,7 @@
         "Active Directory 3": {
           "actionId": "sp:pag-active-directory",
           "attributes": {
-            "inputForPag_address": "10.0.0.184",
+            "inputForPag_address": "10.0.0.250",
             "inputForPag_auth_password": "secrets://aws-sm-provider/arn%3Aaws%3Asecretsmanager%3Aus-east-1%3A904994459557%3Asecret%3Aprivilege%2Fpag%2Fqa%2Finternal-demo-ad-tMKiv4/password",
             "inputForPag_auth_username": "secrets://aws-sm-provider/arn%3Aaws%3Asecretsmanager%3Aus-east-1%3A904994459557%3Asecret%3Aprivilege%2Fpag%2Fqa%2Finternal-demo-ad-tMKiv4/ad_username",
             "inputForPag_domain": "seri.sailpointdemo.com",
@@ -98,7 +98,7 @@
             "inputForPag_sAMAccountName.$": "$.interactiveForm.formData.name",
             "inputForPag_verify_cert": false,
             "pagCommandType": "pag:active_directory:get_group_by_samaccountname",
-            "pagInstanceId": "286464e0-ea93-477e-81ab-d53589308b69",
+            "pagInstanceId": "25ceb9be-068a-45f2-8868-a403faf2de3d",
             "pagSpecId": "7e479f41-e367-4e20-85c8-9e2936aa4658",
             "param_connType": "paramInline",
             "param_credentialType": "paramInline"
@@ -117,7 +117,7 @@
         "Active Directory 4": {
           "actionId": "sp:pag-active-directory",
           "attributes": {
-            "inputForPag_address": "10.0.0.184",
+            "inputForPag_address": "10.0.0.250",
             "inputForPag_auth_password": "secrets://aws-sm-provider/arn%3Aaws%3Asecretsmanager%3Aus-east-1%3A904994459557%3Asecret%3Aprivilege%2Fpag%2Fqa%2Finternal-demo-ad-tMKiv4/password",
             "inputForPag_auth_username": "secrets://aws-sm-provider/arn%3Aaws%3Asecretsmanager%3Aus-east-1%3A904994459557%3Asecret%3Aprivilege%2Fpag%2Fqa%2Finternal-demo-ad-tMKiv4/ad_username",
             "inputForPag_domain": "seri.sailpointdemo.com",
@@ -125,7 +125,7 @@
             "inputForPag_sAMAccountName.$": "$.getIdentity.alias",
             "inputForPag_verify_cert": false,
             "pagCommandType": "pag:active_directory:get_user_by_samaccountname",
-            "pagInstanceId": "286464e0-ea93-477e-81ab-d53589308b69",
+            "pagInstanceId": "25ceb9be-068a-45f2-8868-a403faf2de3d",
             "pagSpecId": "7e479f41-e367-4e20-85c8-9e2936aa4658",
             "param_connType": "paramInline",
             "param_credentialType": "paramInline"
@@ -144,19 +144,16 @@
         "Active Directory 5": {
           "actionId": "sp:pag-active-directory",
           "attributes": {
-            "inputForPag_address": "10.0.0.184",
+            "inputForPag_address": "10.0.0.250",
             "inputForPag_auth_password": "secrets://aws-sm-provider/arn%3Aaws%3Asecretsmanager%3Aus-east-1%3A904994459557%3Asecret%3Aprivilege%2Fpag%2Fqa%2Finternal-demo-ad-tMKiv4/password",
             "inputForPag_auth_username": "secrets://aws-sm-provider/arn%3Aaws%3Asecretsmanager%3Aus-east-1%3A904994459557%3Asecret%3Aprivilege%2Fpag%2Fqa%2Finternal-demo-ad-tMKiv4/ad_username",
             "inputForPag_distinguishedName.$": "$.activeDirectory2.result.data.distinguishedName",
             "inputForPag_domain": "seri.sailpointdemo.com",
             "inputForPag_manager_distinguishedName.$": "$.activeDirectory4.result.data.distinguishedName",
             "inputForPag_port": 636,
-            "inputForPag_verify_cert": false,
             "pagCommandType": "pag:active_directory:set_group_manager",
-            "pagInstanceId": "286464e0-ea93-477e-81ab-d53589308b69",
-            "pagSpecId": "7e479f41-e367-4e20-85c8-9e2936aa4658",
-            "param_connType": "paramInline",
-            "param_credentialType": "paramInline"
+            "pagInstanceId": "ea641356-0dcd-4bda-8f5d-9cc2886d97d7",
+            "pagSpecId": "7e479f41-e367-4e20-85c8-9e2936aa4658"
           },
           "description": "The Privileged Action Gateway sets the group's manager in Active Directory.",
           "displayName": "PAG: Set Group Manager",
@@ -665,30 +662,30 @@
     },
     "description": "This interactive workflow creates a new Active Directory security group.\n\nYou will be asked to provide some group details using an interactive form.",
     "enabled": false,
-    "id": "8f7282f8-313c-45f6-a51b-82036fb250c1",
-    "modified": "2026-04-29T10:06:08.798232263Z",
+    "id": "aaf6cee2-9097-442e-9e62-7b8d6b0c359e",
+    "modified": "2026-05-05T07:28:57.898465275Z",
     "modifiedBy": {
       "id": "90eb8204ac594f48ac598a55e0e73613",
       "name": "florian.banas",
       "type": "IDENTITY"
     },
-    "name": "Create a Security Group in Active Directory (Import)",
+    "name": "Create a Security Group in Active Directory",
     "owner": {
-      "id": "90eb8204ac594f48ac598a55e0e73613",
-      "name": "florian.banas",
+      "id": "e4b5bec795a54599a9e39dcaac4467bf",
+      "name": "slpt.support",
       "type": "IDENTITY"
     },
     "trigger": {
       "attributes": {
-        "filter.$": "$[?(@.workflowId == '8f7282f8-313c-45f6-a51b-82036fb250c1')]",
+        "filter.$": "$[?(@.workflowId == 'aaf6cee2-9097-442e-9e62-7b8d6b0c359e')]",
         "id": "idn:interactive-process-launched"
       },
       "type": "EVENT"
     }
   },
   "self": {
-    "id": "8f7282f8-313c-45f6-a51b-82036fb250c1",
-    "name": "Create a Security Group in Active Directory (Import)",
+    "id": "aaf6cee2-9097-442e-9e62-7b8d6b0c359e",
+    "name": "Create a Security Group in Active Directory",
     "type": "WORKFLOW"
   },
   "version": 1

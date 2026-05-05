@@ -76,17 +76,13 @@
                 "auth_credential_location": "credentialLocation",
                 "auth_token_url": "tokenURL"
               },
-              "paramID": "7b0fa675-e77b-4fde-b11e-280690aa4c0f",
-              "paramType": "1.4",
-              "refID": "2f50ea9b-eb8f-4934-8513-851574d89149"
+              "paramType": "1.4"
             },
             "param_oauth_scopes": {
               "mapping": {
                 "auth_scopes": "scopes"
               },
-              "paramID": "097c3757-c597-47be-882d-0da52599c89d",
-              "paramType": "3.1",
-              "refID": "2620976c-dfcf-45e1-810d-42ca780e1670"
+              "paramType": "3.1"
             },
             "requestContentType": "json",
             "url": "https://company21280-poc.api.identitynow-demo.com/v2025/search"
@@ -116,17 +112,13 @@
                 "auth_credential_location": "credentialLocation",
                 "auth_token_url": "tokenURL"
               },
-              "paramID": "7b0fa675-e77b-4fde-b11e-280690aa4c0f",
-              "paramType": "1.4",
-              "refID": "2f50ea9b-eb8f-4934-8513-851574d89149"
+              "paramType": "1.4"
             },
             "param_oauth_scopes": {
               "mapping": {
                 "auth_scopes": "scopes"
               },
-              "paramID": "097c3757-c597-47be-882d-0da52599c89d",
-              "paramType": "3.1",
-              "refID": "2620976c-dfcf-45e1-810d-42ca780e1670"
+              "paramType": "3.1"
             },
             "requestContentType": "json",
             "url": "https://company21280-poc.api.identitynow-demo.com/v2025/accounts"
@@ -175,12 +167,12 @@
       }
     },
     "description": "",
-    "enabled": true,
+    "enabled": false,
     "id": "a9be7fbc-fca9-4bae-b9db-b0f227109df9",
-    "modified": "2026-04-20T10:09:06.407230758Z",
+    "modified": "2026-05-04T12:03:01.891506909Z",
     "modifiedBy": {
-      "id": "fcc9db01f32249889e627da51f5f710a",
-      "name": "jonathan.mueller",
+      "id": "30507568a2d54f7484fe0f3edba79692",
+      "name": "fernando.delosrios",
       "type": "IDENTITY"
     },
     "name": "Set Amadeus Primary Office",

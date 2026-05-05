@@ -523,9 +523,9 @@
       }
     },
     "description": "This interactive workflow allows you to enable or disable an inbound firewall rule on a Windows server.\n\nYou will be asked to choose whether to enable or disable a rule, then select the rule to update.",
-    "enabled": true,
+    "enabled": false,
     "id": "598dcb00-140d-406a-913d-9426d63f665c",
-    "modified": "2026-03-18T21:57:26.786786478Z",
+    "modified": "2026-05-04T19:19:13.759993589Z",
     "modifiedBy": {
       "id": "90eb8204ac594f48ac598a55e0e73613",
       "name": "florian.banas",

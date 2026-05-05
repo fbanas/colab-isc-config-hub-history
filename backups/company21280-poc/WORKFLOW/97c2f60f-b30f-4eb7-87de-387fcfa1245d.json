@@ -1,0 +1,219 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": "2026-05-04T18:51:58.693522471Z",
+    "creator": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "definition": {
+      "start": "Compare Numbers",
+      "steps": {
+        "Compare Numbers": {
+          "actionId": "sp:compare-numbers",
+          "choiceList": [
+            {
+              "comparator": "NumericGreaterThan",
+              "nextStep": "Define Variable 1",
+              "variableA.$": "$.trigger.formData.accessExpiryTime",
+              "variableB": 8
+            }
+          ],
+          "defaultStep": "Define Variable 2",
+          "displayName": "",
+          "type": "choice"
+        },
+        "Define Variable 1": {
+          "actionId": "sp:define-variable",
+          "attributes": {
+            "id": "sp:define-variable",
+            "variables": [
+              {
+                "description": "",
+                "name": "expirytime",
+                "transforms": [
+                  {
+                    "id": "sp:transform:addTime:time",
+                    "input": {
+                      "length.$": "$.trigger.formData.accessExpiryTime",
+                      "unit": "minutes"
+                    }
+                  }
+                ],
+                "variableA.$": "$.now()"
+              }
+            ]
+          },
+          "displayName": "",
+          "nextStep": "Get Access 2",
+          "type": "Mutation"
+        },
+        "Define Variable 2": {
+          "actionId": "sp:define-variable",
+          "attributes": {
+            "id": "sp:define-variable",
+            "variables": [
+              {
+                "description": "",
+                "name": "expirytime",
+                "transforms": [
+                  {
+                    "id": "sp:transform:addTime:time",
+                    "input": {
+                      "length.$": "$.trigger.formData.accessExpiryTime",
+                      "unit": "hours"
+                    }
+                  }
+                ],
+                "variableA.$": "$.now()"
+              }
+            ]
+          },
+          "displayName": "",
+          "nextStep": "Get Access 1",
+          "type": "Mutation"
+        },
+        "End Step — Success 1": {
+          "actionId": "sp:operator-success",
+          "displayName": "",
+          "type": "success"
+        },
+        "End Step — Success 2": {
+          "actionId": "sp:operator-success",
+          "displayName": "",
+          "type": "success"
+        },
+        "Get Access 1": {
+          "actionId": "sp:access:get",
+          "attributes": {
+            "accessprofiles": false,
+            "entitlements": false,
+            "getAccessBy": "searchQuery",
+            "query": "name.exact:\"{{$.trigger.formData.selectApplication}}\"",
+            "roles": true
+          },
+          "description": "Get Role Details",
+          "displayName": "",
+          "nextStep": "HTTP Request 1",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Get Access 2": {
+          "actionId": "sp:access:get",
+          "attributes": {
+            "accessprofiles": false,
+            "entitlements": false,
+            "getAccessBy": "searchQuery",
+            "query": "name.exact:\"{{$.trigger.formData.selectApplication}}\"",
+            "roles": true
+          },
+          "description": "Get Role Details",
+          "displayName": "",
+          "nextStep": "HTTP Request 2",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "HTTP Request 1": {
+          "actionId": "sp:http",
+          "attributes": {
+            "authenticationType": "OAuth",
+            "jsonRequestBody": {
+              "requestType": "GRANT_ACCESS",
+              "requestedFor": [
+                "{{$.trigger.submittedBy.id}}"
+              ],
+              "requestedItems": [
+                {
+                  "comment": "{{$.trigger.formData.reason}}",
+                  "id": "{{$.getAccess1.accessItems[0].id}}",
+                  "removeDate": "{{$.defineVariable2.expirytime}}",
+                  "type": "ROLE"
+                }
+              ]
+            },
+            "method": "post",
+            "oAuthClientId": "9fd829c074994fcf9fcabe16ed743a23",
+            "oAuthClientSecret": "",
+            "oAuthCredentialLocation": "oAuthInHeader",
+            "oAuthScope": null,
+            "oAuthTokenUrl": "https://company15772-poc.api.identitynow-demo.com/oauth/token",
+            "requestContentType": "json",
+            "requestHeaders": null,
+            "url": "https://company15772-poc.api.identitynow-demo.com/v2025/access-requests",
+            "urlParams": null
+          },
+          "description": "HTTP request to request Role, including expiry time",
+          "displayName": "",
+          "nextStep": "End Step — Success 1",
+          "type": "action",
+          "versionNumber": 2
+        },
+        "HTTP Request 2": {
+          "actionId": "sp:http",
+          "attributes": {
+            "authenticationType": "OAuth",
+            "jsonRequestBody": {
+              "requestType": "GRANT_ACCESS",
+              "requestedFor": [
+                "{{$.trigger.submittedBy.id}}"
+              ],
+              "requestedItems": [
+                {
+                  "comment": "{{$.trigger.formData.reason}}",
+                  "id": "{{$.getAccess2.accessItems[0].id}}",
+                  "removeDate": "{{$.defineVariable1.expirytime}}",
+                  "type": "ROLE"
+                }
+              ]
+            },
+            "method": "post",
+            "oAuthClientId": "6ce6663d1d634bfe9e93198deab96c44",
+            "oAuthCredentialLocation": "oAuthInHeader",
+            "oAuthScope": null,
+            "oAuthTokenUrl": "https://company9635-poc.api.identitynow.com/oauth/token",
+            "requestContentType": "json",
+            "requestHeaders": null,
+            "url": "https://company9635-poc.api.identitynow.com/v3/access-requests",
+            "urlParams": null
+          },
+          "description": "HTTP request to request Role, including expiry time",
+          "displayName": "",
+          "nextStep": "End Step — Success 2",
+          "type": "action",
+          "versionNumber": 2
+        }
+      }
+    },
+    "description": "",
+    "enabled": false,
+    "id": "97c2f60f-b30f-4eb7-87de-387fcfa1245d",
+    "modified": "2026-05-04T18:51:58.693522471Z",
+    "modifiedBy": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "name": "Just in Time Provisioning v2",
+    "owner": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "trigger": {
+      "attributes": {
+        "filter.$": "$[?(@.formDefinitionId == '38b7f1ef-590e-492d-ba65-a491d285f967')]",
+        "formDefinitionId": "38b7f1ef-590e-492d-ba65-a491d285f967",
+        "id": "sp:form-submitted"
+      },
+      "type": "EVENT"
+    }
+  },
+  "self": {
+    "id": "97c2f60f-b30f-4eb7-87de-387fcfa1245d",
+    "name": "Just in Time Provisioning v2",
+    "type": "WORKFLOW"
+  },
+  "version": 1
+}
