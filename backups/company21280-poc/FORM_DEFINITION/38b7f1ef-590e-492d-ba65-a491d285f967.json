@@ -1,0 +1,178 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": "2024-05-15T10:04:07.561081369Z",
+    "description": "",
+    "formConditions": [
+      {
+        "effects": [
+          {
+            "config": {
+              "element": "581811732126"
+            },
+            "effectType": "SHOW"
+          },
+          {
+            "config": {
+              "element": "87920389099"
+            },
+            "effectType": "SHOW"
+          }
+        ],
+        "ruleOperator": "AND",
+        "rules": [
+          {
+            "operator": "NOT_EM",
+            "source": "selectApplication",
+            "sourceType": "ELEMENT",
+            "value": "",
+            "valueType": "STRING"
+          }
+        ]
+      }
+    ],
+    "formElements": [
+      {
+        "config": {
+          "alignment": "LEFT",
+          "description": "",
+          "formElements": [
+            {
+              "config": {
+                "dataSource": {
+                  "config": {
+                    "aggregationBucketField": "name",
+                    "indices": [
+                      "roles"
+                    ],
+                    "query": "requestable:true"
+                  },
+                  "dataSourceType": "SEARCH"
+                },
+                "forceSelect": true,
+                "helpText": "Which Role do you require?",
+                "label": "Select Role",
+                "maximum": 1,
+                "placeholder": "",
+                "required": false
+              },
+              "elementType": "SELECT",
+              "id": "189852498379",
+              "key": "selectApplication",
+              "validations": [
+                {
+                  "validationType": "DATA_SOURCE"
+                }
+              ]
+            },
+            {
+              "config": {
+                "dataSource": {
+                  "config": {
+                    "options": [
+                      {
+                        "label": 0.25,
+                        "subLabel": "",
+                        "value": 15
+                      },
+                      {
+                        "label": 0.5,
+                        "subLabel": "",
+                        "value": 30
+                      },
+                      {
+                        "label": 1,
+                        "subLabel": "",
+                        "value": 1
+                      },
+                      {
+                        "label": 2,
+                        "subLabel": "",
+                        "value": 2
+                      },
+                      {
+                        "label": 4,
+                        "subLabel": "",
+                        "value": 4
+                      },
+                      {
+                        "label": 8,
+                        "subLabel": "",
+                        "value": 8
+                      }
+                    ]
+                  },
+                  "dataSourceType": "STATIC"
+                },
+                "forceSelect": true,
+                "helpText": "How long do you need the access (Hours)",
+                "label": "Access Expiry Time",
+                "maximum": 1,
+                "placeholder": "Access Expiry Time",
+                "required": true
+              },
+              "elementType": "SELECT",
+              "id": "581811732126",
+              "key": "accessExpiryTime",
+              "validations": [
+                {
+                  "validationType": "DATA_SOURCE"
+                },
+                {
+                  "validationType": "REQUIRED"
+                }
+              ]
+            },
+            {
+              "config": {
+                "default": "",
+                "description": "",
+                "helpText": "Please insert reason you need the access",
+                "label": "Reason",
+                "placeholder": "Please provide reason here",
+                "required": true
+              },
+              "elementType": "TEXT",
+              "id": "87920389099",
+              "key": "reason",
+              "validations": [
+                {
+                  "validationType": "REQUIRED"
+                }
+              ]
+            }
+          ],
+          "label": "Request Just in Time Access",
+          "labelStyle": "h2",
+          "showLabel": true
+        },
+        "elementType": "SECTION",
+        "id": "529503363064",
+        "validations": []
+      }
+    ],
+    "formInput": [],
+    "id": "38b7f1ef-590e-492d-ba65-a491d285f967",
+    "modified": "2026-05-05T13:22:31.525390768Z",
+    "name": "Firefighter Access Request",
+    "owner": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "usedBy": [
+      {
+        "id": "MySailPoint",
+        "name": "",
+        "type": "MySailPoint"
+      }
+    ]
+  },
+  "self": {
+    "id": "38b7f1ef-590e-492d-ba65-a491d285f967",
+    "name": "Firefighter Access Request",
+    "type": "FORM_DEFINITION"
+  },
+  "version": 1
+}

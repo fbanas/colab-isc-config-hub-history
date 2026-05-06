@@ -1,0 +1,52 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessProfiles": [],
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": null,
+      "denialCommentsRequired": null,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [
+      {
+        "id": "55b2da0b-1c01-437b-b129-a6f6af394b91",
+        "name": "LH1 (Scope A) Governance - Sub Role Admin Group",
+        "type": "GOVERNANCE_GROUP"
+      }
+    ],
+    "created": "2026-05-05T20:15:41.401806Z",
+    "description": null,
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": false,
+    "entitlements": [],
+    "id": "425212c1a91245caba167ada13278154",
+    "legacyMembershipInfo": null,
+    "membership": null,
+    "modified": "2026-05-05T20:17:42.555595Z",
+    "name": "test 3",
+    "owner": {
+      "id": "a67216598c8c4ea8b397fb4c4b553644",
+      "name": "Jerry Bennett",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [],
+    "segments": []
+  },
+  "self": {
+    "id": "425212c1a91245caba167ada13278154",
+    "name": "test 3",
+    "type": "ROLE"
+  },
+  "version": 1
+}

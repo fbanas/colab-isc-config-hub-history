@@ -58,14 +58,14 @@
           "type": "action",
           "versionNumber": 1
         },
-        "Compare Boolean": {
-          "actionId": "sp:compare-boolean",
+        "Compare Strings": {
+          "actionId": "sp:compare-strings",
           "choiceList": [
             {
-              "comparator": "BooleanEquals",
+              "comparator": "StringEquals",
               "nextStep": "Get Identity 1",
-              "variableA.$": "$.hTTPRequest.body.privileged",
-              "variableB": true
+              "variableA.$": "$.hTTPRequest.body.privilegeLevel.effective",
+              "variableB": "HIGH"
             }
           ],
           "defaultStep": "End Step - Success",
@@ -184,13 +184,15 @@
               "paramType": "3.1"
             },
             "requestContentType": "json",
-            "requestHeaders": null,
-            "url": "https://company21280-poc.api.identitynow-demo.com/v2025/entitlements/{{$.trigger.requestedItem.id}}",
+            "requestHeaders": {
+              "X-SailPoint-Experimental": "true"
+            },
+            "url": "https://company21280-poc.api.identitynow-demo.com/v2026/entitlements/{{$.trigger.requestedItem.id}}",
             "urlParams": null
           },
           "description": "Get requested entitlement details",
           "displayName": "",
-          "nextStep": "Compare Boolean",
+          "nextStep": "Compare Strings",
           "type": "action",
           "versionNumber": 3
         },
@@ -235,12 +237,12 @@
       }
     },
     "description": "This workflow is triggered when an access request is submitted. Based on the recipient’s attributes, the request is either auto-approved or is considered and exception and goes through a multi-step approval process. If approved as an exception, a certification campaign is created to ensure all access for the recipient is necessary. The recipient is notified of the review results via Slack.",
-    "enabled": false,
+    "enabled": true,
     "id": "1ed45e42-1e35-4c50-83be-86b07f57b811",
-    "modified": "2026-05-05T08:09:32.011466881Z",
+    "modified": "2026-05-06T08:02:15.95172105Z",
     "modifiedBy": {
-      "id": "90eb8204ac594f48ac598a55e0e73613",
-      "name": "florian.banas",
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
       "type": "IDENTITY"
     },
     "name": "Copy of Multi-Step Serial Approval of Access Request",

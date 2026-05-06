@@ -1,0 +1,24 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "description": "Managed by Workflows",
+    "enabled": true,
+    "filter": "$[?(@.formDefinitionId == '38b7f1ef-590e-492d-ba65-a491d285f967')]",
+    "id": "08b8c9a5-f446-414d-a813-97537cd4e53c",
+    "name": "Just in Time Provisioning v2",
+    "responseDeadline": "PT1H",
+    "triggerId": "sp:form-submitted",
+    "triggerName": "Form Submitted",
+    "type": "WORKFLOW",
+    "workflowConfig": {
+      "workflowId": "08b8c9a5-f446-414d-a813-97537cd4e53c"
+    }
+  },
+  "self": {
+    "id": "08b8c9a5-f446-414d-a813-97537cd4e53c",
+    "name": "Just in Time Provisioning v2",
+    "type": "TRIGGER_SUBSCRIPTION"
+  },
+  "version": 1
+}

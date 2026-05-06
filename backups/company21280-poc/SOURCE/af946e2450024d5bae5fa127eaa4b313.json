@@ -172,7 +172,7 @@
       "checkDeletedDisabled": false,
       "clientId": "89c55633540a4e60ae4328288781080c",
       "cloudAuthoritativeSourcePrecedence": 30,
-      "cloudCacheUpdate": 1777882577103,
+      "cloudCacheUpdate": 1778011507298,
       "cloudDisplayName": "Identity Fusion NG",
       "cloudIdentityProfileName": "Identity Fusion NG",
       "concurrencyCheckEnabled": false,
@@ -280,7 +280,7 @@
       "reset": false,
       "retryDelay": "1000",
       "since": "2026-03-18T16:42:35.365Z",
-      "skipAccountsWithMissingId": false,
+      "skipAccountsWithMissingId": true,
       "sourceConnected": true,
       "sources": [
         {
@@ -290,15 +290,6 @@
           "deferredMatching": false,
           "enabled": false,
           "name": "External Feed",
-          "sourceType": "authoritative"
-        },
-        {
-          "accountJmespathFilter": "accounts[?disabled == `false`]",
-          "aggregationMode": "none",
-          "correlationMode": "none",
-          "deferredMatching": false,
-          "enabled": false,
-          "name": "LH3",
           "sourceType": "authoritative"
         },
         {
@@ -323,6 +314,15 @@
           "accountJmespathFilter": "accounts[?disabled == `false`]",
           "aggregationMode": "none",
           "correlationMode": "none",
+          "deferredMatching": false,
+          "enabled": true,
+          "name": "LH3",
+          "sourceType": "authoritative"
+        },
+        {
+          "accountJmespathFilter": "accounts[?disabled == `false`]",
+          "aggregationMode": "none",
+          "correlationMode": "none",
           "enabled": true,
           "name": "LH1",
           "sourceType": "authoritative"
@@ -338,7 +338,7 @@
         {
           "aggregationMode": "none",
           "correlationMode": "none",
-          "enabled": false,
+          "enabled": true,
           "includeRecordAccountsForMatching": false,
           "name": "Microsoft Entra sp-demo262 SaaS",
           "sourceType": "record"

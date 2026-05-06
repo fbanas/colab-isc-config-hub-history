@@ -22,7 +22,7 @@
     "id": "5b0fb771bb494865944c6b0b74b95fe1",
     "legacyMembershipInfo": null,
     "membership": null,
-    "modified": "2026-03-27T15:02:36.306718Z",
+    "modified": "2026-05-05T20:44:05.595235Z",
     "name": "LH1_Finance",
     "owner": {
       "id": "aa4ab9d17dc24afc84947597b9ce1a46",
@@ -30,7 +30,7 @@
       "type": "IDENTITY"
     },
     "privilegeLevel": null,
-    "requestable": false,
+    "requestable": true,
     "revocationRequestConfig": {
       "approvalSchemes": []
     },

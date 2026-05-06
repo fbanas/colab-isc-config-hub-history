@@ -13,7 +13,7 @@
     },
     "additionalOwners": [],
     "created": "2026-03-18T09:21:26.458841Z",
-    "description": null,
+    "description": "This role keeps managed accounts correlated to their Fusion identities at all times",
     "dimensionRefs": null,
     "dimensional": false,
     "dimensions": [],
@@ -75,7 +75,7 @@
       "identities": null,
       "type": "STANDARD"
     },
-    "modified": "2026-03-27T15:02:29.552509Z",
+    "modified": "2026-05-06T06:00:42.915068Z",
     "name": "Identity Fusion NG Enforced Correlation",
     "owner": {
       "id": "176a5fc85208460383b2253765f4a137",

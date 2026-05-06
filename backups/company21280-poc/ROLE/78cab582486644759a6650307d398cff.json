@@ -67,7 +67,7 @@
       "identities": null,
       "type": "STANDARD"
     },
-    "modified": "2026-03-27T15:02:57.700608Z",
+    "modified": "2026-05-05T20:46:49.895394Z",
     "name": "LHG_RC_Admin",
     "owner": {
       "id": "e4acf5ec640048019c7951d422749048",
@@ -75,7 +75,7 @@
       "type": "IDENTITY"
     },
     "privilegeLevel": null,
-    "requestable": false,
+    "requestable": true,
     "revocationRequestConfig": {
       "approvalSchemes": []
     },

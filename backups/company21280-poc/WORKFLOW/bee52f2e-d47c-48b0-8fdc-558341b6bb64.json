@@ -2,7 +2,7 @@
   "jwsHeader": null,
   "jwsSignature": null,
   "object": {
-    "created": "2026-03-18T21:02:45.035666088Z",
+    "created": "2026-05-05T12:57:42.573062808Z",
     "creator": {
       "id": "90eb8204ac594f48ac598a55e0e73613",
       "name": "florian.banas",
@@ -373,7 +373,7 @@
         "Windows Server": {
           "actionId": "sp:pag-windows-server",
           "attributes": {
-            "inputForPag_address": "10.0.0.250",
+            "inputForPag_address": "10.0.0.184",
             "inputForPag_auth_password": "secrets://aws-sm-provider/arn%3Aaws%3Asecretsmanager%3Aus-east-1%3A904994459557%3Asecret%3Aprivilege%2Fpag%2Fqa%2Finternal-demo-ad-tMKiv4/password",
             "inputForPag_auth_type": "ntlm",
             "inputForPag_auth_username": "secrets://aws-sm-provider/arn%3Aaws%3Asecretsmanager%3Aus-east-1%3A904994459557%3Asecret%3Aprivilege%2Fpag%2Fqa%2Finternal-demo-ad-tMKiv4/ad_username",
@@ -383,7 +383,7 @@
             "inputForPag_use_ssl": false,
             "inputForPag_verify_cert": false,
             "pagCommandType": "pag:windows_server:list_inbound_firewall_rules",
-            "pagInstanceId": "25ceb9be-068a-45f2-8868-a403faf2de3d",
+            "pagInstanceId": "286464e0-ea93-477e-81ab-d53589308b69",
             "pagSpecId": "7e479f41-e367-4e20-85c8-9e2936aa4658",
             "param_connType": "paramInline",
             "param_credentialType": "paramInline",
@@ -398,7 +398,7 @@
         "Windows Server 1": {
           "actionId": "sp:pag-windows-server",
           "attributes": {
-            "inputForPag_address": "10.0.0.250",
+            "inputForPag_address": "10.0.0.184",
             "inputForPag_auth_password": "secrets://aws-sm-provider/arn%3Aaws%3Asecretsmanager%3Aus-east-1%3A904994459557%3Asecret%3Aprivilege%2Fpag%2Fqa%2Finternal-demo-ad-tMKiv4/password",
             "inputForPag_auth_type": "ntlm",
             "inputForPag_auth_username": "secrets://aws-sm-provider/arn%3Aaws%3Asecretsmanager%3Aus-east-1%3A904994459557%3Asecret%3Aprivilege%2Fpag%2Fqa%2Finternal-demo-ad-tMKiv4/windows_username",
@@ -408,7 +408,7 @@
             "inputForPag_use_ssl": false,
             "inputForPag_verify_cert": false,
             "pagCommandType": "pag:windows_server:list_inbound_firewall_rules",
-            "pagInstanceId": "25ceb9be-068a-45f2-8868-a403faf2de3d",
+            "pagInstanceId": "286464e0-ea93-477e-81ab-d53589308b69",
             "pagSpecId": "7e479f41-e367-4e20-85c8-9e2936aa4658",
             "param_connType": "paramInline",
             "param_credentialType": "paramInline",
@@ -423,7 +423,7 @@
         "Windows Server 2": {
           "actionId": "sp:pag-windows-server",
           "attributes": {
-            "inputForPag_address": "10.0.0.250",
+            "inputForPag_address": "10.0.0.184",
             "inputForPag_auth_password": "secrets://aws-sm-provider/arn%3Aaws%3Asecretsmanager%3Aus-east-1%3A904994459557%3Asecret%3Aprivilege%2Fpag%2Fqa%2Finternal-demo-ad-tMKiv4/password",
             "inputForPag_auth_type": "ntlm",
             "inputForPag_auth_username": "secrets://aws-sm-provider/arn%3Aaws%3Asecretsmanager%3Aus-east-1%3A904994459557%3Asecret%3Aprivilege%2Fpag%2Fqa%2Finternal-demo-ad-tMKiv4/windows_username",
@@ -433,7 +433,7 @@
             "inputForPag_use_ssl": false,
             "inputForPag_verify_cert": false,
             "pagCommandType": "pag:windows_server:enable_firewall_rule",
-            "pagInstanceId": "25ceb9be-068a-45f2-8868-a403faf2de3d",
+            "pagInstanceId": "286464e0-ea93-477e-81ab-d53589308b69",
             "pagSpecId": "7e479f41-e367-4e20-85c8-9e2936aa4658",
             "param_connType": "paramInline",
             "param_credentialType": "paramInline",
@@ -448,7 +448,7 @@
         "Windows Server 3": {
           "actionId": "sp:pag-windows-server",
           "attributes": {
-            "inputForPag_address": "10.0.0.250",
+            "inputForPag_address": "10.0.0.184",
             "inputForPag_auth_password": "secrets://aws-sm-provider/arn%3Aaws%3Asecretsmanager%3Aus-east-1%3A904994459557%3Asecret%3Aprivilege%2Fpag%2Fqa%2Finternal-demo-ad-tMKiv4/password",
             "inputForPag_auth_type": "ntlm",
             "inputForPag_auth_username": "secrets://aws-sm-provider/arn%3Aaws%3Asecretsmanager%3Aus-east-1%3A904994459557%3Asecret%3Aprivilege%2Fpag%2Fqa%2Finternal-demo-ad-tMKiv4/windows_username",
@@ -458,7 +458,7 @@
             "inputForPag_use_ssl": false,
             "inputForPag_verify_cert": false,
             "pagCommandType": "pag:windows_server:disable_firewall_rule",
-            "pagInstanceId": "25ceb9be-068a-45f2-8868-a403faf2de3d",
+            "pagInstanceId": "286464e0-ea93-477e-81ab-d53589308b69",
             "pagSpecId": "7e479f41-e367-4e20-85c8-9e2936aa4658",
             "param_connType": "paramInline",
             "param_credentialType": "paramInline",
@@ -473,7 +473,7 @@
         "Windows Server 4": {
           "actionId": "sp:pag-windows-server",
           "attributes": {
-            "inputForPag_address": "10.0.0.250",
+            "inputForPag_address": "10.0.0.184",
             "inputForPag_auth_password": "secrets://aws-sm-provider/arn%3Aaws%3Asecretsmanager%3Aus-east-1%3A904994459557%3Asecret%3Aprivilege%2Fpag%2Fqa%2Finternal-demo-ad-tMKiv4/password",
             "inputForPag_auth_type": "ntlm",
             "inputForPag_auth_username": "secrets://aws-sm-provider/arn%3Aaws%3Asecretsmanager%3Aus-east-1%3A904994459557%3Asecret%3Aprivilege%2Fpag%2Fqa%2Finternal-demo-ad-tMKiv4/windows_username",
@@ -483,7 +483,7 @@
             "inputForPag_use_ssl": false,
             "inputForPag_verify_cert": false,
             "pagCommandType": "pag:windows_server:get_firewall_rule_by_id",
-            "pagInstanceId": "25ceb9be-068a-45f2-8868-a403faf2de3d",
+            "pagInstanceId": "286464e0-ea93-477e-81ab-d53589308b69",
             "pagSpecId": "7e479f41-e367-4e20-85c8-9e2936aa4658",
             "param_connType": "paramInline",
             "param_credentialType": "paramInline",
@@ -498,7 +498,7 @@
         "Windows Server 5": {
           "actionId": "sp:pag-windows-server",
           "attributes": {
-            "inputForPag_address": "10.0.0.250",
+            "inputForPag_address": "10.0.0.184",
             "inputForPag_auth_password": "secrets://aws-sm-provider/arn%3Aaws%3Asecretsmanager%3Aus-east-1%3A904994459557%3Asecret%3Aprivilege%2Fpag%2Fqa%2Finternal-demo-ad-tMKiv4/password",
             "inputForPag_auth_type": "ntlm",
             "inputForPag_auth_username": "secrets://aws-sm-provider/arn%3Aaws%3Asecretsmanager%3Aus-east-1%3A904994459557%3Asecret%3Aprivilege%2Fpag%2Fqa%2Finternal-demo-ad-tMKiv4/windows_username",
@@ -508,7 +508,7 @@
             "inputForPag_use_ssl": false,
             "inputForPag_verify_cert": false,
             "pagCommandType": "pag:windows_server:get_firewall_rule_by_id",
-            "pagInstanceId": "25ceb9be-068a-45f2-8868-a403faf2de3d",
+            "pagInstanceId": "286464e0-ea93-477e-81ab-d53589308b69",
             "pagSpecId": "7e479f41-e367-4e20-85c8-9e2936aa4658",
             "param_connType": "paramInline",
             "param_credentialType": "paramInline",
@@ -524,8 +524,8 @@
     },
     "description": "This interactive workflow allows you to enable or disable an inbound firewall rule on a Windows server.\n\nYou will be asked to choose whether to enable or disable a rule, then select the rule to update.",
     "enabled": false,
-    "id": "598dcb00-140d-406a-913d-9426d63f665c",
-    "modified": "2026-05-04T19:19:13.759993589Z",
+    "id": "bee52f2e-d47c-48b0-8fdc-558341b6bb64",
+    "modified": "2026-05-05T12:57:42.573062808Z",
     "modifiedBy": {
       "id": "90eb8204ac594f48ac598a55e0e73613",
       "name": "florian.banas",
@@ -539,14 +539,14 @@
     },
     "trigger": {
       "attributes": {
-        "filter.$": "$[?(@.workflowId == '598dcb00-140d-406a-913d-9426d63f665c')]",
+        "filter.$": "$[?(@.workflowId == 'bee52f2e-d47c-48b0-8fdc-558341b6bb64')]",
         "id": "idn:interactive-process-launched"
       },
       "type": "EVENT"
     }
   },
   "self": {
-    "id": "598dcb00-140d-406a-913d-9426d63f665c",
+    "id": "bee52f2e-d47c-48b0-8fdc-558341b6bb64",
     "name": "Update an Inbound Firewall Rule State on a Windows Server",
     "type": "WORKFLOW"
   },

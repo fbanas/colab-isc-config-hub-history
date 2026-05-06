@@ -4,9 +4,14 @@
   "object": {
     "accessProfiles": [],
     "accessRequestConfig": {
-      "approvalSchemes": [],
-      "commentsRequired": null,
-      "denialCommentsRequired": null,
+      "approvalSchemes": [
+        {
+          "approverId": null,
+          "approverType": "OWNER"
+        }
+      ],
+      "commentsRequired": false,
+      "denialCommentsRequired": false,
       "maxPermittedAccessDuration": null,
       "reauthorizationRequired": false,
       "requireEndDate": false
@@ -17,20 +22,28 @@
     "dimensionRefs": null,
     "dimensional": false,
     "dimensions": [],
-    "enabled": false,
-    "entitlements": [],
+    "enabled": true,
+    "entitlements": [
+      {
+        "id": "332e2d25-fad5-36f4-96db-d1b74f41577f",
+        "name": "Accounts Receivable Analyst",
+        "sourceId": "08957d38-0b9c-4e81-a03a-9c955d7a8024",
+        "sourceName": "Azure-AD",
+        "type": "ENTITLEMENT"
+      }
+    ],
     "id": "6e57b05a640c44d09c31b8f27f3ccc7a",
     "legacyMembershipInfo": null,
     "membership": null,
-    "modified": "2026-03-31T17:08:09.157083Z",
+    "modified": "2026-05-05T19:33:31.920964Z",
     "name": "Accounts Receivable Analyst",
     "owner": {
-      "id": "f99c089822c142abbcb84a93890d8416",
-      "name": "florian.banas1",
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
       "type": "IDENTITY"
     },
     "privilegeLevel": null,
-    "requestable": false,
+    "requestable": true,
     "revocationRequestConfig": {
       "approvalSchemes": []
     },

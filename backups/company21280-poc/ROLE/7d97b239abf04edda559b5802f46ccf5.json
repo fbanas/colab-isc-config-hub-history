@@ -22,7 +22,7 @@
     "id": "7d97b239abf04edda559b5802f46ccf5",
     "legacyMembershipInfo": null,
     "membership": null,
-    "modified": "2026-03-27T15:02:37.965121Z",
+    "modified": "2026-05-05T20:44:27.689802Z",
     "name": "LH1_Sales",
     "owner": {
       "id": "aa4ab9d17dc24afc84947597b9ce1a46",
@@ -30,7 +30,7 @@
       "type": "IDENTITY"
     },
     "privilegeLevel": null,
-    "requestable": false,
+    "requestable": true,
     "revocationRequestConfig": {
       "approvalSchemes": []
     },

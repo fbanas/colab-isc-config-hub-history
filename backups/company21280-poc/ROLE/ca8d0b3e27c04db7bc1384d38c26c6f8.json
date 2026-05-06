@@ -59,7 +59,7 @@
       "identities": null,
       "type": "STANDARD"
     },
-    "modified": "2026-03-27T15:02:35.622163Z",
+    "modified": "2026-05-05T20:44:50.706805Z",
     "name": "LH1_Entry_Location",
     "owner": {
       "id": "aa4ab9d17dc24afc84947597b9ce1a46",
@@ -67,7 +67,7 @@
       "type": "IDENTITY"
     },
     "privilegeLevel": null,
-    "requestable": false,
+    "requestable": true,
     "revocationRequestConfig": {
       "approvalSchemes": []
     },

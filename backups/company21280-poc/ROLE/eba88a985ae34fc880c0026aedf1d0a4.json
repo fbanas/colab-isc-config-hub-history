@@ -22,7 +22,7 @@
     "id": "eba88a985ae34fc880c0026aedf1d0a4",
     "legacyMembershipInfo": null,
     "membership": null,
-    "modified": "2026-03-27T15:02:44.75707Z",
+    "modified": "2026-05-05T20:45:25.065173Z",
     "name": "LH2_Flight-Operations",
     "owner": {
       "id": "8452228aa5ef478bbf3c702bdea86cf8",
@@ -30,7 +30,7 @@
       "type": "IDENTITY"
     },
     "privilegeLevel": null,
-    "requestable": false,
+    "requestable": true,
     "revocationRequestConfig": {
       "approvalSchemes": []
     },

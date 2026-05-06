@@ -22,7 +22,7 @@
     "id": "9ec9fae193614564be2ea7a46a9753eb",
     "legacyMembershipInfo": null,
     "membership": null,
-    "modified": "2026-03-27T15:02:59.618456Z",
+    "modified": "2026-05-05T20:47:08.000297Z",
     "name": "LHG_RC_Reviewer",
     "owner": {
       "id": "e4acf5ec640048019c7951d422749048",
@@ -30,7 +30,7 @@
       "type": "IDENTITY"
     },
     "privilegeLevel": null,
-    "requestable": false,
+    "requestable": true,
     "revocationRequestConfig": {
       "approvalSchemes": []
     },

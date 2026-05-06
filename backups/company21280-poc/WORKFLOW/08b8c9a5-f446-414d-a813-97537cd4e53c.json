@@ -2,7 +2,7 @@
   "jwsHeader": null,
   "jwsSignature": null,
   "object": {
-    "created": "2026-05-04T18:51:58.693522471Z",
+    "created": "2026-05-05T13:09:05.122796177Z",
     "creator": {
       "id": "90eb8204ac594f48ac598a55e0e73613",
       "name": "florian.banas",
@@ -134,14 +134,14 @@
               ]
             },
             "method": "post",
-            "oAuthClientId": "9fd829c074994fcf9fcabe16ed743a23",
-            "oAuthClientSecret": "",
+            "oAuthClientId": "0bcf06abbf7b400fbf33fab8f28337aa",
+            "oAuthClientSecret": "$.secrets.53c8d78f-5e23-4bf4-8091-234ded4be38c",
             "oAuthCredentialLocation": "oAuthInHeader",
             "oAuthScope": null,
-            "oAuthTokenUrl": "https://company15772-poc.api.identitynow-demo.com/oauth/token",
+            "oAuthTokenUrl": "https://company21280-poc.api.identitynow-demo.com/oauth/token",
             "requestContentType": "json",
             "requestHeaders": null,
-            "url": "https://company15772-poc.api.identitynow-demo.com/v2025/access-requests",
+            "url": "https://company21280-poc.api.identitynow-demo.com/oauth/token",
             "urlParams": null
           },
           "description": "HTTP request to request Role, including expiry time",
@@ -169,13 +169,14 @@
               ]
             },
             "method": "post",
-            "oAuthClientId": "6ce6663d1d634bfe9e93198deab96c44",
+            "oAuthClientId": "0bcf06abbf7b400fbf33fab8f28337aa",
+            "oAuthClientSecret": "$.secrets.3143969b-4bf9-4b45-aa80-854afcf43c4f",
             "oAuthCredentialLocation": "oAuthInHeader",
             "oAuthScope": null,
-            "oAuthTokenUrl": "https://company9635-poc.api.identitynow.com/oauth/token",
+            "oAuthTokenUrl": "https://company21280-poc.api.identitynow-demo.com/oauth/token",
             "requestContentType": "json",
             "requestHeaders": null,
-            "url": "https://company9635-poc.api.identitynow.com/v3/access-requests",
+            "url": "https://company21280-poc.api.identitynow-demo.com/oauth/token",
             "urlParams": null
           },
           "description": "HTTP request to request Role, including expiry time",
@@ -187,9 +188,9 @@
       }
     },
     "description": "",
-    "enabled": false,
-    "id": "97c2f60f-b30f-4eb7-87de-387fcfa1245d",
-    "modified": "2026-05-04T18:51:58.693522471Z",
+    "enabled": true,
+    "id": "08b8c9a5-f446-414d-a813-97537cd4e53c",
+    "modified": "2026-05-05T13:23:58.100183953Z",
     "modifiedBy": {
       "id": "90eb8204ac594f48ac598a55e0e73613",
       "name": "florian.banas",
@@ -211,7 +212,7 @@
     }
   },
   "self": {
-    "id": "97c2f60f-b30f-4eb7-87de-387fcfa1245d",
+    "id": "08b8c9a5-f446-414d-a813-97537cd4e53c",
     "name": "Just in Time Provisioning v2",
     "type": "WORKFLOW"
   },

@@ -1,0 +1,34 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "connectionCount": 0,
+    "connections": null,
+    "created": null,
+    "description": "LH1 (Scope A) Governance Source Group",
+    "id": "55b2da0b-1c01-437b-b129-a6f6af394b91",
+    "memberCount": 0,
+    "members": [
+      {
+        "id": "a67216598c8c4ea8b397fb4c4b553644",
+        "name": "Jerry.Bennett",
+        "type": "IDENTITY"
+      }
+    ],
+    "modified": null,
+    "name": "LH1 (Scope A) Governance - Sub Role Admin Group",
+    "owner": {
+      "displayName": null,
+      "emailAddress": null,
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    }
+  },
+  "self": {
+    "id": "55b2da0b-1c01-437b-b129-a6f6af394b91",
+    "name": "LH1 (Scope A) Governance - Sub Role Admin Group",
+    "type": "GOVERNANCE_GROUP"
+  },
+  "version": 1
+}

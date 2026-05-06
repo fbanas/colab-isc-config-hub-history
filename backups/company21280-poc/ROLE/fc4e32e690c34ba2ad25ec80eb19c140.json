@@ -17,29 +17,29 @@
       "requireEndDate": false
     },
     "additionalOwners": [],
-    "created": "2026-03-18T13:31:37.047433Z",
-    "description": "Role to APP-201 (LH2-Role-7)",
+    "created": "2026-05-05T19:58:33.16151Z",
+    "description": null,
     "dimensionRefs": null,
     "dimensional": false,
     "dimensions": [],
     "enabled": true,
     "entitlements": [
       {
-        "id": "4cd9fda4-f403-3e76-9110-315ec0edca97",
-        "name": "APP-201",
-        "sourceId": "00c23142-0974-4506-bab1-e856117f40f7",
-        "sourceName": "Microsoft Entra sp-demo262 SaaS",
+        "id": "5ec555e2-755e-3ead-93cd-a5aec5ab8b08",
+        "name": "Accounts Payable Analyst",
+        "sourceId": "08957d38-0b9c-4e81-a03a-9c955d7a8024",
+        "sourceName": "Azure-AD",
         "type": "ENTITLEMENT"
       }
     ],
-    "id": "ec50fcee188f457ba14b0dc21caa89bc",
+    "id": "fc4e32e690c34ba2ad25ec80eb19c140",
     "legacyMembershipInfo": null,
     "membership": null,
-    "modified": "2026-05-05T20:44:47.617462Z",
-    "name": "LH2_APP_Helpdesk-System",
+    "modified": "2026-05-05T19:59:16.918993Z",
+    "name": "Accounts Payable Analyst V1",
     "owner": {
-      "id": "8452228aa5ef478bbf3c702bdea86cf8",
-      "name": "Hrnim Hussen van",
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
       "type": "IDENTITY"
     },
     "privilegeLevel": null,
@@ -47,20 +47,12 @@
     "revocationRequestConfig": {
       "approvalSchemes": []
     },
-    "segmentRefs": [
-      {
-        "id": "baf24241-1df7-47e0-8651-384fac91dcf6",
-        "name": "LH2-Lufthansa 2",
-        "type": "SEGMENT"
-      }
-    ],
-    "segments": [
-      "baf24241-1df7-47e0-8651-384fac91dcf6"
-    ]
+    "segmentRefs": [],
+    "segments": []
   },
   "self": {
-    "id": "ec50fcee188f457ba14b0dc21caa89bc",
-    "name": "LH2_APP_Helpdesk-System",
+    "id": "fc4e32e690c34ba2ad25ec80eb19c140",
+    "name": "Accounts Payable Analyst V1",
     "type": "ROLE"
   },
   "version": 1

@@ -22,7 +22,7 @@
     "id": "1f27463ecef84a8fb2d4fcd6bc93efa2",
     "legacyMembershipInfo": null,
     "membership": null,
-    "modified": "2026-03-27T15:02:58.32013Z",
+    "modified": "2026-05-05T20:46:55.348527Z",
     "name": "LHG_RC_Auditor",
     "owner": {
       "id": "e4acf5ec640048019c7951d422749048",
@@ -30,7 +30,7 @@
       "type": "IDENTITY"
     },
     "privilegeLevel": null,
-    "requestable": false,
+    "requestable": true,
     "revocationRequestConfig": {
       "approvalSchemes": []
     },

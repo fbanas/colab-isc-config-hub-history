@@ -11,7 +11,13 @@
       "reauthorizationRequired": false,
       "requireEndDate": false
     },
-    "additionalOwners": [],
+    "additionalOwners": [
+      {
+        "id": "55b2da0b-1c01-437b-b129-a6f6af394b91",
+        "name": "LH1 (Scope A) Governance - Sub Role Admin Group",
+        "type": "GOVERNANCE_GROUP"
+      }
+    ],
     "created": "2026-03-18T13:31:43.688278Z",
     "description": "Role for Admin from LH1 (LH1-Role-1)",
     "dimensionRefs": null,
@@ -46,7 +52,7 @@
       "identities": null,
       "type": "STANDARD"
     },
-    "modified": "2026-03-27T15:02:33.475566Z",
+    "modified": "2026-05-05T20:43:06.105521Z",
     "name": "LH1_BUAdmin",
     "owner": {
       "id": "fcc9db01f32249889e627da51f5f710a",
@@ -54,7 +60,7 @@
       "type": "IDENTITY"
     },
     "privilegeLevel": null,
-    "requestable": false,
+    "requestable": true,
     "revocationRequestConfig": {
       "approvalSchemes": []
     },

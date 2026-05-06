@@ -1,0 +1,149 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": "2026-05-05T12:54:38.356472704Z",
+    "creator": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "definition": {
+      "start": "Get Identity",
+      "steps": {
+        "Activate Certification Campaign": {
+          "actionId": "sp:activate-campaign",
+          "attributes": {
+            "id.$": "$.createCertificationCampaign.id"
+          },
+          "catch": [
+            {
+              "next": "Wait"
+            }
+          ],
+          "description": "This step will activate the campaign. \n\nNOTE: We have enabled Error Handling for this step as it can often times take time to generate the campaign depending on activity levels. The Error Handling will branch the workflow to a Wait Step, if an error is received, and incorporate a Wait for 24 hours before trying to activate again.",
+          "displayName": "",
+          "nextStep": "Send Email",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Activate Certification Campaign 1": {
+          "actionId": "sp:activate-campaign",
+          "attributes": {
+            "id.$": "$.createCertificationCampaign.id"
+          },
+          "description": "This step will activate the campaign. \n\nNOTE: We have enabled Error Handling above. The Error Handling will branch the workflow to wait for 24 hours before attempting to activate the campaign again. You can repeat this error handling if needed.",
+          "displayName": "",
+          "nextStep": "Send Email",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Create Certification Campaign": {
+          "actionId": "sp:create-campaign",
+          "attributes": {
+            "activateUponCreation": false,
+            "description": "Insert any description you find relevant to the campaign. \n\nExample: \nThis Campaign was automtically created as {{$.getIdentity.attributes.displayName}} recently changed departments.",
+            "duration": "30d",
+            "emailNotificationEnabled": true,
+            "name.$": "$.getIdentity.attributes.displayName",
+            "recommendationsEnabled": true,
+            "type": "MANAGER",
+            "undecidedAccess": true
+          },
+          "description": "Create an identity certification campaign for any identity that has had a department change with the following attributes:\n\nName: Named for the Identity \nReviewer Type: Manager\nDuration: 30 days\nAI Recommendations: Enabled\nNotifications: Enabled\nStart Campaign: Disabled",
+          "displayName": "",
+          "nextStep": "Activate Certification Campaign",
+          "type": "action",
+          "versionNumber": 2
+        },
+        "End Step - Success": {
+          "displayName": "",
+          "type": "success"
+        },
+        "Get Identity": {
+          "actionId": "sp:get-identity",
+          "attributes": {
+            "id.$": "$.trigger.identity.id"
+          },
+          "description": "Get the identity's attributes so we can look up their managerRefID as well as other data.",
+          "displayName": "Get all of the Identities Attributes",
+          "nextStep": "Get Identity 1",
+          "type": "action",
+          "versionNumber": 2
+        },
+        "Get Identity 1": {
+          "actionId": "sp:get-identity",
+          "attributes": {
+            "id.$": "$.getIdentity.managerRef.id"
+          },
+          "description": "This node is used to gather information about the user's manager to populate their email.",
+          "displayName": "Get Managers eMail",
+          "nextStep": "Create Certification Campaign",
+          "type": "action",
+          "versionNumber": 2
+        },
+        "Send Email": {
+          "actionId": "sp:send-email",
+          "attributes": {
+            "body": "<p>Dear <strong>${recipName}</strong>,</p>\n<p>This notification is to inform you that <em><strong>{{$.getIdentity.attributes.displayName}} </strong></em>has recently changed departments.&nbsp;</p>\n<p>Due to this change, a Certification Campaign named <strong>${campaignName} </strong>has been created and activated and is awaiting your review/certification.&nbsp;<br><br>Thank you,&nbsp;<br>Your HR Team</p>",
+            "context": {
+              "campaignName.$": "$.createCertificationCampaign.name",
+              "recipName.$": "$.getIdentity1.attributes.email"
+            },
+            "from.$": "",
+            "recipientEmailList.$": "$.getIdentity1.attributes.email",
+            "subject": "Your Direct report {{$.getIdentity.attributes.displayName}} has changed departments"
+          },
+          "description": "Send an email to the identity's manager so they know there is a certification campaign pending for their employee that they need to complete.\n\nNOTE: The email body makes use of \"Velocity Templating\" as well as inline variables to aid the admin in how to use both.",
+          "displayName": "Send Email with Campaign ID",
+          "nextStep": "End Step - Success",
+          "type": "action",
+          "versionNumber": 2
+        },
+        "Wait": {
+          "actionId": "sp:sleep",
+          "attributes": {
+            "duration": "24h",
+            "type": "waitFor"
+          },
+          "description": "This action allows the workflow to pause and wait if an error is returned in activating the Certification Campaign. \n\nThis will pause the workflow for 24 hours before continuing.",
+          "displayName": "Wait for 24 hours before attempting to activate again",
+          "nextStep": "Activate Certification Campaign 1",
+          "type": "action",
+          "versionNumber": 1
+        }
+      }
+    },
+    "description": "This workflow is triggered when an identity changes departments. The workflow creates and activates a certification campaign so their manager can verify their new access\n\nUpdated November 2024 to include new Actions",
+    "enabled": false,
+    "id": "7d7db791-a544-460b-87f7-1298632bb799",
+    "modified": "2026-05-05T12:54:38.356472704Z",
+    "modifiedBy": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "name": "Template: Create and Activate a Certification Campaign",
+    "owner": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "trigger": {
+      "attributes": {
+        "attributeToFilter": "department",
+        "description": "It is important to consider a Filter for all workflows but especially workflows that trigger on events with a high event rate. \n\nThis Workflow has an example filter to ensure that execution only occurs when an identities department changes.",
+        "filter.$": "$.changes[?(@.attribute == \"department\")]",
+        "id": "idn:identity-attributes-changed"
+      },
+      "displayName": "Identity attribute \"department\" changed",
+      "type": "EVENT"
+    }
+  },
+  "self": {
+    "id": "7d7db791-a544-460b-87f7-1298632bb799",
+    "name": "Template: Create and Activate a Certification Campaign",
+    "type": "WORKFLOW"
+  },
+  "version": 1
+}

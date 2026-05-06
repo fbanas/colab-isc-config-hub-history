@@ -23,8 +23,16 @@
     "dimensionRefs": null,
     "dimensional": false,
     "dimensions": [],
-    "enabled": true,
-    "entitlements": [],
+    "enabled": false,
+    "entitlements": [
+      {
+        "id": "5ec555e2-755e-3ead-93cd-a5aec5ab8b08",
+        "name": "Accounts Payable Analyst",
+        "sourceId": "08957d38-0b9c-4e81-a03a-9c955d7a8024",
+        "sourceName": "Azure-AD",
+        "type": "ENTITLEMENT"
+      }
+    ],
     "id": "d1621dbc40c845199fb5a785a4b52455",
     "legacyMembershipInfo": null,
     "membership": {
@@ -86,7 +94,7 @@
       "identities": null,
       "type": "STANDARD"
     },
-    "modified": "2026-03-31T07:52:31.382698Z",
+    "modified": "2026-05-05T19:35:02.250077Z",
     "name": "Accounts Payable Analyst",
     "owner": {
       "id": "880d15e1a216498993a47701a882bca4",

@@ -2,11 +2,11 @@
   "jwsHeader": null,
   "jwsSignature": null,
   "object": {
-    "active": false,
+    "active": true,
     "created": "2026-03-19T13:39:20.671305Z",
     "description": "This is the end-user Segment for LH1-Lufthansa 1 for request segmentation",
     "id": "0643ef20-158f-4143-93b1-838213316949",
-    "modified": "2026-03-26T15:30:39.260823Z",
+    "modified": "2026-05-05T16:21:46.15451Z",
     "name": "LH1-Lufthansa 1",
     "owner": null,
     "visibilityCriteria": {

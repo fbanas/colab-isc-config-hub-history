@@ -1,0 +1,52 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessProfiles": [],
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": null,
+      "denialCommentsRequired": null,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [
+      {
+        "id": "55b2da0b-1c01-437b-b129-a6f6af394b91",
+        "name": "LH1 (Scope A) Governance - Sub Role Admin Group",
+        "type": "GOVERNANCE_GROUP"
+      }
+    ],
+    "created": "2026-05-05T20:14:34.53054Z",
+    "description": null,
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": false,
+    "entitlements": [],
+    "id": "1d6b81bee36e4355a272126f0dec3557",
+    "legacyMembershipInfo": null,
+    "membership": null,
+    "modified": "2026-05-05T20:16:46.157528Z",
+    "name": "test",
+    "owner": {
+      "id": "9e854f3e84594eea904bcc307dbbee3d",
+      "name": "Arthur Bryant",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [],
+    "segments": []
+  },
+  "self": {
+    "id": "1d6b81bee36e4355a272126f0dec3557",
+    "name": "test",
+    "type": "ROLE"
+  },
+  "version": 1
+}

@@ -46,7 +46,7 @@
       "identities": null,
       "type": "STANDARD"
     },
-    "modified": "2026-03-27T15:02:46.361469Z",
+    "modified": "2026-05-05T20:45:37.957144Z",
     "name": "LH2_Line-Managers",
     "owner": {
       "id": "8452228aa5ef478bbf3c702bdea86cf8",
@@ -54,7 +54,7 @@
       "type": "IDENTITY"
     },
     "privilegeLevel": null,
-    "requestable": false,
+    "requestable": true,
     "revocationRequestConfig": {
       "approvalSchemes": []
     },

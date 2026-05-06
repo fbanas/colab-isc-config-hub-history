@@ -22,7 +22,7 @@
     "id": "5c32d782cd754cf3a0f22f3ffbe2da7c",
     "legacyMembershipInfo": null,
     "membership": null,
-    "modified": "2026-03-27T15:02:50.59442Z",
+    "modified": "2026-05-05T20:46:07.180522Z",
     "name": "LH3_IT",
     "owner": {
       "id": "4ccc61c7219545cea31d3f22519374d5",
@@ -30,7 +30,7 @@
       "type": "IDENTITY"
     },
     "privilegeLevel": null,
-    "requestable": false,
+    "requestable": true,
     "revocationRequestConfig": {
       "approvalSchemes": []
     },
