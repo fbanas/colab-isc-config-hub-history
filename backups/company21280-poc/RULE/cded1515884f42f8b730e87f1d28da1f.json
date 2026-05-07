@@ -1,0 +1,29 @@
+{
+  "jwsHeader": "eyJhbGciOiJFUzI1NiJ9",
+  "jwsSignature": "Vy5knuSr1wSiyjRhXL7b0BK-GoAWqAoVH1q8-iDGBnEh4omXAOaMOr-uZrAEpPYI8P9pQepOrYN3C3Ewc3vi4Q",
+  "object": {
+    "attributes": {
+      "sourceVersion": "2026-05-07 08:37:37"
+    },
+    "created": "2026-05-07T08:37:38.263Z",
+    "description": "Returns the consolidated hierarchy position for the identity by traversing entitlement parent relationships from a configurable source.",
+    "id": "cded1515884f42f8b730e87f1d28da1f",
+    "modified": "2026-05-07T08:37:38.263Z",
+    "name": "Hierarchy Management",
+    "signature": {
+      "input": [],
+      "output": null
+    },
+    "sourceCode": {
+      "script": "\nimport sailpoint.object.ManagedAttribute;\nimport java.util.List;\nimport java.util.ArrayList;\nimport java.util.Set;\nimport java.util.HashSet;\nimport java.util.Collections;\n\nString SOURCE_ID = \"6659e1f4005c400e8ce339362afef7c6\";\nString DEFAULT_VALUE = \"-\";\n\nString identityAttr = idn.getSourceAttributeBySourceId(SOURCE_ID, \"identityAttribute\");\nString entitlementAccAttr = idn.getSourceAttributeBySourceId(SOURCE_ID, \"entitlementAccountAttribute\");\nString entitlementParentAttr = idn.getSourceAttributeBySourceId(SOURCE_ID, \"entitlementParentAttribute\");\nString entitlementDisplayAttr = idn.getSourceAttributeBySourceId(SOURCE_ID, \"entitlementDisplayAttribute\");\nString hierarchySep = idn.getSourceAttributeBySourceId(SOURCE_ID, \"hierarchySeparator\");\n\nif (identityAttr == null || entitlementAccAttr == null || entitlementDisplayAttr == null) {\n    return DEFAULT_VALUE;\n}\n\nString entitlementValue = null;\nif (identity != null) {\n    Object val = identity.getAttribute(identityAttr);\n    if (val != null) {\n        entitlementValue = val.toString();\n    }\n}\n\nif (entitlementValue == null || entitlementValue.trim().isEmpty()) {\n    return DEFAULT_VALUE;\n}\n\nList path = new ArrayList();\nSet visited = new HashSet();\nString current = entitlementValue;\nint maxDepth = 20;\n\nwhile (current != null && !current.trim().isEmpty() && !visited.contains(current) && path.size() < maxDepth) {\n    visited.add(current);\n\n    sailpoint.rule.ManagedAttributeDetails details = idn.getManagedAttributeDetails(\n        SOURCE_ID, entitlementAccAttr, current, ManagedAttribute.Type.Entitlement\n    );\n    if (details == null) {\n        break;\n    }\n\n    java.util.Map attrs = details.getAttributes();\n    if (attrs == null) {\n        break;\n    }\n\n    Object displayValue = attrs.get(entitlementDisplayAttr);\n    if (displayValue != null) {\n        path.add(displayValue.toString());\n    }\n\n    Object parentVal = attrs.get(entitlementParentAttr);\n    current = (parentVal != null) ? parentVal.toString() : null;\n}\n\nif (path.isEmpty()) {\n    return DEFAULT_VALUE;\n}\n\nCollections.reverse(path);\nStringBuilder result = new StringBuilder();\nfor (int i = 0; i < path.size(); i++) {\n    if (i > 0 && hierarchySep != null) {\n        result.append(hierarchySep);\n    }\n    result.append(path.get(i));\n}\nreturn result.toString();\n  ",
+      "version": "2026-05-07 08:37:37"
+    },
+    "type": "IdentityAttribute"
+  },
+  "self": {
+    "id": "cded1515884f42f8b730e87f1d28da1f",
+    "name": "Hierarchy Management",
+    "type": "RULE"
+  },
+  "version": 1
+}

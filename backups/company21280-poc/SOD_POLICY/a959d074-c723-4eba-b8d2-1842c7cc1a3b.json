@@ -36,8 +36,8 @@
     "description": "This policy separates key financial functions to prevent fraud, errors, and other financial irregularities, reducing the risk of conflicts of interest and ensuring the integrity of financial information",
     "externalPolicyReference": "",
     "id": "a959d074-c723-4eba-b8d2-1842c7cc1a3b",
-    "modified": "2026-05-04T08:43:11Z",
-    "modifierId": null,
+    "modified": "2026-05-06T11:13:02Z",
+    "modifierId": "90eb8204ac594f48ac598a55e0e73613",
     "name": "Money-In Money-Out",
     "ownerRef": {
       "id": "90eb8204ac594f48ac598a55e0e73613",

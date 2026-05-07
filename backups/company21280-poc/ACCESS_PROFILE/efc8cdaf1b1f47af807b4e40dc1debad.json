@@ -22,7 +22,7 @@
       }
     ],
     "id": "efc8cdaf1b1f47af807b4e40dc1debad",
-    "modified": "2026-04-15T15:45:27.165918Z",
+    "modified": "2026-05-06T12:55:41.817593Z",
     "name": "Multi Acc. Birthright Access Profile",
     "owner": {
       "id": "fcc9db01f32249889e627da51f5f710a",
@@ -42,11 +42,24 @@
               "value": "-adm@"
             }
           ],
-          "operation": "OR",
+          "operation": "AND",
+          "value": null
+        },
+        {
+          "attribute": null,
+          "children": [
+            {
+              "attribute": "userType",
+              "children": null,
+              "operation": "EQUALS",
+              "value": "Guest"
+            }
+          ],
+          "operation": "AND",
           "value": null
         }
       ],
-      "operation": "AND",
+      "operation": "OR",
       "value": null
     },
     "requestable": false,

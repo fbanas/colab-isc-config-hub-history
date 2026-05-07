@@ -172,7 +172,7 @@
       "checkDeletedDisabled": false,
       "clientId": "89c55633540a4e60ae4328288781080c",
       "cloudAuthoritativeSourcePrecedence": 30,
-      "cloudCacheUpdate": 1778011507298,
+      "cloudCacheUpdate": 1778078449143,
       "cloudDisplayName": "Identity Fusion NG",
       "cloudIdentityProfileName": "Identity Fusion NG",
       "concurrencyCheckEnabled": false,
@@ -226,6 +226,15 @@
       "maxHistoryMessages": "10",
       "maxRetries": "20",
       "normalAttributeDefinitions": [
+        {
+          "case": "same",
+          "expression": "## 1. Define the array\n#set($airlines = [\n  \"Lufthansa Group\",\n  \"Lufthansa CityLine\",\n  \"Lufthansa Cargo\",\n  \"Eurowings\",\n  \"Eurowings Europe\",\n  \"Eurowings Discover\",\n  \"Austrian Airlines\",\n  \"Tyrolean Airways\",\n  \"Austrian MyHoliday\",\n  \"Air Dolomiti\"\n])\n## 2. Generate a random index\n## In JS-based engines, you often use the native Math object if passed in, \n## or the engine's internal randomizing capability.\n#set($listSize = $airlines.length)\n#set($rawRandom = $Math.random())\n#set($multiplied = $rawRandom * $listSize)\n#set($index = $Math.floor($multiplied))\n## 3. Retrieve the value\n#set($selectedAirline = $airlines.get($index))\n$!selectedAirline",
+          "name": "airline",
+          "normalize": false,
+          "refresh": false,
+          "spaces": false,
+          "trim": true
+        },
         {
           "case": "same",
           "expression": "## 1. Map each source key to its specific attribute names [attr1, attr2]\n#set($attrMap = {\n  \"LHG\":  [\"BUSINESS_UNIT\", \"POSITION\"],\n  \"LH1\":  [\"BUSINESS_UNIT\", \"POSITION\"],\n  \"LH2\":  [\"Business Unit\", \"Position\"],\n  \"LH3\":  [\"business-unit\", \"position\"],\n  \"NERM\": [\"employee_type_dropdown\", \"job_title_dropdown\"],\n  \"External Feed\":  [\"BUSINESS_UNIT\", \"POSITION\"],\n  \"Microsoft Entra sp-demo262 SaaS\": [\"department\", \"jobTitle\"]\n})\n\n## 2. Define the execution order\n#set($keyOrder = [\"LHG\", \"LH1\", \"LH2\", \"LH3\", \"NERM\", \"External Feed\", \"Microsoft Entra sp-demo262 SaaS\"])\n\n#foreach($key in $keyOrder)\n  #set($accountList = $sources.get($key))\n  #set($currentAttrs = $attrMap.get($key))\n  \n  #if($accountList && $accountList.size() > 0 && $currentAttrs && $currentAttrs.size() >= 2)\n    #foreach($account in $accountList)\n      #set($attr1 = $account.get($currentAttrs.get(0)))\n      #set($attr2 = $account.get($currentAttrs.get(1)))\n      #if(\"$!attr1\" != \"\" && \"$!attr2\" != \"\")\n        [$attr1|$attr2]#if($foreach.hasNext) #end\n      #end\n    #end\n    #if($foreach.hasNext) #end\n  #end\n#end",
@@ -710,6 +719,16 @@
             "type": "STRING"
           },
           {
+            "description": "airline",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "airline",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
             "description": "originAccount",
             "isEntitlement": false,
             "isGroup": false,
@@ -758,7 +777,7 @@
         "id": "ac036cf2473e45c9a7e14ef08370ee4a",
         "identityAttribute": "id",
         "includePermissions": false,
-        "modified": "2026-05-04T08:15:22.952Z",
+        "modified": "2026-05-06T13:48:27.135Z",
         "name": "account",
         "nativeObjectType": "User"
       },

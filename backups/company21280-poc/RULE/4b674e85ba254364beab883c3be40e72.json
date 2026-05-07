@@ -1,0 +1,29 @@
+{
+  "jwsHeader": "eyJhbGciOiJFUzI1NiJ9",
+  "jwsSignature": "-gB-0rlgGAqfLYecH8RlLhA2tUdidgWPPSnsltsgfHNyXAUNO1mDgFsqpY8pjzyDJCGjyWSiNQDO40eB7APjBg",
+  "object": {
+    "attributes": {
+      "sourceVersion": "2026-05-06 14:03:29"
+    },
+    "created": "2026-05-06T12:40:07.634Z",
+    "description": "Returns the managed attribute description for a value stored on the identity.",
+    "id": "4b674e85ba254364beab883c3be40e72",
+    "modified": "2026-05-06T14:03:30.462Z",
+    "name": "Organizations",
+    "signature": {
+      "input": [],
+      "output": null
+    },
+    "sourceCode": {
+      "script": "\nimport sailpoint.object.Identity;\n\nString attributeName = \"organization\";\nString sourceId = \"6659e1f4005c400e8ce339362afef7c6\";\nString typeName = \"organization\";\n\nString attributeValue = null;\nif (identity != null && attributeName != null) {\n    attributeValue = identity.getStringAttribute(attributeName);\n}\n\nif (attributeValue == null || attributeValue.trim().isEmpty()) {\n    return null;\n}\n\nreturn idn.getManagedAttributeDescription(sourceId, typeName, attributeValue, null);\n  ",
+      "version": "2026-05-06 14:03:29"
+    },
+    "type": "IdentityAttribute"
+  },
+  "self": {
+    "id": "4b674e85ba254364beab883c3be40e72",
+    "name": "Organizations",
+    "type": "RULE"
+  },
+  "version": 1
+}

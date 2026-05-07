@@ -1,0 +1,186 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accountCorrelationRule": null,
+    "beforeProvisioningRule": null,
+    "connectorAttributes": {
+      "authenticationMethod": "OAuthLogin",
+      "cloudCacheUpdate": 1778141963838,
+      "cloudDisplayName": "NERM - Organisations",
+      "connectionParameters": [
+        {
+          "body": {},
+          "contextUrl": "/profiles?profile_type_id=1f22257e-b59b-40a6-8707-21ab0a9c22ed",
+          "header": {
+            "Accept": "application/json",
+            "Content-Type": "application/json"
+          },
+          "httpMethodType": "GET",
+          "operationType": "Group Aggregation",
+          "pagingInitialOffset": 0,
+          "pagingSize": 50,
+          "requestType": "API",
+          "resMappingObj": {
+            "description": "attributes.api_response_1",
+            "name": "attributes.organization_name",
+            "parent": "attributes.organization_organization"
+          },
+          "responseCode": [
+            "2**"
+          ],
+          "rootPath": "$.profiles",
+          "sequenceNumberForEndpoint": "1",
+          "uniqueNameForEndPoint": "Group Aggregation"
+        }
+      ],
+      "connectionTimeout": "60",
+      "connectionType": "direct",
+      "connectorName": "Web Services SaaS",
+      "deleteThresholdPercentage": 10,
+      "deltaAggregationEnabled": false,
+      "enableProvisioningFeature": false,
+      "entitlementAccountAttribute": "organization",
+      "entitlementDeltaAggregationEnabled": false,
+      "entitlementDisplayAttribute": "name",
+      "entitlementParentAttribute": "parent",
+      "genericWebServiceBaseUrl": "https://company21280-poc.mynonemployee.com/api",
+      "hasFullAggregationCompleted": true,
+      "healthCheckTimeout": 90,
+      "healthy": false,
+      "hierarchySeparator": ">",
+      "identityAttribute": "organization",
+      "idnProxyType": "sp-connect",
+      "possibleHttpErrorMessages": {},
+      "since": "2026-05-06T18:27:14.585Z",
+      "spConnectorInstanceId": "533807cc-ca87-401a-b832-f093a03c84ee",
+      "spConnectorSpecId": "7aa95c2a-6c38-4f39-9bb9-040f11641ee3",
+      "spConnectorSupportsCustomSchemas": true,
+      "status": "SOURCE_STATE_UNCHECKED_SOURCE_NO_ACCOUNTS",
+      "supportsDeltaAgg": true,
+      "templateApplication": "Web Services SaaS"
+    },
+    "connectorClass": "",
+    "connectorScriptName": "web-services-saas",
+    "correlationConfigDetails": {
+      "attributeAssignments": null,
+      "id": null,
+      "name": null
+    },
+    "crossTenantConnectorAttributes": {},
+    "deleteThreshold": 10,
+    "description": "Organizations",
+    "features": [
+      "AI_AGENT_AGGREGATION",
+      "AUTHENTICATE",
+      "MACHINE_IDENTITY_AGGREGATION",
+      "UNLOCK"
+    ],
+    "id": "6659e1f4005c400e8ce339362afef7c6",
+    "managementWorkgroup": null,
+    "managerCorrelationMapping": null,
+    "managerCorrelationRule": null,
+    "name": "NERM - Organisations",
+    "owner": {
+      "id": "176a5fc85208460383b2253765f4a137",
+      "name": "slpt.services",
+      "type": "IDENTITY"
+    },
+    "passwordPolicies": null,
+    "provisionAsCsv": false,
+    "provisioningPolicies": [],
+    "schemas": [
+      {
+        "attributes": [
+          {
+            "description": "description",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "description",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "name",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "parent",
+            "isEntitlement": true,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "parent",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {},
+        "created": "2026-05-06T11:05:50.562Z",
+        "displayAttribute": "name",
+        "features": [],
+        "hierarchyAttribute": "parent",
+        "id": "098c2b5dc5b044a3b22d469397d0586d",
+        "identityAttribute": "name",
+        "includePermissions": false,
+        "modified": "2026-05-06T12:09:08.172Z",
+        "name": "group",
+        "nativeObjectType": "Group"
+      },
+      {
+        "attributes": [
+          {
+            "description": "name",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "organization",
+            "isEntitlement": true,
+            "isGroup": true,
+            "isMulti": false,
+            "name": "organization",
+            "nativeName": null,
+            "schema": {
+              "id": "098c2b5dc5b044a3b22d469397d0586d",
+              "name": "group",
+              "type": "CONNECTOR_SCHEMA"
+            },
+            "type": "STRING"
+          }
+        ],
+        "configuration": {},
+        "created": "2026-05-06T11:05:50.562Z",
+        "displayAttribute": "name",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "c74c2bae9cfb45c0b593fe345c7f6fb7",
+        "identityAttribute": "name",
+        "includePermissions": false,
+        "modified": "2026-05-06T12:21:18.515Z",
+        "name": "account",
+        "nativeObjectType": "User"
+      }
+    ],
+    "type": "7aa95c2a-6c38-4f39-9bb9-040f11641ee3"
+  },
+  "self": {
+    "id": "6659e1f4005c400e8ce339362afef7c6",
+    "name": "NERM - Organisations",
+    "type": "SOURCE"
+  },
+  "version": 1
+}

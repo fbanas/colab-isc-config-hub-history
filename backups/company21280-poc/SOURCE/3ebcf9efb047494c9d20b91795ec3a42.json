@@ -7,7 +7,7 @@
     "connectorAttributes": {
       "account_type": "Profile",
       "checkDeletedDisabled": false,
-      "cloudCacheUpdate": 1774939795792,
+      "cloudCacheUpdate": "1778063572469",
       "cloudDisplayName": "NERM",
       "connectionType": "direct",
       "connectorName": "Non-Employee Risk Management+ (tag: latest)",
@@ -510,6 +510,16 @@
             "type": "STRING"
           },
           {
+            "description": "organization_name",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "organization_name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
             "description": "person_id",
             "isEntitlement": false,
             "isGroup": false,
@@ -568,7 +578,7 @@
         "id": "7e186d227728433aa190121334210a89",
         "identityAttribute": "id",
         "includePermissions": false,
-        "modified": "2026-03-30T20:26:54.841Z",
+        "modified": "2026-05-06T10:32:52.324Z",
         "name": "account",
         "nativeObjectType": "User"
       }

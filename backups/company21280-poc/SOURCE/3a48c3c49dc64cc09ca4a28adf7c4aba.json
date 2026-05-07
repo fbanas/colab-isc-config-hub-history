@@ -7,7 +7,7 @@
     "connectorAttributes": {
       "appTemplateData": "{ 'whiteListedAttributes': ['ServerTimeZone','authenticationMethod','beforeProvisioningRule','cloudCacheUpdate','cloudDisplayName','cloudExternalId','connectionTimeout','connectionType','connectorName','dateEvalFormat','deleteThresholdPercentage','deltaAggregation','deltaAggregationEnabled','enableStatus','formPath','genericWebServiceBaseUrl','grant_type','healthCheckTimeout','healthy','idnProxyType','lockStatus','managementWorkgroup','oauth_body_attrs_to_exclude','oauth_headers_to_exclude','possibleHttpErrorMessages','saml_headers_to_exclude','since','sourceDescription','spConnEnableStatefulCommands','spConnectorInstanceId','spConnectorSpecId','spConnectorSupportsCustomSchemas','status','supportsDeltaAgg','templateApplication','updateAttrWithChangePassword','skipGetObjectInCreate','slpt-source-diagnostics','objectNotFoundErrorMsg','disableCookies','createAccountWithEntReq','addRemoveEntInSingleReq','requestType','spConnDebugLoggingEnabled','category','acctAggregationEnd','acctAggregationStart','afterProvisioningRule','aggregateTimeout','connectionParameters','oAuthJwtHeader','oAuthJwtPayload','oauth_request_parameters','saml_assertion_url','saml_attributes','saml_request_body','token_url'] }",
       "authenticationMethod": "OAuthLogin",
-      "cloudCacheUpdate": 1774203892301,
+      "cloudCacheUpdate": 1778106299082,
       "cloudDisplayName": "Non-Employee Users",
       "connectionParameters": [
         {

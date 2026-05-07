@@ -9,7 +9,9 @@
         "LH2-FO": "Lufthansa 2",
         "LH2-IT": "Lufthansa 2",
         "LH3-IT": "Lufthansa 3",
-        "default": "Lufthansa"
+        "default": {
+          "type": "trim"
+        }
       }
     },
     "id": "000da3bb-5386-4270-98cf-372507ca13c5",
