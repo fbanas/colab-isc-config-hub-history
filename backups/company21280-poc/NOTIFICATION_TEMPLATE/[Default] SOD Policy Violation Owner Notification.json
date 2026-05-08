@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "<p>Dear $violationOwnerName,</p><br/><p>You are receiving this email because you are designated as a Separation of Duties (SoD) policy violation owner or notification recipient. SoD policy violations have been identified within SailPoint.</p><p><strong>Violation Details</strong></p><p>Violation Count: $violationCount</p><p>Risk Level: $policyLevel</p><p>Policy Name: $policyName</p><p>Description: $policyDescription</p>#if($policyExternalReference && $policyExternalReference.trim() != \"\")<p>External Reference: $policyExternalReference</p>#end<br/><p>If you are designated to manage violations for $policyName, you can do so from the <a href=\"$__global.productUrl$dashboardPath\">SailPoint Dashboard</a></p><br/><p>Thanks,<br/>The $__global.productName Team</p>",
+    "created": null,
+    "description": "Sent to a user that is designated as an SoD policy violation owner or notification recipient.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] SOD Policy Violation Owner Notification",
+    "key": "sod_violation_owner_notification",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "SOD Policy Violation Owner Notification",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "SoD Policy Violations Identified for $policyName",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] SOD Policy Violation Owner Notification",
+    "name": "SOD Policy Violation Owner Notification",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

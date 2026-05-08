@@ -6,7 +6,7 @@
     "beforeProvisioningRule": null,
     "connectorAttributes": {
       "authenticationMethod": "OAuthLogin",
-      "cloudCacheUpdate": 1778141963838,
+      "cloudCacheUpdate": "1778220235409",
       "cloudDisplayName": "NERM - Organisations",
       "connectionParameters": [
         {
@@ -22,7 +22,7 @@
           "pagingSize": 50,
           "requestType": "API",
           "resMappingObj": {
-            "description": "attributes.api_response_1",
+            "description2": "attributes.api_response_1",
             "name": "attributes.organization_name",
             "parent": "attributes.organization_organization"
           },
@@ -93,51 +93,6 @@
       {
         "attributes": [
           {
-            "description": "description",
-            "isEntitlement": false,
-            "isGroup": false,
-            "isMulti": false,
-            "name": "description",
-            "nativeName": null,
-            "schema": null,
-            "type": "STRING"
-          },
-          {
-            "description": "name",
-            "isEntitlement": false,
-            "isGroup": false,
-            "isMulti": false,
-            "name": "name",
-            "nativeName": null,
-            "schema": null,
-            "type": "STRING"
-          },
-          {
-            "description": "parent",
-            "isEntitlement": true,
-            "isGroup": false,
-            "isMulti": false,
-            "name": "parent",
-            "nativeName": null,
-            "schema": null,
-            "type": "STRING"
-          }
-        ],
-        "configuration": {},
-        "created": "2026-05-06T11:05:50.562Z",
-        "displayAttribute": "name",
-        "features": [],
-        "hierarchyAttribute": "parent",
-        "id": "098c2b5dc5b044a3b22d469397d0586d",
-        "identityAttribute": "name",
-        "includePermissions": false,
-        "modified": "2026-05-06T12:09:08.172Z",
-        "name": "group",
-        "nativeObjectType": "Group"
-      },
-      {
-        "attributes": [
-          {
             "description": "name",
             "isEntitlement": false,
             "isGroup": false,
@@ -173,6 +128,43 @@
         "modified": "2026-05-06T12:21:18.515Z",
         "name": "account",
         "nativeObjectType": "User"
+      },
+      {
+        "attributes": [
+          {
+            "description": "name",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "parent",
+            "isEntitlement": true,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "parent",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {
+          "descriptionAttribute": "parent"
+        },
+        "created": "2026-05-06T11:05:50.562Z",
+        "displayAttribute": "name",
+        "features": [],
+        "hierarchyAttribute": "parent",
+        "id": "098c2b5dc5b044a3b22d469397d0586d",
+        "identityAttribute": "name",
+        "includePermissions": false,
+        "modified": "2026-05-08T06:03:55.325Z",
+        "name": "group",
+        "nativeObjectType": "Group"
       }
     ],
     "type": "7aa95c2a-6c38-4f39-9bb9-040f11641ee3"

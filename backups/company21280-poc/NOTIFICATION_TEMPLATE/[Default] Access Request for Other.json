@@ -2,7 +2,7 @@
   "jwsHeader": null,
   "jwsSignature": null,
   "object": {
-    "body": "\tDear ${user.name},<br/>    <p>${requesterName} has requested the following access on your behalf:</p>\t#foreach ( $type in ${requestedObjectDetailsByType.keySet()} )        $type:        <ul>        #foreach ( $detail in ${requestedObjectDetailsByType.get($type)} )            <li> ${detail.name} #if($detail.removeDate) (Access Sunset Date: ${detail.removeDate}) #end</li>        #end        </ul>        <br/>    #end\t<p>\t\tThanks,<br/>\t\tThe ${PRODUCT_NAME} Team\t</p>",
+    "body": "\tDear ${user.name},<br/>    <p>${requesterName} has requested the following access on your behalf:</p>\t#foreach ( $type in ${requestedObjectDetailsByType.keySet()} )        $type:        <ul>        #foreach ( $detail in ${requestedObjectDetailsByType.get($type)} )            <li> ${detail.name} #if($detail.startDate) (Access Start Date: ${detail.startDate}) #end #if($detail.removeDate) (Access End Date: ${detail.removeDate}) #end</li>        #end        </ul>        <br/>    #end\t<p>\t\tThanks,<br/>\t\tThe ${PRODUCT_NAME} Team\t</p>",
     "created": null,
     "description": "Notify requested-for identity that the access request has been submitted.",
     "footer": null,
