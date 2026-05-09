@@ -13,7 +13,7 @@
       ],
       "buildMapRule": "JDBCBuildMap - Amadeus",
       "checkDeletedDisabled": false,
-      "cloudCacheUpdate": 1778106297873,
+      "cloudCacheUpdate": 1778240090250,
       "cloudDisplayName": "Amadeus",
       "connectionType": "direct",
       "connectorName": "SQLLoader",

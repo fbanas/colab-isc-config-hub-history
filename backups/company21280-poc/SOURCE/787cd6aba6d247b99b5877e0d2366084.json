@@ -8,7 +8,7 @@
       "CloudResourceManagement": "false",
       "aggregateAllGroups": "false",
       "clientID": "b5802cfa-36e9-4e02-8536-09f5c5713209",
-      "cloudCacheUpdate": 1776871128619,
+      "cloudCacheUpdate": "1778254846710",
       "cloudDisplayName": "nextgenidmtest1",
       "connectionType": "direct",
       "connectorName": "Azure Active Directory",
@@ -20,6 +20,7 @@
       "enableAzureManagement": true,
       "enableManagedIdentityManagement": false,
       "enablePIM": false,
+      "enableProvisioningFeature": true,
       "enableSystemAssignedManagedIdentity": false,
       "enableTeamsGovernance": false,
       "encrypted": "clientSecret,IQServicePassword,clientCertificate,privateKeyPassword,private_key,refresh_token,exchangeUserPassword,oauth_token_info,password",
@@ -103,7 +104,13 @@
       "name": "akatona",
       "type": "IDENTITY"
     },
-    "passwordPolicies": null,
+    "passwordPolicies": [
+      {
+        "id": "ae623d44944d41b7b2ddf6aef7bd00d0",
+        "name": "Microsoft password policy",
+        "type": "PASSWORD_POLICY"
+      }
+    ],
     "provisionAsCsv": false,
     "provisioningPolicies": [
       {
