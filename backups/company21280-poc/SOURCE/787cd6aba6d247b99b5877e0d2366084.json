@@ -8,7 +8,7 @@
       "CloudResourceManagement": "false",
       "aggregateAllGroups": "false",
       "clientID": "b5802cfa-36e9-4e02-8536-09f5c5713209",
-      "cloudCacheUpdate": "1778254846710",
+      "cloudCacheUpdate": 1778507306697,
       "cloudDisplayName": "nextgenidmtest1",
       "connectionType": "direct",
       "connectorName": "Azure Active Directory",
@@ -17,7 +17,7 @@
       "domainName": "nextgenidmtest1.onmicrosoft.com",
       "enableAccessPackageManagement": false,
       "enableAdministrativeUnits": false,
-      "enableAzureManagement": true,
+      "enableAzureManagement": false,
       "enableManagedIdentityManagement": false,
       "enablePIM": false,
       "enableProvisioningFeature": true,
@@ -90,7 +90,6 @@
       "DELETE",
       "ENABLE",
       "PASSWORD",
-      "PROVISIONING",
       "SEARCH",
       "SYNC_PROVISIONING"
     ],
@@ -100,8 +99,8 @@
     "managerCorrelationRule": null,
     "name": "nextgenidmtest1",
     "owner": {
-      "id": "880d15e1a216498993a47701a882bca4",
-      "name": "akatona",
+      "id": "cc9ff944d49c4d568b917ecbd2a6bba5",
+      "name": "jmueller",
       "type": "IDENTITY"
     },
     "passwordPolicies": [
