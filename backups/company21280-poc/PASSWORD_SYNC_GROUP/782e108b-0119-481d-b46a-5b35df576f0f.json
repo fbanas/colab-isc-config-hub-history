@@ -14,11 +14,6 @@
         "id": "00c2314209744506bab1e856117f40f7",
         "name": "Microsoft Entra sp-demo262 SaaS",
         "type": "SOURCE"
-      },
-      {
-        "id": "787cd6aba6d247b99b5877e0d2366084",
-        "name": "nextgenidmtest1",
-        "type": "SOURCE"
       }
     ]
   },
