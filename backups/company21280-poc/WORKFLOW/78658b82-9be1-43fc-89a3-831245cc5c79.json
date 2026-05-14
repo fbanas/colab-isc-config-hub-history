@@ -213,7 +213,7 @@
     "description": "This workflow is triggered when an access request is submitted. Based on the recipient’s account type, the request is either auto-approved or is considered and exception and goes through a multi-step approval process.",
     "enabled": false,
     "id": "78658b82-9be1-43fc-89a3-831245cc5c79",
-    "modified": "2026-04-17T09:42:32.082689037Z",
+    "modified": "2026-05-04T12:03:02.109685406Z",
     "modifiedBy": {
       "id": "90eb8204ac594f48ac598a55e0e73613",
       "name": "florian.banas",
@@ -227,7 +227,8 @@
     },
     "trigger": {
       "attributes": {
-        "id": "idn:access-request-trigger"
+        "id": "idn:access-request-trigger",
+        "integrationId": null
       },
       "type": "AccessRequestTrigger"
     }

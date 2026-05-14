@@ -134,7 +134,8 @@
         "attributeToFilter": "department",
         "description": "It is important to consider a Filter for all workflows but especially workflows that trigger on events with a high event rate. \n\nThis Workflow has an example filter to ensure that execution only occurs when an identities department changes.",
         "filter.$": "$.changes[?(@.attribute == \"department\")]",
-        "id": "idn:identity-attributes-changed"
+        "id": "idn:identity-attributes-changed",
+        "integrationId": null
       },
       "displayName": "Identity attribute \"department\" changed",
       "type": "EVENT"

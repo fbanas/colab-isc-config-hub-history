@@ -476,7 +476,8 @@
     "trigger": {
       "attributes": {
         "filter.$": "$[?(@.workflowId == 'df531694-5369-4def-88fa-7deeaeb9b978')]",
-        "id": "idn:interactive-process-launched"
+        "id": "idn:interactive-process-launched",
+        "integrationId": null
       },
       "type": "EVENT"
     }

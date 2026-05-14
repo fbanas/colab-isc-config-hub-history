@@ -154,7 +154,8 @@
     "trigger": {
       "attributes": {
         "description": "Configure your ETS \"Access Request Dynamic Approver\" here to call this workflow",
-        "id": "idn:external-http"
+        "id": "idn:external-http",
+        "integrationId": null
       },
       "type": "EXTERNAL"
     }

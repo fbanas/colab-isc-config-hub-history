@@ -402,7 +402,8 @@
     "trigger": {
       "attributes": {
         "filter.$": "$[?(@.name contains \"S/4\")]",
-        "id": "idn:source-updated"
+        "id": "idn:source-updated",
+        "integrationId": null
       },
       "type": "EVENT"
     }

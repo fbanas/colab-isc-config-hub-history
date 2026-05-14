@@ -206,7 +206,8 @@
       "attributes": {
         "filter.$": "$[?(@.formDefinitionId == '38b7f1ef-590e-492d-ba65-a491d285f967')]",
         "formDefinitionId": "38b7f1ef-590e-492d-ba65-a491d285f967",
-        "id": "sp:form-submitted"
+        "id": "sp:form-submitted",
+        "integrationId": null
       },
       "type": "EVENT"
     }

@@ -135,7 +135,8 @@
     "trigger": {
       "attributes": {
         "filter.$": "$.trigger[?( @.newLifecycleState == \"terminated\")]",
-        "id": "idn:identity-lifecycle-state-changed"
+        "id": "idn:identity-lifecycle-state-changed",
+        "integrationId": null
       },
       "displayName": "LCS Changed to \"terminated\"",
       "type": "EVENT"

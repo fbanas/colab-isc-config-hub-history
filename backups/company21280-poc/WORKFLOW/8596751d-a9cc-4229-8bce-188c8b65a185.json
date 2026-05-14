@@ -82,7 +82,8 @@
       "attributes": {
         "attributeToFilter": "jobTitle",
         "filter.$": "$.changes[?(@.attribute == \"jobTitle\")]",
-        "id": "idn:identity-attributes-changed"
+        "id": "idn:identity-attributes-changed",
+        "integrationId": null
       },
       "type": "EVENT"
     }

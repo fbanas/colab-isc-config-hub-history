@@ -61,7 +61,8 @@
     },
     "trigger": {
       "attributes": {
-        "id": "idn:external-http"
+        "id": "idn:external-http",
+        "integrationId": null
       },
       "type": "EXTERNAL"
     }

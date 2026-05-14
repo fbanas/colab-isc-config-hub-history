@@ -387,7 +387,7 @@
     "description": "",
     "enabled": false,
     "id": "816f5f85-d451-4dd5-bcc2-3bf106eb4f7c",
-    "modified": "2026-04-23T07:45:13.326820872Z",
+    "modified": "2026-05-04T12:03:01.66249791Z",
     "modifiedBy": {
       "id": "8939a7e19a4b43eabd3c6c2808c6b9b2",
       "name": "luca.lori",
@@ -402,7 +402,8 @@
     "trigger": {
       "attributes": {
         "filter.$": "$[?(@.name contains \"S/4\")]",
-        "id": "idn:source-updated"
+        "id": "idn:source-updated",
+        "integrationId": null
       },
       "type": "EVENT"
     }

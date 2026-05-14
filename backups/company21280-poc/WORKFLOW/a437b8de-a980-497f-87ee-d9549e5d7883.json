@@ -118,7 +118,8 @@
     "trigger": {
       "attributes": {
         "filter.$": "$.changes[?(@.attribute == \"cloudLifecycleState\")]",
-        "id": "idn:identity-attributes-changed"
+        "id": "idn:identity-attributes-changed",
+        "integrationId": null
       },
       "type": "EVENT"
     }

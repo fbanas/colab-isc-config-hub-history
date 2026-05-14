@@ -89,7 +89,8 @@
     "trigger": {
       "attributes": {
         "filter.$": "$[?(@.score >= 0.5)]",
-        "id": "iai:outlier-detected"
+        "id": "iai:outlier-detected",
+        "integrationId": null
       },
       "type": "EVENT"
     }

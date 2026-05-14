@@ -203,7 +203,8 @@
     },
     "trigger": {
       "attributes": {
-        "id": "idn:access-request-trigger"
+        "id": "idn:access-request-trigger",
+        "integrationId": null
       },
       "type": "AccessRequestTrigger"
     }

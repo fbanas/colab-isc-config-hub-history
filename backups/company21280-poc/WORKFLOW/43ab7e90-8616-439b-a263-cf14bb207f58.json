@@ -102,7 +102,8 @@
     },
     "trigger": {
       "attributes": {
-        "id": "idn:identity-deleted"
+        "id": "idn:identity-deleted",
+        "integrationId": null
       },
       "type": "EVENT"
     }
