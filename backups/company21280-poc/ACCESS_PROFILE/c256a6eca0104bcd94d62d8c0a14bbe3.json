@@ -6,6 +6,7 @@
       "approvalSchemes": [],
       "commentsRequired": null,
       "denialCommentsRequired": null,
+      "formDefinitionId": null,
       "maxPermittedAccessDuration": null,
       "reauthorizationRequired": false,
       "requireEndDate": false
@@ -59,6 +60,7 @@
       "name": "jonathan.mueller",
       "type": "IDENTITY"
     },
+    "privilegeLevel": null,
     "provisioningCriteria": null,
     "requestable": false,
     "revocationRequestConfig": {

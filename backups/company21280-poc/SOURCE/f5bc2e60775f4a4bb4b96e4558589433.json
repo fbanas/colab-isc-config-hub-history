@@ -12,7 +12,7 @@
       "connectorName": "Non-Employee",
       "deleteThresholdPercentage": 10,
       "healthy": true,
-      "since": "2026-03-27T10:35:21.624Z",
+      "since": "2026-05-18T14:04:25.132Z",
       "status": "SOURCE_STATE_HEALTHY",
       "templateApplication": "Non-Employee Source Template"
     },

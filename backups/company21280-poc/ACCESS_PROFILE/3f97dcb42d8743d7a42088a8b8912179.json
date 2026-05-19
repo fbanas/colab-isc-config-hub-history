@@ -6,6 +6,7 @@
       "approvalSchemes": [],
       "commentsRequired": null,
       "denialCommentsRequired": null,
+      "formDefinitionId": null,
       "maxPermittedAccessDuration": null,
       "reauthorizationRequired": false,
       "requireEndDate": false
@@ -49,6 +50,7 @@
       "name": "SailPoint Services",
       "type": "IDENTITY"
     },
+    "privilegeLevel": null,
     "provisioningCriteria": null,
     "requestable": true,
     "revocationRequestConfig": {

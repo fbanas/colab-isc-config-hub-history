@@ -12,28 +12,22 @@
       "reauthorizationRequired": false,
       "requireEndDate": false
     },
-    "additionalOwners": [
-      {
-        "id": "55b2da0b-1c01-437b-b129-a6f6af394b91",
-        "name": "LH1 (Scope A) Governance - Sub Role Admin Group",
-        "type": "GOVERNANCE_GROUP"
-      }
-    ],
-    "created": "2026-05-05T20:14:43.044243Z",
-    "description": null,
+    "additionalOwners": [],
+    "created": "2026-05-19T04:58:04.260802Z",
+    "description": "TEST IFCM Button",
     "dimensionRefs": null,
-    "dimensional": false,
+    "dimensional": true,
     "dimensions": [],
-    "enabled": false,
+    "enabled": true,
     "entitlements": [],
-    "id": "d0fdd2cb58164f09b0b86ca987657f7a",
+    "id": "e492a6e6975a451b8a2eb0a177923058",
     "legacyMembershipInfo": null,
     "membership": null,
-    "modified": "2026-05-05T20:17:01.902937Z",
-    "name": "test 2",
+    "modified": "2026-05-19T08:50:14.107463Z",
+    "name": "IFCM",
     "owner": {
-      "id": "0660e5c056c34189a3d6fd11e39ec8f2",
-      "name": "Aaron Nichols",
+      "id": "d34b0b71885142f88d900d0e78df2bd6",
+      "name": "Markus Litzinger",
       "type": "IDENTITY"
     },
     "privilegeLevel": null,
@@ -45,8 +39,8 @@
     "segments": []
   },
   "self": {
-    "id": "d0fdd2cb58164f09b0b86ca987657f7a",
-    "name": "test 2",
+    "id": "e492a6e6975a451b8a2eb0a177923058",
+    "name": "IFCM",
     "type": "ROLE"
   },
   "version": 1

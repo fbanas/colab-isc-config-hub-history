@@ -12,6 +12,7 @@
       ],
       "commentsRequired": true,
       "denialCommentsRequired": true,
+      "formDefinitionId": null,
       "maxPermittedAccessDuration": {
         "timeUnit": "DAYS",
         "value": 1

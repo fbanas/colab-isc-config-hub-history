@@ -15,6 +15,7 @@
       ],
       "commentsRequired": false,
       "denialCommentsRequired": false,
+      "formDefinitionId": null,
       "maxPermittedAccessDuration": null,
       "reauthorizationRequired": false,
       "requireEndDate": false
@@ -48,6 +49,7 @@
       "name": "jonathan.mueller",
       "type": "IDENTITY"
     },
+    "privilegeLevel": null,
     "provisioningCriteria": null,
     "requestable": true,
     "revocationRequestConfig": {

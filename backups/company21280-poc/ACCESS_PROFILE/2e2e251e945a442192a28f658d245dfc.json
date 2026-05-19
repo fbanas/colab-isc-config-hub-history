@@ -6,6 +6,7 @@
       "approvalSchemes": [],
       "commentsRequired": null,
       "denialCommentsRequired": null,
+      "formDefinitionId": null,
       "maxPermittedAccessDuration": null,
       "reauthorizationRequired": false,
       "requireEndDate": false
@@ -29,6 +30,7 @@
       "name": "jmueller",
       "type": "IDENTITY"
     },
+    "privilegeLevel": null,
     "provisioningCriteria": {
       "attribute": null,
       "children": [
