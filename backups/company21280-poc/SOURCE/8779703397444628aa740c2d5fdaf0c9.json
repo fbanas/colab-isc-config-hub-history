@@ -689,7 +689,7 @@
             "isGroup": false,
             "isMulti": false,
             "name": "externalEmailAddress",
-            "nativeName": null,
+            "nativeName": "targetAddress",
             "schema": null,
             "type": "STRING"
           },
