@@ -5,160 +5,121 @@
     "accountCorrelationRule": null,
     "beforeProvisioningRule": null,
     "connectorAttributes": {
-      "checkDeletedDisabled": false,
-      "clientID": "e4e240ef-36f5-4f7e-9902-329b804a1cf7",
-      "cloudCacheUpdate": 1779318359108,
-      "cloudDisplayName": "Microsoft Entra sp-demo262 SaaS",
+      "CloudResourceManagement": "false",
+      "aggregateAllGroups": "false",
+      "aggregateHiddenAccessPackages": "false",
+      "clientID": "b5802cfa-36e9-4e02-8536-09f5c5713209",
+      "cloudCacheUpdate": 1779290299201,
+      "cloudDisplayName": "nextgenidmtest1",
       "connectionType": "direct",
-      "connectorName": "Microsoft Entra",
-      "deleteThresholdPercentage": 11,
-      "directoryRolesDeltaToken": "JYKPGvmUvT_HZezkc3sMqNsb6abjj4b-g_c9DY_R__p3l45MSF6JUV80VhCiHDqti3gmH2De4dBztRb0rWrfM7unYDeOaCLcgRhJzEINFc6sBfkLJSWjXNnifbEMjxRMPLRJ-iIioIkjowiKXqCIFo1jd1L3StT_hdATfCMmMCP_J7TBTUT-B2ZPjUd4uHlYI_6YnfOBEGp2KXfFIbG3FXFpGbvmVU-YUKp2vccllwQHvJqCNthVXtsKAeJ3DNCfhhPuDsLiienK-ERmQEuLYRH4RR8B48C5qq04UngxFSRJadWfKVt717NtB-x5khTwvgmbqHv_dsrewUA1_9O-5_VP0z_L9_10KH-dt_LAf_49pJCuuwnR1aLALnFBp9s6Bx5pckTsOvcZ-KIm__qaU9jvzLRD24BmiGCJWkUPzAqXiGbFHlF6fqqEGpjPB9NaqoTxYz7jji7NBElYDNlHsYoDLfQt_l_uK4Eg73AQQHaw0-iPvaYLrY6qs09q8EyJRvEULzo_au41TDoQ2ErIMv27QDtYI9xCuoKgQceIt5nS88kUD13TByydXkU3I6YAIXbB8nB8X6m2Evk1exbsRsdyjpJxTm1OlD08bBG_GRqFr4GzU5QQ8Acwi7hcqr29VFmt5IjqZlP1z_zmseMUWIx8c4MQX7jXrtgzbF7LJsFW__5zgYfZz0jZ2HMA9JS4xpLrWjWGnJdJrweLmy7Nvn6zbhvx5KfskV8bOFkxontgTr6ib3qRngKz5Rwbhef4L78yd6JtSdyLyqZ0jNN5QtqMm3s1LlxBoo1UHYqEY_4hAA8S7b3K8C8ViUo-j6gQzQ0u15W3nGchPNNKTjshXAn-QGhNmVhLndxoIC6oY-5kDmUWd_UA3CfEXg0J1vkdU5nmdVgtOplxPuP3jWBEVWV9gne8DivAY3gFH2PbElBeSJ8vnkRFVhsHgvz-fZytYDB56EL1_XLariS5Bw87GlqBDBsTJMOqn5MStcWmfaCWCV2P-RUC_24uUyX8L7sWEFPOoqA9Aes0vt2KX29EnadUHIDr0Gj_MxpbYn1c-3RF9cteTzOtudraGni9up3ysM_46BzXkdIMX-7oMSj_D6DaTIbFai1zp3oA6evYrXwgs7o9CwDtvkbZ0N_iTXNbMuznWymPYNRxZMuBsSpB9r_3t_QwGHW0sLgFJjHLFKsyiEfBUN41t0gRmC26qE2GZciKCRCC_Gvhl7teIh6f5MKgpS3vYKiOWSrdh7K-ei2PMxZQ2iB4HrRMUwS0cKik3D9N8Z3clod87VE02YtzXaWbyp_BC2r9YbzZsn85xN0RmnR291bAzD_Gx239DZBGpR4k4Wr56OcwEqtZAJD0rR9TROqbTkjdc7nb8_BCpX8KH-H3PxmsOgCpboiSgSShLREO-23PaBijw6Jl196WkMcaTaBIAUR576VqtK9rVlAoC4PnQX0IjhGp0gSMFGxRE3z6AlFrwZBGfur3GS5PY5QSP1cWNRfr7HFJbKktH1AnHjT13xFXSMPuPchv-S-aATqzuoOk3_t2Iu9th0CDAntb-bEp-ZupRUbx1wFurqYLfaadubZwHyUxVdX50PJp3BIu9ZFZ-zjOyH-1A5esVnNR5h9LZD5mhpfVUCXuNmpXpblD1JXY7_reHD6w3BfDm7YMu7xh1MNEvFgxmNPYDJzpSW4Dg4qxmJ25jUEapHPCRlUIELVYwVQoqu1UE5Cw8_1Auy1a1efPBOw2bxn-9oVPEON160hH2ygh6-r1K3s9fHyQUzAKsFBf-xIwYM0Mk8hnmWURkb1RJTvi2yZ9hYsSPaPJZZ5FZWgFCGTlYE0nhQ8HBd0P_3Lb_j-ktoGv3YqVYDqXQE2x4-p8T5frlGDdnUZzTHZEyYjIdO6mBMjT0RzedOBAfG6SEtNBGTix3YFAQVaTb3r0i5fN3Jc5re8ctpFl_78y6HG4Zl6rxMsVU60VeJ9MgNEDKuWba9Dn2y0LAqnSJtM43i7Dujvzt3DSNcdLlfP3hNwB__SrGyk.dJZJoN3c-VIDWZrYfsCazW9Kz5L7fM03jS9z05r9JGw",
-      "domainName": "spdemo262.onmicrosoft.com",
-      "enableAccessPackageManagement": false,
-      "enableAdministrativeUnits": false,
-      "enableManagedIdentityManagement": false,
-      "enablePIM": false,
-      "enableProvisioningFeature": true,
-      "enableSystemAssignedManagedIdentity": false,
-      "encrypted": "clientSecret, clientCertificate, privateKeyPassword, private_key, refresh_token, exchangeUserPassword",
+      "connectorName": "Azure Active Directory",
+      "deleteThresholdPercentage": 10,
+      "deltaAggregationEnabled": "false",
+      "domainName": "nextgenidmtest1.onmicrosoft.com",
+      "enableAccessPackageManagement": "false",
+      "enableAzureManagement": "false",
+      "enableTeamsGovernance": "false",
+      "encrypted": "clientSecret,IQServicePassword,clientCertificate,privateKeyPassword,private_key,refresh_token,exchangeUserPassword,oauth_token_info,password",
+      "exoAuthenticationType": "CERTIFICATE_BASED_AUTHENTICATION",
+      "fetchB2CMemberships": "false",
       "grantType": "CLIENT_CREDENTIALS",
-      "groupsDeltaToken": "ueiGuewhVuxumZOebVNojq9UANNVEmv6YVf_RAUSm5wfuEMw-e9qz10f5HQTBW_VnYbacssvJwVEEM_Tj232kVfJcJOH3LG5XowXdKKSvdWrrPixyJtXFsJ28iFm08iYCd1cS-eETZctfRf4WTvS-wiKE-9lwkOEe9dDzPQN3MNThQzlXSAHfDeGsHQtEJVEswGasq6W1M3Ye90KFlyycfB8jkyNpbuREVe9zGfcBoXNEy-HC2QuDcr7tlXg4PvUJVPfqb5Rlh-jLAUvqNiWBUM5pkMwLMnngWs-HVS17j91xCZMXtFqmdLyU1eEzjRxHxGsaHfyQpKhHy2pbbTx1QY9SNhacTby6gAj9yWF25xdbX3ERc88ilHXxR77dqm33_Xn046I1CKyvUxYeG8iuXa3ehBxxI6tH84RcYKH49bGiiPg5YI32GiZG1jZTpj4Za_6BAwZvJmvplP_BLglqikPXkPlX7KgQCxfGQT09oXec9-CNOnp1XV233CQP3dGAXcLKGy-lJxn-k2xbude8eEhvpwjgGO7Tr31NJECDWGYaYbIMqAPttOrG_cO5ukvlpeLM1PPUJ_LNalZVm8XErdsucKh-VdIOvsxmx1QscyoU8C0Ruduk9uBRdsCjxNQzOBby03ePAigTOPiMFfIqAZm_dj-WIQgg2lE0KXTFVx7niJElUzN41dqsiH4jaOY4ftVKaNlYvbMpYqCJciD5qwEWPNcL4iPcN1F2PlHbMXBYm0NVfAYVc4PWALa4uuHILRBmXisjQMlHaYgBzfhAOiZcrdQ60tzgbwHzuX4ZbnaqkgK2NJ9PACyxz1CYkWBf-hsQTNQkOxXN5K2WNZRs3rIFfAtJGjgRqZ0HRW9m9Wej2xWMnKOfE5qmhRlAxVDwVMRiU79KMaZ37rtk401V9El36Kjj_nKm01rGwoe3vkrb7NFVlaCWB_Ch91Alpv11cKpC4t7sTd0QkuIjBHMQO1lC2P8CiqOf9HTLo9tML_PJJhNnmxPDljIko6WCLMu3fra-1vl_gMEQEEhi-Opaf6pW9kI6nQJ4id5PaHBQLbCA0xlAIm48-ycL_i0pKOdm2B2npyyZzAEomBhMbrArVxX77pI5qjR10uuOo-LSsVMslI2GXxuHk0kNhteuuFBQKYHaR7Igp8wFwjVoxn78Pjqu8px9gZLiuvxROJmzGU7fpiycvlMdRNOa2eR3afTtilSsTmeiPMIE9pdR3CFF46SxUt2zl-dwRemlMyWu9btbrvVp1__rpepfCt49GAVxrmA73QENjT4G_hdXAcmu7TvElaMAFT4adWxjecJbGpqEgW3fvx6Jt9uOjxpm3Gv6DFFeFlO0k_Bq6J7hxOWtkPOqixHI9VFcrjFnKVlf_07Vjd1rsur3QKR8B-J4mvw-lGMSHJJjXOiwgf6tb5iUkwygDhOmUP97lQSmt4Pf012j-gPBOrMNpqvcXKk-rrr1IGm_lbalfLAimlOvcOl4EpOnC_Ys7Xwuuom04OCtUtZiG7JQailL2-5D3wlYVjd4GN-st2mZBolSVE0cjUH3VtqmVVu2WhyTg51UfWEqIxRFdIvTb0UGsfkLaBJc9T-Iglh5uaCb0FpWFODdkWQodHHtTTxFrbQu_SWUDVLdRkL92VufefiamYZsuwRrfyQZMCMCtGJa6W67cNZVThot3O4wuTUILlOP0pjlEvQ0hwzJGuli43iZMe6MAIq1CGQRuyVxzWhGb67ImwmXm3mkIgDWSb8rxSsjHmfwhEEeQJHdHiRtA8n-nIYkK-9jWe-bHKufmsBx8LkhAIlCMyu6UzESC6cFvyxkqV1eUOl1hnENJ3N4ODgfHSF10cCwQZS8sTl8d8okfEpSkAPE6Worm6gqulis8H_lHPSinxQA9YEjfsQlJ1dpSP_eRAOl3zPl5qiPWltCJHfdBBGyYKi_6MzRNaTVJ7klcpmr3mPul7nmQt1uiBgCcA63Z5QnYY2rsxScpvW16mz3lCIVBRO4MZZ8gh_G4t2ZzMr3YqQmkgaHxxCzbJONvkXUPhQrP60_COXceOIlWMpIp3z0G_iqzy5W5vIbBccOONvR8OE6kWHbbLD0yVo-7cfmd8l08YRXsKTMQCVtb0W7K6mXy7Tr-cdGYCdsVr72nqmWct7isM.flCW_np3YmCNqctc9UYhUdl9X1Tp7gmXRX1YCyHstrA",
-      "hasFullAggregationCompleted": true,
-      "healthCheckTimeout": 60,
-      "healthy": true,
-      "idnProxyType": "sp-connect",
+      "groupDeltaToken": "ueiGuewhVuxumZOebVNojq9UANNVEmv6YVf_RAUSm5ys6NcjSmbBEDXK1deSosP8Oyl54tlO8ytjPwzH6MOmgOaSFL3xJM36vCMSRlc6U3ej1jFF60kmQcgaBCzY_9ljvioNwVDOkpBQe7E653V6ZBJS-K-_ySwYfOx9bqA061jYUXuD6_fB1dli8MeqsyiRusi_P-LM1G0DXyW8q5EFQGJDMq0Z0wA2WAioSGZJgOiF06zgq09lzP7dJxMcyW9T9Jxq337OHJmvdoNqDRSXPB8u7oQ6NeCmY4LAwXHuy6rpH0PJi-gXerdpJY2WeCbHv5ysCHakxhZYrLe5RrIjPUH5q5Lulyu-C0DTYE91Q0_-WfyAQ6TA7GDh4VYxywJVq6D8_2gzNmlHAUEkVEWvvch3qBd5pDoeSMpS_gCesVCH7YCHIsoRXkuEzHXU3DysufMT40V8O_XPbz3H2E3fFHXCXSDZ_d8wqWMPjuIH13oKwy2kdCGrdRCGoHvPL_19CpElwmTQFbUaOWDC1dVPlDBLC_kbk8s8yP9YNfG9ILSnkELyC9SgcqT6lbKhS_2FLPxJpjjpKIRT90XwnQPAjN3Pqf0o-B2ianPHtl0os6Vb76EBEF_VGx0zCdho6e7OsUZfGYDudadIzwUrUhKAu4tR3vs8hFa0wHo4VJNWGLArKwcgAoRZmQuQg0JYw8_GixDXkjR_4z0IaXzk_T4WOZXNDVIvj1S8bmQirw_7aYJxljOp3mFkHKjyrw6fd5FqzASJ1gjS35Q90jQtFZ_3nHnCI5yDiYgE2TJbZh-7PvKCnYUI1rPmBZ3c-bD42ORsbje13f2BL0iSeCRRA9ZBpXqHFxqRM8D6XwkMx3CgwEKagBg613-cQu47SPoZLaKS5w-AM2PMBLYoApZn4GuAmG23TtwEE4gf8fiN0G1d1-fR-kAGnAGJk7Zf_nm_INpcvFuKE0-tA-AvPmSBcmow5FjFYVdKwVnvzoMfeOSomY-NjiBFlLoiPbKJrn60yMDlCigBAbfDzjVHYQmLisdhEpsjLgX70cagiCcvPhZrskWM8aU4aj_0yEZsB9wAdRSUo4Mq2rMf7LIcAFjkFmFDmEwFZRh1bvcQLh-NvbRyYt9D3ci3Yq18bB4iZnCxo8HPDOhZ01Bqxk8k7W9bfD_RFkWBUUya7PvVLi7c1N-cCMCajlcSl1F-EaXNNsghAMgET526AwCDZJUiTrEDjoYCVvwV4A_xxlfknYJPeSkfXp8kCWLdtfV2vzivRqw-8Ln-ykmA3Zd3EljP4IRshyi62GLl-sknrz79kXxrDTucaq09nIHRN7osF3mM87_VsirtH82WR8y8x9RnimcXBV8fjtTD9nYZ-VBOE5ckOVCQzmCYCypvPDVzsVEtSzqlccSbReuMViea7nGqTqN2EDqWnCl29DCOYBRrMgWWzzbjjzE65O1jJHYLewolgSE2VVBAH8lZ_nDqpn7gUubP35uhfQ4pSxcg2cWKfgWyYw7yFVnp_miK8sKvRM9QUx0pjRv4IEiAA8FYotX2L9T3kxEV_wytBBjmiscJOwbEVa-H5SQ_wDL0dGtPeMWrTz6Z1500V-KiTGwUuyRKB_FXfogb8A52cNCPsArN5RylCfuiHG58zAdV4IiFI0KePCmNxG1xgFZixrNXd46P31m5hQbUa7wiPgqXmDQvZLPet8wg4tdok8O2Z2gHw4jV8ujRt9hwQ0AyW3-OTkeVrXZpj-k_ZShBLeGYZV6fvvqryfwshoAPrQoQ_qJTq0yuBbEqsrVfAO4QlJh6S2tUz_lLDN1CfJPFG36pz9N87KE8T9an_PHEJynELkkolwsfmPf0ckM_llsT_fCkvppBO_uFesW6jH-hRTl4jszPMw6YzHZarv7lDpV_ZOhM-jcHhlchKfdjKVJ_tDRP9IG0NgieAWrnaMetbzLiwY4U0ScwsAuk2ItEtGvzzDt3GiQe4bw_DZvNrQ6UP7LpeUG4uK0yZsYcE-uHRhaDSC_UbFDGauJd75L6zBM2Lt3Vbwyhkjt6ijn_5vX4Bd2niXIoPnB0gjOySjImWqQ0CFi2SrX6b50GqwJeQihJ-EHMTI0RMOEnLHLSo7G9RMIO5ZyXNZhe9LXPdXW8M8EJgF3VDdVDKo5enJo.xl2Na2QVa9iOARAghHgarT-8maTknbxHlOPIrlJul0Q",
+      "healthy": false,
+      "isB2CTenant": false,
       "isCaeEnabled": false,
-      "manageAdminConsentedPermissions": true,
-      "manageAzureServicePrincipalAsAccount": true,
-      "manageExchangeOnline": false,
-      "manageO365Groups": false,
-      "since": "2026-05-07T16:11:46.442Z",
+      "manageExchangeOnline": "false",
+      "manageO365Groups": "false",
+      "maxRetryCount": "5",
+      "numPartitionThreads": "2",
+      "pageSize": "500",
+      "partitionAggregationEnabled": "false",
+      "recommendationStatus": "ERROR",
+      "since": "2026-05-20T15:18:19.191Z",
+      "skipMailEnabledGroup": "false",
       "sourceConnected": true,
-      "spConnectorInstanceId": "f3c220d9-6d79-4a23-9c0a-c1330f0c98c9",
-      "spConnectorSpecId": "b7e9374a-3c50-4b51-8880-e501f947bbf8",
-      "spConnectorSupportsCustomSchemas": "true",
-      "spnManageAppRoles": false,
-      "spnManageAzureADPIM": false,
-      "spnManageAzurePIM": false,
-      "spnManageDirectoryRole": false,
-      "spnManageGroups": false,
-      "spnManageRBACRoles": false,
-      "status": "SOURCE_STATE_HEALTHY",
-      "subscribedSkus": [
-        {
-          "accountId": "9be45353-e16b-4303-aa7a-16a0c69392c8",
-          "accountName": "spdemo262",
-          "appliesTo": "User",
-          "capabilityStatus": "Enabled",
-          "consumedUnits": 1,
-          "id": "9be45353-e16b-4303-aa7a-16a0c69392c8_078d2b04-f1bd-4111-bbd4-b4b1b354cef4",
-          "prepaidUnits": {
-            "enabled": 1,
-            "lockedOut": 0,
-            "suspended": 0,
-            "warning": 0
-          },
-          "servicePlans": [
-            {
-              "appliesTo": "Company",
-              "provisioningStatus": "Success",
-              "servicePlanId": "113feb6c-3fe4-4440-bddc-54d774bf0318",
-              "servicePlanName": "EXCHANGE_S_FOUNDATION",
-              "servicePlanType": "Exchange"
-            },
-            {
-              "appliesTo": "User",
-              "provisioningStatus": "Success",
-              "servicePlanId": "41781fb2-bc02-4b7c-bd55-b576c07bb09d",
-              "servicePlanName": "AAD_PREMIUM",
-              "servicePlanType": "AADPremiumService"
-            },
-            {
-              "appliesTo": "User",
-              "provisioningStatus": "Success",
-              "servicePlanId": "8a256a2b-b617-496d-b51b-e76466e88db0",
-              "servicePlanName": "MFA_PREMIUM",
-              "servicePlanType": "MultiFactorService"
-            },
-            {
-              "appliesTo": "User",
-              "provisioningStatus": "Success",
-              "servicePlanId": "932ad362-64a8-4783-9106-97849a1a30b9",
-              "servicePlanName": "ADALLOM_S_DISCOVERY",
-              "servicePlanType": "Adallom"
-            }
-          ],
-          "skuId": "078d2b04-f1bd-4111-bbd4-b4b1b354cef4",
-          "skuPartNumber": "AAD_PREMIUM",
-          "subscriptionIds": [
-            "6b256091-a580-4f3b-bbf1-1150337c9fde"
-          ]
-        }
-      ],
+      "spnAccountFilter": "servicePrincipalType eq 'Application'",
+      "status": "SOURCE_STATE_UNCHECKED_SOURCE_NO_ACCOUNTS",
       "supportsDeltaAgg": "true",
-      "supportsStatefulCommands": "true",
-      "templateApplication": "Microsoft Entra",
-      "userDeltaToken": "ueiGuewhVuxumZOebVNojq9UANNVEmv6YVf_RAUSm5zkxHaEioRCfjqYNNxVIOWp_nJU8QbkJ9j4QrCkbr6pBpDanbqy_AU0t5gyYBjklR8kRgbRAVAGtORfLJxz2kN0QrotxVdCfDuG-yDF0d_Jfnb8otcpo-jhYyA3PijY-6umVU-LczLZgxKXm2pQkAXxOhfYtrL7efIRYx1ofpa2oQ6cbw2OiuQ09xcDMug1btEV5pIX7Ob1x_9Z2Ol2AJuyQe6PB0Rr5u-U9u-kTqZZs1jHicDA-JPzU-0LhgqzN6LUg9dsh7Fol4Ahd-xDePM6hAim5PpSXLlaaa71D7f2tc_M0nFGZmaWQb2YjDuuLHgCyzIwA55jk91io_tHVxvjCIFW-HHKzZRekHLQTi5MgnsnRN9AI0xq90gpbe3q275lmkSGuNBZi3O-truvWfkWjz7njQNO05AxazRJWw5XQZi71r6F2UhhBamhjZ3R8W27gyqiGrLx5es6_F_DMf1Swxxtz5ga9z8cAEmvOtsITmmXNuvNmM9ThkjzOyxTUKPwrzPCKz8ierrhk5GP1OJv41FIEXv5qNqlQUAfgQmshy4UsZcRTU_9Ka_uIcug5tyTAGgvPaopy8M41XPOc4u-ZkclBaBwITj071-ya7EAbZyVDjn34r-g1XG80ajcjgnLY-xdWVRyCX9CvUAV_RbZFDIuvh1h3xw-xU6TSPOs4AMsmZzLS7j_4VKXK2sWGVY-rG5Pe2V3rNHOB46zR9j2cTdeOw5HHADTJRxiiwvOBgXmVTOmbQx3QSX2ByXPkrEJmNuLeQc4V9sz1MB5Q3LYKNDrkcbKgnDtSdnCSRCQhP36OJO3TW9_K-REwLM5DFLFmFOxPvDfOUIHK_44xL2LgKmSpiKuoEWP8xACAQX8T29ZxvbARYddXUqqr8-3TiB-TC1NKImtMJvHXaEHAMwSjESyDLfAq20nKFux1tPKtSBif5uLb3313AdEF078LtWjWeP3v2FFFj2N3uRwWZDVSpdXshApLu4VCYIvRsH5ffvflc6lqeVMF_dPOtYqcnDxzVT5LywhNt5vfKIFfmTyl787qc6FFXaNW7JVp6Tq1xqZkNkPkcJu-Wz83GIapfdj5zAL4KnuWyqOcbJznWDKIfTWBTLKwgdZWA_Vwsp_TZIBbxIw-_7zpmyb6WuY3U94BKLhRRWt8udItdYcD8vzDsfJwzCMu2K_DlNzNOImWlHNZfJg6nqGcTxmeqicU1Ue5zbRl1N5RuUejY4ukQz4E_Ltw32MdpxUWLx33I9Qp-pvoXyZF7D1W9nla_i3jVhGmIxiXLG8UwALAqz0aVv297UeibqRdpSouEqYPIoV_G-TkI-OqKvrBqB3J0LeTTWcrvtP4mONCluR2c02J3WE0Aw4zvWWCH8usEYSFo-CiiolUib5v0mK_Mt2zVWdpTybGSnj8HqrYlpT-O-07qLaxSMm-yJe8BcPNcmxu7nzidXYaxZKLDrrZ3CcIZC_ceIhSgjhTDF4vy_bC0e6UR_zWSB_h8w15AvTr3tnFCKOfOM2_uMVCuZ6_3Q6BgzZ-JMvv8i9qSNWKPZI-uBwqLaNspTgump81HkEF4SB0QZHNW-085ngBWzv3Zy1Zp4DtC8gyWFfiYnRVseVw4MqG4sq9JYcTHRBamOaFHDKQ51_yj1xylpKrHRQv2qwrsjgLBsI-5ROlqoHkBvi00P63Gjqk2Jv4ju9W6piPrE7LOQ9Wd4MnVsrFLXDu72CD6ZFcow2nf8aMUc_E_b4C278Td9Y3q0pJ6VwWB7v9_OtvX86-kKBtYT1iHNXjuBT40Z-ELc1cxtnGjvrGktS7t_qGmZPk0X786JH4brPlDOEp2Eq1j9if3sujy6cjEBnF6x9UnXgsbpZK2Fz53Igv59r_YzJ6TAinsCPHyg6UfpLR7ghjmlOd7_kMcWz5Ml8qRm3zj-gdYyEztq9QIrwBndh0SdxlgxofZ8jfWqH9KQhYPwCyhWT6YSeHzdFbNCpw6fT8W25pgb5Gnx4S0oaKcv92rLK1nqfy2knXz918W8zGtDUr0poses3Xzs841BEgiGPY12fJHTsT27kIJgYzxg9WBMioakl7sbqg4lbkQFi7GEsy8W3feM07U0uR5Zlrpx_O84.flJwIa0o0bIuhAxHpQf7cznSjD0MdDHgCO1_nI71CLA"
+      "templateApplication": "Azure Active Directory",
+      "useMSGraphAPI": true,
+      "useTLSForIQService": "false"
     },
-    "connectorClass": "",
-    "connectorScriptName": "Microsoft-Entra",
+    "connectorClass": "sailpoint.connector.AzureADConnector",
+    "connectorScriptName": "azure-active-directory-angularsc",
     "correlationConfigDetails": {
       "attributeAssignments": [
         {
           "complex": false,
           "filterString": null,
-          "ignoreCase": true,
+          "ignoreCase": false,
           "matchMode": null,
           "operation": "EQ",
-          "property": "identificationNumber",
+          "property": "email",
           "sequence": 1,
-          "value": "mailNickname"
+          "value": "userPrincipalName"
+        },
+        {
+          "complex": false,
+          "filterString": null,
+          "ignoreCase": false,
+          "matchMode": null,
+          "operation": "EQ",
+          "property": "email",
+          "sequence": 2,
+          "value": "mail"
         }
       ],
-      "id": "a49d7a497b7f4c51ba7e3c5b215bfb4f",
-      "name": "00c2314209744506bab1e856117f40f7 Account Correlation Config"
+      "id": "bd22b2196a7c4619a039985a1ee7db0e",
+      "name": "43da271c2e7d4523ac569f9512ebb5be Account Correlation Config"
     },
     "crossTenantConnectorAttributes": {},
-    "deleteThreshold": 11,
-    "description": "The SailPoint Microsoft Entra (SaaS) connector gives you full access management of your Microsoft Entra ID",
+    "deleteThreshold": 10,
+    "description": "nextgenidmtest1",
     "features": [
-      "AI_AGENT_AGGREGATION",
-      "APPLICATION_DISCOVERY",
       "AUTHENTICATE",
-      "DELETE",
-      "ENABLE",
-      "MACHINE_IDENTITY_AGGREGATION",
-      "PASSWORD",
-      "PROVISIONING"
+      "SEARCH"
     ],
-    "id": "00c2314209744506bab1e856117f40f7",
+    "id": "43da271c2e7d4523ac569f9512ebb5be",
     "managementWorkgroup": null,
     "managerCorrelationMapping": null,
     "managerCorrelationRule": null,
-    "name": "Microsoft Entra sp-demo262 SaaS",
+    "name": "nextgenidmtest1",
     "owner": {
       "id": "fcc9db01f32249889e627da51f5f710a",
       "name": "jonathan.mueller",
       "type": "IDENTITY"
     },
-    "passwordPolicies": [
-      {
-        "id": "ae623d44944d41b7b2ddf6aef7bd00d0",
-        "name": "Microsoft password policy",
-        "type": "PASSWORD_POLICY"
-      }
-    ],
+    "passwordPolicies": null,
     "provisionAsCsv": false,
     "provisioningPolicies": [
       {
-        "description": "Create Policy Description",
+        "description": null,
         "fields": [
           {
             "attributes": {
-              "template": "$(username)$(uniqueCounter)@spdemo262.onmicrosoft.com"
+              "cloudMaxUniqueChecks": "50",
+              "cloudRequired": "true",
+              "template": "$(firstname).$(lastname)$(uniqueCounter)"
             },
             "isMultiValued": false,
-            "isRequired": false,
+            "isRequired": true,
+            "name": "mailNickname",
+            "transform": {
+              "attributes": {
+                "name": "Create Unique Account ID"
+              },
+              "type": "rule"
+            },
+            "type": "string"
+          },
+          {
+            "attributes": {
+              "cloudMaxUniqueChecks": "50",
+              "cloudRequired": "true",
+              "template": "$(firstname).$(lastname)$(uniqueCounter)@YOURDOMAIN.COM"
+            },
+            "isMultiValued": false,
+            "isRequired": true,
             "name": "userPrincipalName",
             "transform": {
               "attributes": {
@@ -167,6 +128,36 @@
               "type": "rule"
             },
             "type": "string"
+          },
+          {
+            "attributes": {
+              "cloudRequired": "true"
+            },
+            "isMultiValued": false,
+            "isRequired": true,
+            "name": "displayName",
+            "transform": {
+              "attributes": {
+                "name": "displayName"
+              },
+              "type": "identityAttribute"
+            },
+            "type": "string"
+          },
+          {
+            "attributes": {
+              "cloudRequired": "true"
+            },
+            "isMultiValued": false,
+            "isRequired": true,
+            "name": "password",
+            "transform": {
+              "attributes": {
+                "name": "Create Password"
+              },
+              "type": "rule"
+            },
+            "type": "secret"
           },
           {
             "attributes": {},
@@ -246,19 +237,6 @@
             "attributes": {},
             "isMultiValued": false,
             "isRequired": false,
-            "name": "displayName",
-            "transform": {
-              "attributes": {
-                "name": "displayName"
-              },
-              "type": "identityAttribute"
-            },
-            "type": "string"
-          },
-          {
-            "attributes": {},
-            "isMultiValued": false,
-            "isRequired": false,
             "name": "enableLocalAccount",
             "transform": null,
             "type": "boolean"
@@ -275,7 +253,7 @@
             "attributes": {},
             "isMultiValued": false,
             "isRequired": false,
-            "name": "forceChangePasswordNextSignIn",
+            "name": "forceChangePasswordNextLogin",
             "transform": {
               "attributes": {
                 "value": "true"
@@ -295,6 +273,14 @@
               },
               "type": "identityAttribute"
             },
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "immutableId",
+            "transform": null,
             "type": "string"
           },
           {
@@ -333,6 +319,19 @@
             "attributes": {},
             "isMultiValued": false,
             "isRequired": false,
+            "name": "isFederatedDomain",
+            "transform": {
+              "attributes": {
+                "value": "false"
+              },
+              "type": "static"
+            },
+            "type": "boolean"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
             "name": "jobTitle",
             "transform": null,
             "type": "string"
@@ -349,43 +348,9 @@
             "attributes": {},
             "isMultiValued": false,
             "isRequired": false,
-            "name": "mailNickname",
-            "transform": {
-              "attributes": {
-                "name": "uid"
-              },
-              "type": "identityAttribute"
-            },
-            "type": "string"
-          },
-          {
-            "attributes": {},
-            "isMultiValued": false,
-            "isRequired": false,
             "name": "mobile",
             "transform": null,
             "type": "string"
-          },
-          {
-            "attributes": {},
-            "isMultiValued": false,
-            "isRequired": false,
-            "name": "otherMails",
-            "transform": null,
-            "type": "string"
-          },
-          {
-            "attributes": {},
-            "isMultiValued": false,
-            "isRequired": false,
-            "name": "password",
-            "transform": {
-              "attributes": {
-                "name": "Create Password"
-              },
-              "type": "rule"
-            },
-            "type": "secret"
           },
           {
             "attributes": {},
@@ -408,6 +373,14 @@
             "isMultiValued": false,
             "isRequired": false,
             "name": "postalCode",
+            "transform": null,
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "preferredLanguage",
             "transform": null,
             "type": "string"
           },
@@ -484,10 +457,80 @@
               "type": "static"
             },
             "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": true,
+            "isRequired": false,
+            "name": "otherMails",
+            "transform": null,
+            "type": "string"
           }
         ],
         "name": "Account",
         "usageType": "CREATE"
+      },
+      {
+        "description": null,
+        "fields": [
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "description",
+            "transform": null,
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "displayName",
+            "transform": null,
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "mailNickname",
+            "transform": null,
+            "type": "string"
+          }
+        ],
+        "name": "Update Group",
+        "usageType": "UPDATE_GROUP"
+      },
+      {
+        "description": null,
+        "fields": [
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "description",
+            "transform": null,
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": true,
+            "name": "displayName",
+            "transform": null,
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": true,
+            "name": "mailNickname",
+            "transform": null,
+            "type": "string"
+          }
+        ],
+        "name": "Create group",
+        "usageType": "CREATE_GROUP"
       }
     ],
     "schemas": [
@@ -497,7 +540,7 @@
             "description": "A list of additional email addresses for the user",
             "isEntitlement": false,
             "isGroup": false,
-            "isMulti": false,
+            "isMulti": true,
             "name": "otherMails",
             "nativeName": null,
             "schema": null,
@@ -521,8 +564,22 @@
             "name": "roles",
             "nativeName": null,
             "schema": {
-              "id": "096218fae65f4bda8673132afd044bc2",
+              "id": "00ce4fe31c0b44f18f1da8cde8aee538",
               "name": "role",
+              "type": "CONNECTOR_SCHEMA"
+            },
+            "type": "STRING"
+          },
+          {
+            "description": "Application roles assigned to a user",
+            "isEntitlement": true,
+            "isGroup": true,
+            "isMulti": true,
+            "name": "appRoleAssignments",
+            "nativeName": null,
+            "schema": {
+              "id": "437fa0c7953e44d6ae4465ca2a8e42c8",
+              "name": "applicationRole",
               "type": "CONNECTOR_SCHEMA"
             },
             "type": "STRING"
@@ -535,7 +592,7 @@
             "name": "azureRoleAssignments",
             "nativeName": null,
             "schema": {
-              "id": "1e8eb6a0de874921832b62c72a098fb7",
+              "id": "83ca607523934b1cae696fbf728cc75d",
               "name": "azureRoleAssignment",
               "type": "CONNECTOR_SCHEMA"
             },
@@ -547,6 +604,16 @@
             "isGroup": false,
             "isMulti": false,
             "name": "onPremisesSecurityIdentifier",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Details of the detected risk",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "riskDetail",
             "nativeName": null,
             "schema": null,
             "type": "STRING"
@@ -569,7 +636,7 @@
             "name": "groups",
             "nativeName": null,
             "schema": {
-              "id": "f6cf7515be41473a8f29009c8d3393c4",
+              "id": "13b4fb1908c64467b5c9418d5927ec2b",
               "name": "group",
               "type": "CONNECTOR_SCHEMA"
             },
@@ -586,7 +653,7 @@
             "type": "STRING"
           },
           {
-            "description": "Indicates whether the user account for an Azure Active Directory B2C tenant is a local account or not",
+            "description": "Indicates whether the user account is a local account for an Azure Active Directory B2C tenant",
             "isEntitlement": false,
             "isGroup": false,
             "isMulti": false,
@@ -616,6 +683,16 @@
             "type": "STRING"
           },
           {
+            "description": "Level of the detected risky user",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "riskLevel",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
             "description": "List of Access Packages assigned to user",
             "isEntitlement": true,
             "isGroup": true,
@@ -623,36 +700,22 @@
             "name": "accessPackages",
             "nativeName": null,
             "schema": {
-              "id": "67195eee3f5941cd8f84663134452653",
+              "id": "1e1d091228c14308a69cf8213501018c",
               "name": "accessPackage",
               "type": "CONNECTOR_SCHEMA"
             },
             "type": "STRING"
           },
           {
-            "description": "List of Azure AD Active Roles",
+            "description": "List of Administrative Units to which user belongs to",
             "isEntitlement": true,
             "isGroup": true,
             "isMulti": true,
-            "name": "azureADActiveRoles",
+            "name": "administrativeUnits",
             "nativeName": null,
             "schema": {
-              "id": "58f7c25f8dde4b2786713c1408140aa8",
-              "name": "azureADActiveRole",
-              "type": "CONNECTOR_SCHEMA"
-            },
-            "type": "STRING"
-          },
-          {
-            "description": "List of Azure AD Eligible Roles",
-            "isEntitlement": true,
-            "isGroup": true,
-            "isMulti": true,
-            "name": "azureADEligibleRoles",
-            "nativeName": null,
-            "schema": {
-              "id": "ea6e5e02cc42493fb62c88499ce453d6",
-              "name": "azureADEligibleRole",
+              "id": "5477004ddf6040f48837639045182620",
+              "name": "administrativeUnit",
               "type": "CONNECTOR_SCHEMA"
             },
             "type": "STRING"
@@ -665,7 +728,7 @@
             "name": "azureActiveRoles",
             "nativeName": null,
             "schema": {
-              "id": "bd3a15da5480474e8850d1ad0a5cb271",
+              "id": "f8449b6b420a440fa0a1e352752f29e4",
               "name": "azureActiveRole",
               "type": "CONNECTOR_SCHEMA"
             },
@@ -679,22 +742,36 @@
             "name": "azureEligibleRoles",
             "nativeName": null,
             "schema": {
-              "id": "e15143cc29cf4f9ca3e877d59bf34d73",
+              "id": "1b2d21fdd82f4b8989096bca6e3a3509",
               "name": "azureEligibleRole",
               "type": "CONNECTOR_SCHEMA"
             },
             "type": "STRING"
           },
           {
-            "description": "List of administrativeUnits to which user belongs to",
+            "description": "List of Microsoft Entra ID Active Roles",
             "isEntitlement": true,
             "isGroup": true,
             "isMulti": true,
-            "name": "administrativeUnits",
+            "name": "azureADActiveRoles",
             "nativeName": null,
             "schema": {
-              "id": "a1d0c035226349b7a62e2ce28bd358a0",
-              "name": "administrativeUnit",
+              "id": "11831c8400c041ac85a38333466c4093",
+              "name": "azureADActiveRole",
+              "type": "CONNECTOR_SCHEMA"
+            },
+            "type": "STRING"
+          },
+          {
+            "description": "List of Microsoft Entra ID Eligible Roles",
+            "isEntitlement": true,
+            "isGroup": true,
+            "isMulti": true,
+            "name": "azureADEligibleRoles",
+            "nativeName": null,
+            "schema": {
+              "id": "55047ae2f210427f9e4ff30de1616639",
+              "name": "azureADEligibleRole",
               "type": "CONNECTOR_SCHEMA"
             },
             "type": "STRING"
@@ -707,7 +784,7 @@
             "name": "channels",
             "nativeName": null,
             "schema": {
-              "id": "cdcffd77a72c42d5ae088184599934f5",
+              "id": "5d5964b549b947208652edaf578d2927",
               "name": "channel",
               "type": "CONNECTOR_SCHEMA"
             },
@@ -724,21 +801,31 @@
             "type": "STRING"
           },
           {
-            "description": "Proxy addresses, for example: [\"SMTP: bob@contoso.com\", \"smtp: bob@sales.contoso.com\"]",
+            "description": "Numerically identifies an employee within an organization",
             "isEntitlement": false,
             "isGroup": false,
-            "isMulti": true,
-            "name": "proxyAddresses",
+            "isMulti": false,
+            "name": "employeeId",
             "nativeName": null,
             "schema": null,
             "type": "STRING"
           },
           {
-            "description": "Represents the identities that can be used to sign in to this user account which can be either local or social account",
+            "description": "Preferred written or spoken language for a person",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "preferredLanguage",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Proxy addresses, for example: [\"SMTP: bob@contoso.com\", \"smtp: bob@sales.contoso.com\"]",
             "isEntitlement": false,
             "isGroup": false,
             "isMulti": true,
-            "name": "identities",
+            "name": "proxyAddresses",
             "nativeName": null,
             "schema": null,
             "type": "STRING"
@@ -754,11 +841,41 @@
             "type": "STRING"
           },
           {
+            "description": "Specifies the collection of sign-in names for a local account in an Azure Active Directory B2C tenant",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": true,
+            "name": "signInNames",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Specifies the collection of userIdentities for a social user account in an Azure Active Directory B2C tenant",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": true,
+            "name": "userIdentities",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
             "description": "Specifies the voice over IP (VOIP) session initiation protocol (SIP) address for the user",
             "isEntitlement": false,
             "isGroup": false,
             "isMulti": false,
             "name": "sipProxyAddress",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "State of the user's risk",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "riskState",
             "nativeName": null,
             "schema": null,
             "type": "STRING"
@@ -804,27 +921,23 @@
             "type": "STRING"
           },
           {
-            "description": "The licenses that are assigned to the user",
+            "description": "The date and time that the risky user was last updated",
             "isEntitlement": false,
             "isGroup": false,
-            "isMulti": true,
-            "name": "assignedLicenses",
+            "isMulti": false,
+            "name": "riskLastUpdatedDateTime",
             "nativeName": null,
             "schema": null,
             "type": "STRING"
           },
           {
             "description": "The licenses that are assigned to the user",
-            "isEntitlement": true,
-            "isGroup": true,
-            "isMulti": true,
-            "name": "assignedPlans",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "assignedLicenses",
             "nativeName": null,
-            "schema": {
-              "id": "aa8ccfcfa7214be697b6d2b415b78774",
-              "name": "servicePlan",
-              "type": "CONNECTOR_SCHEMA"
-            },
+            "schema": null,
             "type": "STRING"
           },
           {
@@ -865,6 +978,20 @@
             "name": "physicalDeliveryOfficeName",
             "nativeName": null,
             "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "The plans that are assigned to the user",
+            "isEntitlement": true,
+            "isGroup": true,
+            "isMulti": true,
+            "name": "assignedPlans",
+            "nativeName": null,
+            "schema": {
+              "id": "729c64756ca7415ca28f46915852a802",
+              "name": "servicePlan",
+              "type": "CONNECTOR_SCHEMA"
+            },
             "type": "STRING"
           },
           {
@@ -948,7 +1075,7 @@
             "type": "STRING"
           },
           {
-            "description": "The user's job title",
+            "description": "The user’s job title",
             "isEntitlement": false,
             "isGroup": false,
             "isMulti": false,
@@ -958,14 +1085,14 @@
             "type": "STRING"
           },
           {
-            "description": "This property is used to associate an on-premises Active Directory user account to their Azure AD user object",
+            "description": "This property is used to associate an on-premises Active\n\t\t\t\t\tDirectory user account to their Microsoft Entra user object",
             "isEntitlement": false,
             "isGroup": false,
             "isMulti": false,
             "name": "immutableId",
             "nativeName": null,
             "schema": null,
-            "type": "BOOLEAN"
+            "type": "STRING"
           },
           {
             "description": "True if the account is enabled; otherwise, false",
@@ -986,94 +1113,19 @@
             "nativeName": null,
             "schema": null,
             "type": "STRING"
-          },
-          {
-            "description": "companyName",
-            "isEntitlement": false,
-            "isGroup": false,
-            "isMulti": false,
-            "name": "companyName",
-            "nativeName": null,
-            "schema": null,
-            "type": "STRING"
           }
         ],
         "configuration": {},
-        "created": "2026-03-17T16:42:18.708Z",
+        "created": "2026-05-20T15:11:26.458Z",
         "displayAttribute": "userPrincipalName",
         "features": [],
         "hierarchyAttribute": null,
-        "id": "bce787ab660a4092893a62d038edea8c",
+        "id": "b8625d0cc06d4e8593016671b7234403",
         "identityAttribute": "objectId",
         "includePermissions": false,
-        "modified": "2026-04-29T06:32:37.147Z",
+        "modified": "2026-05-20T15:11:26.458Z",
         "name": "account",
-        "nativeObjectType": "User"
-      },
-      {
-        "attributes": [
-          {
-            "description": "Active AD Role Display Name",
-            "isEntitlement": false,
-            "isGroup": false,
-            "isMulti": false,
-            "name": "displayName",
-            "nativeName": null,
-            "schema": null,
-            "type": "STRING"
-          },
-          {
-            "description": "Azure AD Active Role ID",
-            "isEntitlement": false,
-            "isGroup": false,
-            "isMulti": false,
-            "name": "id",
-            "nativeName": null,
-            "schema": null,
-            "type": "STRING"
-          },
-          {
-            "description": "Indicates whether role is custom or built-in",
-            "isEntitlement": false,
-            "isGroup": false,
-            "isMulti": false,
-            "name": "isBuiltIn",
-            "nativeName": null,
-            "schema": null,
-            "type": "STRING"
-          },
-          {
-            "description": "Name of the role",
-            "isEntitlement": false,
-            "isGroup": false,
-            "isMulti": false,
-            "name": "roleName",
-            "nativeName": null,
-            "schema": null,
-            "type": "STRING"
-          },
-          {
-            "description": "Scope at which role can be assigned",
-            "isEntitlement": false,
-            "isGroup": false,
-            "isMulti": false,
-            "name": "scope",
-            "nativeName": null,
-            "schema": null,
-            "type": "STRING"
-          }
-        ],
-        "configuration": {},
-        "created": "2026-03-17T16:42:18.708Z",
-        "displayAttribute": "displayName",
-        "features": [],
-        "hierarchyAttribute": null,
-        "id": "58f7c25f8dde4b2786713c1408140aa8",
-        "identityAttribute": "id",
-        "includePermissions": false,
-        "modified": "2026-03-17T16:42:18.708Z",
-        "name": "azureADActiveRole",
-        "nativeObjectType": "azureADActiveRole"
+        "nativeObjectType": "account"
       },
       {
         "attributes": [
@@ -1129,14 +1181,14 @@
           }
         ],
         "configuration": {},
-        "created": "2026-03-17T16:42:18.708Z",
+        "created": "2026-05-20T15:11:26.458Z",
         "displayAttribute": "displayName",
         "features": [],
         "hierarchyAttribute": null,
-        "id": "bd3a15da5480474e8850d1ad0a5cb271",
+        "id": "f8449b6b420a440fa0a1e352752f29e4",
         "identityAttribute": "id",
         "includePermissions": false,
-        "modified": "2026-03-17T16:42:18.708Z",
+        "modified": "2026-05-20T15:11:26.458Z",
         "name": "azureActiveRole",
         "nativeObjectType": "azureActiveRole"
       },
@@ -1146,7 +1198,7 @@
             "description": "Allowed member types for application role",
             "isEntitlement": false,
             "isGroup": false,
-            "isMulti": false,
+            "isMulti": true,
             "name": "allowedMemberTypes",
             "nativeName": null,
             "schema": null,
@@ -1214,14 +1266,14 @@
           }
         ],
         "configuration": {},
-        "created": "2026-03-17T16:42:18.708Z",
+        "created": "2026-05-20T15:11:26.458Z",
         "displayAttribute": "displayName",
         "features": [],
         "hierarchyAttribute": null,
-        "id": "6566a94e1846488c9ab36d7c5ed66f03",
+        "id": "437fa0c7953e44d6ae4465ca2a8e42c8",
         "identityAttribute": "id",
         "includePermissions": false,
-        "modified": "2026-03-17T16:42:18.708Z",
+        "modified": "2026-05-20T15:11:26.458Z",
         "name": "applicationRole",
         "nativeObjectType": "applicationRole"
       },
@@ -1299,14 +1351,14 @@
           }
         ],
         "configuration": {},
-        "created": "2026-03-17T16:42:18.708Z",
+        "created": "2026-05-20T15:11:26.458Z",
         "displayAttribute": "displayName",
         "features": [],
         "hierarchyAttribute": null,
-        "id": "e881370086e448cd9157a9bc64a6c2d3",
+        "id": "8f8d4552a18043659629bae71721375e",
         "identityAttribute": "id",
         "includePermissions": false,
-        "modified": "2026-03-17T16:42:18.708Z",
+        "modified": "2026-05-20T15:11:26.458Z",
         "name": "adminConsentedPermission",
         "nativeObjectType": "adminConsentedPermission"
       },
@@ -1336,7 +1388,7 @@
             "description": "List of tenants managing subscription",
             "isEntitlement": false,
             "isGroup": false,
-            "isMulti": false,
+            "isMulti": true,
             "name": "managedByTenants",
             "nativeName": null,
             "schema": null,
@@ -1384,81 +1436,16 @@
           }
         ],
         "configuration": {},
-        "created": "2026-03-17T16:42:18.708Z",
+        "created": "2026-05-20T15:11:26.458Z",
         "displayAttribute": "name",
         "features": [],
         "hierarchyAttribute": null,
-        "id": "1e010bd78ea143d2a85f88a01df4c7bb",
+        "id": "6eb1d94dd6e445659ca0c5211579bb52",
         "identityAttribute": "subscriptionId",
         "includePermissions": false,
-        "modified": "2026-03-17T16:42:18.708Z",
+        "modified": "2026-05-20T15:11:26.458Z",
         "name": "subscription",
         "nativeObjectType": "subscription"
-      },
-      {
-        "attributes": [
-          {
-            "description": "Azure AD Eligible Role ID",
-            "isEntitlement": false,
-            "isGroup": false,
-            "isMulti": false,
-            "name": "id",
-            "nativeName": null,
-            "schema": null,
-            "type": "STRING"
-          },
-          {
-            "description": "Eligible Role Display Name",
-            "isEntitlement": false,
-            "isGroup": false,
-            "isMulti": false,
-            "name": "displayName",
-            "nativeName": null,
-            "schema": null,
-            "type": "STRING"
-          },
-          {
-            "description": "Indicates whether role is custom or built-in",
-            "isEntitlement": false,
-            "isGroup": false,
-            "isMulti": false,
-            "name": "isBuiltIn",
-            "nativeName": null,
-            "schema": null,
-            "type": "STRING"
-          },
-          {
-            "description": "Name of the role",
-            "isEntitlement": false,
-            "isGroup": false,
-            "isMulti": false,
-            "name": "roleName",
-            "nativeName": null,
-            "schema": null,
-            "type": "STRING"
-          },
-          {
-            "description": "Scope at which role can be assigned",
-            "isEntitlement": false,
-            "isGroup": false,
-            "isMulti": false,
-            "name": "scope",
-            "nativeName": null,
-            "schema": null,
-            "type": "STRING"
-          }
-        ],
-        "configuration": {},
-        "created": "2026-03-17T16:42:18.708Z",
-        "displayAttribute": "displayName",
-        "features": [],
-        "hierarchyAttribute": null,
-        "id": "ea6e5e02cc42493fb62c88499ce453d6",
-        "identityAttribute": "id",
-        "includePermissions": false,
-        "modified": "2026-03-17T16:42:18.708Z",
-        "name": "azureADEligibleRole",
-        "nativeObjectType": "azureADEligibleRole"
       },
       {
         "attributes": [
@@ -1514,14 +1501,14 @@
           }
         ],
         "configuration": {},
-        "created": "2026-03-17T16:42:18.708Z",
+        "created": "2026-05-20T15:11:26.458Z",
         "displayAttribute": "displayName",
         "features": [],
         "hierarchyAttribute": null,
-        "id": "e15143cc29cf4f9ca3e877d59bf34d73",
+        "id": "1b2d21fdd82f4b8989096bca6e3a3509",
         "identityAttribute": "id",
         "includePermissions": false,
-        "modified": "2026-03-17T16:42:18.708Z",
+        "modified": "2026-05-20T15:11:26.458Z",
         "name": "azureEligibleRole",
         "nativeObjectType": "azureEligibleRole"
       },
@@ -1569,14 +1556,14 @@
           }
         ],
         "configuration": {},
-        "created": "2026-03-17T16:42:18.708Z",
+        "created": "2026-05-20T15:11:26.458Z",
         "displayAttribute": "displayName",
         "features": [],
         "hierarchyAttribute": null,
-        "id": "1e8eb6a0de874921832b62c72a098fb7",
+        "id": "83ca607523934b1cae696fbf728cc75d",
         "identityAttribute": "id",
         "includePermissions": false,
-        "modified": "2026-03-17T16:42:18.708Z",
+        "modified": "2026-05-20T15:11:26.458Z",
         "name": "azureRoleAssignment",
         "nativeObjectType": "azureRoleAssignment"
       },
@@ -1633,16 +1620,6 @@
             "type": "STRING"
           },
           {
-            "description": "Indicates what all resources are present in access package with role",
-            "isEntitlement": false,
-            "isGroup": false,
-            "isMulti": false,
-            "name": "Resource Roles",
-            "nativeName": null,
-            "schema": null,
-            "type": "STRING"
-          },
-          {
             "description": "Indicates whether the Access Package is hidden from end users on My Access portal.",
             "isEntitlement": false,
             "isGroup": false,
@@ -1664,21 +1641,21 @@
           }
         ],
         "configuration": {},
-        "created": "2026-03-17T16:42:18.708Z",
+        "created": "2026-05-20T15:11:26.458Z",
         "displayAttribute": "displayName",
         "features": [],
         "hierarchyAttribute": null,
-        "id": "67195eee3f5941cd8f84663134452653",
+        "id": "1e1d091228c14308a69cf8213501018c",
         "identityAttribute": "id",
         "includePermissions": false,
-        "modified": "2026-03-17T16:42:18.708Z",
+        "modified": "2026-05-20T15:11:26.458Z",
         "name": "accessPackage",
         "nativeObjectType": "accessPackage"
       },
       {
         "attributes": [
           {
-            "description": "Contains the on-premises security identifier (SID) for the group that was synchronized from on-premises to the cloud.",
+            "description": "Contains the on-premises security identifier (SID) for the group that was synchronized from on-premises to the cloud",
             "isEntitlement": false,
             "isGroup": false,
             "isMulti": false,
@@ -1688,7 +1665,7 @@
             "type": "STRING"
           },
           {
-            "description": "Description for the group.",
+            "description": "Description for the group",
             "isEntitlement": false,
             "isGroup": false,
             "isMulti": false,
@@ -1698,27 +1675,7 @@
             "type": "STRING"
           },
           {
-            "description": "Display name for the group.",
-            "isEntitlement": false,
-            "isGroup": false,
-            "isMulti": false,
-            "name": "displayName",
-            "nativeName": null,
-            "schema": null,
-            "type": "STRING"
-          },
-          {
-            "description": "Group Hierarchy Attribute",
-            "isEntitlement": false,
-            "isGroup": false,
-            "isMulti": true,
-            "name": "memberOf",
-            "nativeName": null,
-            "schema": null,
-            "type": "STRING"
-          },
-          {
-            "description": "Group ID.This is an Account ID which must not be changed.",
+            "description": "Group ID",
             "isEntitlement": false,
             "isGroup": false,
             "isMulti": false,
@@ -1728,7 +1685,17 @@
             "type": "STRING"
           },
           {
-            "description": "Indicates the last time at which the group was synced with the on-premises directory.",
+            "description": "Group Membership",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": true,
+            "name": "memberOf",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Indicates the last time at which the object was synced with the\n\t\t\t\t\ton-premises directory",
             "isEntitlement": false,
             "isGroup": false,
             "isMulti": false,
@@ -1738,7 +1705,7 @@
             "type": "STRING"
           },
           {
-            "description": "Indicates whether this group was synced from the on-premises directory.",
+            "description": "Indicates whether this object was synced from the on-premises directory.",
             "isEntitlement": false,
             "isGroup": false,
             "isMulti": false,
@@ -1748,17 +1715,7 @@
             "type": "STRING"
           },
           {
-            "description": "Mail alias for the group.",
-            "isEntitlement": false,
-            "isGroup": false,
-            "isMulti": false,
-            "name": "mailNickname",
-            "nativeName": null,
-            "schema": null,
-            "type": "STRING"
-          },
-          {
-            "description": "Owner of the group.",
+            "description": "Owners of the group",
             "isEntitlement": false,
             "isGroup": false,
             "isMulti": true,
@@ -1768,7 +1725,7 @@
             "type": "STRING"
           },
           {
-            "description": "Proxy addresses of the group.",
+            "description": "Proxy addresses of the group",
             "isEntitlement": false,
             "isGroup": false,
             "isMulti": true,
@@ -1778,17 +1735,7 @@
             "type": "STRING"
           },
           {
-            "description": "SMTP address for the group.",
-            "isEntitlement": false,
-            "isGroup": false,
-            "isMulti": false,
-            "name": "mail",
-            "nativeName": null,
-            "schema": null,
-            "type": "STRING"
-          },
-          {
-            "description": "Specifies whether teams has been enabled for the group.",
+            "description": "Specifies whether teams has been enabled for the group",
             "isEntitlement": false,
             "isGroup": false,
             "isMulti": false,
@@ -1798,7 +1745,7 @@
             "type": "STRING"
           },
           {
-            "description": "Specifies whether the group is a security group.",
+            "description": "Specifies whether the group is a security group",
             "isEntitlement": false,
             "isGroup": false,
             "isMulti": false,
@@ -1818,7 +1765,37 @@
             "type": "STRING"
           },
           {
-            "description": "Type of the group. Blank for Security and /or Unified for Office 365 type of groups.For example, Unified for Office 365 group.",
+            "description": "The SMTP address for the group",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "mail",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "The display name for the group",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "displayName",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "The mail alias for the group",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "mailNickname",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Type of the group",
             "isEntitlement": false,
             "isGroup": false,
             "isMulti": true,
@@ -1829,21 +1806,21 @@
           }
         ],
         "configuration": {},
-        "created": "2026-03-17T16:42:18.708Z",
+        "created": "2026-05-20T15:11:26.458Z",
         "displayAttribute": "displayName",
         "features": [],
         "hierarchyAttribute": "memberOf",
-        "id": "f6cf7515be41473a8f29009c8d3393c4",
+        "id": "13b4fb1908c64467b5c9418d5927ec2b",
         "identityAttribute": "objectId",
         "includePermissions": false,
-        "modified": "2026-03-17T16:42:18.708Z",
+        "modified": "2026-05-20T15:11:26.458Z",
         "name": "group",
         "nativeObjectType": "group"
       },
       {
         "attributes": [
           {
-            "description": "Creation timestamp of the channel",
+            "description": "Creation timestamp of the channel ",
             "isEntitlement": false,
             "isGroup": false,
             "isMulti": false,
@@ -1926,7 +1903,7 @@
             "description": "The list of owners of the private channel",
             "isEntitlement": false,
             "isGroup": false,
-            "isMulti": false,
+            "isMulti": true,
             "name": "owners",
             "nativeName": null,
             "schema": null,
@@ -1944,14 +1921,14 @@
           }
         ],
         "configuration": {},
-        "created": "2026-03-17T16:42:18.708Z",
+        "created": "2026-05-20T15:11:26.458Z",
         "displayAttribute": "displayName",
         "features": [],
         "hierarchyAttribute": null,
-        "id": "cdcffd77a72c42d5ae088184599934f5",
+        "id": "5d5964b549b947208652edaf578d2927",
         "identityAttribute": "id",
         "includePermissions": false,
-        "modified": "2026-03-17T16:42:18.708Z",
+        "modified": "2026-05-20T15:11:26.458Z",
         "name": "channel",
         "nativeObjectType": "channel"
       },
@@ -1968,31 +1945,11 @@
             "type": "STRING"
           },
           {
-            "description": "Description of Administrative Unit",
+            "description": "Member Restricted Flag",
             "isEntitlement": false,
             "isGroup": false,
             "isMulti": false,
             "name": "isMemberManagementRestricted",
-            "nativeName": null,
-            "schema": null,
-            "type": "BOOLEAN"
-          },
-          {
-            "description": "Friendly name of the Administrative Unit",
-            "isEntitlement": false,
-            "isGroup": false,
-            "isMulti": false,
-            "name": "displayName",
-            "nativeName": null,
-            "schema": null,
-            "type": "STRING"
-          },
-          {
-            "description": "Fully qualified ID for the Administrative Unit",
-            "isEntitlement": false,
-            "isGroup": false,
-            "isMulti": false,
-            "name": "id",
             "nativeName": null,
             "schema": null,
             "type": "STRING"
@@ -2018,11 +1975,31 @@
             "type": "STRING"
           },
           {
-            "description": "Membership Type",
+            "description": "Membership Type of Administrative Units",
             "isEntitlement": false,
             "isGroup": false,
             "isMulti": false,
             "name": "membershipType",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "The display name for the Administrative Unit",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "displayName",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "The unique identifier for the Administrative Units",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "id",
             "nativeName": null,
             "schema": null,
             "type": "STRING"
@@ -2039,109 +2016,21 @@
           }
         ],
         "configuration": {},
-        "created": "2026-03-17T16:42:18.708Z",
+        "created": "2026-05-20T15:11:26.458Z",
         "displayAttribute": "displayName",
         "features": [],
         "hierarchyAttribute": null,
-        "id": "a1d0c035226349b7a62e2ce28bd358a0",
+        "id": "5477004ddf6040f48837639045182620",
         "identityAttribute": "id",
         "includePermissions": false,
-        "modified": "2026-03-17T16:42:18.708Z",
+        "modified": "2026-05-20T15:11:26.458Z",
         "name": "administrativeUnit",
         "nativeObjectType": "administrativeUnit"
       },
       {
         "attributes": [
           {
-            "description": "Description of the Copilot agent.",
-            "isEntitlement": false,
-            "isGroup": false,
-            "isMulti": false,
-            "name": "description",
-            "nativeName": null,
-            "schema": null,
-            "type": "STRING"
-          },
-          {
-            "description": "ISO timestamp when the agent was created.",
-            "isEntitlement": false,
-            "isGroup": false,
-            "isMulti": false,
-            "name": "created_at",
-            "nativeName": null,
-            "schema": null,
-            "type": "STRING"
-          },
-          {
-            "description": "ISO timestamp when the agent was last updated.",
-            "isEntitlement": false,
-            "isGroup": false,
-            "isMulti": false,
-            "name": "updated_at",
-            "nativeName": null,
-            "schema": null,
-            "type": "STRING"
-          },
-          {
-            "description": "Owner of the agent.",
-            "isEntitlement": false,
-            "isGroup": false,
-            "isMulti": false,
-            "name": "owner",
-            "nativeName": null,
-            "schema": null,
-            "type": "STRING"
-          },
-          {
-            "description": "Status of the agent (Active or Inactive).",
-            "isEntitlement": false,
-            "isGroup": false,
-            "isMulti": false,
-            "name": "status",
-            "nativeName": null,
-            "schema": null,
-            "type": "STRING"
-          },
-          {
-            "description": "The name of the Copilot agent.",
-            "isEntitlement": false,
-            "isGroup": false,
-            "isMulti": false,
-            "name": "name",
-            "nativeName": null,
-            "schema": null,
-            "type": "STRING"
-          },
-          {
-            "description": "The unique identifier of the Copilot agent.",
-            "isEntitlement": false,
-            "isGroup": false,
-            "isMulti": false,
-            "name": "identity",
-            "nativeName": null,
-            "schema": null,
-            "type": "STRING"
-          }
-        ],
-        "configuration": {
-          "datasetId": "microsoft:copilot",
-          "datasetType": "std:agent"
-        },
-        "created": "2026-03-17T16:42:18.708Z",
-        "displayAttribute": "name",
-        "features": [],
-        "hierarchyAttribute": null,
-        "id": "b398487d866b4f609eb12c371b425c8b",
-        "identityAttribute": "identity",
-        "includePermissions": false,
-        "modified": "2026-03-17T16:42:18.708Z",
-        "name": "Microsoft Studio Copilot",
-        "nativeObjectType": null
-      },
-      {
-        "attributes": [
-          {
-            "description": "Display name of service plan which is a combination of skuPartNumber and servicePlanName",
+            "description": "Display name of service plan which is a combination of skuPartNumber and servicePlanName separated by colon (:).",
             "isEntitlement": false,
             "isGroup": false,
             "isMulti": false,
@@ -2191,7 +2080,72 @@
             "type": "STRING"
           },
           {
+            "description": "Unique identifier (GUID) for the License Pack.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "skuId",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
             "description": "Unique identifier for the service plan which is a combination of skuId and servicePlanId separated by colon (:).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "objectId",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Unique identifier of the service plan.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "servicePlanId",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {},
+        "created": "2026-05-20T15:11:26.458Z",
+        "displayAttribute": "displayName",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "729c64756ca7415ca28f46915852a802",
+        "identityAttribute": "objectId",
+        "includePermissions": false,
+        "modified": "2026-05-20T15:11:26.458Z",
+        "name": "servicePlan",
+        "nativeObjectType": "servicePlan"
+      },
+      {
+        "attributes": [
+          {
+            "description": "Eligible Role Display Name",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "displayName",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Indicates whether role is custom or built-in",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "isBuiltIn",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Microsoft Entra ID Eligible Role ID",
             "isEntitlement": false,
             "isGroup": false,
             "isMulti": false,
@@ -2199,38 +2153,58 @@
             "nativeName": null,
             "schema": null,
             "type": "STRING"
+          },
+          {
+            "description": "Name of the role",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "roleName",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Scope at which role can be assigned",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "scope",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
           }
         ],
         "configuration": {},
-        "created": "2026-03-17T16:42:18.708Z",
+        "created": "2026-05-20T15:11:26.458Z",
         "displayAttribute": "displayName",
         "features": [],
         "hierarchyAttribute": null,
-        "id": "aa8ccfcfa7214be697b6d2b415b78774",
+        "id": "55047ae2f210427f9e4ff30de1616639",
         "identityAttribute": "id",
         "includePermissions": false,
-        "modified": "2026-03-17T16:42:18.708Z",
-        "name": "servicePlan",
-        "nativeObjectType": "servicePlan"
+        "modified": "2026-05-20T15:11:26.458Z",
+        "name": "azureADEligibleRole",
+        "nativeObjectType": "azureADEligibleRole"
       },
       {
         "attributes": [
           {
-            "description": "Flag indicating whether the role is enabled for assignment. If false the role is not available for assignment",
+            "description": "Flag indicating whether the role definition is part of the default set included in Azure\n\t\t\t\t\tActive Directory (Azure AD) or a custom definition\n\t\t\t\t",
             "isEntitlement": false,
             "isGroup": false,
             "isMulti": false,
-            "name": "isEnabled",
+            "name": "isBuiltIn",
             "nativeName": null,
             "schema": null,
             "type": "BOOLEAN"
           },
           {
-            "description": "Flag indicating whether the role is part of the default set included in Microsoft Entra ID or a custom role",
+            "description": "Flag indicating whether the role is enabled for assignment. If false the role is not\n\t\t\t\t\tavailable for assignment\n\t\t\t\t",
             "isEntitlement": false,
             "isGroup": false,
             "isMulti": false,
-            "name": "isBuiltIn",
+            "name": "isEnabled",
             "nativeName": null,
             "schema": null,
             "type": "BOOLEAN"
@@ -2246,7 +2220,7 @@
             "type": "STRING"
           },
           {
-            "description": "The description for the Microsoft Entra ID role",
+            "description": "The description for the unifiedRoleDefinition",
             "isEntitlement": false,
             "isGroup": false,
             "isMulti": false,
@@ -2256,7 +2230,7 @@
             "type": "STRING"
           },
           {
-            "description": "The display name for the Microsoft Entra ID role",
+            "description": "The display name for the unifiedRoleDefinition",
             "isEntitlement": false,
             "isGroup": false,
             "isMulti": false,
@@ -2266,7 +2240,7 @@
             "type": "STRING"
           },
           {
-            "description": "The unique identifier for the Microsoft Entra ID role",
+            "description": "The unique identifier for the role definition",
             "isEntitlement": false,
             "isGroup": false,
             "isMulti": false,
@@ -2277,14 +2251,14 @@
           }
         ],
         "configuration": {},
-        "created": "2026-03-17T16:42:18.708Z",
+        "created": "2026-05-20T15:11:26.458Z",
         "displayAttribute": "displayName",
         "features": [],
         "hierarchyAttribute": null,
-        "id": "096218fae65f4bda8673132afd044bc2",
+        "id": "00ce4fe31c0b44f18f1da8cde8aee538",
         "identityAttribute": "id",
         "includePermissions": false,
-        "modified": "2026-03-17T16:42:18.708Z",
+        "modified": "2026-05-20T15:11:26.458Z",
         "name": "role",
         "nativeObjectType": "role"
       },
@@ -2332,14 +2306,14 @@
           }
         ],
         "configuration": {},
-        "created": "2026-03-17T16:42:18.708Z",
+        "created": "2026-05-20T15:11:26.458Z",
         "displayAttribute": "name",
         "features": [],
         "hierarchyAttribute": null,
-        "id": "ddf2ea1ff2324319bd213e99f9e07f66",
+        "id": "f26e4fde273c49999eb710744957f6c9",
         "identityAttribute": "id",
         "includePermissions": false,
-        "modified": "2026-03-17T16:42:18.708Z",
+        "modified": "2026-05-20T15:11:26.458Z",
         "name": "managementGroup",
         "nativeObjectType": "managementGroup"
       },
@@ -2397,81 +2371,88 @@
           }
         ],
         "configuration": {},
-        "created": "2026-03-17T16:42:18.708Z",
+        "created": "2026-05-20T15:11:26.458Z",
         "displayAttribute": "name",
         "features": [],
         "hierarchyAttribute": null,
-        "id": "7df5c8f1b0a94feaa0c68d8cef96481f",
+        "id": "6860c848ab62488898fec270e8f5559c",
         "identityAttribute": "id",
         "includePermissions": false,
-        "modified": "2026-03-17T16:42:18.708Z",
+        "modified": "2026-05-20T15:11:26.458Z",
         "name": "resourceGroup",
         "nativeObjectType": "resourceGroup"
       },
       {
         "attributes": [
           {
-            "description": "ISO timestamp when the assistant was created.",
+            "description": "Indicates whether role is custom or built-in",
             "isEntitlement": false,
             "isGroup": false,
             "isMulti": false,
-            "name": "created_at",
+            "name": "isBuiltIn",
             "nativeName": null,
             "schema": null,
             "type": "STRING"
           },
           {
-            "description": "The model used by the assistant.",
+            "description": "Microsoft Entra ID Active Role ID",
             "isEntitlement": false,
             "isGroup": false,
             "isMulti": false,
-            "name": "model",
+            "name": "id",
             "nativeName": null,
             "schema": null,
             "type": "STRING"
           },
           {
-            "description": "The name of the assistant.",
+            "description": "Microsoft Entra ID Role Display Name",
             "isEntitlement": false,
             "isGroup": false,
             "isMulti": false,
-            "name": "name",
+            "name": "displayName",
             "nativeName": null,
             "schema": null,
             "type": "STRING"
           },
           {
-            "description": "The unique identifier of the agent with combination of ProjectName and AgentId.",
+            "description": "Name of the role",
             "isEntitlement": false,
             "isGroup": false,
             "isMulti": false,
-            "name": "identity",
+            "name": "roleName",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Scope at which role can be assigned",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "scope",
             "nativeName": null,
             "schema": null,
             "type": "STRING"
           }
         ],
-        "configuration": {
-          "datasetId": "azure:foundry",
-          "datasetType": "std:agent"
-        },
-        "created": "2026-03-17T16:42:18.708Z",
-        "displayAttribute": "name",
+        "configuration": {},
+        "created": "2026-05-20T15:11:26.458Z",
+        "displayAttribute": "displayName",
         "features": [],
         "hierarchyAttribute": null,
-        "id": "32295f0460b04af9863fb2453e1c8819",
-        "identityAttribute": "identity",
+        "id": "11831c8400c041ac85a38333466c4093",
+        "identityAttribute": "id",
         "includePermissions": false,
-        "modified": "2026-03-17T16:42:18.708Z",
-        "name": "Azure Foundry",
-        "nativeObjectType": null
+        "modified": "2026-05-20T15:11:26.458Z",
+        "name": "azureADActiveRole",
+        "nativeObjectType": "azureADActiveRole"
       }
     ],
-    "type": "b7e9374a-3c50-4b51-8880-e501f947bbf8"
+    "type": "Azure Active Directory"
   },
   "self": {
-    "id": "00c2314209744506bab1e856117f40f7",
-    "name": "Microsoft Entra sp-demo262 SaaS",
+    "id": "43da271c2e7d4523ac569f9512ebb5be",
+    "name": "nextgenidmtest1",
     "type": "SOURCE"
   },
   "version": 1

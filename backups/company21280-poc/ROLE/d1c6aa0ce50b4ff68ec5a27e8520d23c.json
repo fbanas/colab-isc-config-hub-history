@@ -21,6 +21,13 @@
     "enabled": true,
     "entitlements": [
       {
+        "id": "52ac658f-18f6-3c3f-94f9-09fb66d49331",
+        "name": "Update an Inbound Firewall Rule State on a Windows Server v2",
+        "sourceId": "a1a85705-e70a-42bc-ace4-e4d9a55debd9",
+        "sourceName": "IdentityNow",
+        "type": "ENTITLEMENT"
+      },
+      {
         "id": "a7fed7b2-8e59-37d8-88fa-0f2766e1304b",
         "name": "Update an Inbound Firewall Rule State on a Windows Server",
         "sourceId": "a1a85705-e70a-42bc-ace4-e4d9a55debd9",
@@ -44,6 +51,13 @@
       {
         "id": "c887b21e-a561-369a-94c9-b25a57a211fd",
         "name": "Emergency Termination",
+        "sourceId": "a1a85705-e70a-42bc-ace4-e4d9a55debd9",
+        "sourceName": "IdentityNow",
+        "type": "ENTITLEMENT"
+      },
+      {
+        "id": "ee1c0c85-2540-38e1-bf77-9c9ce7887cdb",
+        "name": "Create a Security Group in Active Directory v2",
         "sourceId": "a1a85705-e70a-42bc-ace4-e4d9a55debd9",
         "sourceName": "IdentityNow",
         "type": "ENTITLEMENT"
@@ -95,7 +109,7 @@
       ],
       "type": "IDENTITY_LIST"
     },
-    "modified": "2026-04-29T13:57:31.938054Z",
+    "modified": "2026-05-21T07:01:48.423622Z",
     "name": "Workflow Super User",
     "owner": {
       "id": "90eb8204ac594f48ac598a55e0e73613",

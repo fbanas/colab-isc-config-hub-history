@@ -71,7 +71,7 @@
     "usedBy": [
       {
         "id": "bee52f2e-d47c-48b0-8fdc-558341b6bb64",
-        "name": "Update an Inbound Firewall Rule State on a Windows Server",
+        "name": "Update an Inbound Firewall Rule State on a Windows Server v2",
         "type": "WORKFLOW"
       }
     ]

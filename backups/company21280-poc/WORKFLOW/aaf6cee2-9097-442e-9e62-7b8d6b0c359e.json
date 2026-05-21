@@ -634,13 +634,13 @@
     "description": "This interactive workflow creates a new Active Directory security group.\n\nYou will be asked to provide some group details using an interactive form.",
     "enabled": false,
     "id": "aaf6cee2-9097-442e-9e62-7b8d6b0c359e",
-    "modified": "2026-05-05T14:25:13.588201463Z",
+    "modified": "2026-05-21T07:27:36.768319293Z",
     "modifiedBy": {
-      "id": "e4b5bec795a54599a9e39dcaac4467bf",
-      "name": "slpt.support",
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
       "type": "IDENTITY"
     },
-    "name": "Create a Security Group in Active Directory",
+    "name": "Create a Security Group in Active Directory v2",
     "owner": {
       "id": "e4b5bec795a54599a9e39dcaac4467bf",
       "name": "slpt.support",
@@ -657,7 +657,7 @@
   },
   "self": {
     "id": "aaf6cee2-9097-442e-9e62-7b8d6b0c359e",
-    "name": "Create a Security Group in Active Directory",
+    "name": "Create a Security Group in Active Directory v2",
     "type": "WORKFLOW"
   },
   "version": 1
