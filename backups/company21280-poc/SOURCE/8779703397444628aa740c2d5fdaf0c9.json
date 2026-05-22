@@ -17,7 +17,7 @@
       "buildMembershipDetailsForGroupObjects": false,
       "buildPartialROOnAuthentication": true,
       "cloudAuthEnabled": true,
-      "cloudCacheUpdate": 1777819547174,
+      "cloudCacheUpdate": 1779433260625,
       "cloudDisplayName": "Active Directory",
       "connectionType": "direct",
       "connectorName": "Active Directory",
@@ -184,34 +184,32 @@
             "attributes": {
               "cloudMaxSize": "20",
               "cloudMaxUniqueChecks": "50",
-              "cloudRequired": "true",
-              "template": "$(firstname).$(lastname)$(uniqueCounter)"
+              "cloudRequired": "true"
             },
             "isMultiValued": false,
             "isRequired": false,
             "name": "sAMAccountName",
             "transform": {
               "attributes": {
-                "name": "Create Unique LDAP Attribute"
+                "name": "uid"
               },
-              "type": "rule"
+              "type": "identityAttribute"
             },
             "type": "string"
           },
           {
             "attributes": {
               "cloudMaxUniqueChecks": "50",
-              "cloudRequired": "true",
-              "template": "CN=$(firstname) $(lastname)$(uniqueCounter), OU=Demo,DC=seri,DC=sailpointdemo,DC=com"
+              "cloudRequired": "true"
             },
             "isMultiValued": false,
             "isRequired": false,
             "name": "distinguishedName",
             "transform": {
               "attributes": {
-                "name": "Create Unique Account ID"
+                "value": "CN=${sAMAccountName},OU=Demo,DC=seri,DC=sailpointdemo,DC=com"
               },
-              "type": "rule"
+              "type": "static"
             },
             "type": "string"
           },

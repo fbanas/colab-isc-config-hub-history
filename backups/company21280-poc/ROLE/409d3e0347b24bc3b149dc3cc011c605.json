@@ -4,12 +4,7 @@
   "object": {
     "accessProfiles": [],
     "accessRequestConfig": {
-      "approvalSchemes": [
-        {
-          "approverId": null,
-          "approverType": "OWNER"
-        }
-      ],
+      "approvalSchemes": [],
       "commentsRequired": false,
       "denialCommentsRequired": false,
       "formDefinitionId": null,
@@ -81,7 +76,7 @@
       "identities": null,
       "type": "STANDARD"
     },
-    "modified": "2026-04-10T07:31:23.506758Z",
+    "modified": "2026-05-22T06:57:05.067699Z",
     "name": "Unix Administrator",
     "owner": {
       "id": "176a5fc85208460383b2253765f4a137",

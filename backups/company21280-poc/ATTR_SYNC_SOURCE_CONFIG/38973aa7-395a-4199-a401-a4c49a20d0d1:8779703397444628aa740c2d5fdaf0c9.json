@@ -4,6 +4,12 @@
   "object": {
     "attributes": [
       {
+        "displayName": "IdentityNow Username",
+        "enabled": false,
+        "name": "uid",
+        "target": "sAMAccountName"
+      },
+      {
         "displayName": "Personal Phone",
         "enabled": false,
         "name": "phone",
