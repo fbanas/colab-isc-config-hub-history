@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "Dear $__recipient.name,<br/><br/>\n<p>The Just-In-Time activation attempted for ${entitlementName} on behalf of ${requestedForIdentityName} failed.</p>\n<p>Please contact ${ownerName} if you have any questions.</p>\n<br/>Thanks,<br/>The $__global.productName Team<br/>",
+    "created": null,
+    "description": "Notifies a manager, requester, or other interested party that a Just-In-Time activation attempted on behalf of another identity did not succeed.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Just-In-Time Activation Failed for Requested-For Identity",
+    "key": "jit_activation_failed_for_requested-for_identity",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Just-In-Time Activation Failed for Requested-For Identity",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "Just-In-Time Activation Failed for ${requestedForIdentityName}",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Just-In-Time Activation Failed for Requested-For Identity",
+    "name": "Just-In-Time Activation Failed for Requested-For Identity",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}
