@@ -1,0 +1,100 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": "2026-05-26T08:46:29.326246298Z",
+    "creator": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "definition": {
+      "start": "For Each Entitlement Addition",
+      "steps": {
+        "End Workflow - Success": {
+          "type": "success"
+        },
+        "For Each Entitlement Addition": {
+          "actionId": "sp:loop:iterator",
+          "attributes": {
+            "context.$": "$.trigger.identity.id",
+            "input.$": "$.trigger.entitlementChanges[*].added[?(@.id)]",
+            "start": "Submit Revocation Request",
+            "steps": {
+              "End Loop — Success": {
+                "type": "success"
+              },
+              "Submit Revocation Request": {
+                "actionId": "sp:access:manage",
+                "attributes": {
+                  "comments": "Workflow initiated entitlement revoke requests for access that was added out-of-band.",
+                  "removeIdentity.$": "$.loop.context",
+                  "requestType": "REVOKE_ACCESS",
+                  "requestedItems": [
+                    {
+                      "id": "{{$.loop.loopInput.id}}",
+                      "name": "{{$.loop.loopInput.name}}",
+                      "type": "ENTITLEMENT"
+                    }
+                  ]
+                },
+                "description": "This action transforms the entitlement data into the \"access item\" format required by the Access to Manage field.",
+                "nextStep": "End Loop — Success",
+                "type": "action",
+                "versionNumber": 1
+              }
+            }
+          },
+          "description": "The loop will submit a revocation request for each entitlement addition that is detected in the native change event. However, the loop will skip entitlements with null ids since revocation requests require a valid id.\n\nEntitlements with null ids are detected during account aggregations but not found in the entitlements database. This scenario occurs when entitlement aggregation is run after account aggregation rather than before. Update your entitlement aggregation schedule if this issue arises.",
+          "nextStep": "Send Revocation Summary Email",
+          "type": "action",
+          "versionNumber": 1
+        },
+        "Send Revocation Summary Email": {
+          "actionId": "sp:send-email",
+          "attributes": {
+            "body": "<p>Hi Admin,</p>\n<p>Workflow processed entitlement revoke requests for access that was added out-of-band.</p>\n<table style=\"border:1px solid black;border-collapse:collapse\">\n    <tr>\n        <td style=\"border:1px solid black;border-collapse:collapse\"><b>Identity</b></td>\n        <td style=\"border:1px solid black;border-collapse:collapse\"><b>Identity Id</b></td>\n        <td style=\"border:1px solid black;border-collapse:collapse\"><b>Manager</b></td>\n        <td style=\"border:1px solid black;border-collapse:collapse\"><b>Event Type</b></td>\n        <td style=\"border:1px solid black;border-collapse:collapse\"><b>Account Name</b></td>\n        <td style=\"border:1px solid black;border-collapse:collapse\"><b>Account Native Identity</b></td>\n        <td style=\"border:1px solid black;border-collapse:collapse\"><b>Entitlement Name</b></td>\n        <td style=\"border:1px solid black;border-collapse:collapse\"><b>Entitlement Id</b></td>\n        <td style=\"border:1px solid black;border-collapse:collapse\"><b>Entitlement Value</b></td>\n        <td style=\"border:1px solid black;border-collapse:collapse\"><b>Entitlement Owner</b></td>\n        <td style=\"border:1px solid black;border-collapse:collapse\"><b>Status</b></td>\n    </tr>\n    #foreach( $entitlement in ${entitlements} )\n    <tr>\n        <td style=\"border:1px solid black;border-collapse:collapse\">{{$.trigger.identity.name}}</td>\n        <td style=\"border:1px solid black;border-collapse:collapse\">{{$.trigger.identity.id}}</td>\n        <td style=\"border:1px solid black;border-collapse:collapse\">{{$.trigger.identity.manager.name}}</td>\n        <td style=\"border:1px solid black;border-collapse:collapse\">{{$.trigger.eventType}}</td>\n        <td style=\"border:1px solid black;border-collapse:collapse\">{{$.trigger.account.name}}</td>\n        <td style=\"border:1px solid black;border-collapse:collapse\">{{$.trigger.account.nativeIdentity}}</td>\n        <td style=\"border:1px solid black;border-collapse:collapse\">$entitlement.name</td>\n        <td style=\"border:1px solid black;border-collapse:collapse\">#if( $entitlement.id ) $entitlement.id #{else}null#end</td>\n        <td style=\"border:1px solid black;border-collapse:collapse\">$entitlement.value</td>\n        <td style=\"border:1px solid black;border-collapse:collapse\">$entitlement.owner.name</td>\n        <td style=\"border:1px solid black;border-collapse:collapse\"><b>#if( $entitlement.id ) Initiated Revoke #{else} Skipped Revoke (Null Entitlement Id) #end</b></td>\n    </tr>\n    #end\n</table>",
+            "context": {
+              "entitlements.$": "$.trigger.entitlementChanges[*].added[*]"
+            },
+            "recipientEmailList.$": "$.trigger.source.owner.email",
+            "subject": "Revoking Out-of-Band Entitlement Additions: {{$.trigger.source.name}}."
+          },
+          "description": "This action sends an email to the source owner detailing each of the entitlement additions the workflow processed.\n\nThe Status column will print \"Initiated Revoke\" if the entitlement had a valid id. Otherwise, it will print \"Skipped Revoke (Null Entitlement Id).\"",
+          "nextStep": "End Workflow - Success",
+          "type": "action",
+          "versionNumber": 2
+        }
+      }
+    },
+    "description": "This workflow is triggered when a Native Change Account Updated event containing entitlement additions is detected. Each new entitlement is revoked, and a summary email is sent to the source owner.",
+    "enabled": false,
+    "id": "031b1590-926a-46be-ada9-b5c78ec8f40e",
+    "modified": "2026-05-26T08:46:29.326246298Z",
+    "modifiedBy": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "name": "Template: Revoke Entitlement Additions Detected as Native Change Account Updated",
+    "owner": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "trigger": {
+      "attributes": {
+        "filter.$": "$.entitlementChanges[*].added[*]",
+        "id": "idn:native-change-account-updated",
+        "integrationId": null
+      },
+      "type": "EVENT"
+    }
+  },
+  "self": {
+    "id": "031b1590-926a-46be-ada9-b5c78ec8f40e",
+    "name": "Template: Revoke Entitlement Additions Detected as Native Change Account Updated",
+    "type": "WORKFLOW"
+  },
+  "version": 1
+}

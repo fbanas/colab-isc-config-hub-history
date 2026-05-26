@@ -109,7 +109,7 @@
       ],
       "type": "IDENTITY_LIST"
     },
-    "modified": "2026-05-21T07:01:48.423622Z",
+    "modified": "2026-05-25T20:17:47.132954Z",
     "name": "Workflow Super User",
     "owner": {
       "id": "90eb8204ac594f48ac598a55e0e73613",
@@ -117,7 +117,7 @@
       "type": "IDENTITY"
     },
     "privilegeLevel": null,
-    "requestable": false,
+    "requestable": true,
     "revocationRequestConfig": {
       "approvalSchemes": []
     },
