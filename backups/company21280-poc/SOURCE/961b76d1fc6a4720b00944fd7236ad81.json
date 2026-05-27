@@ -1,0 +1,144 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accountCorrelationRule": null,
+    "beforeProvisioningRule": null,
+    "connectorAttributes": {
+      "cloudCacheUpdate": 1779876456691,
+      "cloudDisplayName": "Snapshots",
+      "connectionType": "direct",
+      "connectorName": "Echo (tag: latest)",
+      "deleteThresholdPercentage": 10,
+      "enableProvisioningFeature": true,
+      "healthy": false,
+      "idnProxyType": "sp-connect",
+      "since": "2026-05-27T10:07:14.764Z",
+      "spConnectorInstanceId": "6746d540-6741-4bdd-bf33-4656fa30f0ff",
+      "spConnectorSpecId": "4b9af423-72a8-4d53-860d-6e9b27b9ab6a",
+      "status": "SOURCE_STATE_UNCHECKED_SOURCE_NO_ACCOUNTS",
+      "templateApplication": "Echo (tag: latest)"
+    },
+    "connectorClass": "",
+    "connectorScriptName": "4b9af423-72a8-4d53-860d-6e9b27b9ab6a",
+    "correlationConfigDetails": {
+      "attributeAssignments": null,
+      "id": null,
+      "name": null
+    },
+    "crossTenantConnectorAttributes": {},
+    "deleteThreshold": 10,
+    "description": "Snapshots",
+    "features": [
+      "DELETE",
+      "PROVISIONING"
+    ],
+    "id": "961b76d1fc6a4720b00944fd7236ad81",
+    "managementWorkgroup": null,
+    "managerCorrelationMapping": null,
+    "managerCorrelationRule": null,
+    "name": "Snapshots",
+    "owner": {
+      "id": "176a5fc85208460383b2253765f4a137",
+      "name": "slpt.services",
+      "type": "IDENTITY"
+    },
+    "passwordPolicies": null,
+    "provisionAsCsv": false,
+    "provisioningPolicies": [
+      {
+        "description": null,
+        "fields": [
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": true,
+            "name": "name",
+            "transform": {
+              "attributes": {
+                "name": "uid"
+              },
+              "type": "identityAttribute"
+            },
+            "type": "string"
+          }
+        ],
+        "name": "Account",
+        "usageType": "CREATE"
+      }
+    ],
+    "schemas": [
+      {
+        "attributes": [
+          {
+            "description": "Name",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": true,
+            "isGroup": true,
+            "isMulti": false,
+            "name": "groups",
+            "nativeName": null,
+            "schema": {
+              "id": "07af766c86884da2b4b81923b1f86623",
+              "name": "group",
+              "type": "CONNECTOR_SCHEMA"
+            },
+            "type": "STRING"
+          }
+        ],
+        "configuration": {},
+        "created": "2026-05-27T10:07:14.764Z",
+        "displayAttribute": "name",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "1c4eab33048d4fa68324c0ba4b046841",
+        "identityAttribute": "name",
+        "includePermissions": false,
+        "modified": "2026-05-27T10:07:14.764Z",
+        "name": "account",
+        "nativeObjectType": "User"
+      },
+      {
+        "attributes": [
+          {
+            "description": "name",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {},
+        "created": "2026-05-27T10:07:14.764Z",
+        "displayAttribute": "name",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "07af766c86884da2b4b81923b1f86623",
+        "identityAttribute": "name",
+        "includePermissions": false,
+        "modified": "2026-05-27T10:07:14.764Z",
+        "name": "group",
+        "nativeObjectType": "Group"
+      }
+    ],
+    "type": "4b9af423-72a8-4d53-860d-6e9b27b9ab6a"
+  },
+  "self": {
+    "id": "961b76d1fc6a4720b00944fd7236ad81",
+    "name": "Snapshots",
+    "type": "SOURCE"
+  },
+  "version": 1
+}

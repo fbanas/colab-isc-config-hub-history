@@ -1,0 +1,19 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "attributes": {
+      "value": "ACME"
+    },
+    "id": "c438968d-bb8f-4655-bbea-098fe6f40f01",
+    "internal": false,
+    "name": "ACME static brand",
+    "type": "static"
+  },
+  "self": {
+    "id": "c438968d-bb8f-4655-bbea-098fe6f40f01",
+    "name": "ACME static brand",
+    "type": "TRANSFORM"
+  },
+  "version": 1
+}
