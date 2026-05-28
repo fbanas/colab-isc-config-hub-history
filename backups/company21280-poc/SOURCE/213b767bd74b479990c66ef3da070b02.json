@@ -1,0 +1,373 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accountCorrelationRule": null,
+    "beforeProvisioningRule": null,
+    "connectorAttributes": {
+      "baseurl": "https://company21280-poc.api.identitynow-demo.com",
+      "batchSize": "250",
+      "checkDeletedDisabled": false,
+      "clientId": "89c55633540a4e60ae4328288781080c",
+      "cloudCacheUpdate": 1779938796711,
+      "cloudDisplayName": "Snapshots",
+      "concurrencyCheckEnabled": false,
+      "connectionType": "direct",
+      "connectorName": "Identity Fusion NG (tag: latest)",
+      "deleteEmpty": false,
+      "deleteThresholdPercentage": 100,
+      "enablePriority": true,
+      "enableProvisioningFeature": true,
+      "enableQueue": true,
+      "enableRetry": true,
+      "externalLoggingEnabled": false,
+      "forceAttributeRefresh": false,
+      "healthCheckTimeout": 30,
+      "healthy": true,
+      "identityScopeQuery": "isManager:true",
+      "idnProxyType": "sp-connect",
+      "includeIdentities": true,
+      "managedAccountsBatchSize": "100",
+      "maxConcurrentRequests": "10",
+      "maxHistoryMessages": "10",
+      "maxRetries": "20",
+      "processing": false,
+      "processingWait": "60",
+      "provisioningTimeout": "300",
+      "proxyEnabled": true,
+      "proxyUrl": "https://dev.fds81.tech",
+      "recommendationStatus": "TERMINATED",
+      "requestsPerSecond": "10",
+      "reset": false,
+      "retryDelay": "1000",
+      "since": "2026-05-27T18:48:20.382Z",
+      "skipAccountsWithMissingId": false,
+      "spConnectorInstanceId": "97166870-6f8b-42d3-b07e-ae9370f0ebae",
+      "spConnectorSpecId": "2a2674ae-c6e4-4fd8-a948-e332857fc5a6",
+      "spConnectorSupportsCustomSchemas": true,
+      "status": "SOURCE_STATE_HEALTHY",
+      "templateApplication": "Identity Fusion NG (tag: latest)"
+    },
+    "connectorClass": "",
+    "connectorScriptName": "2a2674ae-c6e4-4fd8-a948-e332857fc5a6",
+    "correlationConfigDetails": {
+      "attributeAssignments": null,
+      "id": null,
+      "name": null
+    },
+    "crossTenantConnectorAttributes": {},
+    "deleteThreshold": 100,
+    "description": "Snapshots",
+    "features": [
+      "DISCOVER_SCHEMA",
+      "ENABLE",
+      "PROVISIONING"
+    ],
+    "id": "213b767bd74b479990c66ef3da070b02",
+    "managementWorkgroup": null,
+    "managerCorrelationMapping": null,
+    "managerCorrelationRule": null,
+    "name": "Snapshots",
+    "owner": {
+      "id": "176a5fc85208460383b2253765f4a137",
+      "name": "slpt.services",
+      "type": "IDENTITY"
+    },
+    "passwordPolicies": null,
+    "provisionAsCsv": false,
+    "provisioningPolicies": [
+      {
+        "description": null,
+        "fields": [
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": true,
+            "name": "name",
+            "transform": {
+              "attributes": {
+                "value": "$identity.getName()"
+              },
+              "type": "static"
+            },
+            "type": "string"
+          }
+        ],
+        "name": "Account",
+        "usageType": "CREATE"
+      }
+    ],
+    "schemas": [
+      {
+        "attributes": [
+          {
+            "description": "Account name",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Actions",
+            "isEntitlement": true,
+            "isGroup": true,
+            "isMulti": true,
+            "name": "actions",
+            "nativeName": null,
+            "schema": {
+              "id": "549bbe720faa47e1b569ecd8179d34c0",
+              "name": "action",
+              "type": "CONNECTOR_SCHEMA"
+            },
+            "type": "STRING"
+          },
+          {
+            "description": "History",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": true,
+            "name": "history",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Managed account ID evaluated first when present",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "mainAccount",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Managed account keys (sourceId::nativeIdentity; legacy raw IDs supported)",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": true,
+            "name": "accounts",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Missing managed account keys (sourceId::nativeIdentity; legacy raw IDs supported)",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": true,
+            "name": "missing-accounts",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Origin identity ID or managed account key (set on creation, immutable, persisted even if missing; legacy raw IDs supported)",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "originAccount",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Origin source name (set on creation, immutable)",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "originSource",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Reviews",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": true,
+            "name": "reviews",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Statuses",
+            "isEntitlement": true,
+            "isGroup": true,
+            "isMulti": true,
+            "name": "statuses",
+            "nativeName": null,
+            "schema": {
+              "id": "9b6306554c064be1961eadf9945ded60",
+              "name": "status",
+              "type": "CONNECTOR_SCHEMA"
+            },
+            "type": "STRING"
+          },
+          {
+            "description": "email",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "email",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "firstname",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "firstname",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "lastname",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "lastname",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "sources",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "sources",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "uid",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "uid",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {},
+        "created": "2026-05-27T10:30:04.770Z",
+        "displayAttribute": "name",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "e8820f90c10942e5b68e3b519aa01095",
+        "identityAttribute": "uid",
+        "includePermissions": false,
+        "modified": "2026-05-27T10:34:21.752Z",
+        "name": "account",
+        "nativeObjectType": "User"
+      },
+      {
+        "attributes": [
+          {
+            "description": "description",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "description",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "id",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "id",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "name",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {},
+        "created": "2026-05-27T10:30:04.770Z",
+        "displayAttribute": "name",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "549bbe720faa47e1b569ecd8179d34c0",
+        "identityAttribute": "id",
+        "includePermissions": false,
+        "modified": "2026-05-27T10:30:04.770Z",
+        "name": "action",
+        "nativeObjectType": "Group"
+      },
+      {
+        "attributes": [
+          {
+            "description": "description",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "description",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "id",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "id",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "name",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isMulti": false,
+            "name": "name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {},
+        "created": "2026-05-27T10:30:04.770Z",
+        "displayAttribute": "name",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "9b6306554c064be1961eadf9945ded60",
+        "identityAttribute": "id",
+        "includePermissions": false,
+        "modified": "2026-05-27T10:30:04.770Z",
+        "name": "status",
+        "nativeObjectType": "Group"
+      }
+    ],
+    "type": "2a2674ae-c6e4-4fd8-a948-e332857fc5a6"
+  },
+  "self": {
+    "id": "213b767bd74b479990c66ef3da070b02",
+    "name": "Snapshots",
+    "type": "SOURCE"
+  },
+  "version": 1
+}

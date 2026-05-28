@@ -1,0 +1,76 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": "2026-05-27T10:34:48.138073351Z",
+    "creator": {
+      "id": "30507568a2d54f7484fe0f3edba79692",
+      "name": "fernando.delosrios",
+      "type": "IDENTITY"
+    },
+    "definition": {
+      "start": "Wait",
+      "steps": {
+        "End Step - Success": {
+          "type": "success"
+        },
+        "Trigger Aggregation": {
+          "actionId": "sp:http",
+          "attributes": {
+            "authenticationType": null,
+            "jsonRequestBody": {
+              "disableOptimization": "{{$.trigger.disableOptimization}}"
+            },
+            "method": "post",
+            "requestContentType": "json",
+            "requestHeaders": {
+              "Authorization": "Bearer {{$.trigger.accessToken}}"
+            },
+            "url": "https://company21280-poc.api.identitynow-demo.com/v2025/sources/{{$.trigger.sourceId}}/load-accounts"
+          },
+          "nextStep": "End Step - Success",
+          "type": "action",
+          "versionNumber": 2
+        },
+        "Wait": {
+          "actionId": "sp:sleep",
+          "attributes": {
+            "duration.$": "$.trigger.delayMinutes",
+            "type": "waitFor"
+          },
+          "nextStep": "Trigger Aggregation",
+          "type": "action",
+          "versionNumber": 1
+        }
+      }
+    },
+    "description": "",
+    "enabled": false,
+    "id": "6992d794-0b99-4f04-9d5b-51f7b778ae18",
+    "modified": "2026-05-27T10:34:48.138073351Z",
+    "modifiedBy": {
+      "id": "30507568a2d54f7484fe0f3edba79692",
+      "name": "fernando.delosrios",
+      "type": "IDENTITY"
+    },
+    "name": "Fusion Delayed Aggregation (Snapshots)",
+    "owner": {
+      "id": "176a5fc85208460383b2253765f4a137",
+      "name": "slpt.services",
+      "type": "IDENTITY"
+    },
+    "trigger": {
+      "attributes": {
+        "id": "idn:external-http",
+        "integrationId": null
+      },
+      "type": "EXTERNAL"
+    }
+  },
+  "self": {
+    "id": "6992d794-0b99-4f04-9d5b-51f7b778ae18",
+    "name": "Fusion Delayed Aggregation (Snapshots)",
+    "type": "WORKFLOW"
+  },
+  "version": 1
+}

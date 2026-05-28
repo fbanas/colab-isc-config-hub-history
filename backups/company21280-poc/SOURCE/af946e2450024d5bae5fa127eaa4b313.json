@@ -172,7 +172,7 @@
       "checkDeletedDisabled": false,
       "clientId": "89c55633540a4e60ae4328288781080c",
       "cloudAuthoritativeSourcePrecedence": 30,
-      "cloudCacheUpdate": 1778078449143,
+      "cloudCacheUpdate": 1779877346913,
       "cloudDisplayName": "Identity Fusion NG",
       "cloudIdentityProfileName": "Identity Fusion NG",
       "concurrencyCheckEnabled": false,
@@ -308,6 +308,15 @@
           "deferredMatching": false,
           "enabled": false,
           "name": "NERM",
+          "sourceType": "authoritative"
+        },
+        {
+          "accountJmespathFilter": "accounts[?disabled == `false`]",
+          "aggregationMode": "none",
+          "correlationMode": "none",
+          "deferredMatching": false,
+          "enabled": false,
+          "name": "Snapshots",
           "sourceType": "authoritative"
         },
         {
