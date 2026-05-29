@@ -2,6 +2,9 @@
   "jwsHeader": null,
   "jwsSignature": null,
   "object": {
+    "accessModelMetadata": {
+      "attributes": []
+    },
     "accessProfiles": [
       {
         "id": "3f97dcb42d8743d7a42088a8b8912179",

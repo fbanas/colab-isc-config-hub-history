@@ -2,6 +2,9 @@
   "jwsHeader": null,
   "jwsSignature": null,
   "object": {
+    "accessModelMetadata": {
+      "attributes": []
+    },
     "accessProfiles": [],
     "accessRequestConfig": {
       "approvalSchemes": [],

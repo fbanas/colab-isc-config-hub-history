@@ -2,6 +2,33 @@
   "jwsHeader": null,
   "jwsSignature": null,
   "object": {
+    "accessModelMetadata": {
+      "attributes": [
+        {
+          "description": "The Easy Access Rules provide Acceptable Means of Compliance (AMC) and Guidance Material (GM) for these requirements,",
+          "key": "eASAPartIS",
+          "multiselect": true,
+          "name": "EASA Part-IS",
+          "objectTypes": [
+            "general"
+          ],
+          "status": "active",
+          "type": "custom",
+          "values": [
+            {
+              "name": "IS.D.OR.200",
+              "status": "active",
+              "value": "iSDOR200"
+            },
+            {
+              "name": "IS.I.OR.205",
+              "status": "active",
+              "value": "iSIOR205"
+            }
+          ]
+        }
+      ]
+    },
     "accessProfiles": [],
     "accessRequestConfig": {
       "approvalSchemes": [],

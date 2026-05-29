@@ -2,6 +2,58 @@
   "jwsHeader": null,
   "jwsSignature": null,
   "object": {
+    "accessModelMetadata": {
+      "attributes": [
+        {
+          "description": "Kontext",
+          "key": "kontext",
+          "multiselect": true,
+          "name": "Kontext",
+          "objectTypes": [
+            "general"
+          ],
+          "status": "active",
+          "type": "custom",
+          "values": [
+            {
+              "name": "Kontext1",
+              "status": "active",
+              "value": "kontext1"
+            },
+            {
+              "name": "Kontext2",
+              "status": "active",
+              "value": "kontext2"
+            },
+            {
+              "name": "Kontext3",
+              "status": "active",
+              "value": "kontext3"
+            },
+            {
+              "name": "Kontext4",
+              "status": "active",
+              "value": "kontext4"
+            },
+            {
+              "name": "Kontext5",
+              "status": "active",
+              "value": "kontext5"
+            },
+            {
+              "name": "Kontext6",
+              "status": "active",
+              "value": "kontext6"
+            },
+            {
+              "name": "Kontext7",
+              "status": "active",
+              "value": "kontext7"
+            }
+          ]
+        }
+      ]
+    },
     "accessProfiles": [],
     "accessRequestConfig": {
       "approvalSchemes": [],
