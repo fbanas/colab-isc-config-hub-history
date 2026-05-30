@@ -41,7 +41,7 @@
     },
     "enabled": true,
     "id": "25bb0874cc7f4ee698d457e220bc9887",
-    "identityCount": 0,
+    "identityCount": 1,
     "identityProfileRef": {
       "id": "fa41f7d647a945449c4b1614d41266f6",
       "name": "Orange HRM Identity Profile",
