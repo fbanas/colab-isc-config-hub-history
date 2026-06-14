@@ -2,7 +2,7 @@
   "jwsHeader": null,
   "jwsSignature": null,
   "object": {
-    "body": "Dear $__recipient.name,<br/><br/>\n<p>The Just-In-Time duration window you attempted to initiate for ${entitlementName} failed.</p>\n#if($activationUrl)<p>You may return to $__global.productName <a href=\"$activationUrl\" target=\"_blank\">here</a> and attempt to activate the entitlement again.</p>#end\n<p>Please contact ${ownerName} if you have any questions.</p>\n<br/>Thanks,<br/>The $__global.productName Team<br/>",
+    "body": "Dear $__recipient.name,<br/><br/>\n<p>The Just-In-Time duration window you attempted to activate for ${entitlementName} failed.</p>\n#if($activationUrl)<p>You may return to $__global.productName <a href=\"$activationUrl\" target=\"_blank\">here</a> and attempt to activate the entitlement again.</p>#end\n<p>Please contact ${ownerName} if you have any questions.</p>\n<br/>Thanks,<br/>The $__global.productName Team<br/>",
     "created": null,
     "description": "Notifies the identity who attempted to initiate a Just-In-Time activation window that the attempt did not succeed.",
     "footer": null,
