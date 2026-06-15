@@ -677,7 +677,7 @@
       "baseUrl": "https://api68sales.successfactors.com",
       "checkDeletedDisabled": false,
       "clientID": "M2RmZmM0M2ZkZDM0OWVmNjhhYmVkZWNkOWVmNQ",
-      "cloudCacheUpdate": 1775729941596,
+      "cloudCacheUpdate": 1781518784012,
       "cloudDisplayName": "SAP Successfactors",
       "companyId": "SFCPART002041",
       "connectionType": "direct",
@@ -710,7 +710,7 @@
       "picklistMapping": [
         "BusinessEmail=8448"
       ],
-      "since": "2026-04-09T10:19:01.579Z",
+      "since": "2026-06-15T10:19:43.988Z",
       "sourceConnected": true,
       "spConnectorInstanceId": "42e0eab3-1bbd-43bb-9b82-7fcc7b160f00",
       "spConnectorSpecId": "618c1b4e-b266-45ab-a2e3-7ac0cbabf1fb",

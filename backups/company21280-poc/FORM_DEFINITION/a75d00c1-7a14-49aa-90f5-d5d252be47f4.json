@@ -2,7 +2,7 @@
   "jwsHeader": null,
   "jwsSignature": null,
   "object": {
-    "created": "2024-12-23T12:55:17.060207296Z",
+    "created": "2026-06-14T16:23:24.031864539Z",
     "description": "An interactive form explaining the Create a Security Group in Active Directory workflow to the user.",
     "formConditions": [],
     "formElements": [
@@ -33,19 +33,19 @@
       }
     ],
     "formInput": [],
-    "id": "96e1fa9a-4e77-41ee-a6a4-9df8a70eaf55",
-    "modified": "2026-03-18T20:28:09.153100349Z",
-    "name": "Create Security Group Introduction",
+    "id": "a75d00c1-7a14-49aa-90f5-d5d252be47f4",
+    "modified": "2026-06-14T16:23:24.031864539Z",
+    "name": "Copy of Create Security Group Introduction",
     "owner": {
-      "id": "3a5ec7330c804e98a768f91abff59a41",
-      "name": "",
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
       "type": "IDENTITY"
     },
     "usedBy": []
   },
   "self": {
-    "id": "96e1fa9a-4e77-41ee-a6a4-9df8a70eaf55",
-    "name": "Create Security Group Introduction",
+    "id": "a75d00c1-7a14-49aa-90f5-d5d252be47f4",
+    "name": "Copy of Create Security Group Introduction",
     "type": "FORM_DEFINITION"
   },
   "version": 1

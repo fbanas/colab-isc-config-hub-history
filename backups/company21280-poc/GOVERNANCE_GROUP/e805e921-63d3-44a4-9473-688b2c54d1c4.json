@@ -10,11 +10,6 @@
     "memberCount": 0,
     "members": [
       {
-        "id": "30507568a2d54f7484fe0f3edba79692",
-        "name": "fernando.delosrios",
-        "type": "IDENTITY"
-      },
-      {
         "id": "8939a7e19a4b43eabd3c6c2808c6b9b2",
         "name": "luca.lori",
         "type": "IDENTITY"
@@ -22,11 +17,6 @@
       {
         "id": "90eb8204ac594f48ac598a55e0e73613",
         "name": "florian.banas",
-        "type": "IDENTITY"
-      },
-      {
-        "id": "cc9ff944d49c4d568b917ecbd2a6bba5",
-        "name": "jmueller",
         "type": "IDENTITY"
       },
       {

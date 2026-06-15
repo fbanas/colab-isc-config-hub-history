@@ -1,0 +1,97 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessModelMetadata": {
+      "attributes": []
+    },
+    "accessProfiles": [
+      {
+        "id": "91425e24d9d54171880afa0c25541446",
+        "name": "Accounts Receivable",
+        "type": "ACCESS_PROFILE"
+      }
+    ],
+    "accessRequestConfig": {
+      "approvalSchemes": [
+        {
+          "approverId": "71cd17cc-1dc8-4f52-a0cb-30e5bd5d5d20",
+          "approverType": "GOVERNANCE_GROUP"
+        }
+      ],
+      "commentsRequired": false,
+      "denialCommentsRequired": false,
+      "formDefinitionId": null,
+      "maxPermittedAccessDuration": {
+        "timeUnit": "DAYS",
+        "value": 1
+      },
+      "reauthorizationRequired": false,
+      "requireEndDate": true
+    },
+    "additionalOwners": [],
+    "created": "2026-06-14T16:50:52.717133Z",
+    "description": "SailPoint demonstriert, wie Rollen (Business Roles, IT Roles), Berechtigungsobjekte und Rollenhierarchien zwischen Stages migriert und synchronisiert werden können.\nKann am 31. Juni 2026 gelöscht werden",
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": true,
+    "entitlements": [
+      {
+        "id": "cbf1ee1c-4eaa-3683-9918-f99a8f43b007",
+        "name": "campusAccess",
+        "sourceId": "87797033-9744-4628-aa74-0c2d5fdaf0c9",
+        "sourceName": "Active Directory",
+        "type": "ENTITLEMENT"
+      }
+    ],
+    "id": "4e94967a3e5642d0bdd0dfeb1f62345c",
+    "legacyMembershipInfo": null,
+    "membership": {
+      "criteria": {
+        "children": [
+          {
+            "children": null,
+            "key": {
+              "property": "attribute.lastname",
+              "sourceId": null,
+              "type": "IDENTITY"
+            },
+            "operation": "EQUALS",
+            "stringValue": null,
+            "values": [
+              "banas",
+              "mueller"
+            ]
+          }
+        ],
+        "key": null,
+        "operation": "OR",
+        "stringValue": null,
+        "values": null
+      },
+      "identities": null,
+      "type": "STANDARD"
+    },
+    "modified": "2026-06-15T12:15:17.915274Z",
+    "name": "Use Case 18E",
+    "owner": {
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": true,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [],
+    "segments": []
+  },
+  "self": {
+    "id": "4e94967a3e5642d0bdd0dfeb1f62345c",
+    "name": "Use Case 18E",
+    "type": "ROLE"
+  },
+  "version": 1
+}

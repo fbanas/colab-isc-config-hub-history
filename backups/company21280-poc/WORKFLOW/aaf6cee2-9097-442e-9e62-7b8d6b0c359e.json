@@ -147,6 +147,7 @@
           "versionNumber": 1
         },
         "Compare Numbers": {
+          "actionId": "sp:compare-numbers",
           "choiceList": [
             {
               "comparator": "NumericGreaterThan",
@@ -161,42 +162,49 @@
           "type": "choice"
         },
         "End Step - Failure": {
+          "actionId": "sp:operator-failure",
           "description": "The workflow cannot continue as the group was not created. The workflow ends in a failed state.",
           "displayName": "Failure: Create Group Failed",
           "failureName": "Create Group Failed",
           "type": "failure"
         },
         "End Step - Failure 1": {
+          "actionId": "sp:operator-failure",
           "description": "The workflow could not continue as the provided manager does not have an account in Active Directory. The workflow ends in a failed state.",
           "displayName": "Failure: Manager Not Found",
           "failureName": "Manager Not Found",
           "type": "failure"
         },
         "End Step - Failure 3": {
+          "actionId": "sp:operator-failure",
           "description": "The workflow cannot continue as a group already exists with the provided name. The workflow ends in a failed state.\n\nThe user will need to launch the workflow again and provide a different name.",
           "displayName": "Failure: Group Name Taken",
           "failureName": "Group Name Taken",
           "type": "failure"
         },
         "End Step - Failure 4": {
+          "actionId": "sp:operator-failure",
           "description": "The workflow cannot continue as setting the group's manager failed. The workflow ends in a failed state.",
           "displayName": "Failure: Set Manager Error",
           "failureName": "Set Manager Error",
           "type": "failure"
         },
         "End Step - Failure 5": {
+          "actionId": "sp:operator-failure",
           "description": "The workflow cannot continue as no organizational units were found in Active Directory. The workflow ends in a failed state.",
           "displayName": "Failure: No Organizational Units",
           "failureName": "No Organizational Units Found",
           "type": "failure"
         },
         "End Step - Failure 6": {
+          "actionId": "sp:operator-failure",
           "description": "The workflow cannot continue as a command error occurred and no organizational units were found in Active Directory. The workflow ends in a failed state.",
           "displayName": "Failure: List Organizational Units Error",
           "failureName": "No Organizational Units Found",
           "type": "failure"
         },
         "End Step - Success": {
+          "actionId": "sp:operator-success",
           "description": "The new group has been created and the manager has been set and notified. The workflow completed successfully.",
           "displayName": "Success: Group Created",
           "type": "success"
@@ -388,7 +396,7 @@
           "attributes": {
             "category": "ERROR",
             "interactiveProcessId.$": "$.trigger.interactiveProcessId",
-            "message": "<p>No organizational units were found in Active Directory due to a command failure.</p>\n<p>&nbsp;</p>\n<p>Detail Code: {{ $.activeDirectory.error.detailCode }}</p>\n<p>&nbsp;</p>\n<p>Error: {{ $.activeDirectory.error.message.text }}</p>",
+            "message": "<p>No organizational units were found in Active Directory due to a command failure.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>\n<p>Detail Code: {{ $.activeDirectory.error.detailCode }}</p>\n<p>&nbsp;</p>\n<p>Error: {{ $.activeDirectory.error.message.text }}</p>",
             "ownerId.$": "$.trigger.launchedBy.id",
             "title": "List Organizational Units Error"
           },
@@ -484,7 +492,7 @@
           },
           "description": "This interactive message displays the new group’s details to the user.",
           "displayName": "Message: Display New Group",
-          "nextStep": "End Step - Success",
+          "nextStep": "Send Email 2",
           "type": "action",
           "versionNumber": 1
         },
@@ -530,7 +538,7 @@
         "Send Email 1": {
           "actionId": "sp:send-email",
           "attributes": {
-            "body": "<html>\n<body>\n\n<div>You have been assigned as the manager of a new group.</div>\n<br/>\n\n<div>Name: ${name}</div>\n<br/>\n\n<div>Type: ${type}</div>\n<br/>\n\n<div>Location: ${location}</div>\n<br/>\n\n</body>\n</html>",
+            "body": "<div>You have been assigned as the manager of a new group.</div>\n<p>&nbsp;</p>\n<div>Name:&nbsp;${name}</div>\n<p>&nbsp;</p>\n<div>Type: ${type}</div>\n<p>&nbsp;</p>\n<div>Location: ${location}</div>\n<p>&nbsp;</p>",
             "context": {
               "location.$": "$.activeDirectory2.result.data.distinguishedName",
               "name.$": "$.activeDirectory2.result.data.name",
@@ -551,7 +559,24 @@
           "type": "action",
           "versionNumber": 2
         },
+        "Send Email 2": {
+          "actionId": "sp:send-email",
+          "attributes": {
+            "body": "<p>The following AD Groups has been created:&nbsp;</p>\n<p>{{$.activeDirectory4.result.data.sAMAccountName}}</p>",
+            "context": {},
+            "from": "notifications@sailpoint.com",
+            "recipientEmailList.$": "$.activeDirectory4.result.data.sAMAccountName",
+            "replyTo": null,
+            "subject": "New AD Groups has been created"
+          },
+          "description": "Email the manager of the new groups",
+          "displayName": "",
+          "nextStep": "End Step - Success",
+          "type": "action",
+          "versionNumber": 2
+        },
         "Verify Data Type": {
+          "actionId": "sp:compare-unary",
           "choiceList": [
             {
               "comparator": "IsNull",
@@ -565,6 +590,7 @@
           "type": "choice"
         },
         "Verify Data Type 2": {
+          "actionId": "sp:compare-unary",
           "choiceList": [
             {
               "comparator": "IsNull",
@@ -578,6 +604,7 @@
           "type": "choice"
         },
         "Verify Data Type 3": {
+          "actionId": "sp:compare-unary",
           "choiceList": [
             {
               "comparator": "IsNull",
@@ -591,6 +618,7 @@
           "type": "choice"
         },
         "Verify Data Type 4": {
+          "actionId": "sp:compare-unary",
           "choiceList": [
             {
               "comparator": "IsNull",
@@ -604,6 +632,7 @@
           "type": "choice"
         },
         "Verify Data Type 5": {
+          "actionId": "sp:compare-unary",
           "choiceList": [
             {
               "comparator": "IsNull",
@@ -617,6 +646,7 @@
           "type": "choice"
         },
         "Verify Data Type 6": {
+          "actionId": "sp:compare-unary",
           "choiceList": [
             {
               "comparator": "IsNull",
@@ -634,13 +664,13 @@
     "description": "This interactive workflow creates a new Active Directory security group.\n\nYou will be asked to provide some group details using an interactive form.",
     "enabled": false,
     "id": "aaf6cee2-9097-442e-9e62-7b8d6b0c359e",
-    "modified": "2026-05-21T07:27:36.768319293Z",
+    "modified": "2026-06-14T16:52:00.222977805Z",
     "modifiedBy": {
       "id": "90eb8204ac594f48ac598a55e0e73613",
       "name": "florian.banas",
       "type": "IDENTITY"
     },
-    "name": "Create a Security Group in Active Directory v2",
+    "name": "Create a Security Group in Active Directory",
     "owner": {
       "id": "e4b5bec795a54599a9e39dcaac4467bf",
       "name": "slpt.support",
@@ -657,7 +687,7 @@
   },
   "self": {
     "id": "aaf6cee2-9097-442e-9e62-7b8d6b0c359e",
-    "name": "Create a Security Group in Active Directory v2",
+    "name": "Create a Security Group in Active Directory",
     "type": "WORKFLOW"
   },
   "version": 1
