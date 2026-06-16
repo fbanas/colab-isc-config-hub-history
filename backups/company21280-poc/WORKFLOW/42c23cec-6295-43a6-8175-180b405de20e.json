@@ -1,0 +1,86 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": "2026-06-15T13:14:09.287424359Z",
+    "creator": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "definition": {
+      "start": "Compare Department Change Date",
+      "steps": {
+        "Compare Department Change Date": {
+          "actionId": "sp:compare-timestamps",
+          "choiceList": [
+            {
+              "comparator": "TimestampGreaterThanEqualsXDay",
+              "nextStep": "Get Identity",
+              "variableA.$": "$.trigger.changes[?(@.attribute == 'department')].newValue",
+              "variableB": "30"
+            }
+          ],
+          "defaultStep": "End Step - Success",
+          "displayName": "Check if department changed in last 30 days",
+          "type": "choice"
+        },
+        "End Step - Success": {
+          "displayName": "",
+          "type": "success"
+        },
+        "Get Identity": {
+          "actionId": "sp:get-identity",
+          "attributes": {
+            "id.$": "$.trigger.identity.id"
+          },
+          "displayName": "Get Identity Details",
+          "nextStep": "Send Email",
+          "type": "action",
+          "versionNumber": 2
+        },
+        "Send Email": {
+          "actionId": "sp:send-email",
+          "attributes": {
+            "body": "Your department has been changed recently. Please contact HR if you have any questions.",
+            "context": {},
+            "recipientEmailList.$": "$.trigger.identity.attributes.email",
+            "subject": "Department Change Notification"
+          },
+          "displayName": "Notify User of Department Change",
+          "nextStep": "End Step - Success",
+          "type": "action",
+          "versionNumber": 2
+        }
+      }
+    },
+    "description": "Workflow triggered when a user's department attribute changes within the last 30 days",
+    "enabled": false,
+    "id": "42c23cec-6295-43a6-8175-180b405de20e",
+    "modified": "2026-06-15T13:14:09.287424359Z",
+    "modifiedBy": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "name": "User Changed Department in Last 30 Days",
+    "owner": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "trigger": {
+      "attributes": {
+        "id": "idn:identity-attributes-changed",
+        "integrationId": null
+      },
+      "type": "EVENT"
+    }
+  },
+  "self": {
+    "id": "42c23cec-6295-43a6-8175-180b405de20e",
+    "name": "User Changed Department in Last 30 Days",
+    "type": "WORKFLOW"
+  },
+  "version": 1
+}
