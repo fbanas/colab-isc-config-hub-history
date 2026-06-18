@@ -7,6 +7,8 @@
     "connectorAttributes": {
       "cloudOriginalApplicationType": "Delimited File",
       "commentCharacter": "#",
+      "connectionType": "file",
+      "connectorName": "Delimited File",
       "delimiter": ",",
       "encrypted": "transportUserPassword,pgpPrivateKey,pgpPrivateKeyPassword,s3SecretKey,scpPrivateKey,PassphraseForPrivateKey,ftpsClientCertificatePassphrase",
       "filetransport": "local",
@@ -290,7 +292,7 @@
           {
             "description": "The groups, roles etc. that reference account group objects",
             "isEntitlement": true,
-            "isGroup": false,
+            "isGroup": true,
             "isManaged": false,
             "isMulti": true,
             "name": "groups",
