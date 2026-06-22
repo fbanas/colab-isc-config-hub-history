@@ -6,7 +6,7 @@
     "beforeProvisioningRule": null,
     "connectorAttributes": {
       "cloudAuthoritativeSourcePrecedence": 40,
-      "cloudCacheUpdate": 1776680745686,
+      "cloudCacheUpdate": 1782123590630,
       "cloudDisplayName": "Non-Employees",
       "cloudIdentityProfileName": "Non-Employees",
       "connectionType": "direct",
@@ -17,7 +17,7 @@
       "idnProxyType": "sp-connect",
       "profileStatus": "All",
       "profileTypeId": "def48fcf-dcbd-48a5-bd2b-ac137cf48117",
-      "since": "2026-04-20T10:25:45.677Z",
+      "since": "2026-06-22T10:19:50.613Z",
       "sourceConnected": true,
       "spConnectorInstanceId": "a487dc38-12c9-4a0c-b2bb-a58d4bb22848",
       "spConnectorSpecId": "39946170-edb9-46ac-b5f4-3c9bccef4cbb",
