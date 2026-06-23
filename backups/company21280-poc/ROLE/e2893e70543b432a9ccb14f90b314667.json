@@ -1,0 +1,50 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessModelMetadata": {
+      "attributes": []
+    },
+    "accessProfiles": [],
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": null,
+      "denialCommentsRequired": null,
+      "formDefinitionId": null,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-06-23T07:31:13.725427Z",
+    "description": null,
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": false,
+    "entitlements": [],
+    "id": "e2893e70543b432a9ccb14f90b314667",
+    "legacyMembershipInfo": null,
+    "membership": null,
+    "modified": "2026-06-23T07:31:13.725427Z",
+    "name": "MyRole-with-station",
+    "owner": {
+      "id": "0712e089d9e4451ab52d66b786d2ec5a",
+      "name": "tschreiner",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [],
+    "segments": []
+  },
+  "self": {
+    "id": "e2893e70543b432a9ccb14f90b314667",
+    "name": "MyRole-with-station",
+    "type": "ROLE"
+  },
+  "version": 1
+}

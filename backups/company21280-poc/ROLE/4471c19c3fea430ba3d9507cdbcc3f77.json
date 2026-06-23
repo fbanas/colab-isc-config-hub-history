@@ -1,0 +1,56 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessModelMetadata": {
+      "attributes": []
+    },
+    "accessProfiles": [
+      {
+        "id": "2e2e251e945a442192a28f658d245dfc",
+        "name": "Help Desk User",
+        "type": "ACCESS_PROFILE"
+      }
+    ],
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": null,
+      "denialCommentsRequired": null,
+      "formDefinitionId": null,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-06-23T07:20:40.029793Z",
+    "description": null,
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": false,
+    "entitlements": [],
+    "id": "4471c19c3fea430ba3d9507cdbcc3f77",
+    "legacyMembershipInfo": null,
+    "membership": null,
+    "modified": "2026-06-23T07:23:51.231597Z",
+    "name": "MyRole",
+    "owner": {
+      "id": "0712e089d9e4451ab52d66b786d2ec5a",
+      "name": "tschreiner",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [],
+    "segments": []
+  },
+  "self": {
+    "id": "4471c19c3fea430ba3d9507cdbcc3f77",
+    "name": "MyRole",
+    "type": "ROLE"
+  },
+  "version": 1
+}
