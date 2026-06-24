@@ -6,7 +6,7 @@
     "beforeProvisioningRule": null,
     "connectorAttributes": {
       "authenticationMethod": "No Auth",
-      "cloudCacheUpdate": 1778106299627,
+      "cloudCacheUpdate": 1782242954660,
       "cloudDisplayName": "Time Keeping",
       "connectionParameters": [
         {
@@ -229,7 +229,7 @@
       "partitionAggregationEnabled": false,
       "possibleHttpErrors": {},
       "recommendationStatus": "ERROR",
-      "since": "2026-04-10T12:29:52.343Z",
+      "since": "2026-06-23T19:29:14.650Z",
       "sourceConnected": true,
       "status": "SOURCE_STATE_HEALTHY",
       "supportsDeltaAgg": "true",

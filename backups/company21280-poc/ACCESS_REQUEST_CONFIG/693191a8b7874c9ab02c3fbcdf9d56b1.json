@@ -17,11 +17,11 @@
       "requestCommentsRequired": false
     },
     "fallbackAccessDurationInDays": null,
-    "govGroupVisibilityEnabled": false,
+    "govGroupVisibilityEnabled": true,
     "reauthorizationEnabled": false,
     "requestOnBehalfOfConfig": {
       "allowRequestOnBehalfOfAnyoneByAnyone": true,
-      "allowRequestOnBehalfOfEmployeeByManager": true
+      "allowRequestOnBehalfOfEmployeeByManager": false
     }
   },
   "self": {

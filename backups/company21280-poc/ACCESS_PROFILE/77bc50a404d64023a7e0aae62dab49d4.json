@@ -1,0 +1,53 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": null,
+      "denialCommentsRequired": null,
+      "formDefinitionId": null,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-06-24T08:48:53.287805Z",
+    "description": "PBA_ZG1",
+    "enabled": false,
+    "entitlements": [
+      {
+        "id": "0154a78d0cee30df8635ca0d49af1b7e",
+        "name": "Global Reader",
+        "type": "ENTITLEMENT"
+      }
+    ],
+    "id": "77bc50a404d64023a7e0aae62dab49d4",
+    "modified": "2026-06-24T08:50:58.940209Z",
+    "name": "PBA_ZGP1",
+    "owner": {
+      "id": "b0362e880e1940d98ed925fc8a883558",
+      "name": "pbaumeister",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "provisioningCriteria": null,
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": null
+    },
+    "segmentRefs": [],
+    "segments": [],
+    "source": {
+      "id": "08957d380b9c4e81a03a9c955d7a8024",
+      "name": "Azure-AD",
+      "type": "SOURCE"
+    }
+  },
+  "self": {
+    "id": "77bc50a404d64023a7e0aae62dab49d4",
+    "name": "PBA_ZGP1",
+    "type": "ACCESS_PROFILE"
+  },
+  "version": 1
+}

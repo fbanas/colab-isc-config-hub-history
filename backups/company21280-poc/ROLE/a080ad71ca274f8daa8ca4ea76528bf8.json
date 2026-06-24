@@ -1,0 +1,69 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessModelMetadata": {
+      "attributes": []
+    },
+    "accessProfiles": [],
+    "accessRequestConfig": {
+      "approvalSchemes": [
+        {
+          "approverId": null,
+          "approverType": "OWNER"
+        }
+      ],
+      "commentsRequired": false,
+      "denialCommentsRequired": false,
+      "formDefinitionId": null,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [
+      {
+        "id": "e805e921-63d3-44a4-9473-688b2c54d1c4",
+        "name": "ISC Admin Reviewers ",
+        "type": "GOVERNANCE_GROUP"
+      }
+    ],
+    "created": "2026-06-24T07:08:01.786303Z",
+    "description": "Testrolle von Philipp Schellhaas",
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": true,
+    "entitlements": [
+      {
+        "id": "4cd9fda4-f403-3e76-9110-315ec0edca97",
+        "name": "APP-201",
+        "sourceId": "00c23142-0974-4506-bab1-e856117f40f7",
+        "sourceName": "Microsoft Entra sp-demo262 SaaS",
+        "type": "ENTITLEMENT"
+      }
+    ],
+    "id": "a080ad71ca274f8daa8ca4ea76528bf8",
+    "legacyMembershipInfo": null,
+    "membership": null,
+    "modified": "2026-06-24T08:02:16.743402Z",
+    "name": "PSC-TestRole",
+    "owner": {
+      "id": "3c4587169cb84c0081c6b5d744b768e3",
+      "name": "pschellhaas",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": true,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [],
+    "segments": []
+  },
+  "self": {
+    "id": "a080ad71ca274f8daa8ca4ea76528bf8",
+    "name": "PSC-TestRole",
+    "type": "ROLE"
+  },
+  "version": 1
+}

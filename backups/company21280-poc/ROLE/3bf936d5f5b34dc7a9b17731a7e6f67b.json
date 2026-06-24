@@ -1,0 +1,50 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessModelMetadata": {
+      "attributes": []
+    },
+    "accessProfiles": [],
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": null,
+      "denialCommentsRequired": null,
+      "formDefinitionId": null,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-06-24T07:57:40.731373Z",
+    "description": "Test 1",
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": false,
+    "entitlements": [],
+    "id": "3bf936d5f5b34dc7a9b17731a7e6f67b",
+    "legacyMembershipInfo": null,
+    "membership": null,
+    "modified": "2026-06-24T08:16:13.472737Z",
+    "name": "PBA_Test1",
+    "owner": {
+      "id": "b0362e880e1940d98ed925fc8a883558",
+      "name": "pbaumeister",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": true,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [],
+    "segments": []
+  },
+  "self": {
+    "id": "3bf936d5f5b34dc7a9b17731a7e6f67b",
+    "name": "PBA_Test1",
+    "type": "ROLE"
+  },
+  "version": 1
+}
