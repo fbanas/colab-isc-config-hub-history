@@ -6,7 +6,7 @@
     "beforeProvisioningRule": null,
     "connectorAttributes": {
       "authenticationMethod": "No Auth",
-      "cloudCacheUpdate": 1782242954660,
+      "cloudCacheUpdate": 1782297024345,
       "cloudDisplayName": "Time Keeping",
       "connectionParameters": [
         {
@@ -211,6 +211,7 @@
       "deleteThresholdPercentage": 10,
       "deltaAggregationEnabled": false,
       "enableHasMore": false,
+      "enableProvisioningFeature": true,
       "enableStatus": "status",
       "encrypted": "accesstoken,refresh_token,oauth_token_info,client_secret,private_key,private_key_password,clientCertificate,clientKeySpec,resourceOwnerPassword,custom_auth_token_info",
       "fixedPlanMultivaluedAttribute": "true",

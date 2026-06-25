@@ -7,12 +7,12 @@
     "connectorAttributes": {
       "checkDeletedDisabled": false,
       "clientID": "e4e240ef-36f5-4f7e-9902-329b804a1cf7",
-      "cloudCacheUpdate": 1782255646072,
+      "cloudCacheUpdate": 1782342663021,
       "cloudDisplayName": "Microsoft Entra sp-demo262 SaaS",
       "connectionType": "direct",
       "connectorName": "Microsoft Entra",
       "deleteThresholdPercentage": 11,
-      "directoryRolesDeltaToken": "JYKPGvmUvT_HZezkc3sMqNsb6abjj4b-g_c9DY_R__ovikYnS0YZDrLyrYw8P6XsD1soRaOwrFBaf6t_3v8rysGN43dK0hBp83NomXw44WwS07HJ4Z7j4iAmnGF1mK0xxBvuOuwIx4FN_ttucyykvHif74zP4_A22Xvw4KjAG__dToHumdB3zuwr8HEaJVt9bv8oxOdrB97F40l2yVq90TOBFra4A1mMYiKqMtz92ao_Ey3pCpcQU0Md7oIg02yq3ETIUZ46lQ2C3hN5AkAaGrQ2zur5VaS5AJc98vtOXT4L_5ZjS1Rqfi3b77cv43INu5TWEML13kbRBI9g2LDbcoheRo4RchrUn3BsnzDibCaDEk4cOIji4URf1CQe731oTKe8oPbdpf9SNnCrSn2Nls1bWKuy3x1YhNgV9-79AZt-hgUSItPX_hxw2B2fY_hXmNeTd9tn7JDDXBPU0suBPemEM_y20O_LXlErMu5ZGfIU8V57tGNQe6V-5-d5R8z_ORqhxoSa3T8r3qFfzrtb_VPmFi7guqxCRN78D78lxkS8AnjMYZX-68WIni-VG2Xz2KjTLsi_19_CF0MEWSHUE7Liu17ihvFEZ2Py4Rn_b_Or_phWglCTq_8IFHC0P5cCRIokpSeIrLgXdhwTM2nlk2RdIoGcmNm7-NJRgNFty2zqSPnbyfnmTKbjoMaaTeEhhFMHc0iovAWpH92UKUscxhNR0k3b9YyCHDdKNBVeArV4EvXYl6tTFRrwiGBlSJJ7S0mx7Tk07wenuIIn2OWQVD5qppShufFIeaCyixXKsc_ykZBFH8MlwRS31r469-kbihjbkDVR39yJ5UDsb-Mg7ZXWut6WQc4DSGt2EtbhAZJzt4oVMSOYI9MRhTC9oo0roBFwWHvUsFpQZqQw5Gs1H8AcNvxd8gOPltp3wcf0Tv8OZHIHbxqilNHUUflIXoR7qLbEMbTGWtgCM7RwKRFk1gH00yPRHk8IrvTSNBIbUZLFlexpEyWIUXNCucw437T9oK2Y8GEWMz5UdLaSJmq2rkZbwtzpx5M_fRxAtxf6fl1pcmKfuu17GLaQey4S04dXsaCIOuXSrEs9QYxPeFDTGtvMLm-x8JP1h-16hK4R1kry7n2_oSKHdeB9vukgtET3RlWnmbOqRF7i0b5kudjjuxr7kWD6E5RCAhLI85NjOe_tXmUcFFW7UK3wCLvEFRwUusKViDaFy6T8YYhyqHK8y6-cq84mxWbr6b6pyAZgtwrpNY0OUnyRDzJsdL0LXciSg8OQ55Fu-5r_okLDYW5VeaYQ92fXnVg-eB6OtjARvONemLA50jYv2HYZ1cawoQnCGky-DF9k-m529G1T3M8QQWT1mVpsPvQMltIbrdqwoaptc9NqhsoB_qdv2oAj9TKaa8vwvPA4TOrzCmDvD4GL-c3834dyQQPrMd0hKmgE9bxMlnULLvdApS-jQeGZ5S67JMHz2bZQsiWQOezhlMtA2XUmgVMQndzsC9oiDHUwIw6J8wEdryZysAwvAQgJXkaBF3smLK_At5egOC4OqXSRO4w_eHWxrWHsZxwUjfL2yQ68YoYwyI090d9HA3ciue3ykSh_zzDKGL8pnCTYzfPAopWmpriLH7GLACK64hlWedYgQlRtfoRPOVLCrTOR0CiOwKcpfVMnU66KuslCOQlgzEf4N5j5y7s6I48hOg6h-1TqsemmiJRwpqdl5wzbPAzCzpnLEhL0OPz7H0A-_CY0fdy3IBN6FR7sybAdcPqDu_DAUIYv81Z7dCFtHZsm9UzRJU6r-GZEFrwkiUC1Oa4S1pJuEsw_Sn4Bu3xwkD2i2MaChRPGvxKkKmyrIbDAGzW-aPVTdlljRXY7Tf_rQfj-7W5RS7MSHGkw_S_1RJDlpXBjIpkWKHnNAMHtwSglig_zE2Im3srL4WE_c6RpT8hMcihIfkC6CbB18d1LDR-Ym6buJRKPheXbuSjT0pPy_5t5RJSbFhH_yvgt1lUnAS39yu0nyjZhyxCG6kmDZaZBZW8.bOZVjy0zoprKXvxFfKnh_Uqc9Pnul1DG7aZy1_lqsgw",
+      "directoryRolesDeltaToken": "JYKPGvmUvT_HZezkc3sMqNsb6abjj4b-g_c9DY_R__rctAoHvI0ofcipz72DYEm42_JW-Pt4yijwvsvrQXtEIvAsGLEPpEiBlLtBLEZSGOjNvPVaROtnSYSzmk2KaK5HTog-ZOCLmSuj0EyyhPkU6dLvOTkL7spf1oNPMfbf5qQdu23MJRwZ6B40VPAV7pG4DJRRmL2tGQaQ2QEqt4-0xWPaRChOCHV0vLTY3vFb_fW7hxG-Jlkel79cHM4OojskliglJXG-JNFcyybGsPzN5oNWFHnNlJyq-rJbv5mzVB_p-O2KpKqy66TMq5wwZJAZgBP6FoOh4x3UlNDcBnk_iOxH3WUlsCFZp7CuTR_3-LLW3Ynz9yu5uoLt1rqM35mOE9msK_jQ80USSBict0pwhzel_6VnsCpfPzleiS7XrL75alhM-pzNKlHBKH4YwaXXLnVgRhPhi5nqiO1tWw0ITqdxbskx7tzDux6RrfAVCQeneRQrVn-ZzFlmZ5dJfcsCSFSFVF5oCR3Qn6onHy4kQzHlG9dUt-nf2LfeJsjFeUNYUlqHpjGivh8CH_yqCmATPV6yxb1_4Ze7MLzsYh7jnORp-7JX48FuzoxHDMP7NN7BYX9GMcPYHCk21kmRDNgd1IstYzv4G4sPf6Stdri13RoDIg6qQXdKVWg6lTCYFR2KTqIFNC4FIfatcCR40OStwlxxX_9d72kSB-NgPaOGpYAsyUOIXu7h73dxK-4xX65pUMwrONTP2O_SiQDsRYWs7oLgZGObwwC-j_dRHPLuLoSl2ZsT-L75u5_Gxm9siyial7OeLAGH9OMjgEBDwozkSsdsuEPVFMwvFwJDjuZoZ6YGQBopY3YUL7H9pLjfACMJu-wBgGfhku22ZAhTNDVb1qpZ-CG35rd3r6OcnsB1Vj1ZJHNy3ZA6wwmQDR-veDTH9fGzF4HDGtiFa2sD6Pll67PUThLfqzBshgIb7t9ogn3BBjLb16SdqOjkBze2Tqjt1aTHkvXHwlBArev7iXx3xA3P406Sep_h_J_pZZw5ee6wmZzqz7dvcDLCM9bo_wdF0K9gwFAtwIg0zwKyIXu5jypT3VeVOCCfnWQYR-6j0vO-BmqCcdzxpxl_5AZfSB_K6vmLL9BtLV5mDbMyQY5DGsFrcRpKPLwMNlKaoYP1S_5C9rdTGbf9PGwaaCnCseqQ5ZSK231GE6itMP3MUJqwemC0LVlgAZpzDWsjEPeOBDx07EZskQWpzVGFjNP5mID38WVwZz7ttb6Xuy_RTFWP9swWFSWOfVjIxoLu-Au7om3xtiUOJEWCJWKZ5SFLf9eGPD6LNm6MK0y1K4-jNMIdKAx9XezolSf9SvWwjvVlL82MBxffz1LsnZyUO3nknJmSMSLASXDn3FTNAPl1vZx5Ahy-qc1VqfH0DksZFtdI3V9clBa83wd4CxD1ZtNctkybbtG_K8HmZuAnulxwKdBvMcKCq16_cE2dx9hEISvkoQooFs9tIsbUgkKqWTj9k4ZxbQUb7jWm6SkjUEsBGbtMso6P9ndP5npsuYSvnFnJqjeKQ8XhvRsDsjPEY_S2aiae9YUbeQL_YT_vJR_JR4j5sOh92x9QnGTAzhsvKsTrw1kOx2qaRZ6fpBoJFPdIs0U7CJ8iqbMGl1_Pn3BlApY48KoNfy9rdeON03dL8DmjU7t7JlJpvIMKxi2IovowjNJ4UTztpuQe0Gwyv_tUS1vputrsamae2R5ZY_Y1ouw-cY1a1cpzBOyXP7cx7QJBzYqZABowykjHttEh8FZ8VaoX-hcyBHVKkjyZabLFfinUsJB3MKIfW1GLt96JZMsrt1cgPdaxgMZPobTesuMQJ2OgE8NYtcA7zX0ntPGm_qfQah4O3g9DnbYnOVfyCU5k8HO-jRNneya-iDFp61wfbRv-7mCZRR-ox1RFHfR9YX4SLiYYIRe1fDJ5aQcD6cPxsgb66Oue8f2sLVLDGRBTi_sln8zri56_QTUQKVSUuX1qtqiAuTFAV6MLzxqAhhJkakI.XK0sGxKnWDRgS9DM9Imp3CYM9nZ0pykDkVaTeELMPrU",
       "domainName": "spdemo262.onmicrosoft.com",
       "enableAccessPackageManagement": false,
       "enableAdministrativeUnits": false,
@@ -22,7 +22,7 @@
       "enableSystemAssignedManagedIdentity": false,
       "encrypted": "clientSecret, clientCertificate, privateKeyPassword, private_key, refresh_token, exchangeUserPassword",
       "grantType": "CLIENT_CREDENTIALS",
-      "groupsDeltaToken": "DqN0KVo-fM7YNLNWqNIizqnW013MFqkCUBbAyqBLq0OK0jAUprC6gfTaSo7w_yL_EMPk72f-LylJOWFsBeayhQyZVP9UNEhc8bzbuW5mYp8OSFAjKQXlnuuAlvzI7CuXCJ3ArtcARJjgWB20px96vt3fysLeVGghTADS41DIl6jh9oxWr_31DyQbMEVCt8bov4ZQ05sa8LBxb7MMA8i4C_z8fKt-xkJu6et6R7PkNtHXUttiO6xxNUYnxGaSe5_h2IWrSCZeQZ97DZc8sjSmL6ytwSUeiAVLuMQOlvtOjmJQtiWjFRdwkwtGRN3a6GBnR153j8vn4GW3SicLQJ0GV9bKfdYNGUeQgmCKhzWCTA7UsqVfRIDbhoJPYNuulHT-ALy__F2DaRomMK5GnEDsVM4too5h_oBEmQvOLKkRJravvGq2kDda3TkHUiUrFhQf7s9pbLWxpLrob75J1FMiXbblQWuPKmaBhIuEqtEd92RwysRC31FADncFzswIJ3w7zOOoECX3j2iMjbvrzFoDyu8zKg2gYR5UvsaTbPADtxxwtfaYXBq_vzMXsvKcOT7vXX4rCjsc-grg0I9nD3liHquJJbRff5d0YvZif83jbkC7UkAArLM6hMsxrMtC3HLv32ekrTDHHjy2Oj9fU2UEQBX8TZEW7cZQIMPE8w2jKouPOz7RYsVsQ9CakXVrliZn2emjZ79S2FUuVhMUa0KREC-ZkX5Hn_pypdfB9wMv6TYbKXgoNd-JYtKZHJSTJBcBCuGwfJY-M0N_7rGw3AXQwZZWAwfCRZs4d0jfZyBswZ_d3ufKEFdvgGSR37C4utZAKqJ9h_CKEACAlswYvfDXEGzs1SQgU3h9Jfv7WDnDCLBZpO2JjclFDEB1Axn97tzgPMPJ_SS8EPcvuJf8kNz-B0IK99zdGiOZDNEWflfl0ccN2TXNqlPEovUh8legcszcJG60GGfmLtLjMbV12Au9pj7CnkcsydKHfiy-KB5xdlh1H6Jq6ti8GYJfZsGTYe3j02k30pDrOhTFzmHCSSzTJrDO8UQL7zMLE8NGSyLxIc1HBIqGL1bHCHgDBOua0VWhCb2XNZIUV_ZOxhEZNaJxD_NkHpbO1JPumYdxFjp6jB8kfoUOZPsVetbySen0kCY4dOsQQEYE4ckU-_4njitfMja3p4RNdzEOnhzAQmKFkcjr5Dr8Moma2n-GkS5D9SjnMtBtkoX-sUErfWUe8MwGBGZsipzxCLmdapfrTJGKHhT1SiUfa-BSZKCtAXi5_BMbOT-5LD0-BsPMc0fHr7DTLcFG9jx-3uybSVb8530GAUzbcb3ec1MHJedJXmajdZkHQ5tWD1SlkzErdTC3BZ77vmEF-B2aE2zgXkA7J8jRSy2rHA3u8Zc9e2iAIAwDWLHDV0i3aHgZizAqYRbbNZgw3FyRGYzgBS--I1vkj9tV6RsRjamea627t3yW7Dh4pwfTiw5Slxlvv4A7XBHtHAt3aLxWBlrhbfmfjtELlKnSCS-LzciMfR5bqi6FBFFnLDgZhsJuGgOKoqkgEOV7MBQMnyQpkefHSFUKQLx9oZjCd_XDbh6omucPZO_FrfovyOcXJCqO1lHskKut7kxEFDQPzfQC0izVxSxWz5XRihIJgZd9_ABcdNQgA1nrUh5fUqqprHRiwExQ3ZUq6fqpaRXhkWU-pzcdylj3rxMy5gEYKPYgNaNKf2gsV6OVZgUUdM2gx96YWrALA3lu58OVcCZbx3Ya8wvUpgLpVi6EGTyM6ZoeizUhs2h9dUOZwur_vRKm2CHDNv_V34rr2IH-i1u8NSJmemo7eCYsTHXehBAhQXtJJ-T2KaxoULzBO8ekROOu_iDI9r45BYPC10okUqhluEj-iFgyxfCwS8zK2GxOBfGhTqx0htDP4NrTMXrxxffbaptMkOhsRW-f_c1-xtIU4g.OdNR_XLgwcOO7Bj59x2VjYjqn-injm02dY0RvMoW3ug",
+      "groupsDeltaToken": "DqN0KVo-fM7YNLNWqNIizqnW013MFqkCUBbAyqBLq0MLqATJy7UaOLoUew_XRHM86a0_ZcAKCblXTCXW9t0Mn6P5w5VN06WvweAXRNqSeKUCAZnSzYMTD33FIXgDqZd7v57KihTeX_3DZZgVHjpB6UM2CTU8z4hdzKGNTpdeY9gsOLnHtiFrA9wiXJJon_XwfgBjT4UvBp-Y8fVeCphI6KKISOKCzJFOCyzMJGJrPC1hUYPQuZvVUFoWXLbQXmrKWZTf-WZW-0GKZ2-M50w7rdcvbo6MJ6aZYPRZ4tliHNxgbTIrnzAa5PRvzqX9Z1Pm95L3FNvK0eIgsuovmqrE2DJocCh7kgSYN4a2-NAt8WUoDvyWmwyx28Vm9fWsrONHxblqkMmuOvnv2Qh7XpilKZ1ge0DmqbItwxzgm0HKpxmyK0KOP4qPdwUNBwkt-LPEviLxLnZ5dvpZ4hOlNhgI9pyTQfobRMWHxUTCjV99QVCbLd_NuG_PSyGeTC6hssEaWpjKtceWvI2Lm5wK6eqW_ey_5kWnzASzWtpVeJCZecMrkAkLV7sxBJdGGXxnZqS4vHNN1QSUzCu7MrZfffk8BWPhia17nh25GSnB590vtukvNJemYllWdQZ4Dk5voDRsi-Q7cVMGSRS4g1_kiGR1Bk4VvrcMngAycLzyYDgkSTjRP_mec1ACNDVIwG4VH8Km5taTJu-Fz0N2XZt7lKp6EL8lEchvhxVUnGoNn15m9mAKSbXpe3J41_RFqpgnM_JfdXtWeIB9tCGc_3J12d0CpFwn4BWv9ngzHmV-9txN0BJfwL3zdLM8gXZjlTREHWB9SbOkkdg8iFFDuQBwxiJcscyl70Njv3vxoJoplr6JnF5qxmO4gOcUuTreIfEQQayeyd4MQKSS2ChVUMU965qasw3XvqZ_41L-pCAbf_p2OT1woVwvxwj03xaPZuaKML9jy9rrSG0OLJuxDQogJ_-LVcaWLjFDSkZ8LQBBD90j7GGfRgnO2oF_BV2bpQrdruNfYt_YSrOtzcXIZY0yuVCCmYPgLY1V6i9d1_HhGNn5-zYptcYesQF-75C8ZvNqy-mOcdrWU84E9X_Oo1adX_5amMxyYG02pTmcdCRsWHZUhbphKpXemLl7jV-dtVAt0q7dF0DDqPl1orCBVE41WqUSe5FOZxmd8YNU8qmIicCXXaMnGUQ-4vxmOG9IxnytWRMB954GbpkbvGhw9NabFAXpZbkdRq1JLPuFlWrN0dNqJdL-M2A0VGkxMYoKZkYd1yTZ6f7H0Jsi4tL2Ougnx00IQlFRjmhjWn6s9S6MGyoJpbbOTLjLE5p_2Ni0Rz74otFuTIhtS6wDvxibqQDES_588WxawIFr-s_StyMQGEFoUskOACbqXWzU8Qut6gRgB0JCLMvmqNGbO5nZ-nD4aTjpw6_4FiNvJdDXIw_a0odESA1AHsmQyfgGBm6kcOzMG_JFu0jfc8tPeNBi5D84sOm3kxXNqQcS2df1xzCBIGPvv4MC06WaaFBRG5BWPWTtYNwdbpzJI6Z_hgzYyrK3w9c47HaSZHdLKs2eZCyKepRy0qalNKiiq4o8uGrOwbia2q1pNHT333XQ8SxmtKE2DyIzdPNihqxTbl44vtUeZ9cSf1C6v56HnOwKe0txe6AMVk9NAFqfawl5bt1hbZoiYa5L34sh5CH1foOcuBjWLQIr6V4_0-yeoPuiAVTDXt08Whya6KEbd0FwgM8Vhae4GFKo_oUdMeuuiazbkk1YR8P_OpEIjiCctcKob5YjXJBtHEtkiplFGcMKW-d3QkklMLcpwovj7zEMAzPklyqN257Q9XotibcbBOPiVUXJ1akgYKoqqJAsxRbAiHEG3q6J-ydqcLqlBajqdCsc2Why0YJRcaM8JvVPbeWLF3OgbIiTbWU6o3Km6o4HUWi_Oh1U4SMfag.BZSLP9DOZqSyXXOuvCYdVhC0SspJBzFyxF4M4Bxx2fY",
       "hasFullAggregationCompleted": true,
       "healthCheckTimeout": 60,
       "healthy": true,
@@ -98,12 +98,22 @@
       "supportsDeltaAgg": "true",
       "supportsStatefulCommands": "true",
       "templateApplication": "Microsoft Entra",
-      "userDeltaToken": "ueiGuewhVuxumZOebVNojq9UANNVEmv6YVf_RAUSm5xbcEXob0JIMBbIbddBOgndKSCqYa9B3oZM9ZZdNXcAXyohN55Bj3m2xEZs2Pa69wTDvxo_aZJdvuZRoS84avBvgkPs-1wWX0LvxQKnUxdFej9goq0gaLnr1WLpmz2f6TXY2XFgKZ-b_-_f5ftM5_SCjCIRogKUO00Bz5v_sSO8hZComqcFrQsEwdKVoGrDeZgTNoQucETp3YXHyQ2Rm0wlM7qVWFaQpavEwD_TBAorlUxTbS6154jRHxzebr-0ax87tTM16tIkISR0D_YolmPDQNtikxQTbOkbN8eh7zGma3mU-STpRQCxOnph-IJUAXi6sDZ5CbLVhQEzzFWho3D5Dcej08wH8hmMS-oUFKCkmLorHxYy3BVucfDkab9v2aIFRUzx5XFnPFmGnrLZ28LoXqS4LsuVbDhokfS7NZCzgNnetgLnDFpBZTRASpIxOoNGhMDTIKYYuCmVy9D8e9vpUT0v81xQ7TH8o9yQiZa0dIATQyZrpLEEhlSqdMJTy-zGBgk7_AgpIwlA4aySJEmkxAhfddxEopDL72qaJQJGoISRUN7xnkDbNJ04tiSL39aAFoCo9MJC-jItk70MpEoF4NF2sSwd3iEFY8KSHCP6CURRFBrKhlx4L0k2bj7Yky7tHUcmTV9ufITqyOoJ11EJxK3N0hWSQstnsakZEfvz90qvMvCmBT77i0S_OKJsG2F-xii48AkjK7gtOen6PdBn-yCUKnJClics3yVa8IgGk68PsaEFEo8TZj-CFlYXpUC-Id-CZnlD3bFftXE3wbP8zTpKqFMHY9MjAMzffgIHckTlC7Bwdt-dZd4OaS5X1-a_yKAqdxbvi13ZMIoVWHtPKDldA1aLvgdHaWsW3KYm2KhDE4yz6ZrZVO2-2-cTm8ciILRK8RWLLdevu5AfU7Z8kE-xw_dEXd8lKhdusL40D0pIc_j3QrLT8LT8yWP71HHamt106JBr1N1q4dfmAyZZcJZytfbmpqe16vVXbCIvFn-wxwaaTDXU5Ft9AbxszuiVJvolIZ33l2Lj2Jwx4lSXruycMlW9Jns3jDhGuguBKxwpUenNeW4ZNd_skgpjfK_7yiJUutGVHXptvRj9yUpG4KuSEODkXwYpZeVzFyJQuL_FFrLsyp7eK6EWuj1xaxnDigJpH5a_kERv3_eTs5k5JFaxHopBdSvuoZD2d9fp9KVlSkgiGrPMjhDTUuS8P6ALBmW-sO6rw9xKB4EFbOk070TrZySIi6XiTljIMYLbdByyZXusjHG6aKL3nwy-xzDiQv5Zr9IPi7wleaNTQ1dFK8XxKl64azQFIG_bs_WdCi_rcSsN0gwNXR_fOOmPM9Lm88TV4xE0cf6GbJM2J5sF7NTWbWcc83acYKgxudSFha7_FWylc5lRpFET7nuCSynMiKFQt_25tNMxIl3dOdWVtf8MIfnlbwAYrK1evt6IefcIhMVsqU1Z3_xVi9uoOlTg2i-P07siSQUE6PsCS5ETgnOm6urSBfSFj3RF3uw7JHz2EOJAnoyz1IhbzJTsAG9EsB7VN6eAX--GZDXjo2QryZtwPglOVVFh4y7dx0izevrDMjEBfIzfaKuUOHFwStLaOeSJPqIwt__LRG-G40JjIvL7JBjLIGiBjEO2DFIbEjTkO3gJE3ipYNzcsTLopFCFPfmRGpf9lorq7Q6uC1-hqBuCGJ21tZpMhWoWir-nSQfgxdlAy9sAAD3otsv50nd4N5-F_iFnexWNKOYWIbCO21_ZiiXwL60zkoN2ZwmgG5u2xaVopKXMuLbxitQdtu-7W9ZV6KxySDqW7vfq-lOnxYV6w04rmPcFRUlBleu3NWSkgYIjf9N4jvsxCP2BRR4h3n81sutUpjQQAOTouinsmQOCA8I-f-PVWwPepB4uBy2aSu4VgKLhTvM-KR4fhAOLzDTCnkDZl4dWSHqqIHYguKqIOKl2NvhcrZVwfqoQOxiASmWHIe8AfQvV_qoXzNpZ4DO0cVbcpKKeqcw635RivUffS20M7dDgjFlQc9IW8nuaQ1CiQSy6KZQ1PIvgvfx4OCDAhDfeb3Ahlm4WMMeyq-RX75i9F3Ddj80lCUfaxuW-GxpNOzqJeuYhR-HzHFY.HjBLoqUVvXn2xpnmxUQNTuZ1vZFPfSeCeujTDuPz-cU"
+      "userDeltaToken": "ueiGuewhVuxumZOebVNojq9UANNVEmv6YVf_RAUSm5zN9qe_j7OPeuU8bfr9I-cdBTQ8hb8AK-Q2Fx4_-SlUhbmuCO-hopOKmYXxoC1sEt4IsLVQr93OZmsv7RuWEzoTDazqm7xYEokmUL7xZr2MpTBcJu3sPNBNG0xFYlNdUch52hrjgnWeDukKaxvVOifHi2-qR4cJmDmEGyJyhetKhhF9QOZA-TcA3IJ-5mMHFTs68NtJmzsVPMAc2TnWYaGpB1wutO2BUGwi5L9zugD2-6nLwbjjKyRQ2jW0kIfWz7CoKT1CL2mUxhICuee5DqeCm-wHjSIVwzlR-i-h8GG_6wQaYxFS6MJ9CIy0OtmJ6M3s5FJTe1E2r6fibhdKzPvYF96Sk1w4LPHe2s7Pf3p-fU0aL-Jli06wRjbNdEgURsHQ-r_x10BOyQECMFcxPNGL8oHEoFdQB89eS7zpWktLrbOJJ3yy0gAIwtXi480y5xzOu49AbZFc-qmNL_O22YKz7SgznQVZWCCR4PtsMKSi4k0z0uq3_hkxRCcwoOF9lQyl2VPyM8Ib8E3Xl7NkEhl4_o5rqVyLUgOjcNOxi_XKgTvG0Nn_d0Lm1m5cts0mvW15stZVROIjy8b9rZtMTjfkSAIv38KOaDMC0AWcl3-zQjAN9J3v0mpa6b3tmNshRWOCTyJJrOhHGVpOjpCJ3juz0j7D9TtrpSR8H0RupRdkGKID-yqQIZ6pP_HQt6Q5mk9R0YxLADAp7Cl0RLZnX2kjYqRS93YTuf0sA5OqA6laWwkNZ5i1TGraoNpklcqyUCXEvGvt_OtRcSsPvYI8svTx_msvcGem_Dj-28UqD75wQCbdfZ2eQnHZh9yOqhKP1j2qqI_woroXO1LXuN9zMywddbX7CEerXiJsS7yrk1QPJNQzKmbxtHbuhDkVBcUyxN2oJ9GG3ovpfWgo_AbWwC2OSLc5v1uSoP8Bkj-jF0JjK0grZ0NHyg6nPSdRC-WRkM0g2LUKH_aoWu8P6mO7wRh2xEaW84adovV8FjAORp2iyI8kT87tafD-f1j25psMnDQoRWpVfaHRIl8DAvvdgZJGoeJmcEg4F9Ypwzd1siOq6wqqwbGRGP6vRKKlWoKqHbUZi6Z6YfXlLsW3OYTVPjjDZ8EDE1IqdwV7qIsac2uefvepCW35BXNfDaFa36Cdm43l4xhDtoc-3KSRY1f1-dgesl5SlulWY28TVq9oWaAFKLswCEkstCeuPyB56M_eCColvQdQR_l8u3uxluHnvjwCZCtIWZWj5htUGcG8lJBCFgg6Rimf6sugmTvbY5g8frVHkxEwEL3S8uNx4xpCM9mgmtNvXAOvbEdurSvEcAjqSIW4LriaO_q83EssukehBTUtQBP5UIyozFKyAJ8kCUKjbjJoo6vXDaDYOs9JQ8Bb3I85BZNiFJOHdd91TBcNEaAydQBWH7N-Kr2AlkHeVvgZ5A8EuUgGjRd6ooR9FRra2LqFRbFxq8TfOtd_WlKpFKVFby04KIuK35CPU804fUmx5hQ-g2Os4gHLbIR_lP080zoUZmOBVqCM2VFHvH0YZ9pkavQjMfWBMib8P_UvdKFSSiTmw6ypubMlhneQ00J84VuYGqb94rHVFnbS3JhVx2yqn8gTERu-4OiqW16UiT4uGTprBvNB6D11Ta9QOpn7vJoNY2giUKJxdta2q4y9mezvWv-RW74jIr61zjvncYwSbC0pP2c5Swf-jesZnbRwijbcHs5KP7EOmAHIISnE2xoLs-pJWP9YVygXQTpELNhIXNd1bKE6xRDOajeFfIbNIVr6ZyQFN1FQfo5nriOP-H2LVYN4zdzw2e4yPt-ftgrItKkxH2ohmPmby8MCfDNOPW3scjTft21b9G2wVQGzq7x17oYMxLUGfKFjDnZHMO8JzZ7a15UqdScA3Y0ntNQg48yrOK1KN8Y5coohjzd033Z4etBBGyuz6mu853NWBGIJGsWQ-IPEm8-bCEo0oyJZePVl1dTGT-H7WZxdYULaQE6sYYDt0RlHJy69J1SEP1rSMi5fchzxj88SUftA3-LogdHSVaxNyx9RHkC94-JJV-nNM-OPe4J7LAncPE96d1faj1VvuGpa9SGK01bm6TGlTTEilA36_T2VHSNS0MxtCtY.w7npJZhC42R0PZnYor4dWBRft40NefXVkWISAfPjkf4"
     },
     "connectorClass": "",
     "connectorScriptName": "Microsoft-Entra",
     "correlationConfigDetails": {
       "attributeAssignments": [
+        {
+          "complex": false,
+          "filterString": null,
+          "ignoreCase": false,
+          "matchMode": null,
+          "operation": "EQ",
+          "property": "uid",
+          "sequence": 2,
+          "value": "mailNickname"
+        },
         {
           "complex": false,
           "filterString": null,
@@ -153,21 +163,6 @@
       {
         "description": "Create Policy Description",
         "fields": [
-          {
-            "attributes": {
-              "template": "$(username)$(uniqueCounter)@spdemo262.onmicrosoft.com"
-            },
-            "isMultiValued": false,
-            "isRequired": false,
-            "name": "userPrincipalName",
-            "transform": {
-              "attributes": {
-                "name": "Create Unique Account ID"
-              },
-              "type": "rule"
-            },
-            "type": "string"
-          },
           {
             "attributes": {},
             "isMultiValued": false,
@@ -276,12 +271,7 @@
             "isMultiValued": false,
             "isRequired": false,
             "name": "forceChangePasswordNextSignIn",
-            "transform": {
-              "attributes": {
-                "value": "true"
-              },
-              "type": "static"
-            },
+            "transform": null,
             "type": "boolean"
           },
           {
@@ -480,6 +470,19 @@
             "transform": {
               "attributes": {
                 "value": "United States;US"
+              },
+              "type": "static"
+            },
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "userPrincipalName",
+            "transform": {
+              "attributes": {
+                "value": "${mailNickname}@spdemo262.onmicrosoft.com"
               },
               "type": "static"
             },

@@ -6,7 +6,7 @@
     "beforeProvisioningRule": null,
     "connectorAttributes": {
       "SQL": "SELECT \n    u.*, \n    l.value AS \"LCS\",\n    CASE \n        WHEN l.value = 'active' THEN false \n        ELSE true \n    END AS \"IIQDisabled\"\nFROM \"LH2\" AS u\nLEFT JOIN \"LCS\" AS l\nON u.\"Employer Status\" = l.key;",
-      "cloudCacheUpdate": 1782220865869,
+      "cloudCacheUpdate": 1782325327532,
       "cloudDisplayName": "LH2",
       "connectionType": "direct",
       "connectorFileUploadHistory": {
@@ -30,7 +30,7 @@
         "standard"
       ],
       "mergeRows": false,
-      "since": "2026-06-23T13:21:05.868Z",
+      "since": "2026-06-24T18:22:07.532Z",
       "sourceConnected": true,
       "status": "SOURCE_STATE_HEALTHY",
       "supportsDeltaAgg": "true",

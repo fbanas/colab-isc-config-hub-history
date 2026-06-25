@@ -239,13 +239,13 @@
     "description": "This workflow is triggered when an access request is submitted. Based on the recipient’s attributes, the request is either auto-approved or is considered and exception and goes through a multi-step approval process. If approved as an exception, a certification campaign is created to ensure all access for the recipient is necessary. The recipient is notified of the review results via Slack.",
     "enabled": false,
     "id": "1ed45e42-1e35-4c50-83be-86b07f57b811",
-    "modified": "2026-05-08T08:06:15.599998668Z",
+    "modified": "2026-06-24T14:34:42.446176641Z",
     "modifiedBy": {
       "id": "90eb8204ac594f48ac598a55e0e73613",
       "name": "florian.banas",
       "type": "IDENTITY"
     },
-    "name": "Copy of Multi-Step Serial Approval of Access Request",
+    "name": "High Privilege Custom Approval Workflow",
     "owner": {
       "id": "90eb8204ac594f48ac598a55e0e73613",
       "name": "florian.banas",
@@ -261,7 +261,7 @@
   },
   "self": {
     "id": "1ed45e42-1e35-4c50-83be-86b07f57b811",
-    "name": "Copy of Multi-Step Serial Approval of Access Request",
+    "name": "High Privilege Custom Approval Workflow",
     "type": "WORKFLOW"
   },
   "version": 1
