@@ -22,9 +22,12 @@
             "inputForPag_port": 636,
             "inputForPag_search_base_dn": "OU=Demo,DC=seri,DC=sailpointdemo,DC=com",
             "inputForPag_search_scope": "Subtree",
+            "inputForPag_verify_cert": false,
             "pagCommandType": "pag:active_directory:list_ous",
-            "pagInstanceId": "ea641356-0dcd-4bda-8f5d-9cc2886d97d7",
-            "pagSpecId": "7e479f41-e367-4e20-85c8-9e2936aa4658"
+            "pagInstanceId": "25ceb9be-068a-45f2-8868-a403faf2de3d",
+            "pagSpecId": "7e479f41-e367-4e20-85c8-9e2936aa4658",
+            "param_connType": "paramInline",
+            "param_credentialType": "paramInline"
           },
           "description": "The Privileged Action Gateway retrieves organizational units from Active Directory.\nThe directory location to search in and the depth of the search can be controlled using the Search Base DN and Search Scope inputs.",
           "displayName": "PAG: Get Organizational Units",
@@ -664,7 +667,7 @@
     "description": "This interactive workflow creates a new Active Directory security group.\n\nYou will be asked to provide some group details using an interactive form.",
     "enabled": false,
     "id": "aaf6cee2-9097-442e-9e62-7b8d6b0c359e",
-    "modified": "2026-06-14T16:52:00.222977805Z",
+    "modified": "2026-06-25T16:11:56.655164732Z",
     "modifiedBy": {
       "id": "90eb8204ac594f48ac598a55e0e73613",
       "name": "florian.banas",

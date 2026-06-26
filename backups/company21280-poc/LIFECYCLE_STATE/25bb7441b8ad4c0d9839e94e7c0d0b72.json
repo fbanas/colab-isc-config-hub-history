@@ -1,0 +1,40 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessActionConfiguration": {
+      "removeAllAccessEnabled": false
+    },
+    "accessProfileIds": [],
+    "accessProfileRefs": null,
+    "accountActionRefs": [],
+    "accountActions": [],
+    "created": "2026-06-26T08:53:01.160Z",
+    "description": null,
+    "emailNotificationOption": {
+      "emailAddressList": [],
+      "notifyAllAdmins": false,
+      "notifyManagers": false,
+      "notifySpecificUsers": false
+    },
+    "enabled": false,
+    "id": "25bb7441b8ad4c0d9839e94e7c0d0b72",
+    "identityCount": 0,
+    "identityProfileRef": {
+      "id": "fa41f7d647a945449c4b1614d41266f6",
+      "name": "Orange HRM Identity Profile",
+      "type": "IDENTITY_PROFILE"
+    },
+    "identityState": null,
+    "modified": "2026-06-26T08:53:01.160Z",
+    "name": "HandsOnTest01",
+    "priority": 70,
+    "technicalName": "handsontest01"
+  },
+  "self": {
+    "id": "25bb7441b8ad4c0d9839e94e7c0d0b72",
+    "name": "HandsOnTest01",
+    "type": "LIFECYCLE_STATE"
+  },
+  "version": 1
+}

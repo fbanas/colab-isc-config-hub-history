@@ -488,6 +488,31 @@
           }
         ],
         "attributeTargets": null,
+        "displayName": "Employee Id Orange",
+        "editMode": "ReadOnly",
+        "extendedNumber": 0,
+        "groupFactory": false,
+        "multi": false,
+        "name": "employeeIdOrange",
+        "silent": false,
+        "standard": false,
+        "system": false,
+        "type": "string"
+      },
+      {
+        "attributeSources": [
+          {
+            "applicationRef": null,
+            "defaultValue": null,
+            "reference": null,
+            "ruleRef": {
+              "id": "54ad48fdf6dd41ab8fb6d11a003686b7",
+              "name": "Cloud Promote Identity Attribute",
+              "type": "RULE"
+            }
+          }
+        ],
+        "attributeTargets": null,
         "displayName": "Employee Number",
         "editMode": "ReadOnly",
         "extendedNumber": 2,

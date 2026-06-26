@@ -181,7 +181,9 @@
               "mapping": {
                 "auth_scopes": "scopes"
               },
-              "paramType": "3.1"
+              "paramID": "097c3757-c597-47be-882d-0da52599c89d",
+              "paramType": "3.1",
+              "refID": "1c0908fc-7f98-4ab7-9a51-3147a936766a"
             },
             "requestContentType": "json",
             "requestHeaders": {
@@ -239,7 +241,7 @@
     "description": "This workflow is triggered when an access request is submitted. Based on the recipient’s attributes, the request is either auto-approved or is considered and exception and goes through a multi-step approval process. If approved as an exception, a certification campaign is created to ensure all access for the recipient is necessary. The recipient is notified of the review results via Slack.",
     "enabled": false,
     "id": "1ed45e42-1e35-4c50-83be-86b07f57b811",
-    "modified": "2026-06-24T14:34:42.446176641Z",
+    "modified": "2026-06-25T16:07:25.655567548Z",
     "modifiedBy": {
       "id": "90eb8204ac594f48ac598a55e0e73613",
       "name": "florian.banas",
