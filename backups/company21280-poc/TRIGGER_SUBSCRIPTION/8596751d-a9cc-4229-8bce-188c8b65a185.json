@@ -1,0 +1,24 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "description": "Managed by Workflows",
+    "enabled": true,
+    "filter": "$.changes[?(@.attribute == \"jobTitle\")]",
+    "id": "8596751d-a9cc-4229-8bce-188c8b65a185",
+    "name": "Mover micro-certification",
+    "responseDeadline": "PT1H",
+    "triggerId": "idn:identity-attributes-changed",
+    "triggerName": "Identity Attributes Changed",
+    "type": "WORKFLOW",
+    "workflowConfig": {
+      "workflowId": "8596751d-a9cc-4229-8bce-188c8b65a185"
+    }
+  },
+  "self": {
+    "id": "8596751d-a9cc-4229-8bce-188c8b65a185",
+    "name": "Mover micro-certification",
+    "type": "TRIGGER_SUBSCRIPTION"
+  },
+  "version": 1
+}

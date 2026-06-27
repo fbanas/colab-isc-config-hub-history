@@ -27,19 +27,11 @@
     "dimensional": false,
     "dimensions": [],
     "enabled": true,
-    "entitlements": [
-      {
-        "id": "45ca35d4-2c47-3e2d-9449-69e2be6ff455",
-        "name": "APP-902",
-        "sourceId": "00c23142-0974-4506-bab1-e856117f40f7",
-        "sourceName": "Microsoft Entra sp-demo262 SaaS",
-        "type": "ENTITLEMENT"
-      }
-    ],
+    "entitlements": [],
     "id": "97fbe0bbc4ac4fc39cbed97d29edd7f0",
     "legacyMembershipInfo": null,
     "membership": null,
-    "modified": "2026-05-05T19:16:15.666893Z",
+    "modified": "2026-06-26T14:00:37.981211Z",
     "name": "LHG_APP_LHG-Wlan",
     "owner": {
       "id": "aa680a7a8f5f41199e9dbaa1e4d399c3",

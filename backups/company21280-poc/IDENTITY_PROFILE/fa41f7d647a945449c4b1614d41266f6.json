@@ -253,10 +253,10 @@
     "identityCount": 305,
     "identityExceptionReportReference": {
       "reportName": "Orange HRM Identity Profile Identity Exceptions",
-      "taskResultId": "f4f163202f3543a3a8fe6c13b01bc0a9"
+      "taskResultId": "64ac365e4a584f74a51bd4b422d5758d"
     },
-    "identityRefreshRequired": true,
-    "modified": "2026-06-26T09:39:51.820Z",
+    "identityRefreshRequired": false,
+    "modified": "2026-06-26T09:46:18.129Z",
     "name": "Orange HRM Identity Profile",
     "owner": {
       "id": "7d00e3c56dd44753a8c561b140e85f81",

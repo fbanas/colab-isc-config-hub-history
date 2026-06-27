@@ -28,19 +28,11 @@
     "dimensional": false,
     "dimensions": [],
     "enabled": true,
-    "entitlements": [
-      {
-        "id": "4cd9fda4-f403-3e76-9110-315ec0edca97",
-        "name": "APP-201",
-        "sourceId": "00c23142-0974-4506-bab1-e856117f40f7",
-        "sourceName": "Microsoft Entra sp-demo262 SaaS",
-        "type": "ENTITLEMENT"
-      }
-    ],
+    "entitlements": [],
     "id": "a080ad71ca274f8daa8ca4ea76528bf8",
     "legacyMembershipInfo": null,
     "membership": null,
-    "modified": "2026-06-24T11:20:43.069113Z",
+    "modified": "2026-06-26T14:00:38.090445Z",
     "name": "PSC-TestRole",
     "owner": {
       "id": "3c4587169cb84c0081c6b5d744b768e3",

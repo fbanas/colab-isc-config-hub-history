@@ -1,0 +1,24 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "description": "Managed by Workflows",
+    "enabled": true,
+    "filter": "$[?(@.workflowId == 'a9be7fbc-fca9-4bae-b9db-b0f227109df9')]",
+    "id": "a9be7fbc-fca9-4bae-b9db-b0f227109df9",
+    "name": "Set Amadeus Primary Office",
+    "responseDeadline": "PT1H",
+    "triggerId": "idn:interactive-process-launched",
+    "triggerName": "Interactive Trigger",
+    "type": "WORKFLOW",
+    "workflowConfig": {
+      "workflowId": "a9be7fbc-fca9-4bae-b9db-b0f227109df9"
+    }
+  },
+  "self": {
+    "id": "a9be7fbc-fca9-4bae-b9db-b0f227109df9",
+    "name": "Set Amadeus Primary Office",
+    "type": "TRIGGER_SUBSCRIPTION"
+  },
+  "version": 1
+}

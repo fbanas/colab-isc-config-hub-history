@@ -27,19 +27,11 @@
     "dimensional": false,
     "dimensions": [],
     "enabled": true,
-    "entitlements": [
-      {
-        "id": "bb8999c6-e3fa-340a-8035-ec400d9017ad",
-        "name": "APP-901",
-        "sourceId": "00c23142-0974-4506-bab1-e856117f40f7",
-        "sourceName": "Microsoft Entra sp-demo262 SaaS",
-        "type": "ENTITLEMENT"
-      }
-    ],
+    "entitlements": [],
     "id": "d0944bcbd202463d947c7f8f9c1adf13",
     "legacyMembershipInfo": null,
     "membership": null,
-    "modified": "2026-05-05T20:46:20.288228Z",
+    "modified": "2026-06-26T14:00:37.700649Z",
     "name": "LHG_APP_LHG-Intranet",
     "owner": {
       "id": "aa680a7a8f5f41199e9dbaa1e4d399c3",

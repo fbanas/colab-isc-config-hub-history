@@ -27,19 +27,11 @@
     "dimensional": false,
     "dimensions": [],
     "enabled": true,
-    "entitlements": [
-      {
-        "id": "b325319f-0872-3352-9852-bb721b83847c",
-        "name": "APP-101",
-        "sourceId": "00c23142-0974-4506-bab1-e856117f40f7",
-        "sourceName": "Microsoft Entra sp-demo262 SaaS",
-        "type": "ENTITLEMENT"
-      }
-    ],
+    "entitlements": [],
     "id": "79ed141b926640fdb67b3a1792870592",
     "legacyMembershipInfo": null,
     "membership": null,
-    "modified": "2026-05-05T16:21:48.888391Z",
+    "modified": "2026-06-26T14:00:38.515055Z",
     "name": "LH1_APP_Booking-System",
     "owner": {
       "id": "aa4ab9d17dc24afc84947597b9ce1a46",

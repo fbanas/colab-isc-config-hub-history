@@ -27,15 +27,7 @@
     "dimensional": false,
     "dimensions": [],
     "enabled": true,
-    "entitlements": [
-      {
-        "id": "717377d4-af54-3ae4-aeb5-bacf780e8016",
-        "name": "APP-900",
-        "sourceId": "00c23142-0974-4506-bab1-e856117f40f7",
-        "sourceName": "Microsoft Entra sp-demo262 SaaS",
-        "type": "ENTITLEMENT"
-      }
-    ],
+    "entitlements": [],
     "id": "b42e5efe841f45b1a43ab2923ac1ba09",
     "legacyMembershipInfo": null,
     "membership": {
@@ -63,7 +55,7 @@
       "identities": null,
       "type": "STANDARD"
     },
-    "modified": "2026-05-05T20:46:01.023425Z",
+    "modified": "2026-06-26T14:00:37.322165Z",
     "name": "LH3_Entry_Location",
     "owner": {
       "id": "4ccc61c7219545cea31d3f22519374d5",

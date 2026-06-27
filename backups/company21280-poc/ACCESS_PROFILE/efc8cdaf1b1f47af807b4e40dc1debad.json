@@ -14,16 +14,10 @@
     "additionalOwners": [],
     "created": "2026-04-15T15:31:02.385764Z",
     "description": "This set of initial access rights is defined and managed centrally within the idenity profile.",
-    "enabled": true,
-    "entitlements": [
-      {
-        "id": "b325319f087233529852bb721b83847c",
-        "name": "APP-101",
-        "type": "ENTITLEMENT"
-      }
-    ],
+    "enabled": false,
+    "entitlements": [],
     "id": "efc8cdaf1b1f47af807b4e40dc1debad",
-    "modified": "2026-05-06T12:55:41.817593Z",
+    "modified": "2026-06-26T14:00:38.694294Z",
     "name": "Multi Acc. Birthright Access Profile",
     "owner": {
       "id": "fcc9db01f32249889e627da51f5f710a",
