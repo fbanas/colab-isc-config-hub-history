@@ -1,0 +1,51 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": null,
+      "denialCommentsRequired": null,
+      "formDefinitionId": null,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [
+      {
+        "id": "c2042f4f36e3465fad5cedc79832ad2d",
+        "name": "jkirmis2",
+        "type": "IDENTITY"
+      }
+    ],
+    "created": "2026-06-29T15:04:54.174979Z",
+    "description": "Test Mover",
+    "enabled": false,
+    "entitlements": [],
+    "id": "a757c255acb9479398b0a0de65a97d68",
+    "modified": "2026-06-29T15:04:54.174979Z",
+    "name": "HandsOn",
+    "owner": {
+      "id": "37975b136ded4199bfe52a773378230f",
+      "name": "aschulz2",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "provisioningCriteria": null,
+    "requestable": false,
+    "revocationRequestConfig": null,
+    "segmentRefs": [],
+    "segments": [],
+    "source": {
+      "id": "b1cdedea9ecb482aa949c8b77463fc47",
+      "name": "HR - OrangeHRM",
+      "type": "SOURCE"
+    }
+  },
+  "self": {
+    "id": "a757c255acb9479398b0a0de65a97d68",
+    "name": "HandsOn",
+    "type": "ACCESS_PROFILE"
+  },
+  "version": 1
+}

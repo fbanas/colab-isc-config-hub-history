@@ -75,6 +75,17 @@
           }
         },
         {
+          "identityAttributeName": "departmentOrange",
+          "transformDefinition": {
+            "attributes": {
+              "attributeName": "department",
+              "sourceId": "b1cdedea9ecb482aa949c8b77463fc47",
+              "sourceName": "HR - OrangeHRM"
+            },
+            "type": "accountAttribute"
+          }
+        },
+        {
           "identityAttributeName": "displayName",
           "transformDefinition": {
             "attributes": {
@@ -253,10 +264,10 @@
     "identityCount": 305,
     "identityExceptionReportReference": {
       "reportName": "Orange HRM Identity Profile Identity Exceptions",
-      "taskResultId": "64ac365e4a584f74a51bd4b422d5758d"
+      "taskResultId": "091ec550ea7c481fb80093b9f8185747"
     },
     "identityRefreshRequired": false,
-    "modified": "2026-06-26T09:46:18.129Z",
+    "modified": "2026-06-30T07:43:39.719Z",
     "name": "Orange HRM Identity Profile",
     "owner": {
       "id": "7d00e3c56dd44753a8c561b140e85f81",

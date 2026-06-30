@@ -1,0 +1,88 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessModelMetadata": {
+      "attributes": []
+    },
+    "accessProfiles": [],
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": null,
+      "denialCommentsRequired": null,
+      "formDefinitionId": null,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [
+      {
+        "id": "c2042f4f36e3465fad5cedc79832ad2d",
+        "name": "jkirmis2",
+        "type": "IDENTITY"
+      }
+    ],
+    "created": "2026-06-29T15:26:29.952011Z",
+    "description": "Test für Mover",
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": true,
+    "entitlements": [
+      {
+        "id": "45ca35d4-2c47-3e2d-9449-69e2be6ff455",
+        "name": "APP-902",
+        "sourceId": "00c23142-0974-4506-bab1-e856117f40f7",
+        "sourceName": "Microsoft Entra sp-demo262 SaaS",
+        "type": "ENTITLEMENT"
+      }
+    ],
+    "id": "9da4317414804e699407f601e093c33f",
+    "legacyMembershipInfo": null,
+    "membership": {
+      "criteria": {
+        "children": [
+          {
+            "children": null,
+            "key": {
+              "property": "attribute.departmentOrange",
+              "sourceId": null,
+              "type": "IDENTITY"
+            },
+            "operation": "CONTAINS",
+            "stringValue": null,
+            "values": [
+              "Information Technology"
+            ]
+          }
+        ],
+        "key": null,
+        "operation": "OR",
+        "stringValue": null,
+        "values": null
+      },
+      "identities": null,
+      "type": "STANDARD"
+    },
+    "modified": "2026-06-29T16:04:06.964992Z",
+    "name": "Test Mover",
+    "owner": {
+      "id": "37975b136ded4199bfe52a773378230f",
+      "name": "aschulz2",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [],
+    "segments": []
+  },
+  "self": {
+    "id": "9da4317414804e699407f601e093c33f",
+    "name": "Test Mover",
+    "type": "ROLE"
+  },
+  "version": 1
+}

@@ -1,0 +1,59 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": null,
+      "denialCommentsRequired": null,
+      "formDefinitionId": null,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [
+      {
+        "id": "c2042f4f36e3465fad5cedc79832ad2d",
+        "name": "jkirmis2",
+        "type": "IDENTITY"
+      }
+    ],
+    "created": "2026-06-29T15:12:48.409851Z",
+    "description": "test mover",
+    "enabled": false,
+    "entitlements": [
+      {
+        "id": "45ca35d42c473e2d944969e2be6ff455",
+        "name": "APP-902",
+        "type": "ENTITLEMENT"
+      }
+    ],
+    "id": "8aa272ece69145cf927a3b3f2c6a5288",
+    "modified": "2026-06-29T15:19:04.266731Z",
+    "name": "Mover",
+    "owner": {
+      "id": "37975b136ded4199bfe52a773378230f",
+      "name": "aschulz2",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "provisioningCriteria": null,
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": null
+    },
+    "segmentRefs": [],
+    "segments": [],
+    "source": {
+      "id": "00c2314209744506bab1e856117f40f7",
+      "name": "Microsoft Entra sp-demo262 SaaS",
+      "type": "SOURCE"
+    }
+  },
+  "self": {
+    "id": "8aa272ece69145cf927a3b3f2c6a5288",
+    "name": "Mover",
+    "type": "ACCESS_PROFILE"
+  },
+  "version": 1
+}

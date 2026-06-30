@@ -17,7 +17,7 @@
       "notifyManagers": false,
       "notifySpecificUsers": false
     },
-    "enabled": false,
+    "enabled": true,
     "id": "25bb7441b8ad4c0d9839e94e7c0d0b72",
     "identityCount": 0,
     "identityProfileRef": {
@@ -25,8 +25,8 @@
       "name": "Orange HRM Identity Profile",
       "type": "IDENTITY_PROFILE"
     },
-    "identityState": null,
-    "modified": "2026-06-26T08:53:01.160Z",
+    "identityState": "ACTIVE",
+    "modified": "2026-06-29T15:19:45.921Z",
     "name": "HandsOnTest01",
     "priority": 70,
     "technicalName": "handsontest01"

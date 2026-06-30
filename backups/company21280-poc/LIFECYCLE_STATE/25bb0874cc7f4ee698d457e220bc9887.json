@@ -41,14 +41,14 @@
     },
     "enabled": true,
     "id": "25bb0874cc7f4ee698d457e220bc9887",
-    "identityCount": 2,
+    "identityCount": 3,
     "identityProfileRef": {
       "id": "fa41f7d647a945449c4b1614d41266f6",
       "name": "Orange HRM Identity Profile",
       "type": "IDENTITY_PROFILE"
     },
     "identityState": "INACTIVE_LONG_TERM",
-    "modified": "2026-04-08T14:18:14.438Z",
+    "modified": "2026-06-30T07:35:07.561Z",
     "name": "Terminated",
     "priority": 40,
     "technicalName": "terminated"
