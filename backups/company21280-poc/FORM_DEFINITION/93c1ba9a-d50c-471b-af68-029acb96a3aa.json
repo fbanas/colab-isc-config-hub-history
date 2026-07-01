@@ -1,0 +1,124 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": "2026-06-30T10:32:07.775770043Z",
+    "description": "POC dient zur Erfassung von Rollenanlagen und Änderungen",
+    "formConditions": [],
+    "formElements": [
+      {
+        "config": {
+          "alignment": "LEFT",
+          "description": "",
+          "formElements": [
+            {
+              "config": {
+                "dataSource": {
+                  "config": {
+                    "options": [
+                      {
+                        "label": "Rolle erstellen",
+                        "sublabel": "",
+                        "value": "Rolle erstellen"
+                      },
+                      {
+                        "label": "Rolle ändern",
+                        "sublabel": "",
+                        "value": "Rolle ändern"
+                      }
+                    ]
+                  },
+                  "dataSourceType": "STATIC"
+                },
+                "forceSelect": true,
+                "helpText": "Auswahl der Art des Antrags",
+                "label": "Antragstyp",
+                "maximum": 2,
+                "placeholder": "",
+                "required": false
+              },
+              "elementType": "SELECT",
+              "id": "1428219831616",
+              "key": "antragstyp",
+              "validations": [
+                {
+                  "validationType": "DATA_SOURCE"
+                }
+              ]
+            },
+            {
+              "config": {
+                "default": "",
+                "description": "",
+                "helpText": "",
+                "label": "Rollenname",
+                "placeholder": "",
+                "required": false
+              },
+              "elementType": "TEXT",
+              "id": "959510182709",
+              "key": "rollenname",
+              "validations": []
+            },
+            {
+              "config": {
+                "default": "",
+                "description": "",
+                "helpText": "",
+                "label": "Rollenowner",
+                "placeholder": "",
+                "required": false
+              },
+              "elementType": "TEXT",
+              "id": "15279905772",
+              "key": "rollenowner",
+              "validations": []
+            },
+            {
+              "config": {
+                "default": "",
+                "description": "",
+                "helpText": "",
+                "label": "Rollenrisiko",
+                "placeholder": "",
+                "required": false
+              },
+              "elementType": "TEXT",
+              "id": "1551352746965",
+              "key": "rollenrisiko",
+              "validations": []
+            }
+          ],
+          "label": "Daten erfassen",
+          "labelStyle": "h2",
+          "showLabel": true
+        },
+        "elementType": "SECTION",
+        "id": "1374747490742",
+        "validations": []
+      }
+    ],
+    "formInput": [],
+    "id": "93c1ba9a-d50c-471b-af68-029acb96a3aa",
+    "modified": "2026-06-30T10:37:44.183607882Z",
+    "name": "Rollendaten erfassen",
+    "owner": {
+      "id": "37975b136ded4199bfe52a773378230f",
+      "name": "aschulz2",
+      "type": "IDENTITY"
+    },
+    "usedBy": [
+      {
+        "id": "d001a8ad-af67-4096-a0a9-efca0ac6b17c",
+        "name": "Rollenmodellierung",
+        "type": "WORKFLOW"
+      }
+    ]
+  },
+  "self": {
+    "id": "93c1ba9a-d50c-471b-af68-029acb96a3aa",
+    "name": "Rollendaten erfassen",
+    "type": "FORM_DEFINITION"
+  },
+  "version": 1
+}
