@@ -27,7 +27,7 @@
     "dimensionRefs": null,
     "dimensional": false,
     "dimensions": [],
-    "enabled": false,
+    "enabled": true,
     "entitlements": [
       {
         "id": "5ec555e2-755e-3ead-93cd-a5aec5ab8b08",
@@ -98,7 +98,7 @@
       "identities": null,
       "type": "STANDARD"
     },
-    "modified": "2026-05-05T19:35:02.250077Z",
+    "modified": "2026-07-02T06:40:00.198995Z",
     "name": "Accounts Payable Analyst",
     "owner": {
       "id": "880d15e1a216498993a47701a882bca4",

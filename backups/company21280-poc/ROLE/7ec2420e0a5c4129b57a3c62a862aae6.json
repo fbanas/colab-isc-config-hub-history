@@ -1,0 +1,50 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessModelMetadata": {
+      "attributes": []
+    },
+    "accessProfiles": [],
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": null,
+      "denialCommentsRequired": null,
+      "formDefinitionId": null,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-07-02T06:32:22.934429Z",
+    "description": null,
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": false,
+    "entitlements": [],
+    "id": "7ec2420e0a5c4129b57a3c62a862aae6",
+    "legacyMembershipInfo": null,
+    "membership": null,
+    "modified": "2026-07-02T06:32:22.934429Z",
+    "name": "rewgrewg",
+    "owner": {
+      "id": "0660e5c056c34189a3d6fd11e39ec8f2",
+      "name": "Aaron Nichols",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [],
+    "segments": []
+  },
+  "self": {
+    "id": "7ec2420e0a5c4129b57a3c62a862aae6",
+    "name": "rewgrewg",
+    "type": "ROLE"
+  },
+  "version": 1
+}

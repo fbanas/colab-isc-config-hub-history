@@ -1,0 +1,80 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessModelMetadata": {
+      "attributes": []
+    },
+    "accessProfiles": [],
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": null,
+      "denialCommentsRequired": null,
+      "formDefinitionId": null,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [
+      {
+        "id": "55b2da0b-1c01-437b-b129-a6f6af394b91",
+        "name": "LH1 (Scope A) Governance - Sub Role Admin Group",
+        "type": "GOVERNANCE_GROUP"
+      }
+    ],
+    "created": "2026-07-02T06:20:35.690328Z",
+    "description": null,
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": true,
+    "entitlements": [],
+    "id": "986f967a409047b2b4a2009b3f46b623",
+    "legacyMembershipInfo": null,
+    "membership": {
+      "criteria": {
+        "children": [
+          {
+            "children": null,
+            "key": {
+              "property": "attribute.departmentOrange",
+              "sourceId": null,
+              "type": "IDENTITY"
+            },
+            "operation": "NOT_EQUALS",
+            "stringValue": null,
+            "values": [
+              "\"\""
+            ]
+          }
+        ],
+        "key": null,
+        "operation": "OR",
+        "stringValue": null,
+        "values": null
+      },
+      "identities": null,
+      "type": "STANDARD"
+    },
+    "modified": "2026-07-02T06:28:06.450709Z",
+    "name": "TestHandsOn",
+    "owner": {
+      "id": "d9d82963681643c38bd0c52b6f976ac7",
+      "name": "jkirmis",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [],
+    "segments": []
+  },
+  "self": {
+    "id": "986f967a409047b2b4a2009b3f46b623",
+    "name": "TestHandsOn",
+    "type": "ROLE"
+  },
+  "version": 1
+}
