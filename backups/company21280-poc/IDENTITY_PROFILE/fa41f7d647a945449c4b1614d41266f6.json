@@ -262,10 +262,7 @@
       "enabled": true
     },
     "identityCount": 305,
-    "identityExceptionReportReference": {
-      "reportName": "Orange HRM Identity Profile Identity Exceptions",
-      "taskResultId": "091ec550ea7c481fb80093b9f8185747"
-    },
+    "identityExceptionReportReference": null,
     "identityRefreshRequired": false,
     "modified": "2026-06-30T07:43:39.719Z",
     "name": "Orange HRM Identity Profile",

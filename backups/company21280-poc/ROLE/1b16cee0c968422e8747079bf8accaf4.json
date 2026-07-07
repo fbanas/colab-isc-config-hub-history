@@ -1,0 +1,84 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessModelMetadata": {
+      "attributes": []
+    },
+    "accessProfiles": [],
+    "accessRequestConfig": {
+      "approvalSchemes": [
+        {
+          "approverId": null,
+          "approverType": "ALL_OWNERS"
+        }
+      ],
+      "commentsRequired": true,
+      "denialCommentsRequired": true,
+      "formDefinitionId": null,
+      "maxPermittedAccessDuration": {
+        "timeUnit": "DAYS",
+        "value": 1
+      },
+      "reauthorizationRequired": false,
+      "requireEndDate": true
+    },
+    "additionalOwners": [
+      {
+        "id": "c2042f4f36e3465fad5cedc79832ad2d",
+        "name": "jkirmis2",
+        "type": "IDENTITY"
+      }
+    ],
+    "created": "2026-07-06T11:06:04.914458Z",
+    "description": "HandsOn Rolle 2",
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": true,
+    "entitlements": [
+      {
+        "id": "45ca35d4-2c47-3e2d-9449-69e2be6ff455",
+        "name": "APP-902",
+        "sourceId": "00c23142-0974-4506-bab1-e856117f40f7",
+        "sourceName": "Microsoft Entra sp-demo262 SaaS",
+        "type": "ENTITLEMENT"
+      },
+      {
+        "id": "bb8999c6-e3fa-340a-8035-ec400d9017ad",
+        "name": "APP-901",
+        "sourceId": "00c23142-0974-4506-bab1-e856117f40f7",
+        "sourceName": "Microsoft Entra sp-demo262 SaaS",
+        "type": "ENTITLEMENT"
+      }
+    ],
+    "id": "1b16cee0c968422e8747079bf8accaf4",
+    "legacyMembershipInfo": null,
+    "membership": null,
+    "modified": "2026-07-06T12:53:45.706754Z",
+    "name": "Test HandsOn 2",
+    "owner": {
+      "id": "37975b136ded4199bfe52a773378230f",
+      "name": "aschulz2",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": true,
+    "revocationRequestConfig": {
+      "approvalSchemes": [
+        {
+          "approverId": null,
+          "approverType": "ALL_OWNERS"
+        }
+      ]
+    },
+    "segmentRefs": [],
+    "segments": []
+  },
+  "self": {
+    "id": "1b16cee0c968422e8747079bf8accaf4",
+    "name": "Test HandsOn 2",
+    "type": "ROLE"
+  },
+  "version": 1
+}

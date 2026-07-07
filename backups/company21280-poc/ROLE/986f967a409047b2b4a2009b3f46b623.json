@@ -28,7 +28,22 @@
     "dimensional": false,
     "dimensions": [],
     "enabled": true,
-    "entitlements": [],
+    "entitlements": [
+      {
+        "id": "4cd9fda4-f403-3e76-9110-315ec0edca97",
+        "name": "APP-201",
+        "sourceId": "00c23142-0974-4506-bab1-e856117f40f7",
+        "sourceName": "Microsoft Entra sp-demo262 SaaS",
+        "type": "ENTITLEMENT"
+      },
+      {
+        "id": "e29b0a4c-5a82-349f-af19-b3efe5fd828f",
+        "name": "APP-202",
+        "sourceId": "00c23142-0974-4506-bab1-e856117f40f7",
+        "sourceName": "Microsoft Entra sp-demo262 SaaS",
+        "type": "ENTITLEMENT"
+      }
+    ],
     "id": "986f967a409047b2b4a2009b3f46b623",
     "legacyMembershipInfo": null,
     "membership": {
@@ -56,7 +71,7 @@
       "identities": null,
       "type": "STANDARD"
     },
-    "modified": "2026-07-02T06:28:06.450709Z",
+    "modified": "2026-07-06T11:30:30.653905Z",
     "name": "TestHandsOn",
     "owner": {
       "id": "d9d82963681643c38bd0c52b6f976ac7",
