@@ -1,0 +1,28 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "Dear $__recipient.name,<br/><br/>\n<p>A privileged entitlement recommendation for <strong>${EntitlementName}</strong> is available for your review. You can review it on the <a href=\"${__global.productUrl}${DeepLinkSuffix}\">Privileged Entitlement Recommendations</a> page.</p>\n<br/>\nThanks,<br/>The $__global.productName Team<br/>",
+    "created": null,
+    "description": "Sent to the entitlement or source owner to notify them that a privileged entitlement recommendation is available for their review.",
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Privileged Entitlement Recommendation Available for Review",
+    "key": "privilege_recommendation_review_notification",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Privileged Entitlement Recommendation Available for Review",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "Privileged Entitlement Recommendation Available for Review",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Privileged Entitlement Recommendation Available for Review",
+    "name": "Privileged Entitlement Recommendation Available for Review",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}
