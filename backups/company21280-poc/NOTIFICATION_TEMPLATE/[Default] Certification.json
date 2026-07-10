@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Certification",
+    "inboxTemplate": null,
     "key": "certification",
     "locale": "en",
     "medium": "EMAIL",

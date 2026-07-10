@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Express source aggregation status",
+    "inboxTemplate": null,
     "key": "express_source_aggregation_status",
     "locale": "en",
     "medium": "EMAIL",

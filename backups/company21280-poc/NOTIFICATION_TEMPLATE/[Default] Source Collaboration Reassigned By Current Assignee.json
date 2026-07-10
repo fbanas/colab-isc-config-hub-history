@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Source Collaboration Reassigned By Current Assignee",
+    "inboxTemplate": null,
     "key": "SOURCE_CONFIG_COLLAB_ASSIGNEE_REASSIGN",
     "locale": "en",
     "medium": "EMAIL",

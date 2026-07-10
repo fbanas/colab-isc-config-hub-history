@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Data Access Security Campaign Assigned To Reviewers",
+    "inboxTemplate": null,
     "key": "das_campaign_assigned",
     "locale": "en",
     "medium": "EMAIL",

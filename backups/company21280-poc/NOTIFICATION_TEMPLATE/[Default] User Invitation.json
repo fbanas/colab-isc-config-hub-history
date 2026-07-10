@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] User Invitation",
+    "inboxTemplate": null,
     "key": "user_invitation-custom",
     "locale": "en",
     "medium": "EMAIL",

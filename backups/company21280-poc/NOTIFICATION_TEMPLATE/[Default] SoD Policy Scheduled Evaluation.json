@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] SoD Policy Scheduled Evaluation",
+    "inboxTemplate": null,
     "key": "sod_policy_scheduled_evaluation",
     "locale": "en",
     "medium": "EMAIL",

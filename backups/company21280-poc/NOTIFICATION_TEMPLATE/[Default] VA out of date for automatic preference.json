@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] VA out of date for automatic preference",
+    "inboxTemplate": null,
     "key": "va_out_of_date_auto_pref",
     "locale": "en",
     "medium": "EMAIL",

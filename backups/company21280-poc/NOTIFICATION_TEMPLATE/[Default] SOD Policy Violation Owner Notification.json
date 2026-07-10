@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] SOD Policy Violation Owner Notification",
+    "inboxTemplate": null,
     "key": "sod_violation_owner_notification",
     "locale": "en",
     "medium": "EMAIL",

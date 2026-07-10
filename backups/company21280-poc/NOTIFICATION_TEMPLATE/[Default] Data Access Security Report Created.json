@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Data Access Security Report Created",
+    "inboxTemplate": null,
     "key": "das_report_created",
     "locale": "en",
     "medium": "EMAIL",

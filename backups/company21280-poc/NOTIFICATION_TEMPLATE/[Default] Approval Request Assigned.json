@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Approval Request Assigned",
+    "inboxTemplate": null,
     "key": "approval_request_notification",
     "locale": "en",
     "medium": "EMAIL",

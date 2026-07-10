@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Remediation Work Item",
+    "inboxTemplate": null,
     "key": "remediation_work_item",
     "locale": "en",
     "medium": "EMAIL",

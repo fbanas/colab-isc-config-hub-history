@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Machine Account Creation Request Completed",
+    "inboxTemplate": null,
     "key": "machine_account_creation_request_completed",
     "locale": "en",
     "medium": "EMAIL",

@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Access Revoke Approval Reassignment",
+    "inboxTemplate": null,
     "key": "access_revoke_approval_reassignment",
     "locale": "en",
     "medium": "EMAIL",

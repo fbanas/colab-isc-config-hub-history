@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Access End Date Modified",
+    "inboxTemplate": null,
     "key": "certification_end_date_modified_notification",
     "locale": "en",
     "medium": "EMAIL",

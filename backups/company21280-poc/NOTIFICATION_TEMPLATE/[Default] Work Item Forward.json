@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Work Item Forward",
+    "inboxTemplate": null,
     "key": "work_item_forward",
     "locale": "en",
     "medium": "EMAIL",

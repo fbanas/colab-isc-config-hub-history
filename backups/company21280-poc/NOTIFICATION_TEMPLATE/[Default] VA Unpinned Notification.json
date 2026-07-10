@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] VA Unpinned Notification",
+    "inboxTemplate": null,
     "key": "va_unpinned_notification",
     "locale": "en",
     "medium": "EMAIL",

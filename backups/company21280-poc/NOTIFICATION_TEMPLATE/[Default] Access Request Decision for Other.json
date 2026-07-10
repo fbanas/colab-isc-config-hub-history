@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Access Request Decision for Other",
+    "inboxTemplate": null,
     "key": "access_request_decision_email_for_requested-for_identity",
     "locale": "en",
     "medium": "EMAIL",

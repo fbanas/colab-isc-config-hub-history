@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Certification Reassignment",
+    "inboxTemplate": null,
     "key": "bulk_reassignment",
     "locale": "en",
     "medium": "EMAIL",

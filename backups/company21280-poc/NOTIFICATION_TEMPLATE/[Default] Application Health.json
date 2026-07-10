@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Application Health",
+    "inboxTemplate": null,
     "key": "cloud_system_notification_apps",
     "locale": "en",
     "medium": "EMAIL",

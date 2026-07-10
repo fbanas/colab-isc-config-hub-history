@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Account Request Failed",
+    "inboxTemplate": null,
     "key": "account_request_failed",
     "locale": "en",
     "medium": "EMAIL",

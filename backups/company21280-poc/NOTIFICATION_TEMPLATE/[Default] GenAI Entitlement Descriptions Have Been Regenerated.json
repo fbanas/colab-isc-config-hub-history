@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] GenAI Entitlement Descriptions Have Been Regenerated",
+    "inboxTemplate": null,
     "key": "regen_sed_notification",
     "locale": "en",
     "medium": "EMAIL",

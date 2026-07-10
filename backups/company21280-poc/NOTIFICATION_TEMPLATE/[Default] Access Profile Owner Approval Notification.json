@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Access Profile Owner Approval Notification",
+    "inboxTemplate": null,
     "key": "access_profile_owner_approval_notification",
     "locale": "en",
     "medium": "EMAIL",

@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Preference Update",
+    "inboxTemplate": null,
     "key": "cloud_user_authentication_setting_change",
     "locale": "en",
     "medium": "EMAIL",

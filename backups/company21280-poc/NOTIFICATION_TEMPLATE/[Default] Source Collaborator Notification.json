@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Source Collaborator Notification",
+    "inboxTemplate": null,
     "key": "source_config_collab_in_progress",
     "locale": "en",
     "medium": "EMAIL",

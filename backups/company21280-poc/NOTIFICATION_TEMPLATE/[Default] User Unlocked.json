@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] User Unlocked",
+    "inboxTemplate": null,
     "key": "cloud_user_unlocked",
     "locale": "en",
     "medium": "EMAIL",

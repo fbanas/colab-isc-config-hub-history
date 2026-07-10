@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Unlock User Code",
+    "inboxTemplate": null,
     "key": "cloud_user_unlock_token",
     "locale": "en",
     "medium": "EMAIL",

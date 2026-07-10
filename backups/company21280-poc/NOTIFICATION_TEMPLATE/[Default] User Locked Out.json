@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] User Locked Out",
+    "inboxTemplate": null,
     "key": "cloud_user_locked_out",
     "locale": "en",
     "medium": "EMAIL",

@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Pending Manual Changes",
+    "inboxTemplate": null,
     "key": "pending_manual_changes",
     "locale": "en",
     "medium": "EMAIL",

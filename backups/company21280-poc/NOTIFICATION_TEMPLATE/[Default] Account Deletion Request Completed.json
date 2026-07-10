@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Account Deletion Request Completed",
+    "inboxTemplate": null,
     "key": "account_deletion_request_completed",
     "locale": "en",
     "medium": "EMAIL",

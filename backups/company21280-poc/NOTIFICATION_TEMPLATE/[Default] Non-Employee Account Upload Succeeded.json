@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Non-Employee Account Upload Succeeded",
+    "inboxTemplate": null,
     "key": "non_employee_bulk_import_passed_email_notification",
     "locale": "en",
     "medium": "EMAIL",

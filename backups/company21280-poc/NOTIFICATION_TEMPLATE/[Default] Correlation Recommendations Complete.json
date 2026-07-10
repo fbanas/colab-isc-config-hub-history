@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Correlation Recommendations Complete",
+    "inboxTemplate": null,
     "key": "account_correlation_recommendation",
     "locale": "en",
     "medium": "EMAIL",

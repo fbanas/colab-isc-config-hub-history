@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Campaign Template Pre-Generation Notification",
+    "inboxTemplate": null,
     "key": "campaign_template_pregen_notification",
     "locale": "en",
     "medium": "EMAIL",

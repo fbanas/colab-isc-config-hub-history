@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Source Collaboration Review Notification",
+    "inboxTemplate": null,
     "key": "source_config_collab_in_review",
     "locale": "en",
     "medium": "EMAIL",

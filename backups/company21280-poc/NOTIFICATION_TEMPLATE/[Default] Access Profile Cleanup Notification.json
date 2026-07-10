@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Access Profile Cleanup Notification",
+    "inboxTemplate": null,
     "key": "access_profile_cleanup_notification",
     "locale": "en",
     "medium": "EMAIL",

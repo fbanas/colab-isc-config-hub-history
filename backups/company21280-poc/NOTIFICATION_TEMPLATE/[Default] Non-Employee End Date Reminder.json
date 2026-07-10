@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Non-Employee End Date Reminder",
+    "inboxTemplate": null,
     "key": "non_employee_term_end_date_near",
     "locale": "en",
     "medium": "EMAIL",

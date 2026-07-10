@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Approval Request Escalated (Requester)",
+    "inboxTemplate": null,
     "key": "approval_request_escalation_requester",
     "locale": "en",
     "medium": "EMAIL",

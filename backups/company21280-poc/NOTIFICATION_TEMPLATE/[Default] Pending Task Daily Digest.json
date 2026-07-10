@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Pending Task Daily Digest",
+    "inboxTemplate": null,
     "key": "cloud_manual_work_item_summary",
     "locale": "en",
     "medium": "EMAIL",

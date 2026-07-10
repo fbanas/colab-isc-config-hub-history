@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Virtual Appliance Health",
+    "inboxTemplate": null,
     "key": "cloud_system_notification_vas",
     "locale": "en",
     "medium": "EMAIL",

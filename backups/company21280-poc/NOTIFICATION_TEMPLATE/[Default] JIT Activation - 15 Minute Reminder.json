@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] JIT Activation - 15 Minute Reminder",
+    "inboxTemplate": null,
     "key": "jit_activation_fifteen_min",
     "locale": "en",
     "medium": "EMAIL",

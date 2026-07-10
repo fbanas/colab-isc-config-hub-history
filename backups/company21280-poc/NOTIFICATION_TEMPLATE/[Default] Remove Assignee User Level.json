@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Remove Assignee User Level",
+    "inboxTemplate": null,
     "key": "source_config_collab_revoke_user_level",
     "locale": "en",
     "medium": "EMAIL",

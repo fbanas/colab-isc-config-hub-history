@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Account Correlation Test Complete",
+    "inboxTemplate": null,
     "key": "account_correlation_statistics_recommendation",
     "locale": "en",
     "medium": "EMAIL",

@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Non-Employee Account Review",
+    "inboxTemplate": null,
     "key": "non_employee_approval_required",
     "locale": "en",
     "medium": "EMAIL",

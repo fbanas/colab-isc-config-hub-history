@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Work Reassignment Updated",
+    "inboxTemplate": null,
     "key": "work_reassignment_updated",
     "locale": "en",
     "medium": "EMAIL",

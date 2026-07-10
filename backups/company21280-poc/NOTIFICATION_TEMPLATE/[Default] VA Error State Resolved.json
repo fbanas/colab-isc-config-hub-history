@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] VA Error State Resolved",
+    "inboxTemplate": null,
     "key": "va_error_state_resolved_notification",
     "locale": "en",
     "medium": "EMAIL",

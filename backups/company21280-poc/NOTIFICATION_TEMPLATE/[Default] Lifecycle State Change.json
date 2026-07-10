@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Lifecycle State Change",
+    "inboxTemplate": null,
     "key": "cloud_lifecycle_state_change",
     "locale": "en",
     "medium": "EMAIL",

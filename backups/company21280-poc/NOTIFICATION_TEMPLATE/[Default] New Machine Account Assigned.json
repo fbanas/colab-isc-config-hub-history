@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] New Machine Account Assigned",
+    "inboxTemplate": null,
     "key": "new_machine_account_assigned",
     "locale": "en",
     "medium": "EMAIL",

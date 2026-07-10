@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Task Reassignment",
+    "inboxTemplate": null,
     "key": "task_reassignment",
     "locale": "en",
     "medium": "EMAIL",

@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Source Collaboration Changes Required",
+    "inboxTemplate": null,
     "key": "source_config_collab_changes_required",
     "locale": "en",
     "medium": "EMAIL",

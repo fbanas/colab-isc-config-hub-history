@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Non-Employee Account Upload Failed",
+    "inboxTemplate": null,
     "key": "non_employee_bulk_import_failed_email_notification",
     "locale": "en",
     "medium": "EMAIL",

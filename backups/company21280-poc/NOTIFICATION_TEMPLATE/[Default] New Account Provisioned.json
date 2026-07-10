@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] New Account Provisioned",
+    "inboxTemplate": null,
     "key": "cloud_user_new_account_notification",
     "locale": "en",
     "medium": "EMAIL",

@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] VA Pinned Component Expiration",
+    "inboxTemplate": null,
     "key": "va_pinned_component_expiration_notification",
     "locale": "en",
     "medium": "EMAIL",

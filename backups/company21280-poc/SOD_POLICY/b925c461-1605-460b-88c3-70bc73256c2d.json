@@ -2,6 +2,7 @@
   "jwsHeader": null,
   "jwsSignature": null,
   "object": {
+    "allowedControls": [],
     "compensatingControls": "The overlapping access must be granted only for a strictly defined, time‑bound period and explicitly approved by an authorized GRC or security officer.\n\nAll actions taken under the combined role must be fully logged, including route changes, level changes, and separation‑related instructions, and subject to post‑incident review.\n\nA second authorized person (e.g., a second controller or operations supervisor) must independently verify and acknowledge any separation‑critical action taken by the individual with dual access.\n\nThe IAM system must flag such temporary role combinations for periodic attestation and immediate review after expiration.",
     "conflictingAccessCriteria": {
       "leftCriteria": {
@@ -36,6 +37,7 @@
     "description": "Flight Planning vs. ATC: Pilots manage in-flight navigation, while Air Traffic Controllers (ATC) manage separation, ensuring no single person controls both.",
     "externalPolicyReference": "https://www.faa.gov/air_traffic/publications/atpubs/aim_html/chap4_section_4.html",
     "id": "b925c461-1605-460b-88c3-70bc73256c2d",
+    "level": "HIGH",
     "modified": "2026-03-31T19:14:40Z",
     "modifierId": null,
     "name": "Flight Planning vs. ATC",
@@ -46,6 +48,7 @@
     },
     "policyQuery": "@access(id:b325319f087233529852bb721b83847c) AND @access(id:e29b0a4c5a82349faf19b3efe5fd828f)",
     "scheduled": false,
+    "secondaryOwnerRefs": [],
     "state": "ENFORCED",
     "tags": [
       "ATC",

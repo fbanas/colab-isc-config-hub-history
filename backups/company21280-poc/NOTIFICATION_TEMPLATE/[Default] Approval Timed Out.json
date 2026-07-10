@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Approval Timed Out",
+    "inboxTemplate": null,
     "key": "approval_request_timeout",
     "locale": "en",
     "medium": "EMAIL",

@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Approval Reminder",
+    "inboxTemplate": null,
     "key": "approval_request_reminder",
     "locale": "en",
     "medium": "EMAIL",

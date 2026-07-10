@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Access Request Submitted Email For Requester After Validation",
+    "inboxTemplate": null,
     "key": "access_request_submitted_email_for_requester_after_validation",
     "locale": "en",
     "medium": "EMAIL",

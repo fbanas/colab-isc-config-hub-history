@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Just-In-Time Activation Failed",
+    "inboxTemplate": null,
     "key": "jit_activation_failed",
     "locale": "en",
     "medium": "EMAIL",

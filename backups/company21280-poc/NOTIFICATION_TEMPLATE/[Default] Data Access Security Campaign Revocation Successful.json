@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Data Access Security Campaign Revocation Successful",
+    "inboxTemplate": null,
     "key": "das_campaign_revocation_success",
     "locale": "en",
     "medium": "EMAIL",

@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Forgot User Name",
+    "inboxTemplate": null,
     "key": "cloud_user_forgot_user_name",
     "locale": "en",
     "medium": "EMAIL",

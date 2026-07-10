@@ -2,6 +2,7 @@
   "jwsHeader": null,
   "jwsSignature": null,
   "object": {
+    "allowedControls": [],
     "compensatingControls": null,
     "conflictingAccessCriteria": null,
     "correctionAdvice": null,
@@ -15,6 +16,7 @@
     "description": null,
     "externalPolicyReference": null,
     "id": "4516ae95-0310-4f97-a87b-0ea69b18fed7",
+    "level": null,
     "modified": "2026-03-26T13:36:25Z",
     "modifierId": null,
     "name": "No Department Policy",
@@ -25,6 +27,7 @@
     },
     "policyQuery": "attributes.department.exact:/-/ OR NOT _exists_:attributes.department",
     "scheduled": false,
+    "secondaryOwnerRefs": [],
     "state": "ENFORCED",
     "tags": [],
     "type": "GENERAL",

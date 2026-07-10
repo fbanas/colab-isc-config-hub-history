@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Just-In-Time Activation Ready",
+    "inboxTemplate": null,
     "key": "jit_activation_ready",
     "locale": "en",
     "medium": "EMAIL",

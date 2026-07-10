@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Create Account Policy Recommendations Complete",
+    "inboxTemplate": null,
     "key": "create_account_policy_recommendation",
     "locale": "en",
     "medium": "EMAIL",

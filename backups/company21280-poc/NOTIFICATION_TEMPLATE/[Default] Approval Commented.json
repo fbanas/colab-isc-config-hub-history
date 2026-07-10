@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Approval Commented",
+    "inboxTemplate": null,
     "key": "approval_commented_notification",
     "locale": "en",
     "medium": "EMAIL",

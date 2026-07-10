@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Source Collaboration Comment Notification",
+    "inboxTemplate": null,
     "key": "source_config_collaboration_comments",
     "locale": "en",
     "medium": "EMAIL",

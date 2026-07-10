@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Access Revoke Request Reviewer",
+    "inboxTemplate": null,
     "key": "access_revoke_request_reviewer",
     "locale": "en",
     "medium": "EMAIL",

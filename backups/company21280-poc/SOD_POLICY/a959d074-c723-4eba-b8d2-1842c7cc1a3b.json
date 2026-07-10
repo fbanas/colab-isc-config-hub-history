@@ -2,6 +2,7 @@
   "jwsHeader": null,
   "jwsSignature": null,
   "object": {
+    "allowedControls": [],
     "compensatingControls": "",
     "conflictingAccessCriteria": {
       "leftCriteria": {
@@ -36,6 +37,7 @@
     "description": "This policy separates key financial functions to prevent fraud, errors, and other financial irregularities, reducing the risk of conflicts of interest and ensuring the integrity of financial information",
     "externalPolicyReference": "",
     "id": "a959d074-c723-4eba-b8d2-1842c7cc1a3b",
+    "level": "HIGH",
     "modified": "2026-05-06T11:13:02Z",
     "modifierId": "90eb8204ac594f48ac598a55e0e73613",
     "name": "Money-In Money-Out",
@@ -46,6 +48,7 @@
     },
     "policyQuery": "@access(id:332e2d25fad536f496dbd1b74f41577f) AND @access(id:5ec555e2755e3ead93cda5aec5ab8b08)",
     "scheduled": false,
+    "secondaryOwnerRefs": [],
     "state": "ENFORCED",
     "tags": [
       "AP_",

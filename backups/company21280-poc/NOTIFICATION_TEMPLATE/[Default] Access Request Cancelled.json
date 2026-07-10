@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Access Request Cancelled",
+    "inboxTemplate": null,
     "key": "pending_access_request_cancelled",
     "locale": "en",
     "medium": "EMAIL",

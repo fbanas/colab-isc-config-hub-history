@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Access Revoke Request Decision Email For Requested-For Identity",
+    "inboxTemplate": null,
     "key": "access_revoke_request_decision_email_for_requested-for_identity",
     "locale": "en",
     "medium": "EMAIL",

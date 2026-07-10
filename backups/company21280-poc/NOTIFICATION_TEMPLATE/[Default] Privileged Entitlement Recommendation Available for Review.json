@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Privileged Entitlement Recommendation Available for Review",
+    "inboxTemplate": null,
     "key": "privilege_recommendation_review_notification",
     "locale": "en",
     "medium": "EMAIL",

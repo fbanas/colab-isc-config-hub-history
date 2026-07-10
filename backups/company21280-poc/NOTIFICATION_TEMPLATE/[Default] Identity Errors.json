@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Identity Errors",
+    "inboxTemplate": null,
     "key": "cloud_system_notification_identities",
     "locale": "en",
     "medium": "EMAIL",

@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Non-Employee Account Request Result",
+    "inboxTemplate": null,
     "key": "non_employee_request_action_completed",
     "locale": "en",
     "medium": "EMAIL",

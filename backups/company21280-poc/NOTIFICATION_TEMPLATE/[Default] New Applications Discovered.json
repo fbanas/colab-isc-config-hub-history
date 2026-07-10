@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] New Applications Discovered",
+    "inboxTemplate": null,
     "key": "new_applications_discovered_notification",
     "locale": "en",
     "medium": "EMAIL",

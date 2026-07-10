@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Access Sunset Date Reminder",
+    "inboxTemplate": null,
     "key": "access_sunset_date_reminder",
     "locale": "en",
     "medium": "EMAIL",

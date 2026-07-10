@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Source Collaboration Access Request",
+    "inboxTemplate": null,
     "key": "source_config_collab_pending_access",
     "locale": "en",
     "medium": "EMAIL",

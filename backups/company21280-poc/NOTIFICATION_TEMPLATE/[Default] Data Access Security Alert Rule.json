@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Data Access Security Alert Rule",
+    "inboxTemplate": null,
     "key": "das_alert_rule",
     "locale": "en",
     "medium": "EMAIL",

@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Just-In-Time Deactivated",
+    "inboxTemplate": null,
     "key": "jit_deactivation",
     "locale": "en",
     "medium": "EMAIL",

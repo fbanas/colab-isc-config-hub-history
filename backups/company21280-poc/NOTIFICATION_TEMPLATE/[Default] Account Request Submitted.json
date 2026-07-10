@@ -9,6 +9,7 @@
     "from": "$__global.emailFromAddress",
     "header": null,
     "id": "[Default] Account Request Submitted",
+    "inboxTemplate": null,
     "key": "account_request_submitted",
     "locale": "en",
     "medium": "EMAIL",
