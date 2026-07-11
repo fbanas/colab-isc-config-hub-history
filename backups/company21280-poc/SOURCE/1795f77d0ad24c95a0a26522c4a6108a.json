@@ -1,0 +1,652 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accountCorrelationRule": null,
+    "beforeProvisioningRule": null,
+    "connectorAttributes": {
+      "SQL": "SELECT u.\"id\",\n  u.\"displayName\",\n  u.\"userPrincipalName\",\n  u.\"passwordProfile\",\n  u.\"accountEnabled\",\n  u.\"givenName\",\n  u.\"surname\",\n  u.\"jobTitle\",\n  u.\"department\",\n  u.\"usageLocation\",\n  u.\"streetAddress\",\n  u.\"state\",\n  u.\"country\",\n  u.\"officeLocation\",\n  u.\"city\",\n  u.\"postalCode\",\n  u.\"businessPhones\",\n  u.\"mobilePhone\",\n  a.\"group_id\" AS \"contexts\"\nFROM public.\"users\" AS u\nLEFT JOIN public.\"assignments\" AS a\n  ON u.\"id\" = a.\"user_id\"",
+      "addEntitlementMap": {
+        "contexts.addEntitlementSQL": "INSERT INTO assignments (\"user_id\", \"group_id\") VALUES (CAST($plan.nativeIdentity$ AS uuid), CAST($plan.contexts$ AS uuid));"
+      },
+      "addEntitlementMapForCreate": {
+        "contexts.addEntitlementSQL": "INSERT INTO assignments (\"user_id\", \"group_id\") VALUES (CAST($plan.nativeIdentity$ AS uuid), CAST($plan.contexts$ AS uuid));",
+        "groups.addEntitlementSQL": "INSERT INTO assignments (\"user_id\", \"group_id\") VALUES (CAST($plan.nativeIdentity$ AS uuid), CAST($plan.groups$ AS uuid));"
+      },
+      "checkDeletedDisabled": false,
+      "cloudCacheUpdate": 1783707936769,
+      "cloudDisplayName": "Context DB",
+      "connectionType": "direct",
+      "connectorName": "JDBC SaaS",
+      "context.SQL": "SELECT c.\"id\",\nc.\"name\",\nc.\"description\"\nFROM public.\"groups\" AS c",
+      "context.databaseName": "Other",
+      "context.driverClass": "org.postgresql.Driver",
+      "context.getObjectSQL": "SELECT c.\"id\",\nc.\"name\",\nc.\"description\"\nFROM public.\"groups\" AS c\nWHERE c.\"id\" = CAST('$(context)' as uuid);",
+      "context.isPermissionEnabled": false,
+      "context.url": "jdbc:postgresql://aws-1-eu-central-1.pooler.supabase.com:6543/postgres",
+      "context.useExecuteQuery": false,
+      "context.useStoredProcedureGetObject": false,
+      "context.useStoredProcedureSqlStmt": false,
+      "context.user": "postgres.tkllhxnuhkouymrcvvpj",
+      "createAccount": true,
+      "createSQL": "INSERT INTO users (\n  \"displayName\",\n  \"userPrincipalName\",\n  \"accountEnabled\",\n  \"givenName\",\n  \"surname\"\n)\nVALUES (\n  $plan.displayName$,\n  $plan.userPrincipalName$,\n  $plan.accountEnabled$,\n  $plan.givenName$,\n  $plan.surname$\n);",
+      "databaseName": "Other",
+      "deleteAccount": false,
+      "deleteThresholdPercentage": 100,
+      "deltaAggregationEnabled": false,
+      "disableAccount": true,
+      "disableSQL": "UPDATE users \nSET \"accountEnabled\" = false \nWHERE \"id\" = CAST($plan.nativeIdentity$ AS uuid);",
+      "driverClass": "org.postgresql.Driver",
+      "enableAccount": true,
+      "enableProvisioningFeature": true,
+      "enableSQL": "UPDATE users\nSET \"accountEnabled\" = true \nWHERE \"id\" = CAST($plan.nativeIdentity$ AS uuid);",
+      "encrypted": "password,oauthClientSecret,privateKey,passphrase",
+      "entitlementDeltaAggregationEnabled": false,
+      "getObjectSQL": "SELECT u.\"id\",\n  u.\"displayName\",\n  u.\"userPrincipalName\",\n  u.\"passwordProfile\",\n  u.\"accountEnabled\",\n  u.\"givenName\",\n  u.\"surname\",\n  u.\"jobTitle\",\n  u.\"department\",\n  u.\"usageLocation\",\n  u.\"streetAddress\",\n  u.\"state\",\n  u.\"country\",\n  u.\"officeLocation\",\n  u.\"city\",\n  u.\"postalCode\",\n  u.\"businessPhones\",\n  u.\"mobilePhone\",\n  a.\"group_id\" AS \"contexts\"\nFROM public.\"users\" AS u\nLEFT JOIN public.\"assignments\" AS a\n  ON u.\"id\" = a.\"user_id\"\nWHERE u.\"id\" = CAST('$(identity)' as uuid);",
+      "group.SQL": "SELECT g.\"id\",\ng.\"name\",\ng.\"description\"\nFROM public.\"groups\" AS g",
+      "group.databaseName": "Other",
+      "group.driverClass": "org.postgresql.Driver",
+      "group.getObjectSQL": "SELECT g.\"id\",\ng.\"name\",\ng.\"description\"\nFROM public.\"groups\" AS g\nWHERE g.\"id\" = CAST('$(group)' as uuid);",
+      "group.isPermissionEnabled": false,
+      "group.url": "jdbc:postgresql://aws-1-eu-central-1.pooler.supabase.com:6543/postgres",
+      "group.useExecuteQuery": false,
+      "group.useStoredProcedureGetObject": false,
+      "group.useStoredProcedureSqlStmt": false,
+      "group.user": "postgres.tkllhxnuhkouymrcvvpj",
+      "hasFullAggregationCompleted": true,
+      "healthCheckTimeout": 30,
+      "healthy": true,
+      "idnProxyType": "sp-connect",
+      "isAdvance": "false",
+      "isPermissionEnabled": false,
+      "jdbcExceptionBucketing": true,
+      "mergeRows": "false",
+      "nativeIDSQL": "SELECT CAST(id AS text)\nFROM users\nWHERE \"userPrincipalName\" =  $plan.userPrincipalName$",
+      "removeEntitlementMap": {
+        "contexts.removeEntitlementSQL": "DELETE FROM assignments  WHERE \"user_id\" = CAST($plan.nativeIdentity$ AS uuid)    AND \"group_id\" = CAST($plan.contexts$ AS uuid);"
+      },
+      "schemaColumnMapping": {
+        "accountEnabled": "accountEnabled",
+        "businessPhones": "businessPhones",
+        "city": "city",
+        "country": "country",
+        "department": "department",
+        "displayName": "displayName",
+        "givenName": "givenName",
+        "jobTitle": "jobTitle",
+        "mobilePhone": "mobilePhone",
+        "officeLocation": "officeLocation",
+        "postalCode": "postalCode",
+        "state": "state",
+        "streetAddress": "streetAddress",
+        "surname": "surname",
+        "usageLocation": "usageLocation",
+        "userPrincipalName": "userPrincipalName"
+      },
+      "since": "2026-07-10T14:01:52.631Z",
+      "sourceConnected": true,
+      "spConnDebugLoggingEnabled": false,
+      "spConnectorInstanceId": "1a8fff46-c4b0-440a-b520-e1a680e51b90",
+      "spConnectorSpecId": "7f1a7d67-3c4c-4633-9423-efd6cf2fbfd2",
+      "spConnectorSupportsCustomSchemas": true,
+      "status": "SOURCE_STATE_HEALTHY",
+      "supportsDeltaAgg": "true",
+      "templateApplication": "JDBC SaaS",
+      "testConnSQL": "SELECT 1;",
+      "undefined.SQL": "asd",
+      "undefined.databaseName": "Other",
+      "undefined.deltaAggregationEnabled": false,
+      "undefined.driverClass": "asd",
+      "undefined.isPermissionEnabled": false,
+      "undefined.url": "asd",
+      "undefined.useExecuteQuery": false,
+      "undefined.useQuery": false,
+      "undefined.useStoredProcedureGetObject": false,
+      "undefined.useStoredProcedureSqlStmt": false,
+      "undefined.useStoredProcedureTestConn": false,
+      "undefined.user": "asd",
+      "unlockAccount": false,
+      "updateAccount": true,
+      "updateSQL": "update public.\"users\"",
+      "url": "jdbc:postgresql://aws-1-eu-central-1.pooler.supabase.com:6543/postgres",
+      "useExecuteQuery": false,
+      "useQuery": true,
+      "useStoredProcedureGetObject": false,
+      "useStoredProcedureSqlStmt": false,
+      "useStoredProcedureTestConn": false,
+      "user": "postgres.tkllhxnuhkouymrcvvpj"
+    },
+    "connectorClass": "",
+    "connectorScriptName": "jdbc-saas",
+    "correlationConfigDetails": {
+      "attributeAssignments": [
+        {
+          "complex": false,
+          "filterString": null,
+          "ignoreCase": false,
+          "matchMode": null,
+          "operation": "EQ",
+          "property": "email",
+          "sequence": 1,
+          "value": "userPrincipalName"
+        }
+      ],
+      "id": "074c3148d967430197d060d2219d42dc",
+      "name": "1795f77d0ad24c95a0a26522c4a6108a Account Correlation Config"
+    },
+    "crossTenantConnectorAttributes": {},
+    "deleteThreshold": 100,
+    "description": "With this database, you have all the major airline hubs, such as ZRH for Swiss, VIE for Austrian, BRU for Brussels Airlines, and the many decentralized bases of Eurowings as Entitlements.",
+    "features": [
+      "DELETE",
+      "DISCOVER_SCHEMA",
+      "ENABLE",
+      "PASSWORD",
+      "PROVISIONING",
+      "UNLOCK"
+    ],
+    "id": "1795f77d0ad24c95a0a26522c4a6108a",
+    "managementWorkgroup": null,
+    "managerCorrelationMapping": null,
+    "managerCorrelationRule": null,
+    "name": "Context DB",
+    "owner": {
+      "id": "0660e5c056c34189a3d6fd11e39ec8f2",
+      "name": "Aaron.Nichols",
+      "type": "IDENTITY"
+    },
+    "passwordPolicies": null,
+    "provisionAsCsv": false,
+    "provisioningPolicies": [
+      {
+        "description": null,
+        "fields": [
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "accountEnabled",
+            "transform": {
+              "attributes": {
+                "value": "true"
+              },
+              "type": "static"
+            },
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "businessPhones",
+            "transform": null,
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "city",
+            "transform": null,
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "contexts",
+            "transform": null,
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "country",
+            "transform": null,
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "department",
+            "transform": {
+              "attributes": {
+                "name": "department"
+              },
+              "type": "identityAttribute"
+            },
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "displayName",
+            "transform": {
+              "attributes": {
+                "name": "displayName"
+              },
+              "type": "identityAttribute"
+            },
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "givenName",
+            "transform": {
+              "attributes": {
+                "name": "firstname"
+              },
+              "type": "identityAttribute"
+            },
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "jobTitle",
+            "transform": null,
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "mobilePhone",
+            "transform": {
+              "attributes": {
+                "name": "workPhone"
+              },
+              "type": "identityAttribute"
+            },
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "state",
+            "transform": null,
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "streetAddress",
+            "transform": null,
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "surname",
+            "transform": {
+              "attributes": {
+                "name": "lastname"
+              },
+              "type": "identityAttribute"
+            },
+            "type": "string"
+          },
+          {
+            "attributes": {},
+            "isMultiValued": false,
+            "isRequired": false,
+            "name": "userPrincipalName",
+            "transform": {
+              "attributes": {
+                "name": "email"
+              },
+              "type": "identityAttribute"
+            },
+            "type": "string"
+          }
+        ],
+        "name": "Account",
+        "usageType": "CREATE"
+      }
+    ],
+    "schemas": [
+      {
+        "attributes": [
+          {
+            "description": "contexts",
+            "isEntitlement": true,
+            "isGroup": true,
+            "isManaged": false,
+            "isMulti": true,
+            "name": "contexts",
+            "nativeName": null,
+            "schema": {
+              "id": "4a0813fb3c704b71bf6dc22367e72c27",
+              "name": "context",
+              "type": "CONNECTOR_SCHEMA"
+            },
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "accountEnabled",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "businessPhones",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "city",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "country",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "department",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "displayName",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "givenName",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "id",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "jobTitle",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "mobilePhone",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "officeLocation",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "passwordProfile",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "postalCode",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "state",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "streetAddress",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "surname",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "usageLocation",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": null,
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "userPrincipalName",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {},
+        "created": "2026-07-10T13:35:09.002Z",
+        "displayAttribute": "userPrincipalName",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "ab025b1c98194a529af742f9834f7c6d",
+        "identityAttribute": "id",
+        "includePermissions": false,
+        "modified": "2026-07-10T14:24:40.904Z",
+        "name": "account",
+        "nativeObjectType": "account"
+      },
+      {
+        "attributes": [
+          {
+            "description": "description",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "description",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "id",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "id",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "name",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {
+          "description": "context"
+        },
+        "created": "2026-07-10T14:02:20.201Z",
+        "displayAttribute": "name",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "4a0813fb3c704b71bf6dc22367e72c27",
+        "identityAttribute": "id",
+        "includePermissions": false,
+        "modified": "2026-07-10T14:03:10.465Z",
+        "name": "context",
+        "nativeObjectType": "context"
+      },
+      {
+        "attributes": [
+          {
+            "description": "description",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "description",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "id",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "id",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "name",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {},
+        "created": "2026-07-10T13:35:09.002Z",
+        "displayAttribute": "name",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "b5a42e07e9264bee8bbcf8c453ec47da",
+        "identityAttribute": "id",
+        "includePermissions": false,
+        "modified": "2026-07-10T13:51:29.903Z",
+        "name": "group",
+        "nativeObjectType": "group"
+      }
+    ],
+    "type": "7f1a7d67-3c4c-4633-9423-efd6cf2fbfd2"
+  },
+  "self": {
+    "id": "1795f77d0ad24c95a0a26522c4a6108a",
+    "name": "Context DB",
+    "type": "SOURCE"
+  },
+  "version": 1
+}

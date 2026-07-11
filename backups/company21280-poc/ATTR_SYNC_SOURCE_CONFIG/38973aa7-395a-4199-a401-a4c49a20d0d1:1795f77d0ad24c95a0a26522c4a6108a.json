@@ -1,0 +1,55 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "attributes": [
+      {
+        "displayName": "Department",
+        "enabled": false,
+        "name": "department",
+        "target": "department"
+      },
+      {
+        "displayName": "Work Phone",
+        "enabled": true,
+        "name": "workPhone",
+        "target": "mobilePhone"
+      },
+      {
+        "displayName": "att_display_name",
+        "enabled": false,
+        "name": "displayName",
+        "target": "displayName"
+      },
+      {
+        "displayName": "att_email",
+        "enabled": false,
+        "name": "email",
+        "target": "userPrincipalName"
+      },
+      {
+        "displayName": "att_first_name",
+        "enabled": false,
+        "name": "firstname",
+        "target": "givenName"
+      },
+      {
+        "displayName": "att_last_name",
+        "enabled": false,
+        "name": "lastname",
+        "target": "surname"
+      }
+    ],
+    "source": {
+      "id": "1795f77d0ad24c95a0a26522c4a6108a",
+      "name": "Context DB",
+      "type": "SOURCE"
+    }
+  },
+  "self": {
+    "id": "38973aa7-395a-4199-a401-a4c49a20d0d1:1795f77d0ad24c95a0a26522c4a6108a",
+    "name": "Context DB",
+    "type": "ATTR_SYNC_SOURCE_CONFIG"
+  },
+  "version": 1
+}
