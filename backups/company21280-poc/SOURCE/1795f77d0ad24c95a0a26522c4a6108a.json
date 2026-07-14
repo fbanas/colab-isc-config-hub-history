@@ -14,7 +14,7 @@
         "groups.addEntitlementSQL": "INSERT INTO assignments (\"user_id\", \"group_id\") VALUES (CAST($plan.nativeIdentity$ AS uuid), CAST($plan.groups$ AS uuid));"
       },
       "checkDeletedDisabled": false,
-      "cloudCacheUpdate": 1783707936769,
+      "cloudCacheUpdate": 1783966956398,
       "cloudDisplayName": "Context DB",
       "connectionType": "direct",
       "connectorName": "JDBC SaaS",
@@ -332,6 +332,17 @@
             "type": "STRING"
           },
           {
+            "description": "jhgv",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": true,
+            "name": "city",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
             "description": null,
             "isEntitlement": false,
             "isGroup": false,
@@ -349,17 +360,6 @@
             "isManaged": false,
             "isMulti": false,
             "name": "businessPhones",
-            "nativeName": null,
-            "schema": null,
-            "type": "STRING"
-          },
-          {
-            "description": null,
-            "isEntitlement": false,
-            "isGroup": false,
-            "isManaged": false,
-            "isMulti": false,
-            "name": "city",
             "nativeName": null,
             "schema": null,
             "type": "STRING"
@@ -538,7 +538,7 @@
         "id": "ab025b1c98194a529af742f9834f7c6d",
         "identityAttribute": "id",
         "includePermissions": false,
-        "modified": "2026-07-10T14:24:40.904Z",
+        "modified": "2026-07-13T12:33:31.907Z",
         "name": "account",
         "nativeObjectType": "account"
       },

@@ -25,17 +25,6 @@
           }
         },
         {
-          "identityAttributeName": "displayName",
-          "transformDefinition": {
-            "attributes": {
-              "attributeName": "name",
-              "sourceId": "4b33fa97af754a968f230613f5cc84e0",
-              "sourceName": "ISC Users"
-            },
-            "type": "accountAttribute"
-          }
-        },
-        {
           "identityAttributeName": "email",
           "transformDefinition": {
             "attributes": {
@@ -89,17 +78,6 @@
             },
             "type": "accountAttribute"
           }
-        },
-        {
-          "identityAttributeName": "uid",
-          "transformDefinition": {
-            "attributes": {
-              "attributeName": "name",
-              "sourceId": "4b33fa97af754a968f230613f5cc84e0",
-              "sourceName": "ISC Users"
-            },
-            "type": "accountAttribute"
-          }
         }
       ],
       "enabled": true
@@ -107,7 +85,7 @@
     "identityCount": 0,
     "identityExceptionReportReference": null,
     "identityRefreshRequired": false,
-    "modified": "2026-03-11T11:26:07.356Z",
+    "modified": "2026-07-13T11:47:28.162Z",
     "name": "ISC Users",
     "owner": {
       "id": "e4b5bec795a54599a9e39dcaac4467bf",
