@@ -1,0 +1,98 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessModelMetadata": {
+      "attributes": []
+    },
+    "accessProfiles": [],
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": null,
+      "denialCommentsRequired": null,
+      "dimensionSchema": {
+        "dimensionAttributes": [
+          {
+            "derived": true,
+            "displayName": "Department",
+            "name": "department"
+          }
+        ]
+      },
+      "formDefinitionId": null,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-07-15T06:56:18.02152Z",
+    "description": null,
+    "dimensionRefs": null,
+    "dimensional": true,
+    "dimensions": [
+      {
+        "accessProfiles": [],
+        "created": "2026-07-15T06:58:52.634317Z",
+        "description": null,
+        "entitlements": [],
+        "id": "f9398415d1e54e2c96097d3e6c04d3cb",
+        "membership": null,
+        "modified": "2026-07-15T06:58:52.634317Z",
+        "name": "BU LHG",
+        "owner": null,
+        "parentId": "73ffe20562e8445c90ed18652aa5fbb4"
+      }
+    ],
+    "enabled": false,
+    "entitlements": [],
+    "id": "73ffe20562e8445c90ed18652aa5fbb4",
+    "legacyMembershipInfo": null,
+    "membership": {
+      "criteria": {
+        "children": [
+          {
+            "children": null,
+            "key": {
+              "property": "attribute.contexts",
+              "sourceId": "1795f77d0ad24c95a0a26522c4a6108a",
+              "type": "ENTITLEMENT"
+            },
+            "operation": "EQUALS",
+            "stringValue": null,
+            "values": [
+              "0a6a6e09-a69f-4a62-a96c-ba7f6408547c",
+              "5c3ab01f-6e23-4945-a335-0584882dcff2",
+              "8ebf9f27-380c-4021-9509-6b6031032085"
+            ]
+          }
+        ],
+        "key": null,
+        "operation": "OR",
+        "stringValue": null,
+        "values": null
+      },
+      "identities": null,
+      "type": "STANDARD"
+    },
+    "modified": "2026-07-15T06:58:52.644457Z",
+    "name": "Dynamic Context Role",
+    "owner": {
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [],
+    "segments": []
+  },
+  "self": {
+    "id": "73ffe20562e8445c90ed18652aa5fbb4",
+    "name": "Dynamic Context Role",
+    "type": "ROLE"
+  },
+  "version": 1
+}

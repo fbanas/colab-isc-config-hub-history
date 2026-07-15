@@ -5,7 +5,7 @@
     "accountCorrelationRule": null,
     "beforeProvisioningRule": null,
     "connectorAttributes": {
-      "SQL": "SELECT u.\"id\",\n  u.\"displayName\",\n  u.\"userPrincipalName\",\n  u.\"passwordProfile\",\n  u.\"accountEnabled\",\n  u.\"givenName\",\n  u.\"surname\",\n  u.\"jobTitle\",\n  u.\"department\",\n  u.\"usageLocation\",\n  u.\"streetAddress\",\n  u.\"state\",\n  u.\"country\",\n  u.\"officeLocation\",\n  u.\"city\",\n  u.\"postalCode\",\n  u.\"businessPhones\",\n  u.\"mobilePhone\",\n  a.\"group_id\" AS \"contexts\"\nFROM public.\"users\" AS u\nLEFT JOIN public.\"assignments\" AS a\n  ON u.\"id\" = a.\"user_id\"",
+      "SQL": "SELECT u.\"id\",\n  u.\"displayName\",\n  u.\"userPrincipalName\",\n  u.\"passwordProfile\",\n  u.\"accountEnabled\",\n  u.\"givenName\",\n  u.\"surname\",\n  u.\"jobTitle\",\n  u.\"department\",\n  u.\"usageLocation\",\n  u.\"streetAddress\",\n  u.\"state\",\n  u.\"country\",\n  u.\"officeLocation\",\n  u.\"city\",\n  u.\"postalCode\",\n  u.\"businessPhones\",\n  u.\"mobilePhone\",\n  a.\"group_id\" AS \"contexts\"\nFROM public.\"users\" AS u\nLEFT JOIN public.\"assignments\" AS a\n  ON u.\"id\" = a.\"user_id\"\nORDER BY u.id",
       "addEntitlementMap": {
         "contexts.addEntitlementSQL": "INSERT INTO assignments (\"user_id\", \"group_id\") VALUES (CAST($plan.nativeIdentity$ AS uuid), CAST($plan.contexts$ AS uuid));"
       },
@@ -14,7 +14,7 @@
         "groups.addEntitlementSQL": "INSERT INTO assignments (\"user_id\", \"group_id\") VALUES (CAST($plan.nativeIdentity$ AS uuid), CAST($plan.groups$ AS uuid));"
       },
       "checkDeletedDisabled": false,
-      "cloudCacheUpdate": 1783966956398,
+      "cloudCacheUpdate": 1784096538959,
       "cloudDisplayName": "Context DB",
       "connectionType": "direct",
       "connectorName": "JDBC SaaS",
@@ -42,7 +42,7 @@
       "enableSQL": "UPDATE users\nSET \"accountEnabled\" = true \nWHERE \"id\" = CAST($plan.nativeIdentity$ AS uuid);",
       "encrypted": "password,oauthClientSecret,privateKey,passphrase",
       "entitlementDeltaAggregationEnabled": false,
-      "getObjectSQL": "SELECT u.\"id\",\n  u.\"displayName\",\n  u.\"userPrincipalName\",\n  u.\"passwordProfile\",\n  u.\"accountEnabled\",\n  u.\"givenName\",\n  u.\"surname\",\n  u.\"jobTitle\",\n  u.\"department\",\n  u.\"usageLocation\",\n  u.\"streetAddress\",\n  u.\"state\",\n  u.\"country\",\n  u.\"officeLocation\",\n  u.\"city\",\n  u.\"postalCode\",\n  u.\"businessPhones\",\n  u.\"mobilePhone\",\n  a.\"group_id\" AS \"contexts\"\nFROM public.\"users\" AS u\nLEFT JOIN public.\"assignments\" AS a\n  ON u.\"id\" = a.\"user_id\"\nWHERE u.\"id\" = CAST('$(identity)' as uuid);",
+      "getObjectSQL": "SELECT u.\"id\",\n  u.\"displayName\",\n  u.\"userPrincipalName\",\n  u.\"passwordProfile\",\n  u.\"accountEnabled\",\n  u.\"givenName\",\n  u.\"surname\",\n  u.\"jobTitle\",\n  u.\"department\",\n  u.\"usageLocation\",\n  u.\"streetAddress\",\n  u.\"state\",\n  u.\"country\",\n  u.\"officeLocation\",\n  u.\"city\",\n  u.\"postalCode\",\n  u.\"businessPhones\",\n  u.\"mobilePhone\",\n  \n  -- Hier werden alle group_ids dieses Users zu einem einzigen kommagetrennten String zusammengefasst:\n  (\n    SELECT STRING_AGG(a.\"group_id\"::text, ',') \n    FROM public.\"assignments\" AS a \n    WHERE a.\"user_id\" = u.\"id\"\n  ) AS \"contexts\"\n\nFROM public.\"users\" AS u\nWHERE u.\"id\" = CAST('$(identity)' as uuid);",
       "group.SQL": "SELECT g.\"id\",\ng.\"name\",\ng.\"description\"\nFROM public.\"groups\" AS g",
       "group.databaseName": "Other",
       "group.driverClass": "org.postgresql.Driver",
@@ -538,7 +538,7 @@
         "id": "ab025b1c98194a529af742f9834f7c6d",
         "identityAttribute": "id",
         "includePermissions": false,
-        "modified": "2026-07-13T12:33:31.907Z",
+        "modified": "2026-07-15T06:02:17.071Z",
         "name": "account",
         "nativeObjectType": "account"
       },
@@ -588,7 +588,7 @@
         "id": "4a0813fb3c704b71bf6dc22367e72c27",
         "identityAttribute": "id",
         "includePermissions": false,
-        "modified": "2026-07-10T14:03:10.465Z",
+        "modified": "2026-07-15T05:49:46.008Z",
         "name": "context",
         "nativeObjectType": "context"
       },

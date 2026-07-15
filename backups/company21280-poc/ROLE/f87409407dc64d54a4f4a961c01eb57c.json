@@ -1,0 +1,82 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "accessModelMetadata": {
+      "attributes": []
+    },
+    "accessProfiles": [],
+    "accessRequestConfig": {
+      "approvalSchemes": [],
+      "commentsRequired": null,
+      "denialCommentsRequired": null,
+      "formDefinitionId": null,
+      "maxPermittedAccessDuration": null,
+      "reauthorizationRequired": false,
+      "requireEndDate": false
+    },
+    "additionalOwners": [],
+    "created": "2026-07-15T07:15:03.55245Z",
+    "description": null,
+    "dimensionRefs": null,
+    "dimensional": false,
+    "dimensions": [],
+    "enabled": true,
+    "entitlements": [
+      {
+        "id": "8218c58e-4d3e-3280-88ef-f3ee3a616414",
+        "name": "Cloud Gov User",
+        "sourceId": "a1a85705-e70a-42bc-ace4-e4d9a55debd9",
+        "sourceName": "IdentityNow",
+        "type": "ENTITLEMENT"
+      }
+    ],
+    "id": "f87409407dc64d54a4f4a961c01eb57c",
+    "legacyMembershipInfo": null,
+    "membership": {
+      "criteria": {
+        "children": [
+          {
+            "children": null,
+            "key": {
+              "property": "attribute.contexts",
+              "sourceId": "1795f77d0ad24c95a0a26522c4a6108a",
+              "type": "ENTITLEMENT"
+            },
+            "operation": "EQUALS",
+            "stringValue": null,
+            "values": [
+              "0a6a6e09-a69f-4a62-a96c-ba7f6408547c"
+            ]
+          }
+        ],
+        "key": null,
+        "operation": "OR",
+        "stringValue": null,
+        "values": null
+      },
+      "identities": null,
+      "type": "STANDARD"
+    },
+    "modified": "2026-07-15T07:19:13.111112Z",
+    "name": "Context Test Role",
+    "owner": {
+      "id": "abcdb944aa4747b4acea3a2e2d91e6fc",
+      "name": "sdaum",
+      "type": "IDENTITY"
+    },
+    "privilegeLevel": null,
+    "requestable": false,
+    "revocationRequestConfig": {
+      "approvalSchemes": []
+    },
+    "segmentRefs": [],
+    "segments": []
+  },
+  "self": {
+    "id": "f87409407dc64d54a4f4a961c01eb57c",
+    "name": "Context Test Role",
+    "type": "ROLE"
+  },
+  "version": 1
+}
