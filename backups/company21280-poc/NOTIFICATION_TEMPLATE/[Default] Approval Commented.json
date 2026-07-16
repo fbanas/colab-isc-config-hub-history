@@ -5,6 +5,7 @@
     "body": "<p>Dear ${__recipient.name},</p> <p>An approval request for $approvalName that was submitted #if($requestee.name && $requestee.name != '' && $requestee.identityID  == $__recipient.id) on your behalf by $requester.name #elseif($requestee.name && $requestee.name != '') by $requestee.name #elseif($requester.identityID == $__recipient.id) by you #else by $requester.name #end has been commented on.</p>  <p>#if($requestee.identityID == $__recipient.id || $requester.identityID == $__recipient.id) To take action on or view the status of your approval requests, please go to: $__global.productUrl/ui/d/$requesterPath. #else To review approval requests that are assigned to you, please go to: $__global.productUrl/ui/d/$approverPath. #end</p><br/>Thank you,<br/> The ${__global.productName} Team<br/>",
     "created": null,
     "description": "Send a notification to the requester and approvers indicating they have an approval request that has been commented on.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

@@ -5,6 +5,7 @@
     "body": "<font face=\"Calibri\" size=\"2\"><div>Hi,<br/><br/>An Access Certification task is awaiting your review. The review must be completed by $campaignReminder.dueDate.<br/>Please follow the <a href=\"$campaignReminder.url\">link</a> to view the task.<br/><br/><B>Additional task details:</B><br/><br/><strong>Campaign Name: </strong>$campaignReminder.name<br/><strong>Description:</strong> $campaignReminder.description<br/><strong>Instructions:</strong> $campaignReminder.instructions<br/><br/>Thank You!</div><br/><font face=\"Calibri\" size=\"1\" color=\"gray\">This is an automated message sent to you by <strong>Data Access Security<strong> - Please do not reply.</font></font>",
     "created": null,
     "description": "Remind user that a data access security certification review task is waiting for them.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

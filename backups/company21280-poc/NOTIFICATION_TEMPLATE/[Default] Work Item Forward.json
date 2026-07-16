@@ -5,6 +5,7 @@
     "body": "$requester forwarded work item \"$workItemName\" from $previousOwner to $newOwner on $spTools.formatDate($forwardDate,3,1)--------------------------------------------------------------------------------$!commentText",
     "created": null,
     "description": "Sent to the user whose work is being forwarded and the user receiving the forwarded work assignment.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

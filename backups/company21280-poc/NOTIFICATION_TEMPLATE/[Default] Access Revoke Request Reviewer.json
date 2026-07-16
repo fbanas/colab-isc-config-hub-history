@@ -5,6 +5,7 @@
     "body": "                    Dear ${user.name},<br/>                    <p>$requesterName has requested that the \"$requestedObjectName\" $requestedObjectType be revoked from $requestedForIdentityName.</p>                    #if($requesterComments)                        <p>$requesterName gave the following reason for revoking access:<br/> <b>$requesterComments</b>.</p>                    #end                    <p>                        If this request is approved, $requestedForIdentityName will lose the $requestedObjectName $requestedObjectType                        #if($requestedObjectType == \"Role\" || $requestedObjectType == \"AccessProfile\")                            and all associated entitlements #if($removeDate)on $removeDate #end.                        #end                    </p>                    <p>                        Thanks,<br/>                        The ${PRODUCT_NAME} Team                    </p>",
     "created": null,
     "description": "Notifies a user that they have an access revoke request to review.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

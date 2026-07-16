@@ -5,6 +5,7 @@
     "body": "$!requesterName has assigned a new remediation work item to you: $!workItemName.\n\nComments from $!requesterName:\n--------------------------------------------------------------------------------\n$!comments\n--------------------------------------------------------------------------------\n\nLogin and view your work item inbox to complete this request.",
     "created": null,
     "description": "Sent to a user when a new remediation work item has been assigned to them.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

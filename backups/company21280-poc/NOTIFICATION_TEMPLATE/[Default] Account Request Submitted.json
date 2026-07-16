@@ -5,6 +5,7 @@
     "body": "Hello $data.requesterName,<br/><br/>\n<p>Your request to $data.operationType.toLowerCase() the account $data.accountName on $data.sourceName was submitted successfully.</p>\n<p>To view the status of your request, please go to: <a href=\"${__global.productUrl}/ui/d/my-requests/account-requests\" target=\"_blank\">${__global.productUrl}/ui/d/my-requests/account-requests</a>. You'll receive a notification once this request has been completed.</p>\n<br/>Thanks,<br/> The $__global.productName Team<br/>",
     "created": null,
     "description": "Sent to a requester to confirm that their account request has been submitted successfully.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

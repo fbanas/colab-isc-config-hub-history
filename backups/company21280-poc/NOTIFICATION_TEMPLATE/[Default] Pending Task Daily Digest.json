@@ -5,6 +5,7 @@
     "body": "Dear $__recipient.name,<br/><br/>\n#set($numberOfPendingTasks = $__numberTool.integer($numberOfPendingTasks))\n#set($isAre = \"#if( $numberOfPendingTasks == 1)is#{else}are#end\")\n#set($taskTasks = \"#if( $numberOfPendingTasks == 1)task#{else}tasks#end\")\n#set($url = \"${__global.productUrl}/ui/d/dashboard/task-manager\")\n\nThere $isAre $numberOfPendingTasks $taskTasks waiting for you in your $__global.productName Task Manager.<br/> Use each task's details to finish it on the source, then mark it as complete in ${__global.productName}. To do this work, go to the task manager <a href=\"$url\" target=\"_blank\">here</a>, or copy and paste this link into your browser: $url<br/>\n<br/>Thanks,<br/> The $__global.productName Team<br/>",
     "created": null,
     "description": "If enabled sent to users daily when they have incomplete tasks in their Task Manager.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

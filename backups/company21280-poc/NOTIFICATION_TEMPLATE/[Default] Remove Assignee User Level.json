@@ -5,6 +5,7 @@
     "body": "Dear $adminUser,<br><br><p>$requesterUser has requested that the Source Configuration Assignee user level be removed from $user because they have finished onboarding their assigned sources.</p><p>To revoke this user level from $user, go to their <a href=\"$userLink\">identity</a> and remove the Source Configuration Assignee <a href=\"https://documentation.sailpoint.com/saas/help/accounts/identities.html#setting-user-level-permissions\">user level</a>.</p><br>Thanks,<br>The $__global.productName Team",
     "created": null,
     "description": "Notifies an administrator to remove Source Configuration Assignee user level.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

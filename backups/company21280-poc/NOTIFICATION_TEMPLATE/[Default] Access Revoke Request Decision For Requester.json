@@ -5,6 +5,7 @@
     "body": " \tDear ${user.name},<br/> \t<p>Your request to revoke the $requestedObjectName $requestedObjectType from $requestedForIdentityName has been \t<b>#if ($approved)<span style=\"color:green\">approved</span>#{else}<span style=\"color:red\">denied</span>#end.</b></p>\t#if($approved)\t \t<p>$requestedForIdentityName's access to the $requestedObjectName $requestedObjectType will be revoked\t \t\t#if($removeDate) on $removeDate.\t \t\t#else soon, after additional processing.\t \t\t#end\t \t</p>\t#end \t#if (!$approved && $reviewerComment) \t\t<p>${rejecterName} gave the following reason for denying the request: <b>$reviewerComment</b></p> \t#end \t#if (!$approved) \t\t<p>Please contact ${rejecterName} if you have any questions.</p> \t#end \t<p> \t\tThanks,<br/> \t\tThe ${PRODUCT_NAME} Team \t</p>",
     "created": null,
     "description": "Notifies a requester when a user has reviewed their access revoke request.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

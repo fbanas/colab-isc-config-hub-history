@@ -5,6 +5,7 @@
     "body": "\tDear recipient,    <p>     The application '$name' has been in #if ($healthy) a Healthy #{else} an Unhealthy #end state #if ($since) since $since ago. #end\t</p>\t<p>Please sign in to $PRODUCT_NAME for more information.</p>\tThank you,<br/>\tThe $PRODUCT_NAME Team\t<p>You are receiving this email because your email address was configured to receive $PRODUCT_NAME notification emails.</p>",
     "created": null,
     "description": "Sent when an application changes status. This is a system notification email.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

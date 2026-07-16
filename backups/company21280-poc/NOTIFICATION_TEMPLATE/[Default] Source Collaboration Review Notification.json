@@ -5,6 +5,7 @@
     "body": "Dear $__recipient.name,<br><p>$assignedUser has submitted a draft of the $referenceName source configuration. You will be able to approve their configurations or request changes. You can then publish the draft to create a source.</p><p>Go to the <a href=\"$deepLink\">$referenceName configuration page</a> to review this draft.</p><br>Thanks,<br>The $__global.productName Team",
     "created": null,
     "description": "Notifies the assigner when they have a review to approve by a collaborator who is configuring a source",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

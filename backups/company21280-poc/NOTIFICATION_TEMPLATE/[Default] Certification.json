@@ -5,6 +5,7 @@
     "body": "\tDear ${user.name},<br/>   <p>The ${certification.certificationGroups.get(0).name} certification campaign has been started by your system administrator. This campaign allows each reviewer in the campaign to verify that users have the correct entitlements.</p>   <p>For each user in your certification, you will see entitlements they have. You might also see sources the entitlements come from or applications they can access because of those entitlements.</p>   <p>You have until $spTools.formatDate($certification.expiration,3,0) to review and either approve, change, or revoke access for each user.</p>   <p>Click <a href=\"$identityNowUrl/ui/d/certifications-review/certification/${certification.id}\">here</a> to review the certification.</p>",
     "created": null,
     "description": "Notify user that a certification has been activated.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

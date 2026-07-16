@@ -5,6 +5,7 @@
     "body": "Dear $__recipient.name,<br/><br/><p>$owner has reviewed your changes to the $referenceName source and has assigned additional changes to you.</p><p>Go to the <a href=\"$deepLink\">$referenceName configuration page</a> to continue onboarding this source.</p><br/>Thanks,<br/> The $__global.productName Team<br/>",
     "created": null,
     "description": "Notifies the assignee when the administrator requests additional changes to a source that is in review",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

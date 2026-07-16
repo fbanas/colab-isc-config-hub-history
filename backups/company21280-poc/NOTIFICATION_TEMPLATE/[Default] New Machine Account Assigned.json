@@ -5,6 +5,7 @@
     "body": "Hello $data.ownerName,<br/><br/>\n<p>You are now the account owner of the machine account $data.accountName on $data.sourceName.</p>\n<p>You are responsible for managing this account and keeping it up to date. If you have questions, contact your administrator.</p>\n<br/>Thanks,<br/> The $__global.productName Team<br/>",
     "created": null,
     "description": "Sent to notify a user that they have been assigned as the owner of a machine account.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

@@ -5,6 +5,7 @@
     "body": "Dear $__recipient.name,<br/><br/>\n<p>Your access to the '$accessItemName' $accessItemType is now scheduled to expire on $scheduledSunsetDate.</p>\n<p>If you still need access to '$accessItemName' after this date, you will need to request it again to extend the duration of the access.</p>\n<p>Please contact the $__global.productName administrator if you have any questions.</p>\n<br/>Thanks,<br/> The $__global.productName Team<br/>",
     "created": null,
     "description": "Sent to a user when their access expiration date has changed.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

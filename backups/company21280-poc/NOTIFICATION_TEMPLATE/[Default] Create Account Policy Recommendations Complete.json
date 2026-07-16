@@ -5,6 +5,7 @@
     "body": "Dear $__recipient.name,<br/><br/>\n#set($url=$__global.productUrl + '/ui/a/admin/connections/sources/' + $sourceId + '/settings/account-provisioning')AI recommendations for account creation attributes have been generated for $sourceName. <br/> Go to the <a href=\"$url\">Create Account</a> page to review your account creation recommendations.<br/>\n<br/>Thanks,<br/> The $__global.productName Team<br/>",
     "created": null,
     "description": "Sent to the user when create account policy recommendations are complete.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

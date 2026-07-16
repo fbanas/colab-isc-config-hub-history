@@ -5,6 +5,7 @@
     "body": "<p>Dear ${user.name},<br/></p><p>A request has been made to unlock your ${PRODUCT_NAME} account. If you made this request, please copy the following code into the prompt in ${PRODUCT_NAME} to verify your identity:</p><p>${token}</p><p>This code expires as soon as it's used, or on ${expires}.</p><p>If you did not make this request, please contact your IT administrator immediately.</p><p>Thanks,<br/>The ${PRODUCT_NAME} Team</p>",
     "created": null,
     "description": "Sent when a user selects Unlock on the Sign In page to provide a code that is used to unlock the account.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

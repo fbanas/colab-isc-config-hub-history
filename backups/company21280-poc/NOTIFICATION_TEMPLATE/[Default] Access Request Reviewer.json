@@ -5,6 +5,7 @@
     "body": " \tDear ${user.name},<br/>\t<p>${requesterName} has requested the ${requestedObjectName}#if(${requestedObjectType}==\"Role\") role #elseif(${requestedObjectType}==\"Entitlement\") entitlement #else access profile#end#if($requesterName != $requestedForIdentityName) for ${requestedForIdentityName}#end.</p> \t#if($requesterComments)<p>${requesterName} gave the following reason for requesting access: <b>${requesterComments}.</b></p> \t#end \t#if($startDate)<p>The start date for ${requestedObjectName} is ${startDate}.</p>#end \t#if($removeDate)<p>The end date for ${requestedObjectName} is ${removeDate}.</p>#end \t#if($requestedObjectType==\"Role\") \t\t#if($accessibleItems && $accessibleItems.size() > 0) \t\t<p>If this request is approved, ${requestedForIdentityName} will receive access to the following: \t\t\t<ul> \t\t\t#foreach($item in $accessibleItems) \t\t\t\t<li>$item</li> \t\t\t#end \t\t\t</ul> \t\t\t</p> \t\t#end \t#elseif($requestedObjectType==\"AccessProfile\") \t\t<p>If this request is approved, ${requestedForIdentityName} will receive access to all entitlements in ${accessProfileName}.</p>     #end \t<p>Go to <a href=\"$identityNowUrl/ui/d/approvals\">$identityNowUrl/ui/d/approvals</a> to approve or deny this request.</p> \t<p> \t\tThanks,<br/> \t\tThe ${PRODUCT_NAME} Team \t</p>",
     "created": null,
     "description": "Sent to each access reviewer who needs to review an access request.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

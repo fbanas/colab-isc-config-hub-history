@@ -5,6 +5,7 @@
     "body": "<p>Dear $violationOwnerName,</p><br/><p>You are receiving this email because you are designated as a Separation of Duties (SoD) policy violation owner or notification recipient. SoD policy violations have been identified within SailPoint.</p><p><strong>Violation Details</strong></p><p>Violation Count: $violationCount</p><p>Risk Level: $policyLevel</p><p>Policy Name: $policyName</p><p>Description: $policyDescription</p>#if($policyExternalReference && $policyExternalReference.trim() != \"\")<p>External Reference: $policyExternalReference</p>#end<br/><p>If you are designated to manage violations for $policyName, you can do so from the <a href=\"$__global.productUrl$dashboardPath\">SailPoint Dashboard</a></p><br/><p>Thanks,<br/>The $__global.productName Team</p>",
     "created": null,
     "description": "Sent to a user that is designated as an SoD policy violation owner or notification recipient.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

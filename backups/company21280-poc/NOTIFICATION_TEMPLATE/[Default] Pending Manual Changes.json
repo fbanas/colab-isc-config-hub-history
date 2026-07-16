@@ -5,6 +5,7 @@
     "body": "$launcher is requesting the following changes for '$identityDisplayName' be manually made by you.\n\n#if ( $approvalSet.items )\n#foreach ($item in $approvalSet.items)\n        Application: $item.applicationName\n#if ( $item.nativeIdentity )       \n           Account : $item.nativeIdentity\n#end           \n#if ( $item.instance ) \n          Instance : $item.instance\n#end\n          Operation: $item.operation\n#if ( $item.displayName )          \n          Attribute: $item.displayName\n#elseif ( $item.name ) \n          Attribute: $item.name\n#end\n#if ( $item.displayValue )\n           Value(s): $item.displayValue\n#elseif ( $item.csv ) \n           Value(s): $item.csv\n#end\n#if ( $item.requesterComments )\n Requester Comments: $item.requesterComments\n#end\n#end\n#end",
     "created": null,
     "description": "Sent to source owners when an account change is needed on a source that requires manual provisioning.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

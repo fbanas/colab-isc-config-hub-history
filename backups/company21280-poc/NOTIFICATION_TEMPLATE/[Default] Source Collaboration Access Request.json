@@ -5,6 +5,7 @@
     "body": "Dear $adminUser,<br><br><p>$owner has requested the Source Configuration Assignee user level for $assignedUser so they can onboard the $referenceName source.</p><p>To grant this user level to $assignedUser, go to their <a href=\"$deepLink\">identity</a> and enable the Source Configuration Assignee <a href=\"https://documentation.sailpoint.com/saas/help/accounts/identities.html#setting-user-level-permissions\">user level</a>.</p><p>This user level must be assigned to the user before they can begin onboarding this source. Contact $owner with any questions about this source or the assignee.</p><br>Thanks,<br>The $__global.productName Team",
     "created": null,
     "description": "Notifies an administrator when they have a pending access request for a collaborator who is configuring a source",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

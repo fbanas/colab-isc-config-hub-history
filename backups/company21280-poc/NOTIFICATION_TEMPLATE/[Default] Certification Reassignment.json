@@ -5,6 +5,7 @@
     "body": "\tDear ${user.name},<br/>   <p>${requesterName} has assigned ${numNewIdentities} #if(${numNewIdentities} == 1) user #{else} users #end to you for review in a certification.</p>   <p>Reason for reassignment: ${description}</p>   <p>You have until $spTools.formatDate($certification.expiration,3,0) to review and either approve, change, or revoke access for these users.</p>   <p>Click <a href=\"$identityNowUrl/ui/d/certifications-review/certification/${certification.id}\">here</a> to review the certification.</p>",
     "created": null,
     "description": "Notifies a reviewer when they have been reassigned identities from an existing certification.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

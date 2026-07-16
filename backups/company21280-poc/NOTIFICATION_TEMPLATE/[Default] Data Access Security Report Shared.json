@@ -5,6 +5,7 @@
     "body": "<font face=\"Calibri\" size=\"2\">Hello,<br /><br />The user, <a href=\"mailto:$reportShare.senderEmail\">$reportShare.senderName</a>, shared the following report(s):<br />$reportShare.reportList<br /><br />$reportShare.personalMessage<br /><br />* This email is valid only for you. Please do not forward this email.</font><br /><br /><font face=\"Calibri\" size=\"1\" color=\"gray\">This is an automatic message sent to you by <strong>Data Access Security</strong> - Please do not reply.</font>",
     "created": null,
     "description": "Notify user that a data access security report has been shared with them.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

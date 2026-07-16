@@ -5,6 +5,7 @@
     "body": "<p>Dear recipient,</p><p>Virtual appliance $clusterName has the health state $state.<br/><p>Followings $type are detected: <p>$errorDetails</p></p></p>\n<p>Thanks,<br>The $PRODUCT_NAME Team</p>",
     "created": null,
     "description": "Notifies when an errors are detected on the VA.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

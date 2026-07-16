@@ -1,0 +1,30 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "\tDear ${__recipient.name},<br/>\t<p>Your request for the ${requestedObjectName} entitlement has been assigned</p>\t<p><b>This entitlement requires activation before each use. To activate this entitlement, visit MySailPoint &gt; Launchpad &gt; Just-In-Time Access</b></p>\t#if ($removeDate)\t<p>Your access to ${requestedObjectName} is scheduled to end on ${removeDate}.</p>\t#end\t<p>\t\tThanks,<br/>\t\tThe ${__global.productName} Team\t</p>",
+    "created": null,
+    "description": "Sent to the identity who made an access request that was automatically approved and assigned.",
+    "details": null,
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Just-In-Time Access Request Assignment",
+    "inboxTemplate": null,
+    "key": "jit_access_request_assignment",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Just-In-Time Access Request Assignment",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "Your access request for ${requestedObjectName} has been assigned",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Just-In-Time Access Request Assignment",
+    "name": "Just-In-Time Access Request Assignment",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}

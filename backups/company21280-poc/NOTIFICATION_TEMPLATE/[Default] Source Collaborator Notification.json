@@ -5,6 +5,7 @@
     "body": "Dear $__recipient.name,<br><p>$assignedByUser has assigned an application to you to onboard within $__global.productName. #if($dueDate) The due date for this task is $dueDate. #end</p><p>Your organization uses $__global.productName to manage its identities and access. Onboarding the $referenceName application will allow your organization to manage its data using Identity Security Cloud, where it will be known as a source.</p>#if($comments) <p>$assignedByUser included the following comments: $comments</p>#end<p>Go to your <a href=\"$deepLink\">assigned sources</a> to begin configuring the $referenceName application. When you’re finished, submit your configurations to your administrator for approval. You can leave comments in the source configuration to get help from your administrator, or refer to <a href=\"https://documentation.sailpoint.com/saas/help/sources/index.html\">Managing Assigned Sources</a> for assistance.</p><br>Thanks,<br>The $__global.productName Team",
     "created": null,
     "description": "Notifies the assignee when they have a source that has been assigned to them for configuration",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

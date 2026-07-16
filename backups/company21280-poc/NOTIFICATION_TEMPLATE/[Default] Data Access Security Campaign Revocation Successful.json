@@ -5,6 +5,7 @@
     "body": "<font face=\"Calibri\" size=\"2\"  ><div>Dear $__recipient.name,<br /><br />This email is to inform you that automatic revocation was enabled on $campaign.campaignName.  All records which qualify for revocation were revoked successfully.<br /><br />Campaign revocation details can be found here: <a href=\"$campaign.url\">View Campaign Details</a><br /></div><br />Thank you,<br /><strong>The SailPoint Team<strong></strong></strong></font><br><p><span style=\"color: gray; font-family: 'calibri'; font-size: xx-small;\">This is an automatic message sent to you by <strong>Data Access Security</strong> - Please do not reply.</span></p>",
     "created": null,
     "description": "Sent to notify a user that a Data Access Security campaign revocation has been successful.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

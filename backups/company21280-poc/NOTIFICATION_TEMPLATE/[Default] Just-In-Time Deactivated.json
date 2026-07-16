@@ -5,6 +5,7 @@
     "body": "Dear $__recipient.name,<br/><br/>\n<p>The Just-In-Time duration window you activated for ${entitlementName} has now been deactivated, and access has been removed.</p>\n#if($activationUrl)<p>You may return to $__global.productName <a href=\"$activationUrl\" target=\"_blank\">here</a> to view details or reactivate this entitlement if needed.</p>#end\n<p>Please contact ${ownerName} if you have any questions.</p>\n<br/>Thanks,<br/>The $__global.productName Team<br/>",
     "created": null,
     "description": "Sent to the identity whose active Just-In-Time activation window has been deactivated. Notifies them that access has been removed and points them back to Launchpad to reactivate if needed.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

@@ -5,6 +5,7 @@
     "body": "\t\tDear ${recipientName},<br/>        <p>Your request for '${requestItemName}' failed because you have more than one account on the '${sourceName}' source. </p>        <p>Please contact your administrator for assistance.</p>        Thanks,<br/>        The ${PRODUCT_NAME} Team",
     "created": null,
     "description": "Sent to the requester if their access request failed because the user they requested access for has multiple accounts on the source.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

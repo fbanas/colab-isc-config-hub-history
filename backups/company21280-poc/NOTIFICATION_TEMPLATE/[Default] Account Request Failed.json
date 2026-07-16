@@ -5,6 +5,7 @@
     "body": "Hello $data.requesterName,<br/><br/>\n<p>The account $data.operationType.toLowerCase() request for $data.accountName on the $data.sourceName source failed to complete.</p>\n<p>The request failed because of the following error:</p>\n<p>$data.failureReason</p>\n<p>Please contact your administrator for assistance. </p>\n Thanks,<br/> The $__global.productName Team<br/>",
     "created": null,
     "description": "Sent to a requester to confirm that their account delete request has been failed.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

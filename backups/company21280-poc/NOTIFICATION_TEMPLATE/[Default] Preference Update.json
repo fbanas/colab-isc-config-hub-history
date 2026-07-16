@@ -5,6 +5,7 @@
     "body": "\tDear ${user.name},<br/>   <p>${changedSetting} for ${PRODUCT_NAME} ${hasOrHave} been updated at ${homeUrl}.</p>   <p> The change, made on ${date}, will apply to ${PRODUCT_NAME} the next time you sign in. <br />If you did not make this change, please contact your IT administrator immediately. </p>   <p> Thanks,<br/> The ${PRODUCT_NAME} Team </p>",
     "created": null,
     "description": "Sent whenever a user's authentication settings like phone number or answers to security questions change.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

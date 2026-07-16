@@ -5,6 +5,7 @@
     "body": "<p> The user ${identityName}'s status has changed to $newState. </p><p> Thanks,<br/> The ${PRODUCT_NAME} Team </p>",
     "created": null,
     "description": "Sent to selected users when an identity's lifecycle state changes.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

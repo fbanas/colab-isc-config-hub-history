@@ -5,6 +5,7 @@
     "body": "Dear $__recipient.name,<br/><br/>\n#set($_startDate = $__dateTool.toDate(\"yyyy-MM-dd'T'HH:mm:ss\", ${newConfig.startDate}))\n#set($_formattedStartDate = $__dateTool.format(\"EEEEE, MMMMM dd, YYYY\", $_startDate))\n#set($_endDate = $__dateTool.toDate(\"yyyy-MM-dd'T'HH:mm:ss\", ${newConfig.endDate}))\n#set($_formattedEndDate = $__dateTool.format(\"EEEEE, MMMMM dd, YYYY\", $_endDate))\n<p> ${newConfig.modifiedByName} has configured automatic reassignment of ${newConfig.configType} from ${newConfig.reassignedFromName} to ${newConfig.reassignedToName} starting on ${_formattedStartDate} #if( ${newConfig.endDate} != \"0001-01-01T00:00:00Z\") and ending on ${_formattedEndDate}. #else with no end date. #end </p>\n<br/>Thanks,<br/> The $__global.productName Team<br/>",
     "created": null,
     "description": "Sent to the user whose work is being reassigned and the user receiving the work when a new work reassignment configuration is created that overrides an existing work reassignment.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

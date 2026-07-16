@@ -5,6 +5,7 @@
     "body": "\tDear recipient,    <p>After an identity refresh at ${timestamp}, ${errorPercentage}% of identities in your organization are in an Error state.</p>\tThank you,<br/>\tThe ${PRODUCT_NAME} Team\t<p>You are receiving this email because your email address was configured to receive ${PRODUCT_NAME} notification emails.</p>",
     "created": null,
     "description": "Sent when identity processing causes 5% or more of identities to be in an error state. This is a system notification email.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

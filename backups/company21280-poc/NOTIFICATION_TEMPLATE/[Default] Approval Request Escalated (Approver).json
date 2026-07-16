@@ -5,6 +5,7 @@
     "body": "<p>Dear ${__recipient.name},</p> <p>An approval request for $approvalName was submitted by #if($requestee.name && $requestee.name != '') $requester.name for $requestee.name #else $requester.name #end. This request has been escalated #if($previousApprover.identityID == $__recipient.id) from you to $escalatedApprover.name due to no action being taken #else for your review after the previous approver #if($previousApprover.name && $previousApprover.name != ''), $previousApprover.name, did not take action #else did not take action #end#end on the request for $escalationDelay.</p>  <p>To review approval requests that are assigned to you, please go to: $__global.productUrl/ui/d/$approverPath.</p><br/>Thank you,<br/> The ${__global.productName} Team<br/>",
     "created": null,
     "description": "Sent to the approvers that an approval request was escalated from and to when no actions have been taken on an approval request for an admin-configured amount of time.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

@@ -5,6 +5,7 @@
     "body": "Dear $__recipient.name,<br/><br/>\n<p>A privileged entitlement recommendation for <strong>${EntitlementName}</strong> is available for your review. You can review it on the <a href=\"${__global.productUrl}${DeepLinkSuffix}\">Privileged Entitlement Recommendations</a> page.</p>\n<br/>\nThanks,<br/>The $__global.productName Team<br/>",
     "created": null,
     "description": "Sent to the entitlement or source owner to notify them that a privileged entitlement recommendation is available for their review.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

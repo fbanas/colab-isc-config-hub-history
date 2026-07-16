@@ -5,6 +5,7 @@
     "body": "Dear $__recipient.name,<br/><br/>\n<p>$AppCount new applications were discovered from the $DiscoverySourceName source.</p><table><tr><th>Application</th><th>Discovery Source</th><th>Discovery Source Type</th></tr>#foreach($app in $AppNames)<tr><td>$app</td><td style='text-align: center;'>$DiscoverySourceName</td><td style='text-align: center;'>$DiscoverySource</td></tr>#end</table><p>View the <a href='${__global.productUrl}${DeepLinkSuffix}'>discovered applications</a>.</p>\nThanks,<br/>The $__global.productName Team<br/>",
     "created": null,
     "description": "Notify source owners that new applications have been discovered from a discovery source.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

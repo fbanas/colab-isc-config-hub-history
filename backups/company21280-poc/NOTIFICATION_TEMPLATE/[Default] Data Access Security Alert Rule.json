@@ -5,6 +5,7 @@
     "body": "<font face=\"Calibri\" size=\"2\"><div>Dear $__recipient.name,<br/><br/>A $alert.severity severity alert was triggered by the $alert.ruleName alert rule.<br/><br/>The alert details:<br/><br/><strong>Action Time: </strong>$alert.actionTime<br/><strong>User Name: </strong>$alert.userName<br/><strong>Identity Name:</strong> $alert.identityName<br/><strong>Department:</strong> $alert.identityDepartment<br/><strong>Action Type: </strong>$alert.actionType<br/><strong>Application: </strong>$alert.application<br/><strong>Resource Path: </strong>$alert.resourcePath<br/><strong>Object Name: </strong>$alert.objectName<br/><strong>Data Classification Policies: </strong>$alert.dataClassificationPolicies<br/><br/>Click <a href=\"$alert.url\">here</a> to access the Activity Forensics page and see related alerts of this rule.<br/></div><br/>Thank you,<br/><strong>The SailPoint Team<strong><br><p><span style=\"color: gray; font-family: 'calibri'; font-size: xx-small;\">This is an automatic message sent to you by <strong>Data Access Security</strong> - Please do not reply.</span></p>",
     "created": null,
     "description": "Alert triggered by alert rule.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

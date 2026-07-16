@@ -5,6 +5,7 @@
     "body": "\t<p>        Dear ${newOwnerName},    </p>     <p>\t\t${previousOwnerName} has reassigned a request to remove ${requestedForIdentityName} from the ${requestedObjectName}\t\t#if(${requestedObjectType}==\"Role\") role #elseif(${requestedObjectType}==\"Entitlement\") entitlement #else access profile #end to you to approve. \t</p> \t #if($commentText) \t<p> \t\t${previousOwnerName} gave the following reason for reassigning the request to you: \t\t<br/> \t\t<p>${commentText}</p> \t</p> \t#end    <p>\t    If you approve this request, ${requestedForIdentityName} will lose the ${requestedObjectName} ${requestedObjectType}\t    #if($requestedObjectType == \"Role\" || $requestedObjectType == \"AccessProfile\")            and all associated entitlements #end.        #end    </p>    <p> \t\tThanks, \t\t<br/> \t\tThe ${PRODUCT_NAME} Team \t</p>",
     "created": null,
     "description": "Notifies a user when an access revoke request has been reassigned to them.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

@@ -5,6 +5,7 @@
     "body": "<p>Dear recipient,</p><p>The pinned version <b>$processVersion</b> of the <b>$processName</b> virtual appliance cluster component has expired.</p><p>The latest VA updates will be pushed to the cluster.</p><p>Thanks,<br>The $PRODUCT_NAME Team</p>",
     "created": null,
     "description": "Notifies when virtual appliance cluster component has been unpinned.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

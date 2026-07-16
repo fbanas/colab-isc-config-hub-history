@@ -5,6 +5,7 @@
     "body": "Dear $__recipient.name,<br/><br/>\n<p>Based on your GenAI Settings input, ${SedRegenerationCount} entitlement descriptions have been regenerated to more accurately reflect your context. You can review the regenerated descriptions on the <a href=\"${__global.productUrl}${DeepLinkSuffix}\">GenAI Entitlement Descriptions</a> page.</p>\n<br/>\nThanks,<br/>The $__global.productName Team<br/>",
     "created": null,
     "description": "Sent to a user to notify them that GenAI entitlement descriptions have been regenerated.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

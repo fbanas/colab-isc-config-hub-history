@@ -5,6 +5,7 @@
     "body": "Dear $__recipient.name,<br><p>$assignedByUser has reassigned the $referenceName source onboarding to $assignedUser. $assignedByUser no longer have access to this source.</p><br>#if(!$assignedUserHasAccess)<p>$assignedUser needs the Source Configuration Assignee user level to configure this source. To grant this user level to $assignedUser, go to their <a href=\"$deepLink\">identity</a> and enable the Source Configuration Assignee user level.</p><br>#end#if($revokeLastAssignedAccess)<p>$assignedByUser does not have any other sources assigned to them and the Source Configuration Assignee user level should be revoked. Go to their <a href=\"$assignerDeepLink\">identity</a> to remove this user level.</p><br>#end<br>Thanks,<br>The $__global.productName Team",
     "created": null,
     "description": "Notifies the admin when a source that has been reassigned by current assignee to another user.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,

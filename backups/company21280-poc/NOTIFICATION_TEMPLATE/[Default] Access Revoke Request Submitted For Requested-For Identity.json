@@ -5,6 +5,7 @@
     "body": "\tDear ${requestedForIdentityName},<br/>\t<p>$requesterName has requested removal of your access from following items.\tIf approvals are required, you will be notified when a decision is made about this access.\t</p>    #foreach ( $type in ${requestedObjectDetailsByType.keySet()} )        $type:        <ul>        #foreach ( $detail in ${requestedObjectDetailsByType.get($type)} )            <li> ${detail.name} #if($detail.removeDate) (Access Sunset Date: ${detail.removeDate}) #end</li>        #end        </ul>        <br/>    #end    <p>If you need more information about this request, please contact $requesterName for assistance.</p>\t<p>\t\tThanks,<br/>\t\tThe ${PRODUCT_NAME} Team\t</p>",
     "created": null,
     "description": "Sent to the identity whose access is being reviewed in an access revoke request.",
+    "details": null,
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,
