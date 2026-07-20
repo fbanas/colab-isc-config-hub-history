@@ -1,0 +1,36 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "description": "",
+    "id": "07547b25-9197-4f2f-806a-8b327e29ba85",
+    "lastModifiedAt": "2026-03-20T13:46:27.069668Z",
+    "lastModifiedBy": {
+      "id": "30507568a2d54f7484fe0f3edba79692",
+      "name": "fernando.delosrios",
+      "type": "IDENTITY"
+    },
+    "name": "Client",
+    "owner": {
+      "id": "30507568a2d54f7484fe0f3edba79692",
+      "name": "fernando.delosrios",
+      "type": "IDENTITY"
+    },
+    "privateFieldsLastModifiedAt": "2026-03-20T13:46:27.069668Z",
+    "privateFieldsLastModifiedBy": {
+      "id": "30507568a2d54f7484fe0f3edba79692",
+      "name": "fernando.delosrios",
+      "type": "IDENTITY"
+    },
+    "publicFields": {
+      "headerName": "Client"
+    },
+    "type": "1.3"
+  },
+  "self": {
+    "id": "07547b25-9197-4f2f-806a-8b327e29ba85",
+    "name": "Client",
+    "type": "SPS_PARAMETER"
+  },
+  "version": 1
+}

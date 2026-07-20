@@ -1,0 +1,38 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "description": " external  workflow trigger for GitHub Repo Backup Workflow",
+    "id": "e4e33713-ff40-41df-a4b8-bd8d0a4112a1",
+    "lastModifiedAt": "2026-04-15T17:21:38.923758Z",
+    "lastModifiedBy": {
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
+      "type": "IDENTITY"
+    },
+    "name": "GitHub Repo Backup",
+    "owner": {
+      "id": "8939a7e19a4b43eabd3c6c2808c6b9b2",
+      "name": "luca.lori",
+      "type": "IDENTITY"
+    },
+    "privateFieldsLastModifiedAt": "2026-04-15T16:51:16.066034Z",
+    "privateFieldsLastModifiedBy": {
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
+      "type": "IDENTITY"
+    },
+    "publicFields": {
+      "clientId": "3fdb28b5-fc3a-44d6-abac-ba6a709dabda",
+      "credentialLocation": "HEADER",
+      "tokenURL": "https://company21280-poc.api.identitynow-demo.com/oauth/token"
+    },
+    "type": "1.4"
+  },
+  "self": {
+    "id": "e4e33713-ff40-41df-a4b8-bd8d0a4112a1",
+    "name": "GitHub Repo Backup",
+    "type": "SPS_PARAMETER"
+  },
+  "version": 1
+}

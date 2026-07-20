@@ -1,0 +1,38 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "description": "",
+    "id": "097c3757-c597-47be-882d-0da52599c89d",
+    "lastModifiedAt": "2026-03-20T14:18:17.611607Z",
+    "lastModifiedBy": {
+      "id": "30507568a2d54f7484fe0f3edba79692",
+      "name": "fernando.delosrios",
+      "type": "IDENTITY"
+    },
+    "name": "scopes:all",
+    "owner": {
+      "id": "30507568a2d54f7484fe0f3edba79692",
+      "name": "fernando.delosrios",
+      "type": "IDENTITY"
+    },
+    "privateFieldsLastModifiedAt": "2026-03-20T14:18:17.611607Z",
+    "privateFieldsLastModifiedBy": {
+      "id": "30507568a2d54f7484fe0f3edba79692",
+      "name": "fernando.delosrios",
+      "type": "IDENTITY"
+    },
+    "publicFields": {
+      "scopes": [
+        "scopes:all"
+      ]
+    },
+    "type": "3.1"
+  },
+  "self": {
+    "id": "097c3757-c597-47be-882d-0da52599c89d",
+    "name": "scopes:all",
+    "type": "SPS_PARAMETER"
+  },
+  "version": 1
+}

@@ -1,0 +1,36 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "description": "LuckyLuke doesn't have any public repositories yet.",
+    "id": "b0c0f894-083f-4f22-a3d5-d60237ec4403",
+    "lastModifiedAt": "2026-04-15T16:22:04.307305Z",
+    "lastModifiedBy": {
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
+      "type": "IDENTITY"
+    },
+    "name": "github LuckyLuke",
+    "owner": {
+      "id": "8939a7e19a4b43eabd3c6c2808c6b9b2",
+      "name": "luca.lori",
+      "type": "IDENTITY"
+    },
+    "privateFieldsLastModifiedAt": "2026-04-15T16:22:04.307306Z",
+    "privateFieldsLastModifiedBy": {
+      "id": "fcc9db01f32249889e627da51f5f710a",
+      "name": "jonathan.mueller",
+      "type": "IDENTITY"
+    },
+    "publicFields": {
+      "headerName": "Authorization"
+    },
+    "type": "1.3"
+  },
+  "self": {
+    "id": "b0c0f894-083f-4f22-a3d5-d60237ec4403",
+    "name": "github LuckyLuke",
+    "type": "SPS_PARAMETER"
+  },
+  "version": 1
+}

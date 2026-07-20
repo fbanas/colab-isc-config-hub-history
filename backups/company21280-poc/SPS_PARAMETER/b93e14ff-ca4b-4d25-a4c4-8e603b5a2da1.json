@@ -1,0 +1,38 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "description": "",
+    "id": "b93e14ff-ca4b-4d25-a4c4-8e603b5a2da1",
+    "lastModifiedAt": "2026-05-03T18:08:35.378069Z",
+    "lastModifiedBy": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "name": "Florians Token",
+    "owner": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "privateFieldsLastModifiedAt": "2026-05-03T18:08:35.378069Z",
+    "privateFieldsLastModifiedBy": {
+      "id": "90eb8204ac594f48ac598a55e0e73613",
+      "name": "florian.banas",
+      "type": "IDENTITY"
+    },
+    "publicFields": {
+      "clientId": "db8ed6c3533348f0bfc1259f60c2d3c4",
+      "credentialLocation": "HEADER",
+      "tokenURL": "https://company21280-poc.api.identitynow-demo.com/oauth/token"
+    },
+    "type": "1.4"
+  },
+  "self": {
+    "id": "b93e14ff-ca4b-4d25-a4c4-8e603b5a2da1",
+    "name": "Florians Token",
+    "type": "SPS_PARAMETER"
+  },
+  "version": 1
+}
