@@ -6,7 +6,7 @@
     "beforeProvisioningRule": null,
     "connectorAttributes": {
       "authenticationMethod": "OAuthLogin",
-      "cloudCacheUpdate": "1784273279954",
+      "cloudCacheUpdate": "1784735498845",
       "cloudDisplayName": "NERM - Organisations",
       "connectionParameters": [
         {
@@ -24,7 +24,8 @@
           "resMappingObj": {
             "description": "attributes.api_response_1",
             "name": "attributes.organization_name",
-            "parent": "attributes.organization_organization"
+            "parent": "attributes.organization_organization",
+            "parent2": "attributes.organization_organization"
           },
           "responseCode": [
             "2**"
@@ -124,6 +125,17 @@
             "nativeName": null,
             "schema": null,
             "type": "STRING"
+          },
+          {
+            "description": "parent2",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "parent2",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
           }
         ],
         "configuration": {},
@@ -134,7 +146,7 @@
         "id": "098c2b5dc5b044a3b22d469397d0586d",
         "identityAttribute": "name",
         "includePermissions": false,
-        "modified": "2026-07-17T07:27:59.791Z",
+        "modified": "2026-07-22T15:51:38.686Z",
         "name": "group",
         "nativeObjectType": "Group"
       },

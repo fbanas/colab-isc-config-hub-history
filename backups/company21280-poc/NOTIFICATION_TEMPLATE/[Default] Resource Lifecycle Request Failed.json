@@ -1,0 +1,30 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "Hello $data.requesterName,<br/><br/>\n<p>Your request to $data.operationType.toLowerCase() the $data.machineIdentitySubtype.toLowerCase() $data.machineIdentityName on the $data.sourceName has failed.</p>\n<p>Reason for failure: $data.failureReason.</p>\n<p>Please contact your administrator for assistance.</p>\n<br/>Thank you,<br/> The $__global.productName Team<br/>",
+    "created": null,
+    "description": "Sent to a requester to notify that their resource lifecycle request has been failed.",
+    "details": null,
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] Resource Lifecycle Request Failed",
+    "inboxTemplate": null,
+    "key": "resource_lifecycle_request_notification_failed",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "Resource Lifecycle Request Failed",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "$data.sourceName – $data.operationType request failed for $data.machineIdentityName",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] Resource Lifecycle Request Failed",
+    "name": "Resource Lifecycle Request Failed",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}
