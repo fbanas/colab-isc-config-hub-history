@@ -1,0 +1,60 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "created": "2026-07-24T18:23:20.231711704Z",
+    "creator": {
+      "id": "30507568a2d54f7484fe0f3edba79692",
+      "name": "fernando.delosrios",
+      "type": "IDENTITY"
+    },
+    "definition": {
+      "start": "Send Email",
+      "steps": {
+        "End Step - Success": {
+          "type": "success"
+        },
+        "Send Email": {
+          "actionId": "sp:send-email",
+          "attributes": {
+            "body.$": "$.trigger.body",
+            "context": {},
+            "recipientEmailList.$": "$.trigger.recipients",
+            "subject.$": "$.trigger.subject"
+          },
+          "nextStep": "End Step - Success",
+          "type": "action",
+          "versionNumber": 2
+        }
+      }
+    },
+    "description": "",
+    "enabled": false,
+    "id": "a42c6f21-9d1d-4fb1-ba27-93116c7e3ff2",
+    "modified": "2026-07-24T18:23:20.231711704Z",
+    "modifiedBy": {
+      "id": "30507568a2d54f7484fe0f3edba79692",
+      "name": "fernando.delosrios",
+      "type": "IDENTITY"
+    },
+    "name": "Fusion Email Sender (Snapshots)",
+    "owner": {
+      "id": "176a5fc85208460383b2253765f4a137",
+      "name": "slpt.services",
+      "type": "IDENTITY"
+    },
+    "trigger": {
+      "attributes": {
+        "id": "idn:external-http",
+        "integrationId": null
+      },
+      "type": "EXTERNAL"
+    }
+  },
+  "self": {
+    "id": "a42c6f21-9d1d-4fb1-ba27-93116c7e3ff2",
+    "name": "Fusion Email Sender (Snapshots)",
+    "type": "WORKFLOW"
+  },
+  "version": 1
+}
