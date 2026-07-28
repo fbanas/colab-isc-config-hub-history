@@ -6,7 +6,7 @@
     "beforeProvisioningRule": null,
     "connectorAttributes": {
       "authenticationMethod": "OAuthLogin",
-      "cloudCacheUpdate": "1784735498845",
+      "cloudCacheUpdate": 1785147524805,
       "cloudDisplayName": "NERM - Organisations",
       "connectionParameters": [
         {
@@ -57,7 +57,7 @@
       "spConnectorInstanceId": "533807cc-ca87-401a-b832-f093a03c84ee",
       "spConnectorSpecId": "7aa95c2a-6c38-4f39-9bb9-040f11641ee3",
       "spConnectorSupportsCustomSchemas": true,
-      "status": "SOURCE_STATE_UNCHECKED_SOURCE_NO_ACCOUNTS",
+      "status": "SOURCE_STATE_FAILURE_SOURCE",
       "supportsDeltaAgg": true,
       "templateApplication": "Web Services SaaS"
     },
