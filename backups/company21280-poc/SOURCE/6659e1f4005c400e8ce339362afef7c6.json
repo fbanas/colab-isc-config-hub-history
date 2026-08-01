@@ -6,7 +6,7 @@
     "beforeProvisioningRule": null,
     "connectorAttributes": {
       "authenticationMethod": "OAuthLogin",
-      "cloudCacheUpdate": "1785396318426",
+      "cloudCacheUpdate": 1785505490356,
       "cloudDisplayName": "NERM - Organisations",
       "connectionParameters": [
         {
@@ -52,6 +52,7 @@
       "hierarchySeparator": ">",
       "identityAttribute": "organization",
       "idnProxyType": "sp-connect",
+      "parentOrganizationAttribute": "parent2",
       "possibleHttpErrorMessages": {},
       "since": "2026-05-06T18:27:14.585Z",
       "spConnectorInstanceId": "533807cc-ca87-401a-b832-f093a03c84ee",

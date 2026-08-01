@@ -7,12 +7,12 @@
     "connectorAttributes": {
       "checkDeletedDisabled": false,
       "clientID": "e4e240ef-36f5-4f7e-9902-329b804a1cf7",
-      "cloudCacheUpdate": 1785452835907,
+      "cloudCacheUpdate": 1785539015870,
       "cloudDisplayName": "Microsoft Entra sp-demo262 SaaS",
       "connectionType": "direct",
       "connectorName": "Microsoft Entra",
       "deleteThresholdPercentage": 11,
-      "directoryRolesDeltaToken": "Je0iVt_DCC7Jk7vRVYEumlBHiMlDjE3g1KrsIyY_7QXtdgBdPJbAIX-lbkU6Gtgpda9OlkKhQkRRRuuOjIum42IkJGndWCH63p0osUzfR3YOzb80oCw8ou3dz39Zrarx_Nt3pyxfCYRK1SM3NA7KrPOzIKjSQDvY7d4PKA-zGDJKe1TxOtG1MmRZHFbcIErnLxX5vTp-IZ1-0bAauvkVseyT6TqxdOKpJ_yDvjCmj78ZQwb0xH4McEz_usb5LlFQAuGjWEcrSoUOIm24l8TAmrXCXfEj9BwywVWyMANwPTkrlpsPbf4zkHfmCLiVCBzzdqGVSgLnuoXa44XcEUBoswa0XpcTYw6tRyU0bLcCvYfknbjrpw0r7jfJoT7iXU550uVu0uLRvW61OwhlqoXGgSkY3kGbwQkqd7fQPtgKSaidYOdqG0Zp9CpPxqOB_r6KDJqm9d4PsE7lZ6Y5tq_SIo6eIaETi-eL3yovF-yRgyunX5EHmZfDyAItIbPz0bWan1xItDbifz8ImmhxORRUpqWk0VTthQwlUlQTMXYNfiOhO88tIAt_J9S9ufPg2yzgixIQa2K9SwE2WZ24bbDWUUR-dX4xVFYeW5Q9tLc4PPOmEgXwgGm--QWhEbleC6OBKl5KkMsbcyqi7qOT7Vg2Pw9jCXJPztDO8R8baOaYcMeK4R7qiQQZs8DWALruTGggRsknUGAqA3AgAksCsGn1wf8pNKT4W4PTgktNHMpAPPtXmC6VBdnORopc0HrxxVcZ5u9EmDI8WVpgyqQJ6z-LZRpkI7yDY4IrDVF2_DMJqfIdCmQpI7cP9HBwp_CMFwtMPAxNRNO7cMQLz4daOSqrcfHgsBnN7p1YSRiYxxJyIwQYG1PL_mkmuq2gq0q9rCgDj2lpXqOmajwvmbZ0sxbU_bdvwzfVJnNrILRkJHSJIT1S0e6N6SKqolNoCeh8ccWigwZggmh2QLPPN5F9U1yLjwXFF2HMGmyxXqLgkPkB0OhMaZB-aLOtm1RC_FGKXi9m_impn3lrKjll5aFzP5U5FtmUKS1LmrHteIfqgw5yZF10QulBvNCo2DVByOWpMr_B1F_3sVTaVTZL9UR5g48GYSSgdaBcJq9rq2-6fhJNYfrkiYb9Xi_p5q_872QHZHHguuD1FWgBn9kRHScFuBrtsKSZ4Pw7rXW5756ls7xjNb2JHpOwmPkvNE8aDc2UioxIuOuL2HV2SMOnx9E3wS99myk_jUzNnzS1eVc0HsQzOP95J9GSCUM7aGguA7IOd8hFeaYufa90mXtY_MlEoxSuPS8c1L4OWYMlt0Zj3u3S4LHsj1JAk16WOKoQNDblsSNTQFX0NxbhwE123hEwnORwDHycocK3ukZMuGXiNd9jRcO7MFd8H_ZK-O3HTDfqyRdmqgxgrde2npD1Lo8jQFSTW5EKPLWYD9ysASqAHgnMYETke-mhqPV1cCb7lrMjRJCycsK_iJ_jv4GKwAW6GpSSaPguy8IKXkPX-4X5IF5Jr2Oy3uayMRhptRt3AkZCpf9992TVw9Y43uWKeX7KvfrTGC89_ejRcTYxi4M3fNtqTORKaPuhluyBF4biwCLQw_6wK2KMpKWcd3FMZt016E8b9dYo1im-efz_pavDkLLuLZVbphwX60d2QzsSZVyRYbCsYhYyQ9wM7hIjRFC4cB9vpvXr3qPAembHxyXypvruCy3pt-j3F--T_n2BRDlz5kq94f-lbMGizgajzPNtLwb8qHOlU2ViTPS4NLGc1nmlXTbPKNIqiBPtXKEAuZz-e3oN1aiIfdqNOftzdPgm6EpMwAhlcjHBx6UBzTnse1smfFBSPurSn3NsTRHSIBbWEVdo.Wt0rptye_wC-kLLJ_Qd4nkQ-CbyeDx1jbPpcGWbsMpc",
+      "directoryRolesDeltaToken": "Je0iVt_DCC7Jk7vRVYEumlBHiMlDjE3g1KrsIyY_7QXrmMPNSyvlfc85AGkXTLv20N-AVbAh9ZpAxR53Xw8VFCqSBItn2RUxBP3Tg5Pa6W-371S0acK-NpedxqL7wTAIYXzql-VSITbONEufE4BqtbWwCNMcO4y6YA87fqFiieVeCtwrr0pmJIbmfG5lCHcBGoseq4XrSucrB-xemk1iL4cml-kO7t-lQtS1SoNFjeS76C2xjgNIf1C7s5noWQKOR-MggeA8DgfnBnhzh6QZSBQz__dGMbT5IqFsEy8ybmBNhq2HhvQsNZkCBqpzH1SdgRZDHQE4eKHPss36yBOT_IjzP-nFKtK4FJeHe9W9BuLerEs-qxeHZPcYlZP-OC8C_v4Lkdo5RdSS95YgfF-yvb4NM2pyIROuFxd6pSIu_0elYodXuvWz6DjMGeio_hTOcooogbPHkOKGxGH-c403bvo8NuWlc8HQAIr-r6_rZtWTFPZEvLk8q33eqi2m4h7nQ14IQvs_hyeCEQ8rlJUMihkGFpOFtJUeObxFGsu6bJtOafBJLtHeIMrj95BM_UBtTrjyHyJcC3sSRQJmOHxjqj5geaMOPMKtGguv_dl8TMIW3zgkzB3Kw85RFOsfaJhKzvVL7RUmUoD_SBk6zZd8lugL7tRkNnfhS0Ef7D5Ydk4tiCTUWY-4ZPGnmB6y3oR5D4fQHMDW1W_OFL17qNbUUd6fvfaP0iWrD7lpgbBHam5vl8BloiJnjY8VydiVMMkJPk3AOx2OQMwigOftRTqBCAPevaRAiypH92Rgx9kZ_H0_lgpZitPZMQw1PV-JD2_YgStc4VuU07lUQ-igMpB67ObIcAKMt3Xv88pSJK7iGuREOowhzH_jqAwCIqNnEjFYD6NUbRmK8c07pTnNyb1Zk2MbuqWKBbXKzKouQGUXyvK_YmxeSpvGnLlkMtuwFy70aKNRrhp3HYizJiNCROK2fm2pbZDnmZ1bE3BP7c1USU8SVO3fhN4KeDkT8TSAfBwdijm1A5189LhC-hi7FRAjMOc1uL9UF9eaPL001UDGsNcUhw49IugXKga-h2bZ8cBdrt3vyMp6MBTQ5zViayokd0vbAbGmPwEK2AFCpJffjpAPX13Sjhpskr46TBFcaAEzm_Uaj02Ba0bgkSf10c_K1L2PtG2ibLsXF69aOL9kOofYyNZALYwwVsQMbL5vo_-vtZoZgE-FyAXFp4HcU5HTixpg5PTERO1AVnEqpNFFgSlMdU-wUZoyqg8c-6rziOxnt0RukFSevunqgdkcdyQLUOrLG5TeVv2AKLuIZBXsYW1zMBGQWZtUBTDadG19TGTP0DAEHihN0mBUJdIRMGWLMlfQC-LhECCIGs760ixG3pUQ7DmiY-LnbpJEcdLTGIQ9T3GvKgA7saju15FrGmFjJeuSw05AfmWSmtUq1RuhVqDg8wIUqYpAFEZEbRZgmOJ4moTdInQPWc9mnfIgYDVNb4u1jUHr4Tr3ZM9IwGI1cgjdfsPBZ0OeDck0L1LYXZ1qmG8RWJ2g1IF92dHuBcDcBv6bScHZiYNNBF0R59FK9AFWJCnXo8Kp89dgw_9qQEJCL3kj3roB62Fr948dcA8UrJUxHpwGSw1ysyYFbuXLv-Pc9lVqBnT1kyih5hHCOZ9P_56jm6UKaUEhY2h6syRwsV6rtIGHjotv8ltbKUdCKg_qUiDEtYM0Ds5ie9iIJxG7kVzc6p9rkiLUEhc_WZs1NG15Hu-ljjzDemtY3pRJhrBq3z0QDkxk6wwSoMM-Q9pl8H_wwz4-15LICWBlM9JWyf44dvq2DK7yyT9NJOCeFrubHbeghcxASTsE-CittCBV.UrlWr3Iq7gAWYZbXdcFfJY7JRIHNlYBVObwnVoF-H8Q",
       "domainName": "spdemo262.onmicrosoft.com",
       "enableAccessPackageManagement": false,
       "enableAdministrativeUnits": false,
@@ -22,7 +22,7 @@
       "enableSystemAssignedManagedIdentity": false,
       "encrypted": "clientSecret, clientCertificate, privateKeyPassword, private_key, refresh_token, exchangeUserPassword",
       "grantType": "CLIENT_CREDENTIALS",
-      "groupsDeltaToken": "Qvj_gQIi-2DzBSlAa43uVZtsidNvohzw53y8K6vfUY9UnjvmZ8O9_hW7-eylaRKeezGgFPGDFvkEopXrD1RuivFuTRbSEPEqdTVZONzdTlxJM2tZ_3KaM-f52P7BFRZ1D4QYsIHbGSBMlI3Ye74Rzx9PX-qdjCmra3_vvP8ds841hIAnCLcNRhiHsLyMj_8tDTXz7Xp361yDczLQUuiBsbJdyY8NNQw8MZ3oSQYostxLf6Df1Op6Sm_cpRG0nBYGPityA6r_7lPddRzZ08g6qbUSgJuijancJyDaOP2KBul1AZ1yVysJXxTrHrJho747LnRQMmUDXmFwOt67tcigytnGWWsE7deVEp3sGuW0-Bsfz3Nkh_1SKV-XhScJPI6o0HTq-k3xVqLkEU_ddHgODVgyY_WgyP3nEuG3rpuAZfvqEiYqTOr38bEUoPCVpVuB22qHg5U2Pw7b0P8CW5E1Fq8Gokp0gt2CMCxSJ42Awj_UUGEk7l36vmZYgjPEUn-cU4VK2GwpC0PFf1d1QS_3Zri1jV437_mI3-dX2Kayaq3tD7HXca3ix8_gZYyIbgYULFHiuAs6AARx09WhqNauvF0HWVVbDPSIIEC1dTMjUkHK58CBM4TfpEJbEV_x4-kgjUhPB2qxszbZM_GyaX3FGe0OpLzRsP1MJNZSpM8Nct_64NodSHMugT8DwGkqfdlmXZKYIz7fKEJwrxHePvMeAHxFTlsAngBGa-Wp11OGrdN2nxTV2y-CrQD1W1ZYDSyUkwnB0b1myHGnE3QUnXQR5yJ-OhYqD5Vi2rg7KJhTox1If3607kLGoE57QcYj0etLgcFo3TVVXXI_bZD27YrBMH6WOg1kylO4X3KvA2MMQcNAPSyYhPdrlOun1Xj07AQU3Dyv7MvT8Im2sSPJ1SkQeF0VIMWq112KggmEWCz-5tx_7HNbDHHcQFdLBxKfhJW_8GNIrsk64trz0UodEDvzEY5GI_qT-H59Q2dK357iT30ZwVtux6v-KLp7u-o_wJjhTB1S_F60Jo1mf6NXh92dycz-vFq38ARrUJvIqVfuwKYqf3S6KrXfAZz4J2J7HRyuzCmLUof5zsV5gcmwI1HbaKBDwKc5FnrsYNwvugEe6Mi0Yvt_2eq0ZJ5bRRpOXfqLl4E-JWWGkgvkCB-NdBaJpTvrnvueJ8U42D1irW4IV0IDbYyUIpGadGbgEgnDy-y-ga_nLfWT5GCs01XzxAXhYudlRC3ESRnvcflgeK4AoZU-UAYca9Gfhzw-7gCnSA4GiXVd4XuOC5jYstx-cYC-ODckqJsAnm1rmpi2_DH95QaRsZxM4RxOo44MTzS40P_tzKzpyRiFQZhw2neE3kwxS98gA-reITY1ssJUfqxswGo7-yuwkT-nxViwZ8xZyp-TldlqGrNhwXmo83MVhjJOvHKFYa4U7XaCA5vD6vvlIb-56ufa4uZjPfdug0NqZv3AKsKhJPNDSUHoania1jzfX3706lXyLRl5ecRFW1Tks4MK_DEiweALtxJtM5FD_CqdNgKpsg7RBrbRVFvj1UHpQIaMfcyYRaBPhtfdBAXtIMr8xlnPH-JGVHE3gYOK3ezacLhJOY8aoOJ-VCOQ8umttEibQQc92CAhea5u44gagQAUUjoaGb5XXOApavkawTZg8Nz6pBJIV70ib2XYp-lbG9FU8Rex_g9lpPzaSP1wgE9Zy8B9bT50rO0Uh7eR-Q5CR40mHrk6YVhEYkTiS-bYTg.6-wjZC-0vLjtKFtK5W47Ddd81-88MddiEcE-hlc8VXc",
+      "groupsDeltaToken": "Qvj_gQIi-2DzBSlAa43uVZtsidNvohzw53y8K6vfUY_5rUXGCVRz0YnYquCs5oSdZ5ZbhFQ6zlc_ZWAS79WX2eoFMfxswxGy7iUhZz7VHK9uKjX15gd38LxRaWLAeXnpprWe98bAfoSKyYbJaInruy4rbhcEgC96SiLEX-DmeKWWzfJBMvywr38wdmimaATA1FTh1fNbbI9WdnUpKoaIK5AZviW7CEUVSDHlzEDs3jEA6YvwNW4CWJzFkKE6ePilpmamaiXmJ-esPDvkL0kWXxF-qjAYmS40v25UGF_6y59IrCWIdQ46jHv-kgIQw7J-SpsqdKLklQXOiapAyFjPFrrJ25hTvZKs693ud_8OB8LMkmiczD4k1rhrgsiwACP9udbz8skf4zr6NdYQfL_lErDO5aRnvqXBC1uNUu6-Q8StJp4wIEF3c07bRv8MvnbKiiuP7r73fXslO-acdQul7GnEMkgVLfDMc4A4OM0Yi3QvIONoSGnvzMEncYzoqGnA5KvI5sxUl7mLIy0o0zCfPbFkjayNq41FlrsKZGKe5IcDPz0zlDERxnKe3dzW12NH_ifDncEPHmkDo2maeQShEOm9TSQU6OgTJMrnLgydGvfI-NO-ynM2Quj9w0SE79lXTR-5mCFvl1U53uNNik8-0cA3yUa3hD3r5dqor00bEhUuxpHjry4ac9aae5Ck_eDsX7jtsxyyjH27Irdb5MDWsD4TlRV8DmagmZLYfFlSU5q_isTOQg7r69bSswEhs7pQ3XZMGW51ATUe90qIeflcQ_MfYcByLWXtYpkOMM8b_hec69vaKKYZyuDG2C8JbHHFbiN2A5vAktGKhErfXfdrZfpE2BJzftKorwlfr0xyDpi_vNW3xwYQYftMsYBNYix3M7ogAElgpPUGc9qdZTYj9QsNDg-RyDPikiH8OfsBW2WEAFqQMFWMjcGeY21QhORYmGO2nLPwU0ym3j1Iiph1Paor8l9WffEhdbsqZVHUoA_Gm_-oPZe2XFlL7tJVjb1po_ZKaJ6BRT_6i609h9b4-scSwDCpKk7ngAq7TOEWgfdMRcWxWwgTirj89rHU2AqV5BikPZuqxM_hG3hZay6SnVfcHcsL1YrlMkv1PDbcTwAXU-yycxqvzshPHjgz03qO_UYn0xpm1zNrfEr_WwtLhjJcH1sqCJqRcteZP1i9tM0TC-kmVG93FzwAUCu0QuI-1Q0CaCeOuuAd54eIKAJSjfzwCAAI0-GdN4wFZ1iuZZLULdAihRP3orD2FVFVUP_6BDW4tDaHJ1lzBAAkjAp4oDcMAF9OzK8ANWFnazmsmlEyawNkVuqfxNB53iBilxuj0fBa7gNqFw1iL4n-6dObbPvErxvR14HsWOQJDFrFGEYbAU8AI1ND_LWbI1VX22wHrpO5ffi4aFwus_TseCykjHpGQr5fqrj-n_DN7pQMgFU-JknheFl6xxpam9Oc3-AhILCxX58dkQTPbVplh4eddqFpRMcyP6dSandtKXh33uI3zLQtm8JCaNQOTsypRYt0_QWSaj__rr_6ocQhg3MDZtvvGz73-EvtQuiIdXybTUWqmXVjqAbOKuGSx2tVr-MTq8i6CK9WO5Z8Ly6Q4cIR0zER3GMg85WkAiI-4c89LwEOyIiAqotJp4sCoYbxVgex_2p6tKG54SBkHbbXiwWKu4EP4byhdWB7eR09OLmdHbt-jUhFvDLT_tv_lQhfeMhbIltFYCvSbdVpeh69Yqz5jg.X2b2BTkmBXwX7_LKZQWtP2QLUzWyJoqLMI0ED6dd5Xs",
       "hasFullAggregationCompleted": true,
       "healthCheckTimeout": 60,
       "healthy": true,
@@ -98,7 +98,7 @@
       "supportsDeltaAgg": "true",
       "supportsStatefulCommands": "true",
       "templateApplication": "Microsoft Entra",
-      "userDeltaToken": "J98kFczx6JyEkMrsYPWwcTchC_fmjZ5Sl_gi5IvtypyYaXv1jYuVhITlh27DbIwc0DokQS5g9iM02ai6Hbs1gK7GiW3PcYo4N9loZqEiiRTBriE0rhkMMTgMkWYrvrFS51pZussDVWtRtb_j5kYTq80WHR1UrhxvpGKsGPKhVg1vvbZq_ZrHTrmF_zoD1BemCSfGR0VfvxW50rQHXaYNknKOpxJuf7UjCEr0RhZrnaogp6n85vPU-38El1RuNFR_oOhM97UNz-pewYqRFJtEiB9dp-Y_pqDswQhHCVbOHKPCy9GLbWR86UQyEyFhGN63viOOmsJeanb6fg4OPOyr89jIt-rqJB16zuhd266tw3DkN2QWTMRH9vRglj1MUYl7CGAuaxYt3Ux0L2VfdMEAw0JmB3Cz2qrf6SbmV-Nzx-NxKu7topCYJgp1iUSkAY8htZ8bNvJPMp62BXElF3tQX63bDIoQ6fDJKvOl0vZlEqamXtl3tsb9NxRyeILUw6pNn5L5wwhKgMtY9GIhXFFSOR71LMqXDIbhyLMSXKxmep5tuN6rwA1N95x8nPK0f_QY2ODNi79zoNjFmwWH4drSDjqOLI8QxYcXLw9KuK0COZeZ37SrdS1hsQIRycop996n8pme03ff8AAQjhOjSQEDejtc2C9INEQxuz7Zl2rtsE1Dj1-88j9SsT4CWuTtHOXZ5LiSbjKM-O8hxHGhy-c5i1iiy6f5jjk3tu5hMY2O9oaUWne7uPw7AjUQkfuDXyIUuE0N9GhpF2eNauP4YtFCgK74lttr_cdK-hFrQOSIKDgDsL7XBTR-328KoMd32-HxGLbTPDKUgu4OOjqdvqtz_2gDoHi33TKP16TcjX1r4y65-qYogPuYjtUBfUpxW9OOkhw4RP903mumHrcVMjb2n5kNPaGXz_DrD7PSf_-mekBGDbYEwAKnkN2EZfq8qWaOwxPVGlt9cIi3kjw-ZEhQmdqx9Kf6WuE1B97w42u9waNbxQcvgBemJYilSA0_dybdeDZrQkGZZHgRv3DchkLLQJ4Am2ohRlKguJknvujEa72Yu12V5Q10ip_Uv0cSYsrQnFQgC11WBdOTSQeNNpt-GNJ_Jjfmyckf74YIK9Oieuk-f1TCdUe7P4OguFzmCeNadq5QoZRdTaOu6DWQUxA-PTz5fPMkRBb4n2fZmQ9QTGfX8C3PHzipFpZIyoL8nH1E9u0ZuWidAMc_4YX5zDSvRuWYgk8XFrQfWo8oUnhz9mwB9GkulqJ1XZ91Cl2Q8rR52uwjzL4VHdBG84H4HhH_dY-DsSkZLW6t08Dk_GWPG4L7D_IbqtnC2dGQV7LUJngHlGWb-mHXYFr_sC8MSELRGv_dQjrEDHJgEi8Gd5x0NaQ78lvQyzuLm6pitODAfoZhwkvB_xnQ4ADF6XZunectEu2_K567U7v8vWmDH4RQ5mZ3UKPHbfJ7y98rK00kD5GEw6zaTOxOcWLRca2Q19l-07F4n1lM8nYnvvgXsD0yuX5nM-waM0ofsPANAZ3XRbDOGrZLOIAibM1s1XjxdrzKhlxvTEdAv4js0UmcxJMEu4ki7JXD2hXoOXb1SIKvCalKCKRABbUyfZKWvnEsWP75jvnxWDS77Q2ZbuXT-jLPcXTXWUVDjtwcnMohL50xSmlKEath2Dze40HwNxMJerZhbOLXZjd_dpEKlz6pTbSCC0X2WlbyqIaqXkr089Tbwgl2YL8VpjCR6Ms0-Q8dM6N31zuF8NhOu89GUgHGd4-QA2uPJ1Af4cas2SjYGREpWA-AlZa-oPogA1D14AFBXHdv_uvrk6WmOuRUGNYeCJBB2WjkIBewGOdxySlgupW0oRa_Rl66W2sjraH7D7dJ6r1sV_Y76d0l1wZ-OQFrfPV3VWkpbq-k3D6kJFmqUnsrDTBKfQUkQNApqcC9okejz-E9QCpGPfmbQH_3r2ImilkmlDxld9LLKeVOaxBYTNgZyOGb.lSMLYW9t4CKZqdRKRYv630CVEgmlrenygRFwieUJZY8"
+      "userDeltaToken": "J98kFczx6JyEkMrsYPWwcTchC_fmjZ5Sl_gi5Ivtypxf53ba8GMb2B3CvJkou-fIXRR2q8hh2WTnkFCd9RZQqiO2-ikffBGLaO7BfK-EJMSF1sJ4WvMZGQr-wes3XWszn6hvUtxOeNSL67JowxymLxatv5AwWQMSESgryggXxN5L48N-3FzjOUACQu-ZuxV3yfMM6QfFNEhzIMzje4JPYlk24ZNbLHk-7MMQNZG760sfUsWz4vcLMtrkBbzGTeoZx0xmszZMOgqYAIbNTPNdg-1rt8OvxufodjpdC6OLWfn0Wq9AqgBSh6EbIklPxcAvfl4SfGWqGi9NmZAgj99u7UALjlqkr1LyHmFKhDuQO3JEL5eNhsMa55AvqivOHzsMaVY7d-pLuuntu_zfxII0iPBnVYJCIdBkbk_KEzutSD_dd9vAUY2lsRIHH_iEY9T31SxAB38lO_9TmDHfRy-kdsXEv90hIeXwDYrxLqvs4r0-xPmatdhZ-w97N5_msyh-0jtSqd5HT9_Oh6tprsnEYMq6QLxEXnVloa4kc7tYoszzIwsuElQUVbQbgvFvWczOezgkI-09eyiv4yqCPXNTB0Ro8FIXTXHxnZXJvjIMv5xHcHCU1fouaCGSaBjiNicSAQEJH8K9wk7-5vkhxYdMkQscUBqyxCNXbVX9UePMYLT8PiPgHQ9tJMysnMx0fb3D5pX0--2TM8-6_DAhn-5HXGsFNJ1NqTm6yoolXDJpIdp2ztHOoiCE6hcLrrmEQ2sGtdulx6ycmycyFjHZHON4Q3GPSKnI2EzJZSdW5EWFtJhKvVOKbkNauEXlN4qBe-QXsFG1-5fzhVsGQWNyTnAGEC54ZbHwE5V6CCzrOd-ou5DF3ISdeIT21z3qriliv1GZwL1P549t6g5wpVQYZOsAghtH0wCINrl28_qC7QopvLs9mY67p1Sf2p7P0SIxzYgI__g2rTWLu9b0K70bV9dIhysv_5u14Q7Qtn48WuUIshDXFy97oy_x3TPC-TOKXWHkQrvZfKfGbNMs4Y8LcPBnVUE5YzM9u-xTjyy3X7EALe2DSemLBE_j0aEA5_QVBBON8dKA5LJfHGjl3BWCl69L-2ORkeT_TbLQwy1lY433nkWEXmU6A71kiagaEex0DDPfMX3JJH4k5OpxaC4v8J6wl_BZNF_QQHshWbiOpdOWlkY9GnuSZv1CDnd36q5GOBLVdjthBBNH7bBxD7m6J5XABDvS3-sq_n4iqSbQDQCgyiQykTXF8RPJpvp5CedbZjevuucDkA2ISKHOXf4OFOEy_PWFyC2vJAvVYjfRj8vnnsO5fCU-vzgrU7r62eY_FaMaizrwHe8RqEdsxlgdQCE3xf6L7loie8AfuLZfo7-Lwf8GiqVgImce7etnNp4zyZrEePeYwhe5gVPUG5OiFhBZu6UrulTpKKadkREcJIajB6vSJmJ1nH-fba6bA_iaVFye1HOeW7OQX5CmE8LSMXNQ8GHu9YzrkiDoc5i_l4ZmTFhcV7aR3lRUqsBp1fwKK2u6vCiLLQUNUcRy41SX1eoHFEmBjFIPpJ-XyUXGNKPMaEWwzyas9BF0Jjpez-H5Z_3tcBTnA0fShmpKmYmC93xX2EUE_CygcMel9MYhYMJinRnDsJFVERifQFQBetSKgonXMnU554yfkttwDFcDHuHFCGorstGd4Q3zzth48tdOE1ICeAUzpZ9CvgLSt5wcK3-AFRokfpwXgiLNHUiEPwoPGUdWzB45CPvehoL97fh_S-BbEAuKc_ruKcL80C_ilwdugRw9uItZkTU0EB3RuE2OS4xD-w1B8bdfgDhosXev4h0pveRkkGIHaVvHY_tuDAvmf8DYxHyNrb_mU89iIOMG1Q6e3slFQvXySv80ex0uc7O3PGu1VDt6sRt44KDjo6NUbx9PCjpWR8uYnV_O0noxNHoOdPzliqav5kYz3SSxKqFABdF90Jc7y6lNvUgIPKSl.NKR2oW3JcX16DQAS8Jg_OuKmTskB7jfGTPP_4m99sQc"
     },
     "connectorClass": "",
     "connectorScriptName": "Microsoft-Entra",
@@ -1062,6 +1062,392 @@
       {
         "attributes": [
           {
+            "description": "ARM systemData.createdBy of the parent Foundry project resource (classic and New Foundry).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "creator",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "ARM systemData.lastModifiedBy of the parent Foundry project resource (classic and New Foundry).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "last_modified_by",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Display name of the agent or assistant.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "ISO timestamp when the agent version was last modified (from metadata.modified_at).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "modified_at",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "ISO timestamp when the agent/version was created.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "created_at",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "New Foundry: ARM deployment name used for stop/start operations.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "primaryDeploymentName",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "New Foundry: ARM deployment state for published versions (Running | Stopped).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "operationalState",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "New Foundry: ARM resource path for the Foundry project. Used by provisioning to construct start/stop/delete.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "armProjectResourceId",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "New Foundry: Blueprint type (e.g. ManagedAgentIdentityBlueprint). Empty for legacy agents.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "blueprintType",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "New Foundry: Client ID (appId) of the agent's instance identity SP. Matches Graph agentIdentity.id. Empty for legacy agents.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "instanceIdentityClientId",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "New Foundry: Client ID (appId) of the blueprint SP. Matches Graph agentIdentityBlueprintId. Empty for legacy agents.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "blueprintClientId",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "New Foundry: Entra Object ID of the agent's blueprint SP (class-level template). Empty for legacy agents.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "blueprintPrincipalId",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "New Foundry: Entra Object ID of the agent's instance identity SP. Empty for legacy agents.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "instanceIdentityPrincipalId",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "New Foundry: Foundry project name (e.g. firstProject).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "projectName",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "New Foundry: Stable human-readable blueprint identifier (e.g. teams-agent-1ef58). Empty for legacy agents.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "blueprintId",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "New Foundry: agent kind (prompt | hosted | workflow | container_app).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "kind",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "New Foundry: agent name (the lineage identifier, e.g. teams-agent).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "agentName",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "New Foundry: all ARM deployment names that reference this version.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "deploymentNames",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "New Foundry: lifecycle status from project API (e.g. active).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "versionStatus",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "New Foundry: simplified list of tools attached to this version.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "tools",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "New Foundry: stable GUID shared across all versions of the same agent lineage.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "agent_guid",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "New Foundry: system prompt / instructions for this version.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "instructions",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "New Foundry: true if at least one ARM deployment exists for this version.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "published",
+            "nativeName": null,
+            "schema": null,
+            "type": "BOOLEAN"
+          },
+          {
+            "description": "New Foundry: version API id (e.g. teams-agent:5).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "versionId",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "New Foundry: version description.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "description",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "New Foundry: version number string (e.g. '5').",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "version",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Operational status of the agent: Active (Running) or Inactive (Stopped). Empty if not yet deployed.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "spStatus",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Primary key. Classic: ProjectName:AssistantId",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "identity",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Response format setting (classic Foundry only).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "response_format",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Source business application name: Azure AI Foundry.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "spBusinessApplication",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Temperature parameter (classic Foundry only).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "temperature",
+            "nativeName": null,
+            "schema": null,
+            "type": "INT"
+          },
+          {
+            "description": "The AI model used (e.g. gpt-4o, gpt-4.1).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "model",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Top-p sampling parameter (classic Foundry only).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "top_p",
+            "nativeName": null,
+            "schema": null,
+            "type": "INT"
+          }
+        ],
+        "configuration": {
+          "datasetId": "azure:foundry",
+          "resourceFeatures": [
+            "ACTIVATE",
+            "DEACTIVATE"
+          ],
+          "resourceId": "azure:foundry-agent",
+          "resourceType": "std:agent"
+        },
+        "created": "2026-07-31T19:16:48.649Z",
+        "displayAttribute": "name",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "41d3ba0fa3934d3d86746e1ceeda824e",
+        "identityAttribute": "identity",
+        "includePermissions": false,
+        "modified": "2026-07-31T19:16:48.649Z",
+        "name": "Microsoft Foundry Agent",
+        "nativeObjectType": null
+      },
+      {
+        "attributes": [
+          {
             "description": "Active AD Role Display Name",
             "isEntitlement": false,
             "isGroup": false,
@@ -1386,6 +1772,282 @@
       {
         "attributes": [
           {
+            "description": "App id when present (value[].appId).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "appId",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Asset id when present (value[].assetId).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "assetId",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Availability scope from value[].availableTo.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "availableTo",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Blocked flag stringified from value[].isBlocked (true/false or empty).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "isBlocked",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Copilot catalog package id from GET /beta/copilot/admin/catalog/packages value[].id (e.g. T_..., P_...).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "identity",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Creation/platform lineage (value[].platform), e.g. Foundry, Copilot Studio, Microsoft 365 Copilot Agent Builder.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "platform",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Deployment scope from value[].deployedTo.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "deployedTo",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Entra AgentIdentity SP Object ID. Sourced from elementDetails.definition.AgentIdentityId (single-package endpoint). For type:lob packages without elementDetails, falls back to appId. Used as Machine Account key.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "agentIdentityId",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Entra Blueprint SP appId. Sourced from elementDetails.definition.AgentIdentityBlueprintId.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "agentIdentityBlueprintId",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Graph copilotPackage type (value[].type), e.g. shared, lob, thirdParty.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "catalogPackageType",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Hosts where the package runs (value[].supportedHosts).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": true,
+            "name": "supportedHosts",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "ISO-8601 last modified from value[].lastModifiedDateTime.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "lastModifiedDateTime",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Long description from value[].longDescription.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "longDescription",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Manifest id when present (value[].manifestId).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "manifestId",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Manifest version from value[].manifestVersion.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "manifestVersion",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Owner object id when present (value[].ownerId).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "ownerId",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Package display name (value[].displayName).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Package element types (value[].elementTypes).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": true,
+            "name": "elementTypes",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Package version from value[].version.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "version",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Publisher from value[].publisher.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "publisher",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Short description from value[].shortDescription.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "shortDescription",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Source business application name: Microsoft Agent 365.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "spBusinessApplication",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Status of the package: Active (isBlocked=false) or Inactive (isBlocked=true). Empty if isBlocked is unknown.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "spStatus",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {
+          "datasetId": "microsoft:agent365",
+          "resourceFeatures": [
+            "ACTIVATE",
+            "DEACTIVATE"
+          ],
+          "resourceId": "microsoft:agent365-package",
+          "resourceType": "std:agent"
+        },
+        "created": "2026-07-31T19:16:48.650Z",
+        "displayAttribute": "name",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "4e99d08de75f42949cae84cf7ea8846b",
+        "identityAttribute": "identity",
+        "includePermissions": false,
+        "modified": "2026-07-31T19:16:48.650Z",
+        "name": "Microsoft Agent 365",
+        "nativeObjectType": null
+      },
+      {
+        "attributes": [
+          {
             "description": "Authorization source of request",
             "isEntitlement": false,
             "isGroup": false,
@@ -1673,6 +2335,269 @@
         "modified": "2026-03-17T16:42:18.708Z",
         "name": "azureRoleAssignment",
         "nativeObjectType": "azureRoleAssignment"
+      },
+      {
+        "attributes": [
+          {
+            "description": "Capability type: MCP or TOOL.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "type",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Credential mode from connectionProperties: Invoker (end-user credentials, safer) or Maker (hardcoded creator credentials, higher risk).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "credentialMode",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Knowledge base GUID (botcomponentid from Dataverse).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "identity",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Knowledge base name.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {
+          "datasetId": "microsoft:copilot",
+          "resourceId": "microsoft:copilot-knowledge",
+          "resourceType": "std:capability"
+        },
+        "created": "2026-07-31T19:16:48.649Z",
+        "displayAttribute": "name",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "68acd4e885bd4fd8a708eddd87bdccd5",
+        "identityAttribute": "identity",
+        "includePermissions": false,
+        "modified": "2026-07-31T19:16:48.649Z",
+        "name": "Microsoft Copilot Studio Knowledge Base",
+        "nativeObjectType": null
+      },
+      {
+        "attributes": [
+          {
+            "description": "Capability type: MCP or TOOL.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "type",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Credential mode from connectionProperties: Invoker (end-user credentials, safer) or Maker (hardcoded creator credentials, higher risk).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "credentialMode",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Tool GUID (botcomponentid from Dataverse).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "identity",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Tool kind extracted from data YAML (e.g. TaskDialog, AdaptiveDialog, McpServer, OpenApiConnection).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "toolType",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Tool name.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {
+          "datasetId": "microsoft:copilot",
+          "resourceId": "microsoft:copilot-tool",
+          "resourceType": "std:capability"
+        },
+        "created": "2026-07-31T19:16:48.649Z",
+        "displayAttribute": "name",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "955db224ef3f49b595d73f46773f98dc",
+        "identityAttribute": "identity",
+        "includePermissions": false,
+        "modified": "2026-07-31T19:16:48.649Z",
+        "name": "Microsoft Copilot Studio Tool",
+        "nativeObjectType": null
+      },
+      {
+        "attributes": [
+          {
+            "description": "Capability type: MCP or TOOL.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "type",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Fallback identifier for tools with no name (e.g. file_search vector store ID, code_interpreter resource ID).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "toolResourceId",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Tool category: openapi, file_search, code_interpreter, or other.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "toolType",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Tool name. Null for file_search and code_interpreter.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Unique identifier constructed from agent identity + tool type + tool name/id.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "identity",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {
+          "datasetId": "azure:foundry",
+          "resourceId": "azure:foundry-tool",
+          "resourceType": "std:capability"
+        },
+        "created": "2026-07-31T19:16:48.649Z",
+        "displayAttribute": "name",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "b0cd61339e5b458587f435f5982adebd",
+        "identityAttribute": "identity",
+        "includePermissions": false,
+        "modified": "2026-07-31T19:16:48.649Z",
+        "name": "Microsoft Foundry Tool",
+        "nativeObjectType": null
+      },
+      {
+        "attributes": [
+          {
+            "description": "Capability type: TOOL.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "type",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "File attachment GUID (botcomponentid from Dataverse).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "identity",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "File name.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {
+          "datasetId": "microsoft:copilot",
+          "resourceId": "microsoft:copilot-file",
+          "resourceType": "std:capability"
+        },
+        "created": "2026-07-31T19:16:48.649Z",
+        "displayAttribute": "name",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "acf323745bba495298b4e2928fa02f4c",
+        "identityAttribute": "identity",
+        "includePermissions": false,
+        "modified": "2026-07-31T19:16:48.649Z",
+        "name": "Microsoft Copilot Studio File Attachment",
+        "nativeObjectType": null
       },
       {
         "attributes": [
@@ -2085,6 +3010,150 @@
       {
         "attributes": [
           {
+            "description": "Dataverse org API base URL",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "orgApiUrl",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Description of the Copilot agent.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "description",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Entra Service Principal identity for this bot. Variant A (legacy): classic App Registration appId. Variant B (Entra Agent ID): AgentIdentity SP Object ID. Sourced from synchronizationstatus.botRegistration.applicationId.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "entraIdentityId",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "ISO timestamp when the agent was created.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "created_at",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "ISO timestamp when the agent was last updated.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "updated_at",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Owner identity (UPN or email).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "owner",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Source business application name: Microsoft Copilot Studio.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "spBusinessApplication",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Status of the agent (Active or Inactive).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "status",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Status of the agent: Active (statecode=0) or Inactive (statecode=1).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "spStatus",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "The name of the Copilot agent.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "The unique identifier of the Copilot agent.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "identity",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {
+          "datasetId": "microsoft:copilot",
+          "resourceFeatures": [
+            "ACTIVATE",
+            "DEACTIVATE"
+          ],
+          "resourceId": "microsoft:copilot-agent",
+          "resourceType": "std:agent"
+        },
+        "created": "2026-07-31T19:16:48.649Z",
+        "displayAttribute": "name",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "9d6089e9d5cf41fb8dafb9daa6afa9c1",
+        "identityAttribute": "identity",
+        "includePermissions": false,
+        "modified": "2026-07-31T19:16:48.649Z",
+        "name": "Microsoft Copilot Studio Agent",
+        "nativeObjectType": null
+      },
+      {
+        "attributes": [
+          {
             "description": "Description of Administrative Unit",
             "isEntitlement": false,
             "isGroup": false,
@@ -2184,101 +3253,6 @@
         "modified": "2026-03-17T16:42:18.708Z",
         "name": "administrativeUnit",
         "nativeObjectType": "administrativeUnit"
-      },
-      {
-        "attributes": [
-          {
-            "description": "Description of the Copilot agent.",
-            "isEntitlement": false,
-            "isGroup": false,
-            "isManaged": false,
-            "isMulti": false,
-            "name": "description",
-            "nativeName": null,
-            "schema": null,
-            "type": "STRING"
-          },
-          {
-            "description": "ISO timestamp when the agent was created.",
-            "isEntitlement": false,
-            "isGroup": false,
-            "isManaged": false,
-            "isMulti": false,
-            "name": "created_at",
-            "nativeName": null,
-            "schema": null,
-            "type": "STRING"
-          },
-          {
-            "description": "ISO timestamp when the agent was last updated.",
-            "isEntitlement": false,
-            "isGroup": false,
-            "isManaged": false,
-            "isMulti": false,
-            "name": "updated_at",
-            "nativeName": null,
-            "schema": null,
-            "type": "STRING"
-          },
-          {
-            "description": "Owner of the agent.",
-            "isEntitlement": false,
-            "isGroup": false,
-            "isManaged": false,
-            "isMulti": false,
-            "name": "owner",
-            "nativeName": null,
-            "schema": null,
-            "type": "STRING"
-          },
-          {
-            "description": "Status of the agent (Active or Inactive).",
-            "isEntitlement": false,
-            "isGroup": false,
-            "isManaged": false,
-            "isMulti": false,
-            "name": "status",
-            "nativeName": null,
-            "schema": null,
-            "type": "STRING"
-          },
-          {
-            "description": "The name of the Copilot agent.",
-            "isEntitlement": false,
-            "isGroup": false,
-            "isManaged": false,
-            "isMulti": false,
-            "name": "name",
-            "nativeName": null,
-            "schema": null,
-            "type": "STRING"
-          },
-          {
-            "description": "The unique identifier of the Copilot agent.",
-            "isEntitlement": false,
-            "isGroup": false,
-            "isManaged": false,
-            "isMulti": false,
-            "name": "identity",
-            "nativeName": null,
-            "schema": null,
-            "type": "STRING"
-          }
-        ],
-        "configuration": {
-          "datasetId": "microsoft:copilot",
-          "datasetType": "std:agent"
-        },
-        "created": "2026-03-17T16:42:18.708Z",
-        "displayAttribute": "name",
-        "features": [],
-        "hierarchyAttribute": null,
-        "id": "b398487d866b4f609eb12c371b425c8b",
-        "identityAttribute": "identity",
-        "includePermissions": false,
-        "modified": "2026-03-17T16:42:18.708Z",
-        "name": "Microsoft Studio Copilot",
-        "nativeObjectType": null
       },
       {
         "attributes": [
@@ -2574,40 +3548,18 @@
       {
         "attributes": [
           {
-            "description": "ISO timestamp when the assistant was created.",
+            "description": "Service that resolved this link.",
             "isEntitlement": false,
             "isGroup": false,
             "isManaged": false,
             "isMulti": false,
-            "name": "created_at",
+            "name": "linkResolvedBy",
             "nativeName": null,
             "schema": null,
             "type": "STRING"
           },
           {
-            "description": "The model used by the assistant.",
-            "isEntitlement": false,
-            "isGroup": false,
-            "isManaged": false,
-            "isMulti": false,
-            "name": "model",
-            "nativeName": null,
-            "schema": null,
-            "type": "STRING"
-          },
-          {
-            "description": "The name of the assistant.",
-            "isEntitlement": false,
-            "isGroup": false,
-            "isManaged": false,
-            "isMulti": false,
-            "name": "name",
-            "nativeName": null,
-            "schema": null,
-            "type": "STRING"
-          },
-          {
-            "description": "The unique identifier of the agent with combination of ProjectName and AgentId.",
+            "description": "Unique identifier of the form azure:agent-has-connected-agent#{Foundry Agent Identity}#{Sub-Agent Identity}.",
             "isEntitlement": false,
             "isGroup": false,
             "isManaged": false,
@@ -2620,17 +3572,346 @@
         ],
         "configuration": {
           "datasetId": "azure:foundry",
-          "datasetType": "std:agent"
+          "resourceId": "azure:agent-has-connected-agent",
+          "resourceType": "std:access"
         },
-        "created": "2026-03-17T16:42:18.708Z",
-        "displayAttribute": "name",
+        "created": "2026-07-31T19:16:48.649Z",
+        "displayAttribute": null,
         "features": [],
         "hierarchyAttribute": null,
-        "id": "32295f0460b04af9863fb2453e1c8819",
-        "identityAttribute": "identity",
+        "id": "4db8b3ccdb8a4e55bbb070c4813bea92",
+        "identityAttribute": null,
         "includePermissions": false,
-        "modified": "2026-03-17T16:42:18.708Z",
-        "name": "Azure Foundry",
+        "modified": "2026-07-31T19:16:48.649Z",
+        "name": "Microsoft Foundry Agent Has Connected Sub-Agent",
+        "nativeObjectType": null
+      },
+      {
+        "attributes": [
+          {
+            "description": "Service that resolved this link.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "linkResolvedBy",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Unique identifier of the form azure:agent-has-tool#{Foundry Agent Identity}#{Tool Identity}.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "identity",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {
+          "datasetId": "azure:foundry",
+          "resourceId": "azure:agent-has-tool",
+          "resourceType": "std:access"
+        },
+        "created": "2026-07-31T19:16:48.649Z",
+        "displayAttribute": null,
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "efc3d6e2d57a4a5e96657457490b49ab",
+        "identityAttribute": null,
+        "includePermissions": false,
+        "modified": "2026-07-31T19:16:48.649Z",
+        "name": "Microsoft Foundry Agent Has Tool",
+        "nativeObjectType": null
+      },
+      {
+        "attributes": [
+          {
+            "description": "Service that resolved this link.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "linkResolvedBy",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Unique identifier of the form microsoft:agent365-uses-service-principal#{Agent 365 Package Identity}#{Entra SP Identity}.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "identity",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {
+          "datasetId": "microsoft:agent365",
+          "resourceId": "microsoft:agent365-uses-service-principal",
+          "resourceType": "std:access"
+        },
+        "created": "2026-07-31T19:16:48.650Z",
+        "displayAttribute": null,
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "65d2d448affb4cf9830f56acb4a9ff31",
+        "identityAttribute": null,
+        "includePermissions": false,
+        "modified": "2026-07-31T19:16:48.650Z",
+        "name": "Microsoft Agent 365 Package Service Principal",
+        "nativeObjectType": null
+      },
+      {
+        "attributes": [
+          {
+            "description": "Service that resolved this link.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "linkResolvedBy",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Unique identifier of the form microsoft:copilot-agent-has-file#{Copilot Agent Identity}#{File Attachment Identity}.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "identity",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {
+          "datasetId": "microsoft:copilot",
+          "resourceId": "microsoft:copilot-agent-has-file",
+          "resourceType": "std:access"
+        },
+        "created": "2026-07-31T19:16:48.650Z",
+        "displayAttribute": null,
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "c0d7d1994bdc46a6a68a7024cfcf828e",
+        "identityAttribute": null,
+        "includePermissions": false,
+        "modified": "2026-07-31T19:16:48.650Z",
+        "name": "Microsoft Copilot Studio Agent Has File Attachment",
+        "nativeObjectType": null
+      },
+      {
+        "attributes": [
+          {
+            "description": "Service that resolved this link.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "linkResolvedBy",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Unique identifier of the form microsoft:copilot-agent-uses-agent#{Parent Copilot Agent Identity}#{Connected Agent Identity}.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "identity",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {
+          "datasetId": "microsoft:copilot",
+          "resourceId": "microsoft:copilot-agent-uses-agent",
+          "resourceType": "std:access"
+        },
+        "created": "2026-07-31T19:16:48.650Z",
+        "displayAttribute": null,
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "4ef5dcee678b46d08015837c5e606dbd",
+        "identityAttribute": null,
+        "includePermissions": false,
+        "modified": "2026-07-31T19:16:48.650Z",
+        "name": "Microsoft Copilot Studio Agent Uses Connected Agent",
+        "nativeObjectType": null
+      },
+      {
+        "attributes": [
+          {
+            "description": "Service that resolved this link.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "linkResolvedBy",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Unique identifier of the form microsoft:copilot-agent-uses-knowledge#{Copilot Agent Identity}#{Knowledge Base Identity}.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "identity",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {
+          "datasetId": "microsoft:copilot",
+          "resourceId": "microsoft:copilot-agent-uses-knowledge",
+          "resourceType": "std:access"
+        },
+        "created": "2026-07-31T19:16:48.650Z",
+        "displayAttribute": null,
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "5cdb14a029b64c93ac06952a646a391e",
+        "identityAttribute": null,
+        "includePermissions": false,
+        "modified": "2026-07-31T19:16:48.650Z",
+        "name": "Microsoft Copilot Studio Agent Uses Knowledge Base",
+        "nativeObjectType": null
+      },
+      {
+        "attributes": [
+          {
+            "description": "Service that resolved this link.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "linkResolvedBy",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Unique identifier of the form microsoft:copilot-agent-uses-service-principal#{Copilot Bot Identity}#{Entra SP Identity}.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "identity",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {
+          "datasetId": "microsoft:copilot",
+          "resourceId": "microsoft:copilot-agent-uses-service-principal",
+          "resourceType": "std:access"
+        },
+        "created": "2026-07-31T19:16:48.649Z",
+        "displayAttribute": null,
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "da2876cae0a14cbfb3c6ed854fc364e8",
+        "identityAttribute": null,
+        "includePermissions": false,
+        "modified": "2026-07-31T19:16:48.649Z",
+        "name": "Microsoft Copilot Studio Agent Uses Service Principal",
+        "nativeObjectType": null
+      },
+      {
+        "attributes": [
+          {
+            "description": "Service that resolved this link.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "linkResolvedBy",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Unique identifier of the form microsoft:copilot-agent-uses-tool#{Copilot Agent Identity}#{Tool Identity}.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "identity",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {
+          "datasetId": "microsoft:copilot",
+          "resourceId": "microsoft:copilot-agent-uses-tool",
+          "resourceType": "std:access"
+        },
+        "created": "2026-07-31T19:16:48.650Z",
+        "displayAttribute": null,
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "f890b61b0f1f45cb8957dc1f671ecf4b",
+        "identityAttribute": null,
+        "includePermissions": false,
+        "modified": "2026-07-31T19:16:48.650Z",
+        "name": "Microsoft Copilot Studio Agent Uses Tool",
+        "nativeObjectType": null
+      },
+      {
+        "attributes": [
+          {
+            "description": "Service that resolved this link.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "linkResolvedBy",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Unique identifier of the form microsoft:copilot-connected-agent#{Parent Copilot Agent Identity}#{Child Agent Identity}.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "identity",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {
+          "datasetId": "microsoft:copilot",
+          "resourceId": "microsoft:copilot-connected-agent",
+          "resourceType": "std:access"
+        },
+        "created": "2026-07-31T19:16:48.649Z",
+        "displayAttribute": null,
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "edb0b62b91b54fe0be79e5f573880d7f",
+        "identityAttribute": null,
+        "includePermissions": false,
+        "modified": "2026-07-31T19:16:48.649Z",
+        "name": "Microsoft Copilot Studio Connected Agent",
         "nativeObjectType": null
       }
     ],

@@ -6,6 +6,7 @@
       "attributes": [
         {
           "description": "Indicates the type of access represented by an access item.",
+          "isAdhoc": false,
           "key": "iscAccessType",
           "multiselect": true,
           "name": "Access Type",
@@ -24,6 +25,7 @@
         },
         {
           "description": "Specifies the degree of Risk represented by an access item.",
+          "isAdhoc": false,
           "key": "iscRisk",
           "multiselect": false,
           "name": "Risk",
@@ -42,6 +44,7 @@
         },
         {
           "description": "The Easy Access Rules provide Acceptable Means of Compliance (AMC) and Guidance Material (GM) for these requirements,",
+          "isAdhoc": false,
           "key": "eASAPartIS",
           "multiselect": true,
           "name": "EASA Part-IS",
@@ -54,11 +57,13 @@
             {
               "name": "IS.D.OR.200",
               "status": "active",
+              "type": "static",
               "value": "iSDOR200"
             },
             {
               "name": "IS.I.OR.200",
               "status": "active",
+              "type": "static",
               "value": "iSIOR200"
             }
           ]

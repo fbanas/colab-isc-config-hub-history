@@ -6,6 +6,7 @@
       "attributes": [
         {
           "description": "Kontext",
+          "isAdhoc": false,
           "key": "kontext",
           "multiselect": true,
           "name": "Kontext",
@@ -18,36 +19,43 @@
             {
               "name": "Kontext1",
               "status": "active",
+              "type": "static",
               "value": "kontext1"
             },
             {
               "name": "Kontext2",
               "status": "active",
+              "type": "static",
               "value": "kontext2"
             },
             {
               "name": "Kontext3",
               "status": "active",
+              "type": "static",
               "value": "kontext3"
             },
             {
               "name": "Kontext4",
               "status": "active",
+              "type": "static",
               "value": "kontext4"
             },
             {
               "name": "Kontext5",
               "status": "active",
+              "type": "static",
               "value": "kontext5"
             },
             {
               "name": "Kontext6",
               "status": "active",
+              "type": "static",
               "value": "kontext6"
             },
             {
               "name": "Kontext7",
               "status": "active",
+              "type": "static",
               "value": "kontext7"
             }
           ]

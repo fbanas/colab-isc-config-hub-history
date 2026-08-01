@@ -323,8 +323,8 @@
           "identityAttributeName": "organizationHierarchy",
           "transformDefinition": {
             "attributes": {
-              "id": "cded1515884f42f8b730e87f1d28da1f",
-              "name": "Hierarchy Management"
+              "id": "8733dcd578ca464fb39b13ee6d6a8572",
+              "name": "Organizational Hierarchy Path"
             },
             "type": "rule"
           }
@@ -346,7 +346,7 @@
     "identityCount": 129,
     "identityExceptionReportReference": null,
     "identityRefreshRequired": false,
-    "modified": "2026-05-07T08:39:08.449Z",
+    "modified": "2026-07-31T14:19:50.476Z",
     "name": "Identity Fusion NG",
     "owner": {
       "id": "30507568a2d54f7484fe0f3edba79692",

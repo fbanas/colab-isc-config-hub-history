@@ -6,6 +6,7 @@
       "attributes": [
         {
           "description": "Specifies the degree of Risk represented by an access item.",
+          "isAdhoc": false,
           "key": "iscRisk",
           "multiselect": false,
           "name": "Risk",

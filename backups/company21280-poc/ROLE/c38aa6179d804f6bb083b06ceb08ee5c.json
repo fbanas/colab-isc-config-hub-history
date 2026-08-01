@@ -6,6 +6,7 @@
       "attributes": [
         {
           "description": "The Easy Access Rules provide Acceptable Means of Compliance (AMC) and Guidance Material (GM) for these requirements,",
+          "isAdhoc": false,
           "key": "eASAPartIS",
           "multiselect": true,
           "name": "EASA Part-IS",
@@ -18,11 +19,13 @@
             {
               "name": "IS.D.OR.200",
               "status": "active",
+              "type": "static",
               "value": "iSDOR200"
             },
             {
               "name": "IS.I.OR.205",
               "status": "active",
+              "type": "static",
               "value": "iSIOR205"
             }
           ]
