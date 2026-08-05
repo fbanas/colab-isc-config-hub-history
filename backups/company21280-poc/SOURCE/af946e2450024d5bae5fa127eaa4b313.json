@@ -370,7 +370,6 @@
         }
       ],
       "spConnDebugLoggingEnabled": false,
-      "spConnectorInstanceId": "7ae2b87c-1a7b-4214-8acd-d881e45d21a3",
       "spConnectorSpecId": "2a2674ae-c6e4-4fd8-a948-e332857fc5a6",
       "spConnectorSupportsCustomSchemas": true,
       "status": "SOURCE_STATE_HEALTHY",

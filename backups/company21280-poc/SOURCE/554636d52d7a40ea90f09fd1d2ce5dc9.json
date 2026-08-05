@@ -25,7 +25,6 @@
       "recommendationStatus": "ERROR",
       "since": "2026-03-18T15:13:14.803Z",
       "sourceConnected": true,
-      "spConnectorInstanceId": "623d207c-8eda-4c4f-86e5-e01b9e43fe31",
       "spConnectorSpecId": "05bde7b6-a1ad-4ac7-9dab-4e341ae4a7b7",
       "spConnectorSupportsCustomSchemas": true,
       "status": "SOURCE_STATE_HEALTHY",

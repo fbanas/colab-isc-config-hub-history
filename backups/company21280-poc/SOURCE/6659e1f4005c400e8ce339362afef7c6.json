@@ -6,7 +6,7 @@
     "beforeProvisioningRule": null,
     "connectorAttributes": {
       "authenticationMethod": "OAuthLogin",
-      "cloudCacheUpdate": 1785505490356,
+      "cloudCacheUpdate": "1785839349013",
       "cloudDisplayName": "NERM - Organisations",
       "connectionParameters": [
         {
@@ -55,7 +55,6 @@
       "parentOrganizationAttribute": "parent2",
       "possibleHttpErrorMessages": {},
       "since": "2026-05-06T18:27:14.585Z",
-      "spConnectorInstanceId": "533807cc-ca87-401a-b832-f093a03c84ee",
       "spConnectorSpecId": "7aa95c2a-6c38-4f39-9bb9-040f11641ee3",
       "spConnectorSupportsCustomSchemas": true,
       "status": "SOURCE_STATE_FAILURE_SOURCE",
@@ -139,7 +138,9 @@
             "type": "STRING"
           }
         ],
-        "configuration": {},
+        "configuration": {
+          "descriptionAttribute": "parent2"
+        },
         "created": "2026-05-06T11:05:50.562Z",
         "displayAttribute": "name",
         "features": [],
@@ -147,7 +148,7 @@
         "id": "098c2b5dc5b044a3b22d469397d0586d",
         "identityAttribute": "name",
         "includePermissions": false,
-        "modified": "2026-07-30T07:25:18.319Z",
+        "modified": "2026-08-04T10:29:08.886Z",
         "name": "group",
         "nativeObjectType": "Group"
       },
@@ -188,7 +189,7 @@
         "id": "c74c2bae9cfb45c0b593fe345c7f6fb7",
         "identityAttribute": "name",
         "includePermissions": false,
-        "modified": "2026-05-06T12:21:18.515Z",
+        "modified": "2026-08-04T10:28:55.081Z",
         "name": "account",
         "nativeObjectType": "User"
       }

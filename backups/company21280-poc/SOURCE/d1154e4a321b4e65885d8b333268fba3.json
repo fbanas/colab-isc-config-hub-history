@@ -19,7 +19,6 @@
       "healthy": false,
       "idnProxyType": "sp-connect",
       "since": "2026-06-26T18:17:48.031Z",
-      "spConnectorInstanceId": "638627b0-9664-4bc8-9971-79652dc8dc60",
       "spConnectorSpecId": "f969d695-09e7-496c-b009-a63624e93283",
       "spConnectorSupportsCustomSchemas": true,
       "status": "SOURCE_STATE_FAILURE_SOURCE",

@@ -23,7 +23,6 @@
           "percentage": 50
         }
       ],
-      "spConnectorInstanceId": "1b1bdd41-eb0a-4804-99b2-c3de2c7815ea",
       "spConnectorSpecId": "6f0e18f4-3853-4a60-8895-3cfbbe6d46a2",
       "spConnectorSupportsCustomSchemas": true,
       "status": "SOURCE_STATE_HEALTHY",

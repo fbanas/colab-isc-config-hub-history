@@ -25,7 +25,6 @@
       "since": "2026-03-26T07:57:39.116Z",
       "sourceConnected": true,
       "spConnDebugLoggingEnabled": false,
-      "spConnectorInstanceId": "70a21f09-45c5-405b-b299-9c435ea23a94",
       "spConnectorSpecId": "8d38ab3a-3a08-4679-914b-e3c36a687363",
       "spConnectorSupportsCustomSchemas": true,
       "status": "SOURCE_STATE_HEALTHY",

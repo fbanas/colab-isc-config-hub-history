@@ -21,7 +21,6 @@
       "recommendationStatus": "ERROR",
       "since": "2026-07-27T10:19:17.238Z",
       "sourceConnected": true,
-      "spConnectorInstanceId": "9b5f2c92-6e45-4019-929a-6c00d42f46a6",
       "spConnectorSpecId": "59cfe61f-a2d2-48d2-87a2-9ce1ffc80d7f",
       "status": "SOURCE_STATE_HEALTHY",
       "templateApplication": "Amadeus Office Hierarchy Manager (tag: latest)"

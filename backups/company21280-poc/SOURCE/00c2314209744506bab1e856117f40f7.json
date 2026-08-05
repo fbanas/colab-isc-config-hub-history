@@ -7,12 +7,12 @@
     "connectorAttributes": {
       "checkDeletedDisabled": false,
       "clientID": "e4e240ef-36f5-4f7e-9902-329b804a1cf7",
-      "cloudCacheUpdate": 1785798289260,
+      "cloudCacheUpdate": 1785885023293,
       "cloudDisplayName": "Microsoft Entra sp-demo262 SaaS",
       "connectionType": "direct",
       "connectorName": "Microsoft Entra",
       "deleteThresholdPercentage": 11,
-      "directoryRolesDeltaToken": "Je0iVt_DCC7Jk7vRVYEumlBHiMlDjE3g1KrsIyY_7QWD8lJ5KqBPRXbRGcN4dQIOlXtFnW_qDs0qJK7FCof_jczVUevSUuhVk7_4GencuEi5IJajV2eQI1TuRPJ9PEO_d8PVN-_nEvEK6j0agXFQYkkUGnyd2wCQgEKzhob6ScqrKbxIckJipjxVUc5MguyVQXqgJzlcZ8Iyb_92nnc_FJ9H83qEIaekobM0qifSnL8IQxbLYAuE1vkcKccESQiRh_2Y7CjXqKhawJhAVO-jaNtjORtXwf9E-7XZKp5vHtUoknvG3sBDrRArJMSdFY3BG7_KVyuRnDFExiAiCa0xO_n0YuogVGJuknYG1ms08j2cS9TLaAA_dWv6tGf73xyfZhf0JNjBZ36wpUKDz-kEEID1sZJc6GdQ008L1-Ia-UcDHAsbOaRpV7ORGhhI8fHoXnjpnf36PhHGBAHsfJMpthHIOsOZrpmeOBQmLhbLB6r4jAFc7u8SrgNFlwnHiAGYzEhH7x02SeFJLgENIOE0HJT5hTJULU22o71hs2YZECJIq1_hO8neMDh9InKd_SWlicZ1fBOnFEQULXT9koIIVW3fId9C9qy7ZI2xV5hNQIanNXEHVGFBFi9NfZl3yJHRLqZb4go1l3b0Op4aLlTUuEKaePtr5b19bx9FyB6Ot9-bNO9yq22X7D2Xsg5t6nvhYOPJZzK-RNEuaJDVpnLHe64dasV2NA-0NsEjqsspJ3bEZyNM87tPxYh0A5dYz_fSweNX5RjmNvAX_iIR6vGHH5lGzfdW58oMZ7vEEfms0eTfF443Z0XvDlpfFmXkZ-tOdMPmcDTOav6dib9Roj85ghS5yF_IpZ2_cjJsIcY3qbtnNmuHQjANNf9vAFQwI0VOxwKKd3VzKKMhX1OSzGqaAUgAUlTvDPb5FL9a_rgjil0jkMqdmdkLZYFBOlhADiBxVSKmG8mK4uX4rf6tJJlxpalQ91RLFvFQCLAHWDJNDl1wR0kDwW5A8Z2thCD-_z5VrMp-eBixxMkl0xk6b-t24qawf9ruU6so6NNGN5axOSJvfzSzc93FV-uhTc8JmT_sFZ5BrJZrgF38KzjF-7GghKBzz95zMb2cjvYRdHgxORY-jiuxlqV18TCzGUEIEb0vaw1bvRAztPUfWrc02J9AX1Rs0SCu_FECE2-8OC_tFeQeRn88cSLoHvmzjH3MdTMG8sDkR-YjIfDAyZMsff0w3l7ftlciNJRgP5tM0R_QeJ4xT3GI0StFCmx2zUrJqCN7iT3MchSSxidH9GtsxrWUGBYbjtRiVzZLwKit5SdE6KznJNdF9SKld2eDq1mGHGZOBUxxJotn6aQdimVgrfE_2kN94jJ_boznjk19Gt8oFY_cst06KqnooFiEZYDEWLtewIv3nuWUWDq4sk0WXh5UaDUYc3rZL6xOa_GHGIj96F7bSJbDZpRrsgHL3BqRpCHIp9uALBuI6NfR6smc1nRcYqZqrvgTskUQldx9P9zUlXqzmOn7F67uPftgW4-VP0eGEcordnRYiEA4VSbk37d25C7cftR0F08HtKeuokRftOtIgNCEJ3H6WYlxEpHdQ2Nybeqa_94SdvCdPT-_KlUN1YDf4lRvWdwkVnYqR085o7NejjndMZFu6Es0pjXZeBxhTGHQ8dMXG0Qz2licBggNpGv7ASS4vu4wms2s2xDprcveHtafcu3Ev3sHOmxSnQsSI4PzUyHhBBBL6FQ-pK_lqIShW0tfLg7brOZOb165xnj2Hin6TRKg1w3xyAJEifSYWAtdlq23Ks8A-yVanyO74fDkC-Y7_mQi4C1kyYnve3NcFOUmmpMZdM2tB3FTE11E.H_urrzWRgqxnLDso6wGDtyoPB46m9eD15IJLWYaJnTY",
+      "directoryRolesDeltaToken": "Je0iVt_DCC7Jk7vRVYEumlBHiMlDjE3g1KrsIyY_7QX-NVJMDUA0r65x56IM0_BRQlb3W88YrUDzXc27Ws9JoHsrbMD71lVp3CpHsCqK3Ok6tOPlpTqPLFGU_GRcVBe-RO7Gjhml0YcFie9gmPNKkWoNpRRK01IfssXhtUn5zrXko9JzaeC-dlmHllF3CxNcbTEy8r505Yeg2AcoQm1peGmQui2TTOL2uK0fbA9K8p-7LDJXhIW3ZEl3SqokV2R4k2mA5BUcpcLcWl_N-P-XnAF__J_IdraKKa5DNa_QyKNZ53CdcxjDybx-I-EzcPRfxSSDfQNmqhV-4H4Qi37-sBWTg2ln9Sr72w_vzKEEbKtxPNeEPh4sZImgyFfujADEEc44zLD0GBvWhcrqLdfRP-Qy7AhfTDGK3IPodzK7q-h4SgI6SQXOQ52yEkPES-S5CgN1uQxz6pHN-RurASU7OU-0tQWkoXpQuMrXFqwNkPuAoWtG1MRpeimDmK9PzSTPYiPfBey54Uzr2DfIK6S10YAceqK3pKcQiGfvoLzcsxNoPQzFWjOsF5YGf02It7WGcsSH-Ho5w3T_uz01iYVG1EVQECCXcuqkewRpjtpFnglf57uQXaRhLn1Lw32JwdetXzFZlALJTEfyDvoA4Ml0fjIO_HlOA4H8exwynCqKdvHVH_rU9EXEAZ1jGU0hx_vD8mvgMJyQKzbhtKzCwXCtXwY-PlEKca2gFmLxp_7KUzQORcoepNwV4q7LRp7o4WJY_1TiIelin5yuvV8_-CRVgq_FoU_z_WUzE35WjJ8ZOHcQl3FAwmpTy_SkXD0RZaoUdKrPI_fdjMXP0Fy5EZxoOszoNkUkKzbrddfvCLrJf2HdpOKyRR44Ri92Bq3OHWLseYslwMjirqxDDDk33A3DyRbineSd89ofrBpVElfN2bP-LJ4Ah7ceeYfXmj63kl-hJHIHaWL8zZARUmg6KAHhO3ReXk8shxB20TS4hzlPAGUS5pRR5hjyuT18vx6MTGnDFPuXYKEB9LFOyig7VnFBSASV-37qb5WNUQ4bHEXAuYKvKijvxDECcqi_EdQYZVpS_tNouR8ZZf4IdCmVw8_rdYhJGK-JBxLz28ALxxqD7ea8JZ_zuaMZ9GLkgRmLJSDS4HGr4JLpEADrQ79KaqMIbVe1bB1boY5k-Ew_X9IuZ0z-QLwltttxxzf_7YpWTh_va2obQ0bBFzQFsjbGzHZLhDEr7xM4HC9x-k5JAZ9L-eI_mhCqcAY6yfbtD32fH5m3BHVgvr2ujH2fLLMSp6toYKjJNox1Ejzl4x617KExnVLddpDDd_MGLu0bDERGsbC8fcXm6O32NlBFfLXONxbEIR_14Y9P5Zz4G9F-5naTHLGJ4QNa-r7xjvHEnO7dhnSVQvtlDr5xTgNqUBDi4nJ2o4719k0zxXuTliU8kPLTSAL1Sd9p1FXZMZefnpng4mPYSzweSNilqt9STdoktwURnn6IoRukZSTGby41ERJ89QM6s1u1AsyhZtLZgrs4DsOER4Ty-ZQ3PReN0eQ5Y3rirt2X9J0jyRqSB8ZsIn7sETa7dSlZSx9f7gzDcWYtfrsWpGH7NhRlbADhGM6axY7QgUzdhlxtZkbxER6u85DuaY0lUVN6x26jO5Gu6KZsfR5Hjr8DY1WTH6bKj0Yu_XG5Qnq95LLNvlUgeC8bTxWyQVgZc9eXyVJWXTosRL2vgD8tWIlyHuA9Gmdatek6RFyt2QKoZhD0lIq-dXvidAFqnVkC32ythi3pT_1K89Y0NGRK3j21drjGarhAgUoGcfifsdUCpny8FXyPXeFnz-Sg9yKLcyugdmPOupTI6qii4iJI.O8YwFkYdf-vUhON-LI-kYoxaKIw1EStZfnzeY4IeL3U",
       "domainName": "spdemo262.onmicrosoft.com",
       "enableAccessPackageManagement": false,
       "enableAdministrativeUnits": false,
@@ -22,7 +22,7 @@
       "enableSystemAssignedManagedIdentity": false,
       "encrypted": "clientSecret, clientCertificate, privateKeyPassword, private_key, refresh_token, exchangeUserPassword",
       "grantType": "CLIENT_CREDENTIALS",
-      "groupsDeltaToken": "Qvj_gQIi-2DzBSlAa43uVZtsidNvohzw53y8K6vfUY-eeqX26xgbC4TZItrcaF0yKj5bqO_KPy1hkKqE17r_vTn7joai4pWnT4Q23yiqXxGoSxM6GEViUapseD9IEjG5_QJt1NMq4zPD89IAZbI1lA_A0kTlKEDqaQNPoh0rjN1ibk5HKFBqjr5SOBQVoXgldG7YF6r9bDLwJu-Xil1rQzWGnKZpYc4SINJF0aUpEg2gvLFzg0DPnByFk3g_p5TkJ_ZkEZ6XWJY6cnawbAMlbWllgiGrLuC0HGHKstFwl6A2Ffjhu4S_FAVc69wzqPWt0wV8ks25Brcv_is7TGy8ZprS1DB-En1TdiJ5ENuV_xcWI16V2NoI9pCQrwcOu_eneknL1Kn_BNHEHWoS0ZDJIu1PMLPlV38D9JdVDadm5oxwEq2IzORdfZbPcRWu-tHLkpJTIup592OYFdy7ZKTMCAJXnhYAlHNxKEFWcONtmsAL4G6Df0GVddB5hOiU3O3h2hkB1AxNZ13aMd6oXgEv5ZpNuoEygqQitBZbEj-jFDzF2Ko0WTvBH1fQaSKm9WdXJ0gBaJnT8Rg-8-AyawWf4upVG2ftTtq61WfKUy-CkIXO89DVORJE8TUwAocdBszsxxVpr2YMOSjZYnLNmdxfwG-AFxS8QUBRW09O87dCVraE7U5soighH0Onllu8jEQ9pi_FXoKLSO7JLOBuHYm7dQtz7EVxUkKaazyyQ6MmOTUoravcp6PXySCMRkuHnkxf6JsiVKDiGboCBpr5T_3Vq_Y2YB6A4mWEOkFbVRNwSCSqmd8clz9FA6l6ffxYU7KujzPsJO73uWJoCT8b92iOOuNAezFI9xrCVq2ZNW4JHkccnvZWHuwndHNzmKSeXonoL6K4jFT1xr2Zf-idtEkdczR-WulDA9JmtPK4Y5-6rcSyvDg3V3k9qq1wyXkNthLZ1iXpveVoe_425-aS4KLDJjp18SqV6mZzRLZl5s_t2VlhIENACuJelF-JYM_Y_G7_Pi4eKIbq3wDUwv5h29odiLkmNYPfhgexszuT_9k9o5cS20e7tVhs92SONaRHA5FQd40gwmif0zhx0XvvN88i0gItuEBWuuRRrJup-A-0noKwqL6CbJOVjGY4-8NRqGgoW6sVn2NMpKWuOow_DdxeANqdIxcWNVKn2XvPDdoC8hG-barpMCACkWZ6TI4qpVDx_f-LNepFKdwZgWonXLMJrB6W-FSnXtdL22a3fJMv2rkBchjZ3xAtwttoH6m32jo1gO6BcRMlKSjSoZJGICTmRP76OajBUuNxvjyNxfumJzt3WbqthXejNUYwoorCdRyvkX7xYVjdizSFImASAJeUizQODQbIm_lOFWqmqisAkS7dr_uwmQSJUxgbhDIF6Jt2sIpLicXMXUmlfwkIiBKS40hDFpFgVfGs1ZIzokGweLC0IUz62K25kv1nZE9FaUGKSNPz3bW7pihxhuhOWzJ-z0boV1sx5TQfQYmwPCDZbUxw0w8ZErFUVU3HQ8WEMo6lrjQ_b9yPMBbNMCmUprzJy7EzCPAOr6Ql0B50db4lRd5ukDV6dXqeIkmo5sgnMgFEhIzWz0eROrM9nmlkhD8-O3VEWBmqxSYHAMush8ETfjlSON_9dNKS5zryMEU_WZpHKPHnnMx5yGPifxOlb-KMIn24Pf9IIJYdlpPcClg9VnOHcA0d5Gb7_KXIhR0L0F0519_Ec2YHCUmUGYOZhTNzTg.K7NMLJT29jncKuUo086hMdtQlzPnYzLIsEd7U2tW_10",
+      "groupsDeltaToken": "Qvj_gQIi-2DzBSlAa43uVZtsidNvohzw53y8K6vfUY-BauGC_qrsQfncnxzANuw5PDG2xGl_xP9AW4v4VFlOs92NpEiXXW1tBHcLImd56cgQ5GG2qnknCJuaj6cqJOqCj5-kkqu-YIOnRvRWexoliAoXmQIrtZFwiO9Sh45kZmQXr5kUYukk8KrdDnEPp4b-8pGAGT4hni5KxYkpK52snwjEu6y-E7NOPgWIdhL_2cHDeapIHtUd0EtnJ7ju9JtxQTUSI5YNVIDa_AohBwGP0TEeQM1kkhbyimswLll1QiQ96paXXbw_HOemNc7OywKmNKrOpNP4cFZrqhVOEy3-uLcgxoNzKyw7q_eZZ1PExba_jOqs6gnzH3xLCDSR-iNqlj67mUs2pb8xPXt3kksmO0K8cub9MN8wFP4jE-3On4s1PwxuKSDhMoggpR-U1v_flPyd2y3j43EewEVqNhjxgNGaq_tu1Kui5Q1jYdH874eN3LDtPN2zXoyxSF9TPbdrY-kaHGuEup7__8v3NmirXGIvSwZfk0eltUVdvmnAd2z-QDpfZPuiCGsN-fC4f7NaVlfNnTu9xJDd5xqGV0GuDO3QMhYxUF4yv9CJfStzEC1cmhWXWoI-z-PH6Nrurw2x99whflaardfSwcDnruiAT_FsOmlKpkpQPEQHi7P1GnT6Novo8G6MndvWPkEWtjdBGS54nHmt3WZoh3NaIFsxxix7tIxLh93AflH4W7CDDhTVDFzrk8rDjKFVC132cQfVWd15vlb2d70Q4-uTctI4shpO_iwHKCB1cJsBdHRNkRolu50Lwbkv49BbyMigBafXrYimcLy8vd79W3DcmR-XEEH8PtLVNocUQCWxNr_QEGaWdHfHiOiRLstiu290M8DOTHDzuyPDoMfsuXAn0mhnwomufQBbyyU-dkLJjW2cWT2LOsym6YJH9Y1WfBFuu9Snat8VolQnw_QZAC1lZnP-e56AEf0evEn2MKXkAXsCY5Te289KCwEvROhoxe-ikEPd5rtzYyMT7fb00cHBSMGcz4nji1ABA0wMei6unh7nWR-Czux5iJCKPFtHriiaYUhM8r1543l9Q8fZNPpP0HMhFV0m7aAl4sdZBj2NTnlrpCQPY8wpJmLrJNcc0KJLWiPOCjWc6wNXB0183b8xHuo8vslbYVUCljtRycJcsLAxbJj9PBC-bx0zuL13rMkVAOco0MfkkiQaJWumfZqIHxn_tw5ikUI2DLCylmV_7YJ2vJKm7m1Hu5fF7ciVap1UPDp9h0-DGDVa5y8tgEk_JvA1QFT2LzbEa04E4YgHPjgCoLNZyqkEwAohLg2dR2hmDp-uB8Q1Dxk8ckYEPwGru0i_5m4o_-4M4pwczAKrC1yDhwb3jQcvPzGBW4dw_2zyZeAPIAuywhasmQeMN0MqheAdBc00M9VYL-1pdvPk13SwDUkZMRzpHv3ixjbFQoapo_TiNULkPHabpXv5S_-xE1kAzcPoBfkAnNL9Yvf7kcU-KLPS4Ins3cX12Z3PebDWHZ9OvW35TdFgYvHVyKM8NdBfA4ZTDRoaGNY2maGlTpo5P7QrcijAvABolzeejhZhzyJZitEOaCzpxK-tFXVX2S-52DSeqTwUT6oLeyZygA097YQ7XeZ6pNYZaZdtq6popCLHPLoVIt7wJvY3JCAU9aS-oB34txWVF50o2HYDjAIdQcDBVid7HY6gDtgbMxvLaMQgrfd6OLZNOKTxkcz4F6-DZw.YEn3UPMFhfW494ejx5VggzSUONd2GmBx1gRcl6R2how",
       "hasFullAggregationCompleted": true,
       "healthCheckTimeout": 60,
       "healthy": true,
@@ -34,7 +34,6 @@
       "manageO365Groups": false,
       "since": "2026-05-07T16:11:46.442Z",
       "sourceConnected": true,
-      "spConnectorInstanceId": "f3c220d9-6d79-4a23-9c0a-c1330f0c98c9",
       "spConnectorSpecId": "b7e9374a-3c50-4b51-8880-e501f947bbf8",
       "spConnectorSupportsCustomSchemas": "true",
       "spnManageAppRoles": false,
@@ -98,7 +97,7 @@
       "supportsDeltaAgg": "true",
       "supportsStatefulCommands": "true",
       "templateApplication": "Microsoft Entra",
-      "userDeltaToken": "J98kFczx6JyEkMrsYPWwcTchC_fmjZ5Sl_gi5IvtypwYmO0D-i55H2QO_MOE3Ey1vaHH8A_lI8N2y3v8JgL6CR_2bfAg_3GtMa2V6MLimHUGv1mS8aqDEMs7LNY2iViNCNMOQEO5BWJHJ39mo4ZocEHnFQg381wAgJX06f48h8t0HFRncBmSKhkCB2V7mnQ6N1o1PCm6Sx5Icew_qPLLtN9t-j3eMSpQeY4zmSJbIhVhMkIstY6noWj_I2rKMcumdBlP9JKUzEDZlLoUOv0e4F8X23nuaXPL9tUB8FPOuU2P-Qtkp66FAw_--O3fWddTaXUQtVj40v002NJiPz020o8_Vl94tfcEFmuip-hHugQQo9MKokRyc8STX3BE6KQI32WWx0uPn0WquSvfvLHMLk3bQ0-XkIOPiKldiqxQ6NMZmRUVofR8hwZ785jx50ZdwwviRCbSeMnx4utoHIuU0qW3nUZ2o48fGock_DFBrxgaJbvOJVFfbMRgY2-Q0JxPu48EDmEbb3vpP64WV67V4YX8q_67sxHgYzt8ivDEpyuWUXUQS88dRQpP6B7CgAnnAT62ZysN66qiv_VvFlDvzIKc03WZF9C1ffDuGL30Uexrs0ARxdBfK6wVqnN9-KVDjoCvrPCjxOKVuls9UnP7k-whf47ph9h7w5woD0uSQwQqP0vsn1_aWz8-Sa9C8Jz5O9f0KOZ0m_-JAm9ITE-dcvKrEjR03zXz1HAEkTtnK0ir47Oh2iADkiStIyPVUwmNxHgh-qKSqDw3RpA6VjEEYglZK6mljzSGIxIBS05GDo4f6bgB0n3Eh65iCydEnY3GxPYFHmhrB38KsqYj7mHJHCtxmW5SChDrblKsy4ZqwaKQcCVSOr8uTb5hg5BcpbOf60atT3xytw1YkHfOf_99VcPeXoAOcmVULdlrihZ7VAs7JQqdtLILrfnP_OBvZjYO97LaPYIUm8i2cP2xjFMnfNxP5JMkk28cysVdqkCUoQ9cgokcL14Cbgrc3Mxd4U7kX870mhn8lZ8glE7y8eM5EJue-6ss_5BJMz8Aj95Z-c043MBemVdv80skC7g6xB38-_uluEyQD-Yy688ufmjjZW20YIx8lhSsymmM6_VSats_GlsbghYRN3YW088cBwavqggClutedVk_3wfhqbvjrzC-bO5fyhTiNbOrIopbdLLBRpbE_SVps4PgpfkrJkJWM2ibUSvOxJsZuXpzZxpj_58WKT6TrZObq809gKyHh2tAvW12RBgTSOitCMk7Qglbvjq5Zc5k_5liMU8tsz1YDkrdabG4OYqdP6TN1lnayLfviYLi5og-ZpBlQQ2sQ8_myvRd5Rx9_yelV2Mu25PBB83tRENBptfO-LGYtipGeSH53hZLQ21qKzKkCtwFynpP0fsvp_z3MrTgLiFmKWrH5vU7KgzuZpeKebPI3BjFxaUl20dhTI7XQ3jNIzSeaqNttZRl8CtHScLGP4bMv0R1UpVXvFdf25S15MNCAN-5Y29fQlMm2aeF86T48vjCtQTIn1gxFUQSsXAKO0neSGa96hGZr3ueAUqvQdd4yq_ENRkIXvd4TGhjOCHHV_E5Hq5oPI0P0wU-7ZtIq1yqKgo-d1UcqQ5p_vxhUMnj6h4WSFjiyIqhtKhSsLk8PdO4kIDVmAP_ma7He4a4mtof-aQOHKrmnd1ITyz1clF83DALWmGRNEXiztTC9jtfCfiiFHmHO5OW3j1C6yiyDVcthqTBmaU39BDnXRL9XBtmimhgjo8j8hr-i583mP-4QHQOZO40RAdgRxMXba2AiPHS_IlwHxy2Hn-HnqWF53YdBSF-XzRBq9mlzipkv7vlG25UBEZbfxAqsXaMm8n9yjueMfYHxxfVSkpw8FBrFeqB8zpkJRp_NT6VggcazdaDSgWiWe89gcC2SWahZRFVQpkEA78WRckIKGW0bIKdxS7O81oWtGKxKcMXTE3Mu86X4X2AlGA7.1D2QAZge5vtkgZjhBUlnyOSSXOmfEUyirflMpHUnO3A"
+      "userDeltaToken": "J98kFczx6JyEkMrsYPWwcTchC_fmjZ5Sl_gi5IvtypwfFHPUpBEoY5bVU0Do9FX8EFZtLN9Vg0x-D4wsxbPd8IpoVlxFW_Quwk8onTeZHbLItnJDpHOtQKHTExnJeAoN9LT0kJW00OwGwoU9ZIGq6zDiaCH8d4bTgGPs0wTDtWVlbUdSYa0sA9Go_f3VhgvkRySJoSwT-h6_aRM_G9l9Rsaesrg9XC85IOKmp_ZPcXz06xfUTN7I9T0BuufgtV-N_SoZ1_iIW0uos8GKrIHwWRNTe-ZvvdAvgOm7IVXmWg0gTNlpFpt8A-87Qe9LXSKx_8eeZ8AeL_sreoH-LogEzU_1Z4AY1gEGg8ZTv1qOrd4zIgJeHHnYupLUkUYC5BduHFnBa9QTP74nVkIxOLrLi2qLpWThmnGwABaR1o4qwTShHicR6qlTJbPa33j-Eymi3vPNdUP8Cn-u10TBQp0YpWe2DvmwcJGNxDTRx0UcDYWyAVTx6B2OfTx4e3hgyhSGCr7QjfpkV4ZoJxS0F2yELOo5YpvG4_KFAQkalJGNCWzA1ZVWS6rbgJaUJ61KKGrA0a9i3mQplFEI5aZKKk6gvaBri6fZHdMkidpLH2a2dBUmf5YcKOAlOHAyyZ_4E4FxJjS0L6KBx8FfoRriF5fJitz41hADzWjPbWOxS77ZEOeO-0AthIRJtf0AI2g3ilyldharXUTpuxISbVFYBgYT6UAT-GTwZiY9cBLHUgrtgeoISAFiiyULVmo6ADIZ1g08_35CTO9rW0wl1HFmRFQNNYfDrjo_krziNg4t4zF5gsfB8R3OI0TX7aTQjoZ44Qd08DaANwMSod4DxTu9lVe_bJ5vswQqjrUFEOEcqIIZhpbMYqZ7KWI2X-z3tb0-Kpl6x_f_Fkps-YuSo5BqUlCgGGYUe327172qn2GSXqlmJrORNXLVXPNDLKAwAVYesVD1QvMDqVOMYub4O0O8wcpDPQezTMsLL-9k0krbQfkTPSEOxdgkQPaiXT0NHLM3KPk28X9NBol26lbXb2bclpfw3vDrwsAMCVWfXan2-ED3BWAnd6tR2MauYEaT2pVy1aNBKWTnWlW9B-T_AysIPDtwhFQUr0swU7nvfLgKuDRN3379oorVxuPy6jSeP7KN654fIsoyMjXCjpp5esSifa5mPazVUTS3RTn5UgrjzhZs2TrNbn_MGIcAVbZCsOjWhamO3sRdFxmXX_X68LPQrqZtX5diuTnkDsLxF43wxfQwcM-AMSq9tlD2rP9ATAWvKMWtPSgl8H0_XRV3CFGe9H244Xb8mwWkRgH_SYp78Jr4nI8cMkpLenodWeHzmVA-JhsHgW6o4UP1moulRq4iYEG35xVSXqin_lrlPItLXPqYgH1SZO1c2jMAZRewqKb6gfgyF1MRrHe9JQiH483rK6FPSndQMqNClEwe4lXnAS18W8_GdgCSVfaxgvEM2NVVBhiOP6jpsUn7SbrYLkb13o4eGdFXtG4wevAWB-HSeF1cH8J_wqHY6LuEiR4_cMGrDi2Uw1u_RhpNdzMTvryC-nVsVGCXZsLsEhpf2eIo3SxS8uLHB3q2czDcQvkt__nANTMe3Oi8D4MMLyXLd3InqmdVtNZUpi6jtwnMWptypvdRj2VIQ9QcuFf7VF4uE8BvSVvH_RDT1qokI5MQmYwkxfCJOAXbZvvkQ11JSp2UylURmZeQlFEUyJu_yzCOhnIh8gkWpEJ9myT7K6k7DdOIzO5rYL7dqIbHKMgm7qZz68q0w4TJJ7pEuLfDqngRf-3taVbWaHrA8cz3gKrcsTC3Eqh3YQqsnhssSCdGy-XtsraFCFMnQDKpr3Nr7zxJbbWOHv0EbDvQDCTMqLVDcUr0wJRte9HGi6OK8eE7onlq4HYyj0j-W--nNMdxnvjaJD7osEpEN_J-D2dF3SMBLQiTVd5TtqJpBZ19Q9FcqAtwiq7nEcoKilIgqxA0PorB0C3YQDug.Iu1QdRbY2CW9ZoJjvQTReNbp072HKlvRH2-2IWLFZug"
     },
     "connectorClass": "",
     "connectorScriptName": "Microsoft-Entra",
@@ -1448,6 +1447,451 @@
       {
         "attributes": [
           {
+            "description": "Account display name (falls back to account/tenant id when unset).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "sourceAccount",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Application URL in the source (e.g. Azure portal app URL).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "appUrl",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Constant discriminator supplied by Entro (e.g. 'SaaS Application').",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "agentType",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Deep link to the source (e.g. Azure portal URL).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "sourceUrl",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Detection method used by Entro (e.g. 'Azure Service Principal App').",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "detectionMethod",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Environment name from the source account.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "environment",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Flattened owner.email used for correlation. Mirrors owner.email from the nested owner block.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "ownerEmail",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Human-readable insight descriptions from Entro policies.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": true,
+            "name": "insights",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "ISO-8601 timestamp for the most recent usage or update signal.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "lastSeen",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Integration type reported by Entro (e.g. 'AZURE').",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "integrationType",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Normalized AI client name (e.g. 'm365-mcp-server-for-claude').",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Original name from the source system (e.g. 'M365 MCP Server for Claude').",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "rawName",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Prettified classification enum (e.g. 'Third-party', 'Homegrown').",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "classification",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Severity band from Entro (BENIGN, LOW, MEDIUM, HIGH, CRITICAL, UNKNOWN).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "riskBand",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Stable identity for the agent (Azure Service Principal ID).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "id",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Tags from the source account.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": true,
+            "name": "tags",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Verified publisher display name, when present.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "verifiedPublisherName",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Whether Microsoft has verified the publisher; null when no verifiedPublisher data is present.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "isVerifiedPublisher",
+            "nativeName": null,
+            "schema": null,
+            "type": "BOOLEAN"
+          }
+        ],
+        "configuration": {
+          "datasetId": "azure:ai-agent",
+          "resourceId": "azure:ai-agent",
+          "resourceType": "std:agent"
+        },
+        "created": "2026-08-04T20:11:07.984Z",
+        "displayAttribute": "name",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "2acc7eb60bfd43049c687201af380431",
+        "identityAttribute": "id",
+        "includePermissions": false,
+        "modified": "2026-08-04T20:11:07.984Z",
+        "name": "Microsoft Entra AI Agent",
+        "nativeObjectType": null
+      },
+      {
+        "attributes": [
+          {
+            "description": "Account display name (falls back to account/tenant id when unset).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "sourceAccount",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Connected Microsoft 365 services (e.g. SharePoint, Office, Outlook).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": true,
+            "name": "connectedServices",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Count of sessions Entro marked as suspicious.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "suspiciousSessionCount",
+            "nativeName": null,
+            "schema": null,
+            "type": "INT"
+          },
+          {
+            "description": "Deep link to the source; null when Entro has no URL.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "sourceUrl",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Detection method used by Entro (e.g. 'Microsoft 365 Copilot License Assignment').",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "detectionMethod",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Discriminator from Entro (e.g. 'Microsoft Copilot License').",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "agentType",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Environment name from the source account (e.g. 'Production').",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "environment",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Flattened owner.email used for correlation. May be null when Entro only has userPrincipalName.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "ownerEmail",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Human-readable insight descriptions from Entro policies.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": true,
+            "name": "insights",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "ISO-8601 timestamp for the most recent usage or update signal.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "lastSeen",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Integration type reported by Entro (e.g. 'AZURE').",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "integrationType",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Normalized name (e.g. 'microsoft 365 copilot').",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "name",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Original name from the source system (e.g. 'M365 BizChat').",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "rawName",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Prettified classification enum (e.g. 'Third-party', 'Homegrown').",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "classification",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Severity band from Entro (BENIGN, LOW, MEDIUM, HIGH, CRITICAL, UNKNOWN).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "riskBand",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Stable identity for the Copilot chat / license assignment (GUID from Entro).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "id",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Tags from the source account.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": true,
+            "name": "tags",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Total Copilot session count reported by Entro.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "sessionCount",
+            "nativeName": null,
+            "schema": null,
+            "type": "INT"
+          },
+          {
+            "description": "UPN of the licensed / chat user (primary correlation key when owner.email is null).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "userPrincipalName",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          }
+        ],
+        "configuration": {
+          "datasetId": "azure:copilot-enterprise-chat",
+          "resourceId": "azure:copilot-enterprise-chat",
+          "resourceType": "std:agent"
+        },
+        "created": "2026-08-04T20:11:07.984Z",
+        "displayAttribute": "name",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "c028e17e05e44e51931697878b66c911",
+        "identityAttribute": "id",
+        "includePermissions": false,
+        "modified": "2026-08-04T20:11:07.984Z",
+        "name": "Microsoft 365 Copilot License",
+        "nativeObjectType": null
+      },
+      {
+        "attributes": [
+          {
             "description": "Active AD Role Display Name",
             "isEntitlement": false,
             "isGroup": false,
@@ -2597,6 +3041,327 @@
         "includePermissions": false,
         "modified": "2026-07-31T19:16:48.649Z",
         "name": "Microsoft Copilot Studio File Attachment",
+        "nativeObjectType": null
+      },
+      {
+        "attributes": [
+          {
+            "description": "Compliance control IDs the account is flagged against (e.g. PCI_DSS_8_6_3, ISO_27001_A_5_17, OWASP_NHI_NHI7_2025).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": true,
+            "name": "complianceBreach",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Downstream service most recently touched by this account.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "lastUsedService",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Flattened owners[0].email used for correlation. Mirrors the primary owner email from the nested owners array.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "ownerEmail",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Severity band from Entro (LOW, MEDIUM, HIGH, CRITICAL, UNKNOWN).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "riskSeverity",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Stable Entro token identifier (TKN-xxxx). Same value as token.entroId.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "id",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Tags carried through from the source account.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": true,
+            "name": "tags",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Whether Entro has flagged suspicious activity for the account.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "suspiciousActivity",
+            "nativeName": null,
+            "schema": null,
+            "type": "BOOLEAN"
+          },
+          {
+            "description": "Whether the account is externally exposed.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "exposed",
+            "nativeName": null,
+            "schema": null,
+            "type": "BOOLEAN"
+          }
+        ],
+        "configuration": {
+          "datasetId": "azure:hybrid-service-account",
+          "resourceId": "azure:hybrid-service-account",
+          "resourceType": "std:account"
+        },
+        "created": "2026-08-04T20:11:07.984Z",
+        "displayAttribute": "id",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "6b296f4f92c74f07aa8ce95b314c1d6f",
+        "identityAttribute": "id",
+        "includePermissions": false,
+        "modified": "2026-08-04T20:11:07.984Z",
+        "name": "Microsoft Entra Hybrid Service Account",
+        "nativeObjectType": null
+      },
+      {
+        "attributes": [
+          {
+            "description": "Compliance control IDs the certificate is flagged against.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": true,
+            "name": "complianceBreach",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Downstream service most recently touched; null when unknown.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "lastUsedService",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Flattened primary owner email used for correlation. Derived from owners entry with isPrimary=true (or owners[0].email).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "ownerEmail",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Severity band from Entro (LOW, MEDIUM, HIGH, CRITICAL, UNKNOWN).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "riskSeverity",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Stable Entro token identifier (TKN-xxxx). Same value as token.entroId.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "id",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Tags carried through from the source account.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": true,
+            "name": "tags",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Whether Entro has flagged suspicious activity.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "suspiciousActivity",
+            "nativeName": null,
+            "schema": null,
+            "type": "BOOLEAN"
+          },
+          {
+            "description": "Whether the certificate is externally exposed.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "exposed",
+            "nativeName": null,
+            "schema": null,
+            "type": "BOOLEAN"
+          }
+        ],
+        "configuration": {
+          "datasetId": "azure:saml-certificate",
+          "resourceId": "azure:saml-certificate",
+          "resourceType": "std:credential"
+        },
+        "created": "2026-08-04T20:11:07.984Z",
+        "displayAttribute": "id",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "1d488ca22ed94db9a18c7e2011ed924b",
+        "identityAttribute": "id",
+        "includePermissions": false,
+        "modified": "2026-08-04T20:11:07.984Z",
+        "name": "Microsoft Entra SAML Certificate",
+        "nativeObjectType": null
+      },
+      {
+        "attributes": [
+          {
+            "description": "Compliance control IDs the token is flagged against; may be null when Entro has no findings.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": true,
+            "name": "complianceBreach",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Downstream service most recently touched by this token; null when Entro has no usage record.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "lastUsedService",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Flattened owners[0].email used for correlation. Mirrors the primary owner email from the nested owners array.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "ownerEmail",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Severity band from Entro (LOW, MEDIUM, HIGH, CRITICAL, UNKNOWN).",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "riskSeverity",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Stable Entro token identifier (TKN-xxxx). Same value as token.entroId.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "id",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Tags carried through from the source account.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": true,
+            "name": "tags",
+            "nativeName": null,
+            "schema": null,
+            "type": "STRING"
+          },
+          {
+            "description": "Whether Entro has flagged suspicious activity for the token.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "suspiciousActivity",
+            "nativeName": null,
+            "schema": null,
+            "type": "BOOLEAN"
+          },
+          {
+            "description": "Whether the token is externally exposed.",
+            "isEntitlement": false,
+            "isGroup": false,
+            "isManaged": false,
+            "isMulti": false,
+            "name": "exposed",
+            "nativeName": null,
+            "schema": null,
+            "type": "BOOLEAN"
+          }
+        ],
+        "configuration": {
+          "datasetId": "azure:app-token",
+          "resourceId": "azure:app-token",
+          "resourceType": "std:credential"
+        },
+        "created": "2026-08-04T20:11:07.984Z",
+        "displayAttribute": "id",
+        "features": [],
+        "hierarchyAttribute": null,
+        "id": "666e30539a4b407a86f79d32405333b9",
+        "identityAttribute": "id",
+        "includePermissions": false,
+        "modified": "2026-08-04T20:11:07.984Z",
+        "name": "Microsoft Entra App Token",
         "nativeObjectType": null
       },
       {

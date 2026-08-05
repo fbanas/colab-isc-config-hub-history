@@ -86,7 +86,6 @@
       "since": "2026-07-10T14:01:52.631Z",
       "sourceConnected": true,
       "spConnDebugLoggingEnabled": false,
-      "spConnectorInstanceId": "1a8fff46-c4b0-440a-b520-e1a680e51b90",
       "spConnectorSpecId": "7f1a7d67-3c4c-4633-9423-efd6cf2fbfd2",
       "spConnectorSupportsCustomSchemas": true,
       "status": "SOURCE_STATE_HEALTHY",

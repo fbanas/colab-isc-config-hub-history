@@ -432,7 +432,6 @@
       "since": "2026-03-18T10:03:21.241Z",
       "sourceConnected": true,
       "spConnEnableStatefulCommands": false,
-      "spConnectorInstanceId": "9c0f9dcf-8e1d-4679-ba11-9dcfcd4c2fef",
       "spConnectorSpecId": "7aa95c2a-6c38-4f39-9bb9-040f11641ee3",
       "spConnectorSupportsCustomSchemas": true,
       "status": "SOURCE_STATE_HEALTHY",

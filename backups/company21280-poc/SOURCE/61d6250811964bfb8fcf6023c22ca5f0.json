@@ -14,7 +14,6 @@
       "healthy": false,
       "idnProxyType": "sp-connect",
       "since": "2026-03-12T18:23:59.880Z",
-      "spConnectorInstanceId": "e7cdd10c-89f9-4ece-9649-c6edf4f8205c",
       "spConnectorSpecId": "11235c1e-d799-48ba-8dbc-018ab82a8140",
       "status": "SOURCE_STATE_FAILURE_SOURCE",
       "templateApplication": "SailPoint Non-Employee Risk Management Users",

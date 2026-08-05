@@ -15,7 +15,6 @@
       "healthy": true,
       "idnProxyType": "sp-connect",
       "since": "2026-05-28T02:19:26.608Z",
-      "spConnectorInstanceId": "6746d540-6741-4bdd-bf33-4656fa30f0ff",
       "spConnectorSpecId": "4b9af423-72a8-4d53-860d-6e9b27b9ab6a",
       "status": "SOURCE_STATE_HEALTHY",
       "templateApplication": "Echo (tag: latest)"

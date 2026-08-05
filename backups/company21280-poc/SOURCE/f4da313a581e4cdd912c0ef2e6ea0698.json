@@ -28,7 +28,6 @@
       "roleAggregationWithDirectApis": true,
       "since": "2026-04-14T16:36:43.123Z",
       "sourceConnected": true,
-      "spConnectorInstanceId": "8cf2bd3a-d955-40fb-9ebf-f0fa98256f30",
       "spConnectorSpecId": "5f9f1cec-2840-4bec-b0a1-905e71ca921e",
       "spConnectorSupportsCustomSchemas": true,
       "status": "SOURCE_STATE_HEALTHY",

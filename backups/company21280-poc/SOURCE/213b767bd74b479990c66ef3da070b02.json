@@ -42,7 +42,6 @@
       "retryDelay": "1000",
       "since": "2026-07-27T10:18:52.953Z",
       "skipAccountsWithMissingId": false,
-      "spConnectorInstanceId": "97166870-6f8b-42d3-b07e-ae9370f0ebae",
       "spConnectorSpecId": "2a2674ae-c6e4-4fd8-a948-e332857fc5a6",
       "spConnectorSupportsCustomSchemas": true,
       "status": "SOURCE_STATE_FAILURE_SOURCE",

@@ -712,7 +712,6 @@
       ],
       "since": "2026-07-06T02:23:53.824Z",
       "sourceConnected": true,
-      "spConnectorInstanceId": "42e0eab3-1bbd-43bb-9b82-7fcc7b160f00",
       "spConnectorSpecId": "618c1b4e-b266-45ab-a2e3-7ac0cbabf1fb",
       "spConnectorSupportsCustomSchemas": true,
       "status": "SOURCE_STATE_HEALTHY",
