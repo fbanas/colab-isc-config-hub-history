@@ -3,6 +3,7 @@
   "jwsSignature": null,
   "object": {
     "allowedControls": [],
+    "approvalGuidance": null,
     "compensatingControls": "",
     "conflictingAccessCriteria": {
       "leftCriteria": {
@@ -47,6 +48,7 @@
       "type": "IDENTITY"
     },
     "policyQuery": "@access(id:332e2d25fad536f496dbd1b74f41577f) AND @access(id:5ec555e2755e3ead93cda5aec5ab8b08)",
+    "preventSetting": null,
     "scheduled": false,
     "secondaryOwnerRefs": [],
     "state": "ENFORCED",

@@ -3,6 +3,7 @@
   "jwsSignature": null,
   "object": {
     "allowedControls": [],
+    "approvalGuidance": null,
     "compensatingControls": "The overlapping access must be granted only for a strictly defined, time‑bound period and explicitly approved by an authorized GRC or security officer.\n\nAll actions taken under the combined role must be fully logged, including route changes, level changes, and separation‑related instructions, and subject to post‑incident review.\n\nA second authorized person (e.g., a second controller or operations supervisor) must independently verify and acknowledge any separation‑critical action taken by the individual with dual access.\n\nThe IAM system must flag such temporary role combinations for periodic attestation and immediate review after expiration.",
     "conflictingAccessCriteria": {
       "leftCriteria": {
@@ -47,6 +48,7 @@
       "type": "IDENTITY"
     },
     "policyQuery": "@access(id:b325319f087233529852bb721b83847c) AND @access(id:e29b0a4c5a82349faf19b3efe5fd828f)",
+    "preventSetting": null,
     "scheduled": false,
     "secondaryOwnerRefs": [],
     "state": "ENFORCED",

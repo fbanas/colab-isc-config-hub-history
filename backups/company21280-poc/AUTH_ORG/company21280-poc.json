@@ -18,6 +18,7 @@
       "legacyPasswordReset": false,
       "redirectPatterns": null
     },
+    "patReminderConfig": null,
     "serviceProviderConfig": {
       "bypassIDP": false,
       "enabled": false,
