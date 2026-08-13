@@ -164,7 +164,7 @@
     "id": "9ef01d3f3553489a98df33bcb25345d8",
     "managementWorkgroup": {
       "id": "55b2da0b-1c01-437b-b129-a6f6af394b91",
-      "name": "LH1 (Scope A) Governance - Sub Role Admin Group",
+      "name": null,
       "type": "GOVERNANCE_GROUP"
     },
     "managerCorrelationMapping": null,
