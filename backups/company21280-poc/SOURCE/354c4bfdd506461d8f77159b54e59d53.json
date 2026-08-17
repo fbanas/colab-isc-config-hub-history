@@ -677,7 +677,7 @@
       "baseUrl": "https://api68sales.successfactors.com",
       "checkDeletedDisabled": false,
       "clientID": "M2RmZmM0M2ZkZDM0OWVmNjhhYmVkZWNkOWVmNQ",
-      "cloudCacheUpdate": 1783304633835,
+      "cloudCacheUpdate": 1786933062338,
       "cloudDisplayName": "SAP Successfactors",
       "companyId": "SFCPART002041",
       "connectionType": "direct",
@@ -692,7 +692,7 @@
       "grantType": "SamlBearerAssertion",
       "hasFullAggregationCompleted": true,
       "healthCheckTimeout": 30,
-      "healthy": true,
+      "healthy": false,
       "idnProxyType": "sp-connect",
       "inactiveOffset": "30",
       "odataEventOptionIdMap": {
@@ -710,11 +710,11 @@
       "picklistMapping": [
         "BusinessEmail=8448"
       ],
-      "since": "2026-07-06T02:23:53.824Z",
+      "since": "2026-08-17T02:17:42.327Z",
       "sourceConnected": true,
       "spConnectorSpecId": "618c1b4e-b266-45ab-a2e3-7ac0cbabf1fb",
       "spConnectorSupportsCustomSchemas": true,
-      "status": "SOURCE_STATE_HEALTHY",
+      "status": "SOURCE_STATE_FAILURE_SOURCE",
       "supportsDeltaAgg": true,
       "templateApplication": "SuccessFactors SaaS",
       "timeZone": "UTC",
