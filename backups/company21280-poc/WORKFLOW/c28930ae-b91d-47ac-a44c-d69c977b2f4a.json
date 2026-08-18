@@ -129,6 +129,7 @@
         "id": "iai:outlier-detected",
         "integrationId": null
       },
+      "mode": "advanced",
       "type": "EVENT"
     }
   },

@@ -209,6 +209,7 @@
         "id": "sp:form-submitted",
         "integrationId": null
       },
+      "mode": "advanced",
       "type": "EVENT"
     }
   },

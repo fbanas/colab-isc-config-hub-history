@@ -138,6 +138,7 @@
         "integrationId": null
       },
       "displayName": "Identity attribute \"department\" changed",
+      "mode": "advanced",
       "type": "EVENT"
     }
   },

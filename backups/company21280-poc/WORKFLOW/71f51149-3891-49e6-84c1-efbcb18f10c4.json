@@ -93,6 +93,7 @@
         "id": "idn:caep-device-compliance-change-events",
         "integrationId": null
       },
+      "mode": "advanced",
       "type": "EVENT"
     }
   },

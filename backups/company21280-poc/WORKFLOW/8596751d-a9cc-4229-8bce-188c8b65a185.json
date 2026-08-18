@@ -85,6 +85,7 @@
         "id": "idn:identity-attributes-changed",
         "integrationId": null
       },
+      "mode": "advanced",
       "type": "EVENT"
     }
   },

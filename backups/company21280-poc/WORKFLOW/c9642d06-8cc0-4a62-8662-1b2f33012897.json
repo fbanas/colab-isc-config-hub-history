@@ -139,6 +139,7 @@
         "integrationId": null
       },
       "displayName": "LCS Changed to \"terminated\"",
+      "mode": "advanced",
       "type": "EVENT"
     }
   },

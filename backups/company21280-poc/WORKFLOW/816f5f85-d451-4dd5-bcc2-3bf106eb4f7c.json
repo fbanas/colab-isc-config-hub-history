@@ -405,6 +405,7 @@
         "id": "idn:source-updated",
         "integrationId": null
       },
+      "mode": "advanced",
       "type": "EVENT"
     }
   },
