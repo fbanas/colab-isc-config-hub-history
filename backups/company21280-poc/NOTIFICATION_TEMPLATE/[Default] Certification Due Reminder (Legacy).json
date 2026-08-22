@@ -9,21 +9,21 @@
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,
-    "id": "[Default] Certification Due",
+    "id": "[Default] Certification Due Reminder (Legacy)",
     "inboxTemplate": null,
     "key": "certification_due",
     "locale": "en",
     "medium": "EMAIL",
     "modified": null,
-    "name": "Certification Due",
+    "name": "Certification Due Reminder (Legacy)",
     "replyTo": "$__global.emailFromAddress",
     "slackTemplate": null,
     "subject": "Reminder: Certification needs your attention",
     "teamsTemplate": null
   },
   "self": {
-    "id": "[Default] Certification Due",
-    "name": "Certification Due",
+    "id": "[Default] Certification Due Reminder (Legacy)",
+    "name": "Certification Due Reminder (Legacy)",
     "type": "NOTIFICATION_TEMPLATE"
   },
   "version": 1

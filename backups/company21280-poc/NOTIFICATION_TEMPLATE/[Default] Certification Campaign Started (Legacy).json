@@ -9,21 +9,21 @@
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,
-    "id": "[Default] Certification",
+    "id": "[Default] Certification Campaign Started (Legacy)",
     "inboxTemplate": null,
     "key": "certification",
     "locale": "en",
     "medium": "EMAIL",
     "modified": null,
-    "name": "Certification",
+    "name": "Certification Campaign Started (Legacy)",
     "replyTo": "$__global.emailFromAddress",
     "slackTemplate": null,
     "subject": "Please Review Your Employees' Access",
     "teamsTemplate": null
   },
   "self": {
-    "id": "[Default] Certification",
-    "name": "Certification",
+    "id": "[Default] Certification Campaign Started (Legacy)",
+    "name": "Certification Campaign Started (Legacy)",
     "type": "NOTIFICATION_TEMPLATE"
   },
   "version": 1

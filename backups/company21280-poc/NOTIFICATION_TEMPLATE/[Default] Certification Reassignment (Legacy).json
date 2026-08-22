@@ -9,21 +9,21 @@
     "footer": null,
     "from": "$__global.emailFromAddress",
     "header": null,
-    "id": "[Default] Certification Reassignment",
+    "id": "[Default] Certification Reassignment (Legacy)",
     "inboxTemplate": null,
     "key": "bulk_reassignment",
     "locale": "en",
     "medium": "EMAIL",
     "modified": null,
-    "name": "Certification Reassignment",
+    "name": "Certification Reassignment (Legacy)",
     "replyTo": "$__global.emailFromAddress",
     "slackTemplate": null,
     "subject": "New certification reassignment request",
     "teamsTemplate": null
   },
   "self": {
-    "id": "[Default] Certification Reassignment",
-    "name": "Certification Reassignment",
+    "id": "[Default] Certification Reassignment (Legacy)",
+    "name": "Certification Reassignment (Legacy)",
     "type": "NOTIFICATION_TEMPLATE"
   },
   "version": 1

@@ -1,0 +1,30 @@
+{
+  "jwsHeader": null,
+  "jwsSignature": null,
+  "object": {
+    "body": "Dear $__recipient.name,<br/><br/>\n<div style=\"font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; max-width: 600px; color: #333333; line-height: 1.6;\">\n  <div style=\"background-color: #FDF2F2; border-left: 4px solid #DD4B39; padding: 15px 20px; margin-bottom: 25px; border-radius: 4px;\">\n    <h3 style=\"color: #DD4B39; margin: 0 0 10px 0; font-size: 18px; font-weight: 600;\">AWS Onboarding Could Not Be Completed</h3>\n    <p style=\"margin: 0; font-size: 14px; color: #444444;\">We regret to inform you that we were unable to complete the Rapid AWS Onboarding process. As a result, no active AWS source was created in SailPoint Identity Security Cloud.</p>\n  </div>\n\n  <table style=\"width: 100%; border-collapse: collapse; margin-bottom: 25px; font-size: 14px;\">\n    <thead>\n      <tr style=\"background-color: #F8F9FA;\">\n        <th colspan=\"2\" style=\"text-align: left; padding: 10px 15px; border-bottom: 2px solid #EEEEEE; font-weight: 600; color: #555555;\">Onboarding Summary</th>\n      </tr>\n    </thead>\n    <tbody>\n#if($sourceId)\n      <tr>\n        <td style=\"padding: 10px 15px; border-bottom: 1px solid #EEEEEE; color: #666666;\">Source ID</td>\n        <td style=\"padding: 10px 15px; border-bottom: 1px solid #EEEEEE; font-family: monospace; color: #555555;\">$sourceId</td>\n      </tr>\n      #end\n      #if($adminAccountId)\n      <tr>\n        <td style=\"padding: 10px 15px; border-bottom: 1px solid #EEEEEE; color: #666666;\">AWS Management Account</td>\n        <td style=\"padding: 10px 15px; border-bottom: 1px solid #EEEEEE; font-family: monospace; color: #555555;\">$adminAccountId</td>\n      </tr>\n      #end\n      <tr>\n        <td style=\"padding: 10px 15px; border-bottom: 1px solid #EEEEEE; color: #666666;\">Deployment Status</td>\n        <td style=\"padding: 10px 15px; border-bottom: 1px solid #EEEEEE; color: #DD4B39; font-weight: bold;\">✕ Failed</td>\n      </tr>\n    </tbody>\n  </table>\n\n  #if($failureReason)\n  <div style=\"background-color: #F8F9FA; border: 1px solid #EEEEEE; padding: 15px; border-radius: 4px; margin-bottom: 25px;\">\n    <h4 style=\"margin: 0 0 5px 0; color: #333333; font-size: 14px; font-weight: 600;\">Failure Details</h4>\n    <p style=\"margin: 0; font-family: monospace; font-size: 13px; color: #DD4B39;\">$failureReason</p>\n  </div>\n  #end\n\n  <h4 style=\"margin: 0 0 10px 0; color: #333333; font-size: 15px; font-weight: 600;\">Recommended Actions</h4>\n  <p style=\"margin: 0 0 15px 0; font-size: 14px; color: #555555;\">Please verify your AWS configuration before retrying. Common failure causes include:</p>\n  <ul style=\"margin: 0 0 25px 0; padding-left: 20px; font-size: 14px; color: #555555; line-height: 1.8;\">\n    <li>Delegation access request rejected or timed out in the AWS Management Account</li>\n    <li>CloudFormation StackSet creation or instance deployment failures</li>\n    <li>Insufficient AWS IAM administrator permissions or organization policy restrictions</li>\n    <li>Invalid deployment account ID or incorrect configuration values</li>\n  </ul>\n\n  <p style=\"margin: 0 0 25px 0; font-size: 14px; color: #555555;\">For detailed deployment and onboarding status, including account-level success or failure details, sign in to your AWS account and review the AWS onboarding logs.</p>\n\n  <p style=\"font-size: 12px; color: #777777; margin: 0; border-top: 1px solid #EEEEEE; padding-top: 15px;\">\n    Best Regards,<br/>\n    The SailPoint Support Team\n  </p>\n</div>",
+    "created": null,
+    "description": "Sent to the user when SAF AWS Onboarding fails.",
+    "details": null,
+    "footer": null,
+    "from": "$__global.emailFromAddress",
+    "header": null,
+    "id": "[Default] SAF AWS Onboarding – Failed",
+    "inboxTemplate": null,
+    "key": "saf_aws_onboarding_fail",
+    "locale": "en",
+    "medium": "EMAIL",
+    "modified": null,
+    "name": "SAF AWS Onboarding – Failed",
+    "replyTo": "$__global.emailFromAddress",
+    "slackTemplate": null,
+    "subject": "SAF AWS Onboarding – Failed",
+    "teamsTemplate": null
+  },
+  "self": {
+    "id": "[Default] SAF AWS Onboarding – Failed",
+    "name": "SAF AWS Onboarding – Failed",
+    "type": "NOTIFICATION_TEMPLATE"
+  },
+  "version": 1
+}
