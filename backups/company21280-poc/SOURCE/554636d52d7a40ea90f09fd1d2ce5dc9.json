@@ -15,7 +15,6 @@
       "enableProvisioningFeature": true,
       "entitlementDeltaAggregationEnabled": false,
       "grantType": "client_credentials",
-      "hasFullAggregationCompleted": true,
       "healthCheckTimeout": 90,
       "healthy": true,
       "idnProxyType": "sp-connect",
