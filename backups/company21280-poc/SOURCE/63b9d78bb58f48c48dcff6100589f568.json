@@ -6,7 +6,7 @@
     "beforeProvisioningRule": null,
     "connectorAttributes": {
       "SQL": "SELECT \n    u.*, \n    l.value AS \"LCS\",\n    CASE \n        WHEN l.value = 'active' THEN false \n        ELSE true \n    END AS \"IIQDisabled\"\nFROM \"LH2\" AS u\nLEFT JOIN \"LCS\" AS l\nON u.\"Employer Status\" = l.key;",
-      "cloudCacheUpdate": 1782325327532,
+      "cloudCacheUpdate": 1788139297991,
       "cloudDisplayName": "LH2",
       "connectionType": "direct",
       "connectorFileUploadHistory": {
@@ -22,7 +22,7 @@
       "group.mergeRows": false,
       "hasFullAggregationCompleted": true,
       "healthCheckTimeout": 30,
-      "healthy": true,
+      "healthy": false,
       "isAdvance": "false",
       "isPermissionEnabled": false,
       "jdbcExceptionBucketing": true,
@@ -30,9 +30,9 @@
         "standard"
       ],
       "mergeRows": false,
-      "since": "2026-06-24T18:22:07.532Z",
+      "since": "2026-08-31T01:21:37.991Z",
       "sourceConnected": true,
-      "status": "SOURCE_STATE_HEALTHY",
+      "status": "SOURCE_STATE_FAILURE_CLUSTER",
       "supportsDeltaAgg": "true",
       "templateApplication": "JDBC Template",
       "testConnSQL": "SELECT 1",

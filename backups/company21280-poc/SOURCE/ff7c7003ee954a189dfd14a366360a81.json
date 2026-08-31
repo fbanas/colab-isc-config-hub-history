@@ -7,7 +7,7 @@
     "connectorAttributes": {
       "SQL": "select U.login,U.description,U.first,U.last,U.password,U.status,U.locked,U.lastLogin,UG.group_name as 'groups' from prism.users as U left join prism.users_groups as UG on U.login=UG.login order by login",
       "buildMapRule": "BuildMapPRISM",
-      "cloudCacheUpdate": 1782318036399,
+      "cloudCacheUpdate": 1788139298425,
       "cloudDisplayName": "PRISM",
       "connectionType": "direct",
       "connectorFileUploadHistory": {
@@ -30,7 +30,7 @@
       "group.useStoredProcedureSqlStmt": false,
       "hasFullAggregationCompleted": true,
       "healthCheckTimeout": 30,
-      "healthy": true,
+      "healthy": false,
       "indexColumns": [
         "login"
       ],
@@ -42,9 +42,9 @@
         "groups"
       ],
       "mergeRows": true,
-      "since": "2026-06-24T16:20:36.393Z",
+      "since": "2026-08-31T01:21:38.425Z",
       "sourceConnected": true,
-      "status": "SOURCE_STATE_HEALTHY",
+      "status": "SOURCE_STATE_FAILURE_CLUSTER",
       "supportsDeltaAgg": "true",
       "templateApplication": "JDBC Template",
       "testConnSQL": "select * from prism.users",

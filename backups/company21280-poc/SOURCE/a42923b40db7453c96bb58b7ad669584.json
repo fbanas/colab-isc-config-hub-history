@@ -6,7 +6,7 @@
     "beforeProvisioningRule": null,
     "connectorAttributes": {
       "authenticationMethod": "No Auth",
-      "cloudCacheUpdate": 1782533960153,
+      "cloudCacheUpdate": 1788139297960,
       "cloudDisplayName": "Time Keeping",
       "connectionParameters": [
         {
@@ -218,7 +218,7 @@
       "genericWebServiceBaseUrl": "http://10.0.0.250:8080/",
       "hasFullAggregationCompleted": true,
       "healthCheckTimeout": 30,
-      "healthy": true,
+      "healthy": false,
       "httpCookieSpecsStandard": "true",
       "isGetObjectRequiredForPTA": true,
       "labels": [
@@ -230,9 +230,9 @@
       "partitionAggregationEnabled": false,
       "possibleHttpErrors": {},
       "recommendationStatus": "ERROR",
-      "since": "2026-06-27T04:19:20.145Z",
+      "since": "2026-08-31T01:21:37.941Z",
       "sourceConnected": true,
-      "status": "SOURCE_STATE_HEALTHY",
+      "status": "SOURCE_STATE_FAILURE_CLUSTER",
       "supportsDeltaAgg": "true",
       "templateApplication": "Web Services Template",
       "throwProvAfterRuleException": true,
